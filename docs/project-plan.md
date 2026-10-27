@@ -107,12 +107,15 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 ## Keyingi qadam
 
 1. ~~Manbalari va huquqi aniq matnlarni yig'ish~~ — boshlandi: Oʻzbekcha
-   Vikipediyadan 42 ta tilshunoslik maqolasi (312 paragraf, ~18 ming so'z,
+   Vikipediyadan 41 ta tilshunoslik maqolasi (310 paragraf, ~18 ming so'z,
    CC BY-SA 4.0, har biri aniq revid bilan). Cheklovlar: barchasi bitta
    janrda (ensiklopedik), ko'pchiligi Oʻzbekiston milliy ensiklopediyasidan
    ko'chirilgan, ayrimlarida havolalardan qolgan probelsiz joylar bor
    (`Fonemafonologiya`) — matn o'zgartirilmadi. Darslik va maqolalar kabi boshqa
-   janrlar foydalanish ruxsati bilan qo'shilishi kerak.
+   janrlar foydalanish ruxsati bilan qo'shilishi kerak. Dastlab 42 ta maqola
+   yuklangan edi; "Boʻgʻin" so'rovi biologiyadagi "Boʻgʻin (avlod)" maqolasini
+   qaytargani uchun u korpusdan chiqarildi (2026-10-27). Qolgan 41 tasining
+   boshlanishi qo'lda ko'rib chiqildi.
 2. ~~Inline belgidan (`[[fonemalar|fonema]]`) JSONL yaratuvchi skript~~ —
    bajarildi: `python -m app.dataset.inline`.
 3. ~~`doc_id` bo'yicha train/val/test ajratuvchi skript~~ — bajarildi:
@@ -136,9 +139,9 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 - **Precision@K** — maʼlum terminlar ro'yxatiga nisbatan:
   `--reference-terms` (lug'at) yoki `--reference-annotations` (inson belgilagan JSONL).
 
-### Birinchi ishga tushirish (2026-10-27, 42 ta Vikipediya maqolasi)
+### Lug'atga nisbatan (2026-10-27, 41 ta Vikipediya maqolasi)
 
-Korpus: 17 876 token, 18 692 nomzod, ulardan 2 481 tasi f ≥ 2.
+Korpus: 17 777 token, 18 592 nomzod, ulardan 2 474 tasi f ≥ 2.
 Maʼlum terminlar — `data/terms.json` dagi 19 ta shakl.
 
 | Usul | P@10 | P@20 | P@50 | P@100 |
@@ -170,12 +173,46 @@ Kuzatilgan muammolar (to'liq reyting: `reports/candidates-*.csv`):
    ham nomzod bo'ladi. POS-tegger yoki morfologik qoidalar bilan
    (masalan, "ot yoki sifat + ot" andozasi) cheklash keyingi qadam.
 
+### Claude bahosi bo'yicha (AI bahosi, inson emas)
+
+Uchala usulning top-100 nomzodlari birlashtirildi (119 ta nomzod). Ularni
+**Claude (AI)** yo'riqnomaning 9.2-bo'limi asosida baholadi: 38 ta `1`, 61 ta `0`,
+20 ta `?`. Baholar va har bir `?` uchun sabab
+`data/judgments/candidates-claude.csv` da.
+
+| Usul | P@10 qatʼiy / yumshoq | P@20 | P@50 | P@100 |
+|---|---|---|---|---|
+| frequency | 0.30 / 0.80 | 0.25 / 0.65 | 0.26 / 0.52 | 0.30 / 0.47 |
+| tfidf | 0.40 / 0.90 | 0.45 / 0.80 | 0.36 / 0.60 | 0.35 / 0.54 |
+| cvalue | 0.30 / 0.80 | 0.30 / 0.65 | 0.32 / 0.58 | 0.32 / 0.49 |
+
+Qatʼiy hisobda faqat `1` termin, yumshoq hisobda `1` va `?` termin hisoblanadi.
+
+**Bu natijalarni MDI'da qanday ko'rsatish mumkin.** Faqat "AI bahosi" sifatida,
+inson bahosi o'rnida emas. Cheklovlar:
+
+1. **Baholovchi bitta va u AI.** Inson baholovchilar bilan kelishuv (kappa)
+   hali o'lchanmagan.
+2. **Baholash to'liq ko'r emas.** Claude baholashdan oldin reytinglarning top-20
+   ro'yxatini va qaysi nomzod lug'atda borligini ko'rgan.
+3. **Farqlar kichik.** K = 10 da bir nomzod 0.10 ga teng, shuning uchun usullar
+   orasidagi farqni statistik ahamiyatli deb bo'lmaydi.
+4. **Natija yumshoq hisobga juda bog'liq.** Qatʼiy va yumshoq hisob orasidagi
+   katta farq `so'z`, `til`, `ma'no`, `shakl`, `ega` kabi `?` nomzodlardan
+   kelib chiqadi. Ular umumiy maʼnoda ham, termin maʼnosida ham ishlatiladi.
+
+Shu cheklovlar bilan kuzatish: uchala usulda ham top-100 ning taxminan
+uchdan bir qismi aniq termin. TF-IDF har bir K da qolgan ikki usuldan yuqori
+yoki ularga teng, lekin farq kichik.
+
 ### Keyingi qadamlar
 
 1. Har bir usulning top-100 nomzodini inson baholashi ("termin / termin emas")
    va shu asosda haqiqiy Precision@K. **Vosita tayyor:**
    `python -m app.evaluation.judgments`. Shablon
-   `data/judgments/candidates-A1.csv` va `candidates-A2.csv` baholovchilarni kutmoqda.
+   `data/judgments/candidates-A1.csv` va `candidates-A2.csv` inson baholovchilarni
+   kutmoqda. Ular to'ldirilgach, `score` buyrug'iga `candidates-claude.csv` ni ham
+   berib, AI va inson baholari orasidagi kappa o'lchanadi.
 2. Kontrast korpus va so'z turkumi andozalarini qo'shib, natijani **validation**
    bo'yicha solishtirish.
 3. Lug'atda yo'q, yuqori reytingli nomzodlarni `needs_review` holatida
