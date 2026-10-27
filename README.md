@@ -86,6 +86,14 @@ hisoblanadi.
 PYTHONPATH=backend python -m app.nlp.candidates --method cvalue --top 30 --reference-terms data/terms.json --output reports/candidates-cvalue.csv
 ```
 
+Nomzodlarni inson baholashi (ko'r shablon, so'ng qatʼiy/yumshoq Precision@K va
+Cohen's kappa; qoidalar — yo'riqnomaning 9-bo'limi):
+
+```bash
+PYTHONPATH=backend python -m app.evaluation.judgments template --rankings reports/candidates-*.csv --k 100 --output data/judgments/candidates-A1.csv
+PYTHONPATH=backend python -m app.evaluation.judgments score --rankings reports/candidates-*.csv --judgments data/judgments/candidates-A1.csv
+```
+
 Birinchi natijalar va ularning cheklovlari: [docs/project-plan.md](docs/project-plan.md).
 
 ## Annotatsiya (dataset)
@@ -166,6 +174,7 @@ backend/app/evaluation/metrics.py     exact va partial Precision/Recall/F1
 backend/app/evaluation/errors.py      xato toifalari (missed, false_positive, boundary, ...)
 backend/app/evaluation/evaluate.py    baholash CLI va JSON hisobot
 backend/app/evaluation/ranking.py     Precision@K va qamrov
+backend/app/evaluation/judgments.py   nomzodlarni inson baholashi: shablon, P@K, kappa
 backend/app/nlp/tokenize.py           tokenizator va iboralarga ajratish
 backend/app/nlp/lemmatize.py          korpusga tayangan qo'shimcha ajratgich
 backend/app/nlp/stopwords.py          yordamchi so'zlar ro'yxati (tekshirilmagan)
@@ -175,6 +184,7 @@ data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
 data/raw/                             asl matnlar (o'zgartirilmaydi)
 data/inline/                          belgilash uchun nusxalar ([[...]] shu yerda qo'shiladi)
+data/judgments/                       nomzodlarga inson baholari (har bir baholovchi alohida CSV)
 data/annotated/, data/processed/      JSONL annotatsiya va ajratilgan to'plamlar
 data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach paydo bo'ladi)
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar

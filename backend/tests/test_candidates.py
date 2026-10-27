@@ -88,6 +88,12 @@ def test_candidates_do_not_start_or_end_with_stopword_or_cross_punctuation():
     assert set(found) == {("fonema",), ("morfema",), ("sintaksis",), ("fonema", "va", "morfema")}
 
 
+def test_stopword_check_applies_to_lemma():
+    # "o'z" stop-ro'yxatda; "o'ziga" qo'shimchasi olingach "o'z" bo'ladi.
+    found = extract_candidates({"d": "o'z o'ziga fonema"}, max_words=1)
+    assert set(found) == {("fonema",)}
+
+
 def test_only_last_word_is_lemmatized():
     found = extract_candidates({"d": "tilning tovushlari. Til va tovush."}, max_words=2)
     assert ("tilning", "tovush") in found

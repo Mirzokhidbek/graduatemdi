@@ -217,3 +217,73 @@ Manbalar kam bo'lsa, `validation` va `test` bo'sh qolishi mumkin; skript bu
 haqda ogohlantiradi. Og'irligi teng manbalarda standart nisbat bilan
 `validation` 3-manbadan, `test` esa 5-manbadan boshlab to'ladi. Lekin bitta
 manbadan iborat test to'plami ishonchli baholash uchun yetarli emas.
+
+## 9. Termin nomzodlarini baholash (3-bosqich)
+
+Statistik usullar topgan nomzodlar ro'yxatini inson baholaydi. Bu matnni
+belgilashdan alohida va ancha tezroq ish: har bir nomzodga bitta baho.
+
+### 9.1. Shablon
+
+```bash
+PYTHONPATH=backend python -m app.evaluation.judgments template --rankings reports/candidates-frequency.csv reports/candidates-tfidf.csv reports/candidates-cvalue.csv --k 100 --output data/judgments/candidates-A1.csv
+```
+
+Har bir baholovchi uchun alohida fayl bo'ladi (`candidates-A1.csv`,
+`candidates-A2.csv`). Fayl UTF-8 formatida va Excel yoki Numbers'da ochiladi.
+Ustunlar:
+
+| Ustun | Kim to'ldiradi | Maʼnosi |
+|---|---|---|
+| `candidate` | skript | nomzodning lug'at shakli (oxirgi so'z qo'shimchasiz, kichik harf, `'` apostrof) |
+| `judgment` | **baholovchi** | `1`, `0`, `?` yoki bo'sh |
+| `notes` | baholovchi | ixtiyoriy izoh |
+| `frequency` | skript | korpusda necha marta uchragani |
+| `example` | skript | korpusdan bitta misol, nomzod `⟦ ⟧` ichida |
+
+Ro'yxat **ko'r**: qaysi usul topgani, nechanchi o'rinda turgani va lug'atda
+bor-yo'qligi ko'rsatilmaydi, nomzodlar alifbo tartibida. Baholash tugaguncha
+`reports/` dagi reytinglarni ko'rmang. Shablon qayta yaratilsa, qo'yilgan
+baholar saqlanadi va faqat yangi nomzodlar qo'shiladi.
+
+### 9.2. Baho qoidalari
+
+Nomzod **butunligicha** baholanadi:
+
+- **`1` — termin.** Nomzod tilshunoslikdagi tushunchaning to'liq nomi (1-bo'lim).
+  Lug'at shakli bo'lgani uchun qo'shimchasiz ko'rinishi baholanadi:
+  `undosh tovush` (matnda *undosh tovushlar*) — `1`.
+- **`0` — termin emas:**
+  - umumiy yoki yordamchi so'z (`bu`, `ko'ra`, `bilan`);
+  - fe'l shakli (*yoziladi*);
+  - terminning bo'lagi: `qo'shma` yolg'iz o'zi termin emas, `qo'shma gap` esa termin;
+  - tinish belgisi yo'qligi sababli ikki tushuncha qo'shilib qolgan n-gram;
+  - lemmatizatsiya natijasida tanib bo'lmaydigan darajada qisqargan shakl.
+- **`?` — noaniq.** Maʼnosi kontekstga bog'liq (umumiy maʼnoda ham, termin
+  maʼnosida ham keng ishlatiladi) yoki tilshunoslikka yaqin, lekin termin
+  ekaniga ishonch yo'q. Sababini `notes` ga yozing.
+
+Misol jumla nomzod qaysi maʼnoda ishlatilganini ko'rsatadi. Lekin baho shu
+bitta misolga emas, nomzodning tilshunoslik matnlaridagi odatiy maʼnosiga
+qarab qo'yiladi.
+
+### 9.3. Ikki baholovchi
+
+Ikkala baholovchi bir-biridan **mustaqil** baholaydi va ish tugaguncha baholar
+muhokama qilinmaydi. Keyin:
+
+```bash
+PYTHONPATH=backend python -m app.evaluation.judgments score --rankings reports/candidates-frequency.csv reports/candidates-tfidf.csv reports/candidates-cvalue.csv --judgments data/judgments/candidates-A1.csv data/judgments/candidates-A2.csv
+```
+
+Natijada quyidagilar chiqadi:
+
+- har bir usul va baholovchi uchun **qatʼiy** P@K (faqat `1`) va **yumshoq**
+  P@K (`1` va `?`);
+- baholovchilar orasidagi kelishuv: **Cohen's kappa**, faqat ikkalasi `0`/`1`
+  qo'ygan nomzodlar bo'yicha.
+
+Top-K ichida baholanmagan nomzod bo'lsa, qiymat `≥` bilan chiqadi, yaʼni bu
+pastki chegara. Kelishmovchiliklar keyin muhokama qilinib, kelishilgan baho
+uchinchi fayl sifatida saqlanishi mumkin (masalan, `candidates-consensus.csv`).
+

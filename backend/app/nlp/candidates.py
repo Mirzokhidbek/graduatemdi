@@ -92,10 +92,12 @@ def extract_candidates(
                     continue
                 for end in range(start + 1, min(start + max_words, len(phrase)) + 1):
                     last = phrase[end - 1]
-                    if last.norm in stopwords:
+                    lemma = lemmatizer.lemma(last.norm)
+                    # Qo'shimchali shakl ham (``o'ziga`` -> ``o'z``) tekshiriladi.
+                    if last.norm in stopwords or lemma in stopwords:
                         continue
                     words = [token.norm for token in phrase[start : end - 1]]
-                    key = (*words, lemmatizer.lemma(last.norm))
+                    key = (*words, lemma)
                     if sum(len(word) for word in key) < MIN_CANDIDATE_LETTERS:
                         continue
                     candidate = candidates.setdefault(key, Candidate(key))
