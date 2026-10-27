@@ -5,7 +5,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
 (dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
+skript, inline belgidan JSONL yaratuvchi vosita bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -66,6 +66,12 @@ Manbalar reyestri: [data/sources.json](data/sources.json), belgilangan matnlar:
 PYTHONPATH=backend python -m app.dataset.validate
 ```
 
+Inline belgilangan matndan (`[[Fonemalar|fonema]]`) JSONL yaratish:
+
+```bash
+PYTHONPATH=backend python -m app.dataset.inline data/raw/doc-0001.txt --doc-id doc-0001 --annotator A1 -o data/annotated/doc-0001.jsonl
+```
+
 Format namunasi (dataset emas):
 
 ```bash
@@ -107,6 +113,7 @@ backend/app/cli.py                    buyruq satri
 backend/app/dataset/sources.py        manbalar reyestrini tekshirish
 backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
 backend/app/dataset/validate.py       tekshiruvchi CLI
+backend/app/dataset/inline.py         [[...]] belgili matndan JSONL yaratish
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
