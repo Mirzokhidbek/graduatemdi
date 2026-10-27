@@ -30,7 +30,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
 | 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | reja |
-| 7 | Precision/Recall/F1, exact span match, xato tahlili | reja |
+| 7 | Precision/Recall/F1, exact span match, xato tahlili | qisman: baholash skripti va metodika tayyor; real o'lchov yo'q |
 
 ## 1-bosqich: baseline qarorlari
 
@@ -113,5 +113,8 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 3. ~~`doc_id` bo'yicha train/val/test ajratuvchi skript~~ — bajarildi:
    `python -m app.dataset.split` (takroriy matnli manbalar bitta guruhda,
    manifest muzlatiladi).
-4. Baseline'ni test to'plamida baholash (exact span P/R/F1).
+4. ~~Baholash skripti (exact/partial P/R/F1, xato tahlili)~~ — bajarildi:
+   `python -m app.evaluation.evaluate`, metodika:
+   [experiment-methodology.md](experiment-methodology.md). Real natija
+   dataset tayyor bo'lgach olinadi.
 5. Ikki annotator orasidagi kelishuvni o'lchash.

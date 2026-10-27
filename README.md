@@ -5,7 +5,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
 (dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
+skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, lekin belgilangan maʼlumot hali yo'q, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -79,6 +79,13 @@ Manba darajasida train/validation/test ga ajratish (taqsimot
 PYTHONPATH=backend python -m app.dataset.split
 ```
 
+Baseline'ni baholash (exact/partial Precision, Recall, F1 va xato tahlili;
+metodika: [docs/experiment-methodology.md](docs/experiment-methodology.md)):
+
+```bash
+PYTHONPATH=backend python -m app.evaluation.evaluate data/processed/validation.jsonl --output reports/dictionary-validation.json
+```
+
 Format namunasi (dataset emas):
 
 ```bash
@@ -122,6 +129,9 @@ backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
 backend/app/dataset/validate.py       tekshiruvchi CLI
 backend/app/dataset/inline.py         [[...]] belgili matndan JSONL yaratish
 backend/app/dataset/split.py          doc_id bo'yicha train/validation/test ajratish
+backend/app/evaluation/metrics.py     exact va partial Precision/Recall/F1
+backend/app/evaluation/errors.py      xato toifalari (missed, false_positive, boundary, ...)
+backend/app/evaluation/evaluate.py    baholash CLI va JSON hisobot
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
@@ -129,5 +139,6 @@ data/raw, processed, annotated        asl matnlar, ajratilgan to'plamlar, annota
 data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach paydo bo'ladi)
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
+docs/experiment-methodology.md        baholash metodikasi
 docs/examples/                        format namunalari (dataset emas)
 ```
