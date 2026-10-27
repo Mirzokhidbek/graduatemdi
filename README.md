@@ -5,7 +5,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
 (dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript, inline belgidan JSONL yaratuvchi vosita bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
+skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -72,6 +72,13 @@ Inline belgilangan matndan (`[[Fonemalar|fonema]]`) JSONL yaratish:
 PYTHONPATH=backend python -m app.dataset.inline data/raw/doc-0001.txt --doc-id doc-0001 --annotator A1 -o data/annotated/doc-0001.jsonl
 ```
 
+Manba darajasida train/validation/test ga ajratish (taqsimot
+`data/splits/manifest.json` da muzlatiladi):
+
+```bash
+PYTHONPATH=backend python -m app.dataset.split
+```
+
 Format namunasi (dataset emas):
 
 ```bash
@@ -114,10 +121,12 @@ backend/app/dataset/sources.py        manbalar reyestrini tekshirish
 backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
 backend/app/dataset/validate.py       tekshiruvchi CLI
 backend/app/dataset/inline.py         [[...]] belgili matndan JSONL yaratish
+backend/app/dataset/split.py          doc_id bo'yicha train/validation/test ajratish
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
-data/raw, processed, annotated        asl matnlar, oraliq fayllar, annotatsiya
+data/raw, processed, annotated        asl matnlar, ajratilgan to'plamlar, annotatsiya
+data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach paydo bo'ladi)
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
 docs/examples/                        format namunalari (dataset emas)

@@ -181,9 +181,35 @@ PYTHONPATH=backend python -m app.dataset.validate
 Annotatorlar orasidagi kelishuvni o'lchash (inter-annotator agreement)
 keyingi versiyada qo'shiladi.
 
-## 8. Train/validation/test haqida
+## 8. Train/validation/test ajratish
 
 Dataset **manba darajasida** (`doc_id` bo'yicha) ajratiladi: bitta manbadan
-olingan yozuvlar turli to'plamlarga tushmasligi kerak. Tekshiruvchi skript bir
-xil matnli takroriy yozuvlar haqida ogohlantiradi, chunki ular to'plamlar
-orasida maʼlumot sizib kirishiga sabab bo'ladi.
+olingan yozuvlar turli to'plamlarga tushmaydi.
+
+```bash
+PYTHONPATH=backend python -m app.dataset.split
+```
+
+- Standart holatda faqat `reviewed` yozuvlar olinadi (`--include-drafts`
+  bilan qoralamalarni ham qo'shish mumkin).
+- Bir xil matn (registr, apostrof va bo'shliq farqisiz) uchragan manbalar
+  bitta guruhga birlashtiriladi va bitta to'plamga tushadi.
+- Standart nisbat — 0.7 / 0.15 / 0.15. Muvozanat spanlar soni bo'yicha
+  saqlanadi. Natija deterministik: tasodifiylik yo'q va kiruvchi fayllar
+  tartibiga bog'liq emas.
+- Taqsimot `data/splits/manifest.json` da saqlanadi va **muzlatiladi**: dataset
+  o'sganda eski manbalar o'z to'plamida qoladi, faqat yangilari taqsimlanadi.
+  Manifest git'ga commit qilinadi.
+- `data/processed/{train,validation,test}.jsonl` manifest asosida qayta
+  yaratiladi, shuning uchun git'ga qo'shilmaydi.
+- `--dry-run` taqsimotni ko'rsatadi, lekin hech narsa yozmaydi.
+
+**Test to'plami qoidasi:** test to'plami faqat yakuniy baholashda ishlatiladi.
+Model yoki qoidalarni sozlash, qo'shimchalar ro'yxatini kengaytirish va xato
+tahlili `validation` to'plamida qilinadi. Test natijasiga qarab tizim
+o'zgartirilsa, bu albatta hujjatlashtiriladi.
+
+Manbalar kam bo'lsa, `validation` va `test` bo'sh qolishi mumkin; skript bu
+haqda ogohlantiradi. Og'irligi teng manbalarda standart nisbat bilan
+`validation` 3-manbadan, `test` esa 5-manbadan boshlab to'ladi. Lekin bitta
+manbadan iborat test to'plami ishonchli baholash uchun yetarli emas.

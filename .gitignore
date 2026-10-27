@@ -11,6 +11,9 @@ __pycache__/
 # Tizim fayllari
 .DS_Store
 
+# Manifestdan qayta yaratiladigan to'plamlar
+data/processed/*.jsonl
+
 # Frontend (keyingi bosqichlar)
 node_modules/
 dist/

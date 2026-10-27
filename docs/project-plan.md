@@ -25,7 +25,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 |---|---|---|
 | 0 | Rejalashtirish, tuzilma, README | bajarildi |
 | 1 | Lug'atga asoslangan baseline + testlar | bajarildi |
-| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: yo'riqnoma, format va tekshiruvchi tayyor; maʼlumot va split yo'q |
+| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: yo'riqnoma, format, tekshiruvchi, inline konvertor va split tayyor; belgilangan maʼlumot yo'q |
 | 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | reja |
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
@@ -110,7 +110,8 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
    (foydalanuvchi taqdim etadi), `data/sources.json` ni to'ldirish.
 2. ~~Inline belgidan (`[[fonemalar|fonema]]`) JSONL yaratuvchi skript~~ —
    bajarildi: `python -m app.dataset.inline`.
-3. `doc_id` bo'yicha train/val/test ajratuvchi skript (takroriy matnlar bitta
-   to'plamga tushadi, test to'plami muzlatiladi).
+3. ~~`doc_id` bo'yicha train/val/test ajratuvchi skript~~ — bajarildi:
+   `python -m app.dataset.split` (takroriy matnli manbalar bitta guruhda,
+   manifest muzlatiladi).
 4. Baseline'ni test to'plamida baholash (exact span P/R/F1).
 5. Ikki annotator orasidagi kelishuvni o'lchash.
