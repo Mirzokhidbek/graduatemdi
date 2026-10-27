@@ -70,6 +70,36 @@ class AnnotationError(ValueError):
         super().__init__(f"Annotatsiyada xatolar topildi:\n{details}")
 
 
+def duplicate_key(text: str) -> str:
+    """Takroriy matnlarni aniqlash kaliti: registr, apostrof va bo'shliq farqlari hisobga olinmaydi."""
+    return normalize_form(text)
+
+
+def record_to_dict(record: AnnotatedRecord) -> dict[str, Any]:
+    """Yozuvni JSONL formatidagi obyektga qaytaradi (``surface`` bilan)."""
+    obj: dict[str, Any] = {
+        "id": record.id,
+        "doc_id": record.doc_id,
+        "text": record.text,
+        "terms": [
+            {
+                "start": span.start,
+                "end": span.end,
+                "term": span.term,
+                "label": span.label,
+                "surface": record.text[span.start : span.end],
+            }
+            for span in record.terms
+        ],
+    }
+    if record.annotator is not None:
+        obj["annotator"] = record.annotator
+    obj["status"] = record.status
+    if record.notes is not None:
+        obj["notes"] = record.notes
+    return obj
+
+
 def _is_int(value: Any) -> bool:
     return isinstance(value, int) and not isinstance(value, bool)
 
@@ -255,7 +285,7 @@ def validate_files(
                 )
                 continue
 
-            text_key = normalize_form(record.text)
+            text_key = duplicate_key(record.text)
             if text_key in first_seen_text:
                 other_location, other_id = first_seen_text[text_key]
                 report.warnings.append(
