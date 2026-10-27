@@ -3,7 +3,9 @@
 Oʻzbek tilidagi ona tili va tilshunoslikka oid matnlardan terminlarni avtomatik
 aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
-**Joriy holat:** 1-bosqich — lug'atga asoslangan baseline. Web-interfeys, API,
+**Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
+(dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
+skript bor, lekin belgilangan maʼlumot hali yo'q. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -54,6 +56,22 @@ Natija JSON ro'yxat ko'rinishida chiqadi. Har bir topilma uchun:
 | `review_required` | inson tekshiruvi kerakmi |
 | `candidates[]` | termin yozuvi: soha, taʼrif, manba, `match_type` (`term`/`variant`/`synonym`) va `normalization` (meʼyoriy shakl tavsiyasi) |
 
+## Annotatsiya (dataset)
+
+Qoidalar va format: [docs/data-annotation-guide.md](docs/data-annotation-guide.md).
+Manbalar reyestri: [data/sources.json](data/sources.json), belgilangan matnlar:
+`data/annotated/*.jsonl`. Tekshirish:
+
+```bash
+PYTHONPATH=backend python -m app.dataset.validate
+```
+
+Format namunasi (dataset emas):
+
+```bash
+PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.example.jsonl --sources docs/examples/sources.example.json
+```
+
 ## Terminlar bazasi
 
 [data/terms.json](data/terms.json) — JSON massiv. Maydonlar:
@@ -86,8 +104,14 @@ backend/app/nlp/dictionary_matcher.py lug'atga asoslangan aniqlagich
 backend/app/services/normalization.py meʼyoriy shakl tavsiyasi
 backend/app/services/analyzer.py      natijani JSON ko'rinishiga keltirish
 backend/app/cli.py                    buyruq satri
+backend/app/dataset/sources.py        manbalar reyestrini tekshirish
+backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
+backend/app/dataset/validate.py       tekshiruvchi CLI
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
-data/raw, processed, annotated        2-bosqich datasetlari uchun
+data/sources.json                     matn manbalari va foydalanish huquqlari
+data/raw, processed, annotated        asl matnlar, oraliq fayllar, annotatsiya
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar
+docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
+docs/examples/                        format namunalari (dataset emas)
 ```

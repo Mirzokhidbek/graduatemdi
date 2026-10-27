@@ -25,7 +25,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 |---|---|---|
 | 0 | Rejalashtirish, tuzilma, README | bajarildi |
 | 1 | Lug'atga asoslangan baseline + testlar | bajarildi |
-| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | keyingi |
+| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: yo'riqnoma, format va tekshiruvchi tayyor; maʼlumot va split yo'q |
 | 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | reja |
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
@@ -82,12 +82,35 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 Aniqlik (Precision/Recall/F1) hali **o'lchanmagan**. Buning uchun 2-bosqichdagi
 inson belgilagan test to'plami kerak.
 
-## Keyingi qadam (2-bosqich)
+## 2-bosqich: bajarilgan qism
 
-1. `docs/data-annotation-guide.md`: termin chegarasi qoidalari (qo'shimcha span
-   ichiga kiradimi, ichma-ich terminlar, omonimlar).
-2. Manbalari, mualliflari va foydalanish huquqi qayd qilingan matnlarni
-   `data/raw/` ga yig'ish (foydalanuvchi taqdim etadi).
-3. JSONL annotatsiya formati va uni tekshiruvchi skript + testlar.
-4. Matn darajasida train/val/test ajratish va takroriy matnlarni aniqlash.
-5. Baseline'ni test to'plamida baholash skripti (exact span P/R/F1).
+- [data-annotation-guide.md](data-annotation-guide.md): nima termin hisoblanadi,
+  chegara qoidalari (qo'shimcha span ichida, tinish belgilari tashqarida, tekis
+  annotatsiya, ellipsis), JSONL formati, manbalar va ish jarayoni.
+- `data/sources.json` — manbalar reyestri (hozircha bo'sh). `rights` maydoni majburiy.
+- `python -m app.dataset.validate` quyidagilarni tekshiradi:
+  - JSON sintaksisi;
+  - majburiy maydonlar va ularning turlari;
+  - `[start, end)` chegaralari va `surface` mosligi;
+  - span so'z chegarasiga to'g'ri kelishi (lug'at aniqlagichi bilan bir xil qoida);
+  - spanlar ustma-ust tushmasligi;
+  - fayllar bo'yicha `id` noyobligi;
+  - `doc_id` manbalar reyestrida borligi.
+  
+  Ogohlantirish beradigan holatlar: takroriy matnlar va NFC bo'lmagan Unicode.
+
+**Muhim qaror:** span qo'shimchani ham o'z ichiga oladi (*fonemalarning*),
+lug'at shakli esa alohida `term` maydonida yoziladi. Bu lug'at aniqlagichining
+`surface` natijasi bilan bir xil. Shuning uchun exact span match baholashni
+to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
+
+## Keyingi qadam
+
+1. Manbalari va foydalanish huquqi aniq bo'lgan matnlarni yig'ish
+   (foydalanuvchi taqdim etadi), `data/sources.json` ni to'ldirish.
+2. Annotatsiyani qulaylashtirish uchun inline belgidan (`[[fonemalar|fonema]]`)
+   JSONL yaratuvchi yordamchi skript. Pozitsiyalarni qo'lda sanash xatoga moyil.
+3. `doc_id` bo'yicha train/val/test ajratuvchi skript (takroriy matnlar bitta
+   to'plamga tushadi, test to'plami muzlatiladi).
+4. Baseline'ni test to'plamida baholash (exact span P/R/F1).
+5. Ikki annotator orasidagi kelishuvni o'lchash.

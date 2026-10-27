@@ -47,3 +47,32 @@ def normalize_text(text: str) -> str:
 def normalize_form(form: str) -> str:
     """Lug'at shaklini normallashtiradi va so'zlar orasidagi bo'shliqlarni birlashtiradi."""
     return " ".join(normalize_text(form).split())
+
+
+def _is_inner_apostrophe(normalized: str, index: int) -> bool:
+    # "so'z", "ma'no": apostrofning ikki tomonida ham harf bo'lsa, u so'z ichida.
+    return (
+        normalized[index] == APOSTROPHE
+        and index > 0
+        and index + 1 < len(normalized)
+        and normalized[index - 1].isalpha()
+        and normalized[index + 1].isalpha()
+    )
+
+
+def is_word_start(normalized: str, index: int) -> bool:
+    """``index`` pozitsiyasi so'z boshi bo'la oladimi (normallashtirilgan matnda).
+
+    ``dictionary_matcher`` dagi regex chegaralari bilan bir xil qoida.
+    """
+    if index == 0:
+        return True
+    previous = index - 1
+    return not (normalized[previous].isalnum() or _is_inner_apostrophe(normalized, previous))
+
+
+def is_word_end(normalized: str, index: int) -> bool:
+    """``index`` (span oxiri, eksklyuziv) so'z oxiri bo'la oladimi."""
+    if index == len(normalized):
+        return True
+    return not (normalized[index].isalnum() or _is_inner_apostrophe(normalized, index))
