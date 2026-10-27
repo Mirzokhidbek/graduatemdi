@@ -108,8 +108,8 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 
 1. Manbalari va foydalanish huquqi aniq bo'lgan matnlarni yig'ish
    (foydalanuvchi taqdim etadi), `data/sources.json` ni to'ldirish.
-2. Annotatsiyani qulaylashtirish uchun inline belgidan (`[[fonemalar|fonema]]`)
-   JSONL yaratuvchi yordamchi skript. Pozitsiyalarni qo'lda sanash xatoga moyil.
+2. ~~Inline belgidan (`[[fonemalar|fonema]]`) JSONL yaratuvchi skript~~ —
+   bajarildi: `python -m app.dataset.inline`.
 3. `doc_id` bo'yicha train/val/test ajratuvchi skript (takroriy matnlar bitta
    to'plamga tushadi, test to'plami muzlatiladi).
 4. Baseline'ni test to'plamida baholash (exact span P/R/F1).

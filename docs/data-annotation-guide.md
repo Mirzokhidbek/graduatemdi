@@ -102,6 +102,44 @@ obyekt bo'ladi va u bitta yozuvni ifodalaydi (bir paragraf yoki bir necha gap).
 Matn Unicode NFC shaklida saqlanishi kerak. Boshqa shaklda bo'lsa,
 tekshiruvchi skript ogohlantiradi.
 
+### 5.1. Inline belgilash (tavsiya etiladigan usul)
+
+Pozitsiyalarni qo'lda sanash xatoga moyil. Shuning uchun matnni oddiy `.txt`
+faylda belgilab, JSONL'ni skript orqali yaratish tavsiya etiladi:
+
+```text
+[[Fonetika]] boʻlimida [[unli|unli tovush]] va [[undosh tovushlar|undosh tovush]]
+oʻrganiladi.
+
+[[Qoʻshma gaplarning|qoʻshma gap]] tuzilishi haqida qoʻshimcha maʼlumot.
+```
+
+- `[[ko'rinish|termin]]` — matndagi shakl va lug'at shakli (2–3-bo'limlar).
+- `[[ko'rinish]]` — lug'at shakli ko'rinishning kichik harfli nusxasi bilan
+  bir xil bo'lganda (*[[Fonetika]]* → `fonetika`).
+- Bo'sh qator paragraflarni ajratadi. Har bir paragraf alohida yozuv bo'ladi:
+  `<doc_id>-p001`, `<doc_id>-p002`, ...
+- Ko'p so'zli termin qator tashlash orqali davom etishi mumkin.
+- Belgilanmagan paragraf `terms: []` bo'ladi, yaʼni "termin yo'q" deb
+  hisoblanadi. Shuning uchun faylning to'liq ko'rib chiqilganiga ishonch hosil
+  qiling.
+
+```bash
+PYTHONPATH=backend python -m app.dataset.inline data/raw/doc-0001.txt --doc-id doc-0001 --annotator A1 -o data/annotated/doc-0001.jsonl
+```
+
+Skript quyidagicha ishlaydi:
+
+- avval `doc_id` manbalar reyestrida borligini tekshiradi;
+- matnni Unicode NFC shakliga va qator oxirlarini `\n` ga keltiradi;
+- natijani 2-bo'lim qoidalari bo'yicha tekshiradi va xatolarni asl fayldagi
+  `qator:ustun` bilan ko'rsatadi (masalan, `[[fonem]]alar` — so'z o'rtasida tugaydi);
+- birorta xato bo'lsa, hech narsa yozmaydi;
+- mavjud JSONL faylni `--force` siz qayta yozmaydi.
+
+**Muhim:** paragraf qo'shilsa yoki o'chirilsa, keyingi yozuvlarning `id` lari
+siljiydi. Hujjat qayta yaratilgandan keyin `id` lar o'zgarishini hisobga oling.
+
 ## 6. Manbalar (`data/sources.json`)
 
 Har bir `doc_id` manbalar reyestrida bo'lishi shart. **Foydalanish huquqi
@@ -129,7 +167,7 @@ Majburiy maydonlar: `id`, `title`, `rights`. Qolganlari matn yoki `null`
 
 1. Matn manbasi va huquqi `data/sources.json` ga yoziladi.
 2. Asl matn `data/raw/` ga saqlanadi.
-3. Annotator yozuvni belgilaydi: `status: "draft"`.
+3. Annotator matnni belgilaydi (5.1-bo'lim) va JSONL yaratadi: `status: "draft"`.
 4. Ikkinchi odam tekshiradi. Kelishmovchilik bo'lsa, shu yo'riqnoma asosida
    hal qilinadi; yo'riqnomada javob bo'lmasa, yo'riqnoma to'ldiriladi.
 5. Tekshirilgan yozuv `status: "reviewed"` holatiga o'tadi. Baholashda faqat
