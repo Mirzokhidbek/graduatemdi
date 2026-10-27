@@ -60,6 +60,13 @@ lemmatizatordan o'tkaziladi. Ro'yxat to'liq bo'lmasa, natija pastki chegara
 bo'ladi. Shuning uchun asosiy natija sifatida har bir usulning top-K nomzodini
 inson "termin / termin emas" deb baholaydi va bu baho alohida saqlanadi.
 
+Inson bahosi (`python -m app.evaluation.judgments`): usullarning top-K
+nomzodlari birlashtiriladi (pooling) va ko'r holda, alifbo tartibida baholanadi
+(yo'riqnomaning 9-bo'limi). Natijada qatʼiy va yumshoq P@K hamda baholovchilar
+orasidagi Cohen's kappa hisobot qilinadi. Pooling sababli har bir usulning
+top-K ro'yxati to'liq baholangan bo'ladi, shuning uchun usullar bir xil
+sharoitda solishtiriladi.
+
 ## 4. Xato tahlili
 
 `python -m app.evaluation.evaluate` har bir xatoni toifaga ajratadi va

@@ -138,7 +138,7 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 
 ### Birinchi ishga tushirish (2026-10-27, 42 ta Vikipediya maqolasi)
 
-Korpus: 17 876 token, 18 976 nomzod, ulardan 2 517 tasi f ≥ 2.
+Korpus: 17 876 token, 18 692 nomzod, ulardan 2 481 tasi f ≥ 2.
 Maʼlum terminlar — `data/terms.json` dagi 19 ta shakl.
 
 | Usul | P@10 | P@20 | P@50 | P@100 |
@@ -173,7 +173,9 @@ Kuzatilgan muammolar (to'liq reyting: `reports/candidates-*.csv`):
 ### Keyingi qadamlar
 
 1. Har bir usulning top-100 nomzodini inson baholashi ("termin / termin emas")
-   va shu asosda haqiqiy Precision@K. Bu baho alohida faylda saqlanadi.
+   va shu asosda haqiqiy Precision@K. **Vosita tayyor:**
+   `python -m app.evaluation.judgments`. Shablon
+   `data/judgments/candidates-A1.csv` va `candidates-A2.csv` baholovchilarni kutmoqda.
 2. Kontrast korpus va so'z turkumi andozalarini qo'shib, natijani **validation**
    bo'yicha solishtirish.
 3. Lug'atda yo'q, yuqori reytingli nomzodlarni `needs_review` holatida
