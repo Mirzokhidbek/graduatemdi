@@ -226,3 +226,14 @@ def test_cli_errors_write_nothing(tmp_path, capsys):
 def test_cli_missing_input(tmp_path, capsys):
     assert run(tmp_path / "yoq.txt") == 1
     assert "o'qib bo'lmadi" in capsys.readouterr().err
+
+
+def test_cli_refuses_unmarked_file(tmp_path, capsys):
+    source = tmp_path / "doc.txt"
+    source.write_text("Bu matnda belgi yoʻq.\n\nIkkinchi paragraf.", encoding="utf-8")
+    output = tmp_path / "doc.jsonl"
+    assert run(source, "-o", str(output)) == 1
+    assert "--allow-empty" in capsys.readouterr().err
+    assert not output.exists()
+    assert run(source, "-o", str(output), "--allow-empty") == 0
+    assert [json.loads(line)["terms"] for line in output.read_text(encoding="utf-8").splitlines()] == [[], []]

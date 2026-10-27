@@ -106,8 +106,13 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
 
 ## Keyingi qadam
 
-1. Manbalari va foydalanish huquqi aniq bo'lgan matnlarni yig'ish
-   (foydalanuvchi taqdim etadi), `data/sources.json` ni to'ldirish.
+1. ~~Manbalari va huquqi aniq matnlarni yig'ish~~ — boshlandi: Oʻzbekcha
+   Vikipediyadan 42 ta tilshunoslik maqolasi (312 paragraf, ~18 ming so'z,
+   CC BY-SA 4.0, har biri aniq revid bilan). Cheklovlar: barchasi bitta
+   janrda (ensiklopedik), ko'pchiligi Oʻzbekiston milliy ensiklopediyasidan
+   ko'chirilgan, ayrimlarida havolalardan qolgan probelsiz joylar bor
+   (`Fonemafonologiya`) — matn o'zgartirilmadi. Darslik va maqolalar kabi boshqa
+   janrlar foydalanish ruxsati bilan qo'shilishi kerak.
 2. ~~Inline belgidan (`[[fonemalar|fonema]]`) JSONL yaratuvchi skript~~ —
    bajarildi: `python -m app.dataset.inline`.
 3. ~~`doc_id` bo'yicha train/val/test ajratuvchi skript~~ — bajarildi:

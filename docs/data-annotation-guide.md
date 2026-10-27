@@ -165,9 +165,13 @@ Majburiy maydonlar: `id`, `title`, `rights`. Qolganlari matn yoki `null`
 
 ## 7. Ish jarayoni
 
-1. Matn manbasi va huquqi `data/sources.json` ga yoziladi.
-2. Asl matn `data/raw/` ga saqlanadi.
-3. Annotator matnni belgilaydi (5.1-bo'lim) va JSONL yaratadi: `status: "draft"`.
+1. Matn manbasi va huquqi `data/sources.json` ga yoziladi
+   (Vikipediya uchun `fetch_wikipedia` buni avtomatik qiladi).
+2. Asl matn `data/raw/` ga saqlanadi va **o'zgartirilmaydi**.
+3. Annotator `data/inline/<doc_id>.txt` nusxasida terminlarni belgilaydi
+   (5.1-bo'lim), butun faylni oxirigacha ko'rib chiqadi va JSONL yaratadi:
+   `status: "draft"`. Bitta ham belgi bo'lmagan fayl `--allow-empty` siz
+   qabul qilinmaydi.
 4. Ikkinchi odam tekshiradi. Kelishmovchilik bo'lsa, shu yo'riqnoma asosida
    hal qilinadi; yo'riqnomada javob bo'lmasa, yo'riqnoma to'ldiriladi.
 5. Tekshirilgan yozuv `status: "reviewed"` holatiga o'tadi. Baholashda faqat
