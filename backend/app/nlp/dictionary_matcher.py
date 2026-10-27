@@ -123,10 +123,15 @@ class DictionaryMatcher:
                 # Bir yozuvda shakl takrorlansa, termin > variant > sinonim ustun.
                 per_entry.setdefault(entry.id, TermCandidate(entry, form, match_type))
 
+        self._known_forms = frozenset(index)
         self._patterns = [
             (_compile_form(form), tuple(candidates.values()))
             for form, candidates in index.items()
         ]
+
+    def has_form(self, form: str) -> bool:
+        """Shakl (termin, variant yoki sinonim) lug'atda bormi — registr va apostrofsiz."""
+        return normalize_form(form) in self._known_forms
 
     def find(self, text: str) -> list[TermMatch]:
         if not isinstance(text, str):
