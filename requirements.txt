@@ -1,0 +1,2 @@
+# 1-bosqich: faqat testlar uchun. Keyingi bosqichlarda kerak bo'lgan paketlar shu yerga qo'shiladi.
+pytest==9.1.1
