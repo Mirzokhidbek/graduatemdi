@@ -5,7 +5,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
 (dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, Vikipediyadan 42 ta maqola yig'ilgan, lekin ular hali inson tomonidan belgilanmagan, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
+skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, Vikipediyadan 41 ta maqola yig'ilgan, lekin ular hali inson tomonidan belgilanmagan, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -58,8 +58,8 @@ Natija JSON ro'yxat ko'rinishida chiqadi. Har bir topilma uchun:
 
 ## Maʼlumotlar
 
-`data/raw/` da Oʻzbekcha Vikipediyadan olingan **42 ta tilshunoslik maqolasi**
-bor: 312 paragraf, ~18 ming so'z. Har birining aniq versiyasi (revid) va
+`data/raw/` da Oʻzbekcha Vikipediyadan olingan **41 ta tilshunoslik maqolasi**
+bor: 310 paragraf, ~18 ming so'z. Har birining aniq versiyasi (revid) va
 litsenziyasi `data/sources.json` da qayd qilingan. Matnlar **hali
 belgilanmagan**: belgilash uchun nusxalar `data/inline/` da turibdi.
 
