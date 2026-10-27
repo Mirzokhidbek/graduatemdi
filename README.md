@@ -3,10 +3,14 @@
 Oʻzbek tilidagi ona tili va tilshunoslikka oid matnlardan terminlarni avtomatik
 aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
-**Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
-(dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, Vikipediyadan 41 ta maqola yig'ilgan, lekin ular hali inson tomonidan belgilanmagan, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
-statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
+**Joriy holat** (batafsil — [docs/project-plan.md](docs/project-plan.md)):
+
+- ishlaydi: lug'atga asoslangan termin aniqlagich, web interfeys va REST API;
+- tayyor: dataset vositalari (annotatsiya, tekshiruv, train/val/test ajratish,
+  baholash) va statistik termin nomzodlari (frequency, TF-IDF, C-value);
+- korpus: Vikipediyadan 41 ta tilshunoslik maqolasi, **hali inson tomonidan
+  belgilanmagan** — shuning uchun aniqlik (P/R/F1) hali o'lchanmagan;
+- yo'q: ML/transformer modeli (belgilangan maʼlumot kerak).
 
 ## Talablar
 
@@ -26,6 +30,30 @@ pip install -r requirements.txt
 ```bash
 python -m pytest
 ```
+
+## Web interfeys va API
+
+Backend (FastAPI):
+
+```bash
+PYTHONPATH=backend uvicorn app.main:app --reload --port 8000
+```
+
+API hujjati: http://127.0.0.1:8000/docs. Endpointlar:
+
+- `POST /api/analyze` — `{"text": "..."}` → topilgan terminlar;
+- `GET /api/terms` — terminlar bazasi;
+- `GET /api/health` — holat va matn uzunligi cheklovi.
+
+Frontend (Node 20+; batafsil — [frontend/README.md](frontend/README.md)):
+
+```bash
+cd frontend && npm install && npm run dev
+```
+
+Brauzerda http://localhost:5173 ni oching. Agar 8000-port band bo'lsa,
+backendni boshqa portda ishga tushiring va frontendni
+`UZTERM_API_URL=http://127.0.0.1:<port> npm run dev` bilan oching.
 
 ## Matnni tahlil qilish (CLI)
 
@@ -158,6 +186,10 @@ tur yoki manbasiz `approved` bo'lsa, barcha xatolar ro'yxati bilan rad etiladi.
 ## Tuzilma
 
 ```text
+backend/app/main.py                   FastAPI ilovasi
+backend/app/api/routes.py             /api/analyze, /api/terms, /api/health
+backend/app/schemas.py                Pydantic so'rov/javob modellari
+backend/app/core/config.py            sozlamalar (UZTERM_TERMS_PATH, UZTERM_MAX_TEXT_CHARS)
 backend/app/database/term_store.py    bazani yuklash va tekshirish
 backend/app/nlp/normalize.py          registr va apostrof normalizatsiyasi (uzunlik saqlanadi)
 backend/app/nlp/dictionary_matcher.py lug'atga asoslangan aniqlagich
@@ -180,6 +212,7 @@ backend/app/nlp/lemmatize.py          korpusga tayangan qo'shimcha ajratgich
 backend/app/nlp/stopwords.py          yordamchi so'zlar ro'yxati (tekshirilmagan)
 backend/app/nlp/candidates.py         n-gram nomzodlar, frequency/TF-IDF/C-value
 backend/tests/                        pytest testlari
+frontend/                             React + TypeScript + Vite web interfeys
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
 data/raw/                             asl matnlar (o'zgartirilmaydi)
