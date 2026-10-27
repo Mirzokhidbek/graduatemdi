@@ -29,7 +29,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 | 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | qisman: usullar va Precision@K tayyor; inson bahosi yo'q |
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
-| 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | reja |
+| 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | bajarildi (MVP): API, web interfeys, JSON/CSV eksport |
 | 7 | Precision/Recall/F1, exact span match, xato tahlili | qisman: baholash skripti va metodika tayyor; real o'lchov yo'q |
 
 ## 1-bosqich: baseline qarorlari
@@ -218,3 +218,27 @@ yoki ularga teng, lekin farq kichik.
 3. Lug'atda yo'q, yuqori reytingli nomzodlarni `needs_review` holatida
    `terms.json` ga taklif qilish — faqat inson tasdig'idan keyin. Test
    to'plamidagi terminlar lug'atga qo'shilmaydi (metodika, 2-bo'lim).
+
+## 6-bosqich: API va web interfeys
+
+- **Backend** (`backend/app/main.py`). Endpointlar: `POST /api/analyze`,
+  `GET /api/terms`, `GET /api/health`.
+  - Terminlar bazasi ishga tushishda tekshiriladi: buzuq baza bo'lsa, server
+    ishga tushmaydi.
+  - Matn uzunligi cheklangan (`UZTERM_MAX_TEXT_CHARS`, standart 20 000
+    belgi); oshsa, 413 qaytadi.
+  - Kutilmagan xatoda ichki tafsilotlar qaytarilmaydi.
+  - Javobda pozitsiyalar Unicode belgilari bo'yicha ekani ko'rsatiladi.
+- **Frontend** (`frontend/`).
+  - Matn maydoni, matnda terminlarni ajratib ko'rsatish, natijalar jadvali va
+    termin tafsilotlari (taʼrif, manba, meʼyoriy shakl belgisi).
+  - Holatlar: yuklanish, xato, bo'sh natija va "matn tahlildan keyin o'zgardi".
+  - JSON va CSV eksport. Ishonchlilik ustunida "hisoblanmagan" yoziladi,
+    chunki lug'at usuli ehtimollik bermaydi.
+- **Tekshiruv.**
+  - Testlar: backend `test_api.py` (pytest) va frontend 14 ta `vitest` testi.
+  - Brauzerda qo'lda tekshirildi: namuna matn, termin tanlash, emoji'li matnda
+    pozitsiyalar, eski natija ogohlantirishi, backend o'chiq holati.
+- **Cheklovlar.** Autentifikatsiya yo'q (lokal prototip). Lug'atni tahrirlash
+  interfeysi yo'q. Frontend komponentlari uchun brauzer testlari (React Testing
+  Library) qo'shilmagan; ular qo'lda tekshirildi.
