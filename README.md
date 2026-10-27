@@ -76,6 +76,18 @@ orqali) va natija ham CC BY-SA 4.0 bilan tarqatilishi kerak. Oʻzbekcha
 Vikipediyadagi tilshunoslik maqolalarining bir qismi Oʻzbekiston milliy
 ensiklopediyasidan ko'chirilgan; MDI matnida buni ham ko'rsatish tavsiya etiladi.
 
+## Statistik termin nomzodlari (3-bosqich)
+
+Korpusdan lug'atga bog'liq bo'lmagan termin nomzodlari. Reyting usullari:
+chastota, TF-IDF va C-value. Precision@K maʼlum terminlar ro'yxatiga nisbatan
+hisoblanadi.
+
+```bash
+PYTHONPATH=backend python -m app.nlp.candidates --method cvalue --top 30 --reference-terms data/terms.json --output reports/candidates-cvalue.csv
+```
+
+Birinchi natijalar va ularning cheklovlari: [docs/project-plan.md](docs/project-plan.md).
+
 ## Annotatsiya (dataset)
 
 Qoidalar va format: [docs/data-annotation-guide.md](docs/data-annotation-guide.md).
@@ -153,6 +165,11 @@ backend/app/dataset/fetch_wikipedia.py Vikipediya maqolalarini manbasi bilan yuk
 backend/app/evaluation/metrics.py     exact va partial Precision/Recall/F1
 backend/app/evaluation/errors.py      xato toifalari (missed, false_positive, boundary, ...)
 backend/app/evaluation/evaluate.py    baholash CLI va JSON hisobot
+backend/app/evaluation/ranking.py     Precision@K va qamrov
+backend/app/nlp/tokenize.py           tokenizator va iboralarga ajratish
+backend/app/nlp/lemmatize.py          korpusga tayangan qo'shimcha ajratgich
+backend/app/nlp/stopwords.py          yordamchi so'zlar ro'yxati (tekshirilmagan)
+backend/app/nlp/candidates.py         n-gram nomzodlar, frequency/TF-IDF/C-value
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
@@ -164,4 +181,5 @@ docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
 docs/experiment-methodology.md        baholash metodikasi
 docs/examples/                        format namunalari (dataset emas)
+reports/                              ishga tushirish natijalari (nomzodlar reytingi)
 ```

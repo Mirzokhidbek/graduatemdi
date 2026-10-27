@@ -26,7 +26,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 | 0 | Rejalashtirish, tuzilma, README | bajarildi |
 | 1 | Lug'atga asoslangan baseline + testlar | bajarildi |
 | 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: yo'riqnoma, format, tekshiruvchi, inline konvertor va split tayyor; belgilangan maʼlumot yo'q |
-| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | reja |
+| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | qisman: usullar va Precision@K tayyor; inson bahosi yo'q |
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
 | 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | reja |
@@ -123,3 +123,59 @@ to'g'ridan-to'g'ri qilish mumkin, BIO teglari ham so'z darajasida qoladi.
    [experiment-methodology.md](experiment-methodology.md). Real natija
    dataset tayyor bo'lgach olinadi.
 5. Ikki annotator orasidagi kelishuvni o'lchash.
+
+## 3-bosqich: statistik termin nomzodlari
+
+`python -m app.nlp.candidates --method {frequency,tfidf,cvalue}`:
+
+- **Nomzodlar** — 1–4 so'zli n-gramlar. Ular tinish belgisini kesib o'tmaydi va
+  yordamchi so'z bilan boshlanmaydi yoki tugamaydi
+  ([stopwords.py](../backend/app/nlp/stopwords.py), ro'yxatni Claude tuzgan,
+  tekshirilmagan). Oxirgi so'z korpusga tayangan lemmatizator bilan qo'shimchasiz
+  holga keltiriladi. Formulalar [candidates.py](../backend/app/nlp/candidates.py) da.
+- **Precision@K** — maʼlum terminlar ro'yxatiga nisbatan:
+  `--reference-terms` (lug'at) yoki `--reference-annotations` (inson belgilagan JSONL).
+
+### Birinchi ishga tushirish (2026-10-27, 42 ta Vikipediya maqolasi)
+
+Korpus: 17 876 token, 18 976 nomzod, ulardan 2 517 tasi f ≥ 2.
+Maʼlum terminlar — `data/terms.json` dagi 19 ta shakl.
+
+| Usul | P@10 | P@20 | P@50 | P@100 |
+|---|---|---|---|---|
+| frequency | 0.100 | 0.150 | 0.140 | 0.110 |
+| tfidf | 0.200 | 0.250 | 0.160 | 0.120 |
+| cvalue | 0.100 | 0.150 | 0.180 | 0.110 |
+
+**Bu raqamlar tizim aniqligi emas.** Maʼlum terminlar ro'yxati juda kichik
+(19 ta) va namunaviy. Reyting tepasidagi ko'p nomzodlar (`gap`, `fe'l`, `ega`,
+`grammatik`, `kategoriya`, `leksika`, `so'z birikma`) tilshunoslik terminiga
+o'xshaydi, lekin lug'atda yo'qligi uchun xato deb sanalgan. Shuning uchun bu
+qiymatlar faqat **pastki chegara**. Usullarni solishtirish uchun ham hali
+asos emas: farqlar bir necha nomzodga teng.
+
+Kuzatilgan muammolar (to'liq reyting: `reports/candidates-*.csv`):
+
+1. **Umumiy so'zlar ustunlik qiladi** (`so'z`, `til`, `ma'no`, `shakl`). Korpus
+   bitta sohadan bo'lgani uchun umumiy tilshunoslik leksikasi ham "termin"
+   kabi ko'rinadi. Kontrast korpus (sohaga oid bo'lmagan matnlar) bilan
+   solishtirish kerak (masalan, weirdness yoki log-likelihood).
+2. **Tasniflanmagan yordamchi so'zlar.** `ko'ra` (ko'makchi) stop-ro'yxatda yo'q.
+   Ro'yxat test natijasiga qarab emas, tilshunos tekshiruvi asosida
+   to'ldirilishi kerak.
+3. **Bitta katta hujjatning taʼsiri.** `yoziladi` (f = 68, df = 1) faqat `Imlo`
+   maqolasidan keladi, u korpusning ~14 % ini tashkil qiladi. TF-IDF uni
+   yuqoriga ko'taradi.
+4. **So'z turkumi filtri yo'q.** Fe'llar (`yoziladi`) va sifatlar (`grammatik`)
+   ham nomzod bo'ladi. POS-tegger yoki morfologik qoidalar bilan
+   (masalan, "ot yoki sifat + ot" andozasi) cheklash keyingi qadam.
+
+### Keyingi qadamlar
+
+1. Har bir usulning top-100 nomzodini inson baholashi ("termin / termin emas")
+   va shu asosda haqiqiy Precision@K. Bu baho alohida faylda saqlanadi.
+2. Kontrast korpus va so'z turkumi andozalarini qo'shib, natijani **validation**
+   bo'yicha solishtirish.
+3. Lug'atda yo'q, yuqori reytingli nomzodlarni `needs_review` holatida
+   `terms.json` ga taklif qilish — faqat inson tasdig'idan keyin. Test
+   to'plamidagi terminlar lug'atga qo'shilmaydi (metodika, 2-bo'lim).

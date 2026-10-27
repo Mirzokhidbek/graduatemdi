@@ -51,6 +51,15 @@ spanlari birga sanaladi.
 `F1 = 2PR / (P + R)`. Maxraj 0 bo'lsa, ko'rsatkich aniqlanmagan (`—`)
 deb yoziladi, 0 yoki 1 deb emas.
 
+### 3.1. Termin nomzodlari reytingi
+
+`python -m app.nlp.candidates` reytingini Precision@K bilan baholaydi:
+`Precision@K = (birinchi K nomzod ichidagi maʼlum terminlar) / K`. Bunda
+maʼlum terminlar ro'yxati (lug'at yoki annotatsiya) va nomzodlar bir xil
+lemmatizatordan o'tkaziladi. Ro'yxat to'liq bo'lmasa, natija pastki chegara
+bo'ladi. Shuning uchun asosiy natija sifatida har bir usulning top-K nomzodini
+inson "termin / termin emas" deb baholaydi va bu baho alohida saqlanadi.
+
 ## 4. Xato tahlili
 
 `python -m app.evaluation.evaluate` har bir xatoni toifaga ajratadi va
