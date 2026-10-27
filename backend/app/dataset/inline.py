@@ -227,6 +227,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--status", choices=RECORD_STATUSES, default=STATUS_DRAFT)
     parser.add_argument("--sources", type=Path, default=DEFAULT_SOURCES, help="manbalar reyestri")
     parser.add_argument("--force", action="store_true", help="mavjud chiqish faylini qayta yozish")
+    parser.add_argument(
+        "--allow-empty", action="store_true", help="bitta ham belgi bo'lmagan faylni qabul qilish"
+    )
     args = parser.parse_args(argv)
 
     try:
@@ -269,8 +272,16 @@ def main(argv: list[str] | None = None) -> int:
             print(f"  - {issue}", file=sys.stderr)
         return 1
 
-    lines = "".join(json.dumps(obj, ensure_ascii=False) + "\n" for obj in result.objects)
     span_count = sum(len(record.terms) for record in result.records)
+    if span_count == 0 and not args.allow_empty:
+        print(
+            f"{args.input} da bitta ham [[...]] belgisi yo'q. Belgilanmagan fayl barcha paragraflarni "
+            "'termin yo'q' deb yozib yuboradi. Matnda haqiqatan termin bo'lmasa, --allow-empty bering.",
+            file=sys.stderr,
+        )
+        return 1
+
+    lines = "".join(json.dumps(obj, ensure_ascii=False) + "\n" for obj in result.objects)
     if args.output is None:
         sys.stdout.write(lines)
     else:

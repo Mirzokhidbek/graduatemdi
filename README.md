@@ -5,7 +5,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat:** 1-bosqich (lug'atga asoslangan baseline) tayyor; 2-bosqich
 (dataset) boshlandi — annotatsiya yo'riqnomasi, JSONL formati va tekshiruvchi
-skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, lekin belgilangan maʼlumot hali yo'q, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
+skript, inline belgidan JSONL yaratuvchi va to'plamlarga ajratuvchi vositalar hamda baholash skripti bor, Vikipediyadan 42 ta maqola yig'ilgan, lekin ular hali inson tomonidan belgilanmagan, shuning uchun aniqlik hali o'lchanmagan. Web-interfeys, API,
 statistik va ML modellari hali yo'q (rejani [docs/project-plan.md](docs/project-plan.md) da ko'ring).
 
 ## Talablar
@@ -55,6 +55,26 @@ Natija JSON ro'yxat ko'rinishida chiqadi. Har bir topilma uchun:
 | `ambiguous` | bitta shakl bir nechta yozuvga mos keldi |
 | `review_required` | inson tekshiruvi kerakmi |
 | `candidates[]` | termin yozuvi: soha, taʼrif, manba, `match_type` (`term`/`variant`/`synonym`) va `normalization` (meʼyoriy shakl tavsiyasi) |
+
+## Maʼlumotlar
+
+`data/raw/` da Oʻzbekcha Vikipediyadan olingan **42 ta tilshunoslik maqolasi**
+bor: 312 paragraf, ~18 ming so'z. Har birining aniq versiyasi (revid) va
+litsenziyasi `data/sources.json` da qayd qilingan. Matnlar **hali
+belgilanmagan**: belgilash uchun nusxalar `data/inline/` da turibdi.
+
+Yangi maqola qo'shish:
+
+```bash
+PYTHONPATH=backend python -m app.dataset.fetch_wikipedia "Maqola nomi"
+```
+
+**Litsenziya:** Vikipediya matnlari
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) ostida. Ularni va
+ular asosidagi annotatsiyani tarqatishda mualliflar ko'rsatilishi (manba havolasi
+orqali) va natija ham CC BY-SA 4.0 bilan tarqatilishi kerak. Oʻzbekcha
+Vikipediyadagi tilshunoslik maqolalarining bir qismi Oʻzbekiston milliy
+ensiklopediyasidan ko'chirilgan; MDI matnida buni ham ko'rsatish tavsiya etiladi.
 
 ## Annotatsiya (dataset)
 
@@ -129,13 +149,16 @@ backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
 backend/app/dataset/validate.py       tekshiruvchi CLI
 backend/app/dataset/inline.py         [[...]] belgili matndan JSONL yaratish
 backend/app/dataset/split.py          doc_id bo'yicha train/validation/test ajratish
+backend/app/dataset/fetch_wikipedia.py Vikipediya maqolalarini manbasi bilan yuklash
 backend/app/evaluation/metrics.py     exact va partial Precision/Recall/F1
 backend/app/evaluation/errors.py      xato toifalari (missed, false_positive, boundary, ...)
 backend/app/evaluation/evaluate.py    baholash CLI va JSON hisobot
 backend/tests/                        pytest testlari
 data/terms.json                       terminlar bazasi (namuna)
 data/sources.json                     matn manbalari va foydalanish huquqlari
-data/raw, processed, annotated        asl matnlar, ajratilgan to'plamlar, annotatsiya
+data/raw/                             asl matnlar (o'zgartirilmaydi)
+data/inline/                          belgilash uchun nusxalar ([[...]] shu yerda qo'shiladi)
+data/annotated/, data/processed/      JSONL annotatsiya va ajratilgan to'plamlar
 data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach paydo bo'ladi)
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi

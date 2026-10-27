@@ -1,0 +1,21 @@
+Fonologiyada allofon (; yunoncha ἄλλος dan; állos — φωνή: boshqa, phōnē: „ovoz“, „tovush“) bir nechta ogʻzaki tovushlar toʻplamini yoki muayyan tilda bitta fonemani talaffuz qilish uchun ishlatiladigan belgilar. Masalan, ingliz tilida [t] (stop [stɒp] dagi kabi) va aspiratsiyalangan shakl [tʰ] (yuqorida boʻlgani kabi [ˈtʰɒp]) /t/ fonemasi uchun allofonlar boʻlib, bu ikkisi hind va tay kabi baʼzi tillarda turli fonemalar hisoblanadi. Boshqa tomondan, ispan tilida [d] (dolor [doʻlor] kabi) va [ð] (nada [ˈnaða] kabi) /d/ fonemasi uchun allofonlar bo‘lsa, bu ikkisi ingliz tilida turli fonemalar hisoblanadi.
+
+Muayyan vaziyatda tanlangan oʻziga xos allofon koʻpincha fonetik kontekstdan bashorat qilinadi, bunday allofonlar pozitsion variantlar deb ataladi, lekin baʼzi allofonlar erkin oʻzgaruvchanlikda uchraydi. Ovozni bir xil fonemaning boshqa allofoni bilan almashtirish, odatda, soʻzning maʼnosini oʻzgartirmaydi, ammo natija mahalliy boʻlmagan yoki hatto tushunarsiz boʻlishi mumkin.
+
+Muayyan tilning ona tilida soʻzlashuvchilar tildagi bir fonemani yagona oʻziga xos tovush sifatida qabul qiladilar va bitta fonemalarni talaffuz qilish uchun ishlatiladigan allofefonik oʻzgarishlardan „ham bexabar va hatto hayratda qolishadi“.
+
+"Allofon" atamasi 1929-yilda Benjamin Lee Whorf tomonidan kiritilgan. Bu bilan u ilk fonema nazariyasini mustahkamlashda tamal toshi qo‘ygan deb hisoblanadi. Bu atama George L. Trager va Bernard Bloch tomonidan 1941-yilda ingliz fonologiyasiga oid maqolada ommalashgan va Amerika strukturalistik anʼanalari doirasida standart foydalanishning bir qismiga aylandi.
+
+Alloton tonik allofondir, masalan, standart mandarin tilidagi neytral ohang shu qatoriga kiradi.
+
+Fonemalar tovushlarning oʻzi emas, balki nutq tovushlarining mavhumligi boʻlgani sababli, ular toʻgʻridan-toʻgʻri fonetik transkripsiyaga ega emas. Ular koʻp allofonik oʻzgarishlarsiz amalga oshirilganda, oddiy keng transkripsiya qoʻllanadi. Biroq, fonemaning toʻldiruvchi allofonlari mavjud boʻlganda, allofoniya ahamiyatli boʻlib, narsalar yanada murakkablashadi. Koʻpincha, diakritikani talab qilmaslik maʼnosida allofonlardan faqat bittasini transkripsiya qilish oddiy boʻlsa, fonema uchun oʻsha vakillik tanlanadi.
+
+Biroq, bunday allofonlar bir nechta boʻlishi mumkin yoki tilshunos ruxsat berganidan koʻra koʻproq aniqlikni afzal koʻrishi mumkin. Bunday hollarda fonemani ifodalovchi allofonni aniqlash uchun „boshqa joy sharti“ dan foydalanish odatiy holdir. „Boshqa joyda“ allofoni boshqalar uchun shartlar fonologik qoidalar bilan tavsiflanganidan keyin ham qoladi.
+
+Misol uchun, ingliz tilida unlilarning ogʻzaki va burunli allofonlari mavjud. Mohiyat shuki, unlilar bir xil bo‘g‘indagi burun undoshidan oldingina burun unlisi bo‘ladi; boshqa joylarda ular ogʻzaki. Shuning uchun „boshqa joyda“ konventsiyasiga koʻra, ogʻzaki allofonlar asosiy, ingliz tilidagi burun unlilari esa ogʻzaki fonemalarning allofonlari hisoblanadi.
+
+Boshqa hollarda allofon o‘z fonemasini ifodalash uchun tanlanishi mumkin, chunki u dunyo tillarida boshqa allofonlarga qaraganda ko‘proq uchraydi, u fonemaning tarixiy kelib chiqishini aks ettiradi yoki fonemik diagrammaga yanada muvozanatli ko‘rinish beradi.
+
+Arxifonemalar uchun keng tarqalgan boʻlib qoʻllanadigan alternativlar [m], [n], [ŋ] /N/ kabi bosh harfdan foydalanishdir.
+
+Kamdan-kam hollarda tilshunos biron bir allofonga imtiyoz bermaslik uchun dingbatlar kabi mavhum belgilar bilan fonemalarni ifodalashi mumkin.
