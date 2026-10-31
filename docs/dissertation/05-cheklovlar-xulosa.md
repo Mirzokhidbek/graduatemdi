@@ -19,9 +19,10 @@
    - Korpus 41 ta ensiklopedik maqoladan iborat.
    - Test 6 ta maqola va 35 ta paragraf, bootstrap oraliqlari keng (± 0.08).
    - Darslik, ilmiy maqola va dissertatsiya janrlari uchun natija noma'lum.
-4. **Transformer modellari sinab ko'rilmadi.** Ishlab chiqish muhitida
-   HuggingFace'ga kirish yo'q edi. XLM-R kabi ko'p tilli modellar katta ehtimol
-   bilan yuqoriroq natija beradi, lekin ular ko'proq belgilangan maʼlumot talab qiladi.
+4. **Transformer natijasi hali yo'q.** XLM-R kodi va Colab notebook tayyor
+   (3.4.1, 4.7), lekin ishlab chiqish muhitida HuggingFace'ga kirish bo'lmagani
+   uchun model hali o'qitilmagan. Ko'p tilli modellar odatda ko'proq belgilangan
+   maʼlumot talab qiladi.
 5. **Weirdness usuli sinalmadi.** Usul amalga oshirilgan, lekin unga kerakli
    kontrast korpus (sohaga oid bo'lmagan oʻzbek matnlari) yig'ilmagan.
 6. **Morfologiya qoidaviy.** Qo'shimchalar ro'yxati faqat ot so'z turkumini
@@ -72,8 +73,9 @@
      jadvallari qayta hisoblanadi.
 2. **Korpusni kengaytirish.** Darsliklar, ilmiy maqolalar va dissertatsiya
    avtoreferatlari foydalanish huquqi bilan qo'shiladi. Maqsad 1 000+ paragraf.
-3. **Transformer modeli.** XLM-R yoki mBERT asosida token classification.
-   CRF bilan bir xil test to'plamida va bir xil metrika bilan solishtiriladi.
+3. **Transformer modeli.** `notebooks/xlmr_colab.ipynb` Colab'da ishga
+   tushiriladi va 4.7-bo'lim to'ldiriladi. Inson oltin standarti tayyor bo'lgach,
+   tajriba qayta takrorlanadi.
 4. **Lug'atni tasdiqlash.** Terminlar izohli va terminologik lug'atlar bilan
    solishtiriladi va `approved` holati manba bilan beriladi. Variant va
    sinonimlar bog'lanadi (*lingvistika ↔ tilshunoslik*).
@@ -91,17 +93,21 @@
    TREC-8, 1999.
 2. Cohen J. A coefficient of agreement for nominal scales // Educational and
    Psychological Measurement, 1960, 20(1), 37–46.
-3. Efron B., Tibshirani R. J. An Introduction to the Bootstrap. Chapman & Hall, 1993.
-4. Frantzi K., Ananiadou S., Mima H. Automatic recognition of multi-word terms:
+3. Conneau A., Khandelwal K., Goyal N. va boshq. Unsupervised cross-lingual representation
+   learning at scale // ACL, 2020, 8440–8451.
+4. Devlin J., Chang M.-W., Lee K., Toutanova K. BERT: pre-training of deep bidirectional
+   transformers for language understanding // NAACL-HLT, 2019, 4171–4186.
+5. Efron B., Tibshirani R. J. An Introduction to the Bootstrap. Chapman & Hall, 1993.
+6. Frantzi K., Ananiadou S., Mima H. Automatic recognition of multi-word terms:
    the C-value/NC-value method // International Journal on Digital Libraries,
    2000, 3(2), 115–130.
-5. Lafferty J., McCallum A., Pereira F. Conditional random fields: probabilistic
+7. Lafferty J., McCallum A., Pereira F. Conditional random fields: probabilistic
    models for segmenting and labeling sequence data // ICML, 2001.
-6. Okazaki N. CRFsuite: a fast implementation of Conditional Random Fields (CRFs),
+8. Okazaki N. CRFsuite: a fast implementation of Conditional Random Fields (CRFs),
    2007. http://www.chokkan.org/software/crfsuite/
-7. Ramshaw L., Marcus M. Text chunking using transformation-based learning //
+9. Ramshaw L., Marcus M. Text chunking using transformation-based learning //
    Third Workshop on Very Large Corpora, 1995.
-8. Tjong Kim Sang E. F., De Meulder F. Introduction to the CoNLL-2003 shared task:
+10. Tjong Kim Sang E. F., De Meulder F. Introduction to the CoNLL-2003 shared task:
    language-independent named entity recognition // CoNLL, 2003.
-9. Oʻzbek tilining asosiy imlo qoidalari. Vazirlar Mahkamasining 1995-yil
+11. Oʻzbek tilining asosiy imlo qoidalari. Vazirlar Mahkamasining 1995-yil
    24-avgustdagi 339-son qarori bilan tasdiqlangan.

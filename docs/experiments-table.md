@@ -50,4 +50,4 @@ Maʼlumot: train 221 / validation 54 / test 35 paragraf; termin spanlari: train 
 | Faqat lug'at | 0.711 (270/380) | 0.696 (272/391) |
 | Lug'at + morfologik qoidalar | 0.921 (350/380) | 0.908 (355/391) |
 
-Morfologik qoidalardagi `-ka` fonotaktika qoidasi test xatolari tahlilidan keyin qo'shilgan (test bo'yicha sozlangan). Undan oldin: test 0.861, test (claude2) 0.849; validation o'zgarmagan (0.936).
+Morfologik qoidalardagi `-ka` fonotaktika qoidasi va `-im`/`-ing` (I/II shaxs birlik egaligi) qoidasi test xatolari tahlilidan keyin qo'shilgan (test bo'yicha sozlangan). Undan oldin: test 0.861, test (claude2) 0.849; validation ikkala qoidada ham o'zgarmagan (0.936).

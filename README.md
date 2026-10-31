@@ -13,7 +13,9 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
   belgilangan (kumush maʼlumot, 2555 termin), inson annotatsiyasi kutilmoqda.
   Dastlabki natijalar (faqat kumush maʼlumotda): CRF + lug'at F1 = 0.65,
   lug'at 0.55 — [docs/results.md](docs/results.md);
-- yo'q: transformer modeli, inson oltin standarti.
+- tayyor, lekin hali ishga tushirilmagan: transformer (XLM-R) — Colab'da
+  ishga tushiriladi: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb);
+- yo'q: inson oltin standarti.
 
 ## Talablar
 
@@ -178,6 +180,7 @@ PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.examp
 | 6. Baholash | `python -m app.models.experiment`, `python -m app.evaluation.report` → [docs/experiments-table.md](docs/experiments-table.md) |
 | 7. Web interfeys | `streamlit run streamlit_app.py` (shuningdek React: tahlil, annotatsiya, baholash) |
 | 8. Ilmiy hujjat | [docs/dissertation/](docs/dissertation/README.md) |
+| Transformer (XLM-R) | `app/models/transformer.py`; Colab: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb) |
 
 ## AI annotatsiyasi, lug'at va CRF
 

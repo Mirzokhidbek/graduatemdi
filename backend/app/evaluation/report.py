@@ -13,6 +13,7 @@ NAMES = {
     "dictionary_train": "Lug'at (train, 450 termin)",
     "crf": "CRF",
     "crf_gazetteer": "CRF + gazetteer",
+    "transformer": "Transformer",
     "lowercase": "O'zgarishsiz (kichik harf)",
     "corpus_lemmatizer": "Korpus lemmatizatori",
     "dictionary": "Faqat lug'at",
@@ -96,8 +97,31 @@ def build(reports_dir: Path) -> str:
             "",
             *normalization_table(norm),
             "",
-            "Morfologik qoidalardagi `-ka` fonotaktika qoidasi test xatolari tahlilidan keyin qo'shilgan "
-            "(test bo'yicha sozlangan). Undan oldin: test 0.861, test (claude2) 0.849; validation o'zgarmagan (0.936).",
+            (
+                "Morfologik qoidalardagi `-ka` fonotaktika qoidasi va `-im`/`-ing` (I/II shaxs birlik egaligi) "
+                "qoidasi test xatolari tahlilidan keyin qo'shilgan (test bo'yicha sozlangan). Undan oldin: "
+                "test 0.861, test (claude2) 0.849; validation ikkala qoidada ham o'zgarmagan (0.936)."
+            ),
+        ]
+    for label, file in (("test", "experiment-transformer.json"), ("test, claude2", "experiment-transformer-test2.json")):
+        transformer_path = reports_dir / file
+        if not transformer_path.exists():
+            continue
+        tr = json.loads(transformer_path.read_text(encoding="utf-8"))
+        boot = tr["test_bootstrap"]
+        lines += [
+            "",
+            f"## 6. Transformer — {label} (`{tr['model']}`, eng yaxshi epoxa: {tr['best_epoch']})",
+            "",
+            *detection_table(tr, "test"),
+            "",
+            f"`{boot['baseline']}` dan farqning 95 % oralig'i: "
+            + "; ".join(f"{NAMES.get(n, n)} [{ci[0]:+.3f}, {ci[1]:+.3f}]" for n, ci in boot["delta_vs_baseline_ci95"].items())
+            + ".",
+            "",
+            "Train'da uchramagan terminlar: "
+            + "; ".join(f"{NAMES.get(n, n)} {r['found']}/{r['gold']}" for n, r in tr["test_unseen_terms"].items())
+            + ".",
         ]
     return "\n".join(lines) + "\n"
 
