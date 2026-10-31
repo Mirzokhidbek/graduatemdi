@@ -159,9 +159,9 @@ ro'yxatlar ishlatilmadi (`data/silver/claude2/`, `app/annotation/sequential.py`)
   lekin bu ham AI. Inson tekshiruvi va ikki inson annotator kelishuvi hali yo'q.
 - **Test to'plami kichik** (6 maqola, 35 paragraf). Oraliqlar keng, janr bitta
   (ensiklopedik).
-- **Transformer modeli sinab ko'rilmadi.** Muhitda HuggingFace'ga kirish yo'q
-  edi. CRF (Lafferty va boshq., 2001) shu ish uchun klassik va tushuntiriladigan
-  baseline.
+- **Transformer modeli hali o'qitilmagan.** Muhitda HuggingFace'ga kirish yo'q
+  edi. Kod va Colab notebook tayyor (`notebooks/xlmr_colab.ipynb`). CRF
+  (Lafferty va boshq., 2001) shu ish uchun klassik va tushuntiriladigan baseline.
 
 ## 6. Keyingi qadamlar
 

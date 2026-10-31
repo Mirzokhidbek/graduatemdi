@@ -33,6 +33,12 @@ python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output report
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \
        --judgments data/judgments/candidates-claude.csv
 
+# 5b. Transformer (GPU, Google Colab: notebooks/xlmr_colab.ipynb)
+pip install torch transformers sentencepiece
+python -m app.models.transformer --model xlm-roberta-base         # 4.7-bo'lim, models/transformer/
+python -m app.models.transformer --load --test-files data/annotations/claude2/*.jsonl \
+       --output reports/experiment-transformer-test2.json
+
 # 6. Taqqoslash jadvali
 python -m app.evaluation.report                       # -> docs/experiments-table.md
 

@@ -163,3 +163,26 @@ POS filtri fe'l va nisbiy sifat shakllarini (*yoziladi*, *grammatik*) chiqarib,
 TF-IDF reytingining yuqori qismini tozalaydi. Top-100 da filtrdan keyin 3–6 ta
 yangi, baholanmagan nomzod paydo bo'ldi. Ular termin emas deb sanaldi, shuning
 uchun qiymatlar "≥" bilan berilgan.
+
+## 4.7. Transformer modeli
+
+XLM-RoBERTa base (3.4.1) Google Colab'da (T4 GPU) o'qitiladi:
+`notebooks/xlmr_colab.ipynb`. Notebook to'plamlarni manifestdan tiklaydi,
+modelni o'qitadi va lug'at, CRF, CRF+G bilan bir xil testda solishtiradi.
+Natija `docs/experiments-table.md` ning 6-bo'limiga avtomatik qo'shiladi.
+
+**Holat: hali ishga tushirilmagan.** Ishlab chiqish muhitida HuggingFace'ga
+kirish yo'q edi. Kod CPU'da kichik, tasodifiy boshlangan model bilan
+tekshirilgan: o'qitish, epoxa tanlash, saqlash, qayta yuklash (natija aynan
+takrorlanadi) va hisobot. Ushbu bo'lim Colab natijasi bilan to'ldiriladi:
+
+| Usul | P | R | F1 | F1, 95 % oraliq | CRF+G dan farq, 95 % | Yangi terminlar |
+|---|---|---|---|---|---|---|
+| CRF+G | 0.792 | 0.550 | 0.649 | [0.566, 0.719] | — | 2 / 146 |
+| XLM-R base | … | … | … | … | … | … |
+
+Natijani talqin qilishda ikki narsa hisobga olinadi:
+
+- train atigi 221 paragraf; transformer odatda ko'proq maʼlumot talab qiladi;
+- XLM-R CRF+G dan farqli ravishda lug'atdan foydalanmaydi, shuning uchun
+  uni gazetteersiz CRF bilan ham solishtirish kerak.

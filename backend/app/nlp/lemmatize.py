@@ -56,5 +56,5 @@ def personal_possessive(suffix: str) -> bool:
     Har qanday o'qilish hisobga olinadi: "imi" = "-im" + "-i"? yoki "-i" + "-mi" — ikkalasi ham
     "kesimi" ni "kes" ga tushirardi.
     """
-    rest = suffix[3:] if suffix.startswith("lar") else suffix
+    rest = suffix.removeprefix("lar")
     return any(rest.startswith(p) and _SUFFIXES.fullmatch(rest[len(p):]) for p in PERSONAL_POSSESSIVES)

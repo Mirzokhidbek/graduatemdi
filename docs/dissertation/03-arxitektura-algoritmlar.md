@@ -135,6 +135,23 @@ Gazetteer belgisi qo'shilganda leksik xususiyatlar soni ikki baravar kamayadi:
 model lug'at belgisiga tayanadi. Bu 4-bobdagi "yangi terminlar" natijasini
 tushuntiradi.
 
+### 3.4.1. Transformer modeli (token classification)
+
+CRF bilan solishtirish uchun ko'p tilli transformer (XLM-RoBERTa base;
+`app/models/transformer.py`) ham tayyorlangan. Sharoit CRF bilan bir xil:
+
+- so'zlar `app.nlp.tokenize` bo'yicha, teglar `bio_labels` bo'yicha;
+- so'z subword'larga bo'linganda teg faqat **birinchi** subword'ga beriladi,
+  qolganlari yo'qotishdan chiqariladi;
+- 512 subword chegarasi uchun paragraf 150 so'zlik bo'laklarga ajratiladi;
+- o'qitish: AdamW, lr 3·10⁻⁵, batch 8, 10 epoxa, warmup 10 %, weight decay 0.01,
+  seed 13; epoxa validation exact F1 bo'yicha tanlanadi;
+- bashorat: CRF dagi kabi `spans_from_labels`, lug'at shakli lemmatizatordan.
+
+XLM-R (Conneau va boshq., 2020) BERT arxitekturasiga (Devlin va boshq., 2019)
+asoslangan. Model GPU talab qiladi va Google Colab'da ishga tushiriladi
+(`notebooks/xlmr_colab.ipynb`). Natijalari 4.7-bo'limda.
+
 ## 3.5. Statistik termin nomzodlari
 
 Nomzodlar 1–4 so'zli n-gramlar. Ular tinish belgisini kesib o'tmaydi va yordamchi
