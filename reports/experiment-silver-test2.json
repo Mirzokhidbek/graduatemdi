@@ -1,0 +1,362 @@
+{
+  "data": "data/processed/silver",
+  "test_files": [
+    "data/annotations/claude2/uzwiki-1739.jsonl",
+    "data/annotations/claude2/uzwiki-443236.jsonl",
+    "data/annotations/claude2/uzwiki-543847.jsonl",
+    "data/annotations/claude2/uzwiki-557125.jsonl",
+    "data/annotations/claude2/uzwiki-577038.jsonl",
+    "data/annotations/claude2/uzwiki-600881.jsonl"
+  ],
+  "records": {
+    "train": 221,
+    "validation": 54,
+    "test": 35
+  },
+  "spans": {
+    "train": 1786,
+    "validation": 389,
+    "test": 391
+  },
+  "tuning": {
+    "crf": {
+      "chosen": {
+        "c1": 0.1,
+        "c2": 0.01,
+        "max_iterations": 200
+      },
+      "trials": [
+        {
+          "c1": 0.01,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5186335403726708
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5203761755485894
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.2,
+          "validation_exact_f1": 0.4967948717948717
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5341426403641881
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5100463678516229
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.2,
+          "validation_exact_f1": 0.4896661367249603
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5053929121725732
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5076923076923076
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.2,
+          "validation_exact_f1": 0.49845201238390086
+        }
+      ]
+    },
+    "crf_gazetteer": {
+      "chosen": {
+        "c1": 0.1,
+        "c2": 0.01,
+        "max_iterations": 200
+      },
+      "trials": [
+        {
+          "c1": 0.01,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5141065830721003
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5086887835703001
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5023847376788554
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5264797507788161
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5195618153364632
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5102362204724409
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5226917057902973
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5220125786163523
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5157232704402517
+        }
+      ]
+    }
+  },
+  "validation": {
+    "dictionary_seed": {
+      "exact": {
+        "precision": 0.7,
+        "recall": 0.16195372750642673,
+        "f1": 0.2630480167014614,
+        "correct_predicted": 63,
+        "predicted": 90,
+        "correct_gold": 63,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9333333333333333,
+        "recall": 0.2159383033419023,
+        "f1": 0.35073068893528186,
+        "correct_predicted": 84,
+        "predicted": 90,
+        "correct_gold": 84,
+        "gold": 389
+      },
+      "term_accuracy": 0.9047619047619048
+    },
+    "dictionary_train": {
+      "exact": {
+        "precision": 0.6710526315789473,
+        "recall": 0.39331619537275064,
+        "f1": 0.4959481361426256,
+        "correct_predicted": 153,
+        "predicted": 228,
+        "correct_gold": 153,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9254385964912281,
+        "recall": 0.519280205655527,
+        "f1": 0.665267101104304,
+        "correct_predicted": 211,
+        "predicted": 228,
+        "correct_gold": 202,
+        "gold": 389
+      },
+      "term_accuracy": 0.9607843137254902
+    },
+    "crf": {
+      "exact": {
+        "precision": 0.6518518518518519,
+        "recall": 0.4524421593830334,
+        "f1": 0.5341426403641881,
+        "correct_predicted": 176,
+        "predicted": 270,
+        "correct_gold": 176,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.8592592592592593,
+        "recall": 0.5784061696658098,
+        "f1": 0.6913998860912065,
+        "correct_predicted": 232,
+        "predicted": 270,
+        "correct_gold": 225,
+        "gold": 389
+      },
+      "term_accuracy": 0.8011363636363636
+    },
+    "crf_gazetteer": {
+      "exact": {
+        "precision": 0.6679841897233202,
+        "recall": 0.43444730077120824,
+        "f1": 0.5264797507788161,
+        "correct_predicted": 169,
+        "predicted": 253,
+        "correct_gold": 169,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9011857707509882,
+        "recall": 0.5629820051413882,
+        "f1": 0.6930235463119105,
+        "correct_predicted": 228,
+        "predicted": 253,
+        "correct_gold": 219,
+        "gold": 389
+      },
+      "term_accuracy": 0.9467455621301775
+    }
+  },
+  "test": {
+    "dictionary_seed": {
+      "exact": {
+        "precision": 0.6853932584269663,
+        "recall": 0.15601023017902813,
+        "f1": 0.25416666666666665,
+        "correct_predicted": 61,
+        "predicted": 89,
+        "correct_gold": 61,
+        "gold": 391
+      },
+      "partial": {
+        "precision": 0.9662921348314607,
+        "recall": 0.21994884910485935,
+        "f1": 0.3583333333333333,
+        "correct_predicted": 86,
+        "predicted": 89,
+        "correct_gold": 86,
+        "gold": 391
+      },
+      "term_accuracy": 0.9344262295081968
+    },
+    "dictionary_train": {
+      "exact": {
+        "precision": 0.7605633802816901,
+        "recall": 0.4143222506393862,
+        "f1": 0.5364238410596026,
+        "correct_predicted": 162,
+        "predicted": 213,
+        "correct_gold": 162,
+        "gold": 391
+      },
+      "partial": {
+        "precision": 0.9671361502347418,
+        "recall": 0.5242966751918159,
+        "f1": 0.6799719831576914,
+        "correct_predicted": 206,
+        "predicted": 213,
+        "correct_gold": 205,
+        "gold": 391
+      },
+      "term_accuracy": 0.9753086419753086
+    },
+    "crf": {
+      "exact": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5115089514066496,
+        "f1": 0.5961251862891208,
+        "correct_predicted": 200,
+        "predicted": 280,
+        "correct_gold": 200,
+        "gold": 391
+      },
+      "partial": {
+        "precision": 0.9035714285714286,
+        "recall": 0.659846547314578,
+        "f1": 0.7627115673363987,
+        "correct_predicted": 253,
+        "predicted": 280,
+        "correct_gold": 258,
+        "gold": 391
+      },
+      "term_accuracy": 0.795
+    },
+    "crf_gazetteer": {
+      "exact": {
+        "precision": 0.7916666666666666,
+        "recall": 0.5345268542199488,
+        "f1": 0.6381679389312976,
+        "correct_predicted": 209,
+        "predicted": 264,
+        "correct_gold": 209,
+        "gold": 391
+      },
+      "partial": {
+        "precision": 0.9696969696969697,
+        "recall": 0.6470588235294118,
+        "f1": 0.7761852260198457,
+        "correct_predicted": 256,
+        "predicted": 264,
+        "correct_gold": 253,
+        "gold": 391
+      },
+      "term_accuracy": 0.9043062200956937
+    }
+  },
+  "test_unseen_terms": {
+    "dictionary_seed": {
+      "gold": 156,
+      "found": 3,
+      "recall": 0.019230769230769232
+    },
+    "dictionary_train": {
+      "gold": 156,
+      "found": 3,
+      "recall": 0.019230769230769232
+    },
+    "crf": {
+      "gold": 156,
+      "found": 28,
+      "recall": 0.1794871794871795
+    },
+    "crf_gazetteer": {
+      "gold": 156,
+      "found": 5,
+      "recall": 0.03205128205128205
+    }
+  },
+  "test_bootstrap": {
+    "samples": 2000,
+    "unit": "yozuv (paragraf)",
+    "f1_ci95": {
+      "dictionary_seed": [
+        0.1593,
+        0.3541
+      ],
+      "dictionary_train": [
+        0.4563,
+        0.611
+      ],
+      "crf": [
+        0.5135,
+        0.673
+      ],
+      "crf_gazetteer": [
+        0.5501,
+        0.7125
+      ]
+    },
+    "baseline": "dictionary_train",
+    "delta_vs_baseline_ci95": {
+      "dictionary_seed": [
+        -0.3589,
+        -0.2074
+      ],
+      "crf": [
+        -0.0186,
+        0.1476
+      ],
+      "crf_gazetteer": [
+        0.0634,
+        0.1453
+      ]
+    }
+  }
+}

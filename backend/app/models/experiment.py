@@ -118,10 +118,12 @@ def unseen_recall(train: Sequence[AnnotatedRecord], test: Sequence[AnnotatedReco
     return {"gold": total, "found": found, "recall": found / total if total else None}
 
 
-def run(data_dir: Path, seed_terms: Path, train_terms: Path, raw_dir: Path, model_dir: Path) -> dict:
+def run(
+    data_dir: Path, seed_terms: Path, train_terms: Path, raw_dir: Path, model_dir: Path, test_files: Sequence[Path] = ()
+) -> dict:
     train = load_annotations([data_dir / "train.jsonl"])
     dev = load_annotations([data_dir / "validation.jsonl"])
-    test = load_annotations([data_dir / "test.jsonl"])
+    test = load_annotations(list(test_files) or [data_dir / "test.jsonl"])
     lemmatizer = build_lemmatizer(p.read_text(encoding="utf-8") for p in sorted(raw_dir.glob("*.txt")))
     seed_matcher = DictionaryMatcher(load_terms(seed_terms))
     train_matcher = DictionaryMatcher(load_terms(train_terms))
@@ -164,6 +166,7 @@ def run(data_dir: Path, seed_terms: Path, train_terms: Path, raw_dir: Path, mode
     }
     report = {
         "data": Path(os.path.relpath(data_dir, model_dir.parent)).as_posix(),
+        "test_files": [Path(os.path.relpath(p, model_dir.parent)).as_posix() for p in test_files] or None,
         "records": {"train": len(train), "validation": len(dev), "test": len(test)},
         "spans": {
             "train": sum(len(r.terms) for r in train),
@@ -200,9 +203,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--raw", type=Path, default=REPO_ROOT / "data" / "raw")
     parser.add_argument("--models", type=Path, default=REPO_ROOT / "models")
     parser.add_argument("--output", type=Path, default=REPO_ROOT / "reports" / "experiment-silver.json")
+    parser.add_argument("--test-files", type=Path, nargs="*", default=[],
+                        help="test to'plami o'rniga shu JSONL fayllar (masalan, boshqa annotatorning test belgilari)")
     args = parser.parse_args(argv)
 
-    report = run(args.data, args.seed_terms, args.train_terms, args.raw, args.models)
+    report = run(args.data, args.seed_terms, args.train_terms, args.raw, args.models, args.test_files)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
