@@ -1,0 +1,15 @@
+# Unli tovushlar
+vokalizm
+unli fonema
+tiloldi unli = tiloldi
+tilorqa unli = tilorqa
+yuqori koʻtarilish unlisi = yuqori koʻtarilish unli
+oʻrta koʻtarilish unlisi = oʻrta koʻtarilish unli
+quyi koʻtarilish unlisi = quyi koʻtarilish unli
+lablangan unli
+lablanmagan unli
+choʻziq unli
+qisqa unli
+ovoz
+shovqin
+!~ vocalis – unli tovush

@@ -1,0 +1,354 @@
+{
+  "data": "data/processed/silver",
+  "records": {
+    "train": 221,
+    "validation": 54,
+    "test": 35
+  },
+  "spans": {
+    "train": 1786,
+    "validation": 389,
+    "test": 380
+  },
+  "tuning": {
+    "crf": {
+      "chosen": {
+        "c1": 0.1,
+        "c2": 0.01,
+        "max_iterations": 200
+      },
+      "trials": [
+        {
+          "c1": 0.01,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5186335403726708
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5203761755485894
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.2,
+          "validation_exact_f1": 0.4967948717948717
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5341426403641881
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5100463678516229
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.2,
+          "validation_exact_f1": 0.4896661367249603
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5053929121725732
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5076923076923076
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.2,
+          "validation_exact_f1": 0.49845201238390086
+        }
+      ]
+    },
+    "crf_gazetteer": {
+      "chosen": {
+        "c1": 0.1,
+        "c2": 0.01,
+        "max_iterations": 200
+      },
+      "trials": [
+        {
+          "c1": 0.01,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5141065830721003
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5086887835703001
+        },
+        {
+          "c1": 0.01,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5023847376788554
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5264797507788161
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5195618153364632
+        },
+        {
+          "c1": 0.1,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5102362204724409
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.01,
+          "validation_exact_f1": 0.5226917057902973
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.05,
+          "validation_exact_f1": 0.5220125786163523
+        },
+        {
+          "c1": 0.5,
+          "c2": 0.2,
+          "validation_exact_f1": 0.5157232704402517
+        }
+      ]
+    }
+  },
+  "validation": {
+    "dictionary_seed": {
+      "exact": {
+        "precision": 0.7,
+        "recall": 0.16195372750642673,
+        "f1": 0.2630480167014614,
+        "correct_predicted": 63,
+        "predicted": 90,
+        "correct_gold": 63,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9333333333333333,
+        "recall": 0.2159383033419023,
+        "f1": 0.35073068893528186,
+        "correct_predicted": 84,
+        "predicted": 90,
+        "correct_gold": 84,
+        "gold": 389
+      },
+      "term_accuracy": 0.9047619047619048
+    },
+    "dictionary_train": {
+      "exact": {
+        "precision": 0.6710526315789473,
+        "recall": 0.39331619537275064,
+        "f1": 0.4959481361426256,
+        "correct_predicted": 153,
+        "predicted": 228,
+        "correct_gold": 153,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9254385964912281,
+        "recall": 0.519280205655527,
+        "f1": 0.665267101104304,
+        "correct_predicted": 211,
+        "predicted": 228,
+        "correct_gold": 202,
+        "gold": 389
+      },
+      "term_accuracy": 0.9607843137254902
+    },
+    "crf": {
+      "exact": {
+        "precision": 0.6518518518518519,
+        "recall": 0.4524421593830334,
+        "f1": 0.5341426403641881,
+        "correct_predicted": 176,
+        "predicted": 270,
+        "correct_gold": 176,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.8592592592592593,
+        "recall": 0.5784061696658098,
+        "f1": 0.6913998860912065,
+        "correct_predicted": 232,
+        "predicted": 270,
+        "correct_gold": 225,
+        "gold": 389
+      },
+      "term_accuracy": 0.8011363636363636
+    },
+    "crf_gazetteer": {
+      "exact": {
+        "precision": 0.6679841897233202,
+        "recall": 0.43444730077120824,
+        "f1": 0.5264797507788161,
+        "correct_predicted": 169,
+        "predicted": 253,
+        "correct_gold": 169,
+        "gold": 389
+      },
+      "partial": {
+        "precision": 0.9011857707509882,
+        "recall": 0.5629820051413882,
+        "f1": 0.6930235463119105,
+        "correct_predicted": 228,
+        "predicted": 253,
+        "correct_gold": 219,
+        "gold": 389
+      },
+      "term_accuracy": 0.9467455621301775
+    }
+  },
+  "test": {
+    "dictionary_seed": {
+      "exact": {
+        "precision": 0.7078651685393258,
+        "recall": 0.16578947368421051,
+        "f1": 0.26865671641791045,
+        "correct_predicted": 63,
+        "predicted": 89,
+        "correct_gold": 63,
+        "gold": 380
+      },
+      "partial": {
+        "precision": 0.9775280898876404,
+        "recall": 0.22894736842105262,
+        "f1": 0.371002132196162,
+        "correct_predicted": 87,
+        "predicted": 89,
+        "correct_gold": 87,
+        "gold": 380
+      },
+      "term_accuracy": 0.9841269841269841
+    },
+    "dictionary_train": {
+      "exact": {
+        "precision": 0.7699530516431925,
+        "recall": 0.43157894736842106,
+        "f1": 0.5531197301854975,
+        "correct_predicted": 164,
+        "predicted": 213,
+        "correct_gold": 164,
+        "gold": 380
+      },
+      "partial": {
+        "precision": 0.971830985915493,
+        "recall": 0.5421052631578948,
+        "f1": 0.6959800225236253,
+        "correct_predicted": 207,
+        "predicted": 213,
+        "correct_gold": 206,
+        "gold": 380
+      },
+      "term_accuracy": 0.9939024390243902
+    },
+    "crf": {
+      "exact": {
+        "precision": 0.7142857142857143,
+        "recall": 0.5263157894736842,
+        "f1": 0.6060606060606061,
+        "correct_predicted": 200,
+        "predicted": 280,
+        "correct_gold": 200,
+        "gold": 380
+      },
+      "partial": {
+        "precision": 0.8964285714285715,
+        "recall": 0.6736842105263158,
+        "f1": 0.7692565545313061,
+        "correct_predicted": 251,
+        "predicted": 280,
+        "correct_gold": 256,
+        "gold": 380
+      },
+      "term_accuracy": 0.785
+    },
+    "crf_gazetteer": {
+      "exact": {
+        "precision": 0.7916666666666666,
+        "recall": 0.55,
+        "f1": 0.6490683229813664,
+        "correct_predicted": 209,
+        "predicted": 264,
+        "correct_gold": 209,
+        "gold": 380
+      },
+      "partial": {
+        "precision": 0.9583333333333334,
+        "recall": 0.6578947368421053,
+        "f1": 0.7801899592944369,
+        "correct_predicted": 253,
+        "predicted": 264,
+        "correct_gold": 250,
+        "gold": 380
+      },
+      "term_accuracy": 0.9138755980861244
+    }
+  },
+  "test_unseen_terms": {
+    "dictionary_seed": {
+      "gold": 146,
+      "found": 0,
+      "recall": 0.0
+    },
+    "dictionary_train": {
+      "gold": 146,
+      "found": 0,
+      "recall": 0.0
+    },
+    "crf": {
+      "gold": 146,
+      "found": 29,
+      "recall": 0.19863013698630136
+    },
+    "crf_gazetteer": {
+      "gold": 146,
+      "found": 2,
+      "recall": 0.0136986301369863
+    }
+  },
+  "test_bootstrap": {
+    "samples": 2000,
+    "unit": "yozuv (paragraf)",
+    "f1_ci95": {
+      "dictionary_seed": [
+        0.1709,
+        0.3726
+      ],
+      "dictionary_train": [
+        0.4714,
+        0.6285
+      ],
+      "crf": [
+        0.5227,
+        0.6867
+      ],
+      "crf_gazetteer": [
+        0.566,
+        0.7193
+      ]
+    },
+    "baseline": "dictionary_train",
+    "delta_vs_baseline_ci95": {
+      "dictionary_seed": [
+        -0.3638,
+        -0.2087
+      ],
+      "crf": [
+        -0.0254,
+        0.1476
+      ],
+      "crf_gazetteer": [
+        0.0587,
+        0.1376
+      ]
+    }
+  }
+}

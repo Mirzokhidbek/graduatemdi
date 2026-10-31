@@ -69,3 +69,82 @@ class HealthOut(BaseModel):
     status: Literal["ok"] = "ok"
     terms_in_dictionary: int
     max_text_chars: int
+
+
+# --- annotatsiya ish joyi -----------------------------------------------------
+
+
+class AnnotationDocumentSummary(BaseModel):
+    doc_id: str
+    title: str
+    paragraphs: int
+    annotated: int = Field(description="Shu annotator saqlagan paragraflar")
+    reviewed: int = Field(description="Ulardan 'reviewed' holatidagilari")
+
+
+class SpanIn(BaseModel):
+    start: int = Field(ge=0)
+    end: int = Field(ge=1)
+    term: str = Field(min_length=1, max_length=200)
+    label: Literal["TERM"] = "TERM"
+
+
+class SpanOut(SpanIn):
+    surface: str
+
+
+class SuggestionOut(BaseModel):
+    start: int
+    end: int
+    term: str | None
+    source: Literal["dictionary", "ai", "model"]
+
+
+class SavedParagraph(BaseModel):
+    terms: list[SpanOut]
+    status: Literal["draft", "reviewed"]
+    notes: str | None
+
+
+class ParagraphOut(BaseModel):
+    id: str
+    text: str
+    saved: SavedParagraph | None
+    suggestions: list[SuggestionOut]
+
+
+class AnnotationDocumentOut(BaseModel):
+    doc_id: str
+    title: str
+    annotator: str
+    paragraphs: list[ParagraphOut]
+
+
+class SaveParagraphIn(BaseModel):
+    terms: list[SpanIn] = Field(max_length=500)
+    status: Literal["draft", "reviewed"] = "draft"
+    notes: str | None = Field(default=None, max_length=2000)
+
+
+class SavedRecordOut(BaseModel):
+    id: str
+    doc_id: str
+    text: str
+    terms: list[SpanOut]
+    annotator: str | None = None
+    status: Literal["draft", "reviewed"]
+    notes: str | None = None
+
+
+class JudgmentRow(BaseModel):
+    candidate: str
+    judgment: Literal["1", "0", "?", ""]
+    notes: str
+    frequency: str
+    example: str
+
+
+class JudgmentIn(BaseModel):
+    candidate: str = Field(min_length=1, max_length=200)
+    judgment: Literal["1", "0", "?", ""]
+    notes: str | None = Field(default=None, max_length=500)

@@ -1,0 +1,16 @@
+# Olmosh
+ot
+sifat
+!= sifatida
+son
+mustaqil soʻz turkumi
+olmosh-ot
+olmosh-sifat
+olmosh-son
+kishilik olmoshi = kishilik olmosh
+oʻzlik olmoshi = oʻzlik olmosh
+koʻrsatish olmoshi = koʻrsatish olmosh
+soʻroq olmoshi = soʻroq olmosh
+belgilash-jamlash olmoshi = belgilash-jamlash olmosh
+boʻlishsizlik olmoshi = boʻlishsizlik olmosh
+!~ pronomen

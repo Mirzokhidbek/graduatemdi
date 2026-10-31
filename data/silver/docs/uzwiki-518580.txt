@@ -1,0 +1,39 @@
+# Leksikografiya ("L." — leksikografiya qisqartmasi)
+leksikografiya = L
+lugʻat = lugat
+lugʻatchilik
+amaliy lugʻatchilik
+lugʻatshunoslik
+izohli lugʻat
+ikki tilli lugʻat
+koʻp tilli lugʻat
+etimologik lugʻat
+tarixiy lugʻat
+tarjima lugʻati = tarjima lugʻat
+terminologik lugʻat
+ensiklopedik lugʻat
+lingvistik lugʻat
+lugʻat maqolasi = lugʻat maqola
+makrostruktura
+mikrostruktura
+nazariy leksikografiya
+bir tilli leksikografiya
+ikki tilli leksikografiya
+oʻquv leksikografiyasi = oʻquv leksikografiya
+ilmiy-texnik leksikografiya
+soʻzlashgich
+uslubshunoslik
+grammatik qurilish
+soʻz maʼnosi = soʻz maʼno
+ona tili
+!~ (qadimgi yunoncha: λεξικόν [leksika] va γράφω [grafiya] - yozuv)
+!~ "Oʻzbek tilining izohli lugʻati"
+!~ "Badoye ul-lugʻat"
+!~ ("Chigʻatoycha-turkcha lugʻat")
+!~ ("Olti tilli lugʻat")
+!~ ("Ruscha-sartcha va sart-charuscha lugʻat")
+!~ "Ruscha-oʻzbekcha mukammal lugʻat"
+!~ "Lugʻati chigʻatoiy va turki usmoniy"
+!~ "Lugʻati sitta as-sina"
+!~ "Muntaxab ul-lugʻot"
+!~ "Devonu lugʻotit turk"

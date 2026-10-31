@@ -38,8 +38,8 @@ def _alternatives(options: Iterable[str]) -> str:
 
 # Ot so'z turkumiga qo'shiladigan eng ko'p uchraydigan qo'shimchalar
 # (ko'plik + egalik + kelishik + -dagi/-ki + yuklama tartibida).
-# Bu to'liq morfologik tahlil emas: tovush o'zgarishlari (masalan,
-# "o'rin" -> "o'rni", "yurak" -> "yuragi") hisobga olinmaydi.
+# Bu to'liq morfologik tahlil emas. Unli bilan boshlanuvchi egalik qo'shimchasi
+# oldidagi eng ko'p uchraydigan tovush o'zgarishlari ``stem_alternations`` da.
 PLURAL_SUFFIXES = ("lar",)
 POSSESSIVE_SUFFIXES = ("imiz", "ingiz", "miz", "ngiz", "ing", "im", "ng", "m", "si", "i")
 CASE_SUFFIXES = ("gacha", "dagi", "ning", "dan", "ni", "ga", "ka", "qa", "da")
@@ -56,6 +56,44 @@ SUFFIX_PATTERN = "".join(
         PARTICLE_SUFFIXES,
     )
 )
+
+# unli bilan boshlanadigan egalik qo'shimchalari: tovush o'zgargan o'zakdan keyin faqat shular keladi
+VOWEL_POSSESSIVE_SUFFIXES = ("imiz", "ingiz", "ing", "im", "i")
+_AFTER_POSSESSIVE = "".join(
+    _alternatives(group) for group in (CASE_SUFFIXES, ATTRIBUTIVE_SUFFIXES, PARTICLE_SUFFIXES)
+)
+ALTERED_SUFFIX_PATTERN = (
+    "(?:" + "|".join(re.escape(s) for s in sorted(VOWEL_POSSESSIVE_SUFFIXES, key=len, reverse=True)) + ")"
+    + _AFTER_POSSESSIVE
+)
+
+# o'rin -> o'rni, burun -> burni: oxirgi bo'g'indagi tor unli tushadi
+_ELISION = re.compile(r"^(?P<head>.*[^aeiou'])(?P<vowel>[iu])(?P<tail>[^aeiou' ])$")
+
+
+def stem_alternations(word: str) -> list[str]:
+    """Unli bilan boshlanuvchi egalik qo'shimchasi oldida o'zgargan o'zaklar (normallashgan shaklda).
+
+    - jarangsizlanish: ``k -> g`` (yurak -> yuragi, kelishik -> kelishigi),
+      ``q -> g'`` (qishloq -> qishlog'i);
+    - tor unli tushishi: ``o'rin -> o'rni``, ``burun -> burni``.
+
+    Bu hodisalar leksik: har bir so'zda bo'lavermaydi. Lekin o'zgargan o'zak faqat
+    ``-i/-im/-ing/...`` bilan birga qidiriladi va butun o'zak mos kelishi kerak, shuning
+    uchun noto'g'ri moslik ehtimoli kichik. Bir bo'g'inli so'zlarga qo'llanmaydi.
+    """
+    if len(word) < 4:
+        return []
+    alternatives: list[str] = []
+    if word.endswith("k"):
+        alternatives.append(word[:-1] + "g")
+    elif word.endswith("q"):
+        alternatives.append(word[:-1] + "g'")
+    match = _ELISION.match(word)
+    if match and any(ch in "aeiou" for ch in match.group("head")):
+        alternatives.append(match.group("head") + match.group("tail"))
+    return alternatives
+
 
 _LETTER = r"[^\W\d_]"
 _ALNUM = r"[^\W_]"
@@ -98,11 +136,18 @@ class _RawMatch:
     candidates: tuple[TermCandidate, ...]
 
 
-def _compile_form(normalized_form: str) -> re.Pattern[str]:
-    body = r"\s+".join(re.escape(word) for word in normalized_form.split(" "))
-    return re.compile(
-        f"{_START_BOUNDARY}(?P<base>{body})(?P<suffix>{SUFFIX_PATTERN}){_END_BOUNDARY}"
-    )
+def _compile_form(normalized_form: str) -> list[re.Pattern[str]]:
+    """Shakl uchun regexlar: odatiy qo'shimchalar bilan, va tovush o'zgargan o'zak bilan."""
+    words = normalized_form.split(" ")
+    head = "".join(re.escape(word) + r"\s+" for word in words[:-1])
+    patterns = [
+        re.compile(f"{_START_BOUNDARY}(?P<base>{head}{re.escape(words[-1])})(?P<suffix>{SUFFIX_PATTERN}){_END_BOUNDARY}")
+    ]
+    for stem in stem_alternations(words[-1]):
+        patterns.append(
+            re.compile(f"{_START_BOUNDARY}(?P<base>{head}{re.escape(stem)})(?P<suffix>{ALTERED_SUFFIX_PATTERN}){_END_BOUNDARY}")
+        )
+    return patterns
 
 
 def _entry_forms(entry: TermEntry) -> Iterable[tuple[str, str]]:
@@ -125,8 +170,9 @@ class DictionaryMatcher:
 
         self._known_forms = frozenset(index)
         self._patterns = [
-            (_compile_form(form), tuple(candidates.values()))
+            (pattern, tuple(candidates.values()))
             for form, candidates in index.items()
+            for pattern in _compile_form(form)
         ]
 
     def has_form(self, form: str) -> bool:

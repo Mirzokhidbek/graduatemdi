@@ -18,9 +18,17 @@ Reyting usullari:
       C(a) = log2(|a|+1) · (f(a) − Σ_{b∈T_a} f(b) / |T_a|), aks holda,
   bu yerda T_a — a ni uzluksiz qism sifatida o'z ichiga olgan uzunroq nomzodlar.
 
-Hech qaysi usul so'z turkumini (POS) bilmaydi: oʻzbek tili uchun ochiq va
-tekshirilgan POS-tegger ishlatilmadi. Bu asosiy cheklov — fe'l va sifatli
-iboralar ham nomzod bo'lib qoladi.
+- ``weirdness``: soha korpusidagi nisbiy chastotaning kontrast (sohaga oid
+  bo'lmagan) korpusdagi nisbiy chastotaga nisbati (Ahmad va boshq., 1999),
+  Laplace silliqlash bilan: W(a) = (f(a)/N_d) / ((f_c(a)+1)/(N_c+V)).
+  Umumiy so'zlarni (``so'z``, ``til``, ``shakl``) pastga tushiradi; kontrast
+  korpus (``--contrast``) talab qiladi.
+
+Oʻzbek tili uchun ochiq va tekshirilgan POS-tegger ishlatilmadi. O'rniga
+``--pos-filter`` morfologik qoida qo'llaydi (``looks_like_noun_head``): nomzodning
+oxirgi so'zi fe'l (-adi, -gan, -moq, -ib, ...) yoki nisbiy sifat (-ik, -iy)
+shaklida bo'lsa, u chiqariladi — "sifat + ot" iboralari (``grammatik kategoriya``)
+qoladi, yolg'iz ``grammatik`` esa chiqadi. Bu qoida taxminiy.
 """
 
 from __future__ import annotations
@@ -34,7 +42,17 @@ from app.nlp.lemmatize import CorpusLemmatizer
 from app.nlp.stopwords import STOPWORDS
 from app.nlp.tokenize import phrases, tokenize
 
-METHODS = ("frequency", "tfidf", "cvalue")
+METHODS = ("frequency", "tfidf", "cvalue", "weirdness")
+
+# Fe'l, sifatdosh, ravishdosh va harakat nomi qo'shimchalari (oxirgi so'zda bo'lsa, nomzod ot birikmasi emas).
+VERB_ENDINGS = (
+    "adi", "aydi", "ydi", "moqda", "moq", "yapti", "gan", "kan", "qan", "ilgan", "ingan",
+    "ib", "ganda", "gach", "guncha", "maydi", "mas", "sin", "aylik", "ylik",
+)
+# Nisbiy sifat: grammatik, fonetik, leksik, morfologik, nisbiy, tarixiy (lekin -lik otlari emas).
+ADJECTIVE_ENDINGS = ("tik", "gik", "sik", "nik", "kik", "rik", "iy", "viy")
+# -lik / -chilik otlari va ayrim -ik bilan tugaydigan otlar adjektiv emas.
+NOUN_EXCEPTIONS = ("lik", "kelishik", "fonetik transkripsiya")
 MIN_CANDIDATE_LETTERS = 3
 
 Key = tuple[str, ...]
@@ -58,6 +76,40 @@ class Candidate:
     @property
     def doc_frequency(self) -> int:
         return len(self.documents)
+
+
+def looks_like_noun_head(key: Key) -> bool:
+    """Nomzodning oxirgi so'zi ot bo'la oladimi (morfologik qoida, taxminiy)."""
+    if not key:
+        return False
+    last = key[-1]
+    if last.endswith(NOUN_EXCEPTIONS[0]) or last in NOUN_EXCEPTIONS:
+        return True
+    if any(last.endswith(ending) for ending in VERB_ENDINGS) and len(last) > 4:
+        return False
+    if any(last.endswith(ending) for ending in ADJECTIVE_ENDINGS) and len(last) > 4:
+        return False
+    return True
+
+
+def weirdness_scores(
+    candidates: Mapping[Key, Candidate], domain_tokens: int, contrast: Counter, contrast_tokens: int
+) -> dict[Key, float]:
+    """Kontrast korpusga nisbatan "g'ayrioddiylik"; ``contrast`` — kalit -> kontrast korpusdagi chastota."""
+    vocabulary = len(contrast) + 1
+    return {
+        key: (c.frequency / domain_tokens) / ((contrast.get(key, 0) + 1) / (contrast_tokens + vocabulary))
+        for key, c in candidates.items()
+    }
+
+
+def contrast_frequencies(
+    documents: Mapping[str, str], keys: set[Key], lemmatizer: CorpusLemmatizer, max_words: int = 4
+) -> tuple[Counter, int]:
+    """Kontrast korpusda berilgan nomzod kalitlari necha marta uchrashini sanaydi."""
+    found = extract_candidates(documents, max_words=max_words, stopwords=frozenset(), lemmatizer=lemmatizer)
+    counts = Counter({key: c.frequency for key, c in found.items() if key in keys})
+    return counts, sum(len(tokenize(text)) for text in documents.values())
 
 
 def build_lemmatizer(documents: Mapping[str, str]) -> CorpusLemmatizer:
@@ -140,6 +192,8 @@ def rank(
     method: str,
     n_documents: int,
     min_frequency: int = 2,
+    pos_filter: bool = False,
+    weirdness: Mapping[Key, float] | None = None,
 ) -> list[tuple[Candidate, float]]:
     """Nomzodlarni kamayish tartibida reytinglaydi.
 
@@ -148,8 +202,14 @@ def rank(
     """
     if method not in METHODS:
         raise ValueError(f"method quyidagilardan biri bo'lishi kerak: {', '.join(METHODS)}")
-    kept = {k: c for k, c in candidates.items() if c.frequency >= min_frequency}
-    if method == "frequency":
+    kept = {
+        k: c for k, c in candidates.items() if c.frequency >= min_frequency and (not pos_filter or looks_like_noun_head(k))
+    }
+    if method == "weirdness":
+        if weirdness is None:
+            raise ValueError("weirdness usuli kontrast korpusni talab qiladi (--contrast)")
+        scores = {k: weirdness[k] for k in kept}
+    elif method == "frequency":
         scores = {k: float(c.frequency) for k, c in kept.items()}
     elif method == "tfidf":
         scores = tfidf_scores(kept, n_documents)
@@ -184,6 +244,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--reference-annotations", type=Path, nargs="+",
                         help="Precision@K uchun inson belgilagan JSONL (faqat reviewed)")
     parser.add_argument("--output", type=Path, help="barcha reytingni yozish (.json yoki .csv)")
+    parser.add_argument("--pos-filter", action="store_true",
+                        help="oxirgi so'zi fe'l yoki nisbiy sifat shaklidagi nomzodlarni chiqarish")
+    parser.add_argument("--contrast", type=Path, nargs="+",
+                        help="kontrast (sohaga oid bo'lmagan) korpus matnlari, weirdness usuli uchun")
     args = parser.parse_args(argv)
 
     files = args.files or sorted((REPO_ROOT / "data" / "raw").glob("*.txt"))
@@ -201,11 +265,25 @@ def main(argv: list[str] | None = None) -> int:
 
     lemmatizer = build_lemmatizer(documents)
     candidates = extract_candidates(documents, max_words=args.max_words, lemmatizer=lemmatizer)
-    ranked = rank(candidates, args.method, len(documents), min_frequency=args.min_freq)
     total_tokens = sum(len(tokenize(text)) for text in documents.values())
+    weirdness = None
+    if args.method == "weirdness":
+        if not args.contrast:
+            print("weirdness usuli uchun --contrast fayllari kerak.", file=sys.stderr)
+            return 1
+        contrast_docs = {path.stem: path.read_text(encoding="utf-8") for path in args.contrast}
+        counts, contrast_tokens = contrast_frequencies(contrast_docs, set(candidates), lemmatizer, args.max_words)
+        weirdness = weirdness_scores(candidates, total_tokens, counts, contrast_tokens)
+    try:
+        ranked = rank(candidates, args.method, len(documents), min_frequency=args.min_freq,
+                      pos_filter=args.pos_filter, weirdness=weirdness)
+    except ValueError as exc:
+        print(exc, file=sys.stderr)
+        return 1
 
     print(f"Hujjatlar: {len(documents)}, tokenlar: {total_tokens}, nomzodlar: {len(candidates)} "
-          f"(f >= {args.min_freq}: {len(ranked)}), usul: {args.method}")
+          f"(f >= {args.min_freq}: {len(ranked)}), usul: {args.method}"
+          f"{', POS filtri' if args.pos_filter else ''}")
     print(f"\n{'#':>3}  {'ball':>8}  {'f':>4}  {'df':>3}  lug'at  nomzod (eng ko'p uchragan ko'rinish)")
     for position, (candidate, score) in enumerate(ranked[: args.top], start=1):
         surface = candidate.surfaces.most_common(1)[0][0]
