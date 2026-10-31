@@ -7,16 +7,16 @@
       "accuracy": 0.48157894736842105
     },
     "corpus_lemmatizer": {
-      "correct": 284,
-      "accuracy": 0.7473684210526316
+      "correct": 286,
+      "accuracy": 0.7526315789473684
     },
     "dictionary": {
       "correct": 270,
       "accuracy": 0.7105263157894737
     },
     "dictionary_morphology": {
-      "correct": 348,
-      "accuracy": 0.9157894736842105
+      "correct": 350,
+      "accuracy": 0.9210526315789473
     }
   },
   "steps": {
@@ -26,14 +26,14 @@
       "accuracy": 0.975609756097561
     },
     "unchanged": {
-      "spans": 117,
-      "correct": 101,
-      "accuracy": 0.8632478632478633
+      "spans": 119,
+      "correct": 103,
+      "accuracy": 0.865546218487395
     },
     "morphology": {
-      "spans": 99,
+      "spans": 97,
       "correct": 87,
-      "accuracy": 0.8787878787878788
+      "accuracy": 0.8969072164948454
     }
   },
   "errors": [
@@ -122,12 +122,6 @@
       "step": "unchanged"
     },
     {
-      "surface": "kesim",
-      "gold": "kesim",
-      "predicted": "kes",
-      "step": "morphology"
-    },
-    {
       "surface": "otlarda",
       "gold": "ot",
       "predicted": "otlar",
@@ -158,12 +152,6 @@
       "step": "unchanged"
     },
     {
-      "surface": "kesim",
-      "gold": "kesim",
-      "predicted": "kes",
-      "step": "morphology"
-    },
-    {
       "surface": "otlar",
       "gold": "ot",
       "predicted": "otlar",
@@ -174,6 +162,18 @@
       "gold": "ot",
       "predicted": "otlar",
       "step": "morphology"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
     },
     {
       "surface": "St",

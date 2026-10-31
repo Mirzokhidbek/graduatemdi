@@ -17,7 +17,7 @@ def normalizer() -> TermNormalizer:
             make_entry("t3", "fonema", status="approved", source="Darslik"),
         ]
     )
-    vocabulary = ["kelishik", "boʻlak", "gap", "nutq", "soʻz", "birikma", "oʻrin", "ravish", "lingvistika", "tovush"]
+    vocabulary = ["kelishik", "boʻlak", "gap", "nutq", "soʻz", "birikma", "oʻrin", "ravish", "lingvistika", "tovush", "kes", "kesim", "til"]
     return TermNormalizer(entries, vocabulary)
 
 
@@ -35,6 +35,10 @@ def normalizer() -> TermNormalizer:
         ("dialektografiyaga", "dialektografiya", "morphology"),  # korpusda yo'q o'zak, aniq kelishik
         ("lingvistika", "lingvistika", "unchanged"),  # "-i" + "-ka" emas
         ("Ravishlar", "ravish", "morphology"),
+        ("kesim", "kesim", "unchanged"),  # "kes" + I shaxs "-im" emas
+        ("kesimning", "kesim", "morphology"),
+        ("kesimi", "kesim", "morphology"),
+        ("tilimiz", "til", "morphology"),  # "-imiz" ilmiy matnda bor, ajratiladi
     ],
 )
 def test_normalize(normalizer, surface, lemma, method):
@@ -53,6 +57,25 @@ def test_dictionary_result_carries_main_term_and_status(normalizer):
 
 def test_hyphen_inside_term_is_kept(normalizer):
     assert normalizer.normalize("kasb-hunar ravishlari").lemma == "kasb-hunar ravishi"
+
+
+def test_personal_possessive_split_kept_when_word_unknown():
+    """I shaxs "-im" faqat so'zning o'zi korpusda bo'lmasa ajratiladi."""
+    normalizer = TermNormalizer([], ["kes", "vaqt"])
+    assert normalizer.normalize("vaqtim").lemma == "vaqt"
+
+
+def test_corpus_lemmatizer_personal_possessive():
+    from app.nlp.lemmatize import CorpusLemmatizer
+
+    lemmatizer = CorpusLemmatizer(["kes", "kesim", "boʻl", "boʻlim", "til", "tilimiz", "sleng", "slengmi", "fonema"])
+    assert lemmatizer.lemma("kesim") == "kesim"
+    assert lemmatizer.lemma("kesimdan") == "kesim"
+    assert lemmatizer.lemma("boʻlimi") == "boʻlim"
+    assert lemmatizer.lemma("tilimiz") == "til"
+    assert lemmatizer.lemma("slengmi") == "sleng"  # "-mi" yuklama, "-m" egalik emas
+    assert lemmatizer.lemma("fonemalarning") == "fonema"
+    assert CorpusLemmatizer(["vaqt"]).lemma("vaqtim") == "vaqt"
 
 
 # --- BIO ------------------------------------------------------------------------

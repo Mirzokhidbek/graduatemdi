@@ -55,8 +55,8 @@ marta baholandi.
 |---|---|---|---|---|---|---|
 | dictionary_seed | 0.708 | 0.166 | 0.269 | [0.171, 0.373] | 0.371 | 0.984 |
 | dictionary_train | 0.770 | 0.432 | 0.553 | [0.471, 0.628] | 0.696 | 0.994 |
-| crf | 0.714 | 0.526 | 0.606 | [0.523, 0.687] | 0.769 | 0.785 |
-| **crf_gazetteer** | **0.792** | **0.550** | **0.649** | [0.566, 0.719] | **0.780** | 0.914 |
+| crf | 0.715 | 0.534 | 0.611 | [0.527, 0.690] | 0.773 | 0.798 |
+| **crf_gazetteer** | **0.792** | **0.550** | **0.649** | [0.566, 0.719] | **0.780** | 0.923 |
 
 \* Aynan topilgan spanlarda `term` (lug'at shakli) to'g'ri chiqqani.
 
@@ -64,7 +64,7 @@ Oraliqlar paragraflar bo'yicha bootstrap usulida olingan (2000 ta qayta tanlanma
 `dictionary_train` dan farqning 95 % oralig'i:
 
 - **crf_gazetteer: [+0.059, +0.138]**. Farq ishonchli: oraliqda 0 yo'q.
-- crf: [−0.025, +0.148]. Bu ma'lumot hajmida farq ishonchli emas.
+- crf: [−0.024, +0.150]. Bu ma'lumot hajmida farq ishonchli emas.
 
 ### Validation
 
@@ -72,15 +72,15 @@ Oraliqlar paragraflar bo'yicha bootstrap usulida olingan (2000 ta qayta tanlanma
 |---|---|---|---|---|
 | dictionary_seed | 0.700 | 0.162 | 0.263 | 0.351 |
 | dictionary_train | 0.671 | 0.393 | 0.496 | 0.665 |
-| crf | 0.652 | 0.452 | 0.534 | 0.691 |
-| crf_gazetteer | 0.668 | 0.434 | 0.526 | 0.693 |
+| crf | 0.651 | 0.450 | 0.532 | 0.689 |
+| crf_gazetteer | 0.672 | 0.437 | 0.530 | 0.696 |
 
 ### Yangi terminlar (test, train'da uchramagan 146 ta span)
 
 | Usul | Topildi | Recall |
 |---|---|---|
 | dictionary_seed, dictionary_train | 0 | 0.000 |
-| crf | 29 | 0.199 |
+| crf | 31 | 0.212 |
 | crf_gazetteer | 2 | 0.014 |
 
 ### Statistik nomzodlar: POS filtri (3-bosqich)
@@ -117,7 +117,7 @@ ro'yxatlar ishlatilmadi (`data/silver/claude2/`, `app/annotation/sequential.py`)
 |---|---|---|---|---|---|
 | dictionary_seed | 0.685 | 0.156 | 0.254 | [0.159, 0.354] | [−0.359, −0.207] |
 | dictionary_train | 0.761 | 0.414 | 0.536 | [0.456, 0.611] | — |
-| crf | 0.714 | 0.512 | 0.596 | [0.513, 0.673] | [−0.019, +0.148] |
+| crf | 0.715 | 0.519 | 0.601 | [0.516, 0.679] | [−0.014, +0.151] |
 | crf_gazetteer | 0.792 | 0.535 | **0.638** | [0.550, 0.713] | **[+0.063, +0.145]** |
 
   Xulosalar o'zgarmadi. Lug'atga bog'liq bo'lmagan test belgilarida ham
@@ -129,8 +129,8 @@ ro'yxatlar ishlatilmadi (`data/silver/claude2/`, `app/annotation/sequential.py`)
 1. **Lug'at hajmi asosiy omil.** 15 terminli lug'at recall'i 0.17, train
    terminlari qo'shilgach 0.43. Lug'at yangi terminni hech qachon topmaydi
    (yangi terminlarda recall 0).
-2. **CRF yangi terminlarni topadi.** Train'da yo'q terminlarning 20 % ini topdi
-   (29 ta). Ular asosan qo'shimchasi termin yasovchi so'zlar: *lingvostatistika,
+2. **CRF yangi terminlarni topadi.** Train'da yo'q terminlarning 21 % ini topdi
+   (31 ta). Ular asosan qo'shimchasi termin yasovchi so'zlar: *lingvostatistika,
    paralingvistika, etnolingvistika, sotsiolingvistika, transliteratsiya,
    antroponimika, semitologiya, hindevropashunoslik, sinxroniya, diaxroniya*,
    shuningdek *oʻrin ravishlari, morfologik usul, sintaktik usul, olmosh-ot*.

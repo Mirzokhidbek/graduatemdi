@@ -7,16 +7,16 @@
       "accuracy": 0.4731457800511509
     },
     "corpus_lemmatizer": {
-      "correct": 289,
-      "accuracy": 0.7391304347826086
+      "correct": 291,
+      "accuracy": 0.7442455242966752
     },
     "dictionary": {
       "correct": 272,
       "accuracy": 0.6956521739130435
     },
     "dictionary_morphology": {
-      "correct": 353,
-      "accuracy": 0.9028132992327366
+      "correct": 355,
+      "accuracy": 0.907928388746803
     }
   },
   "steps": {
@@ -26,14 +26,14 @@
       "accuracy": 1.0
     },
     "unchanged": {
-      "spans": 123,
-      "correct": 100,
-      "accuracy": 0.8130081300813008
+      "spans": 125,
+      "correct": 102,
+      "accuracy": 0.816
     },
     "morphology": {
-      "spans": 106,
+      "spans": 104,
       "correct": 91,
-      "accuracy": 0.8584905660377359
+      "accuracy": 0.875
     }
   },
   "errors": [
@@ -152,12 +152,6 @@
       "step": "unchanged"
     },
     {
-      "surface": "kesim",
-      "gold": "kesim",
-      "predicted": "kes",
-      "step": "morphology"
-    },
-    {
       "surface": "otlarda",
       "gold": "ot",
       "predicted": "otlar",
@@ -180,6 +174,12 @@
       "gold": "leksik-grammatik kategoriya",
       "predicted": "leksikgrammatik kategoriya",
       "step": "morphology"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
     },
     {
       "surface": "St",

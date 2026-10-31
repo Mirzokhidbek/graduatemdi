@@ -164,7 +164,12 @@ Kirish: span matni s. Chiqish: lug'at shakli, asosiy termin, holat.
             shartlar: (a) s₀ yoki uning tiklangan shakli (g→k, gʻ→q, CC→CiC/CuC)
                           korpus yoki lug'at so'zi;
                       (b) fonotaktika: -ka faqat k dan, -qa faqat q dan keyin
-                          (egalikdan keyin hech qachon — "lingvistika" ≠ "lingvist"+"i"+"ka").
+                          (egalikdan keyin hech qachon — "lingvistika" ≠ "lingvist"+"i"+"ka");
+                      (c) I/II shaxs birlik egaligi (-im, -ing) bilan bo'linish faqat
+                          boshqa bo'linish bo'lmasa va w o'zi korpusda uchramasa olinadi
+                          (ensiklopedik matnda "mening/sening" deyarli yo'q:
+                          "kesim" ≠ "kes"+"im", "boʻlim" ≠ "boʻl"+"im"). -imiz bundan
+                          mustasno: ilmiy matnda bor (*tilimiz*).
             (a) bajarilmasa (yangi so'z): faqat aniq ko'plik yoki kelishik
             qo'shimchasi ajratiladi (o'zak ≥ 5 harf).
 3. Izofa:  ko'p so'zli terminda oxirgi so'zda III shaxs egaligi (-i/-si) bo'lsa va

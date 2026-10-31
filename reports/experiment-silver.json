@@ -1,5 +1,6 @@
 {
   "data": "data/processed/silver",
+  "test_files": null,
   "records": {
     "train": 221,
     "validation": 54,
@@ -21,7 +22,7 @@
         {
           "c1": 0.01,
           "c2": 0.01,
-          "validation_exact_f1": 0.5186335403726708
+          "validation_exact_f1": 0.5140186915887851
         },
         {
           "c1": 0.01,
@@ -31,27 +32,27 @@
         {
           "c1": 0.01,
           "c2": 0.2,
-          "validation_exact_f1": 0.4967948717948717
+          "validation_exact_f1": 0.49920000000000003
         },
         {
           "c1": 0.1,
           "c2": 0.01,
-          "validation_exact_f1": 0.5341426403641881
+          "validation_exact_f1": 0.5319148936170213
         },
         {
           "c1": 0.1,
           "c2": 0.05,
-          "validation_exact_f1": 0.5100463678516229
+          "validation_exact_f1": 0.5085271317829458
         },
         {
           "c1": 0.1,
           "c2": 0.2,
-          "validation_exact_f1": 0.4896661367249603
+          "validation_exact_f1": 0.48726114649681523
         },
         {
           "c1": 0.5,
           "c2": 0.01,
-          "validation_exact_f1": 0.5053929121725732
+          "validation_exact_f1": 0.5107692307692308
         },
         {
           "c1": 0.5,
@@ -61,7 +62,7 @@
         {
           "c1": 0.5,
           "c2": 0.2,
-          "validation_exact_f1": 0.49845201238390086
+          "validation_exact_f1": 0.5015479876160991
         }
       ]
     },
@@ -75,7 +76,7 @@
         {
           "c1": 0.01,
           "c2": 0.01,
-          "validation_exact_f1": 0.5141065830721003
+          "validation_exact_f1": 0.5149136577708006
         },
         {
           "c1": 0.01,
@@ -85,17 +86,17 @@
         {
           "c1": 0.01,
           "c2": 0.2,
-          "validation_exact_f1": 0.5023847376788554
+          "validation_exact_f1": 0.5015873015873016
         },
         {
           "c1": 0.1,
           "c2": 0.01,
-          "validation_exact_f1": 0.5264797507788161
+          "validation_exact_f1": 0.5295950155763239
         },
         {
           "c1": 0.1,
           "c2": 0.05,
-          "validation_exact_f1": 0.5195618153364632
+          "validation_exact_f1": 0.51875
         },
         {
           "c1": 0.1,
@@ -105,12 +106,12 @@
         {
           "c1": 0.5,
           "c2": 0.01,
-          "validation_exact_f1": 0.5226917057902973
+          "validation_exact_f1": 0.5235109717868339
         },
         {
           "c1": 0.5,
           "c2": 0.05,
-          "validation_exact_f1": 0.5220125786163523
+          "validation_exact_f1": 0.5196850393700787
         },
         {
           "c1": 0.5,
@@ -165,45 +166,45 @@
     },
     "crf": {
       "exact": {
-        "precision": 0.6518518518518519,
-        "recall": 0.4524421593830334,
-        "f1": 0.5341426403641881,
-        "correct_predicted": 176,
-        "predicted": 270,
-        "correct_gold": 176,
+        "precision": 0.6505576208178439,
+        "recall": 0.4498714652956298,
+        "f1": 0.5319148936170213,
+        "correct_predicted": 175,
+        "predicted": 269,
+        "correct_gold": 175,
         "gold": 389
       },
       "partial": {
-        "precision": 0.8592592592592593,
-        "recall": 0.5784061696658098,
-        "f1": 0.6913998860912065,
-        "correct_predicted": 232,
-        "predicted": 270,
-        "correct_gold": 225,
+        "precision": 0.8587360594795539,
+        "recall": 0.5758354755784062,
+        "f1": 0.6893914665423175,
+        "correct_predicted": 231,
+        "predicted": 269,
+        "correct_gold": 224,
         "gold": 389
       },
-      "term_accuracy": 0.8011363636363636
+      "term_accuracy": 0.8
     },
     "crf_gazetteer": {
       "exact": {
-        "precision": 0.6679841897233202,
-        "recall": 0.43444730077120824,
-        "f1": 0.5264797507788161,
-        "correct_predicted": 169,
+        "precision": 0.6719367588932806,
+        "recall": 0.4370179948586118,
+        "f1": 0.5295950155763239,
+        "correct_predicted": 170,
         "predicted": 253,
-        "correct_gold": 169,
+        "correct_gold": 170,
         "gold": 389
       },
       "partial": {
-        "precision": 0.9011857707509882,
-        "recall": 0.5629820051413882,
-        "f1": 0.6930235463119105,
-        "correct_predicted": 228,
+        "precision": 0.9051383399209486,
+        "recall": 0.5655526992287918,
+        "f1": 0.6961400017963121,
+        "correct_predicted": 229,
         "predicted": 253,
-        "correct_gold": 219,
+        "correct_gold": 220,
         "gold": 389
       },
-      "term_accuracy": 0.9467455621301775
+      "term_accuracy": 0.9470588235294117
     }
   },
   "test": {
@@ -251,24 +252,24 @@
     },
     "crf": {
       "exact": {
-        "precision": 0.7142857142857143,
-        "recall": 0.5263157894736842,
-        "f1": 0.6060606060606061,
-        "correct_predicted": 200,
-        "predicted": 280,
-        "correct_gold": 200,
+        "precision": 0.7147887323943662,
+        "recall": 0.5342105263157895,
+        "f1": 0.6114457831325302,
+        "correct_predicted": 203,
+        "predicted": 284,
+        "correct_gold": 203,
         "gold": 380
       },
       "partial": {
-        "precision": 0.8964285714285715,
-        "recall": 0.6736842105263158,
-        "f1": 0.7692565545313061,
-        "correct_predicted": 251,
-        "predicted": 280,
-        "correct_gold": 256,
+        "precision": 0.897887323943662,
+        "recall": 0.6789473684210526,
+        "f1": 0.7732176856357097,
+        "correct_predicted": 255,
+        "predicted": 284,
+        "correct_gold": 258,
         "gold": 380
       },
-      "term_accuracy": 0.785
+      "term_accuracy": 0.7980295566502463
     },
     "crf_gazetteer": {
       "exact": {
@@ -289,7 +290,7 @@
         "correct_gold": 250,
         "gold": 380
       },
-      "term_accuracy": 0.9138755980861244
+      "term_accuracy": 0.9234449760765551
     }
   },
   "test_unseen_terms": {
@@ -305,8 +306,8 @@
     },
     "crf": {
       "gold": 146,
-      "found": 29,
-      "recall": 0.19863013698630136
+      "found": 31,
+      "recall": 0.21232876712328766
     },
     "crf_gazetteer": {
       "gold": 146,
@@ -327,8 +328,8 @@
         0.6285
       ],
       "crf": [
-        0.5227,
-        0.6867
+        0.5272,
+        0.6902
       ],
       "crf_gazetteer": [
         0.566,
@@ -342,8 +343,8 @@
         -0.2087
       ],
       "crf": [
-        -0.0254,
-        0.1476
+        -0.024,
+        0.1497
       ],
       "crf_gazetteer": [
         0.0587,

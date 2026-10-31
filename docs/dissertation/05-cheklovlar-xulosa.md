@@ -27,7 +27,9 @@
 6. **Morfologiya qoidaviy.** Qo'shimchalar ro'yxati faqat ot so'z turkumini
    qamraydi. Fe'l asosli terminlar (*soʻz yasash*) va izofa istisnolari to'liq
    hal qilinmagan. Ellipsis tiklanmaydi. Eng qisqa o'zakni tanlash qoidasi
-   korpusda mustaqil so'z bo'lgan qisqa o'zakda adashadi (*kesim → kes*).
+   faqat I/II shaxs birlik egaligi uchun cheklangan (*kesim*); boshqa
+   qo'shimchalarda korpusda mustaqil so'z bo'lgan qisqa o'zakda adashishi mumkin.
+   *-ka* va *-im* tuzatishlari test xatolaridan kelib chiqqan (4.4-bo'lim).
 7. **Lug'at tekshirilmagan.**
    - 450 ta yozuvning barchasi `needs_review` holatida.
    - 435 tasining ta'rifi yo'q.
@@ -52,10 +54,11 @@
 4. **CRF modeli.** Oʻzbek morfologiyasiga mos xususiyatlar bilan CRF lug'at
    usulidan yaxshiroq. Lug'at belgisi bilan birga (CRF+G) F1 = 0.638–0.649 ga
    yetadi. Lug'atdan ustunligi statistik ishonchli: farqning 95 % oralig'i
-   [+0.06; +0.14]. Gazetteersiz CRF yangi terminlarning 20 % ini topadi.
+   [+0.06; +0.14]. Gazetteersiz CRF yangi terminlarning 21 % ini topadi.
 5. **Meʼyorlashtirish.** Lug'at, morfologik qoidalar, tovush o'zgarishlarini
    tiklash, izofani saqlash va fonotaktik cheklov birgalikda lug'at shaklini
-   90–94 % aniqlikda topadi. Faqat lug'at 63–71 %, korpus lemmatizatori 74–81 % beradi.
+   91–94 % aniqlikda topadi (test natijasi test xatolari bo'yicha sozlangan,
+   sozlashdan oldin 0.85–0.86). Faqat lug'at 63–71 %, korpus lemmatizatori 74–81 % beradi.
 6. **Takrorlanuvchanlik.** Barcha natijalar repozitoriydagi buyruqlar bilan qayta
    hosil qilinadi. CRF deterministik: qayta o'qitilganda natija o'zgarmaydi.
 
@@ -74,7 +77,10 @@
 4. **Lug'atni tasdiqlash.** Terminlar izohli va terminologik lug'atlar bilan
    solishtiriladi va `approved` holati manba bilan beriladi. Variant va
    sinonimlar bog'lanadi (*lingvistika ↔ tilshunoslik*).
-5. **Chegara xatolari.** Aniqlovchili birikmalar uchun maxsus xususiyatlar
+5. **Toza test.** Vikipediyadan tizim hali ko'rmagan 4–5 ta yangi tilshunoslik
+   maqolasi olinadi va tizim hech narsa o'zgartirilmasdan bir marta baholanadi.
+   4.4-bo'limdagi "test bo'yicha sozlangan" natijalar shu yo'l bilan tekshiriladi.
+6. **Chegara xatolari.** Aniqlovchili birikmalar uchun maxsus xususiyatlar
    (*umumiy, amaliy, nazariy + termin*) yoki kontekstdan keyin qayta ishlovchi
    qoida qo'shiladi.
 
