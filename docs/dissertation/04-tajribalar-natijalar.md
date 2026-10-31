@@ -48,7 +48,7 @@ shakli oltin `term` ga (registr va apostrof farqisiz) teng bo'lgan spanlar ulush
 |---|---|---|---|---|---|
 | D-15 | 0.708 | 0.166 | 0.269 | [0.171, 0.373] | 0.371 |
 | D-train | 0.770 | 0.432 | 0.553 | [0.471, 0.628] | 0.696 |
-| CRF | 0.714 | 0.526 | 0.606 | [0.523, 0.687] | 0.769 |
+| CRF | 0.715 | 0.534 | 0.611 | [0.527, 0.690] | 0.773 |
 | **CRF+G** | **0.792** | **0.550** | **0.649** | [0.566, 0.719] | **0.780** |
 
 **4.2-jadval.** Test (uchrash-ma-uchrash qayta belgilangan, 391 span). Bu belgilar
@@ -58,7 +58,7 @@ lug'at aniqlagichiga bog'liq emas:
 |---|---|---|---|---|---|
 | D-15 | 0.685 | 0.156 | 0.254 | [0.159, 0.354] | [−0.359, −0.207] |
 | D-train | 0.761 | 0.414 | 0.536 | [0.456, 0.611] | — |
-| CRF | 0.714 | 0.512 | 0.596 | [0.513, 0.673] | [−0.019, +0.148] |
+| CRF | 0.715 | 0.519 | 0.601 | [0.516, 0.679] | [−0.014, +0.151] |
 | **CRF+G** | **0.792** | **0.535** | **0.638** | [0.550, 0.713] | **[+0.063, +0.145]** |
 
 **4.3-jadval.** Train'da uchramagan terminlar (test, 146 span):
@@ -66,7 +66,7 @@ lug'at aniqlagichiga bog'liq emas:
 | Usul | Topildi | Recall |
 |---|---|---|
 | D-15, D-train | 0 | 0.000 |
-| CRF | 29 | 0.199 |
+| CRF | 31 | 0.212 |
 | CRF+G | 2 | 0.014 |
 
 **Tahlil.**
@@ -77,7 +77,7 @@ lug'at aniqlagichiga bog'liq emas:
 2. **CRF+G eng yuqori F1 ga ega.** D-train dan farqining 95 % oralig'i ikkala
    belgilash variantida ham 0 ni o'z ichiga olmaydi, ya'ni farq statistik ishonchli.
    Gazetteersiz CRF ning ustunligi bu hajmdagi maʼlumotda ishonchli emas.
-3. **Faqat CRF yangi terminlarni topadi** (20 %): *lingvostatistika, paralingvistika,
+3. **Faqat CRF yangi terminlarni topadi** (21 %): *lingvostatistika, paralingvistika,
    etnolingvistika, sotsiolingvistika, transliteratsiya, antroponimika, semitologiya,
    hindevropashunoslik, sinxroniya, diaxroniya, oʻrin ravishlari, morfologik usul*.
    Buni oxirgi 2–5 harf xususiyatlari (*-ika, -iya, -shunoslik*) taʼminlaydi.
@@ -85,7 +85,7 @@ lug'at aniqlagichiga bog'liq emas:
    (1.4 %). Demak, ikki model turli amaliy maqsadlarga mos:
    - CRF+G — aniqlik uchun;
    - CRF — lug'atni yangi terminlar bilan to'ldirish uchun.
-4. **Validation bilan solishtirish.** Validation'da CRF (0.534) va CRF+G (0.526)
+4. **Validation bilan solishtirish.** Validation'da CRF (0.532) va CRF+G (0.530)
    deyarli teng, testda CRF+G yuqori. Kichik to'plamlarda tartib o'zgarishi
    bootstrap oraliqlarining kengligiga mos keladi.
 
@@ -96,17 +96,27 @@ lug'at aniqlagichiga bog'liq emas:
 | Usul | Validation (389) | Test (380) | Test, claude2 (391) |
 |---|---|---|---|
 | O'zgarishsiz (kichik harf) | 0.375 | 0.482 | 0.473 |
-| Korpus lemmatizatori | 0.805 | 0.747 | 0.739 |
+| Korpus lemmatizatori | 0.805 | 0.753 | 0.744 |
 | Faqat lug'at | 0.625 | 0.711 | 0.696 |
-| **Lug'at + morfologiya + izofa** | **0.936** | **0.916** | **0.903** |
+| **Lug'at + morfologiya + izofa** | **0.936** | **0.921** | **0.908** |
 
 Lug'at + morfologiya usulining birinchi versiyasi testda 0.861 natija berdi.
-Xato tahlili bitta tizimli xatoni ko'rsatdi: *-ika* bilan tugaydigan so'zlar
-"*-i* (egalik) + *-ka* (kelishik)" deb noto'g'ri bo'lingan (*lingvistika →
-lingvist*). Oʻzbek tilida *-ka* egalikdan keyin kelmaydi, shuning uchun fonotaktik
-cheklov qo'shildi. Validation natijasi o'zgarmadi (0.936), test 0.916 ga, claude2
-0.903 ga ko'tarildi. Bu o'zgarish test xatolaridan kelib chiqqani uchun 0.916 va
-0.903 **"test bo'yicha sozlangan"** natija. Sozlashdan oldingi qiymatlar: 0.861 va 0.849.
+Test xatolari tahlilidan keyin ikki tuzatish kiritildi:
+
+| # | Xato | Tuzatish | Validation | Test | Test, claude2 |
+|---|---|---|---|---|---|
+| — | birinchi versiya | — | 0.936 | 0.861 | 0.849 |
+| 1 | *lingvistika → lingvist* ("*-i* egalik + *-ka* kelishik") | fonotaktika: *-ka* egalikdan keyin kelmaydi | 0.936 | 0.916 | 0.903 |
+| 2 | *kesim → kes* ("*-im*" I shaxs egaligi) | I/II shaxs birlik egaligi so'zning o'zi korpusda bo'lsa ajratilmaydi (3.6, (c)) | 0.936 | 0.921 | 0.908 |
+
+Ikkala tuzatish ham validation natijasini o'zgartirmadi: u yerda bunday so'zlar
+yo'q. Tuzatishlar test xatolaridan kelib chiqqani uchun 0.921 va 0.908
+**"test bo'yicha sozlangan"** natija. Sozlashdan oldingi qiymatlar: 0.861 va 0.849.
+Ikkinchi tuzatishni tanlashda validation'dan foydalanildi: kengroq variant
+(barcha I/II shaxs qo'shimchalari, shu jumladan *-imiz* va *-m*) lemmatizatorni
+validation'da yomonlashtirdi (*tilimiz*, *slengmi* → noto'g'ri), shuning uchun
+qoida *-im* va *-ing* bilan cheklandi. Toza baho uchun yangi, tizim hali ko'rmagan
+maqolalarda bitta baholash kerak (5.3-bo'lim).
 
 Qolgan xatolar ikki turga bo'linadi:
 
@@ -126,13 +136,16 @@ lekin boshidagi aniqlovchi tushib qolgan:
 Sabab: o'qitish to'plamida *tilshunoslik* yolg'iz o'zi juda ko'p uchraydi. Bu
 partial va exact F1 orasidagi 0.13–0.16 farqni tushuntiradi.
 
-**Lemmatizator xatosi.** Korpus lemmatizatori *kesim* so'zini *kes + im* deb
-bo'ladi, chunki *kes* korpusda mustaqil so'z. Bu xususiyat (`lemma=kes`) modelda
-katta og'irlik olgan. Bu xato spanlarni topishga deyarli taʼsir qilmaydi, lekin xususiyatni noaniq qiladi.
-3.6-bo'limdagi meʼyorlashtiruvchi ham shu xatoni qiladi (*kesim → kes*). *kesim*
-ko'p maʼnoli bo'lgani uchun lug'atga kiritilmagan, shuning uchun morfologik
-bosqichda eng qisqa o'zak tanlanadi. Tuzatish yo'li: o'zaklar uchun chastota
-cheklovi yoki so'z turkumi maʼlumoti (5.3-bo'lim).
+**Lemmatizator xatosi (tuzatilgan).** Birinchi versiyada korpus lemmatizatori
+*kesim* so'zini *kes + im* deb bo'lardi, chunki *kes* korpusda mustaqil so'z va
+eng qisqa o'zak tanlanadi. Natijada `lemma=kes` xususiyati modelda katta og'irlik
+olgan, meʼyorlashtiruvchi ham *kesim → kes* xatosini qilgan. *-im* va *-ing*
+(I/II shaxs birlik egaligi) ensiklopedik matnda deyarli uchramagani uchun bunday
+bo'linish endi faqat boshqa imkon bo'lmasa olinadi (3.6, (c)). Tuzatishdan keyin
+modellar qayta o'qitildi: CRF+G natijasi o'zgarmadi (0.649), gazetteersiz CRF
+testda 0.606 → 0.611, validation'da 0.534 → 0.532, yaʼni farq bootstrap
+oralig'idan ancha kichik. Train'da shu qoida bilan to'g'rilangan so'zlar:
+*kesim, boʻlim, bilim, qadim, maʼlum, uning*.
 
 ## 4.6. Statistik nomzodlar
 

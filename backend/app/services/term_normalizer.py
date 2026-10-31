@@ -37,6 +37,7 @@ from app.nlp.dictionary_matcher import (
     POSSESSIVE_SUFFIXES,
     DictionaryMatcher,
 )
+from app.nlp.lemmatize import personal_possessive
 from app.nlp.normalize import normalize_form, normalize_text
 from app.nlp.tokenize import tokenize
 
@@ -129,6 +130,7 @@ class TermNormalizer:
 
     def split_word(self, word: str) -> tuple[str, re.Match[str] | None]:
         """So'zni o'zak + qo'shimchalarga ajratadi; o'zak lug'at/korpusda bo'lishi kerak (eng qisqa)."""
+        personal: tuple[str, re.Match[str]] | None = None
         for cut in range(3, len(word)):
             stem, rest = word[:cut], word[cut:]
             match = _SUFFIX.fullmatch(rest)
@@ -136,7 +138,14 @@ class TermNormalizer:
                 continue
             for candidate in self._restore(stem, rest):
                 if candidate in self.vocabulary:
-                    return candidate, match
+                    if not personal_possessive(rest):
+                        return candidate, match
+                    personal = personal or (candidate, match)
+        # I/II shaxs birlik egaligi ilmiy matnda deyarli uchramaydi, "-im" bilan tugaydigan otlar esa
+        # ko'p: so'zning o'zi korpusda bo'lsa, bunday bo'linish olinmaydi ("kesim" != "kes" + "-im").
+        # "-imiz" (tilimiz) ajratiladi: ilmiy matnda bor.
+        if personal is not None:
+            return (word, None) if word in self.vocabulary else personal
         # O'zak korpusda yo'q (yangi termin): faqat ko'plik/kelishik qo'shimchasi aniq bo'lsa va
         # o'zak kamida 5 harf bo'lsa ajratiladi ("dialektografiyaga" -> "dialektografiya").
         for cut in range(5, len(word)):
