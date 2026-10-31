@@ -1,0 +1,62 @@
+# Leksika
+leksik maʼno
+baynalmilal soʻz
+oʻz qatlam
+oʻzlashgan qatlam
+oʻzlashma qatlam
+zamonaviy qatlam
+eski qatlam
+yangi qatlam
+leksik qatlam
+umumturkiy soʻz
+istorizm
+yangi leksika
+lugʻaviy birlik
+kasb-hunar leksikasi = kasb-hunar leksika
+atama
+jargon
+argo
+vulgarizm
+varvarizm
+soʻzlashuv nutqi = soʻzlashuv nutq
+uslub
+funksional uslub
+ifoda uslubi = ifoda uslub
+ilmiy uslub
+ogʻzaki uslub
+rasmiy-idoraviy uslub
+soʻzlashuv uslubi = soʻzlashuv uslub
+stilistik boʻyoq = stilistik buyoq
+neytral soʻz
+nostandart leksika = nosatandart leksika
+standart leksika
+kollokvializm
+sleng
+umumiy sleng
+maxsus sleng
+metafora
+metonimiya
+affiksatsiya
+qoʻshimcha
+soʻz yasovchi affiks
+yarim affiks
+abbreviatsiya = abbrivatsiya
+qisqartma
+takror soʻz
+ona tili
+milliy til
+ot
+vokabulyar
+lugʻat
+!~ (yunoncha: lexis — soʻzga oid, lugʻaviy)
+!~ („colloquial“ — ingliz tilidan "soʻzlashuv uslubiga xos soʻz birikmalari va iboralar)
+!~ („slang“ — ingliz tilidan „jargon, oddiy, ogʻzaki leksikaga xos soʻzlar“)
+!~ („vocabulary“ — inglizcha „lugʻat, soʻz tarkibi, soʻz boyligi“)
+!~ („affixation“ — inglizcha „soʻz yasovchi qoʻshimchalar“)
+!~ („prefix“ — inglizcha „soʻz oldiga qoʻshilib yangi soʻz yasovchi qoʻshimcha“)
+!~ („suffix“ — inglizcha „soʻz oxiriga qoʻshilib yangi soʻz yasovchi qoʻshimchalar“)
+!~ („infix“ — inglizcha „soʻz oʻzagiga qoshilib yangi soʻz yasovchi qoʻshimchalar“)
+!~ („abbreviation“ — inglizcha „soʻzlarning qisqartmasi“)
+!~ Hozirgi oʻzbek adabiy tili, T., 1965
+!~ (Ingliz tilining Amerika xos lugʻati)
+!~ „Soʻzlar dunyosi“

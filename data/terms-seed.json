@@ -1,0 +1,167 @@
+[
+  {
+    "id": "term-0001",
+    "term": "tilshunoslik",
+    "definition": "Tilni, uning tuzilishi, rivojlanishi va qoʻllanishini oʻrganuvchi fan.",
+    "domain": "umumiy tilshunoslik",
+    "variants": [],
+    "synonyms": ["lingvistika"],
+    "preferred_form": "tilshunoslik",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0002",
+    "term": "fonetika",
+    "definition": "Nutq tovushlarini oʻrganuvchi tilshunoslik boʻlimi.",
+    "domain": "fonetika",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "fonetika",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0003",
+    "term": "fonema",
+    "definition": "Til tizimida maʼno farqlash vazifasini bajaradigan tovush birligi.",
+    "domain": "fonetika",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "fonema",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0004",
+    "term": "tovush",
+    "definition": "Nutq aʼzolari harakati natijasida hosil boʻladigan eng kichik nutq birligi.",
+    "domain": "fonetika",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "tovush",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0005",
+    "term": "unli tovush",
+    "definition": "Hosil boʻlishida havo oqimi toʻsiqqa uchramaydigan tovush.",
+    "domain": "fonetika",
+    "variants": [],
+    "synonyms": ["unli"],
+    "preferred_form": "unli tovush",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0006",
+    "term": "undosh tovush",
+    "definition": "Hosil boʻlishida havo oqimi toʻsiqqa uchraydigan tovush.",
+    "domain": "fonetika",
+    "variants": [],
+    "synonyms": ["undosh"],
+    "preferred_form": "undosh tovush",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0007",
+    "term": "morfologiya",
+    "definition": "Soʻzlarning grammatik tuzilishi va shakllarini oʻrganuvchi tilshunoslik boʻlimi.",
+    "domain": "morfologiya",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "morfologiya",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0008",
+    "term": "morfema",
+    "definition": "Maʼnoga ega boʻlgan eng kichik til birligi.",
+    "domain": "morfologiya",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "morfema",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0009",
+    "term": "oʻzak",
+    "definition": "Soʻzning boshqa morfemalarga ajralmaydigan, asosiy leksik maʼnoni ifodalovchi qismi.",
+    "domain": "morfologiya",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "oʻzak",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0010",
+    "term": "affiks",
+    "definition": "Oʻzakka qoʻshilib, yangi soʻz yoki soʻz shakli hosil qiluvchi morfema.",
+    "domain": "morfologiya",
+    "variants": [],
+    "synonyms": ["qoʻshimcha"],
+    "preferred_form": "affiks",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0011",
+    "term": "soʻz turkumi",
+    "definition": "Soʻzlarning umumiy grammatik maʼnosi va belgilariga koʻra guruhlanishi.",
+    "domain": "morfologiya",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "soʻz turkumi",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0012",
+    "term": "leksikologiya",
+    "definition": "Tilning lugʻat tarkibini oʻrganuvchi tilshunoslik boʻlimi.",
+    "domain": "leksikologiya",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "leksikologiya",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0013",
+    "term": "sintaksis",
+    "definition": "Soʻz birikmasi va gap tuzilishini oʻrganuvchi tilshunoslik boʻlimi.",
+    "domain": "sintaksis",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "sintaksis",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0014",
+    "term": "sodda gap",
+    "definition": "Bitta grammatik asosdan iborat gap.",
+    "domain": "sintaksis",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "sodda gap",
+    "status": "needs_review",
+    "source": null
+  },
+  {
+    "id": "term-0015",
+    "term": "qoʻshma gap",
+    "definition": "Ikki yoki undan ortiq grammatik asosdan tashkil topgan gap.",
+    "domain": "sintaksis",
+    "variants": [],
+    "synonyms": [],
+    "preferred_form": "qoʻshma gap",
+    "status": "needs_review",
+    "source": null
+  }
+]

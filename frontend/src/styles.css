@@ -73,3 +73,36 @@ tbody tr:hover { background: #f3f4f6; }
 dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 10px; }
 dt { color: var(--muted); }
 dd { margin: 0; }
+
+/* --- bo'limlar va annotatsiya ish joyi --- */
+.tabs { display: flex; gap: 4px; padding: 10px 20px 0; max-width: 1200px; margin: 0 auto; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.tab { padding: 8px 14px; border: 1px solid transparent; border-bottom: none; border-radius: 6px 6px 0 0; color: var(--muted); text-decoration: none; }
+.tab-active { background: var(--panel); border-color: var(--border); color: var(--text); font-weight: 600; margin-bottom: -1px; }
+.annotator { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.annotator label { margin: 0; }
+input { font: inherit; padding: 5px 8px; border: 1px solid var(--border); border-radius: 6px; min-width: 0; }
+input:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+.annotate { display: grid; grid-template-columns: minmax(220px, 280px) minmax(0, 1fr); gap: 16px; align-items: start; }
+@media (max-width: 900px) { .annotate { grid-template-columns: 1fr; } }
+.doc-list { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 10px; max-height: 80vh; overflow-y: auto; }
+.doc-list ul { list-style: none; margin: 0; padding: 0; }
+.doc { all: unset; display: flex; justify-content: space-between; gap: 8px; width: 100%; padding: 5px 6px; border-radius: 4px; cursor: pointer; font-size: 0.875rem; box-sizing: border-box; }
+.doc:hover { background: #f3f4f6; }
+.doc-active { background: #ddf4ff; font-weight: 600; }
+.annotate-main { background: var(--panel); border: 1px solid var(--border); border-radius: 8px; padding: 16px; min-width: 0; }
+.annotate-text { margin: 12px 0; user-select: text; font-size: 1.02rem; }
+.ann { background: #d1f0d8; border-bottom: 2px solid #2da44e; border-radius: 3px; cursor: pointer; }
+.ann-selected { background: #8fdca2; }
+.sugg { border-bottom: 2px dashed var(--mark-strong); background: #fffbe6; cursor: pointer; border-radius: 3px; }
+.sugg-ai { border-bottom-color: #8250df; background: #f6f0ff; }
+.sugg-x { all: unset; font-size: 0.75rem; color: var(--muted); cursor: pointer; padding: 0 2px; vertical-align: super; }
+.sugg-x:hover { color: var(--error); }
+.pending { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; background: #ddf4ff; border-radius: 6px; padding: 8px; }
+.toolbar-left { justify-content: flex-start; }
+.check { display: inline-flex; gap: 6px; align-items: center; font-weight: normal; margin: 0 auto 0 0; }
+.choices { display: flex; gap: 4px; flex-wrap: wrap; }
+.choices button { padding: 3px 8px; font-size: 0.8rem; }
+td.example { max-width: 520px; color: var(--muted); }
+td.example mark { background: var(--mark); color: var(--text); }
+tbody tr:has(input) { cursor: default; }
+.check-inline { margin: 0; }

@@ -25,12 +25,12 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 |---|---|---|
 | 0 | Rejalashtirish, tuzilma, README | bajarildi |
 | 1 | Lug'atga asoslangan baseline + testlar | bajarildi |
-| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: yo'riqnoma, format, tekshiruvchi, inline konvertor va split tayyor; belgilangan maʼlumot yo'q |
-| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | qisman: usullar va Precision@K tayyor; inson bahosi yo'q |
-| 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | reja |
+| 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: web annotatsiya interfeysi, annotatorlar kelishuvi va split tayyor; butun korpus **AI tomonidan** belgilangan (kumush, 2555 span); inson annotatsiyasi kutilmoqda |
+| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | qisman: usullar, POS filtri, weirdness (kontrast korpus kerak), Precision@K va baholash interfeysi tayyor; inson bahosi yo'q |
+| 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | bajarildi (kumush maʼlumotda): CRF, CRF + gazetteer; natija [results.md](results.md) |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
 | 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | bajarildi (MVP): API, web interfeys, JSON/CSV eksport |
-| 7 | Precision/Recall/F1, exact span match, xato tahlili | qisman: baholash skripti va metodika tayyor; real o'lchov yo'q |
+| 7 | Precision/Recall/F1, exact span match, xato tahlili | qisman: skriptlar, bootstrap ishonch oraliqlari; o'lchov faqat kumush maʼlumotda |
 
 ## 1-bosqich: baseline qarorlari
 
@@ -62,8 +62,10 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 
 1. **Lug'atda yo'q terminlarni topmaydi.** Bu baseline'ning asosiy cheklovi;
    3–4-bosqichlar shuni hal qilishi kerak.
-2. **Morfologiya sodda.** Tovush o'zgarishlari (`o'rin → o'rni`,
-   `yurak → yuragi`) hisobga olinmaydi. Qo'shimcha termin ichiga kirib keladigan
+2. **Morfologiya sodda.** Tovush o'zgarishlaridan faqat eng ko'p uchraydiganlari
+   hisobga olinadi (2026-10-31): `k → g`, `q → gʻ` (`yurak → yuragi`) va tor
+   unli tushishi (`o'rin → o'rni`), faqat unli bilan boshlanuvchi egalik
+   qo'shimchasi oldida (`stem_alternations`). Qo'shimcha termin ichiga kirib keladigan
    holatlar (`so'z turkumi → so'z turkumlari`) ham topilmaydi. Hozircha bunday
    shakllarni `variants` ga qo'shish kerak.
 3. **Qo'shimcha ro'yxati to'liq emas va ortiqcha qabul qilishi mumkin.**
@@ -242,3 +244,20 @@ yoki ularga teng, lekin farq kichik.
 - **Cheklovlar.** Autentifikatsiya yo'q (lokal prototip). Lug'atni tahrirlash
   interfeysi yo'q. Frontend komponentlari uchun brauzer testlari (React Testing
   Library) qo'shilmagan; ular qo'lda tekshirildi.
+
+## 2026-10-31: annotatsiya interfeysi, kumush maʼlumot, CRF
+
+- **Web annotatsiya** (`#annotate`): paragraf bo'yicha belgilash, lug'at / AI /
+  model takliflari, so'z chegarasiga avtomatik kengaytirish, server tomonida
+  yo'riqnoma qoidalari bilan tekshirish. Har bir annotatorning ishi alohida:
+  `data/annotations/<kod>/`. Nomzodlarni baholash ham web'da (`#judge`).
+- **Kelishuv va oltin standart**: `python -m app.annotation.agreement compare A1 A2`
+  (exact/partial span F1), `... promote A1` (`reviewed` yozuvlar `data/annotated/` ga).
+- **Kumush maʼlumot**: korpusning hammasi AI tomonidan belgilandi
+  (`data/silver/README.md`). Manifest shu maʼlumot bo'yicha muzlatildi:
+  29 / 6 / 6 maqola.
+- **Lug'at**: 15 → 450 termin, faqat train to'plamidan va ko'p maʼnoli so'zlarsiz
+  (`app/annotation/dictionary.py`). Barchasi `needs_review`, taʼrifsiz.
+  Dastlabki 15 ta `data/terms-seed.json` da.
+- **CRF** (`app/models/crf.py`) va solishtirish (`app/models/experiment.py`).
+  Natija: [results.md](results.md).

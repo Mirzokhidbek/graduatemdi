@@ -14,9 +14,12 @@ import logging
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
 
+from app.annotation.workspace import Workspace
+from app.api.annotation_routes import router as annotation_router
 from app.api.routes import router
 from app.core.config import Settings
 from app.database.term_store import load_terms
+from app.models.runtime import load_predictor
 from app.nlp.dictionary_matcher import DictionaryMatcher
 
 logger = logging.getLogger("uzterm")
@@ -30,7 +33,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.settings = settings
     app.state.entries = entries
     app.state.matcher = DictionaryMatcher(entries)
+    model = load_predictor(settings.model_path, settings.data_dir / "raw") if settings.model_path else None
+    app.state.workspace = Workspace(settings.data_dir, app.state.matcher, model)
     app.include_router(router)
+    app.include_router(annotation_router)
 
     @app.exception_handler(Exception)
     async def unexpected_error(request: Request, exc: Exception) -> JSONResponse:

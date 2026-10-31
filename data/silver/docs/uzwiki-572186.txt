@@ -1,0 +1,14 @@
+# Sifat
+sifat
+!= sifatida
+yasama sifat
+sifat yasovchi affiks
+daraja kategoriyasi = daraja kategoriya
+oddiy daraja
+orttirma daraja
+ozaytirma daraja
+morfologik koʻrsatkich
+fonetik usul
+leksik usul
+analitik usul
+otlashuv

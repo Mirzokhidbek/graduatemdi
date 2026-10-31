@@ -1,0 +1,22 @@
+# Fonetika
+segment birlik = segment birliklar
+ustsegment birlik
+supersegment
+segment
+sintagma
+nutq aʼzolari = nutq aʼzo
+tovush tizimi = tovush tizim
+fonetik tizim
+fonetik hodisa
+tovush birligi = tovush birlik
+umumiy fonetika
+tarixiy fonetika
+tasviriy fonetika
+qiyosiy fonetika
+eksperimental fonetika
+xususiy fonetika
+!~ phonetikos — tovushga, tovush chiqarishga oid; tovushli, ovozli
+!~ segmentum — qirqim, parcha, boʻlak
+!~ „Tovush fiziologiyasi asoslari“
+!~ „Fonetika asoslari“
+!~ fonetika Abdullayev

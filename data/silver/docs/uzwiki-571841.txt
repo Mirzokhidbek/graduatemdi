@@ -1,0 +1,34 @@
+# Sintaksis ("Si" — sintaksis qisqartmasi; "ran" — "gap"ning OCR xatosi)
+sintaksis = Si
+gap = ran
+qoʻshma gap = qoʻshma ran
+gap boʻlagi = gap boʻlak; ran boʻlak
+nutq birligi = nutq birlik
+grammatik qurilish
+til birligi = til birlik
+shakl yasalishi
+soʻz shakli = soʻz shakl
+sintaktik birlik
+abzats
+period
+matn
+tobe aloqa
+moslashuv
+boshqaruv
+bitishuv
+sintetik til
+analitik til
+agglyutinativ til = agglyutinativ
+amorf til
+soʻz tartibi = suz tartibi
+aktual boʻlinish
+ega
+kesim
+hol
+!= hollarda
+kiritma
+uchinchi darajali boʻlak
+sintaktik qurilish
+!~ Ad:. Oʻzbek tili grammatikasi, 2j.
+!~ Oʻzbek tilining nazariy fammatikasi. Sintaksis
+!~ („Turkiy tillar sintaksisi kridalari“)

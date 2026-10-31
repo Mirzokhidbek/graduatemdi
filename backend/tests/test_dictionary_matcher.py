@@ -267,3 +267,29 @@ def test_same_form_in_two_entries_is_ambiguous():
     [match] = DictionaryMatcher(entries).find("ot")
     assert match.ambiguous
     assert {c.entry.id for c in match.candidates} == {"a", "b"}
+
+
+# --- Tovush o'zgarishlari ------------------------------------------------
+
+
+def test_stem_alternations():
+    from app.nlp.dictionary_matcher import stem_alternations
+
+    assert stem_alternations("kelishik") == ["kelishig", "kelishk"]
+    assert stem_alternations("qishloq") == ["qishlog'"]
+    assert stem_alternations("o'rin") == ["o'rn"]
+    assert stem_alternations("fonema") == []
+    assert stem_alternations("gap") == []
+
+
+def test_altered_stems_match_only_before_vowel_possessive():
+    entries = parse_terms(
+        [make_entry("a", "kelishik"), make_entry("b", "oʻrin"), make_entry("c", "bosh kelishik")]
+    )
+    matcher = DictionaryMatcher(entries)
+    found = [(m.surface, m.base_surface, m.suffix) for m in matcher.find("Kelishigi, oʻrni va bosh kelishigidagi")]
+    assert found == [("Kelishigi", "Kelishig", "i"), ("oʻrni", "oʻrn", "i"), ("bosh kelishigidagi", "bosh kelishig", "idagi")]
+    # o'zgargan o'zak qo'shimchasiz yoki undosh qo'shimcha bilan kelmaydi
+    assert matcher.find("kelishig kelishigga oʻrnga") == []
+    # odatiy shakllar avvalgidek
+    assert [m.surface for m in matcher.find("kelishiklar oʻrinda")] == ["kelishiklar", "oʻrinda"]
