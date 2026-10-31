@@ -166,6 +166,19 @@ Format namunasi (dataset emas):
 PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.example.jsonl --sources docs/examples/sources.example.json
 ```
 
+## Bosqichlar bo'yicha (dissertatsiya rejasi)
+
+| Bosqich | Qayerda |
+|---|---|
+| 1. Dataset (BIO, JSONL) | `data/bio/sentences-100.jsonl` — 100 ta gap, qo'lda tekshirilgan (`data/bio/review.txt`); `python -m app.dataset.bio sample / validate / export` |
+| 2. Preprocessing | `app/nlp/clean.py` (tozalash, rasmiy apostroflar, gaplarga ajratish), `normalize.py`, `tokenize.py` |
+| 3. Xususiyatlar | `app/models/crf.py` → `token_features` |
+| 4. O'qitish, saqlash, yuklash | `python -m app.models.crf train / evaluate / predict` |
+| 5. Meʼyorlashtirish | `app/services/term_normalizer.py`; aniqlik: `python -m app.evaluation.normalization` |
+| 6. Baholash | `python -m app.models.experiment`, `python -m app.evaluation.report` → [docs/experiments-table.md](docs/experiments-table.md) |
+| 7. Web interfeys | `streamlit run streamlit_app.py` (shuningdek React: tahlil, annotatsiya, baholash) |
+| 8. Ilmiy hujjat | [docs/dissertation/](docs/dissertation/README.md) |
+
 ## AI annotatsiyasi, lug'at va CRF
 
 ```bash
@@ -235,7 +248,13 @@ backend/app/annotation/workspace.py   web annotatsiya va baholash ish joyi (fayl
 backend/app/annotation/agreement.py   annotatorlar kelishuvi (span F1), oltin standartga o'tkazish
 backend/app/annotation/silver.py      AI annotatsiyasini ro'yxatlardan yaratish
 backend/app/annotation/dictionary.py  lug'atni train terminlari bilan to'ldirish
-backend/app/models/crf.py             CRF termin aniqlagich (BIO)
+backend/app/models/crf.py             CRF termin aniqlagich (BIO): xususiyatlar, o'qitish, saqlash, CLI
+backend/app/nlp/clean.py              matnni tozalash, rasmiy apostroflar, gaplarga ajratish
+backend/app/dataset/bio.py            BIO dataset: eksport, tekshiruv, 100 gaplik to'plam
+backend/app/services/term_normalizer.py meʼyorlashtirish: lug'at + morfologiya + izofa
+backend/app/evaluation/normalization.py meʼyorlashtirish aniqligi
+backend/app/evaluation/report.py      tajribalar jadvali (docs/experiments-table.md)
+streamlit_app.py                      Streamlit interfeysi
 backend/app/models/experiment.py      usullarni solishtirish, bootstrap ishonch oraliqlari
 backend/tests/                        pytest testlari
 frontend/                             React + TypeScript + Vite web interfeys
@@ -253,6 +272,8 @@ docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
 docs/experiment-methodology.md        baholash metodikasi
 docs/results.md                       dastlabki natijalar (kumush maʼlumot)
+docs/dissertation/                    dissertatsiya uchun ilmiy hujjat (6 bob)
+data/bio/                             100 gaplik BIO dataset va tekshiruv qaydlari
 docs/examples/                        format namunalari (dataset emas)
 reports/                              ishga tushirish natijalari (nomzodlar reytingi)
 ```

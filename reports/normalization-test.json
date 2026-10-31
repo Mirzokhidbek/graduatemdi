@@ -1,0 +1,191 @@
+{
+  "spans": 380,
+  "elliptic": 8,
+  "methods": {
+    "lowercase": {
+      "correct": 183,
+      "accuracy": 0.48157894736842105
+    },
+    "corpus_lemmatizer": {
+      "correct": 284,
+      "accuracy": 0.7473684210526316
+    },
+    "dictionary": {
+      "correct": 270,
+      "accuracy": 0.7105263157894737
+    },
+    "dictionary_morphology": {
+      "correct": 348,
+      "accuracy": 0.9157894736842105
+    }
+  },
+  "steps": {
+    "dictionary": {
+      "spans": 164,
+      "correct": 160,
+      "accuracy": 0.975609756097561
+    },
+    "unchanged": {
+      "spans": 117,
+      "correct": 101,
+      "accuracy": 0.8632478632478633
+    },
+    "morphology": {
+      "spans": 99,
+      "correct": 87,
+      "accuracy": 0.8787878787878788
+    }
+  },
+  "errors": [
+    {
+      "surface": "Lingvistika",
+      "gold": "tilshunoslik",
+      "predicted": "lingvistika",
+      "step": "dictionary"
+    },
+    {
+      "surface": "Lingvistika",
+      "gold": "tilshunoslik",
+      "predicted": "lingvistika",
+      "step": "dictionary"
+    },
+    {
+      "surface": "leksikofafiya",
+      "gold": "leksikografiya",
+      "predicted": "leksikofafiya",
+      "step": "unchanged"
+    },
+    {
+      "surface": "qiyosiytarixiy metod",
+      "gold": "qiyosiy-tarixiy metod",
+      "predicted": "qiyosiytarixiy metod",
+      "step": "unchanged"
+    },
+    {
+      "surface": "qiyosiytarixiy tilshunoslikka",
+      "gold": "qiyosiy-tarixiy tilshunoslik",
+      "predicted": "qiyosiytarixiy tilshunoslik",
+      "step": "morphology"
+    },
+    {
+      "surface": "tillar oilalarining",
+      "gold": "tillar oilasi",
+      "predicted": "tillar oilalari",
+      "step": "morphology"
+    },
+    {
+      "surface": "qiyosiytarixiy tilshunoslikning",
+      "gold": "qiyosiy-tarixiy tilshunoslik",
+      "predicted": "qiyosiytarixiy tilshunoslik",
+      "step": "morphology"
+    },
+    {
+      "surface": "qiyosiytarixiy metod",
+      "gold": "qiyosiy-tarixiy metod",
+      "predicted": "qiyosiytarixiy metod",
+      "step": "unchanged"
+    },
+    {
+      "surface": "lingvistika",
+      "gold": "tilshunoslik",
+      "predicted": "lingvistika",
+      "step": "dictionary"
+    },
+    {
+      "surface": "leksikofafiya",
+      "gold": "leksikografiya",
+      "predicted": "leksikofafiya",
+      "step": "unchanged"
+    },
+    {
+      "surface": "Lingvistika",
+      "gold": "tilshunoslik",
+      "predicted": "lingvistika",
+      "step": "dictionary"
+    },
+    {
+      "surface": "UYUSHIQ BÒLAKLAR",
+      "gold": "uyushiq boʻlak",
+      "predicted": "uyushiq bòlak",
+      "step": "morphology"
+    },
+    {
+      "surface": "otga",
+      "gold": "ot",
+      "predicted": "otga",
+      "step": "unchanged"
+    },
+    {
+      "surface": "otdan",
+      "gold": "ot",
+      "predicted": "otdan",
+      "step": "unchanged"
+    },
+    {
+      "surface": "kesim",
+      "gold": "kesim",
+      "predicted": "kes",
+      "step": "morphology"
+    },
+    {
+      "surface": "otlarda",
+      "gold": "ot",
+      "predicted": "otlar",
+      "step": "morphology"
+    },
+    {
+      "surface": "soʻz oʻzgarish",
+      "gold": "soʻz oʻzgarishi",
+      "predicted": "soʻz oʻzgarish",
+      "step": "unchanged"
+    },
+    {
+      "surface": "leksikgrammatik kategoriyalari",
+      "gold": "leksik-grammatik kategoriya",
+      "predicted": "leksikgrammatik kategoriya",
+      "step": "morphology"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
+    },
+    {
+      "surface": "kesim",
+      "gold": "kesim",
+      "predicted": "kes",
+      "step": "morphology"
+    },
+    {
+      "surface": "otlar",
+      "gold": "ot",
+      "predicted": "otlar",
+      "step": "unchanged"
+    },
+    {
+      "surface": "otlardagi",
+      "gold": "ot",
+      "predicted": "otlar",
+      "step": "morphology"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
+    },
+    {
+      "surface": "St",
+      "gold": "soʻz turkumi",
+      "predicted": "st",
+      "step": "unchanged"
+    }
+  ]
+}
