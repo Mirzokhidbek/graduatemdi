@@ -97,6 +97,33 @@ Natija Claude baholari bo'yicha (`data/judgments/candidates-claude.csv`, AI baho
 
 \** Filtrdan keyin top-100 ga 3–6 ta yangi, baholanmagan nomzod kirdi. Ular termin emas deb sanaldi, shuning uchun ≥.
 
+### Test to'plami mustaqil ravishda qayta belgilandi (`claude2`)
+
+Ro'yxat usulining kamchiligi bor: test belgilari lug'at aniqlagichi bilan
+yaratilgan. Shuni yo'qotish uchun 6 ta test maqolasi **ikkinchi marta** belgilandi.
+Bu safar har bir uchrash kontekstga qarab alohida hal qilindi, takliflar va
+ro'yxatlar ishlatilmadi (`data/silver/claude2/`, `app/annotation/sequential.py`).
+
+- **Ikki o'tish orasidagi kelishuv** (`agreement compare claude2 claude`): exact
+  F1 = 0.965, partial F1 = 0.973. Aynan mos 372 spandan 367 tasida lug'at shakli
+  ham bir xil. Farqlar asosan ellipsis (*sabab va maqsad bogʻlovchi* →
+  `sabab`), aniqlovchili birikmalar (*mustaqil soʻz turkumi* yoki *soʻz turkumi*)
+  va umumiy maʼnoda kelgan `gap`. **Bu inson kelishuvi emas**: ikkala o'tishni
+  bitta baholovchi (AI) bajargan, shuning uchun raqam yuqori chiqishi kutilgan.
+- **Shu test belgilarida natija** (`reports/experiment-silver-test2.json`).
+  Modellar o'sha, faqat test oltin belgilari almashtirildi:
+
+| Usul | P | R | F1 | F1, 95 % oraliq | dictionary_train dan farq |
+|---|---|---|---|---|---|
+| dictionary_seed | 0.685 | 0.156 | 0.254 | [0.159, 0.354] | [−0.359, −0.207] |
+| dictionary_train | 0.761 | 0.414 | 0.536 | [0.456, 0.611] | — |
+| crf | 0.714 | 0.512 | 0.596 | [0.513, 0.673] | [−0.019, +0.148] |
+| crf_gazetteer | 0.792 | 0.535 | **0.638** | [0.550, 0.713] | **[+0.063, +0.145]** |
+
+  Xulosalar o'zgarmadi. Lug'atga bog'liq bo'lmagan test belgilarida ham
+  `crf_gazetteer` lug'atdan ishonchli yaxshiroq. Lug'at natijasi kutilganidek
+  biroz pasaydi (0.553 → 0.536).
+
 ## 4. Xulosalar (kumush maʼlumot doirasida)
 
 1. **Lug'at hajmi asosiy omil.** 15 terminli lug'at recall'i 0.17, train
@@ -127,9 +154,9 @@ Natija Claude baholari bo'yicha (`data/judgments/candidates-claude.csv`, AI baho
 
 ## 5. Cheklovlar
 
-- **Annotatsiya AI tomonidan qilingan.** Har bir maqola uchun bitta ro'yxat
-  qo'llangan, har bir uchrash alohida baholanmagan. Inson tekshiruvi va ikki
-  annotator kelishuvi hali yo'q.
+- **Annotatsiya AI tomonidan qilingan.** Train va validation'da har bir maqola
+  uchun bitta ro'yxat qo'llangan. Testda har bir uchrash alohida hal qilingan,
+  lekin bu ham AI. Inson tekshiruvi va ikki inson annotator kelishuvi hali yo'q.
 - **Test to'plami kichik** (6 maqola, 35 paragraf). Oraliqlar keng, janr bitta
   (ensiklopedik).
 - **Transformer modeli sinab ko'rilmadi.** Muhitda HuggingFace'ga kirish yo'q

@@ -81,3 +81,22 @@ def test_crf_learns_and_predicts(tmp_path):
     # yangi so'z, lekin -ema qo'shimchasi va gapdagi o'rni bo'yicha termin deb topiladi
     assert [(p.start, p.end) for p in predicted] == [(0, 7)]
     assert model.predict("Ular uyga ketdi.") == []
+
+
+# --- uchrash-ma-uchrash annotatsiya ---------------------------------------------
+
+
+def test_sequential_marks_follow_text_order():
+    from app.annotation.sequential import SequentialError, apply_marks, parse_marks
+
+    source = "Ot va sifat. Otlar haqida.\n\nIkkinchi paragraf: fonema."
+    marks = parse_marks("@1\nOt | ot\nOtlar | ot\n@2\nfonema\n")
+    records = apply_marks("d", source, marks, "claude2")
+    first = records[0]
+    assert [(first["text"][s["start"] : s["end"]], s["term"]) for s in first["terms"]] == [("Ot", "ot"), ("Otlar", "ot")]
+    assert records[1]["terms"][0]["term"] == "fonema"
+    # "sifat" faqat so'z chegarasida; tartib buzilsa (oldingi belgidan keyin yo'q) — xato
+    with pytest.raises(SequentialError):
+        apply_marks("d", source, parse_marks("@1\nOtlar\nsifat\n"), "claude2")
+    with pytest.raises(SequentialError):
+        apply_marks("d", source, parse_marks("@3\nfonema\n"), "claude2")

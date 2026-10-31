@@ -54,3 +54,12 @@ aniqlagich qoidalariga (qo'shimchalar ro'yxati) mos keladi. Shuning uchun lug'at
 usulining bu maʼlumotdagi natijasi inson oltin standartidagidan yuqoriroq
 chiqishi kutiladi. Usullarni yakuniy solishtirish faqat inson belgilagan
 `reviewed` maʼlumotda qilinadi.
+
+## Ikkinchi o'tish: test to'plami, uchrash-ma-uchrash (`claude2`)
+
+`claude2/<doc_id>.txt` — 6 ta test maqolasi qaytadan belgilangan. Bu safar har
+bir termin uchrashi matndagi tartibda alohida yozilgan, umumiy maʼnodagi
+uchrashlar yozilmagan, ro'yxat va takliflar ishlatilmagan.
+`PYTHONPATH=backend python -m app.annotation.sequential claude2` →
+`data/annotations/claude2/`. Birinchi o'tish bilan kelishuv: exact F1 0.965
+(`docs/results.md`).
