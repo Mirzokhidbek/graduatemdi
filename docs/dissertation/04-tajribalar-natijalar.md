@@ -1,0 +1,152 @@
+# 4-bob. Tajribalar va natijalar
+
+> Barcha natijalar **AI annotatsiyasi** (kumush maʼlumot) bo'yicha. To'liq jadval
+> `docs/experiments-table.md` da, xom natijalar `reports/*.json` da.
+
+## 4.1. Tajriba sxemasi
+
+1. Train / validation / test manba darajasida ajratilgan (2.5-bo'lim).
+2. Lug'at va CRF faqat train'da quriladi (o'qitiladi).
+3. Giperparametrlar va qoidalar validation'da sozlanadi.
+4. Test har bir konfiguratsiya uchun bir marta baholanadi.
+5. Test xatolari tahlilidan keyin tizimga kiritilgan o'zgarish alohida
+   hujjatlashtiriladi va natija "test bo'yicha sozlangan" deb belgilanadi (4.4).
+
+Taqqoslangan usullar:
+
+| Belgi | Usul |
+|---|---|
+| D-15 | dastlabki 15 terminli namuna lug'at |
+| D-train | train terminlari bilan to'ldirilgan lug'at (450) |
+| CRF | 3.4-bo'limdagi model, gazetteersiz |
+| CRF+G | CRF + train lug'ati gazetteer xususiyati |
+
+## 4.2. Metrikalar
+
+Spanlar exact mezon bo'yicha solishtiriladi: `[start, end)` aynan teng bo'lsa
+to'g'ri. Partial mezonda kamida bitta belgi ustma-ust tushishi yetarli. Barcha
+metrikalar micro-average (CoNLL-2003 an'anasi; Tjong Kim Sang, De Meulder, 2003):
+
+```text
+P  = |G ∩ S| / |S|,    R = |G ∩ S| / |G|,    F1 = 2PR / (P + R)
+```
+
+Bu yerda G — oltin spanlar, S — bashorat qilingan spanlar.
+
+**Ishonch oralig'i.** Paragraflar bo'yicha bootstrap (Efron, Tibshirani, 1993):
+B = 2000 ta qayta tanlanma, 2.5 va 97.5 persentil. Usullar farqi uchun juftlangan
+bootstrap: har bir qayta tanlanmada ikkala usulning F1 farqi hisoblanadi.
+
+**Meʼyorlashtirish aniqligi.** Oltin span matni uchun bashorat qilingan lug'at
+shakli oltin `term` ga (registr va apostrof farqisiz) teng bo'lgan spanlar ulushi.
+
+## 4.3. Terminlarni aniqlash natijalari
+
+**4.1-jadval.** Test (ro'yxat usulidagi belgilar, 35 paragraf, 380 span):
+
+| Usul | P | R | F1 | F1, 95 % oraliq | Partial F1 |
+|---|---|---|---|---|---|
+| D-15 | 0.708 | 0.166 | 0.269 | [0.171, 0.373] | 0.371 |
+| D-train | 0.770 | 0.432 | 0.553 | [0.471, 0.628] | 0.696 |
+| CRF | 0.714 | 0.526 | 0.606 | [0.523, 0.687] | 0.769 |
+| **CRF+G** | **0.792** | **0.550** | **0.649** | [0.566, 0.719] | **0.780** |
+
+**4.2-jadval.** Test (uchrash-ma-uchrash qayta belgilangan, 391 span). Bu belgilar
+lug'at aniqlagichiga bog'liq emas:
+
+| Usul | P | R | F1 | F1, 95 % oraliq | D-train dan farq, 95 % |
+|---|---|---|---|---|---|
+| D-15 | 0.685 | 0.156 | 0.254 | [0.159, 0.354] | [−0.359, −0.207] |
+| D-train | 0.761 | 0.414 | 0.536 | [0.456, 0.611] | — |
+| CRF | 0.714 | 0.512 | 0.596 | [0.513, 0.673] | [−0.019, +0.148] |
+| **CRF+G** | **0.792** | **0.535** | **0.638** | [0.550, 0.713] | **[+0.063, +0.145]** |
+
+**4.3-jadval.** Train'da uchramagan terminlar (test, 146 span):
+
+| Usul | Topildi | Recall |
+|---|---|---|
+| D-15, D-train | 0 | 0.000 |
+| CRF | 29 | 0.199 |
+| CRF+G | 2 | 0.014 |
+
+**Tahlil.**
+
+1. **Lug'at hajmi recall'ni deyarli 2.6 baravar oshiradi** (0.166 → 0.432).
+   Precision esa o'zgarmaydi (≈ 0.7–0.8). Lug'at usulining asosiy cheklovi —
+   to'liqlik (coverage).
+2. **CRF+G eng yuqori F1 ga ega.** D-train dan farqining 95 % oralig'i ikkala
+   belgilash variantida ham 0 ni o'z ichiga olmaydi, ya'ni farq statistik ishonchli.
+   Gazetteersiz CRF ning ustunligi bu hajmdagi maʼlumotda ishonchli emas.
+3. **Faqat CRF yangi terminlarni topadi** (20 %): *lingvostatistika, paralingvistika,
+   etnolingvistika, sotsiolingvistika, transliteratsiya, antroponimika, semitologiya,
+   hindevropashunoslik, sinxroniya, diaxroniya, oʻrin ravishlari, morfologik usul*.
+   Buni oxirgi 2–5 harf xususiyatlari (*-ika, -iya, -shunoslik*) taʼminlaydi.
+   Gazetteer qo'shilganda model lug'at belgisiga tayanadi va bu qobiliyat yo'qoladi
+   (1.4 %). Demak, ikki model turli amaliy maqsadlarga mos:
+   - CRF+G — aniqlik uchun;
+   - CRF — lug'atni yangi terminlar bilan to'ldirish uchun.
+4. **Validation bilan solishtirish.** Validation'da CRF (0.534) va CRF+G (0.526)
+   deyarli teng, testda CRF+G yuqori. Kichik to'plamlarda tartib o'zgarishi
+   bootstrap oraliqlarining kengligiga mos keladi.
+
+## 4.4. Meʼyorlashtirish natijalari
+
+**4.4-jadval.** Oltin spanlar uchun lug'at shakli aniqligi:
+
+| Usul | Validation (389) | Test (380) | Test, claude2 (391) |
+|---|---|---|---|
+| O'zgarishsiz (kichik harf) | 0.375 | 0.482 | 0.473 |
+| Korpus lemmatizatori | 0.805 | 0.747 | 0.739 |
+| Faqat lug'at | 0.625 | 0.711 | 0.696 |
+| **Lug'at + morfologiya + izofa** | **0.936** | **0.916** | **0.903** |
+
+Lug'at + morfologiya usulining birinchi versiyasi testda 0.861 natija berdi.
+Xato tahlili bitta tizimli xatoni ko'rsatdi: *-ika* bilan tugaydigan so'zlar
+"*-i* (egalik) + *-ka* (kelishik)" deb noto'g'ri bo'lingan (*lingvistika →
+lingvist*). Oʻzbek tilida *-ka* egalikdan keyin kelmaydi, shuning uchun fonotaktik
+cheklov qo'shildi. Validation natijasi o'zgarmadi (0.936), test 0.916 ga, claude2
+0.903 ga ko'tarildi. Bu o'zgarish test xatolaridan kelib chiqqani uchun 0.916 va
+0.903 **"test bo'yicha sozlangan"** natija. Sozlashdan oldingi qiymatlar: 0.861 va 0.849.
+
+Qolgan xatolar ikki turga bo'linadi:
+
+- **tiklab bo'lmaydiganlari:** ellipsis (*lugʻaviy → lugʻaviy maʼno*, 8–15 span),
+  manbadagi imlo xatolari (*Nosatandart*, *stilistik buyoq*);
+- **izofa qoidasining istisnolari:** *ozaytirma shakli* oltin belgida izofa bilan
+  berilgan, qoida esa birinchi so'zni sifat deb oladi.
+
+## 4.5. Xato tahlili (CRF, test)
+
+**Chegara xatolari.** CRF ning 56 ta chegara xatosidan 27 tasida oxiri to'g'ri,
+lekin boshidagi aniqlovchi tushib qolgan:
+
+- *amaliy / nazariy / xususiy / strukturaviy tilshunoslik* → *tilshunoslik*;
+- *mustaqil soʻz turkumi* → *soʻz turkumi*.
+
+Sabab: o'qitish to'plamida *tilshunoslik* yolg'iz o'zi juda ko'p uchraydi. Bu
+partial va exact F1 orasidagi 0.13–0.16 farqni tushuntiradi.
+
+**Lemmatizator xatosi.** Korpus lemmatizatori *kesim* so'zini *kes + im* deb
+bo'ladi, chunki *kes* korpusda mustaqil so'z. Bu xususiyat (`lemma=kes`) modelda
+katta og'irlik olgan. Bu xato spanlarni topishga deyarli taʼsir qilmaydi, lekin xususiyatni noaniq qiladi.
+3.6-bo'limdagi meʼyorlashtiruvchi ham shu xatoni qiladi (*kesim → kes*). *kesim*
+ko'p maʼnoli bo'lgani uchun lug'atga kiritilmagan, shuning uchun morfologik
+bosqichda eng qisqa o'zak tanlanadi. Tuzatish yo'li: o'zaklar uchun chastota
+cheklovi yoki so'z turkumi maʼlumoti (5.3-bo'lim).
+
+## 4.6. Statistik nomzodlar
+
+Precision@K, AI baholari bo'yicha (119 ta nomzod, `data/judgments/candidates-claude.csv`):
+
+| Usul | P@10 | P@20 | P@50 | P@100 |
+|---|---|---|---|---|
+| frequency | 0.30 | 0.25 | 0.26 | 0.30 |
+| TF-IDF | 0.40 | 0.45 | 0.36 | 0.35 |
+| TF-IDF + POS filtri | **0.50** | **0.55** | **0.40** | ≥ 0.37 |
+| C-value | 0.30 | 0.30 | 0.32 | 0.32 |
+| C-value + POS filtri | 0.30 | 0.30 | 0.34 | ≥ 0.34 |
+
+POS filtri fe'l va nisbiy sifat shakllarini (*yoziladi*, *grammatik*) chiqarib,
+TF-IDF reytingining yuqori qismini tozalaydi. Top-100 da filtrdan keyin 3–6 ta
+yangi, baholanmagan nomzod paydo bo'ldi. Ular termin emas deb sanaldi, shuning
+uchun qiymatlar "≥" bilan berilgan.

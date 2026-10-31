@@ -186,3 +186,83 @@ def build_lemmatizer(texts: Iterable[str]) -> CorpusLemmatizer:
 
 def save_meta(model_path: Path, meta: dict) -> None:
     model_path.with_suffix(".json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def _records_from(paths: Sequence[Path]) -> list[AnnotatedRecord]:
+    from app.dataset.annotation import load_annotations
+
+    return load_annotations(paths)
+
+
+def main(argv: list[str] | None = None) -> int:
+    """Buyruq satri: o'qitish, saqlash, qayta yuklab baholash va matnni tahlil qilish."""
+    import argparse
+    import sys
+
+    from app.database.term_store import load_terms
+    from app.dataset.validate import REPO_ROOT
+    from app.evaluation.metrics import exact_scores, partial_scores
+
+    parser = argparse.ArgumentParser(description="CRF termin aniqlagich")
+    parser.add_argument("--raw", type=Path, default=REPO_ROOT / "data" / "raw", help="lemmatizator lug'ati uchun matnlar")
+    commands = parser.add_subparsers(dest="command", required=True)
+
+    train = commands.add_parser("train", help="o'qitish va saqlash")
+    train.add_argument("files", nargs="+", type=Path, help="span JSONL (masalan data/processed/silver/train.jsonl)")
+    train.add_argument("--model", type=Path, required=True)
+    train.add_argument("--gazetteer", type=Path, help="lug'at (terms.json) — gazetteer xususiyati uchun")
+    train.add_argument("--c1", type=float, default=0.1)
+    train.add_argument("--c2", type=float, default=0.01)
+    train.add_argument("--iterations", type=int, default=200)
+
+    evaluate = commands.add_parser("evaluate", help="saqlangan modelni yuklab baholash")
+    evaluate.add_argument("files", nargs="+", type=Path)
+    evaluate.add_argument("--model", type=Path, required=True)
+
+    predict = commands.add_parser("predict", help="matndan terminlarni topish")
+    predict.add_argument("text")
+    predict.add_argument("--model", type=Path, required=True)
+    args = parser.parse_args(argv)
+
+    lemmatizer = build_lemmatizer(p.read_text(encoding="utf-8") for p in sorted(args.raw.glob("*.txt")))
+
+    def gazetteer_for(model_path: Path) -> DictionaryMatcher | None:
+        meta_path = model_path.with_suffix(".json")
+        meta = json.loads(meta_path.read_text(encoding="utf-8")) if meta_path.exists() else {}
+        name = meta.get("gazetteer")
+        if not name:
+            return None
+        path = Path(name) if Path(name).is_absolute() else REPO_ROOT / "data" / Path(name).name
+        return DictionaryMatcher(load_terms(path))
+
+    if args.command == "train":
+        matcher = DictionaryMatcher(load_terms(args.gazetteer)) if args.gazetteer else None
+        records = _records_from(args.files)
+        model = TermCrf(lemmatizer, matcher)
+        model.train(records, args.model, CrfConfig(args.c1, args.c2, args.iterations))
+        save_meta(args.model, {"c1": args.c1, "c2": args.c2, "max_iterations": args.iterations,
+                               "train_records": len(records),
+                               "gazetteer": args.gazetteer.name if args.gazetteer else None,
+                               "data": [p.as_posix() for p in args.files]})
+        print(f"Model saqlandi: {args.model} ({len(records)} yozuv)")
+        return 0
+
+    if not args.model.exists():
+        print(f"Model topilmadi: {args.model}", file=sys.stderr)
+        return 1
+    model = TermCrf(lemmatizer, gazetteer_for(args.model)).load(args.model)
+    if args.command == "predict":
+        for span in model.predict(args.text):
+            print(f"[{span.start}, {span.end})  {args.text[span.start:span.end]}  ->  {span.term}")
+        return 0
+
+    records = _records_from(args.files)
+    pairs = [([Span(s.start, s.end, s.term) for s in r.terms], model.predict(r.text)) for r in records]
+    for name, scores in (("exact", exact_scores(pairs)), ("partial", partial_scores(pairs))):
+        print(f"{name:<8} P={scores.precision:.3f} R={scores.recall:.3f} F1={scores.f1:.3f} "
+              f"(oltin {scores.gold}, bashorat {scores.predicted})")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
