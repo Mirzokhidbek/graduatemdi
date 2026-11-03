@@ -1,6 +1,6 @@
 # Claude Code ToolBox — MCP & Skills awareness
 
-_Generated: 2026-10-27T00:58:37.703Z_
+_Generated: 2026-11-03T00:47:39.859Z_
 
 ## How to use this report
 
@@ -13,9 +13,9 @@ _Generated: 2026-10-27T00:58:37.703Z_
 
 ## MCP — workspace
 
-Workspace `mcp.json` _(folder: FotimaMDI)_
+Workspace `mcp.json` _(folder: graduatemdi)_
 
-- **/Users/macbook/IT-projects/FotimaMDI/.mcp.json** — _File missing_
+- **/Users/macbook/IT-projects/graduatemdi/.mcp.json** — _File missing_
 
 _No active workspace servers in mcp.json._
 
