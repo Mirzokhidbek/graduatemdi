@@ -97,6 +97,79 @@ Natija Claude baholari bo'yicha (`data/judgments/candidates-claude.csv`, AI baho
 
 \** Filtrdan keyin top-100 ga 3–6 ta yangi, baholanmagan nomzod kirdi. Ular termin emas deb sanaldi, shuning uchun ≥.
 
+### Statistik nomzodlar: birinchi inson bahosi (A1)
+
+119 ta nomzod (uchala usul top-100 birlashmasi) inson baholovchi **A1** tomonidan
+ko'r holda baholandi (`data/judgments/candidates-A1.csv`): 63 ta `1`, 56 ta `0`,
+`?` yo'q. Shu sababli qatʼiy va yumshoq P@K bir xil.
+
+| Usul | P@10 | P@20 | P@50 | P@100 |
+|---|---|---|---|---|
+| frequency | 0.90 | 0.65 | 0.58 | 0.50 |
+| tfidf | 0.90 | 0.80 | 0.66 | 0.58 |
+| cvalue | 0.80 | 0.65 | 0.64 | 0.53 |
+| frequency + POS filtri | 0.90 | 0.70 | 0.62 | ≥0.52 |
+| tfidf + POS filtri | **1.00** | **0.85** | **0.68** | **≥0.59** |
+| cvalue + POS filtri | 0.80 | 0.65 | 0.62 | ≥0.52 |
+
+**A1 ↔ Claude kelishuvi:** ikkalasi `0`/`1` qo'ygan 99 ta nomzodning 89 tasida
+baho bir xil, Cohen's kappa = **0.795**. Kelishmovchiliklarning 9 tasida A1 `1`,
+Claude `0` qo'ygan: nisbiy sifatlar (`grammatik`, `morfologik`, `sintaktik`),
+terminning bo'laklari (`yasalish`, `turkum`, `bildiruvchi`, `qism`), `tilshunos`
+va `nostandart`. Bittasida aksincha (`qo'shimcha`: A1 `0`, Claude `1`). Claude
+`?` qo'ygan 20 ta nomzodning 17 tasini A1 termin deb baholagan (`so'z`, `til`,
+`shakl`, `ega`, `kategoriya` va boshq.). Shuning uchun A1 bo'yicha P@K Claude'ning
+qatʼiy hisobidan ancha yuqori va yumshoq hisobiga yaqin.
+
+### Statistik nomzodlar: ikkinchi inson bahosi (A2) va kelishuv
+
+O'sha 119 ta nomzodni **A2** ham baholadi (`data/judgments/candidates-A2.csv`):
+37 ta `1`, 82 ta `0`, `?` yo'q. A1 va A2 — ikki turli odam, ular bir-birining
+baholarini ko'rmasdan, mustaqil baholagan.
+
+| Usul | A1: P@10 | P@20 | P@50 | P@100 | A2: P@10 | P@20 | P@50 | P@100 |
+|---|---|---|---|---|---|---|---|---|
+| frequency | 0.90 | 0.65 | 0.58 | 0.50 | 0.30 | 0.25 | 0.28 | 0.30 |
+| tfidf | 0.90 | 0.80 | 0.66 | 0.58 | 0.30 | 0.40 | 0.34 | 0.32 |
+| cvalue | 0.80 | 0.65 | 0.64 | 0.53 | 0.30 | 0.30 | 0.34 | 0.31 |
+| tfidf + POS filtri | **1.00** | **0.85** | **0.68** | **≥0.59** | **0.40** | **0.50** | **0.38** | **≥0.35** |
+
+**Kelishuv (Cohen's kappa):**
+
+| Juftlik | Umumiy | Mos | kappa |
+|---|---|---|---|
+| A1 ↔ A2 | 119 | 87 | **0.474** (o'rtacha) |
+| A1 ↔ Claude | 99 | 89 | 0.795 |
+| A2 ↔ Claude | 99 | 91 | 0.826 |
+
+Claude bilan juftliklarda faqat Claude `0`/`1` qo'ygan nomzodlar hisobga olingan
+(uning `?` baholari chiqarilgan), shuning uchun ular A1 ↔ A2 bilan to'g'ridan-to'g'ri
+taqqoslanmaydi.
+
+**Kelishmovchilik tahlili.** 32 ta farqning 29 tasida A1 `1`, A2 `0` qo'ygan.
+A1 kengroq, A2 qatʼiyroq baholagan:
+
+- umumiy tilshunoslik leksikasi: `so'z`, `til`, `ma'no`, `shakl`, `birlik`,
+  `kategoriya`, `asos`, `belgi`;
+- terminning bo'laklari va nisbiy sifatlar: `yasalish`, `yasovchi`, `turkum`,
+  `bildiruvchi`, `grammatik`, `morfologik`, `sintaktik`;
+- aniq terminlar: `tovush`, `harf`, `bo'g'in`, `nutq`. Ular lug'atda bor yoki
+  tilshunoslikning asosiy tushunchalari, lekin A2 ularni `0` deb baholagan.
+
+A1 `0`, A2 `1`: `qo'shimcha`, `harakat`, `hodisa`.
+
+**Xulosa.** Baholovchilar usullarning **tartibi** bo'yicha bir xil xulosaga keladi:
+TF-IDF + POS filtri ikkala baholovchida ham eng yuqori. Mutlaq P@K qiymatlari
+esa baholovchiga juda bog'liq: P@100 0.32 dan 0.59 gacha. Kappa 0.474 "termin"
+chegarasi — ayniqsa umumiy tilshunoslik so'zlari va terminning bo'laklari —
+yo'riqnomada yetarlicha aniq emasligini ko'rsatadi. Keyingi qadamlar:
+
+1. kelishmovchiliklarni muhokama qilib, kelishilgan baholar faylini
+   (`candidates-consensus.csv`) tayyorlash va yakuniy P@K ni shu fayl bo'yicha
+   berish;
+2. yo'riqnomaning 9.2-bo'limiga muhokama natijasida aniqlangan chegaraviy
+   holatlarni misol sifatida qo'shish.
+
 ### Test to'plami mustaqil ravishda qayta belgilandi (`claude2`)
 
 Ro'yxat usulining kamchiligi bor: test belgilari lug'at aniqlagichi bilan
