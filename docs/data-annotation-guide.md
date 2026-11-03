@@ -182,8 +182,43 @@ Majburiy maydonlar: `id`, `title`, `rights`. Qolganlari matn yoki `null`
 PYTHONPATH=backend python -m app.dataset.validate
 ```
 
-Annotatorlar orasidagi kelishuvni o'lchash (inter-annotator agreement)
-keyingi versiyada qo'shiladi.
+### 7.1. Web interfeysda belgilash (tavsiya etiladi)
+
+```bash
+PYTHONPATH=backend uvicorn app.main:app --port 8000   # backend
+cd frontend && npm run dev                              # http://localhost:5173/#annotate
+```
+
+1. Annotator kodini kiriting (`A1`, `A2` — ism emas).
+2. Chapdan maqolani tanlang. Terminni sichqoncha bilan belgilang: tanlov butun
+   so'zgacha kengayadi, chetidagi tinish belgilari olib tashlanadi. Lug'at
+   shakli (`term`) avtomatik taklif qilinadi, uni qo'shimchasiz holga keltiring.
+3. Punktir chiziqli joylar — takliflar. Sariq: lug'at, binafsha: AI annotatsiyasi
+   (tekshirilmagan), model takliflari ham shu yerda. Bosish — qabul qilish,
+   `×` — rad etish. Takliflar avtomatik saqlanmaydi.
+   **Test to'plamidagi maqolalarni takliflarsiz belgilang** ("Takliflarni
+   ko'rsatish" belgisini o'chiring; metodika, 7-bo'lim).
+4. Paragraf to'liq ko'rib chiqilgach "Tekshirildi" belgisini qo'ying va
+   saqlang. Termin bo'lmasa ham saqlang: bo'sh ro'yxat "termin yo'q" degani.
+   Saqlashda 2-bo'lim qoidalari server tomonida tekshiriladi.
+
+Natija: `data/annotations/<annotator>/<doc_id>.jsonl`. Annotatorlar bir-birining
+belgilarini ko'rmaydi.
+
+### 7.2. Kelishuv va oltin standart
+
+```bash
+PYTHONPATH=backend python -m app.annotation.agreement compare A1 A2
+PYTHONPATH=backend python -m app.annotation.agreement promote A1
+```
+
+- `compare` faqat ikkalasi belgilagan paragraflar bo'yicha ishlaydi. U exact va
+  partial F1 (bir annotator "oltin", ikkinchisi "bashorat"), bir xil spanlarda
+  lug'at shakli mosligini va kelishmovchilik misollarini chiqaradi. Span
+  annotatsiyasida kappa o'rniga F1 ishlatiladi: "termin emas" spanlarini sanab
+  bo'lmaydi.
+- `promote` annotatorning `reviewed` yozuvlarini `data/annotated/` ga
+  (oltin standart) o'tkazadi. Mavjud faylni `--force` siz qayta yozmaydi.
 
 ## 8. Train/validation/test ajratish
 

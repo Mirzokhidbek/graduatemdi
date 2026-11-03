@@ -1,0 +1,12 @@
+# Yuklama
+gap
+gap boʻlagi = gap boʻlak
+qoʻshimcha
+!~ qoʻshimcha maʼno
+yuklama-qoʻshimcha = yuklamaqoʻshimcha
+yuklama-soʻz = yuklamasoʻz
+taajjub yuklamasi = taajjub yuklama
+taʼkid yuklamasi = taʼkid yuklama
+chegaralov yuklamasi = chegaralov yuklama
+aniqlov yuklamasi = aniqlov yuklama
+soʻroq gap

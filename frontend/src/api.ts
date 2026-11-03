@@ -1,4 +1,12 @@
-import type { AnalyzeResponse, Health } from "./types";
+import type { Span } from "./annotation";
+import type {
+  AnalyzeResponse,
+  AnnotationDocument,
+  DocumentSummary,
+  Health,
+  JudgmentRow,
+  SavedRecord,
+} from "./types";
 
 export class ApiError extends Error {}
 
@@ -47,4 +55,44 @@ export function analyze(text: string, signal?: AbortSignal): Promise<AnalyzeResp
 
 export function health(): Promise<Health> {
   return request<Health>("/api/health");
+}
+
+// --- annotatsiya ish joyi -----------------------------------------------------
+
+
+const q = (annotator: string) => `annotator=${encodeURIComponent(annotator)}`;
+
+export function listDocuments(annotator: string): Promise<DocumentSummary[]> {
+  return request<DocumentSummary[]>(`/api/annotate/documents?${q(annotator)}`);
+}
+
+export function getDocument(docId: string, annotator: string): Promise<AnnotationDocument> {
+  return request<AnnotationDocument>(`/api/annotate/documents/${encodeURIComponent(docId)}?${q(annotator)}`);
+}
+
+export function saveParagraph(
+  docId: string,
+  recordId: string,
+  annotator: string,
+  body: { terms: Span[]; status: "draft" | "reviewed"; notes: string | null },
+): Promise<SavedRecord> {
+  return request<SavedRecord>(
+    `/api/annotate/documents/${encodeURIComponent(docId)}/paragraphs/${encodeURIComponent(recordId)}?${q(annotator)}`,
+    { method: "PUT", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) },
+  );
+}
+
+export function listJudgments(annotator: string): Promise<JudgmentRow[]> {
+  return request<JudgmentRow[]>(`/api/judgments/${encodeURIComponent(annotator)}`);
+}
+
+export function saveJudgment(
+  annotator: string,
+  body: { candidate: string; judgment: JudgmentRow["judgment"]; notes: string | null },
+): Promise<JudgmentRow> {
+  return request<JudgmentRow>(`/api/judgments/${encodeURIComponent(annotator)}`, {
+    method: "PUT",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
 }

@@ -1,0 +1,61 @@
+# Feʼl
+mustaqil feʼl
+yordamchi feʼl
+koʻmakchi feʼl
+toʻliqsiz feʼl
+yasama feʼl
+analitik shakl
+bogʻlama
+shakl yasalishi
+lugʻaviy maʼno
+grammatik maʼno
+modal maʼno
+grammatik kategoriya
+qoʻshimcha
+!~ qoʻshimcha maʼno
+nisbat
+nisbat kategoriyasi = nisbat kategoriya
+nisbat shakli = nisbat shakl
+bosh nisbat
+oʻzlik nisbati = oʻzlik nisbat
+orttirma nisbat
+majhul nisbat
+birgalik nisbati = birgalik nisbat
+boʻlishli-boʻlishsizlik kategoriyasi = boʻlishli-boʻlishsizlik kategoriya; boʻlishli- boʻlishsizlik kategoriya
+boʻlishlilik
+boʻlishsizlik
+boʻlishli feʼl
+boʻlishsiz feʼl
+boʻlishli shakl
+boʻlishsiz shakl
+subyekt
+obyekt
+ega
+mayl
+mayl kategoriyasi = mayl kategoriya
+buyruq-istak mayli = buyruq-istak mayl
+shart mayli = shart mayl
+shartli mayl
+maqsad mayli = maqsad mayl
+ijro mayli = ijro mayl
+zamon
+zamon kategoriyasi = zamon kategoriya
+nutq payti = nutq payt
+oʻtgan zamon
+hozirgi zamon
+kelasi zamon
+shaxs-son
+shaxs-son kategoriyasi = shaxs-son kategoriya
+birinchi shaxs
+ikkinchi shaxs
+birlik
+koʻplik
+sifatdosh
+ravishdosh
+harakat nomi = harakat nom
+paradigma
+mustaqil boʻlak = mustaqil boʻlagi
+kesim
+aniqlovchi
+hol
+ot

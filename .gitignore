@@ -13,7 +13,11 @@ __pycache__/
 
 # Manifestdan qayta yaratiladigan to'plamlar
 data/processed/*.jsonl
+data/processed/*/
 
 # Frontend (keyingi bosqichlar)
 node_modules/
 dist/
+
+# Transformer modeli (~1 GB, Colab'da o'qitiladi)
+models/transformer/

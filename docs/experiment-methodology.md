@@ -108,6 +108,13 @@ takrorlash uchun hisobot bilan birga git commit identifikatori
 
 ## 7. Joriy holat
 
-Baholash vositalari tayyor va testlangan. **Haqiqiy natija hali yo'q**, chunki
-inson belgilagan dataset hali yig'ilmagan. `docs/examples/` dagi fayllar
-faqat format namunasi; ular bo'yicha chiqqan raqamlar aniqlik ko'rsatkichi emas.
+Baholash vositalari tayyor va testlangan. Ishonch oralig'i paragraflar bo'yicha
+bootstrap bilan hisoblanadi (`app/models/experiment.py`). Dastlabki natijalar
+faqat **AI annotatsiyasi** (kumush maʼlumot) bo'yicha olingan:
+[results.md](results.md). Inson belgilagan `reviewed` dataset bo'yicha haqiqiy
+natija hali yo'q. `docs/examples/` dagi fayllar faqat format namunasi.
+
+**Test to'plamini belgilashda takliflar o'chiriladi.** Web interfeysda test
+maqolalari ("Takliflarni ko'rsatish" belgisi o'chirilgan holda) belgilanadi,
+aks holda annotator lug'at yoki AI natijasiga ergashib, baholash shu usullar
+foydasiga og'adi.

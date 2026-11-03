@@ -1,0 +1,135 @@
+# Barcha hujjatlarga umumiy terminlar (AI ro'yxati, inson tekshirmagan).
+# Faqat korpusda umumiy maʼnoda deyarli uchramaydigan terminlar shu yerda;
+# ko'p maʼnoli so'zlar (ot, son, sifat, ega, hol, gap, ravish, negiz, zamon, nisbat, ...) hujjat ro'yxatlarida.
+# Format: app/annotation/silver.py
+
+# --- soha va bo'limlar
+tilshunoslik = lingvistika
+umumiy tilshunoslik
+amaliy tilshunoslik
+nazariy tilshunoslik
+qiyosiy tilshunoslik
+qiyosiy-tarixiy tilshunoslik
+fonetika
+fonologiya
+morfologiya
+morfonologiya
+sintaksis
+leksika
+leksikologiya
+leksikografiya
+semasiologiya
+semantika
+frazeologiya
+etimologiya
+dialektologiya
+stilistika
+grammatika
+orfografiya
+orfoepiya
+imlo
+grafika
+punktuatsiya
+onomastika
+toponimika
+paleografiya
+pragmatika
+sotsiolingvistika
+psixolingvistika
+kompyuter lingvistikasi
+morfemika
+soʻz yasalishi = soʻz yasash
+# --- fonetika
+nutq tovushi = nutq tovush
+tovush
+unli tovush = unli
+undosh tovush = undosh
+boʻgʻin
+urgʻu
+ohang
+intonatsiya
+fonema
+allofon
+artikulyatsiya
+transkripsiya
+fonetik transkripsiya
+assimilyatsiya
+dissimilyatsiya
+singarmonizm
+# --- morfologiya va soʻz yasalishi
+morfema
+affiks
+suffiks
+prefiks
+infiks
+postfiks
+oʻzak
+oʻzak morfema
+soʻz turkumi = soʻz turkum
+mustaqil soʻz turkumi
+yordamchi soʻz turkumi
+yordamchi soʻz
+mustaqil soʻz
+modal soʻz
+taqlid soʻz
+undov soʻz
+koʻmakchi
+bogʻlovchi
+yuklama
+olmosh
+feʼl
+kelishik
+bosh kelishik
+qaratqich kelishigi = qaratqich kelishik
+tushum kelishigi = tushum kelishik
+joʻnalish kelishigi = joʻnalish kelishik
+oʻrin-payt kelishigi = oʻrin-payt kelishik
+chiqish kelishigi = chiqish kelishik
+egalik qoʻshimchasi = egalik qoʻshimcha
+koʻplik qoʻshimchasi = koʻplik qoʻshimcha
+soʻz yasovchi qoʻshimcha
+shakl yasovchi qoʻshimcha
+# --- sintaksis
+qoʻshma gap
+sodda gap
+ergash gap
+bosh gap
+ergashgan qoʻshma gap
+bogʻlangan qoʻshma gap
+bogʻlovchisiz qoʻshma gap
+soʻz birikmasi = soʻz birikma
+gap boʻlagi = gap boʻlak
+ikkinchi darajali boʻlak
+bosh boʻlak
+kesim
+toʻldiruvchi
+aniqlovchi
+undalma
+kirish soʻz
+# --- leksika
+leksema
+semema
+omonim
+sinonim
+antonim
+paronim
+frazeologizm
+frazeologik birlik
+ibora
+neologizm
+arxaizm
+dialektizm
+termin
+terminologiya
+lugʻat tarkibi
+adabiy til
+sheva
+dialekt
+lahja
+# "ega" (gap boʻlagi) feʼl birikmasidagi "ega boʻlmoq" maʼnosida termin emas (lemma hujjat ro'yxatlarida)
+!~ ga ega
+!~ ka ega
+!~ qa ega
+!~ ega boʻl
+!~ ega emas
+!~ ga egadir

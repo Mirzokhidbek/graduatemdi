@@ -52,3 +52,53 @@ export interface Health {
   terms_in_dictionary: number;
   max_text_chars: number;
 }
+
+// --- annotatsiya ish joyi -----------------------------------------------------
+
+export interface DocumentSummary {
+  doc_id: string;
+  title: string;
+  paragraphs: number;
+  annotated: number;
+  reviewed: number;
+}
+
+export interface SavedSpan {
+  start: number;
+  end: number;
+  term: string;
+  label: "TERM";
+  surface: string;
+}
+
+export interface ParagraphData {
+  id: string;
+  text: string;
+  saved: { terms: SavedSpan[]; status: "draft" | "reviewed"; notes: string | null } | null;
+  suggestions: { start: number; end: number; term: string | null; source: "dictionary" | "ai" | "model" }[];
+}
+
+export interface AnnotationDocument {
+  doc_id: string;
+  title: string;
+  annotator: string;
+  paragraphs: ParagraphData[];
+}
+
+export interface SavedRecord {
+  id: string;
+  doc_id: string;
+  text: string;
+  terms: SavedSpan[];
+  annotator: string | null;
+  status: "draft" | "reviewed";
+  notes: string | null;
+}
+
+export interface JudgmentRow {
+  candidate: string;
+  judgment: "1" | "0" | "?" | "";
+  notes: string;
+  frequency: string;
+  example: string;
+}

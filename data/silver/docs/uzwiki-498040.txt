@@ -1,0 +1,54 @@
+# Imlo
+grafika = fafika
+imlo qoidasi = imlo qoida
+tovush tarkibi = tovush tarkib
+morfologik tarkib
+bosh harf
+kichik harf
+harf
+boʻgʻin koʻchirish
+lotin yozuvi = lotin yozuv
+kirill yozuvi = kirill yozuv
+fonetik yozuv
+qoʻshimcha
+oʻzlashma soʻz
+tutuq belgisi = tutuq belgi
+nisbat shakli = nisbat shakl
+orttirma nisbat
+oʻrin kelishigi = oʻrin kelishik
+oʻtgan zamon
+birinchi shaxs
+ikkinchi shaxs
+uchinchi shaxs
+ravishdosh shakli = ravishdosh shakl
+sifatdosh shakli = sifatdosh shakl
+buyruq mayli = buyruq mayl
+qoʻshma ot
+qoʻshma sifat
+qoʻshma soʻz
+qoʻshma feʼl
+turdosh ot
+atoqli ot
+juft soʻz
+takror soʻz
+koʻmakchi feʼl
+toʻliqsiz feʼl
+mustaqil feʼl
+yordamchi feʼl
+yetakchi feʼl
+tartib son
+murakkab son
+izofa
+izofali birikma
+qaratuvchili birikma
+qisqartma
+soʻz shakli = soʻz shakl
+jarangli undosh
+gap
+koʻchirma gap
+muallif gapi = muallif gap
+xatboshi
+ot
+sifatlovchi
+chiziqcha
+!~ Tilshunoslik instituti

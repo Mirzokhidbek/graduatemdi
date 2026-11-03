@@ -1,0 +1,22 @@
+# Urgʻu ("U." — urgʻu qisqartmasi)
+urgʻu = U
+boʻgʻin = bugʻin
+soʻz urgʻusi = soʻz U; suz U
+fraza urgʻusi = fraza U
+lugʻaviy urgʻu = lugʻaviy U
+mantiqiy urgʻu = mantiqiy U
+bogʻliq urgʻu = bogʻliq U
+koʻchma urgʻu = koʻchma U; Kuchma U
+bosh urgʻu
+ikkinchi darajali urgʻu
+affiksatsiya
+ot
+!= otingiz
+!= oting
+qoʻshimcha
+boʻlishsizlik shakli = boʻlishsizlik shakl
+soʻz shakli = soʻz shakl
+oʻzlashma soʻz
+nutq takti = nutq takt
+sintagma
+!= ularda

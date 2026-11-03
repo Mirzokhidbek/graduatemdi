@@ -1,0 +1,7 @@
+{
+  "c1": 0.1,
+  "c2": 0.01,
+  "train_records": 221,
+  "gazetteer": null,
+  "data": "data/processed/silver"
+}

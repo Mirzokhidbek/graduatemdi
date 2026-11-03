@@ -1,0 +1,2040 @@
+rank,candidate,score,frequency,doc_frequency,words,in_dictionary,in_reference,top_surface
+1,so'z,574.6477651022412,535,38,1,False,,soʻz
+2,til,414.5481269768406,334,32,1,False,,til
+3,gap,263.60490395018843,147,18,1,False,,gap
+4,ma'no,211.14099677028454,166,31,1,False,,maʼno
+5,tovush,202.74866716458314,90,11,1,True,,tovush
+6,shakl,193.2227041498621,141,28,1,False,,shakli
+7,fe'l,181.03519031794596,98,17,1,True,,feʼl
+8,undosh,162.02505819804225,55,5,1,True,,undosh
+9,lug'at,155.4406448261804,69,11,1,False,,lugʻat
+10,fonema,153.54677080754303,55,6,1,True,,fonema
+11,kategoriya,147.34581237493464,58,8,1,False,,kategoriyasi
+12,unli,142.3797329306308,51,6,1,True,,unli
+13,qo'shimcha,135.98450095113762,67,14,1,True,,qoʻshimchasi
+14,leksika,132.5659567074891,45,5,1,True,,leksika
+15,o'zbek,129.09747244028924,85,24,1,False,,oʻzbek
+16,uslub,127.35225977221215,38,3,1,False,,uslub
+17,qo'shma,124.93671960036603,47,7,1,False,,qoʻshma
+18,grammatika,124.18931078975547,51,9,1,True,,Grammatika
+19,tilshunoslik,121.93561413105641,70,19,1,True,,tilshunoslik
+20,fonetika,117.83640596221254,40,5,1,True,,fonetika
+21,bosh,112.00961107448447,57,15,1,False,,bosh
+22,harf,109.48810970472438,35,4,1,False,,harf
+23,belgi,104.74509508249338,55,16,1,False,,belgi
+24,vazifa,102.93464200373789,66,23,1,False,,vazifasida
+25,qism,102.84063880826622,54,16,1,False,,qismi
+26,birlik,101.03236599430389,58,19,1,False,,birliklar
+27,birikma,100.93618253403906,53,16,1,False,,birikmasi
+28,harakat,98.2705225103699,42,10,1,False,,harakatning
+29,ega,97.77618103486664,75,30,1,False,,ega
+30,qo'shma gap,97.18988245774085,29,3,2,True,,qoʻshma gap
+31,turkum,97.12726998558476,51,16,1,False,,turkumlari
+32,asr,96.53616527873307,46,13,1,False,,asr
+33,xos,95.04122387319718,53,18,1,False,,xos
+34,o'zbek til,94.06461661538637,54,19,2,False,,oʻzbek tilida
+35,yasalish,93.36249319033328,46,14,1,False,,yasalishi
+36,o'rganish,92.3632817083101,41,11,1,False,,oʻrganish
+37,ko'ra,91.35523202703068,65,27,1,False,,koʻra
+38,so'z birikma,86.90881043287327,40,12,2,False,,soʻz birikmasi
+39,fonologiya,85.06329845131305,32,7,1,True,,fonologiya
+40,tizim,84.49847852987425,43,15,1,False,,tizimi
+41,tur,83.4356744830862,64,30,1,False,,turlari
+42,zamon,82.48548417354877,28,5,1,False,,zamon
+43,yangi,78.84670389733787,35,11,1,False,,yangi
+44,nutq,78.08270724331324,41,16,1,False,,nutq
+45,so'z yasalish,77.21255340100493,33,10,2,False,,Soʻz yasalishi
+46,sleng,76.84592631674502,19,1,1,False,,sleng
+47,allofon,76.42020392192043,21,2,1,True,,allofonlar
+48,yasovchi,76.21335122841447,30,8,1,False,,yasovchi
+49,xususiyat,75.7448495865524,46,21,1,False,,xususiyatlariga
+50,hosil,75.31568684291098,42,18,1,False,,hosil
+51,ingliz,75.07756094038243,24,4,1,False,,ingliz
+52,otlar,75.07756094038243,24,4,1,False,,otlar
+53,qoida,73.67290618746732,29,8,1,False,,qoidalari
+54,ravish,73.67290618746732,29,8,1,False,,ravishlari
+55,sifat,73.45143010338386,35,13,1,False,,sifat
+56,nostandart,72.8014038790216,18,1,1,False,,nostandart
+57,bog'lovchi,72.58574619992943,26,6,1,True,,bogʻlovchi
+58,morfema,72.53300471003493,31,10,1,True,,morfema
+59,nisbat,70.70184357732752,24,5,1,False,,nisbat
+60,bo'g'in,69.79398673070138,25,6,1,True,,boʻgʻin
+61,asos,69.00706018415939,34,14,1,False,,asos
+62,morfologiya,68.59201610557302,27,8,1,True,,morfologiya
+63,ikki,68.56042587217748,36,16,1,False,,ikki
+64,nom,67.85345601906494,29,10,1,False,,nomi
+65,olmosh,67.75593342827221,23,5,1,True,,olmosh
+66,tilshunos,67.15559323737952,32,13,1,False,,tilshunosi
+67,usul,67.15559323737952,32,13,1,False,,usul
+68,yordam,67.15559323737952,32,13,1,False,,yordamida
+69,bosh harf,67.02750514326955,20,3,2,True,,bosh harf
+70,ingliz til,67.02750514326955,20,3,2,False,,ingliz tilida
+71,odam,65.50303193307465,18,2,1,False,,odam
+72,ma'lu,65.05698094871141,31,13,1,False,,maʼlum
+73,sintaksis,64.81002327921689,22,5,1,True,,Sintaksis
+74,nostandart leksika,64.71235900357476,16,1,2,False,,nostandart leksikaga
+75,mustaqil,64.33959286127792,38,20,1,False,,mustaqil
+76,hol,64.21845943207704,39,21,1,False,,holda
+77,so'z turkum,63.00888756383312,29,12,2,False,,soʻz turkumlari
+78,birinchi,62.9583686600433,30,13,1,False,,birinchi
+79,muayyan,62.808127253164926,34,17,1,False,,muayyan
+80,bildiruvchi,61.864113130161584,21,5,1,False,,bildiruvchi
+81,qatlam,61.86397460345939,17,2,1,False,,qatlam
+82,daraja,61.13924576188125,23,7,1,False,,daraja
+83,asar,60.87711313223308,25,9,1,False,,asarlari
+84,shaxs,60.87711313223308,25,9,1,False,,shaxs
+85,chiqish,60.83616730301129,28,12,1,False,,chiqish
+86,son,60.83616730301129,28,12,1,False,,son
+87,yil,58.76114408270708,28,13,1,False,,yilda
+88,tilshunosligi,58.48101768527772,22,7,1,False,,tilshunosligi
+89,mayl,56.97337937177912,17,3,1,False,,mayl
+90,munosabat,56.82934368107243,28,14,1,False,,munosabatini
+91,etimologiya,56.30817070528682,18,4,1,True,,Etimologiya
+92,maktab,56.30817070528682,18,4,1,False,,maktabi
+93,so'z yasovchi,56.30817070528682,18,4,2,True,,soʻz yasovchi
+94,grammatik kategoriya,55.972292832050954,19,5,2,True,,grammatik kategoriya
+95,to'g'ri,55.972292832050954,19,5,1,False,,toʻgʻri
+96,ko'makchi,55.889790900837276,22,8,1,True,,koʻmakchi
+97,bog'liq,55.02226508922044,28,15,1,False,,bogʻliq
+98,rus,54.56391950537086,26,13,1,False,,rus
+99,alohida,54.06631124388883,24,11,1,False,,alohida
+100,qator,53.814809946154945,23,10,1,False,,qator
+101,ergash,53.62200411461564,16,3,1,False,,ergash
+102,frazeologiya,53.62200411461564,16,3,1,True,,Frazeologiya
+103,leksikografiya,53.62200411461564,16,3,1,True,,leksikografiya
+104,fan,53.571859556365105,22,9,1,False,,fan
+105,holat,52.77010484671012,26,14,1,False,,holatlar
+106,qilish,51.47503560066995,22,10,1,False,,qilish
+107,yordamchi,51.47503560066995,22,10,1,False,,yordamchi
+108,olim,51.136775031075786,21,9,1,False,,olimi
+109,kes,50.80890081894297,20,8,1,False,,kesim
+110,oid,49.13526125518495,21,10,1,False,,oid
+111,maxsus,48.70169050578646,20,9,1,False,,maxsus
+112,frazeologizm,48.53426925268107,12,1,1,False,,frazeologizmlar
+113,soha,48.26808263936653,23,13,1,False,,soha
+114,leksikologiya,47.459910976876934,17,6,1,True,,leksikologiya
+115,yuklama,47.459910976876934,17,6,1,True,,Yuklama
+116,o'zgarish,47.30802233840273,21,11,1,False,,oʻzgarishi
+117,antonim,47.30774528499836,13,2,1,True,,antonimlar
+118,leksema,47.30774528499836,13,2,1,True,,leksema
+119,o'zaro,47.16194150504609,24,15,1,False,,oʻzaro
+120,ish,46.79548690969995,20,10,1,False,,ish
+121,qurilish,46.26660598049713,19,9,1,False,,qurilishi
+122,funksional,45.18987730226006,17,7,1,False,,funksional
+123,ikkinchi,45.05525936990736,20,11,1,False,,ikkinchi
+124,chiziqcha,44.48974681495765,11,1,1,True,,chiziqcha
+125,vosita,44.455712564214956,19,10,1,False,,vositalari
+126,egalik,44.1886522358297,15,5,1,False,,egalik
+127,keldi,43.83152145520781,18,9,1,False,,keldi
+128,so'z shakl,43.83152145520781,18,9,2,False,,soʻz shakllari
+129,talaffuz,43.83152145520781,18,9,1,False,,talaffuz
+130,vaqt,43.83152145520781,18,9,1,False,,vaqt
+131,pozitsiya,43.6686879553831,12,2,1,True,,pozitsiyada
+132,undosh tovush,43.56787834312521,13,3,2,True,,Undosh tovushlar
+133,bor,43.45440521643663,20,12,1,False,,bor
+134,jihatdan,43.45440521643663,20,12,1,False,,jihatdan
+135,kun,43.18756569610153,17,8,1,False,,kun
+136,tadqiqot,43.18756569610153,17,8,1,False,,tadqiqot
+137,keng,42.80249640141199,19,11,1,False,,keng
+138,ishlab,42.53164922565652,16,7,1,False,,ishlab
+139,hodisa,42.48785078890568,23,17,1,False,,hodisa
+140,bo'lish,42.11593821872996,18,10,1,False,,boʻlish
+141,ortiq,42.11593821872996,18,10,1,False,,ortiq
+142,quyi,42.11593821872996,18,10,1,False,,quyidagi
+143,bo'l,41.972245773362204,20,13,1,False,,boʻlimi
+144,ishtirok,41.876392038420825,15,6,1,False,,ishtirok
+145,keyingi,41.876392038420825,15,6,1,False,,keyingi
+146,o'ziga xos,41.2816849556148,19,12,2,False,,oʻziga xos
+147,metod,40.66701217604048,13,4,1,False,,metod
+148,sodda,40.64712065515438,16,8,1,False,,sodda
+149,tomon,40.64712065515438,16,8,1,False,,tomoni
+150,o'rta,40.59238834362317,20,14,1,False,,oʻrta
+151,ifodalash,40.549733432916625,18,11,1,False,,ifodalash
+152,tuzilish,40.549733432916625,18,11,1,False,,tuzilishi
+153,og'zaki,40.029630625767844,11,2,1,False,,ogʻzaki
+154,yo'nalish,40.029630625767844,11,2,1,False,,yoʻnalish
+155,nazar,39.77616387324496,17,10,1,False,,nazaridan
+156,ibora,39.08463256919277,14,6,1,False,,ibora
+157,o'zbekiston,39.08463256919277,14,6,1,False,,Oʻzbekiston
+158,yasash,39.08463256919277,14,6,1,False,,yasash
+159,adabiy til,38.96135240462917,16,9,2,True,,adabiy tilida
+160,aniqlash,38.96135240462917,16,9,1,False,,aniqlash
+161,mazmun,38.29683193771908,13,5,1,False,,mazmun
+162,dastlab,38.106675614207234,15,8,1,False,,dastlabki
+163,predmet,38.106675614207234,15,8,1,False,,predmet
+164,grammatik shakl,37.53878047019121,12,4,2,True,,grammatik shakl
+165,mustaqil so'z,37.436389527759964,16,10,2,True,,mustaqil soʻz
+166,misol,37.21519307244946,14,7,1,False,,misol
+167,xizmat,36.93624443397114,17,12,1,False,,xizmat
+168,ergash gap,36.86512782879825,11,3,2,True,,ergash gap
+169,qisqartma,36.86512782879825,11,3,1,True,,qisqartma
+170,tarixi,36.52626787933984,15,9,1,False,,tarixi
+171,tasnif,36.52626787933984,15,9,1,False,,tasnif
+172,lingvistika,36.4007019395108,9,1,1,True,,lingvistika
+173,shovqin,36.39057329615258,10,2,1,False,,shovqindan
+174,standart,36.39057329615258,10,2,1,False,,standart
+175,ich,36.292873099964716,13,6,1,False,,ichki
+176,o'rni,35.67640890735787,17,13,1,False,,oʻrni
+177,bo'lak,35.566230573260086,14,8,1,False,,boʻlaklari
+178,o'rganuvchi,35.566230573260086,14,8,1,False,,oʻrganuvchi
+179,arab,35.35092178866376,12,5,1,False,,arab
+180,mohiyat,35.35092178866376,12,5,1,False,,mohiyati
+181,ovoz,35.35092178866376,12,5,1,False,,ovoz
+182,doirasi,35.09661518227497,15,10,1,False,,doirasida
+183,katta,35.09661518227497,15,10,1,False,,katta
+184,muhim,34.50353009207969,17,14,1,False,,muhim
+185,davr,34.41054876434195,11,4,1,False,,davrlarda
+186,tobe,34.41054876434195,11,4,1,False,,tobe
+187,taraqqiyot,34.09118335405052,14,9,1,False,,taraqqiyoti
+188,old,33.79144452743052,15,11,1,False,,oldi
+189,imlo,33.513752571634775,10,3,1,True,,Imlo
+190,oldingi,33.513752571634775,10,3,1,False,,oldingi
+191,oliy,33.513752571634775,10,3,1,False,,oliy
+192,olma,33.513752571634775,10,3,1,False,,olma
+193,ota,33.513752571634775,10,3,1,False,,ota
+194,sodda gap,33.513752571634775,10,3,2,True,,sodda gap
+195,yordamchi fe'l,33.513752571634775,10,3,2,True,,yordamchi feʼllar
+196,haqidagi,33.50111363073666,12,6,1,False,,haqidagi
+197,kelib chiqish,33.50111363073666,12,6,2,False,,kelib chiqishi
+198,muammolar,33.50111363073666,12,6,1,False,,muammolarini
+199,obyekt,33.50111363073666,12,6,1,True,,obyektga
+200,narsa,33.02578553231294,13,8,1,False,,narsa
+201,maqsad,32.75684083678997,14,10,1,False,,maqsad
+202,paydo,32.75684083678997,14,10,1,False,,paydo
+203,qarab,32.75684083678997,14,10,1,False,,qarab
+204,atoqli,32.751515966537326,9,2,1,False,,atoqli
+205,egalik qo'shimcha,32.751515966537326,9,2,2,False,,egalik qoʻshimchasi
+206,inglizcha,32.751515966537326,9,2,1,False,,inglizcha
+207,tilli,32.751515966537326,9,2,1,False,,tilli
+208,unli tovush,32.751515966537326,9,2,2,True,,Unli tovushlar
+209,hech,32.405011639608446,11,5,1,False,,hech
+210,affiks,31.898736919242392,12,7,1,True,,affiks
+211,yo'q,31.898736919242392,12,7,1,False,,yoʻq
+212,jarayon,31.6560988287612,13,9,1,False,,jarayonida
+213,natija,31.6560988287612,13,9,1,False,,natijasida
+214,o'rin,31.6560988287612,13,9,1,False,,oʻrin
+215,xx asr,31.6560988287612,13,9,2,False,,XX asr
+216,hokim,31.28231705849268,10,4,1,False,,hokim
+217,joy,31.28231705849268,10,4,1,False,,joy
+218,juft,31.28231705849268,10,4,1,False,,juft
+219,rivoj,31.28231705849268,10,4,1,False,,rivojiga
+220,tahlil,31.28231705849268,10,4,1,False,,tahlil
+221,tamoyil,31.28231705849268,10,4,1,False,,tamoyili
+222,masala,30.709354161508603,11,6,1,False,,masalalari
+223,o'zak,30.709354161508603,11,6,1,True,,oʻzak
+224,nuqta,30.485340491365786,12,8,1,False,,nuqtai
+225,qo'llanish,30.485340491365786,12,8,1,False,,qoʻllanishi
+226,rivojlanish,30.485340491365786,12,8,1,False,,rivojlanishida
+227,ma'noli,30.417066491304972,13,10,1,False,,maʼnoli
+228,muayyan til,30.417066491304972,13,10,2,False,,muayyan til
+229,tushuncha,30.417066491304972,13,10,1,False,,tushuncha
+230,bosh gap,30.1623773144713,9,3,2,True,,bosh gap
+231,rang,30.1623773144713,9,3,1,False,,rang
+232,tez,30.1623773144713,9,3,1,False,,tez
+233,yozuv,30.1623773144713,9,3,1,False,,yozuv
+234,bo'lim,29.459101490553135,10,5,1,False,,boʻlimlari
+235,teng,29.459101490553135,10,5,1,False,,teng
+236,urg'u,29.459101490553135,10,5,1,True,,urgʻu
+237,yer,29.459101490553135,10,5,1,False,,yer
+238,yunon,29.459101490553135,10,5,1,False,,yunon
+239,ajratish,29.24050884263886,11,7,1,False,,ajratish
+240,nuqtai nazar,29.24050884263886,11,7,2,False,,nuqtai nazaridan
+241,payt,29.24050884263886,11,7,1,False,,payt
+242,bo'g'inli,29.112458636922067,8,2,1,False,,boʻgʻinli
+243,bog'lanish,29.112458636922067,8,2,1,False,,bogʻlanish
+244,sinonimik,29.112458636922067,8,2,1,False,,sinonimik
+245,sinonimik qator,29.112458636922067,8,2,2,True,,sinonimik qator
+246,kollokvializm,28.311657064063958,7,1,1,False,,kollokvializmni
+247,satrga,28.311657064063958,7,1,1,False,,satrga
+248,so'z yasovchi qo'shimcha,28.311657064063958,7,1,3,False,,soʻz yasovchi qoʻshimcha
+249,yasovchi qo'shimcha,28.311657064063958,7,1,2,False,,yasovchi qoʻshimcha
+250,affik,28.15408535264341,9,4,1,False,,affiksi
+251,hosil bo'lish,28.15408535264341,9,4,2,False,,hosil boʻlish
+252,ishlatilish,28.15408535264341,9,4,1,False,,ishlatilish
+253,kuchli,28.15408535264341,9,4,1,False,,kuchli
+254,o'zlashma,28.15408535264341,9,4,1,False,,oʻzlashma
+255,qil,28.15408535264341,9,4,1,False,,qil
+256,unsurlar,28.15408535264341,9,4,1,False,,unsurlar
+257,yasama,28.15408535264341,9,4,1,False,,yasama
+258,amal,28.077292145819975,12,10,1,False,,amalga
+259,adabiyot,27.944895450418638,11,8,1,False,,adabiyot
+260,dan,27.944895450418638,11,8,1,False,,dan
+261,oxiri,27.944895450418638,11,8,1,False,,oxiridagi
+262,termin,27.944895450418638,11,8,1,False,,termini
+263,yuqori,27.944895450418638,11,8,1,False,,yuqori
+264,biror,27.91759469228055,10,6,1,False,,biror
+265,grammatik ma'no,27.91759469228055,10,6,2,True,,grammatik maʼno
+266,ifoda,27.91759469228055,10,6,1,False,,ifoda
+267,ism,27.91759469228055,10,6,1,False,,ism
+268,kitob,27.91759469228055,10,6,1,False,,kitob
+269,yo'l,27.91759469228055,10,6,1,False,,yoʻli
+270,jamiyat,26.81100205730782,8,3,1,False,,jamiyatdagi
+271,lab,26.81100205730782,8,3,1,False,,lab
+272,mil,26.81100205730782,8,3,1,False,,mil
+273,muloqot,26.81100205730782,8,3,1,False,,muloqot
+274,nisbat shakl,26.81100205730782,8,3,2,False,,nisbat shakli
+275,shevalar,26.81100205730782,8,3,1,False,,shevalarning
+276,yangi so'z,26.81100205730782,8,3,2,False,,yangi soʻz
+277,fikr,26.582280766035325,10,7,1,False,,fikr
+278,bo'lagi,26.513191341497823,9,5,1,False,,boʻlagi
+279,havo,26.513191341497823,9,5,1,False,,havo
+280,nazariyasi,26.513191341497823,9,5,1,False,,nazariyasi
+281,o'zbek tilshunosligi,26.513191341497823,9,5,2,False,,Oʻzbek tilshunosligi
+282,xalq,26.513191341497823,9,5,1,False,,Xalq
+283,yunoncha,26.07264312986198,12,12,1,False,,yunoncha
+284,bajarilishi,25.47340130730681,7,2,1,False,,bajarilishini
+285,farqlovchi,25.47340130730681,7,2,1,False,,farqlovchi
+286,nutq tovush,25.47340130730681,7,2,2,False,,nutq tovushlarining
+287,material,25.404450409471487,10,8,1,False,,materiali
+288,nisbatan,25.404450409471487,10,8,1,False,,nisbatan
+289,xuddi,25.404450409471487,10,8,1,False,,xuddi
+290,kichik,25.125835223052494,9,6,1,False,,kichik
+291,ko'rinish,25.125835223052494,9,6,1,False,,koʻrinishlari
+292,ohang,25.125835223052494,9,6,1,True,,ohang
+293,qadimgi,25.125835223052494,9,6,1,False,,qadimgi
+294,kecha,25.025853646794143,8,4,1,False,,kecha
+295,nemis,25.025853646794143,8,4,1,False,,nemis
+296,omonimlar,25.025853646794143,8,4,1,False,,Omonimlar
+297,suz,25.025853646794143,8,4,1,False,,suz
+298,tarixiy taraqqiyot,25.025853646794143,8,4,2,False,,tarixiy taraqqiyoti
+299,demak,24.78039265344905,11,11,1,False,,Demak
+300,etish,24.35084525289323,10,9,1,False,,etish
+301,yuzaga,24.35084525289323,10,9,1,False,,yuzaga
+302,amerikacha,24.267134626340535,6,1,1,False,,amerikacha
+303,aytilsa,24.267134626340535,6,1,1,False,,aytilsa
+304,raqam,24.267134626340535,6,1,1,False,,raqam
+305,so'z yasalishi asos,24.267134626340535,6,1,3,False,,Soʻz yasalishi asosi
+306,taalluqli,24.267134626340535,6,1,1,False,,taalluqli
+307,yasalishi asos,24.267134626340535,6,1,2,False,,yasalishi asosi
+308,zamon shakl,24.267134626340535,6,1,2,False,,zamon shakllari
+309,aloqa,23.924052689431793,9,7,1,False,,aloqa
+310,bunda,23.924052689431793,9,7,1,False,,Bunda
+311,e'tibor,23.924052689431793,9,7,1,False,,eʼtibor
+312,mazkur,23.924052689431793,9,7,1,False,,mazkur
+313,xix,23.924052689431793,9,7,1,False,,XIX
+314,atama,23.567281192442508,8,5,1,False,,atamalar
+315,ma'noga ega,23.567281192442508,8,5,2,False,,maʼnoga ega
+316,murakkab,23.567281192442508,8,5,1,False,,murakkab
+317,nashr,23.567281192442508,8,5,1,False,,nashr
+318,o'zbek adabiy til,23.567281192442508,8,5,3,False,,oʻzbek adabiy tilida
+319,qarshi,23.567281192442508,8,5,1,False,,qarshi
+320,tadqiq,23.567281192442508,8,5,1,False,,tadqiq
+321,takror,23.567281192442508,8,5,1,False,,takror
+322,uch,23.567281192442508,8,5,1,False,,uch
+323,dam,23.459626800144342,7,3,1,False,,dam
+324,ishchi,23.459626800144342,7,3,1,False,,ishchi
+325,o'tish,23.459626800144342,7,3,1,False,,oʻtishi
+326,o'zlashma so'z,23.459626800144342,7,3,2,True,,oʻzlashma soʻzlarda
+327,qarang,23.459626800144342,7,3,1,False,,qarang
+328,sinonim,23.459626800144342,7,3,1,True,,sinonim
+329,so'z bosh,23.459626800144342,7,3,2,False,,soʻz bosh
+330,struktura,23.459626800144342,7,3,1,False,,strukturasi
+331,tarjima,23.459626800144342,7,3,1,False,,tarjima
+332,tom,23.459626800144342,7,3,1,False,,tomdan
+333,ayniqsa,22.86400536852434,9,8,1,False,,ayniqsa
+334,qonuniyatlar,22.86400536852434,9,8,1,False,,qonuniyatlarini
+335,hissa,22.33407575382444,8,6,1,False,,hissa
+336,hokazo,22.33407575382444,8,6,1,False,,hokazo
+337,miqdor,22.33407575382444,8,6,1,False,,miqdor
+338,olib,22.33407575382444,8,6,1,False,,olib
+339,so'z oxiri,22.33407575382444,8,6,2,False,,soʻz oxiridagi
+340,til birlik,22.33407575382444,8,6,2,False,,til birliklari
+341,yordamchi so'z,22.33407575382444,8,6,2,True,,yordamchi soʻzlar
+342,birgalik,21.897621940944877,7,4,1,False,,birgalikda
+343,bo'lishsizlik,21.897621940944877,7,4,1,True,,boʻlishsizlik
+344,farqlash,21.897621940944877,7,4,1,False,,farqlash
+345,lug'aviy ma'no,21.897621940944877,7,4,2,True,,lugʻaviy maʼnoga
+346,ma'lumot,21.897621940944877,7,4,1,False,,maʼlumot
+347,nemis olim,21.897621940944877,7,4,2,False,,nemis olimi
+348,san'at,21.897621940944877,7,4,1,False,,sanʼat
+349,tuzish,21.897621940944877,7,4,1,False,,tuzish
+350,bil,21.83434397769155,6,2,1,False,,bilim
+351,bo'lishli,21.83434397769155,6,2,1,False,,boʻlishli
+352,faoliyat,21.83434397769155,6,2,1,False,,faoliyat
+353,harakatning nutq,21.83434397769155,6,2,2,False,,harakatning nutq
+354,ishlab chiqish,21.83434397769155,6,2,2,False,,ishlab chiqish
+355,kelishigi,21.83434397769155,6,2,1,False,,kelishigi
+356,kuchsiz,21.83434397769155,6,2,1,False,,kuchsiz
+357,oti,21.83434397769155,6,2,1,False,,otingiz
+358,predikativ,21.83434397769155,6,2,1,False,,predikativ
+359,quyidagicha,21.83434397769155,6,2,1,False,,quyidagicha
+360,respublika,21.83434397769155,6,2,1,False,,Respublikasi
+361,so'zlashuv,21.83434397769155,6,2,1,False,,soʻzlashuv
+362,yozish,21.83434397769155,6,2,1,False,,yozish
+363,zid,21.83434397769155,6,2,1,False,,zid
+364,ana,21.26582461282826,8,7,1,False,,ana
+365,birligi,21.26582461282826,8,7,1,False,,birligi
+366,inkor,21.26582461282826,8,7,1,False,,inkor
+367,marta,21.26582461282826,8,7,1,False,,marta
+368,mustaqil so'z turkum,21.26582461282826,8,7,3,False,,mustaqil soʻz turkumlari
+369,navbatida,21.26582461282826,8,7,1,False,,navbatida
+370,rus til,21.26582461282826,8,7,2,False,,rus tilida
+371,shakllanish,21.26582461282826,8,7,1,False,,shakllanishiga
+372,to'plam,21.26582461282826,8,7,1,False,,toʻplamidir
+373,bular,20.621371043387192,7,5,1,False,,bular
+374,foydalanish,20.621371043387192,7,5,1,False,,foydalanish
+375,grammatik qurilish,20.621371043387192,7,5,2,True,,grammatik qurilishi
+376,sabab,20.621371043387192,7,5,1,False,,sabab
+377,shart,20.621371043387192,7,5,1,False,,shart
+378,tor,20.621371043387192,7,5,1,False,,tor
+379,turkiy til,20.621371043387192,7,5,2,False,,turkiy tillarda
+380,tushunish,20.621371043387192,7,5,1,False,,tushunish
+381,ifodalovchi,20.32356032757719,8,8,1,False,,ifodalovchi
+382,tashqari,20.32356032757719,8,8,1,False,,tashqari
+383,amerikacha sleng,20.222612188617113,5,1,2,False,,amerikacha slengi
+384,atoqli ot,20.222612188617113,5,1,2,True,,atoqli ot
+385,bildiruvchi qo'shma,20.222612188617113,5,1,2,False,,bildiruvchi qoʻshma
+386,bildiruvchi sifat,20.222612188617113,5,1,2,False,,bildiruvchi sifatlar
+387,davlat,20.222612188617113,5,1,1,False,,davlat
+388,dialektologia,20.222612188617113,5,1,1,False,,Dialektologia
+389,eat,20.222612188617113,5,1,1,False,,eat
+390,etimologik tahlil,20.222612188617113,5,1,2,False,,Etimologik tahlilning
+391,farqlovchi belgi,20.222612188617113,5,1,2,True,,farqlovchi belgilari
+392,jargon,20.222612188617113,5,1,1,False,,jargon
+393,keyingi satrga,20.222612188617113,5,1,2,False,,keyingi satrga
+394,o'zbek tili leksika,20.222612188617113,5,1,3,False,,Oʻzbek tili leksikasiga
+395,otning,20.222612188617113,5,1,1,False,,Otning
+396,so'z va ibora,20.222612188617113,5,1,3,False,,soʻz va iboralardan
+397,subyekt,20.222612188617113,5,1,1,True,,subyekt
+398,tili leksika,20.222612188617113,5,1,2,False,,tili leksikasiga
+399,tugagan so'z,20.222612188617113,5,1,2,False,,tugagan soʻzlarga
+400,yasama so'z,20.222612188617113,5,1,2,True,,yasama soʻz
+401,cho'ziq,20.108251542980867,6,3,1,False,,choʻziq
+402,jarangli,20.108251542980867,6,3,1,True,,jarangli
+403,morfema va so'z,20.108251542980867,6,3,3,False,,morfema va soʻzlarning
+404,otga,20.108251542980867,6,3,1,False,,otga
+405,qarama,20.108251542980867,6,3,1,False,,qarama
+406,sinonimiya,20.108251542980867,6,3,1,True,,sinonimiya
+407,tavsif,20.108251542980867,6,3,1,False,,tavsif
+408,uchinchi,20.108251542980867,6,3,1,False,,uchinchi
+409,aniq,19.542316284596385,7,6,1,False,,aniq
+410,asl,19.542316284596385,7,6,1,False,,aslida
+411,jihati,19.542316284596385,7,6,1,False,,jihatidan
+412,ko'rsatish,19.542316284596385,7,6,1,False,,koʻrsatish
+413,lar,19.542316284596385,7,6,1,False,,lar
+414,majmu,19.542316284596385,7,6,1,False,,majmui
+415,rahmatullayev,19.542316284596385,7,6,1,False,,Rahmatullayev
+416,tufayli,19.542316284596385,7,6,1,False,,tufayli
+417,vazifasiga ko'ra,19.542316284596385,7,6,2,False,,vazifasiga koʻra
+418,xix asr,19.542316284596385,7,6,2,False,,XIX asr
+419,yaqin,19.542316284596385,7,6,1,False,,yaqin
+420,bo'ldi,18.769390235095607,6,4,1,False,,boʻldi
+421,boduen,18.769390235095607,6,4,1,False,,Boduen
+422,boduen de kurtene,18.769390235095607,6,4,3,False,,Boduen de Kurtene
+423,chi,18.769390235095607,6,4,1,False,,chi
+424,keyinchalik,18.769390235095607,6,4,1,False,,Keyinchalik
+425,ko'rsatkichi,18.769390235095607,6,4,1,False,,koʻrsatkichi
+426,kurtene,18.769390235095607,6,4,1,False,,Kurtene
+427,ma'noli so'z,18.769390235095607,6,4,2,False,,maʼnoli soʻzlar
+428,mahmud,18.769390235095607,6,4,1,False,,Mahmud
+429,o'tgan zamon,18.769390235095607,6,4,2,True,,oʻtgan zamon
+430,oid so'z,18.769390235095607,6,4,2,False,,oid soʻzlar
+431,past,18.769390235095607,6,4,1,False,,past
+432,qo'shdi,18.769390235095607,6,4,1,False,,qoʻshdilar
+433,talqin,18.769390235095607,6,4,1,False,,talqin
+434,tilshunoslik bo'l,18.769390235095607,6,4,2,False,,tilshunoslik boʻlimi
+435,xos so'z,18.769390235095607,6,4,2,False,,xos soʻz
+436,farq,18.60759653622473,7,7,1,False,,farq
+437,ta'sir,18.60759653622473,7,7,1,False,,taʼsir
+438,turlicha,18.60759653622473,7,7,1,False,,turlicha
+439,yevropa,18.60759653622473,7,7,1,False,,yevropa
+440,affiksi yordam,18.19528664807629,5,2,2,False,,affiksi yordamida
+441,birikmalari va gap,18.19528664807629,5,2,3,False,,birikmalari va gaplarni
+442,birinchi so'z,18.19528664807629,5,2,2,False,,birinchi soʻz
+443,bo'g'inli so'z,18.19528664807629,5,2,2,False,,boʻgʻinli soʻzlarga
+444,dedi,18.19528664807629,5,2,1,False,,dedi
+445,eksperimental,18.19528664807629,5,2,1,False,,eksperimental
+446,element,18.19528664807629,5,2,1,False,,elementlar
+447,ikki tilli,18.19528664807629,5,2,2,False,,ikki tilli
+448,komponent,18.19528664807629,5,2,1,False,,komponentlarining
+449,morfologik kategoriya,18.19528664807629,5,2,2,True,,morfologik kategoriyalar
+450,nazariyalar,18.19528664807629,5,2,1,False,,nazariyalar
+451,o'zbekcha,18.19528664807629,5,2,1,False,,oʻzbekcha
+452,predikativ birlik,18.19528664807629,5,2,2,True,,predikativ birliklar
+453,qo'shma otlar,18.19528664807629,5,2,2,False,,qoʻshma otlar
+454,rus tilshunos,18.19528664807629,5,2,2,False,,Rus tilshunosi
+455,ruscha,18.19528664807629,5,2,1,False,,ruscha
+456,sinf,18.19528664807629,5,2,1,False,,sinf
+457,so'z birikmalari va gap,18.19528664807629,5,2,4,False,,soʻz birikmalari va gaplarni
+458,ta'kidlab,18.19528664807629,5,2,1,False,,taʼkidlab
+459,tun,18.19528664807629,5,2,1,False,,tun
+460,zamon kategoriya,18.19528664807629,5,2,2,False,,zamon kategoriyasi
+461,amerika,17.67546089433188,6,5,1,False,,Amerika
+462,chegara,17.67546089433188,6,5,1,False,,chegara
+463,ilk,17.67546089433188,6,5,1,False,,ilk
+464,ko'plik,17.67546089433188,6,5,1,True,,koʻplik
+465,ko'proq,17.67546089433188,6,5,1,False,,koʻproq
+466,matn,17.67546089433188,6,5,1,False,,matn
+467,mavjudligi,17.67546089433188,6,5,1,False,,mavjudligi
+468,ning,17.67546089433188,6,5,1,False,,ning
+469,qo'shish,17.67546089433188,6,5,1,False,,qoʻshish
+470,ta'limot,17.67546089433188,6,5,1,False,,taʼlimot
+471,tizimiga ega,17.67546089433188,6,5,2,False,,tizimiga ega
+472,uni,17.67546089433188,6,5,1,False,,uni
+473,xususiyatlariga ko'ra,17.67546089433188,6,5,2,False,,xususiyatlariga koʻra
+474,affiksatsiya,16.756876285817388,5,3,1,True,,Affiksatsiya
+475,aks,16.756876285817388,5,3,1,False,,aks
+476,aqsh,16.756876285817388,5,3,1,False,,AQSH
+477,bayon,16.756876285817388,5,3,1,False,,bayon
+478,bitta,16.756876285817388,5,3,1,False,,bitta
+479,burun,16.756876285817388,5,3,1,False,,burun
+480,chet,16.756876285817388,5,3,1,False,,chet
+481,farqlanish,16.756876285817388,5,3,1,False,,farqlanish
+482,hal,16.756876285817388,5,3,1,False,,hal
+483,inson,16.756876285817388,5,3,1,False,,inson
+484,iv asr,16.756876285817388,5,3,2,False,,IV asrlarda
+485,kela,16.756876285817388,5,3,1,False,,kela
+486,lahja,16.756876285817388,5,3,1,True,,lahja
+487,mahmudov,16.756876285817388,5,3,1,False,,Mahmudov
+488,modal,16.756876285817388,5,3,1,False,,modal
+489,muvofiq,16.756876285817388,5,3,1,False,,muvofiq
+490,orqa,16.756876285817388,5,3,1,False,,orqa
+491,portlovchi,16.756876285817388,5,3,1,True,,portlovchi
+492,qizil,16.756876285817388,5,3,1,False,,qizil
+493,qo'shilishi,16.756876285817388,5,3,1,False,,qoʻshilishi
+494,qolip,16.756876285817388,5,3,1,False,,qolipi
+495,ran,16.756876285817388,5,3,1,False,,ran
+496,sino,16.756876285817388,5,3,1,False,,Sino
+497,sintaktik vazifa,16.756876285817388,5,3,2,False,,sintaktik vazifasiga
+498,so'roq,16.756876285817388,5,3,1,False,,soʻroq
+499,taqlid,16.756876285817388,5,3,1,False,,taqlid
+500,taqlid so'z,16.756876285817388,5,3,2,True,,taqlid soʻzlar
+501,tavsiflash,16.756876285817388,5,3,1,False,,tavsiflash
+502,vaziyat,16.756876285817388,5,3,1,False,,vaziyatda
+503,yaxshi,16.756876285817388,5,3,1,False,,yaxshi
+504,yomon,16.756876285817388,5,3,1,False,,yomon
+505,ahamiyatga,16.75055681536833,6,6,1,False,,ahamiyatga
+506,ahamiyatga ega,16.75055681536833,6,6,2,False,,ahamiyatga ega
+507,bosqich,16.75055681536833,6,6,1,False,,bosqichi
+508,kishi,16.75055681536833,6,6,1,False,,kishilarga
+509,lotincha,16.75055681536833,6,6,1,False,,lotincha
+510,odatda,16.75055681536833,6,6,1,False,,odatda
+511,qabul,16.75055681536833,6,6,1,False,,qabul
+512,tarkibiy qism,16.75055681536833,6,6,2,False,,tarkibiy qismlari
+513,yaratish,16.75055681536833,6,6,1,False,,yaratish
+514,argo,16.17808975089369,4,1,1,False,,argo
+515,bosh tovush,16.17808975089369,4,1,2,False,,bosh tovushi
+516,doiradagi,16.17808975089369,4,1,1,False,,doiradagi
+517,ergash gapli,16.17808975089369,4,1,2,False,,ergash gapli
+518,ergash gapli qo'shma,16.17808975089369,4,1,3,False,,ergash gapli qoʻshma
+519,ergash gapli qo'shma gap,16.17808975089369,4,1,4,True,,ergash gapli qoʻshma gap
+520,ergashgan qo'shma,16.17808975089369,4,1,2,False,,ergashgan qoʻshma
+521,ergashgan qo'shma gap,16.17808975089369,4,1,3,True,,ergashgan qoʻshma gap
+522,fonologik tizim,16.17808975089369,4,1,2,True,,fonologik tizimini
+523,gapli,16.17808975089369,4,1,1,False,,gapli
+524,gapli qo'shma,16.17808975089369,4,1,2,False,,gapli qoʻshma
+525,gapli qo'shma gap,16.17808975089369,4,1,3,False,,gapli qoʻshma gap
+526,grammema,16.17808975089369,4,1,1,True,,grammema
+527,harakatning nutq vaqt,16.17808975089369,4,1,3,False,,harakatning nutq vaqtiga
+528,harakatning subyekt,16.17808975089369,4,1,2,False,,harakatning subyekt
+529,havo oqimi,16.17808975089369,4,1,2,False,,havo oqimi
+530,hokim qism,16.17808975089369,4,1,2,True,,hokim qism
+531,imlo qoida,16.17808975089369,4,1,2,False,,Imlo qoidalari
+532,izohli,16.17808975089369,4,1,1,False,,izohli
+533,juft so'z,16.17808975089369,4,1,2,True,,juft soʻz
+534,ko'ra unli,16.17808975089369,4,1,2,False,,koʻra unlilar
+535,kuchli pozitsiya,16.17808975089369,4,1,2,True,,kuchli pozitsiyada
+536,kuchsiz pozitsiya,16.17808975089369,4,1,2,True,,kuchsiz pozitsiyada
+537,kunduz,16.17808975089369,4,1,1,False,,kunduz
+538,morfologiya so'z,16.17808975089369,4,1,2,False,,Morfologiya soʻz
+539,nazariy grammatika,16.17808975089369,4,1,2,True,,nazariy Grammatika
+540,nutq vaqt,16.17808975089369,4,1,2,False,,nutq vaqtiga
+541,o'zbekiston respublika,16.17808975089369,4,1,2,False,,Oʻzbekiston Respublikasi
+542,oqimi,16.17808975089369,4,1,1,False,,oqimi
+543,qo'shimchalarning bosh,16.17808975089369,4,1,2,False,,qoʻshimchalarning bosh
+544,qo'shimchalarning bosh tovush,16.17808975089369,4,1,3,False,,qoʻshimchalarning bosh tovushi
+545,shirin,16.17808975089369,4,1,1,False,,shirin
+546,so'z qism,16.17808975089369,4,1,2,False,,soʻz qismlari
+547,so'zlarga egalik,16.17808975089369,4,1,2,False,,soʻzlarga egalik
+548,so'zlarga egalik qo'shimcha,16.17808975089369,4,1,3,False,,soʻzlarga egalik qoʻshimchasi
+549,umumiy fonetika,16.17808975089369,4,1,2,True,,Umumiy fonetika
+550,umumiy fonologiya,16.17808975089369,4,1,2,True,,umumiy fonologiya
+551,vulgarizm,16.17808975089369,4,1,1,False,,vulgarizm
+552,yangi so'z yasovchi,16.17808975089369,4,1,3,False,,yangi soʻz yasovchi
+553,abdullayev,15.64115852924634,5,4,1,False,,Abdullayev
+554,aloqador,15.64115852924634,5,4,1,False,,aloqador
+555,bo'la,15.64115852924634,5,4,1,False,,boʻla
+556,darajali,15.64115852924634,5,4,1,False,,darajali
+557,dunyo,15.64115852924634,5,4,1,False,,dunyo
+558,hissa qo'shdi,15.64115852924634,5,4,2,False,,hissa qoʻshdilar
+559,intonatsiya,15.64115852924634,5,4,1,True,,intonatsiya
+560,izlanish,15.64115852924634,5,4,1,False,,izlanishlar
+561,ko'plab,15.64115852924634,5,4,1,False,,koʻplab
+562,nurmonov,15.64115852924634,5,4,1,False,,Nurmonov
+563,orttirma,15.64115852924634,5,4,1,False,,orttirma
+564,shakl va ma'no,15.64115852924634,5,4,3,False,,shakl va maʼno
+565,sifatdosh,15.64115852924634,5,4,1,True,,sifatdosh
+566,so'z ma'no,15.64115852924634,5,4,2,False,,soʻz maʼnosini
+567,so'zlovchi,15.64115852924634,5,4,1,False,,soʻzlovchi
+568,tarz,15.64115852924634,5,4,1,False,,tarzida
+569,tegishli,15.64115852924634,5,4,1,False,,tegishli
+570,turk,15.64115852924634,5,4,1,False,,turk
+571,vujudga,15.64115852924634,5,4,1,False,,vujudga
+572,berish,14.729550745276567,5,5,1,False,,berish
+573,bevosita,14.729550745276567,5,5,1,False,,bevosita
+574,birikish,14.729550745276567,5,5,1,False,,birikish
+575,birinchi marta,14.729550745276567,5,5,2,False,,birinchi marta
+576,etuvchi,14.729550745276567,5,5,1,False,,etuvchi
+577,g'ulomov,14.729550745276567,5,5,1,False,,Gʻulomov
+578,haqidagi ta'limot,14.729550745276567,5,5,2,False,,haqidagi taʼlimot
+579,ketdi,14.729550745276567,5,5,1,False,,ketdi
+580,logiya,14.729550745276567,5,5,1,False,,logiya
+581,ona,14.729550745276567,5,5,1,False,,ona
+582,quyidagi tur,14.729550745276567,5,5,2,False,,quyidagi turlarga
+583,rol,14.729550745276567,5,5,1,False,,rol
+584,singari,14.729550745276567,5,5,1,False,,singari
+585,tip,14.729550745276567,5,5,1,False,,tipi
+586,umuman,14.729550745276567,5,5,1,False,,umuman
+587,unda,14.729550745276567,5,5,1,False,,unda
+588,a'zolari,14.556229318461034,4,2,1,False,,aʼzolarining
+589,bajaruvchi,14.556229318461034,4,2,1,False,,bajaruvchi
+590,bog'liq hol,14.556229318461034,4,2,2,False,,bogʻliq holda
+591,boshqacha,14.556229318461034,4,2,1,False,,boshqacha
+592,chet til,14.556229318461034,4,2,2,False,,chet tilidan
+593,daftar,14.556229318461034,4,2,1,False,,daftar
+594,eksperimental fonetika,14.556229318461034,4,2,2,True,,eksperimental fonetika
+595,faol,14.556229318461034,4,2,1,False,,faol
+596,gina,14.556229318461034,4,2,1,False,,gina
+597,guruhga,14.556229318461034,4,2,1,False,,guruhga
+598,huquq,14.556229318461034,4,2,1,False,,huquq
+599,ikkinchi shaxs,14.556229318461034,4,2,2,True,,ikkinchi shaxs
+600,kelsa,14.556229318461034,4,2,1,False,,kelsa
+601,keng ma'no,14.556229318461034,4,2,2,False,,keng maʼnoda
+602,keyingi davr,14.556229318461034,4,2,2,False,,keyingi davrlarda
+603,ko'makchi fe'l,14.556229318461034,4,2,2,True,,koʻmakchi feʼllar
+604,ko'ngil,14.556229318461034,4,2,1,False,,koʻngil
+605,ko'pchilik,14.556229318461034,4,2,1,False,,koʻpchilik
+606,ko'tarilish,14.556229318461034,4,2,1,False,,koʻtarilish
+607,lug'aviy ma'noga ega,14.556229318461034,4,2,3,False,,lugʻaviy maʼnoga ega
+608,mavzu,14.556229318461034,4,2,1,False,,mavzu
+609,morfologik tizim,14.556229318461034,4,2,2,True,,morfologik tizim
+610,mustaqil fe'l,14.556229318461034,4,2,2,True,,mustaqil feʼldan
+611,nutq a'zolari,14.556229318461034,4,2,2,True,,nutq aʼzolarining
+612,qiluvchi,14.556229318461034,4,2,1,False,,qiluvchi
+613,qisqa,14.556229318461034,4,2,1,False,,qisqa
+614,qo'pol,14.556229318461034,4,2,1,False,,qoʻpol
+615,rivojlana,14.556229318461034,4,2,1,False,,rivojlana
+616,shaklini yasovchi,14.556229318461034,4,2,2,False,,shaklini yasovchi
+617,sossyur,14.556229318461034,4,2,1,False,,Sossyur
+618,soxta,14.556229318461034,4,2,1,False,,soxta
+619,sportchi,14.556229318461034,4,2,1,False,,sportchilari
+620,suffiks,14.556229318461034,4,2,1,True,,suffiks
+621,tani,14.556229318461034,4,2,1,False,,tani
+622,tarkibidagi predikativ,14.556229318461034,4,2,2,False,,Tarkibidagi predikativ
+623,tarkibidagi predikativ birlik,14.556229318461034,4,2,3,False,,Tarkibidagi predikativ birliklar
+624,til orqa,14.556229318461034,4,2,2,True,,til orqa
+625,tillarni o'rganish,14.556229318461034,4,2,2,False,,tillarni oʻrganish
+626,tobe qism,14.556229318461034,4,2,2,True,,tobe qism
+627,transkripsiya,14.556229318461034,4,2,1,True,,transkripsiya
+628,trubetskoy,14.556229318461034,4,2,1,False,,Trubetskoy
+629,yangilik,14.556229318461034,4,2,1,False,,yangilik
+630,yoq,14.556229318461034,4,2,1,False,,yoq
+631,aristotel,13.40550102865391,4,3,1,False,,Aristotel
+632,birdan ortiq,13.40550102865391,4,3,2,False,,birdan ortiq
+633,bola,13.40550102865391,4,3,1,False,,bolalar
+634,daraxt,13.40550102865391,4,3,1,False,,daraxtlar
+635,emotsional,13.40550102865391,4,3,1,False,,emotsional
+636,go'zal,13.40550102865391,4,3,1,False,,goʻzal
+637,haqidagi fan,13.40550102865391,4,3,2,False,,haqidagi fan
+638,ikki yoki undan ortiq,13.40550102865391,4,3,4,False,,ikki yoki undan ortiq
+639,jahon,13.40550102865391,4,3,1,False,,Jahon
+640,jarangsiz,13.40550102865391,4,3,1,True,,jarangsiz
+641,jihatlari,13.40550102865391,4,3,1,False,,jihatlariga
+642,kel,13.40550102865391,4,3,1,False,,kel
+643,kelishik,13.40550102865391,4,3,1,False,,kelishik
+644,ko'rsatuvchi,13.40550102865391,4,3,1,False,,koʻrsatuvchi
+645,lisoniy birlik,13.40550102865391,4,3,2,True,,lisoniy birlik
+646,nechta,13.40550102865391,4,3,1,False,,nechta
+647,o'xshash,13.40550102865391,4,3,1,False,,oʻxshash
+648,orasida,13.40550102865391,4,3,1,False,,orasida
+649,qalam,13.40550102865391,4,3,1,False,,qalam
+650,qarindosh,13.40550102865391,4,3,1,False,,qarindosh
+651,qishloq,13.40550102865391,4,3,1,False,,qishloqlar
+652,qisman,13.40550102865391,4,3,1,False,,qisman
+653,ravishdosh,13.40550102865391,4,3,1,True,,ravishdosh
+654,rus olim,13.40550102865391,4,3,2,False,,rus olimi
+655,sirg'aluvchi,13.40550102865391,4,3,1,True,,sirgʻaluvchi
+656,texnika,13.40550102865391,4,3,1,False,,texnika
+657,til leksika,13.40550102865391,4,3,2,False,,Til Leksikasi
+658,tili grammatika,13.40550102865391,4,3,2,False,,tili grammatikasi
+659,ularga xos,13.40550102865391,4,3,2,False,,ularga xos
+660,xususiyatiga ega,13.40550102865391,4,3,2,False,,xususiyatiga ega
+661,yozilish,13.40550102865391,4,3,1,False,,yozilishi
+662,yun,13.40550102865391,4,3,1,False,,yun
+663,abdurahmonov,12.512926823397072,4,4,1,False,,Abdurahmonov
+664,ahamiyatli,12.512926823397072,4,4,1,False,,ahamiyatli
+665,aniqlovchi,12.512926823397072,4,4,1,True,,aniqlovchi
+666,asosiy vazifa,12.512926823397072,4,4,2,False,,asosiy vazifasi
+667,baland,12.512926823397072,4,4,1,False,,baland
+668,berdi,12.512926823397072,4,4,1,False,,berdi
+669,bordi,12.512926823397072,4,4,1,False,,bordi
+670,chiqarish,12.512926823397072,4,4,1,False,,chiqarishga
+671,dagi,12.512926823397072,4,4,1,False,,dagi
+672,fe'l turkum,12.512926823397072,4,4,2,False,,feʼl turkumiga
+673,gap bo'lak,12.512926823397072,4,4,2,False,,gap boʻlaklari
+674,gul,12.512926823397072,4,4,1,False,,gul
+675,hind,12.512926823397072,4,4,1,False,,hind
+676,kelish,12.512926823397072,4,4,1,False,,kelishi
+677,ko'rib chiqish,12.512926823397072,4,4,2,False,,koʻrib chiqish
+678,ko'z,12.512926823397072,4,4,1,False,,koʻz
+679,manba,12.512926823397072,4,4,1,False,,manbai
+680,mansub,12.512926823397072,4,4,1,False,,mansub
+681,markaz,12.512926823397072,4,4,1,False,,markaz
+682,meva,12.512926823397072,4,4,1,False,,meva
+683,muhim rol,12.512926823397072,4,4,2,False,,muhim rol
+684,o'zagi,12.512926823397072,4,4,1,False,,oʻzagiga
+685,olish,12.512926823397072,4,4,1,False,,olish
+686,ona til,12.512926823397072,4,4,2,False,,ona tili
+687,panini,12.512926823397072,4,4,1,False,,Paninining
+688,polivanov,12.512926823397072,4,4,1,False,,Polivanov
+689,qad,12.512926823397072,4,4,1,False,,qad
+690,qadimgi yunoncha,12.512926823397072,4,4,2,False,,qadimgi yunoncha
+691,qamrab,12.512926823397072,4,4,1,False,,qamrab
+692,qo'llanuvchi,12.512926823397072,4,4,1,False,,qoʻllanuvchi
+693,reshetov,12.512926823397072,4,4,1,False,,Reshetov
+694,sababli,12.512926823397072,4,4,1,False,,sababli
+695,semasiologiya,12.512926823397072,4,4,1,True,,semasiologiya
+696,sintaktik birlik,12.512926823397072,4,4,2,True,,sintaktik birlik
+697,so'z va morfema,12.512926823397072,4,4,3,False,,soʻz va morfemalarning
+698,til lug'at,12.512926823397072,4,4,2,False,,til lugʻat
+699,tilshunoslikning til,12.512926823397072,4,4,2,False,,tilshunoslikning tilning
+700,turkumiga oid,12.512926823397072,4,4,2,False,,turkumiga oid
+701,tuzilma,12.512926823397072,4,4,1,False,,tuzilma
+702,xvi,12.512926823397072,4,4,1,False,,XVI
+703,amaliy grammatika,12.133567313170268,3,1,2,True,,amaliy Grammatika
+704,amaliy tilshunoslik,12.133567313170268,3,1,2,False,,Amaliy tilshunoslik
+705,aniklash,12.133567313170268,3,1,1,False,,aniklash
+706,avvalgi,12.133567313170268,3,1,1,False,,avvalgi
+707,barqaror,12.133567313170268,3,1,1,False,,barqaror
+708,bildiruvchi qo'shma otlar,12.133567313170268,3,1,3,False,,bildiruvchi qoʻshma otlar
+709,bilimdon,12.133567313170268,3,1,1,False,,bilimdon
+710,birlamchi,12.133567313170268,3,1,1,False,,birlamchi
+711,bog'lovchisiz,12.133567313170268,3,1,1,False,,bogʻlovchisiz
+712,bosh nisbat,12.133567313170268,3,1,2,True,,bosh nisbat
+713,bosh so'z,12.133567313170268,3,1,2,True,,bosh soʻz
+714,bye,12.133567313170268,3,1,1,False,,bye
+715,cho'ziq unli,12.133567313170268,3,1,2,True,,choʻziq unli
+716,do'st,12.133567313170268,3,1,1,False,,doʻst
+717,etimologik lug'at,12.133567313170268,3,1,2,False,,etimologik lugʻatlar
+718,fe'l zamon,12.133567313170268,3,1,2,False,,feʼl zamonlari
+719,fe'lning zamon,12.133567313170268,3,1,2,False,,feʼlning zamon
+720,fonetika til,12.133567313170268,3,1,2,False,,Fonetika tilning
+721,fraza,12.133567313170268,3,1,1,False,,Fraza
+722,funksional ko'makchi,12.133567313170268,3,1,2,True,,funksional koʻmakchilar
+723,funksional shakl,12.133567313170268,3,1,2,True,,funksional shakllari
+724,funksional uslub,12.133567313170268,3,1,2,False,,Funksional uslub
+725,go'yo,12.133567313170268,3,1,1,False,,goʻyo
+726,goh,12.133567313170268,3,1,1,False,,goh
+727,grammatik birlik,12.133567313170268,3,1,2,True,,Grammatik birliklarni
+728,ikkilamchi,12.133567313170268,3,1,1,False,,ikkilamchi
+729,ikkinchi qism,12.133567313170268,3,1,2,False,,ikkinchi qismi
+730,ishlatilish doirasi,12.133567313170268,3,1,2,False,,ishlatilish doirasi
+731,ishtirokiga ko'ra,12.133567313170268,3,1,2,False,,ishtirokiga koʻra
+732,jargon va argo,12.133567313170268,3,1,3,False,,jargon va argo
+733,jaw,12.133567313170268,3,1,1,False,,jaw
+734,joy nom,12.133567313170268,3,1,2,False,,joy nomlari
+735,jumlalar,12.133567313170268,3,1,1,False,,jumlalar
+736,kabilar predmet,12.133567313170268,3,1,2,False,,kabilar predmet
+737,kichik harf,12.133567313170268,3,1,2,True,,kichik harf
+738,ko'tarilish unli,12.133567313170268,3,1,2,False,,koʻtarilish unlilari
+739,leksik unsurlar,12.133567313170268,3,1,2,False,,leksik unsurlar
+740,lug'atchilik,12.133567313170268,3,1,1,True,,lugʻatchilik
+741,mayl shakl,12.133567313170268,3,1,2,False,,mayl shakli
+742,miloddan,12.133567313170268,3,1,1,False,,miloddan
+743,miloddan avvalgi,12.133567313170268,3,1,2,False,,miloddan avvalgi
+744,mukkasidan,12.133567313170268,3,1,1,False,,mukkasidan
+745,muvaffaqiyatli,12.133567313170268,3,1,1,False,,muvaffaqiyatli
+746,navro'z,12.133567313170268,3,1,1,False,,Navroʻz
+747,nisbat kategoriya,12.133567313170268,3,1,2,False,,nisbat kategoriyasi
+748,nutq tovushlarining hosil,12.133567313170268,3,1,3,False,,nutq tovushlarining hosil
+749,o'n,12.133567313170268,3,1,1,False,,oʻn
+750,o'yinlarida,12.133567313170268,3,1,1,False,,oʻyinlarida
+751,o'yinlarida muvaffaqiyatli,12.133567313170268,3,1,2,False,,oʻyinlarida muvaffaqiyatli
+752,o'zbek sportchi,12.133567313170268,3,1,2,False,,Oʻzbek sportchilari
+753,o'zbek sportchilari olimpiada,12.133567313170268,3,1,3,False,,Oʻzbek sportchilari olimpiada
+754,o'zbek sportchilari olimpiada o'yinlarida,12.133567313170268,3,1,4,False,,Oʻzbek sportchilari olimpiada oʻyinlarida
+755,o'zbek tili fonetika,12.133567313170268,3,1,3,False,,Oʻzbek tili fonetikasi
+756,obsheye,12.133567313170268,3,1,1,False,,Obsheye
+757,obsheye yazikoznaniye,12.133567313170268,3,1,2,False,,Obsheye yazikoznaniye
+758,obyektga munosabat,12.133567313170268,3,1,2,False,,obyektga munosabatini
+759,ochiq,12.133567313170268,3,1,1,False,,ochiq
+760,olimpiada,12.133567313170268,3,1,1,False,,olimpiada
+761,olimpiada o'yinlarida,12.133567313170268,3,1,2,False,,olimpiada oʻyinlarida
+762,olimpiada o'yinlarida muvaffaqiyatli,12.133567313170268,3,1,3,False,,olimpiada oʻyinlarida muvaffaqiyatli
+763,ot va qo'shma,12.133567313170268,3,1,3,False,,ot va qoʻshma
+764,ot va qo'shma sifat,12.133567313170268,3,1,4,False,,ot va qoʻshma sifatlar
+765,ovoz va shovqin,12.133567313170268,3,1,3,False,,ovoz va shovqindan
+766,q undosh,12.133567313170268,3,1,2,False,,q undoshi
+767,qildi,12.133567313170268,3,1,1,False,,qildi
+768,qo'shma ot,12.133567313170268,3,1,2,True,,qoʻshma ot
+769,qo'shma ot va qo'shma,12.133567313170268,3,1,4,False,,qoʻshma ot va qoʻshma
+770,qo'shma sifat,12.133567313170268,3,1,2,True,,qoʻshma sifatlar
+771,qurilish material,12.133567313170268,3,1,2,False,,qurilish materiali
+772,quyidagi qo'shimcha,12.133567313170268,3,1,2,False,,Quyidagi qoʻshimchalarning
+773,sayyora,12.133567313170268,3,1,1,False,,sayyoralar
+774,segment,12.133567313170268,3,1,1,False,,segment
+775,shakllari harakat,12.133567313170268,3,1,2,False,,shakllari harakatning
+776,shakllari harakatning nutq,12.133567313170268,3,1,3,False,,shakllari harakatning nutq
+777,shakllari harakatning nutq vaqt,12.133567313170268,3,1,4,False,,shakllari harakatning nutq vaqtigacha
+778,sleng so'z,12.133567313170268,3,1,2,False,,sleng soʻzlarini
+779,so'z bosh harf,12.133567313170268,3,1,3,False,,soʻz bosh harf
+780,so'zlashuv uslub,12.133567313170268,3,1,2,False,,soʻzlashuv uslublari
+781,so'zning kelib chiqish,12.133567313170268,3,1,3,False,,soʻzning kelib chiqishi
+782,soxta etimologiya,12.133567313170268,3,1,2,False,,soxta Etimologiya
+783,sportchilari olimpiada,12.133567313170268,3,1,2,False,,sportchilari olimpiada
+784,sportchilari olimpiada o'yinlarida,12.133567313170268,3,1,3,False,,sportchilari olimpiada oʻyinlarida
+785,sportchilari olimpiada o'yinlarida muvaffaqiyatli,12.133567313170268,3,1,4,False,,sportchilari olimpiada oʻyinlarida muvaffaqiyatli
+786,ta'kidlab o'tish,12.133567313170268,3,1,2,False,,Taʼkidlab oʻtish
+787,tashkilotlar,12.133567313170268,3,1,1,False,,tashkilotlari
+788,til qurilish,12.133567313170268,3,1,2,False,,til qurilishini
+789,tili fonetika,12.133567313170268,3,1,2,False,,tili fonetikasi
+790,tilli lug'at,12.133567313170268,3,1,2,False,,tilli lugʻatlar
+791,to'g'ri yozish,12.133567313170268,3,1,2,False,,toʻgʻri yozish
+792,to'liq,12.133567313170268,3,1,1,False,,toʻliq
+793,to'q,12.133567313170268,3,1,1,False,,toʻq
+794,tovushlarining hosil,12.133567313170268,3,1,2,False,,tovushlarining hosil
+795,tuslanish,12.133567313170268,3,1,1,True,,tuslanish
+796,tuslanish qoida,12.133567313170268,3,1,2,False,,tuslanish qoidalari
+797,uchinchi shaxs,12.133567313170268,3,1,2,True,,uchinchi shaxs
+798,umumiy sleng,12.133567313170268,3,1,2,False,,umumiy sleng
+799,umumiy tilshunoslik,12.133567313170268,3,1,2,False,,umumiy tilshunoslik
+800,umumlashgan ma'no,12.133567313170268,3,1,2,False,,umumlashgan maʼno
+801,undoshi bilan tugagan so'z,12.133567313170268,3,1,4,False,,undoshi bilan tugagan soʻzlarga
+802,unlilar talaffuz,12.133567313170268,3,1,2,False,,unlilar talaffuz
+803,unvon,12.133567313170268,3,1,1,False,,unvon
+804,yangi so'z yasovchi qo'shimcha,12.133567313170268,3,1,4,False,,yangi soʻz yasovchi qoʻshimchalar
+805,yasaladi va harakat,12.133567313170268,3,1,3,False,,yasaladi va harakatning
+806,yazikoznaniye,12.133567313170268,3,1,1,False,,yazikoznaniye
+807,york,12.133567313170268,3,1,1,False,,York
+808,yozma,12.133567313170268,3,1,1,False,,yozma
+809,yulduz,12.133567313170268,3,1,1,False,,yulduz
+810,zamon shakllari harakat,12.133567313170268,3,1,3,False,,zamon shakllari harakatning
+811,zamon shakllari harakatning nutq,12.133567313170268,3,1,4,False,,zamon shakllari harakatning nutq
+812,zid ma'noli,12.133567313170268,3,1,2,False,,zid maʼnoli
+813,analitik shakl,10.917171988845775,3,2,2,True,,analitik shakl
+814,arxaizm,10.917171988845775,3,2,1,True,,arxaizmlar
+815,asosiy so'z,10.917171988845775,3,2,2,False,,Asosiy soʻz
+816,aynan,10.917171988845775,3,2,1,False,,aynan
+817,ber,10.917171988845775,3,2,1,False,,ber
+818,bilish,10.917171988845775,3,2,1,False,,bilish
+819,birinchi shaxs,10.917171988845775,3,2,2,True,,birinchi shaxs
+820,birinchi so'z bosh,10.917171988845775,3,2,3,False,,birinchi soʻz bosh
+821,biror narsa,10.917171988845775,3,2,2,False,,biror narsaga
+822,bmt,10.917171988845775,3,2,1,False,,BMT
+823,bo'g'iz,10.917171988845775,3,2,1,False,,boʻgʻiz
+824,bo'lagi vazifa,10.917171988845775,3,2,2,False,,boʻlagi vazifasida
+825,bo'lish o'rni,10.917171988845775,3,2,2,False,,boʻlish oʻrniga
+826,bo'lish usul,10.917171988845775,3,2,2,False,,boʻlish usuliga
+827,bo'lishsiz,10.917171988845775,3,2,1,False,,boʻlishsiz
+828,buloq,10.917171988845775,3,2,1,False,,buloq
+829,butunlik,10.917171988845775,3,2,1,False,,butunlikdan
+830,chiqish kelishigi,10.917171988845775,3,2,2,True,,chiqish kelishigi
+831,chiroyli,10.917171988845775,3,2,1,False,,chiroyli
+832,daraja kategoriya,10.917171988845775,3,2,2,False,,daraja kategoriyasiga
+833,dog,10.917171988845775,3,2,1,False,,dog
+834,ergashtiruvchi,10.917171988845775,3,2,1,False,,ergashtiruvchi
+835,ergashtiruvchi bog'lovchi,10.917171988845775,3,2,2,True,,ergashtiruvchi bogʻlovchilarga
+836,etdi,10.917171988845775,3,2,1,False,,etdilar
+837,etildi,10.917171988845775,3,2,1,False,,etildi
+838,filologlar,10.917171988845775,3,2,1,False,,filologlar
+839,gap bo'lagi,10.917171988845775,3,2,2,True,,gap boʻlagi
+840,grammatik xususiyat,10.917171988845775,3,2,2,False,,grammatik xususiyatlariga
+841,hay,10.917171988845775,3,2,1,False,,hay
+842,hosil bo'lish o'rni,10.917171988845775,3,2,3,False,,hosil boʻlish oʻrniga
+843,hosil bo'lish usul,10.917171988845775,3,2,3,False,,hosil boʻlish usuliga
+844,hosil qilish,10.917171988845775,3,2,2,False,,hosil qilish
+845,ibn,10.917171988845775,3,2,1,False,,Ibn
+846,ibn sino,10.917171988845775,3,2,2,False,,Ibn Sino
+847,ikki va undan ortiq,10.917171988845775,3,2,4,False,,ikki va undan ortiq
+848,jarangli undosh,10.917171988845775,3,2,2,True,,jarangli undosh
+849,jo'nalish,10.917171988845775,3,2,1,False,,joʻnalish
+850,kelishigi qo'shimcha,10.917171988845775,3,2,2,False,,kelishigi qoʻshimchasining
+851,ko'cha,10.917171988845775,3,2,1,False,,koʻchada
+852,ko'ra sodda,10.917171988845775,3,2,2,False,,koʻra sodda
+853,ko'rsatkichi yo'q,10.917171988845775,3,2,2,False,,koʻrsatkichi yoʻq
+854,kuy,10.917171988845775,3,2,1,False,,kuy
+855,lahja va shevalar,10.917171988845775,3,2,3,False,,lahja va shevalarning
+856,lug'atlar tuzish,10.917171988845775,3,2,2,False,,lugʻatlar tuzish
+857,majhul,10.917171988845775,3,2,1,False,,majhul
+858,majhul nisbat,10.917171988845775,3,2,2,True,,majhul nisbat
+859,maqol,10.917171988845775,3,2,1,False,,maqol
+860,maxsus qo'shimcha,10.917171988845775,3,2,2,False,,maxsus qoʻshimchalarga
+861,maxsus so'z,10.917171988845775,3,2,2,False,,maxsus soʻzlar
+862,milliy til,10.917171988845775,3,2,2,True,,Milliy tilning
+863,morfologik qoida,10.917171988845775,3,2,2,True,,morfologik qoidalar
+864,muayyan so'z,10.917171988845775,3,2,2,False,,muayyan soʻz
+865,murakkab so'z,10.917171988845775,3,2,2,False,,murakkab soʻzlarni
+866,natijasida hosil,10.917171988845775,3,2,2,False,,natijasida hosil
+867,o'zbek tili sintaksis,10.917171988845775,3,2,3,False,,oʻzbek tili sintaksisi
+868,o'zlik,10.917171988845775,3,2,1,False,,Oʻzlik
+869,obyektiv,10.917171988845775,3,2,1,False,,obyektiv
+870,och,10.917171988845775,3,2,1,False,,och
+871,oldingi bo'g'in,10.917171988845775,3,2,2,False,,oldingi boʻgʻinda
+872,omonimiya,10.917171988845775,3,2,1,False,,omonimiya
+873,oppozitsiyalar,10.917171988845775,3,2,1,False,,oppozitsiyalar
+874,orfografiya,10.917171988845775,3,2,1,True,,orfografiya
+875,ortiq mustaqil,10.917171988845775,3,2,2,False,,ortiq mustaqil
+876,ortiq mustaqil so'z,10.917171988845775,3,2,3,False,,ortiq mustaqil soʻzning
+877,orttirma nisbat,10.917171988845775,3,2,2,True,,orttirma nisbat
+878,ot so'z,10.917171988845775,3,2,2,False,,ot soʻz
+879,qayta,10.917171988845775,3,2,1,False,,qayta
+880,qo'llash,10.917171988845775,3,2,1,False,,qoʻllash
+881,shakl yasalish,10.917171988845775,3,2,2,False,,shakl yasalishi
+882,shovqinli,10.917171988845775,3,2,1,True,,shovqinli
+883,so'zlarni turkum,10.917171988845775,3,2,2,False,,Soʻzlarni turkumlarga
+884,so'zlarning ma'no,10.917171988845775,3,2,2,False,,soʻzlarning maʼno
+885,son kategoriya,10.917171988845775,3,2,2,False,,son kategoriyasi
+886,tarjima qilish,10.917171988845775,3,2,2,False,,tarjima qilish
+887,tarkibli,10.917171988845775,3,2,1,False,,tarkibli
+888,tashqi,10.917171988845775,3,2,1,False,,tashqi
+889,tik,10.917171988845775,3,2,1,False,,tik
+890,tildagi so'z,10.917171988845775,3,2,2,False,,tildagi soʻzlarning
+891,tili sintaksis,10.917171988845775,3,2,2,False,,tili sintaksisi
+892,to'liqsiz,10.917171988845775,3,2,1,False,,toʻliqsiz
+893,to'liqsiz fe'l,10.917171988845775,3,2,2,True,,toʻliqsiz feʼl
+894,tovushlar son,10.917171988845775,3,2,2,False,,tovushlar soni
+895,turdosh,10.917171988845775,3,2,1,False,,turdosh
+896,turkumlarga ajratish,10.917171988845775,3,2,2,False,,turkumlarga ajratish
+897,tus,10.917171988845775,3,2,1,False,,tus
+898,undov,10.917171988845775,3,2,1,False,,undovlar
+899,uzoq,10.917171988845775,3,2,1,False,,Uzoq
+900,variantlar,10.917171988845775,3,2,1,False,,variantlari
+901,xayr,10.917171988845775,3,2,1,False,,xayr
+902,xorijiy til,10.917171988845775,3,2,2,False,,xorijiy tillarni
+903,xususiy ma'no,10.917171988845775,3,2,2,False,,xususiy maʼnolar
+904,yangi ma'no,10.917171988845775,3,2,2,False,,yangi maʼno
+905,yasalishi tizim,10.917171988845775,3,2,2,False,,yasalishi tizimiga
+906,yasash uchun xizmat,10.917171988845775,3,2,3,False,,yasash uchun xizmat
+907,yetti,10.917171988845775,3,2,1,False,,yetti
+908,yolg'iz,10.917171988845775,3,2,1,False,,yolgʻiz
+909,yon,10.917171988845775,3,2,1,False,,yon
+910,zamonaviy til,10.917171988845775,3,2,2,False,,zamonaviy til
+911,aksincha,10.054125771490433,3,3,1,False,,Aksincha
+912,alisher,10.054125771490433,3,3,1,False,,Alisher
+913,alohida tur,10.054125771490433,3,3,2,False,,alohida turlarga
+914,an'analari,10.054125771490433,3,3,1,False,,anʼanalari
+915,anglashilgan harakat,10.054125771490433,3,3,2,False,,anglashilgan harakatning
+916,asosiy e'tibor,10.054125771490433,3,3,2,False,,asosiy eʼtiborni
+917,asosiy tur,10.054125771490433,3,3,2,False,,asosiy turga
+918,avval,10.054125771490433,3,3,1,False,,avval
+919,bajarish,10.054125771490433,3,3,1,False,,bajarishi
+920,belgilash,10.054125771490433,3,3,1,False,,belgilashda
+921,beruvchi,10.054125771490433,3,3,1,False,,beruvchi
+922,birgina,10.054125771490433,3,3,1,False,,birgina
+923,bo'lmish,10.054125771490433,3,3,1,False,,boʻlmish
+924,bog'lab,10.054125771490433,3,3,1,False,,bogʻlab
+925,borish,10.054125771490433,3,3,1,False,,borishi
+926,borovkov,10.054125771490433,3,3,1,False,,Borovkov
+927,boshlab,10.054125771490433,3,3,1,False,,boshlab
+928,buyruq,10.054125771490433,3,3,1,False,,buyruq
+929,chambarchas,10.054125771490433,3,3,1,False,,chambarchas
+930,chambarchas bog'liq,10.054125771490433,3,3,2,False,,chambarchas bogʻliq
+931,chuqur,10.054125771490433,3,3,1,False,,chuqur
+932,devonu,10.054125771490433,3,3,1,False,,Devonu
+933,devonu lug'otit,10.054125771490433,3,3,2,False,,Devonu lugʻotit
+934,dialektal,10.054125771490433,3,3,1,False,,dialektal
+935,diqqat,10.054125771490433,3,3,1,False,,diqqat
+936,diskol,10.054125771490433,3,3,1,False,,Diskol
+937,dor,10.054125771490433,3,3,1,False,,dor
+938,ega bo'lish,10.054125771490433,3,3,2,False,,ega boʻlish
+939,ehtiyoji,10.054125771490433,3,3,1,False,,ehtiyoji
+940,emasligi,10.054125771490433,3,3,1,False,,emasligiga
+941,erkin,10.054125771490433,3,3,1,False,,erkin
+942,eshik,10.054125771490433,3,3,1,False,,eshikni
+943,fe'l shakl,10.054125771490433,3,3,2,False,,feʼl shakli
+944,fitrat,10.054125771490433,3,3,1,False,,Fitrat
+945,gapning bosh,10.054125771490433,3,3,2,False,,gapning bosh
+946,hindiston,10.054125771490433,3,3,1,False,,Hindistondan
+947,hisobga,10.054125771490433,3,3,1,False,,hisobga
+948,hojiyev,10.054125771490433,3,3,1,False,,Hojiyev
+949,ifodalanishi,10.054125771490433,3,3,1,False,,ifodalanishining
+950,ikkita,10.054125771490433,3,3,1,False,,ikkita
+951,imkon,10.054125771490433,3,3,1,False,,imkon
+952,izchil,10.054125771490433,3,3,1,False,,izchil
+953,kategorial,10.054125771490433,3,3,1,False,,kategorial
+954,kelgan so'z,10.054125771490433,3,3,2,False,,kelgan soʻzga
+955,kesim vazifa,10.054125771490433,3,3,2,False,,kesim vazifasida
+956,keyinroq,10.054125771490433,3,3,1,False,,keyinroq
+957,kirish,10.054125771490433,3,3,1,False,,kirish
+958,kiritish,10.054125771490433,3,3,1,False,,kiritish
+959,kuchaytirish,10.054125771490433,3,3,1,False,,kuchaytirish
+960,kuzatish,10.054125771490433,3,3,1,False,,kuzatish
+961,lotin,10.054125771490433,3,3,1,False,,Lotin
+962,lug'otit,10.054125771490433,3,3,1,False,,lugʻotit
+963,ma'lum til,10.054125771490433,3,3,2,False,,maʼlum til
+964,ma'no farqlash,10.054125771490433,3,3,2,False,,maʼno farqlash
+965,ma'no ifodalash,10.054125771490433,3,3,2,False,,maʼno ifodalashi
+966,ma'no va vazifa,10.054125771490433,3,3,3,False,,maʼno va vazifasiga
+967,ma'noli birlik,10.054125771490433,3,3,2,False,,maʼnoli birliklar
+968,mahorat,10.054125771490433,3,3,1,False,,mahoratlariga
+969,mashina,10.054125771490433,3,3,1,False,,mashinasi
+970,mavhum,10.054125771490433,3,3,1,False,,mavhum
+971,may,10.054125771490433,3,3,1,False,,mayda
+972,muallif,10.054125771490433,3,3,1,False,,muallif
+973,muammosi,10.054125771490433,3,3,1,False,,muammosi
+974,namoyon,10.054125771490433,3,3,1,False,,namoyon
+975,negizida,10.054125771490433,3,3,1,False,,negizida
+976,noto'g'ri,10.054125771490433,3,3,1,False,,notoʻgʻri
+977,nutq birligi,10.054125771490433,3,3,2,True,,nutq birligi
+978,o'qituvchi,10.054125771490433,3,3,1,False,,oʻqituvchi
+979,o'quv,10.054125771490433,3,3,1,False,,oʻquv
+980,o'rganuvchi bo'l,10.054125771490433,3,3,2,False,,oʻrganuvchi boʻlimi
+981,o'rta asr,10.054125771490433,3,3,2,False,,Oʻrta asrlarda
+982,o'tgan asr,10.054125771490433,3,3,2,False,,oʻtgan asrning
+983,o'zaro munosabat,10.054125771490433,3,3,2,False,,oʻzaro munosabatini
+984,o'zbek tili grammatika,10.054125771490433,3,3,3,False,,oʻzbek tili grammatikasini
+985,o'ziga xos so'z,10.054125771490433,3,3,3,False,,oʻziga xos soʻz
+986,oxirgi,10.054125771490433,3,3,1,False,,oxirgi
+987,prinsiplari,10.054125771490433,3,3,1,False,,prinsiplarini
+988,qachon,10.054125771490433,3,3,1,False,,qachon
+989,qarindosh til,10.054125771490433,3,3,2,True,,qarindosh tillarning
+990,qayd,10.054125771490433,3,3,1,False,,qayd
+991,qilinishi,10.054125771490433,3,3,1,False,,qilinishi
+992,qiyoslash,10.054125771490433,3,3,1,False,,qiyoslash
+993,qo'shimcha ma'no,10.054125771490433,3,3,2,False,,qoʻshimcha maʼno
+994,qonun,10.054125771490433,3,3,1,False,,qonun
+995,qora,10.054125771490433,3,3,1,False,,qora
+996,qozon,10.054125771490433,3,3,1,False,,qozon
+997,rossiya,10.054125771490433,3,3,1,False,,Rossiyada
+998,rus tilshunosligi,10.054125771490433,3,3,2,False,,rus tilshunosligida
+999,rustamov,10.054125771490433,3,3,1,False,,Rustamov
+1000,samdu,10.054125771490433,3,3,1,False,,SamDU
+1001,sariq,10.054125771490433,3,3,1,False,,sariq
+1002,sekin,10.054125771490433,3,3,1,False,,sekin
+1003,shoabdurahmonov,10.054125771490433,3,3,1,False,,Shoabdurahmonov
+1004,so'z yasash,10.054125771490433,3,3,2,False,,soʻz yasash
+1005,so'z yoki so'z,10.054125771490433,3,3,3,False,,soʻz yoki soʻz
+1006,sof,10.054125771490433,3,3,1,False,,Sof
+1007,tabiati,10.054125771490433,3,3,1,False,,tabiati
+1008,taklif,10.054125771490433,3,3,1,False,,taklif
+1009,talab,10.054125771490433,3,3,1,False,,talab
+1010,tarixi mahmud,10.054125771490433,3,3,2,False,,tarixi Mahmud
+1011,tasavvur,10.054125771490433,3,3,1,False,,tasavvur
+1012,tasdiq,10.054125771490433,3,3,1,False,,tasdiq
+1013,tasniflash,10.054125771490433,3,3,1,False,,tasniflash
+1014,tilida unli,10.054125771490433,3,3,2,False,,tilida unli
+1015,to'ldiruvchi,10.054125771490433,3,3,1,True,,toʻldiruvchi
+1016,tovush qurilish,10.054125771490433,3,3,2,False,,tovush qurilishining
+1017,tushunarsiz,10.054125771490433,3,3,1,False,,tushunarsiz
+1018,tuzilishiga ko'ra,10.054125771490433,3,3,2,False,,tuzilishiga koʻra
+1019,umumiy ma'no,10.054125771490433,3,3,2,False,,umumiy maʼno
+1020,universal,10.054125771490433,3,3,1,False,,universal
+1021,ust,10.054125771490433,3,3,1,False,,ustiga
+1022,vositalar yordam,10.054125771490433,3,3,2,False,,vositalar yordamida
+1023,xalqaro,10.054125771490433,3,3,1,False,,xalqaro
+1024,xilma,10.054125771490433,3,3,1,False,,xilma
+1025,xususiyatga ega,10.054125771490433,3,3,2,False,,xususiyatga ega
+1026,xv asr,10.054125771490433,3,3,2,False,,XV asrdan
+1027,xvi asr,10.054125771490433,3,3,2,False,,XVI asr
+1028,yaxlit,10.054125771490433,3,3,1,False,,yaxlit
+1029,yo'qligi,10.054125771490433,3,3,1,False,,yoʻqligi
+1030,yordamida hosil,10.054125771490433,3,3,2,False,,yordamida hosil
+1031,yosh,10.054125771490433,3,3,1,False,,yosh
+1032,yunonistonda,10.054125771490433,3,3,1,False,,Yunonistonda
+1033,yuz,10.054125771490433,3,3,1,False,,yuz
+1034,a unli,8.089044875446845,2,1,2,False,,a unlisi
+1035,abbreviatsiya,8.089044875446845,2,1,1,True,,abbreviatsiya
+1036,abdulla,8.089044875446845,2,1,1,False,,Abdulla
+1037,affiksini qo'shish,8.089044875446845,2,1,2,False,,affiksini qoʻshish
+1038,aleksandriyalik,8.089044875446845,2,1,1,False,,aleksandriyalik
+1039,almashinuvi,8.089044875446845,2,1,1,False,,almashinuvi
+1040,alohida ta'kidlab,8.089044875446845,2,1,2,False,,alohida taʼkidlab
+1041,alohida uslub,8.089044875446845,2,1,2,False,,alohida uslub
+1042,amaliy lug'atchilik,8.089044875446845,2,1,2,True,,amaliy lugʻatchilik
+1043,analitik til,8.089044875446845,2,1,2,True,,analitik tillarning
+1044,andijon,8.089044875446845,2,1,1,False,,Andijon
+1045,anglatuvchi,8.089044875446845,2,1,1,False,,anglatuvchi
+1046,aniqlab,8.089044875446845,2,1,1,False,,aniqlab
+1047,anti,8.089044875446845,2,1,1,False,,anti
+1048,antonimik,8.089044875446845,2,1,1,False,,Antonimik
+1049,antonimik juft,8.089044875446845,2,1,2,True,,Antonimik juft
+1050,artikulyatsion,8.089044875446845,2,1,1,False,,artikulyatsion
+1051,asos bo'lib xizmat,8.089044875446845,2,1,3,False,,asos boʻlib xizmat
+1052,asosi va so'z,8.089044875446845,2,1,3,False,,asosi va soʻz
+1053,asosi va so'z yasovchi,8.089044875446845,2,1,4,False,,asosi va soʻz yasovchining
+1054,asosiy birlik,8.089044875446845,2,1,2,False,,asosiy birlik
+1055,asosiy ko'rinish,8.089044875446845,2,1,2,False,,asosiy koʻrinishi
+1056,asrda o'zbek,8.089044875446845,2,1,2,False,,asrda oʻzbek
+1057,asrda o'zbek til,8.089044875446845,2,1,3,False,,asrda oʻzbek tili
+1058,asrda o'zbek tili sintaksis,8.089044875446845,2,1,4,False,,asrda oʻzbek tili sintaksisiga
+1059,atoqli oti,8.089044875446845,2,1,2,False,,atoqli oti
+1060,atoqli oti bosh,8.089044875446845,2,1,3,False,,atoqli oti bosh
+1061,atoqli oti bosh harf,8.089044875446845,2,1,4,False,,atoqli oti bosh harf
+1062,atrofida,8.089044875446845,2,1,1,False,,atrofida
+1063,avv,8.089044875446845,2,1,1,False,,avv
+1064,avzo,8.089044875446845,2,1,1,False,,avzo
+1065,ayla,8.089044875446845,2,1,1,False,,ayla
+1066,ayt,8.089044875446845,2,1,1,False,,ayt
+1067,aytilishini,8.089044875446845,2,1,1,False,,aytilishini
+1068,aytilishini ifodalash,8.089044875446845,2,1,2,False,,aytilishini ifodalash
+1069,aytilsa ham hamma vaqt,8.089044875446845,2,1,4,False,,aytilsa ham hamma vaqt
+1070,barqaror jumlalar,8.089044875446845,2,1,2,False,,barqaror jumlalar
+1071,baxil,8.089044875446845,2,1,1,False,,baxil
+1072,baynalmilal,8.089044875446845,2,1,1,False,,baynalmilal
+1073,baynalmilal so'z,8.089044875446845,2,1,2,False,,baynalmilal soʻzlar
+1074,bek,8.089044875446845,2,1,1,False,,bek
+1075,belgining belgi,8.089044875446845,2,1,2,False,,belgining belgisini
+1076,belgining ortiq,8.089044875446845,2,1,2,False,,belgining ortiq
+1077,bil so'z,8.089044875446845,2,1,2,False,,bil soʻziga
+1078,bilim so'z,8.089044875446845,2,1,2,False,,bilim soʻziga
+1079,bilimdon so'z,8.089044875446845,2,1,2,False,,bilimdon soʻzidan
+1080,bilimdonlik,8.089044875446845,2,1,1,False,,bilimdonlik
+1081,bilimdonlik so'z,8.089044875446845,2,1,2,False,,bilimdonlik soʻzi
+1082,birgalik nisbat,8.089044875446845,2,1,2,False,,birgalik nisbati
+1083,birikmasi hokim,8.089044875446845,2,1,2,False,,birikmasi hokim
+1084,birinchi so'z bosh harf,8.089044875446845,2,1,4,False,,birinchi soʻz bosh harf
+1085,birinchi so'zgina,8.089044875446845,2,1,2,False,,birinchi soʻzgina
+1086,birinchi so'zgina bosh,8.089044875446845,2,1,3,False,,birinchi soʻzgina bosh
+1087,birinchi so'zgina bosh harf,8.089044875446845,2,1,4,False,,birinchi soʻzgina bosh harf
+1088,birining mohiyat,8.089044875446845,2,1,2,False,,birining mohiyati
+1089,birlashgan millatlar,8.089044875446845,2,1,2,False,,Birlashgan Millatlar
+1090,birlashgan millatlar tashkiloti,8.089044875446845,2,1,3,False,,Birlashgan Millatlar Tashkiloti
+1091,birliklar o'zaro,8.089044875446845,2,1,2,False,,birliklar oʻzaro
+1092,biror bo'lagi,8.089044875446845,2,1,2,False,,biror boʻlagi
+1093,bitta fonema,8.089044875446845,2,1,2,False,,bitta fonemani
+1094,bo'g'in yolg'iz,8.089044875446845,2,1,2,False,,boʻgʻin yolgʻiz
+1095,bo'g'inga teng,8.089044875446845,2,1,2,False,,boʻgʻinga teng
+1096,bo'g'inga teng qism,8.089044875446845,2,1,3,False,,boʻgʻinga teng qism
+1097,bo'lish usuliga ko'ra,8.089044875446845,2,1,3,False,,boʻlish usuliga koʻra
+1098,bo'lishsizlik kategoriya,8.089044875446845,2,1,2,False,,boʻlishsizlik kategoriyasi
+1099,bo'lmagan so'z,8.089044875446845,2,1,2,False,,boʻlmagan soʻzlar
+1100,bo'yog'iga,8.089044875446845,2,1,1,False,,boʻyogʻiga
+1101,bo'yog'iga ega,8.089044875446845,2,1,2,False,,boʻyogʻiga ega
+1102,bo'yog'iga ega bo'lmagan so'z,8.089044875446845,2,1,4,False,,boʻyogʻiga ega boʻlmagan soʻzlar
+1103,bobosi,8.089044875446845,2,1,1,False,,bobosi
+1104,bog'langan qo'shma,8.089044875446845,2,1,2,False,,bogʻlangan qoʻshma
+1105,bog'langan qo'shma gap,8.089044875446845,2,1,3,True,,bogʻlangan qoʻshma gap
+1106,bog'lanish so'z,8.089044875446845,2,1,2,False,,bogʻlanish soʻz
+1107,bog'lanish vosita,8.089044875446845,2,1,2,False,,bogʻlanish vositalari
+1108,bog'lovchisiz qo'shma,8.089044875446845,2,1,2,False,,bogʻlovchisiz qoʻshma
+1109,bog'lovchisiz qo'shma gap,8.089044875446845,2,1,3,True,,bogʻlovchisiz qoʻshma gap
+1110,bon,8.089044875446845,2,1,1,False,,bon
+1111,bosh tovushi k,8.089044875446845,2,1,3,False,,bosh tovushi k
+1112,bosh uzum,8.089044875446845,2,1,2,False,,bosh uzum
+1113,bosh va ergash,8.089044875446845,2,1,3,False,,bosh va ergash
+1114,boz,8.089044875446845,2,1,1,False,,boz
+1115,bug'inlar,8.089044875446845,2,1,1,False,,bugʻinlardan
+1116,burun unli,8.089044875446845,2,1,2,False,,burun unlisi
+1117,cho'ziqroq,8.089044875446845,2,1,1,False,,choʻziqroq
+1118,chun,8.089044875446845,2,1,1,False,,chun
+1119,darajali bo'lak,8.089044875446845,2,1,2,False,,darajali boʻlaklar
+1120,dardga,8.089044875446845,2,1,1,False,,dardga
+1121,demokratik partiyasi,8.089044875446845,2,1,2,False,,demokratik partiyasi
+1122,diaxroniya,8.089044875446845,2,1,1,False,,Diaxroniya
+1123,doiradagi odam,8.089044875446845,2,1,2,False,,doiradagi odamlarga
+1124,dolchin,8.089044875446845,2,1,1,False,,dolchin
+1125,dorchin,8.089044875446845,2,1,1,False,,dorchin
+1126,dushman,8.089044875446845,2,1,1,False,,dushman
+1127,eats,8.089044875446845,2,1,1,False,,eats
+1128,ega bo'lmagan so'z,8.089044875446845,2,1,3,False,,ega boʻlmagan soʻzlar
+1129,egalik qo'shimchasi qo'shilganda k,8.089044875446845,2,1,4,False,,egalik qoʻshimchasi qoʻshilganda k
+1130,egalik vazifa,8.089044875446845,2,1,2,False,,egalik vazifasi
+1131,ergash gap bosh,8.089044875446845,2,1,3,False,,ergash gap bosh
+1132,ergash gap bosh gap,8.089044875446845,2,1,4,False,,ergash gap bosh gapdan
+1133,erishdi,8.089044875446845,2,1,1,False,,erishdi
+1134,erk,8.089044875446845,2,1,1,False,,erk
+1135,eski,8.089044875446845,2,1,1,False,,eski
+1136,eski qatlam,8.089044875446845,2,1,2,False,,eski qatlam
+1137,eskilik,8.089044875446845,2,1,1,False,,eskilik
+1138,eskilik va yangilik,8.089044875446845,2,1,3,False,,eskilik va yangilik
+1139,eskilik va yangilik bo'yog'iga,8.089044875446845,2,1,4,False,,eskilik va yangilik boʻyogʻiga
+1140,etimologiyasini aniqlash,8.089044875446845,2,1,2,False,,Etimologiyasini aniqlash
+1141,etnolingvistika,8.089044875446845,2,1,1,False,,etnolingvistika
+1142,falsafa,8.089044875446845,2,1,1,False,,falsafa
+1143,faol grammatika,8.089044875446845,2,1,2,True,,faol grammatika
+1144,farqlanish element,8.089044875446845,2,1,2,False,,farqlanish elementlari
+1145,farqlanmovchi,8.089044875446845,2,1,1,False,,farqlanmovchi
+1146,farqlanmovchi element,8.089044875446845,2,1,2,True,,farqlanmovchi elementlar
+1147,faxriy unvon,8.089044875446845,2,1,2,False,,faxriy unvonlar
+1148,fe'l so'z,8.089044875446845,2,1,2,False,,feʼl soʻz
+1149,fe'l so'z birikma,8.089044875446845,2,1,3,False,,feʼl soʻz birikmasi
+1150,fe'l zamonlari tizim,8.089044875446845,2,1,3,False,,feʼl zamonlari tizimi
+1151,fe'llar lug'aviy ma'no,8.089044875446845,2,1,3,False,,Feʼllar lugʻaviy maʼnoga
+1152,fe'llar lug'aviy ma'noga ega,8.089044875446845,2,1,4,False,,Feʼllar lugʻaviy maʼnoga ega
+1153,fe'lning zamon kategoriya,8.089044875446845,2,1,3,False,,feʼlning zamon kategoriyasi
+1154,ferdinand,8.089044875446845,2,1,1,False,,Ferdinand
+1155,ferdinand de sossyur,8.089044875446845,2,1,3,False,,Ferdinand de Sossyur
+1156,filologiya,8.089044875446845,2,1,1,False,,filologiya
+1157,finugorshunoslik,8.089044875446845,2,1,1,False,,finugorshunoslik
+1158,fonemasi uchun allofon,8.089044875446845,2,1,3,False,,fonemasi uchun allofonlar
+1159,fonetik tizim,8.089044875446845,2,1,2,True,,fonetik tizimini
+1160,fonetik xususiyat,8.089044875446845,2,1,2,False,,fonetik xususiyatlar
+1161,fonetika abdullayev,8.089044875446845,2,1,2,False,,fonetika Abdullayev
+1162,fonetika doirasi,8.089044875446845,2,1,2,False,,fonetika doirasiga
+1163,fonologik nazariyalar,8.089044875446845,2,1,2,False,,fonologik nazariyalaridan
+1164,frazeologik birlik,8.089044875446845,2,1,2,False,,frazeologik birliklar
+1165,frazeologiya tilshunoslik,8.089044875446845,2,1,2,False,,Frazeologiya tilshunoslikning
+1166,gacha,8.089044875446845,2,1,1,False,,gacha
+1167,gan,8.089044875446845,2,1,1,False,,gani
+1168,gap bosh,8.089044875446845,2,1,2,False,,gap bosh
+1169,gap bosh gap,8.089044875446845,2,1,3,False,,gap bosh gapdan
+1170,gap va uning kategoriya,8.089044875446845,2,1,4,False,,gap va uning kategoriyalari
+1171,gapirar,8.089044875446845,2,1,1,False,,gapirar
+1172,gapning qurilish,8.089044875446845,2,1,2,False,,gapning qurilish
+1173,gapning qurilish material,8.089044875446845,2,1,3,False,,gapning qurilish materiali
+1174,gij,8.089044875446845,2,1,1,False,,gij
+1175,grammatik xususiyatlariga ko'ra,8.089044875446845,2,1,3,False,,grammatik xususiyatlariga koʻra
+1176,grammatika faol,8.089044875446845,2,1,2,False,,Grammatika faol
+1177,grammatika maktab,8.089044875446845,2,1,2,False,,grammatika maktabi
+1178,grammatika til,8.089044875446845,2,1,2,False,,Grammatika til
+1179,gumboldt,8.089044875446845,2,1,1,False,,Gumboldt
+1180,hal qilish,8.089044875446845,2,1,2,False,,hal qilish
+1181,harakat nom,8.089044875446845,2,1,2,False,,harakat nomi
+1182,harakatning nutq payt,8.089044875446845,2,1,3,False,,harakatning nutq paytiga
+1183,harakatning nutq paytiga munosabat,8.089044875446845,2,1,4,False,,harakatning nutq paytiga munosabatini
+1184,harakatning subyekt va obyekt,8.089044875446845,2,1,4,False,,harakatning subyekt va obyektga
+1185,harfdan iborat bo'g'in,8.089044875446845,2,1,3,False,,harfdan iborat boʻgʻin
+1186,harfdan iborat bo'g'in yolg'iz,8.089044875446845,2,1,4,False,,harfdan iborat boʻgʻin yolgʻiz
+1187,hatto,8.089044875446845,2,1,1,False,,hatto
+1188,hindevropa,8.089044875446845,2,1,1,False,,hindevropa
+1189,hindevropa til,8.089044875446845,2,1,2,False,,hindevropa tillari
+1190,his,8.089044875446845,2,1,1,False,,his
+1191,hosil bo'lish usuliga ko'ra,8.089044875446845,2,1,4,False,,hosil boʻlish usuliga koʻra
+1192,huquqbuzarlik,8.089044875446845,2,1,1,False,,huquqbuzarlik
+1193,huquqbuzarlik to'g'ri,8.089044875446845,2,1,2,False,,huquqbuzarlik toʻgʻrisidagi
+1194,i unli,8.089044875446845,2,1,2,False,,i unlisi
+1195,ichki tizim,8.089044875446845,2,1,2,False,,ichki tizim
+1196,ifodalangan so'z,8.089044875446845,2,1,2,False,,ifodalangan soʻz
+1197,ifodalangan so'z birikma,8.089044875446845,2,1,3,False,,ifodalangan soʻz birikmasidir
+1198,ijro,8.089044875446845,2,1,1,False,,ijro
+1199,ikki undosh,8.089044875446845,2,1,2,False,,ikki undosh
+1200,ikkinchisiga qarama,8.089044875446845,2,1,2,False,,ikkinchisiga qarama
+1201,ikkinchisiga qarama qarshi,8.089044875446845,2,1,3,False,,ikkinchisiga qarama qarshi
+1202,ilmiy etimologik tahlil,8.089044875446845,2,1,3,False,,Ilmiy etimologik tahlil
+1203,imlo to'g'ri,8.089044875446845,2,1,2,False,,imlo toʻgʻrisidagi
+1204,imlo to'g'risidagi qoida,8.089044875446845,2,1,3,False,,imlo toʻgʻrisidagi qoida
+1205,ingliz tili amerikacha,8.089044875446845,2,1,3,False,,Ingliz tili amerikacha
+1206,ingliz tili amerikacha sleng,8.089044875446845,2,1,4,False,,Ingliz tili amerikacha slengida
+1207,ingliz tilining amerikacha,8.089044875446845,2,1,3,False,,ingliz tilining amerikacha
+1208,ingliz tilining amerikacha sleng,8.089044875446845,2,1,4,False,,ingliz tilining amerikacha slengi
+1209,ingliz tilshunos,8.089044875446845,2,1,2,False,,Ingliz tilshunosi
+1210,ishlatish,8.089044875446845,2,1,1,False,,ishlatish
+1211,ishtirok etdi,8.089044875446845,2,1,2,False,,ishtirok etdilar
+1212,iskandariya,8.089044875446845,2,1,1,False,,Iskandariyadagi
+1213,iste'molda,8.089044875446845,2,1,1,False,,isteʼmolda
+1214,istoriya,8.089044875446845,2,1,1,False,,istoriya
+1215,istorizmlar,8.089044875446845,2,1,1,False,,istorizmlar
+1216,izofa,8.089044875446845,2,1,1,True,,izofa
+1217,izohli lug'at,8.089044875446845,2,1,2,True,,izohli lugʻati
+1218,jiqqa,8.089044875446845,2,1,1,False,,jiqqa
+1219,jo'nalish kelishigi,8.089044875446845,2,1,2,True,,joʻnalish kelishigi
+1220,joizki,8.089044875446845,2,1,1,False,,joizki
+1221,juft so'z qism,8.089044875446845,2,1,3,False,,juft soʻz qismlari
+1222,k undosh,8.089044875446845,2,1,2,False,,k undoshi
+1223,kasb,8.089044875446845,2,1,1,False,,kasb
+1224,kategoriyaga xos,8.089044875446845,2,1,2,False,,kategoriyaga xos
+1225,kelgan ikki,8.089044875446845,2,1,2,False,,kelgan ikki
+1226,kelishgani,8.089044875446845,2,1,1,False,,kelishgani
+1227,kelishgani yo'q,8.089044875446845,2,1,2,False,,kelishgani yoʻq
+1228,kengashi,8.089044875446845,2,1,1,False,,kengashi
+1229,kesimlik,8.089044875446845,2,1,1,False,,kesimlik
+1230,kesimlik vazifa,8.089044875446845,2,1,2,False,,kesimlik vazifasi
+1231,ket,8.089044875446845,2,1,1,False,,ket
+1232,keta,8.089044875446845,2,1,1,False,,keta
+1233,ketayotsam,8.089044875446845,2,1,1,False,,ketayotsam
+1234,ketma,8.089044875446845,2,1,1,False,,ketma
+1235,keyingi payt,8.089044875446845,2,1,2,False,,keyingi paytlarda
+1236,kilogramm,8.089044875446845,2,1,1,False,,kilogramm
+1237,kilovatt,8.089044875446845,2,1,1,False,,kilovatt
+1238,ko'chada ketayotsam,8.089044875446845,2,1,2,False,,koʻchada ketayotsam
+1239,ko'k,8.089044875446845,2,1,1,False,,koʻk
+1240,ko'makchi mustaqil,8.089044875446845,2,1,2,False,,koʻmakchi mustaqil
+1241,ko'pchilik so'z,8.089044875446845,2,1,2,False,,koʻpchilik soʻzlarga
+1242,ko'pchilik so'zlarga egalik,8.089044875446845,2,1,3,False,,koʻpchilik soʻzlarga egalik
+1243,ko'pchilik so'zlarga egalik qo'shimcha,8.089044875446845,2,1,4,False,,koʻpchilik soʻzlarga egalik qoʻshimchasi
+1244,ko'ra sodda gap,8.089044875446845,2,1,3,False,,koʻra sodda gapga
+1245,ko'ra unli tovush,8.089044875446845,2,1,3,False,,koʻra unli tovushlar
+1246,ko'rinsa,8.089044875446845,2,1,1,False,,koʻrinsada
+1247,kofe,8.089044875446845,2,1,1,False,,kofe
+1248,kommunikativ,8.089044875446845,2,1,1,False,,kommunikativ
+1249,kommunikativ vazifa,8.089044875446845,2,1,2,False,,kommunikativ vazifasiga
+1250,kompozitsiya,8.089044875446845,2,1,1,True,,kompozitsiya
+1251,korxonalar,8.089044875446845,2,1,1,False,,korxonalariga
+1252,kuchli talaffuz,8.089044875446845,2,1,2,False,,kuchli talaffuz
+1253,kuni ko'cha,8.089044875446845,2,1,2,False,,kuni koʻchada
+1254,kuni ko'chada ketayotsam,8.089044875446845,2,1,3,False,,kuni koʻchada ketayotsam
+1255,kvaziomonimlar,8.089044875446845,2,1,1,False,,kvaziomonimlar
+1256,lablangan unli,8.089044875446845,2,1,2,True,,lablangan unlilar
+1257,lablanmagan unli,8.089044875446845,2,1,2,True,,lablanmagan unlilar
+1258,lablar ishtirok,8.089044875446845,2,1,2,False,,lablar ishtirok
+1259,labning holat,8.089044875446845,2,1,2,False,,labning holati
+1260,lang,8.089044875446845,2,1,1,False,,lang
+1261,leksikaga xos,8.089044875446845,2,1,2,False,,leksikaga xos
+1262,leksikasining asos,8.089044875446845,2,1,2,False,,Leksikasining asosini
+1263,leksikofafiya,8.089044875446845,2,1,1,False,,leksikofafiya
+1264,leksikografiya lug'at,8.089044875446845,2,1,2,False,,leksikografiya lugʻat
+1265,leksikologiya va leksikofafiya,8.089044875446845,2,1,3,False,,leksikologiya va leksikofafiya
+1266,lingvisticheskix,8.089044875446845,2,1,1,False,,lingvisticheskix
+1267,lug'aviy birlik,8.089044875446845,2,1,2,False,,Lugʻaviy birliklar
+1268,ma'lum grammatik ma'no,8.089044875446845,2,1,3,False,,Maʼlum grammatik maʼnoni
+1269,ma'lum maqsad,8.089044875446845,2,1,2,False,,maʼlum maqsadga
+1270,ma'lumotli,8.089044875446845,2,1,1,False,,maʼlumotli
+1271,ma'muriy huquqbuzarlik,8.089044875446845,2,1,2,False,,Maʼmuriy huquqbuzarlik
+1272,ma'muriy huquqbuzarlik to'g'ri,8.089044875446845,2,1,3,False,,Maʼmuriy huquqbuzarlik toʻgʻrisidagi
+1273,ma'no anglatuvchi,8.089044875446845,2,1,2,False,,maʼno anglatuvchi
+1274,ma'no va grammatik xususiyat,8.089044875446845,2,1,4,False,,Maʼno va grammatik xususiyatlariga
+1275,maqol va matallar,8.089044875446845,2,1,3,False,,maqol va matallar
+1276,maqsad ravish,8.089044875446845,2,1,2,False,,maqsad ravishlari
+1277,matallar,8.089044875446845,2,1,1,False,,matallar
+1278,matbaa,8.089044875446845,2,1,1,False,,matbaa
+1279,mavqe,8.089044875446845,2,1,1,False,,mavqe
+1280,maxsus sleng,8.089044875446845,2,1,2,False,,maxsus sleng
+1281,mayl kategoriya,8.089044875446845,2,1,2,False,,mayl kategoriyasi
+1282,mazali,8.089044875446845,2,1,1,False,,mazali
+1283,mazmundan shakl,8.089044875446845,2,1,2,False,,mazmundan shaklga
+1284,mazmundan shaklga tamoyil,8.089044875446845,2,1,3,False,,mazmundan shaklga tamoyili
+1285,mazmuniy grammatika,8.089044875446845,2,1,2,True,,Mazmuniy Grammatika
+1286,me'yordan,8.089044875446845,2,1,1,False,,meʼyordan
+1287,me'yoriy grammatika,8.089044875446845,2,1,2,True,,meʼyoriy grammatika
+1288,metall,8.089044875446845,2,1,1,False,,metall
+1289,metod va tamoyil,8.089044875446845,2,1,3,False,,metod va tamoyillarini
+1290,millatlar,8.089044875446845,2,1,1,False,,Millatlar
+1291,millatlar tashkiloti,8.089044875446845,2,1,2,False,,Millatlar Tashkiloti
+1292,modal so'z,8.089044875446845,2,1,2,False,,modal soʻzlar
+1293,mor,8.089044875446845,2,1,1,False,,mor
+1294,morfema va so'zlarni farqlash,8.089044875446845,2,1,4,False,,morfema va soʻzlarni farqlash
+1295,morfologik murakkab,8.089044875446845,2,1,2,False,,morfologik murakkab
+1296,morfologik murakkab so'z,8.089044875446845,2,1,3,False,,morfologik murakkab soʻzlarni
+1297,morfologik murakkab so'zlarni tushunish,8.089044875446845,2,1,4,False,,morfologik murakkab soʻzlarni tushunishni
+1298,morfologik tahlil,8.089044875446845,2,1,2,True,,morfologik tahlilining
+1299,morfologiya so'z turkum,8.089044875446845,2,1,3,False,,Morfologiya soʻz turkumlari
+1300,muhammad,8.089044875446845,2,1,1,False,,Muhammad
+1301,muloqot uslub,8.089044875446845,2,1,2,False,,muloqot uslubi
+1302,murakkab so'zlarni tushunish,8.089044875446845,2,1,3,False,,murakkab soʻzlarni tushunishni
+1303,mutaxassis,8.089044875446845,2,1,1,False,,mutaxassis
+1304,muvaffaqiyatli ishtirok,8.089044875446845,2,1,2,False,,muvaffaqiyatli ishtirok
+1305,muvaffaqiyatli ishtirok etdi,8.089044875446845,2,1,3,False,,muvaffaqiyatli ishtirok etdilar
+1306,n tovush,8.089044875446845,2,1,2,False,,n tovushi
+1307,name,8.089044875446845,2,1,1,False,,name
+1308,naq,8.089044875446845,2,1,1,False,,naq
+1309,nashr etildi,8.089044875446845,2,1,2,False,,nashr etildi
+1310,nazariy leksikografiya,8.089044875446845,2,1,2,True,,nazariy leksikografiyaning
+1311,new,8.089044875446845,2,1,1,False,,New
+1312,ngiz,8.089044875446845,2,1,1,False,,ngiz
+1313,nishon,8.089044875446845,2,1,1,False,,nishonlar
+1314,noadabiy yoki nostandart,8.089044875446845,2,1,3,False,,noadabiy yoki nostandart
+1315,noadabiy yoki nostandart leksika,8.089044875446845,2,1,4,False,,noadabiy yoki nostandart leksikaga
+1316,nofaol,8.089044875446845,2,1,1,False,,nofaol
+1317,nutq payt,8.089044875446845,2,1,2,False,,nutq paytiga
+1318,nutq paytiga munosabat,8.089044875446845,2,1,3,False,,nutq paytiga munosabatini
+1319,nutq tovushlarining hosil bo'lish,8.089044875446845,2,1,4,False,,nutq tovushlarining hosil boʻlish
+1320,nyu,8.089044875446845,2,1,1,False,,Nyu
+1321,nyu york,8.089044875446845,2,1,2,False,,Nyu York
+1322,nyu york shahri,8.089044875446845,2,1,3,False,,Nyu York shahriga
+1323,o'rganish jarayon,8.089044875446845,2,1,2,False,,oʻrganish jarayonida
+1324,o'rganuvchi fan,8.089044875446845,2,1,2,False,,oʻrganuvchi fandir
+1325,o'rgatish,8.089044875446845,2,1,1,False,,oʻrgatish
+1326,o'rinbosar,8.089044875446845,2,1,1,False,,oʻrinbosar
+1327,o'yinlarida muvaffaqiyatli ishtirok,8.089044875446845,2,1,3,False,,oʻyinlarida muvaffaqiyatli ishtirok
+1328,o'yinlarida muvaffaqiyatli ishtirok etdi,8.089044875446845,2,1,4,False,,oʻyinlarida muvaffaqiyatli ishtirok etdilar
+1329,o'zbek tili leksikasining asos,8.089044875446845,2,1,4,False,,oʻzbek tili Leksikasining asosini
+1330,o'zbek tilida fe'l,8.089044875446845,2,1,3,False,,Oʻzbek tilida Feʼlning
+1331,o'zbek tilshunosligi tarixi,8.089044875446845,2,1,3,False,,Oʻzbek tilshunosligi tarixi
+1332,o'zbekiston respublikasi oliy,8.089044875446845,2,1,3,False,,Oʻzbekiston Respublikasi Oliy
+1333,o'zlashma so'zlarda unli,8.089044875446845,2,1,3,False,,oʻzlashma soʻzlarda unlidan
+1334,o'zlik nisbat,8.089044875446845,2,1,2,False,,oʻzlik nisbati
+1335,obro,8.089044875446845,2,1,1,False,,obro
+1336,obyektsiz,8.089044875446845,2,1,1,False,,obyektsiz
+1337,ocherk,8.089044875446845,2,1,1,False,,ocherk
+1338,og'zaki uslub,8.089044875446845,2,1,2,False,,ogʻzaki uslub
+1339,oilalari,8.089044875446845,2,1,1,False,,oilalari
+1340,oladigan so'z,8.089044875446845,2,1,2,False,,oladigan soʻzlardir
+1341,oldingi satrda,8.089044875446845,2,1,2,False,,oldingi satrda
+1342,oldingi so'z,8.089044875446845,2,1,2,False,,oldingi soʻzdan
+1343,olimi v,8.089044875446845,2,1,2,False,,olimi V
+1344,olimpiada o'yinlarida muvaffaqiyatli ishtirok,8.089044875446845,2,1,4,False,,olimpiada oʻyinlarida muvaffaqiyatli ishtirok
+1345,oliy ma'lumotli,8.089044875446845,2,1,2,False,,oliy maʼlumotli
+1346,olmaymiz,8.089044875446845,2,1,1,False,,olmaymiz
+1347,ombor,8.089044875446845,2,1,1,False,,ombor
+1348,ongda,8.089044875446845,2,1,1,False,,ongda
+1349,ongda aks,8.089044875446845,2,1,2,False,,ongda aks
+1350,onoma,8.089044875446845,2,1,1,False,,onoma
+1351,opajon,8.089044875446845,2,1,1,False,,opajon
+1352,oralig'idagi,8.089044875446845,2,1,1,False,,oraligʻidagi
+1353,orzusi,8.089044875446845,2,1,1,False,,orzusi
+1354,oshpaz,8.089044875446845,2,1,1,False,,oshpaz
+1355,osma,8.089044875446845,2,1,1,False,,osma
+1356,ot so'z birikma,8.089044875446845,2,1,3,False,,ot soʻz birikmasi
+1357,ot yasash,8.089044875446845,2,1,2,False,,ot yasashdagi
+1358,ota ism,8.089044875446845,2,1,2,False,,ota ismi
+1359,oti bosh,8.089044875446845,2,1,2,False,,oti bosh
+1360,oti bosh harf,8.089044875446845,2,1,3,False,,oti bosh harf
+1361,otlashuv,8.089044875446845,2,1,1,True,,otlashuvi
+1362,ovoz va shovqinning ishtirok,8.089044875446845,2,1,4,False,,ovoz va shovqinning ishtirokiga
+1363,oxiridagi bir harf,8.089044875446845,2,1,3,False,,oxiridagi bir harf
+1364,paragrafdan,8.089044875446845,2,1,1,False,,paragrafdan
+1365,partiyasi,8.089044875446845,2,1,1,False,,partiyasi
+1366,partridj,8.089044875446845,2,1,1,False,,Partridj
+1367,parvo,8.089044875446845,2,1,1,False,,parvo
+1368,past daraja,8.089044875446845,2,1,2,False,,past darajadagi
+1369,paytiga munosabat,8.089044875446845,2,1,2,False,,paytiga munosabatini
+1370,perseptiv,8.089044875446845,2,1,1,False,,perseptiv
+1371,pir,8.089044875446845,2,1,1,False,,pir
+1372,pozitsiyada fonema,8.089044875446845,2,1,2,False,,pozitsiyada Fonema
+1373,predikativ birliklar o'zaro,8.089044875446845,2,1,3,False,,predikativ birliklar oʻzaro
+1374,predmet va uning belgi,8.089044875446845,2,1,4,False,,predmet va uning belgilarini
+1375,prefiks,8.089044875446845,2,1,1,False,,prefikslar
+1376,professor,8.089044875446845,2,1,1,False,,professor
+1377,psixolingvistika,8.089044875446845,2,1,1,False,,psixolingvistika
+1378,q qo'shimcha,8.089044875446845,2,1,2,False,,q qoʻshimchasi
+1379,qarama qarshi,8.089044875446845,2,1,2,False,,qarama qarshi
+1380,qaramasdan,8.089044875446845,2,1,1,False,,qaramasdan
+1381,qarang so'z,8.089044875446845,2,1,2,False,,qarang Soʻz
+1382,qarashlar,8.089044875446845,2,1,1,False,,qarashlari
+1383,qat,8.089044875446845,2,1,1,False,,qat
+1384,qatra,8.089044875446845,2,1,1,False,,qatra
+1385,qavsli,8.089044875446845,2,1,1,False,,qavsli
+1386,qay,8.089044875446845,2,1,1,False,,qay
+1387,qayir,8.089044875446845,2,1,1,False,,qayir
+1388,qilish yo'l,8.089044875446845,2,1,2,False,,qilish yoʻli
+1389,qiluvchi yordamchi,8.089044875446845,2,1,2,False,,qiluvchi yordamchi
+1390,qiluvchi yordamchi fe'l,8.089044875446845,2,1,3,False,,qiluvchi yordamchi feʼllar
+1391,qismlari chiziqcha,8.089044875446845,2,1,2,False,,qismlari chiziqcha
+1392,qisqa unli,8.089044875446845,2,1,2,True,,qisqa unli
+1393,qiyosiy fonetika,8.089044875446845,2,1,2,True,,qiyosiy fonetika
+1394,qiyosiytarixiy metod,8.089044875446845,2,1,2,False,,qiyosiytarixiy metod
+1395,qiyosiytarixiy tilshunoslik,8.089044875446845,2,1,2,False,,qiyosiytarixiy tilshunoslikka
+1396,qo'shilganda bu qo'shimcha,8.089044875446845,2,1,3,False,,qoʻshilganda bu qoʻshimchalarning
+1397,qo'shilganda bu qo'shimchalarning bosh,8.089044875446845,2,1,4,False,,qoʻshilganda bu qoʻshimchalarning bosh
+1398,qo'shilganda bu unli,8.089044875446845,2,1,3,False,,qoʻshilganda bu unli
+1399,qo'shilganda k,8.089044875446845,2,1,2,False,,qoʻshilganda k
+1400,qo'shilib yangi,8.089044875446845,2,1,2,False,,qoʻshilib yangi
+1401,qo'shilib yangi so'z,8.089044875446845,2,1,3,False,,qoʻshilib yangi soʻz
+1402,qo'shilib yangi so'z yasovchi,8.089044875446845,2,1,4,False,,qoʻshilib yangi soʻz yasovchi
+1403,qo'shilishi bilan so'z,8.089044875446845,2,1,3,False,,qoʻshilishi bilan soʻz
+1404,qo'shimchalari orqali bog'lanish,8.089044875446845,2,1,3,False,,qoʻshimchalari orqali bogʻlanish
+1405,qo'shimchalarning bosh tovushi k,8.089044875446845,2,1,4,False,,qoʻshimchalarning bosh tovushi k
+1406,qo'shimchasi qo'shilganda bu unli,8.089044875446845,2,1,4,False,,qoʻshimchasi qoʻshilganda bu unli
+1407,qo'shimchasi qo'shilganda k,8.089044875446845,2,1,3,False,,qoʻshimchasi qoʻshilganda k
+1408,qo'y,8.089044875446845,2,1,1,False,,qoʻy
+1409,qoldi,8.089044875446845,2,1,1,False,,qoldi
+1410,qolgan barcha hol,8.089044875446845,2,1,3,False,,Qolgan barcha hollarda
+1411,qorin,8.089044875446845,2,1,1,False,,qorin
+1412,qurilishini tavsiflash,8.089044875446845,2,1,2,False,,qurilishini tavsiflash
+1413,quyosh,8.089044875446845,2,1,1,False,,quyosh
+1414,raisi,8.089044875446845,2,1,1,False,,Raisi
+1415,ravnaq,8.089044875446845,2,1,1,False,,ravnaq
+1416,respublikasi oliy,8.089044875446845,2,1,2,False,,Respublikasi Oliy
+1417,rivojlandi,8.089044875446845,2,1,1,False,,rivojlandi
+1418,rus tilidan aynan,8.089044875446845,2,1,3,False,,Rus tilidan aynan
+1419,rus tilshunosi v,8.089044875446845,2,1,3,False,,Rus tilshunosi V
+1420,satrda,8.089044875446845,2,1,1,False,,satrda
+1421,segment birlik,8.089044875446845,2,1,2,True,,Segment birliklar
+1422,serqirra,8.089044875446845,2,1,1,False,,serqirra
+1423,shahri,8.089044875446845,2,1,1,False,,shahriga
+1424,shakl o'zgarish,8.089044875446845,2,1,2,False,,shakl oʻzgarishi
+1425,shaklga tamoyil,8.089044875446845,2,1,2,False,,shaklga tamoyili
+1426,shaklko'rinish,8.089044875446845,2,1,1,False,,shaklkoʻrinish
+1427,shakllandi,8.089044875446845,2,1,1,False,,shakllandi
+1428,shakllantirishning,8.089044875446845,2,1,1,False,,shakllantirishning
+1429,shakllar tizim,8.089044875446845,2,1,2,False,,shakllar tizimi
+1430,sharobxo'r,8.089044875446845,2,1,1,False,,sharobxoʻr
+1431,sharoit,8.089044875446845,2,1,1,False,,sharoit
+1432,shaxs egalik,8.089044875446845,2,1,2,False,,shaxs egalik
+1433,shaxs egalik qo'shimcha,8.089044875446845,2,1,3,False,,shaxs egalik qoʻshimchalari
+1434,shaxs ko'rsatkichi,8.089044875446845,2,1,2,False,,shaxs koʻrsatkichi
+1435,shcherba,8.089044875446845,2,1,1,False,,Shcherba
+1436,she'riyat,8.089044875446845,2,1,1,False,,sheʼriyat
+1437,shleyxer,8.089044875446845,2,1,1,False,,Shleyxer
+1438,shoshish,8.089044875446845,2,1,1,False,,Shoshish
+1439,shovqinga ovoz,8.089044875446845,2,1,2,False,,shovqinga ovoz
+1440,shovqinning ishtirok,8.089044875446845,2,1,2,False,,shovqinning ishtirokiga
+1441,shovqinning ishtirokiga ko'ra,8.089044875446845,2,1,3,False,,shovqinning ishtirokiga koʻra
+1442,show,8.089044875446845,2,1,1,False,,show
+1443,si doirasi,8.089044875446845,2,1,2,False,,Si doirasiga
+1444,sintaktik usul,8.089044875446845,2,1,2,False,,sintaktik usullar
+1445,sinxroniya,8.089044875446845,2,1,1,False,,Sinxroniya
+1446,slang,8.089044875446845,2,1,1,False,,slang
+1447,slavyanshunoslik,8.089044875446845,2,1,1,False,,slavyanshunoslik
+1448,sleng so'zlarini yasash,8.089044875446845,2,1,3,False,,sleng soʻzlarini yasashda
+1449,so'z birikmasi hokim,8.089044875446845,2,1,3,False,,soʻz birikmasi hokim
+1450,so'z oxiridagi bir harf,8.089044875446845,2,1,4,False,,so'z oxiridagi bir harf
+1451,so'z tarjima,8.089044875446845,2,1,2,False,,soʻz tarjima
+1452,so'z tarjima qilish,8.089044875446845,2,1,3,False,,soʻz tarjima qilish
+1453,so'z tarjima qilish yo'l,8.089044875446845,2,1,4,False,,soʻz tarjima qilish yoʻli
+1454,so'z turkumiga xos,8.089044875446845,2,1,3,False,,soʻz turkumiga xos
+1455,so'z yasalishi tizim,8.089044875446845,2,1,3,False,,soʻz yasalishi tizimi
+1456,so'zgina,8.089044875446845,2,1,1,False,,soʻzgina
+1457,so'zgina bosh,8.089044875446845,2,1,2,False,,soʻzgina bosh
+1458,so'zgina bosh harf,8.089044875446845,2,1,3,False,,soʻzgina bosh harf
+1459,so'zi bil,8.089044875446845,2,1,2,False,,soʻzi bilim
+1460,so'zla,8.089044875446845,2,1,1,False,,soʻzla
+1461,so'zlar va ibora,8.089044875446845,2,1,3,False,,soʻzlar va iboralar
+1462,so'zlarda unli,8.089044875446845,2,1,2,False,,soʻzlarda unlidan
+1463,so'zlari qator,8.089044875446845,2,1,2,False,,soʻzlari qatoriga
+1464,so'zlarini yasash,8.089044875446845,2,1,2,False,,soʻzlarini yasashda
+1465,so'zlarni farqlash,8.089044875446845,2,1,2,False,,soʻzlarni farqlash
+1466,so'zlarni tushunish,8.089044875446845,2,1,2,False,,soʻzlarni tushunishni
+1467,so'zlashgichlar,8.089044875446845,2,1,1,False,,soʻzlashgichlar
+1468,so'zlashuv nutq,8.089044875446845,2,1,2,False,,soʻzlashuv nutqiga
+1469,so'zma,8.089044875446845,2,1,1,False,,soʻzma
+1470,so'zning shakl,8.089044875446845,2,1,2,False,,soʻzning shaklini
+1471,soat,8.089044875446845,2,1,1,False,,soat
+1472,sonorlar,8.089044875446845,2,1,1,False,,sonorlar
+1473,sotsiolingvistika,8.089044875446845,2,1,1,False,,sotsiolingvistika
+1474,standart va nostandart,8.089044875446845,2,1,3,False,,standart va nostandart
+1475,subyekt va obyekt,8.089044875446845,2,1,3,False,,subyekt va obyektga
+1476,subyekt va obyektga munosabat,8.089044875446845,2,1,4,False,,subyekt va obyektga munosabatini
+1477,suluv,8.089044875446845,2,1,1,False,,suluv
+1478,ta'kid,8.089044875446845,2,1,1,False,,taʼkid
+1479,taalluqli so'z,8.089044875446845,2,1,2,False,,taalluqli soʻzlar
+1480,talaffuz qilish,8.089044875446845,2,1,2,False,,talaffuz qilish
+1481,tarixiy fonetika,8.089044875446845,2,1,2,True,,Tarixiy fonetika
+1482,tarixiy tilshunoslik,8.089044875446845,2,1,2,False,,tarixiy tilshunoslik
+1483,tarjima lug'at,8.089044875446845,2,1,2,False,,tarjima lugʻatlari
+1484,tarjima qilish yo'l,8.089044875446845,2,1,3,False,,tarjima qilish yoʻli
+1485,tarkibidagi birinchi,8.089044875446845,2,1,2,False,,tarkibidagi birinchi
+1486,tarkibidagi birinchi so'z,8.089044875446845,2,1,3,False,,tarkibidagi birinchi soʻz
+1487,tarkibidagi birinchi so'z bosh,8.089044875446845,2,1,4,False,,tarkibidagi birinchi soʻz bosh
+1488,tarkibidagi predikativ birliklar o'zaro,8.089044875446845,2,1,4,False,,Tarkibidagi predikativ birliklar oʻzaro
+1489,tarkibli nom,8.089044875446845,2,1,2,False,,tarkibli nomlarda
+1490,tarqalgan usul,8.089044875446845,2,1,2,False,,tarqalgan usullardan
+1491,tartib son,8.089044875446845,2,1,2,True,,Tartib son
+1492,tashkiloti,8.089044875446845,2,1,1,False,,Tashkiloti
+1493,tasviriy fonetika,8.089044875446845,2,1,2,True,,Tasviriy fonetika
+1494,tazod,8.089044875446845,2,1,1,False,,tazod
+1495,tekin,8.089044875446845,2,1,1,False,,tekindan
+1496,teng bog'lovchi,8.089044875446845,2,1,2,True,,teng bogʻlovchi
+1497,teng qism,8.089044875446845,2,1,2,False,,teng qism
+1498,terminologik lug'at,8.089044875446845,2,1,2,True,,terminologik lugʻatlar
+1499,til grammatik qurilish,8.089044875446845,2,1,3,False,,til grammatik qurilishini
+1500,til haqidagi,8.089044875446845,2,1,2,False,,til haqidagi
+1501,til uslub,8.089044875446845,2,1,2,False,,til uslubi
+1502,tili amerikacha,8.089044875446845,2,1,2,False,,tili amerikacha
+1503,tili amerikacha sleng,8.089044875446845,2,1,3,False,,tili amerikacha slengida
+1504,tili leksikasining asos,8.089044875446845,2,1,3,False,,tili Leksikasining asosini
+1505,tilida fe'l,8.089044875446845,2,1,2,False,,tilida Feʼlning
+1506,tilidan aynan,8.089044875446845,2,1,2,False,,tilidan aynan
+1507,tilining amerikacha,8.089044875446845,2,1,2,False,,tilining amerikacha
+1508,tilining amerikacha sleng,8.089044875446845,2,1,3,False,,tilining amerikacha slengi
+1509,tilli leksikografiya,8.089044875446845,2,1,2,False,,tilli leksikografiya
+1510,tilning fonologik tizim,8.089044875446845,2,1,3,False,,tilning fonologik tizimini
+1511,tilning harakat,8.089044875446845,2,1,2,False,,tilning harakati
+1512,tilning tik,8.089044875446845,2,1,2,False,,tilning tik
+1513,tilning yotiq,8.089044875446845,2,1,2,False,,tilning yotiq
+1514,tilshunosi v,8.089044875446845,2,1,2,False,,tilshunosi V
+1515,tilshunosligi tarixi,8.089044875446845,2,1,2,False,,tilshunosligi tarixi
+1516,tilshunosligida frazeologiya,8.089044875446845,2,1,2,False,,tilshunosligida Frazeologiya
+1517,tilshunoslikning rivoj,8.089044875446845,2,1,2,False,,tilshunoslikning rivoji
+1518,tim,8.089044875446845,2,1,1,False,,tim
+1519,tinchlik,8.089044875446845,2,1,1,False,,Tinchlik
+1520,tipologiyasini,8.089044875446845,2,1,1,False,,tipologiyasini
+1521,tizimining mohiyat,8.089044875446845,2,1,2,False,,tizimining mohiyati
+1522,to'g'risidagi qoida,8.089044875446845,2,1,2,False,,toʻgʻrisidagi qoida
+1523,to'xtovsiz,8.089044875446845,2,1,1,False,,toʻxtovsiz
+1524,toifadagi,8.089044875446845,2,1,1,False,,toifadagi
+1525,toifasiga,8.089044875446845,2,1,1,False,,toifasiga
+1526,tovush tizim,8.089044875446845,2,1,2,False,,tovush tizimini
+1527,tovushi ikki,8.089044875446845,2,1,2,False,,tovushi ikki
+1528,tovushi k,8.089044875446845,2,1,2,False,,tovushi k
+1529,tovushlarining hosil bo'lish,8.089044875446845,2,1,3,False,,tovushlarining hosil boʻlish
+1530,tunovgi,8.089044875446845,2,1,1,False,,tunovgi
+1531,tunovin,8.089044875446845,2,1,1,False,,tunovin
+1532,turdosh otlar,8.089044875446845,2,1,2,False,,turdosh otlarga
+1533,turkiyshunoslik,8.089044875446845,2,1,1,False,,turkiyshunoslik
+1534,turkumga xos,8.089044875446845,2,1,2,False,,turkumga xos
+1535,turkumiga xos,8.089044875446845,2,1,2,False,,turkumiga xos
+1536,tutuq,8.089044875446845,2,1,1,False,,tutuq
+1537,tutuq belgi,8.089044875446845,2,1,2,False,,tutuq belgisi
+1538,umri,8.089044875446845,2,1,1,False,,Umri
+1539,umri bir bosh,8.089044875446845,2,1,3,False,,Umri bir bosh
+1540,umri bir bosh uzum,8.089044875446845,2,1,4,False,,Umri bir bosh uzum
+1541,umumiy va xususiy ma'no,8.089044875446845,2,1,4,False,,umumiy va xususiy maʼnolar
+1542,umumiylik,8.089044875446845,2,1,1,False,,umumiylik
+1543,undosh kelsa,8.089044875446845,2,1,2,False,,undosh kelsa
+1544,undosh tovushlar son,8.089044875446845,2,1,3,False,,Undosh tovushlar soni
+1545,undoshi g,8.089044875446845,2,1,2,False,,undoshi g
+1546,undoshlar tizim,8.089044875446845,2,1,2,False,,undoshlar tizimiga
+1547,unlilar tizim,8.089044875446845,2,1,2,False,,unlilar tizimiga
+1548,uslubga xos,8.089044875446845,2,1,2,False,,uslubga xos
+1549,usuli bilan ot,8.089044875446845,2,1,3,False,,usuli bilan ot
+1550,usuliga ko'ra,8.089044875446845,2,1,2,False,,usuliga koʻra
+1551,uzum,8.089044875446845,2,1,1,False,,uzum
+1552,uzun,8.089044875446845,2,1,1,False,,uzun
+1553,vafo,8.089044875446845,2,1,1,False,,Vafo
+1554,vakillari,8.089044875446845,2,1,1,False,,vakillari
+1555,vazifasi birlamchi,8.089044875446845,2,1,2,False,,vazifasi birlamchi
+1556,webster,8.089044875446845,2,1,1,False,,Webster
+1557,xalq etimologiya,8.089044875446845,2,1,2,False,,xalq Etimologiyasi
+1558,xizmat qiluvchi,8.089044875446845,2,1,2,False,,xizmat qiluvchi
+1559,xizmat qiluvchi yordamchi,8.089044875446845,2,1,3,False,,xizmat qiluvchi yordamchi
+1560,xizmat qiluvchi yordamchi fe'l,8.089044875446845,2,1,4,False,,xizmat qiluvchi yordamchi feʼllar
+1561,xorijiy tillarni o'rganish,8.089044875446845,2,1,3,False,,xorijiy tillarni oʻrganish
+1562,xos belgi,8.089044875446845,2,1,2,False,,xos belgi
+1563,xos umumlashgan ma'no,8.089044875446845,2,1,3,False,,xos umumlashgan maʼno
+1564,xususiy fonetika,8.089044875446845,2,1,2,True,,xususiy fonetika
+1565,xususiy fonologiya,8.089044875446845,2,1,2,True,,xususiy fonologiya
+1566,xususiyatlariga ega,8.089044875446845,2,1,2,False,,xususiyatlariga egadir
+1567,y tovush,8.089044875446845,2,1,2,False,,y tovushi
+1568,yangi leksika,8.089044875446845,2,1,2,False,,yangi Leksika
+1569,yangi qatlam,8.089044875446845,2,1,2,False,,yangi qatlam
+1570,yangilik bo'yog'iga,8.089044875446845,2,1,2,False,,yangilik boʻyogʻiga
+1571,yangilik bo'yog'iga ega,8.089044875446845,2,1,3,False,,yangilik boʻyogʻiga ega
+1572,yangiyo'l,8.089044875446845,2,1,1,False,,Yangiyoʻl
+1573,yaqin yursang,8.089044875446845,2,1,2,False,,yaqin yursang
+1574,yasalish qolip,8.089044875446845,2,1,2,False,,yasalish qoliplari
+1575,yasalishi asosi va so'z,8.089044875446845,2,1,4,False,,yasalishi asosi va soʻz
+1576,yasama otlar,8.089044875446845,2,1,2,False,,yasama otlar
+1577,yasash uchun xizmat qiluvchi,8.089044875446845,2,1,4,False,,yasash uchun xizmat qiluvchi
+1578,yazika,8.089044875446845,2,1,1,False,,yazika
+1579,yerdamida,8.089044875446845,2,1,1,False,,yerdamida
+1580,yi shakl,8.089044875446845,2,1,2,False,,yi shaklida
+1581,yig'indisi,8.089044875446845,2,1,1,False,,yigʻindisi
+1582,yomg'ir,8.089044875446845,2,1,1,False,,yomgʻir
+1583,yonlama,8.089044875446845,2,1,1,False,,yonlama
+1584,yonma,8.089044875446845,2,1,1,False,,Yonma
+1585,yordamida so'z,8.089044875446845,2,1,2,False,,yordamida Soʻz
+1586,yordamida so'z yasalish,8.089044875446845,2,1,3,False,,yordamida Soʻz yasalishi
+1587,yordamida yasaladi va harakat,8.089044875446845,2,1,4,False,,yordamida yasaladi va harakatning
+1588,yoritilishi,8.089044875446845,2,1,1,False,,yoritilishi
+1589,york shahri,8.089044875446845,2,1,2,False,,York shahriga
+1590,yotiq,8.089044875446845,2,1,1,False,,yotiq
+1591,yulduz va sayyora,8.089044875446845,2,1,3,False,,Yulduz va sayyoralar
+1592,yumshoq,8.089044875446845,2,1,1,False,,yumshoq
+1593,yunon tilshunosligi,8.089044875446845,2,1,2,False,,Yunon tilshunosligining
+1594,yuqar,8.089044875446845,2,1,1,False,,yuqar
+1595,yursang,8.089044875446845,2,1,1,False,,yursang
+1596,zamonaviy qatlam,8.089044875446845,2,1,2,False,,zamonaviy qatlam
+1597,zamonlari tizim,8.089044875446845,2,1,2,False,,zamonlari tizimi
+1598,zebo,8.089044875446845,2,1,1,False,,zebo
+1599,zid ma'noli so'z,8.089044875446845,2,1,3,False,,zid maʼnoli soʻzlar
+1600,zidlovchi,8.089044875446845,2,1,1,False,,zidlovchi
+1601,zidlovchi bog'lovchi,8.089044875446845,2,1,2,False,,zidlovchi bogʻlovchilarga
+1602,a'lo,7.278114659230517,2,2,1,False,,aʼlo
+1603,abushqa,7.278114659230517,2,2,1,False,,Abushqa
+1604,achchiq,7.278114659230517,2,2,1,False,,achchiq
+1605,achchiqtosh,7.278114659230517,2,2,1,False,,achchiqtosh
+1606,affikslar yordam,7.278114659230517,2,2,2,False,,affikslar yordamida
+1607,afsona,7.278114659230517,2,2,1,False,,afsona
+1608,ahmad,7.278114659230517,2,2,1,False,,Ahmad
+1609,akademiyasi,7.278114659230517,2,2,1,False,,akademiyasi
+1610,aksariyat,7.278114659230517,2,2,1,False,,aksariyat
+1611,alohida qayd,7.278114659230517,2,2,2,False,,alohida qayd
+1612,ana shu ma'no,7.278114659230517,2,2,3,False,,Ana shu maʼnolar
+1613,aniqlov,7.278114659230517,2,2,1,False,,aniqlov
+1614,antonimiya,7.278114659230517,2,2,1,True,,antonimiya
+1615,apolloniy diskol,7.278114659230517,2,2,2,False,,Apolloniy Diskol
+1616,aqlli,7.278114659230517,2,2,1,False,,aqlli
+1617,arabcha,7.278114659230517,2,2,1,False,,arabcha
+1618,asl ma'no,7.278114659230517,2,2,2,False,,asl maʼnosidan
+1619,asqarova,7.278114659230517,2,2,1,False,,Asqarova
+1620,atash,7.278114659230517,2,2,1,False,,atash
+1621,ataydilar,7.278114659230517,2,2,1,False,,ataydilar
+1622,avvalo,7.278114659230517,2,2,1,False,,avvalo
+1623,axborot,7.278114659230517,2,2,1,False,,axborot
+1624,aytish,7.278114659230517,2,2,1,False,,aytishimiz
+1625,bad,7.278114659230517,2,2,1,False,,badi
+1626,badiiy adabiyot,7.278114659230517,2,2,2,False,,badiiy adabiyotda
+1627,badoye,7.278114659230517,2,2,1,False,,Badoye
+1628,bahor,7.278114659230517,2,2,1,False,,bahor
+1629,bahor keldi,7.278114659230517,2,2,2,False,,bahor keldi
+1630,balandroq,7.278114659230517,2,2,1,False,,balandroq
+1631,bar,7.278114659230517,2,2,1,False,,bari
+1632,barg,7.278114659230517,2,2,1,False,,bargga
+1633,barobar,7.278114659230517,2,2,1,False,,barobar
+1634,bashara,7.278114659230517,2,2,1,False,,bashara
+1635,batamom,7.278114659230517,2,2,1,False,,batamom
+1636,bildiruvchi so'z,7.278114659230517,2,2,2,False,,bildiruvchi soʻzlar
+1637,bildiruvchi so'zlar turkum,7.278114659230517,2,2,3,False,,bildiruvchi soʻzlar turkumi
+1638,bilim,7.278114659230517,2,2,1,False,,bilimlarni
+1639,birikuvidan,7.278114659230517,2,2,1,False,,birikuvidan
+1640,birinchi navbatda,7.278114659230517,2,2,2,False,,birinchi navbatda
+1641,bitishuv,7.278114659230517,2,2,1,True,,bitishuv
+1642,bo'g'iz bo'shlig'ida,7.278114659230517,2,2,2,False,,boʻgʻiz boʻshligʻida
+1643,bo'lagi vazifasida kela,7.278114659230517,2,2,3,False,,boʻlagi vazifasida kela
+1644,bo'linish,7.278114659230517,2,2,1,False,,boʻlinish
+1645,bo'lish o'rniga ko'ra,7.278114659230517,2,2,3,False,,boʻlish oʻrniga koʻra
+1646,bo'lishsiz shakl,7.278114659230517,2,2,2,True,,boʻlishsiz shaklidir
+1647,bo'lmasa,7.278114659230517,2,2,1,False,,boʻlmasa
+1648,bo'shlig'ida,7.278114659230517,2,2,1,False,,boʻshligʻida
+1649,bo'yoq,7.278114659230517,2,2,1,False,,boʻyoq
+1650,bodomzor,7.278114659230517,2,2,1,False,,Bodomzor
+1651,bog,7.278114659230517,2,2,1,False,,bog
+1652,bog'lovchi vazifa,7.278114659230517,2,2,2,False,,bogʻlovchi vazifasida
+1653,bois,7.278114659230517,2,2,1,False,,bois
+1654,bora,7.278114659230517,2,2,1,False,,bora
+1655,bosh bo'lak,7.278114659230517,2,2,2,True,,bosh boʻlaklaridan
+1656,boshlandi,7.278114659230517,2,2,1,False,,boshlandi
+1657,boshqalarning asar,7.278114659230517,2,2,2,False,,boshqalarning asarlari
+1658,boshqaruv,7.278114659230517,2,2,1,True,,boshqaruv
+1659,boshqaruv yoki bitishuv,7.278114659230517,2,2,3,False,,boshqaruv yoki bitishuv
+1660,boyishi,7.278114659230517,2,2,1,False,,boyishida
+1661,boyligi,7.278114659230517,2,2,1,False,,boyligi
+1662,cha,7.278114659230517,2,2,1,False,,cha
+1663,chegaralab,7.278114659230517,2,2,1,False,,chegaralab
+1664,chig'atoycha,7.278114659230517,2,2,1,False,,chigʻatoycha
+1665,chin,7.278114659230517,2,2,1,False,,chin
+1666,chiqaruvchi,7.278114659230517,2,2,1,False,,chiqaruvchi
+1667,chiqish kelishigi qo'shimcha,7.278114659230517,2,2,3,False,,chiqish kelishigi qoʻshimchasining
+1668,cho'ziq talaffuz,7.278114659230517,2,2,2,False,,choʻziq talaffuz
+1669,chuqur til,7.278114659230517,2,2,2,False,,chuqur til
+1670,chuqur til orqa,7.278114659230517,2,2,3,False,,chuqur til orqa
+1671,daraja shakl,7.278114659230517,2,2,2,False,,daraja shakli
+1672,darslik,7.278114659230517,2,2,1,False,,darsliklar
+1673,devonu lug'otit turk,7.278114659230517,2,2,3,False,,Devonu lugʻotit turk
+1674,deyarli,7.278114659230517,2,2,1,False,,deyarli
+1675,deyish,7.278114659230517,2,2,1,False,,deyish
+1676,diqqat markaz,7.278114659230517,2,2,2,False,,diqqat markazidir
+1677,doim,7.278114659230517,2,2,1,False,,doim
+1678,don,7.278114659230517,2,2,1,False,,don
+1679,dumaloq,7.278114659230517,2,2,1,False,,dumaloq
+1680,dunyo til,7.278114659230517,2,2,2,False,,dunyo tillariga
+1681,ega bilan ifodalangan shaxs,7.278114659230517,2,2,4,False,,Ega bilan ifodalangan shaxs
+1682,ega vazifa,7.278114659230517,2,2,2,False,,ega vazifasida
+1683,ekanligi,7.278114659230517,2,2,1,False,,ekanligi
+1684,emish,7.278114659230517,2,2,1,False,,emish
+1685,ensiklopedik,7.278114659230517,2,2,1,False,,ensiklopedik
+1686,erkalash,7.278114659230517,2,2,1,False,,erkalash
+1687,etuvchi so'z,7.278114659230517,2,2,2,False,,etuvchi soʻzlarning
+1688,fammatikasi,7.278114659230517,2,2,1,False,,fammatikasi
+1689,fan soha,7.278114659230517,2,2,2,False,,fan sohalariga
+1690,fanlar akademiyasi,7.278114659230517,2,2,2,False,,Fanlar akademiyasi
+1691,farqlanuvchi,7.278114659230517,2,2,1,False,,farqlanuvchi
+1692,farqlash uchun xizmat,7.278114659230517,2,2,3,False,,farqlash uchun xizmat
+1693,farqlash vazifa,7.278114659230517,2,2,2,False,,farqlash vazifasini
+1694,farqli,7.278114659230517,2,2,1,False,,farqli
+1695,fe'l turkumiga oid,7.278114659230517,2,2,3,False,,feʼl turkumiga oid
+1696,fizik,7.278114659230517,2,2,1,False,,fizik
+1697,folklor,7.278114659230517,2,2,1,False,,folklor
+1698,fonetik tuzilish,7.278114659230517,2,2,2,True,,fonetik tuzilishi
+1699,fors,7.278114659230517,2,2,1,False,,fors
+1700,forscha,7.278114659230517,2,2,1,False,,forscha
+1701,frakiyalik,7.278114659230517,2,2,1,False,,Frakiyalik
+1702,fransuz,7.278114659230517,2,2,1,False,,fransuz
+1703,fransuz til,7.278114659230517,2,2,2,False,,fransuz tilida
+1704,funksiya,7.278114659230517,2,2,1,False,,funksiya
+1705,g'oyalari,7.278114659230517,2,2,1,False,,gʻoyalari
+1706,g'oyasi,7.278114659230517,2,2,1,False,,gʻoyasini
+1707,g'ozi,7.278114659230517,2,2,1,False,,Gʻozi
+1708,ga yaqin,7.278114659230517,2,2,2,False,,ga yaqin
+1709,gapda ega,7.278114659230517,2,2,2,False,,gapda egaga
+1710,gapdan anglashilgan harakat,7.278114659230517,2,2,3,False,,gapdan anglashilgan harakatning
+1711,gaplarni tuzish,7.278114659230517,2,2,2,False,,gaplarni tuzish
+1712,gapning bosh bo'lak,7.278114659230517,2,2,3,False,,gapning bosh boʻlaklaridan
+1713,gapning kes,7.278114659230517,2,2,2,False,,gapning kesimi
+1714,gapning mustaqil,7.278114659230517,2,2,2,False,,gapning mustaqil
+1715,gapning mustaqil bo'lagi,7.278114659230517,2,2,3,False,,gapning mustaqil boʻlagi
+1716,gapning mustaqil bo'lagi vazifa,7.278114659230517,2,2,4,False,,gapning mustaqil boʻlagi vazifasida
+1717,garchi,7.278114659230517,2,2,1,False,,garchi
+1718,geografiya,7.278114659230517,2,2,1,False,,geografiya
+1719,grafiya,7.278114659230517,2,2,1,False,,grafiya
+1720,gramma,7.278114659230517,2,2,1,False,,gramma
+1721,grammatik an'analari,7.278114659230517,2,2,2,False,,grammatik anʼanalari
+1722,grammatik belgi,7.278114659230517,2,2,2,False,,grammatik belgilaridan
+1723,grammatik ma'no va vazifa,7.278114659230517,2,2,4,False,,grammatik maʼno va vazifasiga
+1724,grammatik turkum,7.278114659230517,2,2,2,True,,grammatik turkumlari
+1725,guruhi,7.278114659230517,2,2,1,False,,guruhiga
+1726,guruhlarini,7.278114659230517,2,2,1,False,,guruhlarini
+1727,hajm,7.278114659230517,2,2,1,False,,hajm
+1728,hamid,7.278114659230517,2,2,1,False,,Hamid
+1729,hanuz,7.278114659230517,2,2,1,False,,hanuz
+1730,him,7.278114659230517,2,2,1,False,,him
+1731,hiraviyning,7.278114659230517,2,2,1,False,,Hiraviyning
+1732,hokim komponent,7.278114659230517,2,2,2,True,,hokim komponenti
+1733,hol vazifa,7.278114659230517,2,2,2,False,,hol vazifalarida
+1734,hosil bo'lish o'rniga ko'ra,7.278114659230517,2,2,4,False,,Hosil boʻlish oʻrniga koʻra
+1735,hosil qiluvchi,7.278114659230517,2,2,2,False,,hosil qiluvchi
+1736,ibrohimov,7.278114659230517,2,2,1,False,,Ibrohimov
+1737,idrok,7.278114659230517,2,2,1,False,,idrok
+1738,ifodalangan shaxs,7.278114659230517,2,2,2,False,,ifodalangan shaxs
+1739,ifodalash uchun xizmat,7.278114659230517,2,2,3,False,,ifodalash uchun xizmat
+1740,ifodalovchi shakl,7.278114659230517,2,2,2,False,,ifodalovchi shaklini
+1741,ifodalovchi so'z,7.278114659230517,2,2,2,False,,ifodalovchi soʻzlarni
+1742,ii asr,7.278114659230517,2,2,2,False,,II asrlar
+1743,iii,7.278114659230517,2,2,1,False,,III
+1744,ijod,7.278114659230517,2,2,1,False,,ijod
+1745,ikkinchi darajali,7.278114659230517,2,2,2,False,,ikkinchi darajali
+1746,illa,7.278114659230517,2,2,1,False,,illa
+1747,imkoniyat,7.278114659230517,2,2,1,False,,imkoniyat
+1748,infiks,7.278114659230517,2,2,1,True,,infiks
+1749,inkor ma'no,7.278114659230517,2,2,2,False,,Inkor maʼno
+1750,instituti,7.278114659230517,2,2,1,False,,instituti
+1751,isbotidir,7.278114659230517,2,2,1,False,,isbotidir
+1752,izoh,7.278114659230517,2,2,1,False,,izoh
+1753,jarangsiz undosh,7.278114659230517,2,2,2,False,,Jarangsiz undoshlar
+1754,javob,7.278114659230517,2,2,1,False,,javob
+1755,jihatdan o'zaro,7.278114659230517,2,2,2,False,,jihatdan oʻzaro
+1756,jihatdan tasnif,7.278114659230517,2,2,2,False,,jihatdan tasnif
+1757,jihati bor,7.278114659230517,2,2,2,False,,jihati bor
+1758,jins,7.278114659230517,2,2,1,False,,jins
+1759,katta ahamiyatga,7.278114659230517,2,2,2,False,,katta ahamiyatga
+1760,katta ahamiyatga ega,7.278114659230517,2,2,3,False,,katta ahamiyatga ega
+1761,katta hissa,7.278114659230517,2,2,2,False,,katta hissa
+1762,katta hissa qo'shdi,7.278114659230517,2,2,3,False,,katta hissa qoʻshdilar
+1763,kelasi zamon,7.278114659230517,2,2,2,True,,kelasi zamon
+1764,keng ma'lumot,7.278114659230517,2,2,2,False,,keng maʼlumotlar
+1765,keng tushunchali,7.278114659230517,2,2,2,False,,keng tushunchali
+1766,kesim gap,7.278114659230517,2,2,2,False,,Kesim gapni
+1767,keyingi yil,7.278114659230517,2,2,2,False,,keyingi yillardagi
+1768,kina,7.278114659230517,2,2,1,False,,kina
+1769,ko'chma,7.278114659230517,2,2,1,False,,koʻchma
+1770,ko'ra so'z,7.278114659230517,2,2,2,False,,koʻra soʻz
+1771,ko'ra til,7.278114659230517,2,2,2,False,,koʻra tillarni
+1772,ko'ra tur,7.278114659230517,2,2,2,False,,koʻra turlari
+1773,kongress,7.278114659230517,2,2,1,False,,kongress
+1774,kononov,7.278114659230517,2,2,1,False,,Kononov
+1775,kuchma,7.278114659230517,2,2,1,False,,Kuchma
+1776,kuldir,7.278114659230517,2,2,1,False,,kuldir
+1777,lablab,7.278114659230517,2,2,1,False,,lablab
+1778,leksik ma'no,7.278114659230517,2,2,2,True,,leksik maʼnosini
+1779,lik,7.278114659230517,2,2,1,False,,lik
+1780,lingvistik geografiya,7.278114659230517,2,2,2,True,,lingvistik geografiya
+1781,lug'atshunoslik,7.278114659230517,2,2,1,True,,lugʻatshunoslik
+1782,lug'otit turk,7.278114659230517,2,2,2,False,,lugʻotit turk
+1783,ma'lum daraja,7.278114659230517,2,2,2,False,,maʼlum darajada
+1784,ma'no jihatdan,7.278114659230517,2,2,2,False,,maʼno jihatdan
+1785,ma'no jihatdan o'zaro,7.278114659230517,2,2,3,False,,maʼno jihatdan oʻzaro
+1786,ma'noli qism,7.278114659230517,2,2,2,False,,maʼnoli qismlarga
+1787,ma'nosi o'rta,7.278114659230517,2,2,2,False,,maʼnosi oʻrtasida
+1788,ma'nosiga ko'ra,7.278114659230517,2,2,2,False,,maʼnosiga koʻra
+1789,ma'nosini aniqlash,7.278114659230517,2,2,2,False,,maʼnosini aniqlash
+1790,ma'nosini bildiruvchi,7.278114659230517,2,2,2,False,,maʼnosini bildiruvchi
+1791,ma'nosini kuchaytirish,7.278114659230517,2,2,2,False,,maʼnosini kuchaytirishi
+1792,ma'rufov,7.278114659230517,2,2,1,False,,Maʼrufov
+1793,majhul nisbat shakl,7.278114659230517,2,2,3,False,,majhul nisbat shakli
+1794,mamatov,7.278114659230517,2,2,1,False,,Mamatov
+1795,mansubligi,7.278114659230517,2,2,1,False,,mansubligi
+1796,maqolada,7.278114659230517,2,2,1,False,,maqolada
+1797,maxsus ko'rsatkichi,7.278114659230517,2,2,2,False,,maxsus koʻrsatkichi
+1798,maxsus ko'rsatkichi yo'q,7.278114659230517,2,2,3,False,,maxsus koʻrsatkichi yoʻq
+1799,mazmun munosabat,7.278114659230517,2,2,2,False,,mazmun munosabatidan
+1800,me'yori,7.278114659230517,2,2,1,False,,meʼyoriga
+1801,me'yorlarini,7.278114659230517,2,2,1,False,,meʼyorlarini
+1802,me'yorlashtirish,7.278114659230517,2,2,1,False,,meʼyorlashtirish
+1803,metodlarini ishlab,7.278114659230517,2,2,2,False,,metodlarini ishlab
+1804,miqdor rus,7.278114659230517,2,2,2,False,,miqdor rus
+1805,miqdor rus til,7.278114659230517,2,2,3,False,,miqdor rus tilida
+1806,miqdoriga ko'ra,7.278114659230517,2,2,2,False,,miqdoriga koʻra
+1807,misolida ko'rib chiqish,7.278114659230517,2,2,3,False,,misolida koʻrib chiqish
+1808,morfologiya va sintaksis,7.278114659230517,2,2,3,False,,morfologiya va sintaksis
+1809,morfonologiya,7.278114659230517,2,2,1,True,,Morfonologiya
+1810,morphe,7.278114659230517,2,2,1,False,,morphe
+1811,moslashuv,7.278114659230517,2,2,1,True,,moslashuv
+1812,muayyan bir til,7.278114659230517,2,2,3,False,,muayyan bir tilda
+1813,muayyan ma'no,7.278114659230517,2,2,2,False,,muayyan maʼnosi
+1814,muhim ahamiyatga,7.278114659230517,2,2,2,False,,muhim ahamiyatga
+1815,muhim ahamiyatga ega,7.278114659230517,2,2,3,False,,muhim ahamiyatga ega
+1816,mumkinligi,7.278114659230517,2,2,1,False,,mumkinligi
+1817,munosabatiga ko'ra,7.278114659230517,2,2,2,False,,munosabatiga koʻra
+1818,munosib hissa,7.278114659230517,2,2,2,False,,munosib hissa
+1819,muqaddimat,7.278114659230517,2,2,1,False,,Muqaddimat
+1820,mustaqil bo'lagi,7.278114659230517,2,2,2,False,,mustaqil boʻlagi
+1821,mustaqil bo'lagi vazifa,7.278114659230517,2,2,3,False,,mustaqil boʻlagi vazifasida
+1822,mustaqil bo'lagi vazifasida kela,7.278114659230517,2,2,4,False,,mustaqil boʻlagi vazifasida kela
+1823,nafaqat,7.278114659230517,2,2,1,False,,nafaqat
+1824,namoyon etuvchi,7.278114659230517,2,2,2,False,,namoyon etuvchi
+1825,natijasida vujudga,7.278114659230517,2,2,2,False,,natijasida vujudga
+1826,navbatda,7.278114659230517,2,2,1,False,,navbatda
+1827,neytral,7.278114659230517,2,2,1,False,,neytral
+1828,nihoyat,7.278114659230517,2,2,1,False,,nihoyatda
+1829,nisbat berish,7.278114659230517,2,2,2,False,,nisbat berish
+1830,nomi shakl,7.278114659230517,2,2,2,False,,nomi shakli
+1831,nomli,7.278114659230517,2,2,1,False,,nomli
+1832,nurmonov a,7.278114659230517,2,2,2,False,,Nurmonov A
+1833,o'qit,7.278114659230517,2,2,1,False,,oʻqit
+1834,o'quvchi,7.278114659230517,2,2,1,False,,oʻquvchi
+1835,o'rganilishi,7.278114659230517,2,2,1,False,,oʻrganilishiga
+1836,o'rganish boshlandi,7.278114659230517,2,2,2,False,,oʻrganish boshlandi
+1837,o'rganish obyekt,7.278114659230517,2,2,2,False,,oʻrganish obyektidir
+1838,o'rganuvchi tilshunoslik,7.278114659230517,2,2,2,False,,oʻrganuvchi tilshunoslik
+1839,o'rinboyev,7.278114659230517,2,2,1,False,,Oʻrinboyev
+1840,o'rniga ko'ra,7.278114659230517,2,2,2,False,,oʻrniga koʻra
+1841,o'shancha,7.278114659230517,2,2,1,False,,oʻshancha
+1842,o'tgan kun,7.278114659230517,2,2,2,False,,Oʻtgan kunlar
+1843,o'xshashligi,7.278114659230517,2,2,1,False,,oʻxshashligi
+1844,o'xshatish,7.278114659230517,2,2,1,False,,oʻxshatish
+1845,o'zaro bog'liq,7.278114659230517,2,2,2,False,,oʻzaro bogʻliq
+1846,o'zaro ta'sirlashuvi,7.278114659230517,2,2,2,False,,oʻzaro taʼsirlashuvi
+1847,o'zbek tili lug'at,7.278114659230517,2,2,3,False,,oʻzbek tili lugʻat
+1848,o'zbek tilida mustaqil,7.278114659230517,2,2,3,False,,oʻzbek tilida mustaqil
+1849,o'zbek tilida yasama,7.278114659230517,2,2,3,False,,Oʻzbek tilida yasama
+1850,o'zbek xalq,7.278114659230517,2,2,2,False,,oʻzbek xalqi
+1851,o'zgartirish,7.278114659230517,2,2,1,False,,oʻzgartirish
+1852,o'ziga xos so'z yasalish,7.278114659230517,2,2,4,False,,oʻziga xos soʻz yasalishi
+1853,o'ziga xos xususiyat,7.278114659230517,2,2,3,False,,oʻziga xos xususiyatga
+1854,ob'yekti,7.278114659230517,2,2,1,False,,obʼyekti
+1855,oddiy daraja,7.278114659230517,2,2,2,True,,oddiy daraja
+1856,og'ir,7.278114659230517,2,2,1,False,,ogʻir
+1857,og'iz,7.278114659230517,2,2,1,False,,ogʻiz
+1858,og'iz va bo'g'iz,7.278114659230517,2,2,3,False,,ogʻiz va boʻgʻiz
+1859,og'iz va bo'g'iz bo'shlig'ida,7.278114659230517,2,2,4,False,,ogʻiz va boʻgʻiz boʻshligʻida
+1860,olam,7.278114659230517,2,2,1,False,,olam
+1861,olim usmon,7.278114659230517,2,2,2,False,,Olim Usmon
+1862,olimi a,7.278114659230517,2,2,2,False,,olimi A
+1863,olimjon,7.278114659230517,2,2,1,False,,Olimjon
+1864,olimlari a,7.278114659230517,2,2,2,False,,olimlari A
+1865,olingan so'z,7.278114659230517,2,2,2,False,,olingan soʻzlar
+1866,olti,7.278114659230517,2,2,1,False,,olti
+1867,orfografik,7.278114659230517,2,2,1,False,,orfografik
+1868,ortiq so'z,7.278114659230517,2,2,2,False,,ortiq soʻzlardan
+1869,orttirma daraja,7.278114659230517,2,2,2,True,,orttirma daraja
+1870,osiyo,7.278114659230517,2,2,1,False,,Osiyo
+1871,osmon,7.278114659230517,2,2,1,False,,osmon
+1872,ot turkum,7.278114659230517,2,2,2,False,,Ot turkumi
+1873,ot va fe'l,7.278114659230517,2,2,3,False,,ot va fe'llar
+1874,ovqat,7.278114659230517,2,2,1,False,,ovqat
+1875,oxirgi bo'g'in,7.278114659230517,2,2,2,False,,oxirgi boʻgʻinni
+1876,oydin,7.278114659230517,2,2,1,False,,oydin
+1877,ozaytirma,7.278114659230517,2,2,1,False,,ozaytirma
+1878,paninining grammatika,7.278114659230517,2,2,2,False,,Paninining grammatikasi
+1879,paxtakor,7.278114659230517,2,2,1,False,,Paxtakor
+1880,pichoq,7.278114659230517,2,2,1,False,,pichoq
+1881,polisemiya,7.278114659230517,2,2,1,True,,polisemiya
+1882,predikativlik,7.278114659230517,2,2,1,True,,Predikativlik
+1883,qadimgi hind,7.278114659230517,2,2,2,False,,Qadimgi Hind
+1884,qahhor,7.278114659230517,2,2,1,False,,Qahhor
+1885,qatori o'zbek,7.278114659230517,2,2,2,False,,qatori oʻzbek
+1886,qattiq,7.278114659230517,2,2,1,False,,qattiq
+1887,qina,7.278114659230517,2,2,1,False,,qina
+1888,qishin,7.278114659230517,2,2,1,False,,qishin
+1889,qiziqish,7.278114659230517,2,2,1,False,,qiziqish
+1890,qo'llanilishiga,7.278114659230517,2,2,1,False,,qoʻllanilishiga
+1891,qo'llanmalar,7.278114659230517,2,2,1,False,,qoʻllanmalar
+1892,qo'llanuvchi so'z,7.278114659230517,2,2,2,False,,qoʻllanuvchi soʻzlar
+1893,qol,7.278114659230517,2,2,1,False,,qol
+1894,qolishi,7.278114659230517,2,2,1,False,,qolishi
+1895,qorni,7.278114659230517,2,2,1,False,,qorni
+1896,qosil,7.278114659230517,2,2,1,False,,qosil
+1897,qovun,7.278114659230517,2,2,1,False,,qovun
+1898,ramazon,7.278114659230517,2,2,1,False,,Ramazon
+1899,ravishdosh shakl,7.278114659230517,2,2,2,False,,ravishdosh shaklini
+1900,rim,7.278114659230517,2,2,1,False,,rim
+1901,roman,7.278114659230517,2,2,1,False,,roman
+1902,roq,7.278114659230517,2,2,1,False,,roq
+1903,ruschex,7.278114659230517,2,2,1,False,,ruschex
+1904,ruschex tilshunos,7.278114659230517,2,2,2,False,,ruschex tilshunosi
+1905,ruschex tilshunosi n,7.278114659230517,2,2,3,False,,ruschex tilshunosi N
+1906,ruxsat,7.278114659230517,2,2,1,False,,ruxsat
+1907,sanskrit,7.278114659230517,2,2,1,False,,sanskrit
+1908,sayin,7.278114659230517,2,2,1,False,,sayin
+1909,sayroqi,7.278114659230517,2,2,1,False,,sayroqi
+1910,semantika,7.278114659230517,2,2,1,True,,semantikasini
+1911,sezilarli,7.278114659230517,2,2,1,False,,sezilarli
+1912,shakllanishiga xizmat,7.278114659230517,2,2,2,False,,shakllanishiga xizmat
+1913,shakllariga xos,7.278114659230517,2,2,2,False,,shakllariga xos
+1914,shartli,7.278114659230517,2,2,1,False,,shartli
+1915,shovqinli undosh,7.278114659230517,2,2,2,False,,shovqinli undoshlar
+1916,shunda,7.278114659230517,2,2,1,False,,shunda
+1917,shunos,7.278114659230517,2,2,1,False,,shunos
+1918,sifatlovchi,7.278114659230517,2,2,1,True,,sifatlovchi
+1919,sina,7.278114659230517,2,2,1,False,,sina
+1920,sintagma,7.278114659230517,2,2,1,True,,sintagma
+1921,sintaktik tuzilma,7.278114659230517,2,2,2,True,,sintaktik tuzilma
+1922,so'z etimologiya,7.278114659230517,2,2,2,False,,soʻz etimologiyasi
+1923,so'z o'zagi,7.278114659230517,2,2,2,True,,soʻz oʻzagiga
+1924,so'z o'zgarish,7.278114659230517,2,2,2,False,,soʻz oʻzgarishlarini
+1925,so'z va so'z,7.278114659230517,2,2,3,False,,soʻz va soʻz
+1926,so'z va so'z birikma,7.278114659230517,2,2,4,False,,soʻz va soʻz birikmalarini
+1927,so'zi keng,7.278114659230517,2,2,2,False,,soʻzi keng
+1928,so'zi keng tushunchali,7.278114659230517,2,2,3,False,,soʻzi keng tushunchali
+1929,so'zlar bor,7.278114659230517,2,2,2,False,,soʻzlar bor
+1930,so'zlar turkum,7.278114659230517,2,2,2,False,,soʻzlar turkumi
+1931,so'zlar yordam,7.278114659230517,2,2,2,False,,soʻzlar yordamida
+1932,so'zlarni turkumlarga ajratish,7.278114659230517,2,2,3,False,,Soʻzlarni turkumlarga ajratish
+1933,so'zlarning bir tur,7.278114659230517,2,2,3,False,,soʻzlarning bir turi
+1934,so'zlarning paydo,7.278114659230517,2,2,2,False,,soʻzlarning paydo
+1935,so'zlarning tuzilish,7.278114659230517,2,2,2,False,,soʻzlarning tuzilishi
+1936,soni turli til,7.278114659230517,2,2,3,False,,soni turli tillarda
+1937,soni turli tillarda turlicha,7.278114659230517,2,2,4,False,,soni turli tillarda turlichadir
+1938,sovuq,7.278114659230517,2,2,1,False,,sovuq
+1939,stilistika,7.278114659230517,2,2,1,True,,stilistika
+1940,struktural,7.278114659230517,2,2,1,False,,Struktural
+1941,sud,7.278114659230517,2,2,1,False,,Sudining
+1942,ta'sirlashuvi,7.278114659230517,2,2,1,False,,taʼsirlashuvi
+1943,tadqiq qilish,7.278114659230517,2,2,2,False,,tadqiq qilish
+1944,tadqiqot obyekt,7.278114659230517,2,2,2,False,,tadqiqot obyekti
+1945,tadqiqot usul,7.278114659230517,2,2,2,False,,tadqiqot usullari
+1946,tadqiqotchi,7.278114659230517,2,2,1,False,,tadqiqotchi
+1947,tafakkur,7.278114659230517,2,2,1,False,,tafakkurning
+1948,takror so'z,7.278114659230517,2,2,2,True,,takror soʻz
+1949,tamom,7.278114659230517,2,2,1,False,,tamom
+1950,taqilla,7.278114659230517,2,2,1,False,,taqilla
+1951,taqozosi,7.278114659230517,2,2,1,False,,taqozosidan
+1952,tarkibidagi hokim,7.278114659230517,2,2,2,False,,Tarkibidagi hokim
+1953,tarkibidagi tobe,7.278114659230517,2,2,2,False,,Tarkibidagi tobe
+1954,tarkibidagina,7.278114659230517,2,2,1,False,,tarkibidagina
+1955,taroq,7.278114659230517,2,2,1,False,,taroq
+1956,tarvuz,7.278114659230517,2,2,1,False,,tarvuz
+1957,til bosqich,7.278114659230517,2,2,2,False,,til bosqichi
+1958,til o'ziga xos,7.278114659230517,2,2,3,False,,til oʻziga xos
+1959,til old,7.278114659230517,2,2,2,False,,til oldi
+1960,til tarixi,7.278114659230517,2,2,2,False,,til tarixi
+1961,til tizim,7.278114659230517,2,2,2,False,,Til tizimdan
+1962,til tovush,7.278114659230517,2,2,2,False,,til tovush
+1963,til tovush qurilish,7.278114659230517,2,2,3,False,,til tovush qurilishining
+1964,til va tafakkur,7.278114659230517,2,2,3,False,,Til va tafakkurning
+1965,tili lug'at,7.278114659230517,2,2,2,False,,tili lugʻat
+1966,tilida gap,7.278114659230517,2,2,2,False,,tilida gapdagi
+1967,tilida mustaqil,7.278114659230517,2,2,2,False,,tilida mustaqil
+1968,tilida so'z,7.278114659230517,2,2,2,False,,tilida soʻzning
+1969,tilida undosh,7.278114659230517,2,2,2,False,,tilida Undosh
+1970,tilida yasama,7.278114659230517,2,2,2,False,,tilida yasama
+1971,tilini o'rganish,7.278114659230517,2,2,2,False,,tilini oʻrganishning
+1972,tillarda turlicha,7.278114659230517,2,2,2,False,,tillarda turlichadir
+1973,tilning grammatik qurilish,7.278114659230517,2,2,3,False,,tilning grammatik qurilishi
+1974,tilning tovush,7.278114659230517,2,2,2,False,,tilning tovush
+1975,tilshunos panini,7.278114659230517,2,2,2,False,,tilshunos Paninining
+1976,tilshunosi i,7.278114659230517,2,2,2,False,,tilshunosi I
+1977,tilshunosi n,7.278114659230517,2,2,2,False,,tilshunosi N
+1978,tilshunosi r,7.278114659230517,2,2,2,False,,tilshunosi R
+1979,tilshunoslik fan,7.278114659230517,2,2,2,False,,Tilshunoslik fan
+1980,tol,7.278114659230517,2,2,1,False,,Toli
+1981,topish,7.278114659230517,2,2,1,False,,topishini
+1982,tovush o'zgarish,7.278114659230517,2,2,2,False,,tovush oʻzgarishi
+1983,tovush tomon,7.278114659230517,2,2,2,False,,tovush tomoni
+1984,tovushlar bir necha jihatdan,7.278114659230517,2,2,4,False,,tovushlar bir necha jihatdan
+1985,tovushlar soni turli til,7.278114659230517,2,2,4,False,,tovushlar soni turli tillarda
+1986,turkcha,7.278114659230517,2,2,1,False,,turkcha
+1987,turkcha lug'at,7.278114659230517,2,2,2,False,,turkcha lugʻat
+1988,turkiya,7.278114659230517,2,2,1,False,,Turkiya
+1989,turkiycha,7.278114659230517,2,2,1,False,,turkiycha
+1990,turkumga oid,7.278114659230517,2,2,2,False,,turkumga oid
+1991,turkumi o'ziga xos,7.278114659230517,2,2,3,False,,turkumi oʻziga xos
+1992,turkumiga oid so'z,7.278114659230517,2,2,3,False,,turkumiga oid soʻzlardan
+1993,turlari bor,7.278114659230517,2,2,2,False,,turlari bor
+1994,tushsa,7.278114659230517,2,2,1,False,,tushsa
+1995,tushunchali,7.278114659230517,2,2,1,False,,tushunchali
+1996,tuzilgan lug'at,7.278114659230517,2,2,2,False,,tuzilgan lugʻatlar
+1997,uchrab,7.278114659230517,2,2,1,False,,uchrab
+1998,umumiy belgi,7.278114659230517,2,2,2,False,,umumiy belgi
+1999,usmon,7.278114659230517,2,2,1,False,,Usmon
+2000,uyga,7.278114659230517,2,2,1,False,,uyga
+2001,uyushiq,7.278114659230517,2,2,1,False,,UYUSHIQ
+2002,varron,7.278114659230517,2,2,1,False,,Varron
+2003,vazifalariga ko'ra,7.278114659230517,2,2,2,False,,vazifalariga koʻra
+2004,vazifasida kela,7.278114659230517,2,2,2,False,,vazifasida kela
+2005,voqea,7.278114659230517,2,2,1,False,,voqea
+2006,voqelik,7.278114659230517,2,2,1,False,,voqelik
+2007,xitoy,7.278114659230517,2,2,1,False,,Xitoy
+2008,xos grammatik kategoriya,7.278114659230517,2,2,3,False,,xos grammatik kategoriyalar
+2009,xos so'z yasalish,7.278114659230517,2,2,3,False,,xos soʻz yasalishi
+2010,xos tovush,7.278114659230517,2,2,2,False,,xos tovushlarning
+2011,xos xususiyat,7.278114659230517,2,2,2,False,,xos xususiyatga
+2012,xotira,7.278114659230517,2,2,1,False,,Xotira
+2013,xulosalar,7.278114659230517,2,2,1,False,,xulosalar
+2014,xunuk,7.278114659230517,2,2,1,False,,xunuk
+2015,xususan,7.278114659230517,2,2,1,False,,xususan
+2016,xususiylik,7.278114659230517,2,2,1,False,,xususiylik
+2017,yagona,7.278114659230517,2,2,1,False,,yagona
+2018,yangi leksema,7.278114659230517,2,2,2,False,,yangi leksemalar
+2019,yangicha,7.278114659230517,2,2,1,False,,yangicha
+2020,yasalgan so'z,7.278114659230517,2,2,2,False,,yasalgan soʻzlar
+2021,yasalishi tizimiga ega,7.278114659230517,2,2,3,False,,yasalishi tizimiga ega
+2022,yashil,7.278114659230517,2,2,1,False,,yashil
+2023,yasovchi affiks,7.278114659230517,2,2,2,False,,yasovchi affikslardan
+2024,yaxshilik,7.278114659230517,2,2,1,False,,yaxshilik
+2025,yaxshiroq,7.278114659230517,2,2,1,False,,yaxshiroq
+2026,yeb,7.278114659230517,2,2,1,False,,yeb
+2027,yevropa va rus,7.278114659230517,2,2,3,False,,yevropa va rus
+2028,yillarida rus,7.278114659230517,2,2,2,False,,yillarida rus
+2029,yordamchi so'zlarning bir tur,7.278114659230517,2,2,4,False,,yordamchi soʻzlarning bir turi
+2030,yordamchi vazifa,7.278114659230517,2,2,2,False,,yordamchi vazifalarda
+2031,yozin,7.278114659230517,2,2,1,False,,yozin
+2032,yozuvchilar,7.278114659230517,2,2,1,False,,Yozuvchilar
+2033,yunon til,7.278114659230517,2,2,2,False,,yunon tili
+2034,yunon tilshunos,7.278114659230517,2,2,2,False,,yunon tilshunoslarining
+2035,yurt,7.278114659230517,2,2,1,False,,yurtlarining
+2036,yutuq,7.278114659230517,2,2,1,False,,yutuqlarga
+2037,zidlanishlar,7.278114659230517,2,2,1,False,,zidlanishlar
+2038,ziyod,7.278114659230517,2,2,1,False,,ziyod
+2039,σύν,7.278114659230517,2,2,1,False,,σύν
