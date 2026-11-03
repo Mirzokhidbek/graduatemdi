@@ -1,0 +1,29 @@
+# Undosh tovushlar
+konsonantizm
+sonor
+shovqinli
+shovqinli undosh
+jarangli undosh
+jarangsiz undosh = jarangeiz undosh
+lab undoshi = lab undosh
+lab-lab undoshi = lablab undosh
+lab-tish undoshi = labtish undosh
+til undoshi = til undosh
+til oldi
+til orqa
+til oʻrta
+chuqur til orqa
+boʻgʻiz undoshi = boʻgʻiz undosh
+portlovchi
+sirgʻaluvchi
+portlovchi tovush
+sirgʻaluvchi tovush
+titroq tovush
+affrikata
+palatalizatsiya
+qattiq tanglay
+nutq aʼzolari = nutq aʼzo
+un paychalari = un paycha
+ovoz
+shovqin
+!~ consonans — undosh tovush

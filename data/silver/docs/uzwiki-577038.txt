@@ -1,0 +1,35 @@
+# Soʻz turkumlari ("St.", "S. t." — soʻz turkumi qisqartmasi)
+soʻz turkumi = St; S. t; S t
+kategorial maʼno
+grammatik kategoriya
+kategoriya
+soʻz oʻzgarishi = soʻz oʻzgarish
+leksik-grammatik kategoriya = leksikgrammatik kategoriya
+lugʻaviy maʼno
+ot
+feʼl
+sifat
+!= sifatida
+son
+!= soni
+!= sonining
+undov
+taqlid soʻz
+modal soʻz
+mustaqil boʻlak = mustaqil boʻlagi
+ega
+!~ egallagan
+egalik
+kesim
+kesimlik
+kelishik
+daraja
+shaxs-son
+mayl
+nisbat
+sifatdosh
+artikl
+ism
+!~ Mil. av
+!= darajasi
+!= darajada

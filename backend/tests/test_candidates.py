@@ -248,3 +248,49 @@ def test_cli_no_files(tmp_path, capsys, monkeypatch):
     monkeypatch.setattr("app.dataset.validate.REPO_ROOT", tmp_path)
     assert candidates_module.main([]) == 1
     assert "topilmadi" in capsys.readouterr().err
+
+
+# --- POS filtri va weirdness ---------------------------------------------
+
+
+def test_noun_head_filter():
+    from app.nlp.candidates import looks_like_noun_head
+
+    assert looks_like_noun_head(("grammatik", "kategoriya"))
+    assert looks_like_noun_head(("tilshunoslik",))
+    assert looks_like_noun_head(("kelishik",))
+    assert not looks_like_noun_head(("grammatik",))
+    assert not looks_like_noun_head(("yoziladi",))
+    assert not looks_like_noun_head(("so'z", "yasalgan"))
+
+
+def test_rank_with_pos_filter_and_weirdness():
+    from collections import Counter
+
+    from app.nlp.candidates import extract_candidates, rank, weirdness_scores
+
+    documents = {
+        "d1": "Grammatik kategoriya. Grammatik shakl yoziladi. Fonema va fonema.",
+        "d2": "Grammatik kategoriya yoziladi. Fonema.",
+    }
+    candidates = extract_candidates(documents)
+    plain = [c.text for c, _ in rank(candidates, "frequency", 2)]
+    filtered = [c.text for c, _ in rank(candidates, "frequency", 2, pos_filter=True)]
+    assert "grammatik" in plain and "yoziladi" in plain
+    assert "grammatik" not in filtered and "yoziladi" not in filtered
+    assert "grammatik kategoriya" in filtered
+
+    # "fonema" kontrast korpusda yo'q, "yoziladi" ko'p: weirdness fonemani yuqoriga chiqaradi
+    contrast = Counter({("yoziladi",): 50})
+    scores = weirdness_scores(candidates, 14, contrast, 1000)
+    ranked = [c.text for c, _ in rank(candidates, "weirdness", 2, weirdness=scores)]
+    assert ranked.index("fonema") < ranked.index("yoziladi")
+
+
+def test_weirdness_needs_contrast():
+    import pytest
+
+    from app.nlp.candidates import extract_candidates, rank
+
+    with pytest.raises(ValueError):
+        rank(extract_candidates({"d": "fonema fonema"}), "weirdness", 1)

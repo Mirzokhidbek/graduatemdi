@@ -1,0 +1,10 @@
+# Semasiologiya ("S." — semasiologiya qisqartmasi)
+semasiologiya = S
+til birligi = til birlik
+leksik unsur
+grammatik unsur
+grammatik morfema
+soʻz shakli = soʻz shakl
+maʼno taraqqiyoti = maʼno taraqqiyot
+koʻchma maʼno = kuchma maʼno
+!~ semasia — maʼno, mazmun va ... logiya

@@ -1,0 +1,33 @@
+# Morfologiya ("M." — morfologiya qisqartmasi)
+morfologiya = M
+soʻz shakli = soʻz shakl
+oraliqdagi soʻz = oraliqdagi soz
+grammatik maʼno
+grammatik kategoriya
+kategoriya
+grammatik shakl
+morfologik tizim
+morfologik kategoriya
+zamon kategoriyasi = zamon kategoriya
+zamon
+zamon shakli = zamon shakl
+feʼl shakli = feʼl shakl
+oʻtgan zamon
+hozirgi zamon
+kelasi zamon
+oʻtgan zamon sifatdoshi = oʻtgan zamon sifatdosh
+sifatdosh
+nutq vaqti = nutq vaqt
+nutq momenti = nutq moment
+soʻz oʻzagi = soʻz oʻzak
+old qoʻshimcha
+qoʻshimcha
+morfofonologiya
+tovush oʻzgarishi = tovush oʻzgarish
+morfologik tahlil
+morfologik qoida
+atama
+tuslanish
+koʻplik
+leksik morfologiya
+!~ morphe — shakl, logos-fan, taʼlimot

@@ -5,12 +5,17 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 
 **Joriy holat** (batafsil — [docs/project-plan.md](docs/project-plan.md)):
 
-- ishlaydi: lug'atga asoslangan termin aniqlagich, web interfeys va REST API;
-- tayyor: dataset vositalari (annotatsiya, tekshiruv, train/val/test ajratish,
-  baholash) va statistik termin nomzodlari (frequency, TF-IDF, C-value);
-- korpus: Vikipediyadan 41 ta tilshunoslik maqolasi, **hali inson tomonidan
-  belgilanmagan** — shuning uchun aniqlik (P/R/F1) hali o'lchanmagan;
-- yo'q: ML/transformer modeli (belgilangan maʼlumot kerak).
+- ishlaydi: lug'atga asoslangan termin aniqlagich (450 termin, tekshirilmagan),
+  web interfeys: tahlil, **annotatsiya** va nomzodlarni baholash, REST API;
+- tayyor: dataset vositalari (tekshiruv, train/val/test, annotatorlar kelishuvi),
+  statistik nomzodlar (frequency, TF-IDF, C-value, POS filtri), **CRF modeli**;
+- korpus: Vikipediyadan 41 ta tilshunoslik maqolasi. Hammasi **AI tomonidan**
+  belgilangan (kumush maʼlumot, 2555 termin), inson annotatsiyasi kutilmoqda.
+  Dastlabki natijalar (faqat kumush maʼlumotda): CRF + lug'at F1 = 0.65,
+  lug'at 0.55 — [docs/results.md](docs/results.md);
+- tayyor, lekin hali ishga tushirilmagan: transformer (XLM-R) — Colab'da
+  ishga tushiriladi: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb);
+- yo'q: inson oltin standarti.
 
 ## Talablar
 
@@ -43,7 +48,9 @@ API hujjati: http://127.0.0.1:8000/docs. Endpointlar:
 
 - `POST /api/analyze` — `{"text": "..."}` → topilgan terminlar;
 - `GET /api/terms` — terminlar bazasi;
-- `GET /api/health` — holat va matn uzunligi cheklovi.
+- `GET /api/health` — holat va matn uzunligi cheklovi;
+- `GET /api/annotate/documents`, `GET|PUT /api/annotate/documents/{doc_id}...` — annotatsiya;
+- `GET|PUT /api/judgments/{annotator}` — nomzodlarni baholash.
 
 Frontend (Node 20+; batafsil — [frontend/README.md](frontend/README.md)):
 
@@ -51,7 +58,8 @@ Frontend (Node 20+; batafsil — [frontend/README.md](frontend/README.md)):
 cd frontend && npm install && npm run dev
 ```
 
-Brauzerda http://localhost:5173 ni oching. Agar 8000-port band bo'lsa,
+Brauzerda http://localhost:5173 ni oching. Bo'limlar: **Tahlil**, **Belgilash**
+(`#annotate`, yo'riqnoma 7.1) va **Nomzodlarni baholash** (`#judge`). Agar 8000-port band bo'lsa,
 backendni boshqa portda ishga tushiring va frontendni
 `UZTERM_API_URL=http://127.0.0.1:<port> npm run dev` bilan oching.
 
@@ -160,6 +168,33 @@ Format namunasi (dataset emas):
 PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.example.jsonl --sources docs/examples/sources.example.json
 ```
 
+## Bosqichlar bo'yicha (dissertatsiya rejasi)
+
+| Bosqich | Qayerda |
+|---|---|
+| 1. Dataset (BIO, JSONL) | `data/bio/sentences-100.jsonl` — 100 ta gap, qo'lda tekshirilgan (`data/bio/review.txt`); `python -m app.dataset.bio sample / validate / export` |
+| 2. Preprocessing | `app/nlp/clean.py` (tozalash, rasmiy apostroflar, gaplarga ajratish), `normalize.py`, `tokenize.py` |
+| 3. Xususiyatlar | `app/models/crf.py` → `token_features` |
+| 4. O'qitish, saqlash, yuklash | `python -m app.models.crf train / evaluate / predict` |
+| 5. Meʼyorlashtirish | `app/services/term_normalizer.py`; aniqlik: `python -m app.evaluation.normalization` |
+| 6. Baholash | `python -m app.models.experiment`, `python -m app.evaluation.report` → [docs/experiments-table.md](docs/experiments-table.md) |
+| 7. Web interfeys | `streamlit run streamlit_app.py` (shuningdek React: tahlil, annotatsiya, baholash) |
+| 8. Ilmiy hujjat | [docs/dissertation/](docs/dissertation/README.md) |
+| Transformer (XLM-R) | `app/models/transformer.py`; Colab: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb) |
+
+## AI annotatsiyasi, lug'at va CRF
+
+```bash
+PYTHONPATH=backend python -m app.annotation.silver          # data/silver/ ro'yxatlaridan -> data/annotations/claude/
+PYTHONPATH=backend python -m app.dataset.split data/annotations/claude/*.jsonl --include-drafts --output-dir data/processed/silver
+PYTHONPATH=backend python -m app.annotation.dictionary      # lug'atga faqat train terminlari
+PYTHONPATH=backend python -m app.models.experiment          # lug'at vs CRF, bootstrap; reports/, models/
+PYTHONPATH=backend python -m app.annotation.agreement compare A1 A2
+```
+
+Kumush maʼlumot qanday tuzilgani: [data/silver/README.md](data/silver/README.md).
+Natijalar va cheklovlar: [docs/results.md](docs/results.md).
+
 ## Terminlar bazasi
 
 [data/terms.json](data/terms.json) — JSON massiv. Maydonlar:
@@ -178,10 +213,11 @@ PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.examp
 Baza yuklanganda qatʼiy tekshiriladi: nomaʼlum maydon, takroriy `id`, noto'g'ri
 tur yoki manbasiz `approved` bo'lsa, barcha xatolar ro'yxati bilan rad etiladi.
 
-> **Diqqat:** hozirgi 15 ta yozuv faqat namuna. Taʼriflarni Claude qoralama
-> sifatida yozgan, ular ilmiy manba bilan tekshirilmagan. Shuning uchun barchasi
-> `needs_review` holatida va `source: null`. Tizim ularni faqat
-> "Tavsiya — tekshirish kerak" deb ko'rsatadi.
+> **Diqqat:** dastlabki 15 ta yozuv (`data/terms-seed.json`) namuna, taʼriflarini
+> Claude qoralama sifatida yozgan. Qolgan 435 tasi AI annotatsiyasining **train**
+> to'plamidan olingan (taʼrifsiz). Ko'p maʼnoli so'zlar (`ot`, `sifat`, `gap`, ...)
+> ataylab qo'shilmagan. Hech biri ilmiy manba bilan tekshirilmagan. Barchasi
+> `needs_review` holatida, tizim ularni "Tavsiya — tekshirish kerak" deb ko'rsatadi.
 
 ## Tuzilma
 
@@ -211,9 +247,24 @@ backend/app/nlp/tokenize.py           tokenizator va iboralarga ajratish
 backend/app/nlp/lemmatize.py          korpusga tayangan qo'shimcha ajratgich
 backend/app/nlp/stopwords.py          yordamchi so'zlar ro'yxati (tekshirilmagan)
 backend/app/nlp/candidates.py         n-gram nomzodlar, frequency/TF-IDF/C-value
+backend/app/annotation/workspace.py   web annotatsiya va baholash ish joyi (fayllarga yozish)
+backend/app/annotation/agreement.py   annotatorlar kelishuvi (span F1), oltin standartga o'tkazish
+backend/app/annotation/silver.py      AI annotatsiyasini ro'yxatlardan yaratish
+backend/app/annotation/dictionary.py  lug'atni train terminlari bilan to'ldirish
+backend/app/models/crf.py             CRF termin aniqlagich (BIO): xususiyatlar, o'qitish, saqlash, CLI
+backend/app/nlp/clean.py              matnni tozalash, rasmiy apostroflar, gaplarga ajratish
+backend/app/dataset/bio.py            BIO dataset: eksport, tekshiruv, 100 gaplik to'plam
+backend/app/services/term_normalizer.py meʼyorlashtirish: lug'at + morfologiya + izofa
+backend/app/evaluation/normalization.py meʼyorlashtirish aniqligi
+backend/app/evaluation/report.py      tajribalar jadvali (docs/experiments-table.md)
+streamlit_app.py                      Streamlit interfeysi
+backend/app/models/experiment.py      usullarni solishtirish, bootstrap ishonch oraliqlari
 backend/tests/                        pytest testlari
 frontend/                             React + TypeScript + Vite web interfeys
-data/terms.json                       terminlar bazasi (namuna)
+data/terms.json                       terminlar bazasi (450, needs_review); data/terms-seed.json — dastlabki 15 ta
+data/silver/                          AI annotatsiyasi ro'yxatlari va README
+data/annotations/<annotator>/         web interfeysda belgilangan ishlar (claude — AI)
+models/                               o'qitilgan CRF modellari (models/*.json — sozlamalar)
 data/sources.json                     matn manbalari va foydalanish huquqlari
 data/raw/                             asl matnlar (o'zgartirilmaydi)
 data/inline/                          belgilash uchun nusxalar ([[...]] shu yerda qo'shiladi)
@@ -223,6 +274,9 @@ data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach
 docs/project-plan.md                  bosqichlar rejasi va cheklovlar
 docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
 docs/experiment-methodology.md        baholash metodikasi
+docs/results.md                       dastlabki natijalar (kumush maʼlumot)
+docs/dissertation/                    dissertatsiya uchun ilmiy hujjat (6 bob)
+data/bio/                             100 gaplik BIO dataset va tekshiruv qaydlari
 docs/examples/                        format namunalari (dataset emas)
 reports/                              ishga tushirish natijalari (nomzodlar reytingi)
 ```

@@ -1,0 +1,19 @@
+# 100 gaplik BIO datasetini qo'lda tekshirish (Claude, 2026-10-31).
+# Har bir gap alohida ko'rib chiqildi; avtomatik belgilarga kiritilgan tuzatishlar shu yerda.
+#   NNN + matndagi ko'rinish | lug'at shakli   — qo'shish (shu joyni qoplagan eski belgilar o'rniga)
+#   NNN - matndagi ko'rinish                   — olib tashlash
+# Qolgan 86 ta gapning belgilari tekshirildi va o'zgarishsiz qabul qilindi.
+015 + morfologik qurilishi | morfologik qurilish
+024 + soʻzlar turkumi | soʻz turkumi
+031 + soʻzlar turkumi | soʻz turkumi
+032 + tovush qurilishining | tovush qurilishi
+034 + tovush qurilishining | tovush qurilishi
+051 + oʻz | oʻz qatlam
+060 + umumiy S | umumiy semasiologiya
+061 + asosiy soʻz | bosh soʻz
+077 + ayiruv | ayiruv yuklamasi
+078 + asos | asos
+079 + bogʻlangan | bogʻlangan qoʻshma gap
+089 + Gapda | gap
+093 - qoʻshimcha
+097 + gapda | gap

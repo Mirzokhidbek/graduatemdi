@@ -1,0 +1,15 @@
+# Frazeologiya
+frazeologik tarkib
+kategorial belgi
+idioma-frazeologizm = idiomafrazeologizm
+frazeologik birikma
+barqaror jumla
+maqol
+matal
+omonimiya
+sinonimiya
+antonimiya
+polisemiya
+variantdorlik
+lugʻat
+!~ (yun. phrasis — ifoda, ibora va ...logiya)
