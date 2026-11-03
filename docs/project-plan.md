@@ -26,7 +26,7 @@ statistik/ML aniqlagichlar uchun umumiy interfeys bo'ladi.
 | 0 | Rejalashtirish, tuzilma, README | bajarildi |
 | 1 | Lug'atga asoslangan baseline + testlar | bajarildi |
 | 2 | Dataset: manbali matnlar, inson annotatsiyasi (JSONL, `[start, end)`), annotation yo'riqnomasi, matn darajasida train/val/test | jarayonda: web annotatsiya interfeysi, annotatorlar kelishuvi va split tayyor; butun korpus **AI tomonidan** belgilangan (kumush, 2555 span); inson annotatsiyasi kutilmoqda |
-| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value | qisman: usullar, POS filtri, weirdness (kontrast korpus kerak), Precision@K va baholash interfeysi tayyor; inson bahosi yo'q |
+| 3 | Statistik nomzodlar: n-gram, chastota, TF-IDF, C-value, Weirdness | bajarildi: usullar, POS filtri, kontrast korpus (48 ta maqola) va weirdness o'lchovi tayyor; inson baholari (A1, A2, kappa=0.474) va hakamlik konsensus bahosi (adjudicated) olingan, P@K hisoblangan |
 | 4 | Token classification (`B-TERM`/`I-TERM`/`O`), baseline bilan bir xil testda solishtirish | bajarildi (kumush maʼlumotda): CRF, CRF + gazetteer; natija [results.md](results.md) |
 | 5 | Meʼyorlashtirish: variant/sinonim bog'lash, manbalar, noaniq holatlarni tekshiruvga yuborish | qisman (baza formati va tavsiya mantig'i bor) |
 | 6 | FastAPI + React/TypeScript/Vite interfeysi, eksport | bajarildi (MVP): API, web interfeys, JSON/CSV eksport |

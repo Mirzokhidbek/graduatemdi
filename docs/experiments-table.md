@@ -51,3 +51,19 @@ Maʼlumot: train 221 / validation 54 / test 35 paragraf; termin spanlari: train 
 | Lug'at + morfologik qoidalar | 0.921 (350/380) | 0.908 (355/391) |
 
 Morfologik qoidalardagi `-ka` fonotaktika qoidasi va `-im`/`-ing` (I/II shaxs birlik egaligi) qoidasi test xatolari tahlilidan keyin qo'shilgan (test bo'yicha sozlangan). Undan oldin: test 0.861, test (claude2) 0.849; validation ikkala qoidada ham o'zgarmagan (0.936).
+
+## 6. Statistik termin nomzodlari — hakamlik (Adjudicated) konsensus bahosi
+
+119 ta nomzod bo'yicha inson annotatorlar (A1, A2) va hakamlik tahlili asosida baholangan (`data/judgments/candidates-adjudicated.csv`):
+
+| Usul | P@10 (qatʼiy / yumshoq) | P@20 (qatʼiy / yumshoq) | P@50 (qatʼiy / yumshoq) | P@100 (qatʼiy / yumshoq) |
+|---|---|---|---|---|
+| Frequency | 0.400 / 0.800 | 0.350 / 0.650 | 0.340 / 0.500 | 0.340 / 0.430 |
+| TF-IDF | 0.400 / 0.900 | 0.550 / 0.800 | 0.420 / 0.580 | 0.400 / 0.500 |
+| C-value | 0.400 / 0.800 | 0.350 / 0.650 | 0.400 / 0.560 | 0.370 / 0.460 |
+| Frequency + POS filtri | 0.500 / 0.900 | 0.400 / 0.750 | 0.400 / 0.580 | ≥0.380 / ≥0.470 |
+| TF-IDF + POS filtri | 0.500 / 1.000 | 0.650 / 0.900 | 0.460 / 0.620 | ≥0.430 / ≥0.530 |
+| C-value + POS filtri | 0.400 / 0.800 | 0.400 / 0.700 | 0.420 / 0.580 | ≥0.390 / ≥0.480 |
+| **Weirdness (kontrast korpus)** | 0.800 / 0.900 | 0.800 / 0.850 | ≥0.580 / ≥0.600 | ≥0.320 / ≥0.340 |
+| **Weirdness + POS filtri** | **0.900 / 1.000** | **0.900 / 0.950** | **≥0.600 / ≥0.620** | ≥0.320 / ≥0.340 |
+
