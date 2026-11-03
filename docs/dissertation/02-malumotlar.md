@@ -33,6 +33,15 @@ Maqolalar quyidagi bo'limlarni qamraydi:
 
 Janr bitta — ensiklopedik matn. Bu cheklov 5-bobda muhokama qilinadi.
 
+### 2.1.1. Kontrast korpus (sohaviy bo'lmagan matnlar)
+
+Statistik termin nomzodlarini filtrlash va weirdness (g'ayrioddiylik) o'lchovini hisoblash
+uchun Oʻzbekcha Vikipediyadan tilshunoslikka oid bo'lmagan 48 ta maqola yig'ildi
+(`data/contrast/raw/`, manbalar: `data/contrast/sources.json`). Ular turli sohalarni
+qamraydi: tabiiy fanlar (Fizika, Matematika), tibbiyot (Oʻzbekistonda tibbiyot tarixi),
+din (Islom), sanoat va qishloq xoʻjaligi (Neft, Paxta, Bugʻdoy, Oltin), biologiya
+(Burgut, Uzum, Olma) va sport (Olimpiya oʻyinlari). Barcha matnlar litsenziyasi CC BY-SA 4.0.
+
 ## 2.2. Annotatsiya yo'riqnomasi
 
 Annotatsiya qoidalari `docs/data-annotation-guide.md` da berilgan. Asosiy qoidalar:

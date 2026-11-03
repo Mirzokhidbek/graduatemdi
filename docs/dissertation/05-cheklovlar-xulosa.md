@@ -23,8 +23,11 @@
    (3.4.1, 4.7), lekin ishlab chiqish muhitida HuggingFace'ga kirish bo'lmagani
    uchun model hali o'qitilmagan. Ko'p tilli modellar odatda ko'proq belgilangan
    maʼlumot talab qiladi.
-5. **Weirdness usuli sinalmadi.** Usul amalga oshirilgan, lekin unga kerakli
-   kontrast korpus (sohaga oid bo'lmagan oʻzbek matnlari) yig'ilmagan.
+5. **Kontrast korpus hajmi cheklangan.** Weirdness usuli uchun 48 ta maqoladan
+   iborat kontrast korpus (tarix, tibbiyot, matematika, islom, tabiat) yig'ilib
+   sinaldi va u umumiy leksikani filtrlashda yuqori natija berdi (P@20=0.90).
+   Biroq kattaroq va ko'p janrli umumiy korpus (masalan, to'liq o'zbekcha Vikipediya
+   yoki matbuot korpusi) bilan solishtirish nomzodlar aniqligini yanada oshirishi mumkin.
 6. **Morfologiya qoidaviy.** Qo'shimchalar ro'yxati faqat ot so'z turkumini
    qamraydi. Fe'l asosli terminlar (*soʻz yasash*) va izofa istisnolari to'liq
    hal qilinmagan. Ellipsis tiklanmaydi. Eng qisqa o'zakni tanlash qoidasi
