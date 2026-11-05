@@ -23,7 +23,23 @@
    tiklash, izofani saqlash va fonotaktik cheklov birgalikda lug'at shaklini
    91–94 % aniqlikda topadi (test natijasi test xatolari bo'yicha sozlangan,
    sozlashdan oldin 0.85–0.86). Faqat lug'at 63–71 %, korpus lemmatizatori 74–81 % beradi.
-6. **Takrorlanuvchanlik.** Barcha natijalar repozitoriydagi buyruqlar bilan qayta
+6. **Lingvistik va gibrid ATE** (2.1). Leksik-grammatik qolip yangi terminlarning
+   68.5 % ini topadi. Uning Weirdness bilan gibridi sof qolipdan statistik ishonchli
+   yaxshiroq (F1 0.459 va 0.288). Kontrast korpus bilan Weirdness + qolip nomzodlar
+   reytingida P@20 = 0.90 beradi. NC-value bu korpusda C-value'ni yaxshilamadi.
+7. **Tezaurus** (2.3). 662 tushuncha, 268 tur–jins munosabati (bosh so'z, taʼrif,
+   qoliplar), 226 assotsiativ juft. Format SKOS, interfeysda daraxt ko'rinishi bor.
+8. **Variantdorlik** (3.1). Imlo va morfologik variantlarni guruhlash B-cubed
+   F1 = 0.97 (test). Omonimiya klassifikatori aniqlikni lug'at usulidagi 0.58 dan
+   0.84 ga oshiradi. Korpusdan 46 ta sinonim/dublet va 6 ta imlo xatosi juftlari
+   ekspert tekshiruviga ajratildi.
+9. **Meʼyor tekshiruvi** (3.2). 13 ta qoida: ISO 704 tamoyillari, imlo qoidalari,
+   lug'at shakli. Sintetik xatolarning barchasi aniqlanadi, toza terminlarda yolg'on
+   signal yo'q.
+10. **Ko'p tilli moslashtirish** (3.3). Kognat modeli xalqaro terminlarda
+    Acc@1 0.97–0.99, oʻzbekcha terminlarda 0.02. Bu terminlar uchun semantik model
+    kerak, uning tajribasi Colab'da tayyor.
+11. **Takrorlanuvchanlik.** Barcha natijalar repozitoriydagi buyruqlar bilan qayta
    hosil qilinadi. CRF deterministik: qayta o'qitilganda natija o'zgarmaydi.
 
 ## Cheklovlar va natijalarning haqqoniyligiga xavflar
@@ -67,6 +83,16 @@
      tasdiqlanishi kerak.
 
 ## Keyingi ishlar
+
+**Ekspert baholari kutilayotgan fayllar** (natijalar shu baholar bilan yakunlanadi):
+
+| Fayl | Nima baholanadi | Bo'lim |
+|---|---|---|
+| `data/judgments/candidates-A1.csv`, `-A2.csv` | 100 ta yangi nomzod (NC-value, qolip reytinglari) | 2.1 |
+| `data/judgments/thesaurus-review.csv` | 79 ta tur–jins munosabati | 2.3 |
+| `data/judgments/synonyms-review.csv` | 46 ta sinonim/dublet jufti | 3.1 |
+| `data/judgments/term-check-review.csv` | 100 ta termin, meʼyor tekshiruvi | 3.2 |
+| `data/multilingual/equivalents-silver.csv` | 121 ta uz–ru–en uchligi | 3.3 |
 
 1. **Inson annotatsiyasi.**
    - Ikki annotator belgilaydi; test to'plami takliflarsiz.

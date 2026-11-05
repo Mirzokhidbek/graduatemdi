@@ -8,13 +8,13 @@ tartibi ko'rsatilgan.
 
 Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 
-## 0. Hozirgi holat (2026-11-05)
+## 0. Hozirgi holat (2026-11-05, A–C va E bosqichlaridan keyin)
 
 | Bo'lim | Holat | Bor narsa |
 |---|---|---|
-| 1.1 Lingvistik asoslar | ❌ | — |
-| 1.2 NLP evolyutsiyasi | ❌ | — |
-| 1.3 O'zbek terminologiyasi, ehtiyoj | 🟡 | `01-kirish.md` (dolzarblik) |
+| 1.1 Lingvistik asoslar | 🟡 | qoralama (AI) — iqtiboslar tekshirilishi kerak |
+| 1.2 NLP evolyutsiyasi | 🟡 | qoralama (AI) — iqtiboslar tekshirilishi kerak |
+| 1.3 O'zbek terminologiyasi, ehtiyoj | 🟡 | qoralama (AI) — meʼyoriy hujjatlar tekshirilishi kerak |
 | 2.1 Lingvistik qolip modellari | ✅ | `app/nlp/patterns.py`, gibrid tajriba (`reports/experiment-patterns.json`) |
 | 2.1 Statistik modellar | ✅ | frequency, TF-IDF, C-value, NC-value, Weirdness |
 | 2.2 ML / DL | 🟡 | CRF, CRF + gazetteer; XLM-R kodi bor, o'qitilmagan |
@@ -24,6 +24,14 @@ Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 | 3.3 Ko'p tilli moslashtirish | ✅ | `app/multilingual/`: kognat modeli, etimonlar, meʼyoriy muqobil; LaBSE va Vikipediya — Colab |
 
 ---
+
+**Qolgan ishlar (inson talab qiladi):**
+
+1. D bosqich — inson oltin standarti va ekspert baholari: `docs/dissertation/umumiy-xulosa.md`
+   dagi "Ekspert baholari kutilayotgan fayllar" jadvali.
+2. Colab: XLM-R (`notebooks/xlmr_colab.ipynb`), LaBSE va Vikipediya ekvivalentlari
+   (`notebooks/multilingual_colab.ipynb`).
+3. I bob iqtiboslari va † belgili manbalarni asl nusxa bilan tekshirish.
 
 ## A bosqich. Dissertatsiya tuzilmasini rejaga moslash
 
