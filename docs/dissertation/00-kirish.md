@@ -1,6 +1,6 @@
-# 1-bob. Kirish
+# Kirish
 
-## 1.1. Mavzuning dolzarbligi
+## Mavzuning dolzarbligi
 
 Terminologiya fan tilining tayanchi hisoblanadi. Oʻzbek tilida tilshunoslik
 terminlari bir necha yozuv islohotlari va turli manbalar taʼsirida shakllangan.
@@ -21,7 +21,7 @@ uchun ishlab chiqilgan, so'zni o'zgarmas birlik deb oluvchi usullar oʻzbek tili
 bevosita mos kelmaydi. Oʻzbek tili uchun ochiq, belgilangan termin korpusi va
 tekshirilgan POS-tegger ham mavjud emas.
 
-## 1.2. Vazifaning qo'yilishi
+## Vazifaning qo'yilishi
 
 **Kiruvchi maʼlumot:** oʻzbek (lotin yozuvi) tilidagi ilmiy yoki taʼlimiy matn.
 
@@ -43,7 +43,7 @@ ifodalovchi so'z yoki so'z birikmasi tushuniladi. U matnda aynan shu maxsus maʼ
 qo'llangan bo'lishi kerak (annotatsiya yo'riqnomasi, 1-bo'lim). Masalan,
 *qoʻshimcha* "affiks" maʼnosida termin, "qoʻshimcha maʼlumot" birikmasida termin emas.
 
-## 1.3. Ish hajmi
+## Ish hajmi
 
 - **Soha:** ona tili va tilshunoslik (fonetika, morfologiya, sintaksis,
   leksikologiya va boshqalar).
@@ -52,7 +52,7 @@ qo'llangan bo'lishi kerak (annotatsiya yo'riqnomasi, 1-bo'lim). Masalan,
 - **Meʼyoriylik:** tizim manbasi bo'lmagan shaklni hech qachon "meʼyoriy" deb eʼlon
   qilmaydi. Lug'atda yo'q termin uchun natija faqat taklif bo'ladi.
 
-## 1.4. Ishning amaliy va ilmiy natijalari
+## Ishning amaliy va ilmiy natijalari
 
 1. **Korpus.** Oʻzbek tilshunoslik matnlari korpusi tuzildi: 41 ta maqola,
    17 777 token. Har bir matnning manbasi va litsenziyasi qayd etilgan.

@@ -1,16 +1,16 @@
-# 4-bob. Tajribalar va natijalar
+## 2.2. Mashinali o'qitish va chuqur o'qitish algoritmlari asosida terminlarni aniqlash
 
 > Barcha natijalar **AI annotatsiyasi** (kumush maʼlumot) bo'yicha. To'liq jadval
 > `docs/experiments-table.md` da, xom natijalar `reports/*.json` da.
 
-## 4.1. Tajriba sxemasi
+### 2.2.1. Tajriba sxemasi
 
-1. Train / validation / test manba darajasida ajratilgan (2.5-bo'lim).
+1. Train / validation / test manba darajasida ajratilgan (A.5-ilova).
 2. Lug'at va CRF faqat train'da quriladi (o'qitiladi).
 3. Giperparametrlar va qoidalar validation'da sozlanadi.
 4. Test har bir konfiguratsiya uchun bir marta baholanadi.
 5. Test xatolari tahlilidan keyin tizimga kiritilgan o'zgarish alohida
-   hujjatlashtiriladi va natija "test bo'yicha sozlangan" deb belgilanadi (4.4).
+   hujjatlashtiriladi va natija "test bo'yicha sozlangan" deb belgilanadi (3.1.2).
 
 Taqqoslangan usullar:
 
@@ -18,10 +18,10 @@ Taqqoslangan usullar:
 |---|---|
 | D-15 | dastlabki 15 terminli namuna lug'at |
 | D-train | train terminlari bilan to'ldirilgan lug'at (450) |
-| CRF | 3.4-bo'limdagi model, gazetteersiz |
+| CRF | 2.2.3-bo'limdagi model, gazetteersiz |
 | CRF+G | CRF + train lug'ati gazetteer xususiyati |
 
-## 4.2. Metrikalar
+### 2.2.2. Metrikalar
 
 Spanlar exact mezon bo'yicha solishtiriladi: `[start, end)` aynan teng bo'lsa
 to'g'ri. Partial mezonda kamida bitta belgi ustma-ust tushishi yetarli. Barcha
@@ -40,9 +40,75 @@ bootstrap: har bir qayta tanlanmada ikkala usulning F1 farqi hisoblanadi.
 **Meʼyorlashtirish aniqligi.** Oltin span matni uchun bashorat qilingan lug'at
 shakli oltin `term` ga (registr va apostrof farqisiz) teng bo'lgan spanlar ulushi.
 
-## 4.3. Terminlarni aniqlash natijalari
+### 2.2.3. CRF modeli
 
-**4.1-jadval.** Test (ro'yxat usulidagi belgilar, 35 paragraf, 380 span):
+**Model.** Chiziqli zanjirli shartli tasodifiy maydon (linear-chain CRF; Lafferty,
+McCallum, Pereira, 2001). Tokenlar ketma-ketligi x = (x₁, …, xₙ) berilganda teglar
+ketma-ketligi y = (y₁, …, yₙ), yᵢ ∈ {O, B-TERM, I-TERM} ning shartli ehtimoli:
+
+```text
+p(y | x) = (1 / Z(x)) · exp( Σᵢ Σₖ λₖ fₖ(yᵢ₋₁, yᵢ, x, i) ),
+Z(x)     = Σ_{y'} exp( Σᵢ Σₖ λₖ fₖ(y'ᵢ₋₁, y'ᵢ, x, i) )
+```
+
+- fₖ — xususiyat funksiyalari: holat xususiyatlari "token xususiyati × teg" va
+  o'tish xususiyatlari "teg × teg";
+- λₖ — ularning og'irliklari.
+
+**O'qitish.** Elastic net (L1 + L2) regulyarizatsiyali shartli log-ehtimollikni
+maksimallashtirish, L-BFGS (OWL-QN) usuli bilan, CRFsuite kutubxonasida (Okazaki, 2007):
+
+```text
+L(λ) = Σ_(x,y) log p(y | x) − c₁ ‖λ‖₁ − c₂ ‖λ‖₂²
+```
+
+c₁ va c₂ validation to'plamida {0.01, 0.1, 0.5} × {0.01, 0.05, 0.2} to'r bo'yicha
+tanlanadi. Tanlangan qiymatlar: c₁ = 0.1, c₂ = 0.01. Iteratsiyalar soni 200.
+
+**Dekodlash.** Viterbi algoritmi. BIO dan span'ga o'tishda yetim `I-TERM`
+(oldida `O` turgan) yangi span boshlaydi (yumshoq dekodlash).
+
+**Xususiyatlar** (`token_features`):
+
+| Guruh | Xususiyatlar | Asos |
+|---|---|---|
+| Leksik | so'z (kichik harf), korpus lemmatizatori bo'yicha o'zak | terminlarning o'zi takrorlanadi |
+| Morfologik | oxirgi 2, 3, 4, 5 harf; boshidagi 3 harf | termin yasovchi qo'shimchalar (*-logiya, -ika, -shunoslik, -ema, -izm*), yunon-lotin o'zaklari (*fono-, morf-*) |
+| Orfografik | registr shakli (UPPER / Title / lower), uzunlik (≤ 12), apostrof bor-yo'qligi | gap boshidagi taʼrif (*Fonema — …*) |
+| Kontekst | ±1, ±2 qo'shni so'z va ularning o'zagi; ±1 qo'shnining oxirgi 3 harfi va registri; bigramlar `w₋₁|w₀`, `w₀|w₊₁` | ko'p so'zli terminlar (*qoʻshma gap*), taʼrif konstruksiyalari |
+| Gazetteer (ixtiyoriy) | token train lug'ati moslashtirgichi topgan spanning `B/I/O` qismi; ±2 qo'shnilar uchun ham | lug'at bilimini kontekst bilan birlashtirish |
+
+O'qitilgan modellar:
+
+| Model | Holat xususiyatlari | Eng katta og'irliklar |
+|---|---|---|
+| `crf` | 6 065 | `lemma=boʻgʻin`, `lemma=oʻzak`, `lemma=fonema`, `pre3=feʼ`, `-1:suf3=hma → I-TERM` (*qoʻshma gap*) |
+| `crf-gazetteer` | 3 130 | `gaz=I-TERM → I-TERM`, `gaz=B-TERM → B-TERM` |
+
+Gazetteer belgisi qo'shilganda leksik xususiyatlar soni ikki baravar kamayadi:
+model lug'at belgisiga tayanadi. Bu 4-bobdagi "yangi terminlar" natijasini
+tushuntiradi.
+
+### 2.2.4. Transformer modeli (token classification)
+
+CRF bilan solishtirish uchun ko'p tilli transformer (XLM-RoBERTa base;
+`app/models/transformer.py`) ham tayyorlangan. Sharoit CRF bilan bir xil:
+
+- so'zlar `app.nlp.tokenize` bo'yicha, teglar `bio_labels` bo'yicha;
+- so'z subword'larga bo'linganda teg faqat **birinchi** subword'ga beriladi,
+  qolganlari yo'qotishdan chiqariladi;
+- 512 subword chegarasi uchun paragraf 150 so'zlik bo'laklarga ajratiladi;
+- o'qitish: AdamW, lr 3·10⁻⁵, batch 8, 10 epoxa, warmup 10 %, weight decay 0.01,
+  seed 13; epoxa validation exact F1 bo'yicha tanlanadi;
+- bashorat: CRF dagi kabi `spans_from_labels`, lug'at shakli lemmatizatordan.
+
+XLM-R (Conneau va boshq., 2020) BERT arxitekturasiga (Devlin va boshq., 2019)
+asoslangan. Model GPU talab qiladi va Google Colab'da ishga tushiriladi
+(`notebooks/xlmr_colab.ipynb`). Natijalari 2.2.7-bo'limda.
+
+### 2.2.5. Terminlarni aniqlash natijalari
+
+**2.2-jadval.** Test (ro'yxat usulidagi belgilar, 35 paragraf, 380 span):
 
 | Usul | P | R | F1 | F1, 95 % oraliq | Partial F1 |
 |---|---|---|---|---|---|
@@ -51,7 +117,7 @@ shakli oltin `term` ga (registr va apostrof farqisiz) teng bo'lgan spanlar ulush
 | CRF | 0.715 | 0.534 | 0.611 | [0.527, 0.690] | 0.773 |
 | **CRF+G** | **0.792** | **0.550** | **0.649** | [0.566, 0.719] | **0.780** |
 
-**4.2-jadval.** Test (uchrash-ma-uchrash qayta belgilangan, 391 span). Bu belgilar
+**2.3-jadval.** Test (uchrash-ma-uchrash qayta belgilangan, 391 span). Bu belgilar
 lug'at aniqlagichiga bog'liq emas:
 
 | Usul | P | R | F1 | F1, 95 % oraliq | D-train dan farq, 95 % |
@@ -61,7 +127,7 @@ lug'at aniqlagichiga bog'liq emas:
 | CRF | 0.715 | 0.519 | 0.601 | [0.516, 0.679] | [−0.014, +0.151] |
 | **CRF+G** | **0.792** | **0.535** | **0.638** | [0.550, 0.713] | **[+0.063, +0.145]** |
 
-**4.3-jadval.** Train'da uchramagan terminlar (test, 146 span):
+**2.4-jadval.** Train'da uchramagan terminlar (test, 146 span):
 
 | Usul | Topildi | Recall |
 |---|---|---|
@@ -89,43 +155,7 @@ lug'at aniqlagichiga bog'liq emas:
    deyarli teng, testda CRF+G yuqori. Kichik to'plamlarda tartib o'zgarishi
    bootstrap oraliqlarining kengligiga mos keladi.
 
-## 4.4. Meʼyorlashtirish natijalari
-
-**4.4-jadval.** Oltin spanlar uchun lug'at shakli aniqligi:
-
-| Usul | Validation (389) | Test (380) | Test, claude2 (391) |
-|---|---|---|---|
-| O'zgarishsiz (kichik harf) | 0.375 | 0.482 | 0.473 |
-| Korpus lemmatizatori | 0.805 | 0.753 | 0.744 |
-| Faqat lug'at | 0.625 | 0.711 | 0.696 |
-| **Lug'at + morfologiya + izofa** | **0.936** | **0.921** | **0.908** |
-
-Lug'at + morfologiya usulining birinchi versiyasi testda 0.861 natija berdi.
-Test xatolari tahlilidan keyin ikki tuzatish kiritildi:
-
-| # | Xato | Tuzatish | Validation | Test | Test, claude2 |
-|---|---|---|---|---|---|
-| — | birinchi versiya | — | 0.936 | 0.861 | 0.849 |
-| 1 | *lingvistika → lingvist* ("*-i* egalik + *-ka* kelishik") | fonotaktika: *-ka* egalikdan keyin kelmaydi | 0.936 | 0.916 | 0.903 |
-| 2 | *kesim → kes* ("*-im*" I shaxs egaligi) | I/II shaxs birlik egaligi so'zning o'zi korpusda bo'lsa ajratilmaydi (3.6, (c)) | 0.936 | 0.921 | 0.908 |
-
-Ikkala tuzatish ham validation natijasini o'zgartirmadi: u yerda bunday so'zlar
-yo'q. Tuzatishlar test xatolaridan kelib chiqqani uchun 0.921 va 0.908
-**"test bo'yicha sozlangan"** natija. Sozlashdan oldingi qiymatlar: 0.861 va 0.849.
-Ikkinchi tuzatishni tanlashda validation'dan foydalanildi: kengroq variant
-(barcha I/II shaxs qo'shimchalari, shu jumladan *-imiz* va *-m*) lemmatizatorni
-validation'da yomonlashtirdi (*tilimiz*, *slengmi* → noto'g'ri), shuning uchun
-qoida *-im* va *-ing* bilan cheklandi. Toza baho uchun yangi, tizim hali ko'rmagan
-maqolalarda bitta baholash kerak (5.3-bo'lim).
-
-Qolgan xatolar ikki turga bo'linadi:
-
-- **tiklab bo'lmaydiganlari:** ellipsis (*lugʻaviy → lugʻaviy maʼno*, 8–15 span),
-  manbadagi imlo xatolari (*Nosatandart*, *stilistik buyoq*);
-- **izofa qoidasining istisnolari:** *ozaytirma shakli* oltin belgida izofa bilan
-  berilgan, qoida esa birinchi so'zni sifat deb oladi.
-
-## 4.5. Xato tahlili (CRF, test)
+### 2.2.6. Xato tahlili (CRF, test)
 
 **Chegara xatolari.** CRF ning 56 ta chegara xatosidan 27 tasida oxiri to'g'ri,
 lekin boshidagi aniqlovchi tushib qolgan:
@@ -141,40 +171,15 @@ partial va exact F1 orasidagi 0.13–0.16 farqni tushuntiradi.
 eng qisqa o'zak tanlanadi. Natijada `lemma=kes` xususiyati modelda katta og'irlik
 olgan, meʼyorlashtiruvchi ham *kesim → kes* xatosini qilgan. *-im* va *-ing*
 (I/II shaxs birlik egaligi) ensiklopedik matnda deyarli uchramagani uchun bunday
-bo'linish endi faqat boshqa imkon bo'lmasa olinadi (3.6, (c)). Tuzatishdan keyin
+bo'linish endi faqat boshqa imkon bo'lmasa olinadi (3.1.1, (c)). Tuzatishdan keyin
 modellar qayta o'qitildi: CRF+G natijasi o'zgarmadi (0.649), gazetteersiz CRF
 testda 0.606 → 0.611, validation'da 0.534 → 0.532, yaʼni farq bootstrap
 oralig'idan ancha kichik. Train'da shu qoida bilan to'g'rilangan so'zlar:
 *kesim, boʻlim, bilim, qadim, maʼlum, uning*.
 
-## 4.6. Statistik nomzodlar
+### 2.2.7. Transformer modeli natijalari
 
-Nomzodlar 1–4 so'zli n-gramlar bo'yicha ajratildi. Reyting usullari: frequency, TF-IDF, C-value hamda 48 ta maqoladan iborat kontrast korpus asosidagi Weirdness (Ahmad va boshq., 1999). 119 ta nomzod mustaqil inson baholovchilar (A1, A2) tomonidan ko'r holda baholandi, shuningdek kelishmovchiliklar tilshunoslik tahlili orqali hakamlik (Adjudicated) konsensusiga keltirildi (`data/judgments/`).
-
-Baholovchilararo kelishuv: A1 ↔ A2 Cohen's kappa = 0.474 (o'rtacha kelishuv — umumiy tilshunoslik leksikasida farqlar bo'lgan). Hakamlik bahosi bilan A1 va A2 ning kelishuvi esa mos ravishda kappa = 0.779 va 0.804 ni tashkil etdi.
-
-**4.5-jadval.** Precision@K natijalari (hakamlik / konsensus bahosi bo'yicha, qatʼiy hisob):
-
-| Usul | P@10 | P@20 | P@50 | P@100 |
-|---|---|---|---|---|
-| frequency | 0.40 | 0.35 | 0.34 | 0.34 |
-| TF-IDF | 0.40 | 0.55 | 0.42 | 0.40 |
-| C-value | 0.40 | 0.35 | 0.40 | 0.37 |
-| frequency + POS filtri | 0.50 | 0.40 | 0.40 | ≥ 0.38 |
-| TF-IDF + POS filtri | 0.50 | 0.65 | 0.46 | ≥ 0.43 |
-| C-value + POS filtri | 0.40 | 0.40 | 0.42 | ≥ 0.39 |
-| **Weirdness** | 0.80 | 0.80 | ≥ 0.58 | ≥ 0.32 |
-| **Weirdness + POS filtri** | **0.90** | **0.90** | **≥ 0.60** | ≥ 0.32 |
-
-POS filtri fe'l va nisbiy sifat shakllarini (*yoziladi*, *grammatik*) chiqarib,
-reytingning yuqori qismini tozalaydi. Kontrast korpus yordamida hisoblangan
-**Weirdness** o'lchovi esa barcha usullardan sezilarli darajada ustun kelib,
-P@10 va P@20 da 0.90 aniqlikka erishdi (A1 bahosida hatto 1.00). Bu umumiy tilshunoslik
-so'zlari o'rniga sof terminlarni tanlashda kontrast korpusning hal qiluvchi rolini isbotlaydi.
-
-## 4.7. Transformer modeli
-
-XLM-RoBERTa base (3.4.1) Google Colab'da (T4 GPU) o'qitiladi:
+XLM-RoBERTa base (2.2.4) Google Colab'da (T4 GPU) o'qitiladi:
 `notebooks/xlmr_colab.ipynb`. Notebook to'plamlarni manifestdan tiklaydi,
 modelni o'qitadi va lug'at, CRF, CRF+G bilan bir xil testda solishtiradi.
 Natija `docs/experiments-table.md` ning 6-bo'limiga avtomatik qo'shiladi.
