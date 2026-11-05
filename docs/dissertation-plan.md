@@ -18,7 +18,7 @@ Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 | 2.1 Lingvistik qolip modellari | ✅ | `app/nlp/patterns.py`, gibrid tajriba (`reports/experiment-patterns.json`) |
 | 2.1 Statistik modellar | ✅ | frequency, TF-IDF, C-value, NC-value, Weirdness |
 | 2.2 ML / DL | 🟡 | CRF, CRF + gazetteer; XLM-R kodi bor, o'qitilmagan |
-| 2.3 Ontologiya va tezaurus | ❌ | — |
+| 2.3 Ontologiya va tezaurus | ✅ | `app/ontology/thesaurus.py`, SKOS (`reports/thesaurus.ttl`), `#thesaurus` sahifasi; ekspert bahosi kutilmoqda |
 | 3.1 Variantdorlik | ✅ | `app/variation/`: imlo, kirill, morfologiya, imlo xatosi, sinonim/dublet, omonimiya, meʼyoriy shakl tanlash |
 | 3.2 Meʼyorga muvofiqlikni tekshirish | ✅ | `app/norms/`, `POST /api/check-terms`, `#check` sahifasi; ekspert bahosi kutilmoqda |
 | 3.3 Ko'p tilli moslashtirish | ❌ | — |

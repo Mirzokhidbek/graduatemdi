@@ -29,3 +29,16 @@ describe("parseTermLines", () => {
     expect(parseTermLines("a\nb\nc", 2)).toEqual(["a", "b"]);
   });
 });
+
+describe("thesaurusRoots", () => {
+  it("faqat ota-onasi yo'q va bolasi bor tushunchalarni qaytaradi", async () => {
+    const { thesaurusRoots } = await import("./api");
+    const concepts = [
+      { label: "tovush", broader: [], narrower: ["unli tovush"] },
+      { label: "unli tovush", broader: ["tovush"], narrower: [] },
+      { label: "fonema", broader: [], narrower: [] },
+      { label: "gap", broader: [], narrower: ["sodda gap"] },
+    ];
+    expect(thesaurusRoots(concepts)).toEqual(["gap", "tovush"]);
+  });
+});

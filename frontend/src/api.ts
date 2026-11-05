@@ -5,6 +5,7 @@ import type {
   CheckTermsResponse,
   DocumentSummary,
   Health,
+  Thesaurus,
   JudgmentRow,
   SavedRecord,
 } from "./types";
@@ -76,6 +77,18 @@ export function parseTermLines(text: string, limit = 200): string[] {
     if (terms.length >= limit) break;
   }
   return terms;
+}
+
+export function thesaurus(): Promise<Thesaurus> {
+  return request<Thesaurus>("/api/thesaurus");
+}
+
+/** Tezaurus daraxtining ildizlari: kichik terminlari bor, o'zi hech kimga tegishli bo'lmagan tushunchalar. */
+export function thesaurusRoots(concepts: { label: string; broader: string[]; narrower: string[] }[]): string[] {
+  return concepts
+    .filter((c) => c.broader.length === 0 && c.narrower.length > 0)
+    .map((c) => c.label)
+    .sort((a, b) => a.localeCompare(b, "uz"));
 }
 
 export function health(): Promise<Health> {

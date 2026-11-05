@@ -1,0 +1,2756 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://uzterm.local/concept/scheme> a skos:ConceptScheme ; skos:prefLabel "Oʻzbek tilshunoslik terminlari"@uz .
+
+<https://uzterm.local/concept/abbreviatsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "abbreviatsiya"@uz .
+<https://uzterm.local/concept/abzats> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "abzats"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/adabiy_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "adabiy til"@uz .
+<https://uzterm.local/concept/affiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "affiks"@uz ;
+    skos:altLabel "qoʻshimcha"@uz ;
+    skos:narrower <https://uzterm.local/concept/sifat_yasovchi_affiks> ;
+    skos:narrower <https://uzterm.local/concept/soz_yasovchi_affiks> ;
+    skos:narrower <https://uzterm.local/concept/yarim_affiks> .
+<https://uzterm.local/concept/affiks_antonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "affiks-antonim"@uz ;
+    skos:broader <https://uzterm.local/concept/antonim> .
+<https://uzterm.local/concept/affiksal_morfema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "affiksal morfema"@uz ;
+    skos:broader <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/affiksatsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "affiksatsiya"@uz .
+<https://uzterm.local/concept/affrikata> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "affrikata"@uz .
+<https://uzterm.local/concept/afrikashunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "afrikashunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/agglyutinativ_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "agglyutinativ til"@uz .
+<https://uzterm.local/concept/aktual_bolinish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "aktual boʻlinish"@uz .
+<https://uzterm.local/concept/allofon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "allofon"@uz ;
+    skos:narrower <https://uzterm.local/concept/tonik_allofon> .
+<https://uzterm.local/concept/allofoniya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "allofoniya"@uz .
+<https://uzterm.local/concept/alloton> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "alloton"@uz .
+<https://uzterm.local/concept/almashinuv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "almashinuv"@uz .
+<https://uzterm.local/concept/amaliy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "amaliy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/amaliy_lugatchilik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "amaliy lugʻatchilik"@uz ;
+    skos:broader <https://uzterm.local/concept/lugatchilik> ;
+    skos:narrower <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/amaliy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "amaliy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/amorf_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "amorf til"@uz .
+<https://uzterm.local/concept/analitik_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "analitik shakl"@uz .
+<https://uzterm.local/concept/analitik_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "analitik til"@uz .
+<https://uzterm.local/concept/analitik_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "analitik usul"@uz .
+<https://uzterm.local/concept/aniqlov_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "aniqlov bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/aniqlov_yuklamasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "aniqlov yuklamasi"@uz ;
+    skos:broader <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/aniqlovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "aniqlovchi"@uz ;
+    skos:narrower <https://uzterm.local/concept/qaratqichli_aniqlovchi> .
+<https://uzterm.local/concept/aniqlovchili_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "aniqlovchili soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/antonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "antonim"@uz ;
+    skos:narrower <https://uzterm.local/concept/affiks_antonim> ;
+    skos:narrower <https://uzterm.local/concept/leksik_antonim> ;
+    skos:narrower <https://uzterm.local/concept/lugaviy_antonim> ;
+    skos:narrower <https://uzterm.local/concept/sintaktik_antonim> .
+<https://uzterm.local/concept/antonimik_juft> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "antonimik juft"@uz .
+<https://uzterm.local/concept/antonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "antonimiya"@uz .
+<https://uzterm.local/concept/antonimlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "antonimlik"@uz .
+<https://uzterm.local/concept/antroponimika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "antroponimika"@uz .
+<https://uzterm.local/concept/arabistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "arabistika"@uz .
+<https://uzterm.local/concept/arabshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "arabshunoslik"@uz .
+<https://uzterm.local/concept/argo> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "argo"@uz ;
+    skos:broader <https://uzterm.local/concept/sozlashuv_uslubi> .
+<https://uzterm.local/concept/artikl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "artikl"@uz .
+<https://uzterm.local/concept/artikulyatsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "artikulyatsiya"@uz .
+<https://uzterm.local/concept/arxaizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "arxaizm"@uz .
+<https://uzterm.local/concept/arxifonema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "arxifonema"@uz .
+<https://uzterm.local/concept/asos> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "asos"@uz ;
+    skos:narrower <https://uzterm.local/concept/predikativ_asos> ;
+    skos:narrower <https://uzterm.local/concept/soz_yasalishi_asosi> .
+<https://uzterm.local/concept/atama> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "atama"@uz .
+<https://uzterm.local/concept/atoqli_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "atoqli ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/ayiruvchi_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ayiruvchi bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/barqaror_jumla> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "barqaror jumla"@uz .
+<https://uzterm.local/concept/baynalmilal_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "baynalmilal soʻz"@uz .
+<https://uzterm.local/concept/belgi_nazariyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "belgi nazariyasi"@uz .
+<https://uzterm.local/concept/belgilash_jamlash_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "belgilash-jamlash olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/bir_tilli_leksikografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bir tilli leksikografiya"@uz ;
+    skos:broader <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/birgalik_nisbati> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "birgalik nisbati"@uz ;
+    skos:broader <https://uzterm.local/concept/nisbat> .
+<https://uzterm.local/concept/biriktiruv_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "biriktiruv bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/biriktiruvchi_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "biriktiruvchi bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/birinchi_shaxs> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "birinchi shaxs"@uz .
+<https://uzterm.local/concept/birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "birlik"@uz ;
+    skos:narrower <https://uzterm.local/concept/abzats> ;
+    skos:narrower <https://uzterm.local/concept/frazeologik_birlik> ;
+    skos:narrower <https://uzterm.local/concept/grammatik_birlik> ;
+    skos:narrower <https://uzterm.local/concept/lingvistik_birlik> ;
+    skos:narrower <https://uzterm.local/concept/lisoniy_birlik> ;
+    skos:narrower <https://uzterm.local/concept/lugaviy_birlik> ;
+    skos:narrower <https://uzterm.local/concept/matn> ;
+    skos:narrower <https://uzterm.local/concept/period> ;
+    skos:narrower <https://uzterm.local/concept/predikativ_birlik> ;
+    skos:narrower <https://uzterm.local/concept/qoshma_gap> ;
+    skos:narrower <https://uzterm.local/concept/segment_birlik> ;
+    skos:narrower <https://uzterm.local/concept/sintaktik_birlik> .
+<https://uzterm.local/concept/bitishuv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bitishuv"@uz .
+<https://uzterm.local/concept/bitishuvli_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bitishuvli soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/boglama> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bogʻlama"@uz .
+<https://uzterm.local/concept/boglangan_qoshma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bogʻlangan qoʻshma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshma_gap> .
+<https://uzterm.local/concept/bogliq_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bogʻliq urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bogʻlovchi"@uz ;
+    skos:narrower <https://uzterm.local/concept/aniqlov_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/ayiruvchi_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/biriktiruv_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/biriktiruvchi_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/chogishtiruv_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/ergashtiruvchi_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/inkor_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/maqsad_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/teng_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/tosiqsizlik_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/yakka_boglovchi> ;
+    skos:narrower <https://uzterm.local/concept/zidlovchi_boglovchi> .
+<https://uzterm.local/concept/boglovchisiz_qoshma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bogʻlovchisiz qoʻshma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshma_gap> .
+<https://uzterm.local/concept/bosh_bolak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh boʻlak"@uz ;
+    skos:narrower <https://uzterm.local/concept/ega> ;
+    skos:narrower <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/bosh_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/bosh_harf> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh harf"@uz ;
+    skos:broader <https://uzterm.local/concept/harf> .
+<https://uzterm.local/concept/bosh_kelishik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh kelishik"@uz ;
+    skos:broader <https://uzterm.local/concept/kelishik> .
+<https://uzterm.local/concept/bosh_nisbat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh nisbat"@uz ;
+    skos:broader <https://uzterm.local/concept/nisbat> .
+<https://uzterm.local/concept/bosh_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh soʻz"@uz .
+<https://uzterm.local/concept/bosh_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "bosh urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/boshqaruv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boshqaruv"@uz .
+<https://uzterm.local/concept/boshqaruvli_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boshqaruvli soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/bogin> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻgʻin"@uz .
+<https://uzterm.local/concept/bogin_kochirish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻgʻin koʻchirish"@uz .
+<https://uzterm.local/concept/bogiz_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻgʻiz undoshi"@uz .
+<https://uzterm.local/concept/bolishli_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishli feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/bolishli_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishli shakl"@uz .
+<https://uzterm.local/concept/bolishli_bolishsizlik_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishli-boʻlishsizlik kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/bolishlilik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishlilik"@uz .
+<https://uzterm.local/concept/bolishsiz_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishsiz feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/bolishsiz_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishsiz shakl"@uz .
+<https://uzterm.local/concept/bolishsizlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishsizlik"@uz .
+<https://uzterm.local/concept/bolishsizlik_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishsizlik olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/bolishsizlik_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "boʻlishsizlik shakli"@uz .
+<https://uzterm.local/concept/burun_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "burun undoshi"@uz .
+<https://uzterm.local/concept/burun_unlisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "burun unlisi"@uz .
+<https://uzterm.local/concept/buyruq_feli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "buyruq feʼli"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/buyruq_mayli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "buyruq mayli"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/buyruq_istak_mayli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "buyruq-istak mayli"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/chegara_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chegara shakli"@uz .
+<https://uzterm.local/concept/chegaralov_yuklamasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chegaralov yuklamasi"@uz ;
+    skos:broader <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/chiqish_kelishigi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chiqish kelishigi"@uz .
+<https://uzterm.local/concept/chiziqcha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chiziqcha"@uz .
+<https://uzterm.local/concept/chogishtiruv_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chogʻishtiruv bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/choziq_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "choʻziq unli"@uz .
+<https://uzterm.local/concept/chuqur_til_orqa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "chuqur til orqa"@uz ;
+    skos:broader <https://uzterm.local/concept/til_orqa> .
+<https://uzterm.local/concept/daraja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "daraja"@uz ;
+    skos:narrower <https://uzterm.local/concept/oddiy_daraja> ;
+    skos:narrower <https://uzterm.local/concept/orttirma_daraja> ;
+    skos:narrower <https://uzterm.local/concept/ozaytirma_daraja> ;
+    skos:narrower <https://uzterm.local/concept/qiyosiy_daraja> .
+<https://uzterm.local/concept/daraja_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "daraja kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/daraja_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "daraja shakli"@uz .
+<https://uzterm.local/concept/daraja_miqdor_ravishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "daraja-miqdor ravishi"@uz ;
+    skos:broader <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/darak_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "darak gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/denotativ_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "denotativ maʼno"@uz .
+<https://uzterm.local/concept/diakritika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "diakritika"@uz .
+<https://uzterm.local/concept/dialektizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "dialektizm"@uz .
+<https://uzterm.local/concept/dialektologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "dialektologiya"@uz .
+<https://uzterm.local/concept/diaxroniya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "diaxroniya"@uz .
+<https://uzterm.local/concept/ega> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ega"@uz ;
+    skos:broader <https://uzterm.local/concept/bosh_bolak> .
+<https://uzterm.local/concept/egalik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "egalik"@uz .
+<https://uzterm.local/concept/egalik_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "egalik kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/egalik_korsatkichi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "egalik koʻrsatkichi"@uz .
+<https://uzterm.local/concept/egalik_qoshimchasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "egalik qoʻshimchasi"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/eksperimental_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "eksperimental fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/emotsional_boyoq> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "emotsional boʻyoq"@uz .
+<https://uzterm.local/concept/ergash_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ergash gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/ergash_gapli_qoshma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ergash gapli qoʻshma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshma_gap> .
+<https://uzterm.local/concept/ergashgan_qoshma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ergashgan qoʻshma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshma_gap> .
+<https://uzterm.local/concept/ergashtiruvchi_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ergashtiruvchi bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/erkalash_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "erkalash shakli"@uz .
+<https://uzterm.local/concept/erkin_ozgaruvchanlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "erkin oʻzgaruvchanlik"@uz .
+<https://uzterm.local/concept/eski_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "eski qatlam"@uz .
+<https://uzterm.local/concept/etimologik_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "etimologik lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/etimologik_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "etimologik maʼno"@uz .
+<https://uzterm.local/concept/etimologik_tahlil> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "etimologik tahlil"@uz .
+<https://uzterm.local/concept/etimologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "etimologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> ;
+    skos:narrower <https://uzterm.local/concept/ilmiy_etimologiya> ;
+    skos:narrower <https://uzterm.local/concept/soxta_etimologiya> ;
+    skos:narrower <https://uzterm.local/concept/xalq_etimologiyasi> .
+<https://uzterm.local/concept/etnolingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "etnolingvistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/faol_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "faol grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/farqlanish_elementi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "farqlanish elementi"@uz .
+<https://uzterm.local/concept/farqlanmovchi_element> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "farqlanmovchi element"@uz .
+<https://uzterm.local/concept/farqlovchi_belgi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "farqlovchi belgi"@uz .
+<https://uzterm.local/concept/fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "feʼl"@uz ;
+    skos:narrower <https://uzterm.local/concept/bolishli_fel> ;
+    skos:narrower <https://uzterm.local/concept/bolishsiz_fel> ;
+    skos:narrower <https://uzterm.local/concept/buyruq_feli> ;
+    skos:narrower <https://uzterm.local/concept/komakchi_fel> ;
+    skos:narrower <https://uzterm.local/concept/mustaqil_fel> ;
+    skos:narrower <https://uzterm.local/concept/qoshma_fel> ;
+    skos:narrower <https://uzterm.local/concept/toliqsiz_fel> ;
+    skos:narrower <https://uzterm.local/concept/yasama_fel> ;
+    skos:narrower <https://uzterm.local/concept/yordamchi_fel> .
+<https://uzterm.local/concept/fel_kesim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "feʼl kesim"@uz ;
+    skos:broader <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/fel_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "feʼl koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/fel_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "feʼl shakli"@uz .
+<https://uzterm.local/concept/fel_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "feʼl soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/finugorshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "finugorshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/fonema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonema"@uz ;
+    skos:narrower <https://uzterm.local/concept/unli_fonema> .
+<https://uzterm.local/concept/fonetik_hodisa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik hodisa"@uz .
+<https://uzterm.local/concept/fonetik_qonuniyat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik qonuniyat"@uz .
+<https://uzterm.local/concept/fonetik_tizim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik tizim"@uz .
+<https://uzterm.local/concept/fonetik_transkripsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik transkripsiya"@uz ;
+    skos:broader <https://uzterm.local/concept/transkripsiya> .
+<https://uzterm.local/concept/fonetik_tuzilish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik tuzilish"@uz .
+<https://uzterm.local/concept/fonetik_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik usul"@uz .
+<https://uzterm.local/concept/fonetik_yozuv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetik yozuv"@uz .
+<https://uzterm.local/concept/fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/umumiy_fonologiya> ;
+    skos:narrower <https://uzterm.local/concept/eksperimental_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/funksional_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/qiyosiy_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/tarixiy_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/tasviriy_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/umumiy_fonetika> ;
+    skos:narrower <https://uzterm.local/concept/xususiy_fonetika> .
+<https://uzterm.local/concept/fonologik_qoida> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonologik qoida"@uz .
+<https://uzterm.local/concept/fonologik_tizim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonologik tizim"@uz .
+<https://uzterm.local/concept/fonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fonologiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/tarixiy_fonologiya> ;
+    skos:narrower <https://uzterm.local/concept/tasviriy_fonologiya> ;
+    skos:narrower <https://uzterm.local/concept/umumiy_fonologiya> ;
+    skos:narrower <https://uzterm.local/concept/xususiy_fonologiya> .
+<https://uzterm.local/concept/fraza_urgusi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "fraza urgʻusi"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/frazeologik_birikma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologik birikma"@uz .
+<https://uzterm.local/concept/frazeologik_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologik birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/frazeologik_sinonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologik sinonimiya"@uz ;
+    skos:broader <https://uzterm.local/concept/sinonimiya> .
+<https://uzterm.local/concept/frazeologik_tarkib> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologik tarkib"@uz .
+<https://uzterm.local/concept/frazeologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/frazeologizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "frazeologizm"@uz ;
+    skos:narrower <https://uzterm.local/concept/idioma_frazeologizm> .
+<https://uzterm.local/concept/funksional_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/funksional_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/funksional_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/funksional_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional shakl"@uz .
+<https://uzterm.local/concept/funksional_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/funksional_uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "funksional uslub"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "gap"@uz ;
+    skos:broader <https://uzterm.local/concept/nutq_birligi> ;
+    skos:narrower <https://uzterm.local/concept/bosh_gap> ;
+    skos:narrower <https://uzterm.local/concept/darak_gap> ;
+    skos:narrower <https://uzterm.local/concept/ergash_gap> ;
+    skos:narrower <https://uzterm.local/concept/ikki_tarkibli_gap> ;
+    skos:narrower <https://uzterm.local/concept/kochirma_gap> ;
+    skos:narrower <https://uzterm.local/concept/muallif_gapi> ;
+    skos:narrower <https://uzterm.local/concept/qoshma_gap> ;
+    skos:narrower <https://uzterm.local/concept/sodda_gap> ;
+    skos:narrower <https://uzterm.local/concept/soroq_gap> ;
+    skos:narrower <https://uzterm.local/concept/undov_gap> .
+<https://uzterm.local/concept/gap_bolagi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "gap boʻlagi"@uz .
+<https://uzterm.local/concept/germanistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "germanistika"@uz .
+<https://uzterm.local/concept/germanshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "germanshunoslik"@uz .
+<https://uzterm.local/concept/glossematika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "glossematika"@uz .
+<https://uzterm.local/concept/grafika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grafika"@uz .
+<https://uzterm.local/concept/grammatik_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/grammatik_kategoriya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik kategoriya"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/leksik_grammatik_kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/mayl_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/nisbat_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/zamon_kategoriyasi> .
+<https://uzterm.local/concept/grammatik_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik maʼno"@uz .
+<https://uzterm.local/concept/grammatik_morfema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik morfema"@uz ;
+    skos:broader <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/grammatik_qoida> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik qoida"@uz .
+<https://uzterm.local/concept/grammatik_qurilish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik qurilish"@uz .
+<https://uzterm.local/concept/grammatik_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik shakl"@uz .
+<https://uzterm.local/concept/grammatik_turkum> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik turkum"@uz .
+<https://uzterm.local/concept/grammatik_tuzilish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik tuzilish"@uz .
+<https://uzterm.local/concept/grammatik_unsur> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatik unsur"@uz .
+<https://uzterm.local/concept/grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammatika"@uz ;
+    skos:narrower <https://uzterm.local/concept/amaliy_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/faol_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/funksional_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/mazmuniy_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/meyoriy_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/nazariy_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/nofaol_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/shakliy_grammatika> ;
+    skos:narrower <https://uzterm.local/concept/tavsifiy_grammatika> .
+<https://uzterm.local/concept/grammema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "grammema"@uz .
+<https://uzterm.local/concept/harakat_nomi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "harakat nomi"@uz .
+<https://uzterm.local/concept/harf> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "harf"@uz ;
+    skos:narrower <https://uzterm.local/concept/bosh_harf> ;
+    skos:narrower <https://uzterm.local/concept/kichik_harf> .
+<https://uzterm.local/concept/hindevropashunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hindevropashunoslik"@uz .
+<https://uzterm.local/concept/hokim_komponent> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hokim komponent"@uz .
+<https://uzterm.local/concept/hokim_qism> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hokim qism"@uz .
+<https://uzterm.local/concept/hol> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hol"@uz .
+<https://uzterm.local/concept/holli_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "holli soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/hozirgi_zamon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hozirgi zamon"@uz ;
+    skos:broader <https://uzterm.local/concept/zamon> .
+<https://uzterm.local/concept/hurmat_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "hurmat shakli"@uz .
+<https://uzterm.local/concept/ibora> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ibora"@uz ;
+    skos:broader <https://uzterm.local/concept/soz> .
+<https://uzterm.local/concept/ichki_lingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ichki lingvistika"@uz .
+<https://uzterm.local/concept/idioma_frazeologizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "idioma-frazeologizm"@uz ;
+    skos:broader <https://uzterm.local/concept/frazeologizm> .
+<https://uzterm.local/concept/ifoda_uslubi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ifoda uslubi"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/ijro_mayli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ijro mayli"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/ikki_tarkibli_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikki tarkibli gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/ikki_tilli_leksikografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikki tilli leksikografiya"@uz ;
+    skos:broader <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/ikki_tilli_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikki tilli lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/ikkinchi_darajali_bolak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikkinchi darajali boʻlak"@uz .
+<https://uzterm.local/concept/ikkinchi_darajali_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikkinchi darajali urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/ikkinchi_shaxs> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ikkinchi shaxs"@uz .
+<https://uzterm.local/concept/ilmiy_etimologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ilmiy etimologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/etimologiya> .
+<https://uzterm.local/concept/ilmiy_uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ilmiy uslub"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/ilmiy_texnik_leksikografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ilmiy-texnik leksikografiya"@uz ;
+    skos:broader <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/imlo> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "imlo"@uz .
+<https://uzterm.local/concept/imlo_qoidasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "imlo qoidasi"@uz .
+<https://uzterm.local/concept/infiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "infiks"@uz .
+<https://uzterm.local/concept/inkor_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "inkor bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/inkor_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "inkor shakli"@uz .
+<https://uzterm.local/concept/interlingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "interlingvistika"@uz .
+<https://uzterm.local/concept/intonatsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "intonatsiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/xabar_intonatsiyasi> .
+<https://uzterm.local/concept/inversiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "inversiya"@uz .
+<https://uzterm.local/concept/ism> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ism"@uz .
+<https://uzterm.local/concept/istorizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "istorizm"@uz .
+<https://uzterm.local/concept/izofa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "izofa"@uz .
+<https://uzterm.local/concept/izofali_birikma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "izofali birikma"@uz .
+<https://uzterm.local/concept/izohli_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "izohli lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/izohlovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "izohlovchi"@uz .
+<https://uzterm.local/concept/jarangli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "jarangli"@uz .
+<https://uzterm.local/concept/jarangli_undosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "jarangli undosh"@uz .
+<https://uzterm.local/concept/jarangsiz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "jarangsiz"@uz .
+<https://uzterm.local/concept/jarangsiz_undosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "jarangsiz undosh"@uz .
+<https://uzterm.local/concept/jargon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "jargon"@uz .
+<https://uzterm.local/concept/jonalish_kelishigi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "joʻnalish kelishigi"@uz .
+<https://uzterm.local/concept/juft_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "juft shakl"@uz .
+<https://uzterm.local/concept/juft_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "juft soʻz"@uz .
+<https://uzterm.local/concept/kasb_hunar_leksikasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kasb-hunar leksikasi"@uz ;
+    skos:broader <https://uzterm.local/concept/leksika> .
+<https://uzterm.local/concept/kategorial_belgi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kategorial belgi"@uz .
+<https://uzterm.local/concept/kategorial_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kategorial maʼno"@uz .
+<https://uzterm.local/concept/kategorial_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kategorial shakl"@uz .
+<https://uzterm.local/concept/kategoriya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kategoriya"@uz ;
+    skos:narrower <https://uzterm.local/concept/bolishli_bolishsizlik_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/daraja_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/egalik_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/grammatik_kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/kelishik_kategoriyasi> ;
+    skos:narrower <https://uzterm.local/concept/morfologik_kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/sintaktik_kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/son_kategoriyasi> .
+<https://uzterm.local/concept/kelasi_zamon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kelasi zamon"@uz ;
+    skos:broader <https://uzterm.local/concept/zamon> .
+<https://uzterm.local/concept/kelishik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kelishik"@uz ;
+    skos:narrower <https://uzterm.local/concept/bosh_kelishik> .
+<https://uzterm.local/concept/kelishik_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kelishik kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/kelishik_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kelishik shakli"@uz .
+<https://uzterm.local/concept/keltshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "keltshunoslik"@uz .
+<https://uzterm.local/concept/keng_transkripsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "keng transkripsiya"@uz ;
+    skos:broader <https://uzterm.local/concept/transkripsiya> .
+<https://uzterm.local/concept/kesim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kesim"@uz ;
+    skos:broader <https://uzterm.local/concept/bosh_bolak> ;
+    skos:narrower <https://uzterm.local/concept/fel_kesim> ;
+    skos:narrower <https://uzterm.local/concept/ot_kesim> .
+<https://uzterm.local/concept/kesimlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kesimlik"@uz .
+<https://uzterm.local/concept/kichik_harf> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kichik harf"@uz ;
+    skos:broader <https://uzterm.local/concept/harf> .
+<https://uzterm.local/concept/kichraytish_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kichraytish shakli"@uz .
+<https://uzterm.local/concept/kirill_yozuvi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kirill yozuvi"@uz .
+<https://uzterm.local/concept/kirish_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kirish soʻz"@uz .
+<https://uzterm.local/concept/kiritma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kiritma"@uz .
+<https://uzterm.local/concept/kishilik_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kishilik olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/kitobiy_uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kitobiy uslub"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/kollokvializm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kollokvializm"@uz .
+<https://uzterm.local/concept/kommunikativlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kommunikativlik"@uz .
+<https://uzterm.local/concept/kompozitsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kompozitsiya"@uz .
+<https://uzterm.local/concept/konsonantizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "konsonantizm"@uz .
+<https://uzterm.local/concept/konversiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "konversiya"@uz .
+<https://uzterm.local/concept/kochirma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻchirma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/kochma_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻchma maʼno"@uz .
+<https://uzterm.local/concept/kochma_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻchma urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/yordamchi_soz> ;
+    skos:narrower <https://uzterm.local/concept/fel_komakchi> ;
+    skos:narrower <https://uzterm.local/concept/funksional_komakchi> ;
+    skos:narrower <https://uzterm.local/concept/ot_komakchi> ;
+    skos:narrower <https://uzterm.local/concept/ravish_komakchi> ;
+    skos:narrower <https://uzterm.local/concept/sifat_komakchi> ;
+    skos:narrower <https://uzterm.local/concept/sof_komakchi> .
+<https://uzterm.local/concept/komakchi_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻmakchi feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/kop_manoli_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻp maʼnoli soʻz"@uz .
+<https://uzterm.local/concept/kop_tilli_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻp tilli lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/koplik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻplik"@uz .
+<https://uzterm.local/concept/koplik_manosi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻplik maʼnosi"@uz .
+<https://uzterm.local/concept/koplik_qoshimchasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻplik qoʻshimchasi"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/koplik_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻplik shakli"@uz .
+<https://uzterm.local/concept/korsatish_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "koʻrsatish olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/kuchli_pozitsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kuchli pozitsiya"@uz ;
+    skos:broader <https://uzterm.local/concept/pozitsiya> .
+<https://uzterm.local/concept/kuchsiz_pozitsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kuchsiz pozitsiya"@uz ;
+    skos:broader <https://uzterm.local/concept/pozitsiya> .
+<https://uzterm.local/concept/kvaziomonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "kvaziomonim"@uz .
+<https://uzterm.local/concept/lab_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lab undoshi"@uz ;
+    skos:narrower <https://uzterm.local/concept/lab_lab_undoshi> .
+<https://uzterm.local/concept/lab_lab_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lab-lab undoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/lab_undoshi> .
+<https://uzterm.local/concept/lab_tish_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lab-tish undoshi"@uz .
+<https://uzterm.local/concept/lablangan_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lablangan unli"@uz .
+<https://uzterm.local/concept/lablanmagan_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lablanmagan unli"@uz .
+<https://uzterm.local/concept/lahja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lahja"@uz .
+<https://uzterm.local/concept/leksema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksema"@uz .
+<https://uzterm.local/concept/leksik_antonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik antonim"@uz ;
+    skos:broader <https://uzterm.local/concept/antonim> .
+<https://uzterm.local/concept/leksik_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik maʼno"@uz .
+<https://uzterm.local/concept/leksik_morfologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik morfologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/leksik_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik qatlam"@uz .
+<https://uzterm.local/concept/leksik_tarkib> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik tarkib"@uz .
+<https://uzterm.local/concept/leksik_unsur> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik unsur"@uz .
+<https://uzterm.local/concept/leksik_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik usul"@uz .
+<https://uzterm.local/concept/leksik_grammatik_kategoriya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksik-grammatik kategoriya"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatik_kategoriya> .
+<https://uzterm.local/concept/leksika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksika"@uz ;
+    skos:narrower <https://uzterm.local/concept/kasb_hunar_leksikasi> ;
+    skos:narrower <https://uzterm.local/concept/nostandart_leksika> ;
+    skos:narrower <https://uzterm.local/concept/standart_leksika> ;
+    skos:narrower <https://uzterm.local/concept/yangi_leksika> .
+<https://uzterm.local/concept/leksikalashgan_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksikalashgan soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/leksikografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksikografiya"@uz ;
+    skos:broader <https://uzterm.local/concept/amaliy_lugatchilik> ;
+    skos:broader <https://uzterm.local/concept/soha> ;
+    skos:narrower <https://uzterm.local/concept/bir_tilli_leksikografiya> ;
+    skos:narrower <https://uzterm.local/concept/ikki_tilli_leksikografiya> ;
+    skos:narrower <https://uzterm.local/concept/ilmiy_texnik_leksikografiya> ;
+    skos:narrower <https://uzterm.local/concept/nazariy_leksikografiya> ;
+    skos:narrower <https://uzterm.local/concept/oquv_leksikografiyasi> .
+<https://uzterm.local/concept/leksikologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "leksikologiya"@uz .
+<https://uzterm.local/concept/lingvistik_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvistik birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/lingvistik_geografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvistik geografiya"@uz .
+<https://uzterm.local/concept/lingvistik_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvistik lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/lingvistik_modellashtirish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvistik modellashtirish"@uz .
+<https://uzterm.local/concept/lingvistik_strukturalizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvistik strukturalizm"@uz .
+<https://uzterm.local/concept/lingvostatistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lingvostatistika"@uz .
+<https://uzterm.local/concept/lisoniy_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lisoniy birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> ;
+    skos:narrower <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/lisoniy_eksperiment> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lisoniy eksperiment"@uz .
+<https://uzterm.local/concept/lotin_yozuvi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lotin yozuvi"@uz .
+<https://uzterm.local/concept/lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻat"@uz ;
+    skos:narrower <https://uzterm.local/concept/etimologik_lugat> ;
+    skos:narrower <https://uzterm.local/concept/ikki_tilli_lugat> ;
+    skos:narrower <https://uzterm.local/concept/izohli_lugat> ;
+    skos:narrower <https://uzterm.local/concept/kop_tilli_lugat> ;
+    skos:narrower <https://uzterm.local/concept/lingvistik_lugat> ;
+    skos:narrower <https://uzterm.local/concept/tarixiy_lugat> ;
+    skos:narrower <https://uzterm.local/concept/tarjima_lugati> ;
+    skos:narrower <https://uzterm.local/concept/terminologik_lugat> .
+<https://uzterm.local/concept/lugat_maqolasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻat maqolasi"@uz .
+<https://uzterm.local/concept/lugat_tarkibi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻat tarkibi"@uz .
+<https://uzterm.local/concept/lugatchilik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻatchilik"@uz ;
+    skos:narrower <https://uzterm.local/concept/amaliy_lugatchilik> .
+<https://uzterm.local/concept/lugatshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻatshunoslik"@uz .
+<https://uzterm.local/concept/lugaviy_antonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻaviy antonim"@uz ;
+    skos:broader <https://uzterm.local/concept/antonim> .
+<https://uzterm.local/concept/lugaviy_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻaviy birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/lugaviy_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻaviy maʼno"@uz .
+<https://uzterm.local/concept/lugaviy_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "lugʻaviy urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/mahsullilik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mahsullilik"@uz .
+<https://uzterm.local/concept/mahsulsizlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mahsulsizlik"@uz .
+<https://uzterm.local/concept/majhul_nisbat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "majhul nisbat"@uz ;
+    skos:broader <https://uzterm.local/concept/nisbat> .
+<https://uzterm.local/concept/makrostruktura> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "makrostruktura"@uz .
+<https://uzterm.local/concept/mantiqiy_urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mantiqiy urgʻu"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/maqol> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maqol"@uz .
+<https://uzterm.local/concept/maqsad_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maqsad bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/maqsad_mayli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maqsad mayli"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/maqsad_ravishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maqsad ravishi"@uz ;
+    skos:broader <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/mashina_tarjimasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mashina tarjimasi"@uz .
+<https://uzterm.local/concept/matal> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "matal"@uz .
+<https://uzterm.local/concept/matematik_lingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "matematik lingvistika"@uz .
+<https://uzterm.local/concept/matn> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "matn"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/matn_lingvistikasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "matn lingvistikasi"@uz .
+<https://uzterm.local/concept/mavhum_manoli_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mavhum maʼnoli ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/maxsus_sleng> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maxsus sleng"@uz ;
+    skos:broader <https://uzterm.local/concept/sleng> .
+<https://uzterm.local/concept/mayl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mayl"@uz ;
+    skos:narrower <https://uzterm.local/concept/buyruq_mayli> ;
+    skos:narrower <https://uzterm.local/concept/buyruq_istak_mayli> ;
+    skos:narrower <https://uzterm.local/concept/ijro_mayli> ;
+    skos:narrower <https://uzterm.local/concept/maqsad_mayli> ;
+    skos:narrower <https://uzterm.local/concept/shart_mayli> ;
+    skos:narrower <https://uzterm.local/concept/shartli_mayl> .
+<https://uzterm.local/concept/mayl_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mayl kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatik_kategoriya> .
+<https://uzterm.local/concept/mazmuniy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mazmuniy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/mano_ozgarishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maʼno oʻzgarishi"@uz .
+<https://uzterm.local/concept/mano_taraqqiyoti> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "maʼno taraqqiyoti"@uz .
+<https://uzterm.local/concept/metafora> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "metafora"@uz .
+<https://uzterm.local/concept/metonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "metonimiya"@uz .
+<https://uzterm.local/concept/meyoriy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "meʼyoriy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/mikrostruktura> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mikrostruktura"@uz .
+<https://uzterm.local/concept/milliy_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "milliy til"@uz .
+<https://uzterm.local/concept/modal_mano> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "modal maʼno"@uz .
+<https://uzterm.local/concept/modal_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "modal shakl"@uz .
+<https://uzterm.local/concept/modal_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "modal soʻz"@uz .
+<https://uzterm.local/concept/modallik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "modallik"@uz .
+<https://uzterm.local/concept/monosemiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "monosemiya"@uz .
+<https://uzterm.local/concept/morfema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfema"@uz ;
+    skos:broader <https://uzterm.local/concept/lisoniy_birlik> ;
+    skos:narrower <https://uzterm.local/concept/affiksal_morfema> ;
+    skos:narrower <https://uzterm.local/concept/grammatik_morfema> ;
+    skos:narrower <https://uzterm.local/concept/soz_yasovchi_morfema> .
+<https://uzterm.local/concept/morfofonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfofonologiya"@uz .
+<https://uzterm.local/concept/morfologik_kategoriya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik kategoriya"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/morfologik_korsatkich> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik koʻrsatkich"@uz .
+<https://uzterm.local/concept/morfologik_qoida> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik qoida"@uz .
+<https://uzterm.local/concept/morfologik_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik shakl"@uz .
+<https://uzterm.local/concept/morfologik_tahlil> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik tahlil"@uz .
+<https://uzterm.local/concept/morfologik_tarkib> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik tarkib"@uz .
+<https://uzterm.local/concept/morfologik_tizim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik tizim"@uz .
+<https://uzterm.local/concept/morfologik_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologik usul"@uz .
+<https://uzterm.local/concept/morfologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfologiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/leksik_morfologiya> .
+<https://uzterm.local/concept/morfonema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfonema"@uz .
+<https://uzterm.local/concept/morfonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "morfonologiya"@uz .
+<https://uzterm.local/concept/moslashuv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "moslashuv"@uz .
+<https://uzterm.local/concept/moslashuvli_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "moslashuvli soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/muallif_gapi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "muallif gapi"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/murakkab_son> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "murakkab son"@uz ;
+    skos:broader <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/murakkab_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "murakkab soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/mustaqil_bolak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mustaqil boʻlak"@uz .
+<https://uzterm.local/concept/mustaqil_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mustaqil feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/mustaqil_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mustaqil soʻz"@uz .
+<https://uzterm.local/concept/mustaqil_soz_turkumi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "mustaqil soʻz turkumi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_turkumi> ;
+    skos:narrower <https://uzterm.local/concept/ot> ;
+    skos:narrower <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/narsa_qurol_otlari> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "narsa-qurol otlari"@uz .
+<https://uzterm.local/concept/nazariy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nazariy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/nazariy_leksikografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nazariy leksikografiya"@uz ;
+    skos:broader <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/nazariy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nazariy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/neologizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "neologizm"@uz .
+<https://uzterm.local/concept/neyrolingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "neyrolingvistika"@uz .
+<https://uzterm.local/concept/neytral_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "neytral soʻz"@uz .
+<https://uzterm.local/concept/nisbat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nisbat"@uz ;
+    skos:narrower <https://uzterm.local/concept/birgalik_nisbati> ;
+    skos:narrower <https://uzterm.local/concept/bosh_nisbat> ;
+    skos:narrower <https://uzterm.local/concept/majhul_nisbat> ;
+    skos:narrower <https://uzterm.local/concept/orttirma_nisbat> ;
+    skos:narrower <https://uzterm.local/concept/ozlik_nisbati> .
+<https://uzterm.local/concept/nisbat_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nisbat kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatik_kategoriya> .
+<https://uzterm.local/concept/nisbat_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nisbat shakli"@uz .
+<https://uzterm.local/concept/nisbiy_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nisbiy soʻz"@uz .
+<https://uzterm.local/concept/nofaol_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nofaol grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/nostandart_leksika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nostandart leksika"@uz ;
+    skos:broader <https://uzterm.local/concept/leksika> .
+<https://uzterm.local/concept/nutq_azolari> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq aʼzolari"@uz .
+<https://uzterm.local/concept/nutq_birligi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq birligi"@uz ;
+    skos:narrower <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/nutq_momenti> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq momenti"@uz .
+<https://uzterm.local/concept/nutq_payti> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq payti"@uz .
+<https://uzterm.local/concept/nutq_takti> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq takti"@uz .
+<https://uzterm.local/concept/nutq_tovushi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq tovushi"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/nutq_uslubi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq uslubi"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/nutq_vaqti> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "nutq vaqti"@uz .
+<https://uzterm.local/concept/obyekt> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "obyekt"@uz .
+<https://uzterm.local/concept/oddiy_daraja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oddiy daraja"@uz ;
+    skos:broader <https://uzterm.local/concept/daraja> .
+<https://uzterm.local/concept/ogzaki_uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ogʻzaki uslub"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/ohang> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ohang"@uz ;
+    skos:narrower <https://uzterm.local/concept/tobelanish_ohangi> .
+<https://uzterm.local/concept/old_qoshimcha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "old qoʻshimcha"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/olmosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "olmosh"@uz ;
+    skos:narrower <https://uzterm.local/concept/belgilash_jamlash_olmoshi> ;
+    skos:narrower <https://uzterm.local/concept/bolishsizlik_olmoshi> ;
+    skos:narrower <https://uzterm.local/concept/kishilik_olmoshi> ;
+    skos:narrower <https://uzterm.local/concept/korsatish_olmoshi> ;
+    skos:narrower <https://uzterm.local/concept/ozlik_olmoshi> ;
+    skos:narrower <https://uzterm.local/concept/soroq_olmoshi> .
+<https://uzterm.local/concept/olmosh_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "olmosh-ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/olmosh_sifat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "olmosh-sifat"@uz ;
+    skos:broader <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/olmosh_son> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "olmosh-son"@uz ;
+    skos:broader <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/omofon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "omofon"@uz .
+<https://uzterm.local/concept/omograf> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "omograf"@uz .
+<https://uzterm.local/concept/omonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "omonim"@uz ;
+    skos:narrower <https://uzterm.local/concept/soxta_omonim> .
+<https://uzterm.local/concept/omonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "omonimiya"@uz .
+<https://uzterm.local/concept/ona_tili> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ona tili"@uz .
+<https://uzterm.local/concept/onomastika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "onomastika"@uz .
+<https://uzterm.local/concept/oppozitsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oppozitsiya"@uz .
+<https://uzterm.local/concept/oraliqdagi_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oraliqdagi soʻz"@uz .
+<https://uzterm.local/concept/orfografiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "orfografiya"@uz .
+<https://uzterm.local/concept/orttirma_daraja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "orttirma daraja"@uz ;
+    skos:broader <https://uzterm.local/concept/daraja> .
+<https://uzterm.local/concept/orttirma_nisbat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "orttirma nisbat"@uz ;
+    skos:broader <https://uzterm.local/concept/nisbat> .
+<https://uzterm.local/concept/ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ot"@uz ;
+    skos:broader <https://uzterm.local/concept/mustaqil_soz_turkumi> ;
+    skos:narrower <https://uzterm.local/concept/atoqli_ot> ;
+    skos:narrower <https://uzterm.local/concept/mavhum_manoli_ot> ;
+    skos:narrower <https://uzterm.local/concept/olmosh_ot> ;
+    skos:narrower <https://uzterm.local/concept/qisqartma_ot> ;
+    skos:narrower <https://uzterm.local/concept/qoshma_ot> ;
+    skos:narrower <https://uzterm.local/concept/turdosh_ot> ;
+    skos:narrower <https://uzterm.local/concept/yasama_ot> .
+<https://uzterm.local/concept/ot_kesim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ot kesim"@uz ;
+    skos:broader <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/ot_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ot koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/ot_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ot soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/ot_yasalishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ot yasalishi"@uz .
+<https://uzterm.local/concept/otlashgan_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "otlashgan soʻz"@uz .
+<https://uzterm.local/concept/otlashish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "otlashish"@uz .
+<https://uzterm.local/concept/otlashuv> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "otlashuv"@uz .
+<https://uzterm.local/concept/ovoz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ovoz"@uz .
+<https://uzterm.local/concept/ozaytirma_daraja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ozaytirma daraja"@uz ;
+    skos:broader <https://uzterm.local/concept/daraja> .
+<https://uzterm.local/concept/ozaytirma_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ozaytirma shakli"@uz .
+<https://uzterm.local/concept/oquv_leksikografiyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻquv leksikografiyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/leksikografiya> .
+<https://uzterm.local/concept/orin_belgisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻrin belgisi"@uz .
+<https://uzterm.local/concept/orin_kelishigi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻrin kelishigi"@uz .
+<https://uzterm.local/concept/orin_ravishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻrin ravishi"@uz ;
+    skos:broader <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/orin_joy_otlari> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻrin-joy otlari"@uz .
+<https://uzterm.local/concept/orta_kotarilish_unlisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻrta koʻtarilish unlisi"@uz .
+<https://uzterm.local/concept/otgan_zamon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻtgan zamon"@uz ;
+    skos:broader <https://uzterm.local/concept/zamon> .
+<https://uzterm.local/concept/otgan_zamon_sifatdoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻtgan zamon sifatdoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/sifatdosh> .
+<https://uzterm.local/concept/oxshatish_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻxshatish shakli"@uz .
+<https://uzterm.local/concept/oz_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻz qatlam"@uz .
+<https://uzterm.local/concept/ozak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzak"@uz .
+<https://uzterm.local/concept/ozlashgan_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlashgan qatlam"@uz .
+<https://uzterm.local/concept/ozlashgan_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlashgan soʻz"@uz .
+<https://uzterm.local/concept/ozlashma_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlashma qatlam"@uz .
+<https://uzterm.local/concept/ozlashma_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlashma soʻz"@uz .
+<https://uzterm.local/concept/ozlik_nisbati> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlik nisbati"@uz ;
+    skos:broader <https://uzterm.local/concept/nisbat> .
+<https://uzterm.local/concept/ozlik_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "oʻzlik olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/palatalizatsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "palatalizatsiya"@uz .
+<https://uzterm.local/concept/paradigma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "paradigma"@uz .
+<https://uzterm.local/concept/paralingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "paralingvistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/paronim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "paronim"@uz .
+<https://uzterm.local/concept/payt_ravishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "payt ravishi"@uz ;
+    skos:broader <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/period> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "period"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/polisemiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "polisemiya"@uz .
+<https://uzterm.local/concept/portlovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "portlovchi"@uz .
+<https://uzterm.local/concept/portlovchi_tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "portlovchi tovush"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/pozitsion_variant> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "pozitsion variant"@uz .
+<https://uzterm.local/concept/pozitsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "pozitsiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/kuchli_pozitsiya> ;
+    skos:narrower <https://uzterm.local/concept/kuchsiz_pozitsiya> .
+<https://uzterm.local/concept/predikat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "predikat"@uz .
+<https://uzterm.local/concept/predikativ_asos> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "predikativ asos"@uz ;
+    skos:broader <https://uzterm.local/concept/asos> .
+<https://uzterm.local/concept/predikativ_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "predikativ birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/predikativlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "predikativlik"@uz .
+<https://uzterm.local/concept/prefiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "prefiks"@uz .
+<https://uzterm.local/concept/professionalizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "professionalizm"@uz .
+<https://uzterm.local/concept/psixolingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "psixolingvistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/qarashlilik_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qarashlilik shakli"@uz .
+<https://uzterm.local/concept/qaratqich_kelishigi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qaratqich kelishigi"@uz .
+<https://uzterm.local/concept/qaratqichli_aniqlovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qaratqichli aniqlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/aniqlovchi> .
+<https://uzterm.local/concept/qaratuvchili_birikma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qaratuvchili birikma"@uz .
+<https://uzterm.local/concept/qardosh_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qardosh til"@uz .
+<https://uzterm.local/concept/qarindosh_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qarindosh til"@uz .
+<https://uzterm.local/concept/qattiq_tanglay> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qattiq tanglay"@uz .
+<https://uzterm.local/concept/qisqa_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qisqa unli"@uz .
+<https://uzterm.local/concept/qisqartma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qisqartma"@uz .
+<https://uzterm.local/concept/qisqartma_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qisqartma ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/qiyosiy_daraja> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy daraja"@uz ;
+    skos:broader <https://uzterm.local/concept/daraja> .
+<https://uzterm.local/concept/qiyosiy_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/qiyosiy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/qiyosiy_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy usul"@uz .
+<https://uzterm.local/concept/qiyosiy_tarixiy_metod> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy-tarixiy metod"@uz .
+<https://uzterm.local/concept/qiyosiy_tarixiy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy-tarixiy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tarixiy_tilshunoslik> .
+<https://uzterm.local/concept/qiyosiy_tarixiy_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qiyosiy-tarixiy usul"@uz .
+<https://uzterm.local/concept/qoshimcha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshimcha"@uz ;
+    skos:narrower <https://uzterm.local/concept/egalik_qoshimchasi> ;
+    skos:narrower <https://uzterm.local/concept/koplik_qoshimchasi> ;
+    skos:narrower <https://uzterm.local/concept/old_qoshimcha> ;
+    skos:narrower <https://uzterm.local/concept/soz_yasovchi_qoshimcha> ;
+    skos:narrower <https://uzterm.local/concept/yuklama_qoshimcha> .
+<https://uzterm.local/concept/qoshma_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshma feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/qoshma_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshma gap"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> ;
+    skos:broader <https://uzterm.local/concept/gap> ;
+    skos:narrower <https://uzterm.local/concept/boglangan_qoshma_gap> ;
+    skos:narrower <https://uzterm.local/concept/boglovchisiz_qoshma_gap> ;
+    skos:narrower <https://uzterm.local/concept/ergash_gapli_qoshma_gap> ;
+    skos:narrower <https://uzterm.local/concept/ergashgan_qoshma_gap> .
+<https://uzterm.local/concept/qoshma_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshma ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/qoshma_sifat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshma sifat"@uz ;
+    skos:broader <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/qoshma_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "qoʻshma soʻz"@uz .
+<https://uzterm.local/concept/quyi_kotarilish_unlisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "quyi koʻtarilish unlisi"@uz .
+<https://uzterm.local/concept/rasmiy_idoraviy_uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "rasmiy-idoraviy uslub"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/ravish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ravish"@uz ;
+    skos:broader <https://uzterm.local/concept/mustaqil_soz_turkumi> ;
+    skos:narrower <https://uzterm.local/concept/daraja_miqdor_ravishi> ;
+    skos:narrower <https://uzterm.local/concept/maqsad_ravishi> ;
+    skos:narrower <https://uzterm.local/concept/orin_ravishi> ;
+    skos:narrower <https://uzterm.local/concept/payt_ravishi> ;
+    skos:narrower <https://uzterm.local/concept/sabab_ravishi> .
+<https://uzterm.local/concept/ravish_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ravish koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/ravishdosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ravishdosh"@uz .
+<https://uzterm.local/concept/ravishdosh_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "ravishdosh shakli"@uz .
+<https://uzterm.local/concept/romanistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "romanistika"@uz .
+<https://uzterm.local/concept/sabab_ravishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sabab ravishi"@uz ;
+    skos:broader <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/segment> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "segment"@uz .
+<https://uzterm.local/concept/segment_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "segment birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> .
+<https://uzterm.local/concept/semantik_aloqa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semantik aloqa"@uz .
+<https://uzterm.local/concept/semantik_munosabat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semantik munosabat"@uz .
+<https://uzterm.local/concept/semantika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semantika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/semasiologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semasiologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/semiotik_lingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semiotik lingvistika"@uz .
+<https://uzterm.local/concept/semitologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "semitologiya"@uz .
+<https://uzterm.local/concept/shakl_ozgarishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shakl oʻzgarishi"@uz .
+<https://uzterm.local/concept/shakl_yasalishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shakl yasalishi"@uz .
+<https://uzterm.local/concept/shakl_yasovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shakl yasovchi"@uz .
+<https://uzterm.local/concept/shakliy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shakliy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/shart_mayli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shart mayli"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/shartli_mayl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shartli mayl"@uz ;
+    skos:broader <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/shaxs_otlari> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shaxs otlari"@uz .
+<https://uzterm.local/concept/shaxs_son> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shaxs-son"@uz ;
+    skos:broader <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/shaxs_son_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shaxs-son kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/son_kategoriyasi> .
+<https://uzterm.local/concept/sheva> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sheva"@uz .
+<https://uzterm.local/concept/shovqin> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shovqin"@uz .
+<https://uzterm.local/concept/shovqinli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shovqinli"@uz .
+<https://uzterm.local/concept/shovqinli_undosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "shovqinli undosh"@uz .
+<https://uzterm.local/concept/sifat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifat"@uz ;
+    skos:broader <https://uzterm.local/concept/soz> ;
+    skos:narrower <https://uzterm.local/concept/olmosh_sifat> ;
+    skos:narrower <https://uzterm.local/concept/qoshma_sifat> ;
+    skos:narrower <https://uzterm.local/concept/yasama_sifat> .
+<https://uzterm.local/concept/sifat_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifat koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/sifat_yasovchi_affiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifat yasovchi affiks"@uz ;
+    skos:broader <https://uzterm.local/concept/affiks> .
+<https://uzterm.local/concept/sifatdosh> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifatdosh"@uz ;
+    skos:narrower <https://uzterm.local/concept/otgan_zamon_sifatdoshi> .
+<https://uzterm.local/concept/sifatdosh_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifatdosh shakli"@uz .
+<https://uzterm.local/concept/sifatlovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sifatlovchi"@uz .
+<https://uzterm.local/concept/sinonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sinonim"@uz ;
+    skos:broader <https://uzterm.local/concept/sinonim_soz> .
+<https://uzterm.local/concept/sinonim_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sinonim soʻz"@uz ;
+    skos:narrower <https://uzterm.local/concept/sinonim> .
+<https://uzterm.local/concept/sinonimik_qator> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sinonimik qator"@uz .
+<https://uzterm.local/concept/sinonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sinonimiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/frazeologik_sinonimiya> ;
+    skos:narrower <https://uzterm.local/concept/sintaktik_sinonimiya> .
+<https://uzterm.local/concept/sintagma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintagma"@uz .
+<https://uzterm.local/concept/sintaksis> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaksis"@uz .
+<https://uzterm.local/concept/sintaktik_antonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik antonim"@uz ;
+    skos:broader <https://uzterm.local/concept/antonim> .
+<https://uzterm.local/concept/sintaktik_birlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik birlik"@uz ;
+    skos:broader <https://uzterm.local/concept/birlik> ;
+    skos:broader <https://uzterm.local/concept/soz> .
+<https://uzterm.local/concept/sintaktik_butunlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik butunlik"@uz .
+<https://uzterm.local/concept/sintaktik_kategoriya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik kategoriya"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> .
+<https://uzterm.local/concept/sintaktik_munosabat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik munosabat"@uz .
+<https://uzterm.local/concept/sintaktik_qurilish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik qurilish"@uz .
+<https://uzterm.local/concept/sintaktik_sinonimiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik sinonimiya"@uz ;
+    skos:broader <https://uzterm.local/concept/sinonimiya> .
+<https://uzterm.local/concept/sintaktik_tuzilma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik tuzilma"@uz .
+<https://uzterm.local/concept/sintaktik_usul> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintaktik usul"@uz .
+<https://uzterm.local/concept/sintetik_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintetik shakl"@uz .
+<https://uzterm.local/concept/sintetik_til> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sintetik til"@uz .
+<https://uzterm.local/concept/sinxroniya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sinxroniya"@uz .
+<https://uzterm.local/concept/sirgaluvchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sirgʻaluvchi"@uz .
+<https://uzterm.local/concept/sirgaluvchi_tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sirgʻaluvchi tovush"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/slavyanshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "slavyanshunoslik"@uz .
+<https://uzterm.local/concept/sleng> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sleng"@uz ;
+    skos:narrower <https://uzterm.local/concept/maxsus_sleng> ;
+    skos:narrower <https://uzterm.local/concept/umumiy_sleng> .
+<https://uzterm.local/concept/sodda_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sodda gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/sodda_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sodda soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/sof_komakchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sof koʻmakchi"@uz ;
+    skos:broader <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/soha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soha"@uz ;
+    skos:narrower <https://uzterm.local/concept/afrikashunoslik> ;
+    skos:narrower <https://uzterm.local/concept/etimologiya> ;
+    skos:narrower <https://uzterm.local/concept/etnolingvistika> ;
+    skos:narrower <https://uzterm.local/concept/finugorshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/frazeologiya> ;
+    skos:narrower <https://uzterm.local/concept/leksikografiya> ;
+    skos:narrower <https://uzterm.local/concept/paralingvistika> ;
+    skos:narrower <https://uzterm.local/concept/psixolingvistika> ;
+    skos:narrower <https://uzterm.local/concept/semantika> ;
+    skos:narrower <https://uzterm.local/concept/semasiologiya> ;
+    skos:narrower <https://uzterm.local/concept/sotsiolingvistika> ;
+    skos:narrower <https://uzterm.local/concept/stilistika> ;
+    skos:narrower <https://uzterm.local/concept/tariqa_semitologiya> ;
+    skos:narrower <https://uzterm.local/concept/tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/turkiyshunoslik> .
+<https://uzterm.local/concept/son> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "son"@uz ;
+    skos:narrower <https://uzterm.local/concept/murakkab_son> ;
+    skos:narrower <https://uzterm.local/concept/olmosh_son> ;
+    skos:narrower <https://uzterm.local/concept/shaxs_son> ;
+    skos:narrower <https://uzterm.local/concept/tartib_son> .
+<https://uzterm.local/concept/son_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "son kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/kategoriya> ;
+    skos:narrower <https://uzterm.local/concept/shaxs_son_kategoriyasi> .
+<https://uzterm.local/concept/sonor> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sonor"@uz .
+<https://uzterm.local/concept/sotsiolingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "sotsiolingvistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/soxta_etimologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soxta etimologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/etimologiya> .
+<https://uzterm.local/concept/soxta_omonim> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soxta omonim"@uz ;
+    skos:broader <https://uzterm.local/concept/omonim> .
+<https://uzterm.local/concept/soroq_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻroq gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/soroq_olmoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻroq olmoshi"@uz ;
+    skos:broader <https://uzterm.local/concept/olmosh> .
+<https://uzterm.local/concept/soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz"@uz ;
+    skos:narrower <https://uzterm.local/concept/ibora> ;
+    skos:narrower <https://uzterm.local/concept/sifat> ;
+    skos:narrower <https://uzterm.local/concept/sintaktik_birlik> .
+<https://uzterm.local/concept/soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz birikmasi"@uz ;
+    skos:narrower <https://uzterm.local/concept/aniqlovchili_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/bitishuvli_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/boshqaruvli_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/fel_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/holli_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/leksikalashgan_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/moslashuvli_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/murakkab_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/ot_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/sodda_soz_birikmasi> ;
+    skos:narrower <https://uzterm.local/concept/toldiruvchili_soz_birikmasi> .
+<https://uzterm.local/concept/soz_manosi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz maʼnosi"@uz .
+<https://uzterm.local/concept/soz_ozagi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz oʻzagi"@uz .
+<https://uzterm.local/concept/soz_ozgarishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz oʻzgarishi"@uz .
+<https://uzterm.local/concept/soz_qoshilmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz qoʻshilmasi"@uz .
+<https://uzterm.local/concept/soz_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz shakli"@uz .
+<https://uzterm.local/concept/soz_tartibi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz tartibi"@uz .
+<https://uzterm.local/concept/soz_turkumi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz turkumi"@uz ;
+    skos:narrower <https://uzterm.local/concept/mustaqil_soz_turkumi> .
+<https://uzterm.local/concept/soz_urgusi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz urgʻusi"@uz ;
+    skos:broader <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/soz_yasalishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasalishi"@uz .
+<https://uzterm.local/concept/soz_yasalishi_asosi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasalishi asosi"@uz ;
+    skos:broader <https://uzterm.local/concept/asos> .
+<https://uzterm.local/concept/soz_yasovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasovchi"@uz .
+<https://uzterm.local/concept/soz_yasovchi_affiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasovchi affiks"@uz ;
+    skos:broader <https://uzterm.local/concept/affiks> .
+<https://uzterm.local/concept/soz_yasovchi_morfema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasovchi morfema"@uz ;
+    skos:broader <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/soz_yasovchi_qoshimcha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻz yasovchi qoʻshimcha"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/sozlashgich> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻzlashgich"@uz .
+<https://uzterm.local/concept/sozlashuv_nutqi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻzlashuv nutqi"@uz .
+<https://uzterm.local/concept/sozlashuv_uslubi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "soʻzlashuv uslubi"@uz ;
+    skos:broader <https://uzterm.local/concept/uslub> ;
+    skos:narrower <https://uzterm.local/concept/argo> .
+<https://uzterm.local/concept/standart_leksika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "standart leksika"@uz ;
+    skos:broader <https://uzterm.local/concept/leksika> .
+<https://uzterm.local/concept/stilistik_boyoq> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "stilistik boʻyoq"@uz .
+<https://uzterm.local/concept/stilistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "stilistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/strukturaviy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "strukturaviy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/subyekt> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "subyekt"@uz .
+<https://uzterm.local/concept/suffiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "suffiks"@uz .
+<https://uzterm.local/concept/supersegment> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "supersegment"@uz .
+<https://uzterm.local/concept/taajjub_yuklamasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "taajjub yuklamasi"@uz ;
+    skos:broader <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/takror_shakl> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "takror shakl"@uz .
+<https://uzterm.local/concept/takror_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "takror soʻz"@uz .
+<https://uzterm.local/concept/taqlid_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "taqlid soʻz"@uz .
+<https://uzterm.local/concept/tariqa_semitologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tariqa semitologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/tarixiy_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarixiy fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/tarixiy_fonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarixiy fonologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/fonologiya> .
+<https://uzterm.local/concept/tarixiy_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarixiy lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/tarixiy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarixiy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/qiyosiy_tarixiy_tilshunoslik> .
+<https://uzterm.local/concept/tarjima_lugati> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarjima lugʻati"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/tarjima_nazariyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tarjima nazariyasi"@uz .
+<https://uzterm.local/concept/tartib_son> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tartib son"@uz ;
+    skos:broader <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/tashqi_lingvistika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tashqi lingvistika"@uz .
+<https://uzterm.local/concept/tasviriy_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tasviriy fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/tasviriy_fonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tasviriy fonologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/fonologiya> .
+<https://uzterm.local/concept/tavsifiy_grammatika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tavsifiy grammatika"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/takid_yuklamasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "taʼkid yuklamasi"@uz ;
+    skos:broader <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/teng_boglanish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "teng bogʻlanish"@uz .
+<https://uzterm.local/concept/teng_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "teng bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/termin> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "termin"@uz .
+<https://uzterm.local/concept/terminologik_lugat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "terminologik lugʻat"@uz ;
+    skos:broader <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/terminologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "terminologiya"@uz .
+<https://uzterm.local/concept/til_birligi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til birligi"@uz .
+<https://uzterm.local/concept/til_meyori> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til meʼyori"@uz .
+<https://uzterm.local/concept/til_oldi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til oldi"@uz .
+<https://uzterm.local/concept/til_orqa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til orqa"@uz ;
+    skos:narrower <https://uzterm.local/concept/chuqur_til_orqa> .
+<https://uzterm.local/concept/til_orta> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til oʻrta"@uz .
+<https://uzterm.local/concept/til_undoshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "til undoshi"@uz .
+<https://uzterm.local/concept/tillar_oilasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tillar oilasi"@uz .
+<https://uzterm.local/concept/tiloldi_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tiloldi unli"@uz .
+<https://uzterm.local/concept/tilorqa_unli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tilorqa unli"@uz .
+<https://uzterm.local/concept/tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tilshunoslik"@uz ;
+    skos:altLabel "lingvistika"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> ;
+    skos:narrower <https://uzterm.local/concept/amaliy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/funksional_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/nazariy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/qiyosiy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/strukturaviy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/tarixiy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/umumiy_tilshunoslik> ;
+    skos:narrower <https://uzterm.local/concept/xususiy_tilshunoslik> .
+<https://uzterm.local/concept/tipologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tipologiya"@uz .
+<https://uzterm.local/concept/titroq_tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "titroq tovush"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/tobe_aloqa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tobe aloqa"@uz .
+<https://uzterm.local/concept/tobe_boglanish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tobe bogʻlanish"@uz .
+<https://uzterm.local/concept/tobe_grammatik_aloqa> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tobe grammatik aloqa"@uz .
+<https://uzterm.local/concept/tobe_qism> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tobe qism"@uz .
+<https://uzterm.local/concept/tobelanish_ohangi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tobelanish ohangi"@uz ;
+    skos:broader <https://uzterm.local/concept/ohang> .
+<https://uzterm.local/concept/tonik_allofon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tonik allofon"@uz ;
+    skos:broader <https://uzterm.local/concept/allofon> .
+<https://uzterm.local/concept/toponimika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "toponimika"@uz .
+<https://uzterm.local/concept/tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush"@uz ;
+    skos:narrower <https://uzterm.local/concept/nutq_tovushi> ;
+    skos:narrower <https://uzterm.local/concept/portlovchi_tovush> ;
+    skos:narrower <https://uzterm.local/concept/sirgaluvchi_tovush> ;
+    skos:narrower <https://uzterm.local/concept/titroq_tovush> ;
+    skos:narrower <https://uzterm.local/concept/undosh_tovush> ;
+    skos:narrower <https://uzterm.local/concept/unli_tovush> .
+<https://uzterm.local/concept/tovush_birligi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush birligi"@uz .
+<https://uzterm.local/concept/tovush_ozgarishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush oʻzgarishi"@uz .
+<https://uzterm.local/concept/tovush_qurilishi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush qurilishi"@uz .
+<https://uzterm.local/concept/tovush_tarkibi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush tarkibi"@uz .
+<https://uzterm.local/concept/tovush_tizimi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tovush tizimi"@uz .
+<https://uzterm.local/concept/toldiruvchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "toʻldiruvchi"@uz .
+<https://uzterm.local/concept/toldiruvchili_soz_birikmasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "toʻldiruvchili soʻz birikmasi"@uz ;
+    skos:broader <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/toliqsiz_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "toʻliqsiz feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/tosiqsizlik_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "toʻsiqsizlik bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/transkripsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "transkripsiya"@uz ;
+    skos:narrower <https://uzterm.local/concept/fonetik_transkripsiya> ;
+    skos:narrower <https://uzterm.local/concept/keng_transkripsiya> .
+<https://uzterm.local/concept/transliteratsiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "transliteratsiya"@uz .
+<https://uzterm.local/concept/turdosh_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "turdosh ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/turkiyshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "turkiyshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/soha> .
+<https://uzterm.local/concept/tuslanish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tuslanish"@uz .
+<https://uzterm.local/concept/tutuq_belgisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "tutuq belgisi"@uz .
+<https://uzterm.local/concept/uchinchi_darajali_bolak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "uchinchi darajali boʻlak"@uz .
+<https://uzterm.local/concept/uchinchi_shaxs> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "uchinchi shaxs"@uz .
+<https://uzterm.local/concept/umumiy_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "umumiy fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/umumiy_fonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "umumiy fonologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/fonologiya> ;
+    skos:narrower <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/umumiy_sleng> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "umumiy sleng"@uz ;
+    skos:broader <https://uzterm.local/concept/sleng> .
+<https://uzterm.local/concept/umumiy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "umumiy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/umumturkiy_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "umumturkiy soʻz"@uz .
+<https://uzterm.local/concept/un_paychalari> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "un paychalari"@uz .
+<https://uzterm.local/concept/undalma> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "undalma"@uz .
+<https://uzterm.local/concept/undosh_tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "undosh tovush"@uz ;
+    skos:altLabel "undosh"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/undov> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "undov"@uz .
+<https://uzterm.local/concept/undov_gap> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "undov gap"@uz ;
+    skos:broader <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/unli_fonema> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "unli fonema"@uz ;
+    skos:broader <https://uzterm.local/concept/fonema> .
+<https://uzterm.local/concept/unli_tovush> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "unli tovush"@uz ;
+    skos:altLabel "unli"@uz ;
+    skos:broader <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/urgu> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "urgʻu"@uz ;
+    skos:narrower <https://uzterm.local/concept/bogliq_urgu> ;
+    skos:narrower <https://uzterm.local/concept/bosh_urgu> ;
+    skos:narrower <https://uzterm.local/concept/fraza_urgusi> ;
+    skos:narrower <https://uzterm.local/concept/ikkinchi_darajali_urgu> ;
+    skos:narrower <https://uzterm.local/concept/kochma_urgu> ;
+    skos:narrower <https://uzterm.local/concept/lugaviy_urgu> ;
+    skos:narrower <https://uzterm.local/concept/mantiqiy_urgu> ;
+    skos:narrower <https://uzterm.local/concept/soz_urgusi> .
+<https://uzterm.local/concept/uslub> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "uslub"@uz ;
+    skos:narrower <https://uzterm.local/concept/funksional_uslub> ;
+    skos:narrower <https://uzterm.local/concept/ifoda_uslubi> ;
+    skos:narrower <https://uzterm.local/concept/ilmiy_uslub> ;
+    skos:narrower <https://uzterm.local/concept/kitobiy_uslub> ;
+    skos:narrower <https://uzterm.local/concept/nutq_uslubi> ;
+    skos:narrower <https://uzterm.local/concept/ogzaki_uslub> ;
+    skos:narrower <https://uzterm.local/concept/rasmiy_idoraviy_uslub> ;
+    skos:narrower <https://uzterm.local/concept/sozlashuv_uslubi> .
+<https://uzterm.local/concept/uslubshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "uslubshunoslik"@uz .
+<https://uzterm.local/concept/uyushiq_bolak> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "uyushiq boʻlak"@uz .
+<https://uzterm.local/concept/variantdorlik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "variantdorlik"@uz .
+<https://uzterm.local/concept/varvarizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "varvarizm"@uz .
+<https://uzterm.local/concept/vokabulyar> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "vokabulyar"@uz .
+<https://uzterm.local/concept/vokalizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "vokalizm"@uz .
+<https://uzterm.local/concept/vokativ> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "vokativ"@uz .
+<https://uzterm.local/concept/vulgarizm> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "vulgarizm"@uz .
+<https://uzterm.local/concept/xabar_intonatsiyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xabar intonatsiyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/intonatsiya> .
+<https://uzterm.local/concept/xalq_etimologiyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xalq etimologiyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/etimologiya> .
+<https://uzterm.local/concept/xatboshi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xatboshi"@uz .
+<https://uzterm.local/concept/xususiy_fonetika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xususiy fonetika"@uz ;
+    skos:broader <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/xususiy_fonologiya> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xususiy fonologiya"@uz ;
+    skos:broader <https://uzterm.local/concept/fonologiya> .
+<https://uzterm.local/concept/xususiy_tilshunoslik> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "xususiy tilshunoslik"@uz ;
+    skos:broader <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/yakka_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yakka bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/yangi_leksika> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yangi leksika"@uz ;
+    skos:broader <https://uzterm.local/concept/leksika> .
+<https://uzterm.local/concept/yangi_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yangi qatlam"@uz .
+<https://uzterm.local/concept/yarim_affiks> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yarim affiks"@uz ;
+    skos:broader <https://uzterm.local/concept/affiks> .
+<https://uzterm.local/concept/yasalish_qolipi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yasalish qolipi"@uz .
+<https://uzterm.local/concept/yasama_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yasama feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/yasama_ot> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yasama ot"@uz ;
+    skos:broader <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/yasama_sifat> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yasama sifat"@uz ;
+    skos:broader <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/yasama_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yasama soʻz"@uz .
+<https://uzterm.local/concept/yordamchi_fel> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yordamchi feʼl"@uz ;
+    skos:broader <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/yordamchi_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yordamchi soʻz"@uz ;
+    skos:narrower <https://uzterm.local/concept/komakchi> ;
+    skos:narrower <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/yuklama> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yuklama"@uz ;
+    skos:broader <https://uzterm.local/concept/yordamchi_soz> ;
+    skos:narrower <https://uzterm.local/concept/aniqlov_yuklamasi> ;
+    skos:narrower <https://uzterm.local/concept/chegaralov_yuklamasi> ;
+    skos:narrower <https://uzterm.local/concept/taajjub_yuklamasi> ;
+    skos:narrower <https://uzterm.local/concept/takid_yuklamasi> .
+<https://uzterm.local/concept/yuklama_qoshimcha> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yuklama-qoʻshimcha"@uz ;
+    skos:broader <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/yuklama_soz> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yuklama-soʻz"@uz .
+<https://uzterm.local/concept/yuqori_kotarilish_unlisi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "yuqori koʻtarilish unlisi"@uz .
+<https://uzterm.local/concept/zamon> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zamon"@uz ;
+    skos:narrower <https://uzterm.local/concept/hozirgi_zamon> ;
+    skos:narrower <https://uzterm.local/concept/kelasi_zamon> ;
+    skos:narrower <https://uzterm.local/concept/otgan_zamon> .
+<https://uzterm.local/concept/zamon_kategoriyasi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zamon kategoriyasi"@uz ;
+    skos:broader <https://uzterm.local/concept/grammatik_kategoriya> .
+<https://uzterm.local/concept/zamon_shakli> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zamon shakli"@uz .
+<https://uzterm.local/concept/zamonaviy_qatlam> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zamonaviy qatlam"@uz .
+<https://uzterm.local/concept/zidlanish> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zidlanish"@uz .
+<https://uzterm.local/concept/zidlovchi_boglovchi> a skos:Concept ;
+    skos:inScheme <https://uzterm.local/concept/scheme> ;
+    skos:prefLabel "zidlovchi bogʻlovchi"@uz ;
+    skos:broader <https://uzterm.local/concept/boglovchi> .
+<https://uzterm.local/concept/bosh_gap> skos:related <https://uzterm.local/concept/ergash_gap> .
+<https://uzterm.local/concept/harakat_nomi> skos:related <https://uzterm.local/concept/ravishdosh> .
+<https://uzterm.local/concept/mayl> skos:related <https://uzterm.local/concept/shaxs_son> .
+<https://uzterm.local/concept/portlovchi> skos:related <https://uzterm.local/concept/sirgaluvchi> .
+<https://uzterm.local/concept/ovoz> skos:related <https://uzterm.local/concept/shovqin> .
+<https://uzterm.local/concept/aniqlovchi> skos:related <https://uzterm.local/concept/hol> .
+<https://uzterm.local/concept/frazeologik_tarkib> skos:related <https://uzterm.local/concept/frazeologizm> .
+<https://uzterm.local/concept/ergashgan_qoshma_gap> skos:related <https://uzterm.local/concept/predikativ_birlik> .
+<https://uzterm.local/concept/nutq_tovushi> skos:related <https://uzterm.local/concept/umumiy_fonetika> .
+<https://uzterm.local/concept/argo> skos:related <https://uzterm.local/concept/jargon> .
+<https://uzterm.local/concept/mustaqil_fel> skos:related <https://uzterm.local/concept/yordamchi_fel> .
+<https://uzterm.local/concept/sinonim> skos:related <https://uzterm.local/concept/sinonimik_qator> .
+<https://uzterm.local/concept/frazeologiya> skos:related <https://uzterm.local/concept/frazeologizm> .
+<https://uzterm.local/concept/leksika> skos:related <https://uzterm.local/concept/lugat_tarkibi> .
+<https://uzterm.local/concept/qoshma_gap> skos:related <https://uzterm.local/concept/sodda_gap> .
+<https://uzterm.local/concept/frazeologik_tarkib> skos:related <https://uzterm.local/concept/frazeologiya> .
+<https://uzterm.local/concept/hol> skos:related <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/aniqlovchi> skos:related <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/qoshma_ot> skos:related <https://uzterm.local/concept/qoshma_sifat> .
+<https://uzterm.local/concept/predikativ_birlik> skos:related <https://uzterm.local/concept/qoshma_gap> .
+<https://uzterm.local/concept/mustaqil_soz_turkumi> skos:related <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/antonim> skos:related <https://uzterm.local/concept/sinonim> .
+<https://uzterm.local/concept/chiziqcha> skos:related <https://uzterm.local/concept/juft_soz> .
+<https://uzterm.local/concept/etimologiya> skos:related <https://uzterm.local/concept/lugat_tarkibi> .
+<https://uzterm.local/concept/semasiologiya> skos:related <https://uzterm.local/concept/til_birligi> .
+<https://uzterm.local/concept/leksikografiya> skos:related <https://uzterm.local/concept/leksikologiya> .
+<https://uzterm.local/concept/leksikologiya> skos:related <https://uzterm.local/concept/semasiologiya> .
+<https://uzterm.local/concept/ega> skos:related <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/sleng> skos:related <https://uzterm.local/concept/soz_yasovchi_qoshimcha> .
+<https://uzterm.local/concept/affiks> skos:related <https://uzterm.local/concept/soz_yasovchi> .
+<https://uzterm.local/concept/boglovchi> skos:related <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/sifat> skos:related <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/boglovchi> skos:related <https://uzterm.local/concept/yordamchi_soz> .
+<https://uzterm.local/concept/olmosh> skos:related <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/argo> skos:related <https://uzterm.local/concept/ibora> .
+<https://uzterm.local/concept/ibora> skos:related <https://uzterm.local/concept/jargon> .
+<https://uzterm.local/concept/kollokvializm> skos:related <https://uzterm.local/concept/nostandart_leksika> .
+<https://uzterm.local/concept/sinonim> skos:related <https://uzterm.local/concept/til_birligi> .
+<https://uzterm.local/concept/gap_bolagi> skos:related <https://uzterm.local/concept/yordamchi_soz> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/soz_yasovchi> .
+<https://uzterm.local/concept/semasiologiya> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/sleng> skos:related <https://uzterm.local/concept/suffiks> .
+<https://uzterm.local/concept/soz_yasalishi> skos:related <https://uzterm.local/concept/soz_yasovchi> .
+<https://uzterm.local/concept/etimologiya> skos:related <https://uzterm.local/concept/leksikologiya> .
+<https://uzterm.local/concept/hokim_qism> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/komakchi> skos:related <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/nutq_tovushi> .
+<https://uzterm.local/concept/grammatik_kategoriya> skos:related <https://uzterm.local/concept/grammatik_shakl> .
+<https://uzterm.local/concept/adabiy_til> skos:related <https://uzterm.local/concept/ovoz> .
+<https://uzterm.local/concept/adabiy_til> skos:related <https://uzterm.local/concept/shovqin> .
+<https://uzterm.local/concept/etimologiya> skos:related <https://uzterm.local/concept/leksika> .
+<https://uzterm.local/concept/allofon> skos:related <https://uzterm.local/concept/fonema> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/jarangsiz> .
+<https://uzterm.local/concept/olmosh> skos:related <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/ravish> skos:related <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/etimologiya> skos:related <https://uzterm.local/concept/lugat> .
+<https://uzterm.local/concept/atoqli_ot> skos:related <https://uzterm.local/concept/bosh_harf> .
+<https://uzterm.local/concept/jarangsiz> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/leksikologiya> skos:related <https://uzterm.local/concept/til_birligi> .
+<https://uzterm.local/concept/nutq_birligi> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/portlovchi> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/sintaktik_birlik> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/sirgaluvchi> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/bogin> skos:related <https://uzterm.local/concept/qisqartma> .
+<https://uzterm.local/concept/ergashgan_qoshma_gap> skos:related <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/soz_turkumi> skos:related <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/affiks> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/mustaqil_soz_turkumi> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/gap_bolagi> skos:related <https://uzterm.local/concept/sintaksis> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/gap_bolagi> .
+<https://uzterm.local/concept/leksikologiya> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/soz_shakli> .
+<https://uzterm.local/concept/bogin> skos:related <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/fonologiya> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/predikativ_birlik> .
+<https://uzterm.local/concept/grammatik_qurilish> skos:related <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/grammatik_shakl> skos:related <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/sintaksis> .
+<https://uzterm.local/concept/atama> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/ovoz> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/shovqin> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/nostandart_leksika> skos:related <https://uzterm.local/concept/sleng> .
+<https://uzterm.local/concept/nostandart_leksika> skos:related <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/leksikologiya> .
+<https://uzterm.local/concept/nisbat_shakli> skos:related <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/sintaktik_birlik> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/taqlid_soz> .
+<https://uzterm.local/concept/soz_yasalishi> skos:related <https://uzterm.local/concept/til_birligi> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/soz_turkumi> skos:related <https://uzterm.local/concept/taqlid_soz> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/fonologiya> .
+<https://uzterm.local/concept/sintaksis> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/leksikologiya> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/ohang> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/olmosh> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/ravish> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/leksikografiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/qiyosiy_tarixiy_tilshunoslik> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/sintaksis> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/sifat> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/taqlid_soz> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/zamon> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/harakat_nomi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/ravishdosh> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/zamon_kategoriyasi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/mayl> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/shaxs_son> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/sifatdosh> .
+<https://uzterm.local/concept/ega> skos:related <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/sintaksis> skos:related <https://uzterm.local/concept/termin> .
+<https://uzterm.local/concept/ibora> skos:related <https://uzterm.local/concept/uslub> .
+<https://uzterm.local/concept/ibora> skos:related <https://uzterm.local/concept/nostandart_leksika> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/leksikologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/grammatik_shakl> .
+<https://uzterm.local/concept/ozlashma_soz> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/frazeologiya> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/frazeologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/kesim> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/affiks> skos:related <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/termin> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/sintaksis> .
+<https://uzterm.local/concept/mustaqil_soz> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/son> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/lugaviy_mano> .
+<https://uzterm.local/concept/olmosh> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/soz_shakli> .
+<https://uzterm.local/concept/etimologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/frazeologizm> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/lugat_tarkibi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/semasiologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/soz_yasovchi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/ohang> .
+<https://uzterm.local/concept/boglovchi> skos:related <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/yuklama> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/soz_yasovchi> .
+<https://uzterm.local/concept/ega> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/bogin> skos:related <https://uzterm.local/concept/fonetika> .
+<https://uzterm.local/concept/lugat> skos:related <https://uzterm.local/concept/nostandart_leksika> .
+<https://uzterm.local/concept/fonologiya> skos:related <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/sintaksis> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/leksikologiya> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/yordamchi_soz> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/sifat> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/termin> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/grammatik_qurilish> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/termin> .
+<https://uzterm.local/concept/nutq_tovushi> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/bogin> skos:related <https://uzterm.local/concept/unli_tovush> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/mustaqil_soz> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/soz_birikmasi> skos:related <https://uzterm.local/concept/soz_shakli> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/til_birligi> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/grammatika> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/ravish> .
+<https://uzterm.local/concept/fonologiya> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/fonetika> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/adabiy_til> skos:related <https://uzterm.local/concept/nostandart_leksika> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/grammatik_kategoriya> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/komakchi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/egalik_qoshimchasi> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/grammatik_kategoriya> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/affiks> skos:related <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/kesim> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/soz_yasalishi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/komakchi> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/lugat> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/soz_shakli> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/morfologiya> skos:related <https://uzterm.local/concept/soz_turkumi> .
+<https://uzterm.local/concept/leksika> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/qoshimcha> skos:related <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/ozlashma_soz> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/sintaksis> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/fonologiya> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/termin> .
+<https://uzterm.local/concept/til_birligi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/tilshunoslik> skos:related <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/fonologiya> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/morfema> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/grammatik_kategoriya> skos:related <https://uzterm.local/concept/ot> .
+<https://uzterm.local/concept/ozak> skos:related <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/undosh_tovush> skos:related <https://uzterm.local/concept/unli_tovush> .
+<https://uzterm.local/concept/ega> skos:related <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/urgu> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/soz_shakli> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/unli_tovush> .
+<https://uzterm.local/concept/ozak> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/allofon> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/grammatika> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/adabiy_til> skos:related <https://uzterm.local/concept/gap> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/ozak> .
+<https://uzterm.local/concept/harf> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/soz_yasalishi> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/qoshimcha> .
+<https://uzterm.local/concept/qoshimcha> skos:related <https://uzterm.local/concept/unli_tovush> .
+<https://uzterm.local/concept/qoshimcha> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/ot> skos:related <https://uzterm.local/concept/soz_birikmasi> .
+<https://uzterm.local/concept/soz_birikmasi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/morfema> .
+<https://uzterm.local/concept/fonema> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/soz_turkumi> skos:related <https://uzterm.local/concept/tilshunoslik> .
+<https://uzterm.local/concept/bogin> skos:related <https://uzterm.local/concept/fel> .
+<https://uzterm.local/concept/qoshimcha> skos:related <https://uzterm.local/concept/undosh_tovush> .
+<https://uzterm.local/concept/fel> skos:related <https://uzterm.local/concept/morfologiya> .
+<https://uzterm.local/concept/tilshunoslik> skos:related <https://uzterm.local/concept/tovush> .
+<https://uzterm.local/concept/gap> skos:related <https://uzterm.local/concept/tilshunoslik> .

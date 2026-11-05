@@ -93,3 +93,14 @@ def check_terms(payload: CheckTermsRequest, request: Request) -> CheckTermsRespo
     checker = _checker(request.app.state)
     return CheckTermsResponse(results=[checker.check(t).to_dict() for t in payload.terms], note=NOTE_CHECK)
 
+
+@router.get("/thesaurus")
+def thesaurus(request: Request) -> dict:
+    """Avtomatik qurilgan tezaurus (``python -m app.ontology.thesaurus`` natijasi, SKOS tuzilmasi)."""
+    import json
+
+    path = request.app.state.settings.data_dir.parent / "reports" / "thesaurus.json"
+    if not path.is_file():
+        raise HTTPException(status_code=404, detail="Tezaurus hali qurilmagan: python -m app.ontology.thesaurus")
+    return json.loads(path.read_text(encoding="utf-8"))
+

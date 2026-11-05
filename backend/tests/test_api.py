@@ -151,3 +151,15 @@ def test_check_terms_validation(client):
     assert client.post("/api/check-terms", json={"terms": []}).status_code == 422
     assert client.post("/api/check-terms", json={"terms": ["a" * 201]}).status_code == 413
 
+
+
+def test_thesaurus_endpoint(terms_file, tmp_path):
+    data_dir = tmp_path / "data"
+    data_dir.mkdir()
+    client = TestClient(create_app(Settings(terms_path=terms_file, max_text_chars=50, data_dir=data_dir)))
+    assert client.get("/api/thesaurus").status_code == 404
+    (tmp_path / "reports").mkdir()
+    (tmp_path / "reports" / "thesaurus.json").write_text(
+        json.dumps({"concepts": [], "relations": [], "related": [], "summary": {}}), encoding="utf-8"
+    )
+    assert client.get("/api/thesaurus").json()["concepts"] == []
