@@ -7,8 +7,12 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 
+DetectionMethod = Literal["dictionary", "crf", "crf_gazetteer", "transformer"]
+
+
 class AnalyzeRequest(BaseModel):
     text: str = Field(description="Tahlil qilinadigan matn (oʻzbek lotin yozuvi)")
+    method: DetectionMethod = Field(default="dictionary", description="Aniqlash usuli (GET /api/health -> methods)")
 
 
 class NormalizationOut(BaseModel):
@@ -37,15 +41,18 @@ class MatchOut(BaseModel):
     start: int = Field(description="Boshlanish, Unicode belgilari bo'yicha (Python indeksi)")
     end: int = Field(description="Tugash (eksklyuziv), Unicode belgilari bo'yicha")
     term: str | None = Field(description="Asosiy termin; bir nechta yozuvga mos kelsa null")
-    method: Literal["dictionary_exact", "dictionary_inflected"]
+    method: Literal["dictionary_exact", "dictionary_inflected", "crf", "crf_gazetteer", "transformer"]
     confidence: float | None = Field(description="Faqat model haqiqatan hisoblaganda; lug'at usulida null")
     ambiguous: bool
     review_required: bool
     candidates: list[CandidateOut]
+    lemma: str | None = Field(description="Lug'at shakli; lug'atda yo'q termin uchun morfologik taklif")
+    in_dictionary: bool = Field(description="Termin bazada bormi; false — model topgan yangi termin nomzodi")
+    related_terms: list[str] = Field(description="Yangi termin ichidagi yoki u bilan kesishgan lug'at terminlari")
 
 
 class AnalyzeResponse(BaseModel):
-    method: Literal["dictionary_baseline"] = "dictionary_baseline"
+    method: Literal["dictionary_baseline", "crf", "crf_gazetteer", "transformer"] = "dictionary_baseline"
     positions: Literal["unicode_codepoints"] = "unicode_codepoints"
     text_length: int
     terms_in_dictionary: int
@@ -65,10 +72,20 @@ class TermOut(BaseModel):
     source: str | None
 
 
+class MethodOut(BaseModel):
+    id: DetectionMethod
+    label: str
+    description: str
+    available: bool
+    reason: str | None = Field(description="Mavjud bo'lmasa — sababi")
+    test_f1: float | None = Field(description="Test exact F1 (reports/, kumush maʼlumot)")
+
+
 class HealthOut(BaseModel):
     status: Literal["ok"] = "ok"
     terms_in_dictionary: int
     max_text_chars: int
+    methods: list[MethodOut] = []
 
 
 # --- annotatsiya ish joyi -----------------------------------------------------

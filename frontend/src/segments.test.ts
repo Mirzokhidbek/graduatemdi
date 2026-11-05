@@ -5,7 +5,7 @@ import type { Match } from "./types";
 function match(start: number, end: number): Match {
   return {
     surface: "", base_surface: "", suffix: "", start, end, term: "t", method: "dictionary_exact",
-    confidence: null, ambiguous: false, review_required: true, candidates: [],
+    confidence: null, ambiguous: false, review_required: true, candidates: [], lemma: null, in_dictionary: true, related_terms: [],
   };
 }
 

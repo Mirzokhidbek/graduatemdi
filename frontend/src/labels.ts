@@ -3,6 +3,9 @@ import type { MatchType, Method, NormalizationStatus } from "./types";
 export const METHOD_LABELS: Record<Method, string> = {
   dictionary_exact: "Lug'at: aniq moslik",
   dictionary_inflected: "Lug'at: qo'shimchali shakl",
+  crf: "CRF modeli",
+  crf_gazetteer: "CRF + lug'at belgisi",
+  transformer: "XLM-R modeli",
 };
 
 export const MATCH_TYPE_LABELS: Record<MatchType, string> = {

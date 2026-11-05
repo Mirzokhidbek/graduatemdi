@@ -16,6 +16,24 @@ export function TermDetails({ match }: { match: Match }) {
       <p className="hint">
         {METHOD_LABELS[match.method]} · pozitsiya [{match.start}, {match.end})
       </p>
+      {!match.in_dictionary && (
+        <section className="candidate">
+          <p className="badge badge-new block">
+            Yangi termin nomzodi: model topdi, lekin lug'atda yo'q. Termin ekanini va lug'at shaklini mutaxassis
+            tekshirishi kerak.
+          </p>
+          <dl>
+            <dt>Taklif qilingan lug'at shakli</dt>
+            <dd>{match.lemma ?? "—"}</dd>
+            {match.related_terms.length > 0 && (
+              <>
+                <dt>Ichidagi lug'at terminlari</dt>
+                <dd>{match.related_terms.join(", ")}</dd>
+              </>
+            )}
+          </dl>
+        </section>
+      )}
       {match.ambiguous && (
         <p className="badge badge-warn block">
           Bu shakl bir nechta terminga mos keladi. Qaysi biri nazarda tutilganini kontekst bo'yicha tekshiring.

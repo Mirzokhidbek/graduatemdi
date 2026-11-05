@@ -3,6 +3,7 @@ import type {
   AnalyzeResponse,
   AnnotationDocument,
   CheckTermsResponse,
+  DetectionMethod,
   DocumentSummary,
   Health,
   Thesaurus,
@@ -46,11 +47,15 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   return (await response.json()) as T;
 }
 
-export function analyze(text: string, signal?: AbortSignal): Promise<AnalyzeResponse> {
+export function analyze(
+  text: string,
+  signal?: AbortSignal,
+  method: DetectionMethod = "dictionary",
+): Promise<AnalyzeResponse> {
   return request<AnalyzeResponse>("/api/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ text }),
+    body: JSON.stringify({ text, method }),
     signal,
   });
 }

@@ -2,7 +2,8 @@
 
 export type NormalizationStatus = "approved" | "needs_review" | "no_data";
 export type MatchType = "term" | "variant" | "synonym";
-export type Method = "dictionary_exact" | "dictionary_inflected";
+export type Method = "dictionary_exact" | "dictionary_inflected" | "crf" | "crf_gazetteer" | "transformer";
+export type DetectionMethod = "dictionary" | "crf" | "crf_gazetteer" | "transformer";
 
 export interface Normalization {
   preferred_form: string | null;
@@ -36,10 +37,16 @@ export interface Match {
   ambiguous: boolean;
   review_required: boolean;
   candidates: Candidate[];
+  /** Lug'at shakli; lug'atda yo'q termin uchun morfologik taklif. */
+  lemma: string | null;
+  /** false — model topgan, lug'atda yo'q yangi termin nomzodi. */
+  in_dictionary: boolean;
+  /** Yangi termin ichidagi yoki u bilan kesishgan lug'at terminlari. */
+  related_terms: string[];
 }
 
 export interface AnalyzeResponse {
-  method: "dictionary_baseline";
+  method: "dictionary_baseline" | "crf" | "crf_gazetteer" | "transformer";
   positions: "unicode_codepoints";
   text_length: number;
   terms_in_dictionary: number;
@@ -47,10 +54,20 @@ export interface AnalyzeResponse {
   notes: string[];
 }
 
+export interface MethodInfo {
+  id: DetectionMethod;
+  label: string;
+  description: string;
+  available: boolean;
+  reason: string | null;
+  test_f1: number | null;
+}
+
 export interface Health {
   status: "ok";
   terms_in_dictionary: number;
   max_text_chars: number;
+  methods: MethodInfo[];
 }
 
 // --- annotatsiya ish joyi -----------------------------------------------------

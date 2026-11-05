@@ -21,6 +21,7 @@ from app.core.config import Settings
 from app.database.term_store import load_terms
 from app.models.runtime import load_predictor
 from app.nlp.dictionary_matcher import DictionaryMatcher
+from app.services.detectors import DetectorRegistry
 
 logger = logging.getLogger("uzterm")
 
@@ -35,6 +36,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.state.matcher = DictionaryMatcher(entries)
     model = load_predictor(settings.model_path, settings.data_dir / "raw") if settings.model_path else None
     app.state.workspace = Workspace(settings.data_dir, app.state.matcher, model)
+    app.state.detectors = DetectorRegistry(
+        app.state.matcher, entries, settings.models_dir, settings.data_dir / "raw", settings.data_dir.parent / "reports"
+    )
     app.include_router(router)
     app.include_router(annotation_router)
 

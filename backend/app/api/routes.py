@@ -14,7 +14,8 @@ from app.schemas import (
     HealthOut,
     TermOut,
 )
-from app.services.analyzer import analyze_text
+from app.services.analyzer import analyze_text, analyze_with_model
+from app.services.detectors import DICTIONARY, LABELS, DetectorUnavailable
 
 router = APIRouter(prefix="/api")
 
@@ -24,13 +25,25 @@ NOTE_DICTIONARY_ONLY = (
 NOTE_NEEDS_REVIEW = (
     "Ayrim meʼyoriy shakllar manba bilan tasdiqlanmagan — bular faqat tavsiya, tekshirish kerak."
 )
+NOTE_MODEL = (
+    "{label} modeli: terminlarni kontekst bo'yicha aniqlaydi, shu jumladan lug'atda yo'qlarini ham. "
+    "Natijalar AI annotatsiyasida o'qitilgan modelga tegishli — xato bo'lishi mumkin."
+)
+NOTE_NEW_TERMS = (
+    "\"Yangi\" deb belgilangan terminlar lug'atda yo'q: lug'at shakli avtomatik taklif qilingan, "
+    "termin ekanini va shaklini mutaxassis tekshirishi kerak."
+)
 NOTE_AMBIGUOUS = "Ayrim shakllar bir nechta terminga mos keldi — kontekst bo'yicha tekshirish kerak."
 
 
 @router.get("/health", response_model=HealthOut)
 def health(request: Request) -> HealthOut:
     state = request.app.state
-    return HealthOut(terms_in_dictionary=len(state.entries), max_text_chars=state.settings.max_text_chars)
+    return HealthOut(
+        terms_in_dictionary=len(state.entries),
+        max_text_chars=state.settings.max_text_chars,
+        methods=[m.to_dict() for m in state.detectors.methods()],
+    )
 
 
 @router.get("/terms", response_model=list[TermOut])
@@ -48,14 +61,30 @@ def analyze(payload: AnalyzeRequest, request: Request) -> AnalyzeResponse:
             detail=f"Matn juda uzun: {len(payload.text)} belgi. Eng ko'pi {limit} belgi.",
         )
 
-    matches = analyze_text(payload.text, state.matcher)
-    notes = [NOTE_DICTIONARY_ONLY]
+    if payload.method == DICTIONARY:
+        matches = analyze_text(payload.text, state.matcher)
+        notes = [NOTE_DICTIONARY_ONLY]
+    else:
+        detectors = state.detectors
+        try:
+            predict = detectors.predictor(payload.method)
+        except DetectorUnavailable as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from None
+        normalizer = detectors.normalizer()
+        matches = analyze_with_model(
+            payload.text, predict(payload.text), state.matcher, payload.method,
+            lambda surface: normalizer.normalize(surface).lemma,
+        )
+        notes = [NOTE_MODEL.format(label=LABELS[payload.method])]
+        if any(not m["in_dictionary"] for m in matches):
+            notes.append(NOTE_NEW_TERMS)
     if any(c["normalization"]["status"] != "approved" for m in matches for c in m["candidates"]):
         notes.append(NOTE_NEEDS_REVIEW)
     if any(m["ambiguous"] for m in matches):
         notes.append(NOTE_AMBIGUOUS)
 
     return AnalyzeResponse(
+        method="dictionary_baseline" if payload.method == DICTIONARY else payload.method,
         text_length=len(payload.text),
         terms_in_dictionary=len(state.entries),
         matches=matches,

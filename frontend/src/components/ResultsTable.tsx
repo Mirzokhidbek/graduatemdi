@@ -26,7 +26,7 @@ export function ResultsTable({ matches, selected, onSelect }: Props) {
         <tbody>
           {matches.map((match, index) => {
             const first = match.candidates[0];
-            const badge = NORMALIZATION_BADGES[first.normalization.status];
+            const badge = first ? NORMALIZATION_BADGES[first.normalization.status] : null;
             return (
               <tr
                 key={`${match.start}-${match.end}`}
@@ -36,7 +36,11 @@ export function ResultsTable({ matches, selected, onSelect }: Props) {
                 <td>{index + 1}</td>
                 <td>{match.surface}</td>
                 <td>
-                  {match.ambiguous ? (
+                  {!match.in_dictionary ? (
+                    <>
+                      {match.lemma ?? match.surface} <span className="badge badge-new">yangi</span>
+                    </>
+                  ) : match.ambiguous ? (
                     <span className="badge badge-warn">noaniq: {match.candidates.map((c) => c.term).join(" / ")}</span>
                   ) : (
                     <>
@@ -50,12 +54,19 @@ export function ResultsTable({ matches, selected, onSelect }: Props) {
                 <td className="mono">
                   [{match.start}, {match.end})
                 </td>
-                <td>{match.ambiguous ? "—" : first.domain ?? "—"}</td>
+                <td>{match.ambiguous || !first ? "—" : first.domain ?? "—"}</td>
                 <td>{METHOD_LABELS[match.method]}</td>
                 <td>
-                  {first.normalization.preferred_form ?? "—"} <span className={`badge badge-${badge.tone}`}>{badge.text}</span>
+                  {first && badge ? (
+                    <>
+                      {first.normalization.preferred_form ?? "—"}{" "}
+                      <span className={`badge badge-${badge.tone}`}>{badge.text}</span>
+                    </>
+                  ) : (
+                    <span className="badge badge-warn" title="Lug'atda yo'q — tekshirish kerak">lug'atda yo'q</span>
+                  )}
                 </td>
-                <td title="Lug'at usuli ehtimollik hisoblamaydi">
+                <td title="Ishonchlilik ko'rsatkichi hisoblanmaydi">
                   {match.confidence === null ? "hisoblanmagan" : match.confidence.toFixed(2)}
                 </td>
               </tr>

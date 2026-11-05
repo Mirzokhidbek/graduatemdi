@@ -25,6 +25,8 @@ class Settings:
     annotation_enabled: bool = True
     # annotatorga taklif beradigan CRF modeli (bo'lmasa, takliflar faqat lug'at va AI'dan)
     model_path: Path | None = None
+    # "Tahlil" sahifasidagi modellar: crf.crfsuite, crf-gazetteer.crfsuite, transformer/
+    models_dir: Path = REPO_ROOT / "models"
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -41,4 +43,5 @@ class Settings:
             data_dir=_resolve(os.environ.get("UZTERM_DATA_DIR", "data")),
             annotation_enabled=os.environ.get("UZTERM_ANNOTATION", "on").lower() not in ("off", "0", "false"),
             model_path=_resolve(os.environ.get("UZTERM_MODEL_PATH", "models/crf.crfsuite")),
+            models_dir=_resolve(os.environ.get("UZTERM_MODELS_DIR", "models")),
         )
