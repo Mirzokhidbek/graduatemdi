@@ -1,6 +1,6 @@
-# 2-bob. Maʼlumotlar
+# A ilova. Maʼlumotlar
 
-## 2.1. Korpus
+## A.1. Korpus
 
 Korpus Oʻzbekcha Vikipediyaning 41 ta tilshunoslik maqolasidan iborat
 (`data/raw/`, manbalar reyestri `data/sources.json`). Har bir maqola uchun quyidagilar
@@ -33,7 +33,7 @@ Maqolalar quyidagi bo'limlarni qamraydi:
 
 Janr bitta — ensiklopedik matn. Bu cheklov 5-bobda muhokama qilinadi.
 
-### 2.1.1. Kontrast korpus (sohaviy bo'lmagan matnlar)
+### A.1.1. Kontrast korpus (sohaviy bo'lmagan matnlar)
 
 Statistik termin nomzodlarini filtrlash va weirdness (g'ayrioddiylik) o'lchovini hisoblash
 uchun Oʻzbekcha Vikipediyadan tilshunoslikka oid bo'lmagan 48 ta maqola yig'ildi
@@ -42,7 +42,7 @@ qamraydi: tabiiy fanlar (Fizika, Matematika), tibbiyot (Oʻzbekistonda tibbiyot 
 din (Islom), sanoat va qishloq xoʻjaligi (Neft, Paxta, Bugʻdoy, Oltin), biologiya
 (Burgut, Uzum, Olma) va sport (Olimpiya oʻyinlari). Barcha matnlar litsenziyasi CC BY-SA 4.0.
 
-## 2.2. Annotatsiya yo'riqnomasi
+## A.2. Annotatsiya yo'riqnomasi
 
 Annotatsiya qoidalari `docs/data-annotation-guide.md` da berilgan. Asosiy qoidalar:
 
@@ -63,14 +63,14 @@ Har bir yozuv tekshiruvchi (`app.dataset.validate`) orqali avtomatik tekshirilad
 - `id` noyobligi;
 - manba reyestrda borligi.
 
-## 2.3. Annotatsiya jarayoni (kumush maʼlumot)
+## A.3. Annotatsiya jarayoni (kumush maʼlumot)
 
 Inson annotatsiyasi hali yig'ilmagani uchun korpus **AI (Claude)** tomonidan
 ikki usulda belgilandi:
 
 1. **Ro'yxat usuli** (`data/silver/`, 41 ta maqola). Har bir maqola o'qilib,
    undagi terminlar ro'yxati va istisnolar tuzildi. Istisnolar umumiy maʼnodagi
-   qo'llanish, izohlar va asar nomlarini qamraydi. Ro'yxat 3.3-bo'limdagi lug'at
+   qo'llanish, izohlar va asar nomlarini qamraydi. Ro'yxat 2.1.3-bo'limdagi lug'at
    aniqlagichi bilan matnga qo'llandi.
 2. **Uchrash-ma-uchrash usuli** (`data/silver/claude2/`, 6 ta test maqolasi).
    Har bir termin uchrashi alohida, kontekstga qarab hal qilindi. Ro'yxat va
@@ -93,7 +93,7 @@ annotatorlardan birini oltin deb olgan F1 ishlatiladi. Sababi: "termin emas"
 toifasidagi birliklar soni aniqlanmagan, shuning uchun tasodifiy kelishuvni
 hisoblab bo'lmaydi.
 
-## 2.4. 100 gaplik BIO dataset
+## A.4. 100 gaplik BIO dataset
 
 Ketma-ketlikni belgilash modellari uchun alohida, qo'lda tekshirilgan BIO dataset
 tayyorlandi (`data/bio/sentences-100.jsonl`, `app.dataset.bio`).
@@ -142,7 +142,7 @@ Natija: 0 ta xato.
 Butun korpus ham BIO formatiga eksport qilinadi (`app.dataset.bio export`):
 1 000 gap, xatolar 0.
 
-## 2.5. To'plamlarga ajratish
+## A.5. To'plamlarga ajratish
 
 Korpus **manba (maqola) darajasida** ajratildi (`app.dataset.split`). Bitta maqola
 gaplari turli to'plamlarga tushmaydi, aks holda bir maqoladagi takroriy terminlar

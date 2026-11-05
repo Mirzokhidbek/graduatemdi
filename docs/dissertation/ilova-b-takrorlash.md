@@ -1,4 +1,4 @@
-# 6. Natijalarni takrorlash
+# B ilova. Natijalarni takrorlash
 
 Muhit: Python 3.11+ (3.13 da tekshirilgan), `pip install -r requirements.txt`.
 Barcha buyruqlar repozitoriy ildizidan, `PYTHONPATH=backend` bilan ishga tushiriladi.
@@ -16,26 +16,26 @@ python -m app.dataset.bio export data/processed/silver/train.jsonl -o data/proce
 python -m app.annotation.dictionary
 
 # 3. Modellar va aniqlash tajribalari (≈ 2.5 daqiqa, 4 yadro)
-python -m app.models.experiment                                   # 4.1-jadval, models/*.crfsuite
+python -m app.models.experiment                                   # 2.2-jadval, models/*.crfsuite
 python -m app.models.experiment --test-files data/annotations/claude2/*.jsonl \
-       --output reports/experiment-silver-test2.json              # 4.2-jadval
+       --output reports/experiment-silver-test2.json              # 2.3-jadval
 
 # Alohida o'qitish / qayta yuklab baholash / matnni tahlil qilish
 python -m app.models.crf train data/processed/silver/train.jsonl --model models/crf-gazetteer.crfsuite --gazetteer data/terms.json
 python -m app.models.crf evaluate data/processed/silver/test.jsonl --model models/crf-gazetteer.crfsuite
 python -m app.models.crf predict "Morfonologiya tilshunoslik boʻlimi." --model models/crf.crfsuite
 
-# 4. Meʼyorlashtirish (4.4-jadval)
+# 4. Meʼyorlashtirish (3.1-jadval)
 python -m app.evaluation.normalization data/processed/silver/test.jsonl --output reports/normalization-test.json
 
-# 5. Statistik nomzodlar (4.6-jadval)
+# 5. Statistik nomzodlar (2.1-jadval)
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \
        --judgments data/judgments/candidates-claude.csv
 
 # 5b. Transformer (GPU, Google Colab: notebooks/xlmr_colab.ipynb)
 pip install torch transformers sentencepiece
-python -m app.models.transformer --model xlm-roberta-base         # 4.7-bo'lim, models/transformer/
+python -m app.models.transformer --model xlm-roberta-base         # 2.2.7-bo'lim, models/transformer/
 python -m app.models.transformer --load --test-files data/annotations/claude2/*.jsonl \
        --output reports/experiment-transformer-test2.json
 
