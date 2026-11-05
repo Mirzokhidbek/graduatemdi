@@ -102,3 +102,27 @@ export interface JudgmentRow {
   frequency: string;
   example: string;
 }
+
+// --- meʼyor tekshiruvi (POST /api/check-terms) ---------------------------------
+
+export type Severity = "ok" | "info" | "warning" | "error";
+
+export interface Finding {
+  rule: string;
+  basis: string;
+  severity: Severity;
+  message: string;
+  suggestion: string | null;
+}
+
+export interface CheckResult {
+  term: string;
+  severity: Severity;
+  suggestion: string | null;
+  findings: Finding[];
+}
+
+export interface CheckTermsResponse {
+  results: CheckResult[];
+  note: string;
+}

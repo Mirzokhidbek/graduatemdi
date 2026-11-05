@@ -32,6 +32,14 @@ def test_to_latin_follows_official_rules():
     assert to_latin("ер") == "yer" and to_latin("поезд") == "poyezd" and to_latin("тема") == "tema"
     assert to_latin("цирк") == "sirk" and to_latin("акция") == "aksiya" and to_latin("милиция") == "militsiya"
     assert to_latin("Ўзбекистон") == "Oʻzbekiston"
+    assert to_latin("объект") == "obyekt" and to_latin("маъно") == "maʼno" and to_latin("меъёр") == "meʼyor"
+
+
+def test_fix_mixed_script_uses_lookalikes():
+    from app.variation.orthography import fix_mixed_script
+
+    assert fix_mixed_script("уordamchi fеʼl") == "yordamchi feʼl"  # "у" lotin so'zda — "y"
+    assert fix_mixed_script("фонема") == "фонема"  # sof kirill so'z o'zgarmaydi
 
 
 def test_skeleton_unifies_spelling_variants():

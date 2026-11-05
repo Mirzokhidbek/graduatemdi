@@ -148,3 +148,28 @@ class JudgmentIn(BaseModel):
     candidate: str = Field(min_length=1, max_length=200)
     judgment: Literal["1", "0", "?", ""]
     notes: str | None = Field(default=None, max_length=500)
+
+
+class CheckTermsRequest(BaseModel):
+    terms: list[str] = Field(min_length=1, max_length=200, description="Tekshiriladigan terminlar (1–200 ta)")
+
+
+class FindingOut(BaseModel):
+    rule: str
+    basis: str = Field(description="Qoida manbasi: ISO 704:2022, imlo qoidalari (1995) yoki lug'at shakli")
+    severity: Literal["ok", "info", "warning", "error"]
+    message: str
+    suggestion: str | None
+
+
+class CheckResultOut(BaseModel):
+    term: str
+    severity: Literal["ok", "info", "warning", "error"]
+    suggestion: str | None = Field(description="Imlo va lug'at shakli tuzatishlari qo'llangan shakl")
+    findings: list[FindingOut]
+
+
+class CheckTermsResponse(BaseModel):
+    results: list[CheckResultOut]
+    note: str
+

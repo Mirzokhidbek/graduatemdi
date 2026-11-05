@@ -20,7 +20,7 @@ Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 | 2.2 ML / DL | 🟡 | CRF, CRF + gazetteer; XLM-R kodi bor, o'qitilmagan |
 | 2.3 Ontologiya va tezaurus | ❌ | — |
 | 3.1 Variantdorlik | ✅ | `app/variation/`: imlo, kirill, morfologiya, imlo xatosi, sinonim/dublet, omonimiya, meʼyoriy shakl tanlash |
-| 3.2 Meʼyorga muvofiqlikni tekshirish | ❌ | — |
+| 3.2 Meʼyorga muvofiqlikni tekshirish | ✅ | `app/norms/`, `POST /api/check-terms`, `#check` sahifasi; ekspert bahosi kutilmoqda |
 | 3.3 Ko'p tilli moslashtirish | ❌ | — |
 
 ---

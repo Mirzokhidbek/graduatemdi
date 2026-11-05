@@ -30,4 +30,5 @@
 14. ISO 704:2022. Terminology work — Principles and methods. ISO, 2022.
 15. Damerau F. J. A technique for computer detection and correction of spelling errors //
    Communications of the ACM, 1964, 7(3), 171–176.
+16. ISO 1087:2019. Terminology work and terminology science — Vocabulary. ISO, 2019.
 

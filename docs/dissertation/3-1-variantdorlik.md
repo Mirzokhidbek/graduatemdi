@@ -196,10 +196,11 @@ Test to'plamidagi har bir oltin terminga sun'iy variant yasaldi: apostrof almash
 |---|---|---|---|---|---|---|
 | Aynan moslik | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
 | Kichik harf | 1.00 | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |
-| Imlo skeleti | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 0.96 |
+| Imlo skeleti | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 |
 
-Kirill yozuvidagi 4 % xato sintetik o'girishning soddaligidan kelib chiqadi
-(*ye/e*, *ts/s* qoidalari teskari yo'nalishda hisobga olinmagan), skeletning o'zidan emas.
+Sintetik kirill shakllari soddalashtirilgan lotin → kirill jadvali bilan yasalgan
+(*e → э* so'z boshida, *ye → е*). *объект* kabi *ъ* li shakllar unda yo'q,
+ularning o'girilishi alohida birlik testlari bilan tekshirilgan.
 
 ### 3.1.4. Meʼyoriy shaklni tanlash
 

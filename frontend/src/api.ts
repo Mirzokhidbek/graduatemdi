@@ -2,6 +2,7 @@ import type { Span } from "./annotation";
 import type {
   AnalyzeResponse,
   AnnotationDocument,
+  CheckTermsResponse,
   DocumentSummary,
   Health,
   JudgmentRow,
@@ -51,6 +52,30 @@ export function analyze(text: string, signal?: AbortSignal): Promise<AnalyzeResp
     body: JSON.stringify({ text }),
     signal,
   });
+}
+
+/** Terminlarni ISO 704 tamoyillari va imlo qoidalariga muvofiqlikka tekshirish. */
+export function checkTerms(terms: string[], signal?: AbortSignal): Promise<CheckTermsResponse> {
+  return request<CheckTermsResponse>("/api/check-terms", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ terms }),
+    signal,
+  });
+}
+
+/** Matn maydonidagi qatorlardan terminlar ro'yxati: bo'sh qatorlar va takrorlar tashlanadi. */
+export function parseTermLines(text: string, limit = 200): string[] {
+  const seen = new Set<string>();
+  const terms: string[] = [];
+  for (const line of text.split(/\r?\n/)) {
+    const term = line.trim();
+    if (!term || seen.has(term)) continue;
+    seen.add(term);
+    terms.push(term);
+    if (terms.length >= limit) break;
+  }
+  return terms;
 }
 
 export function health(): Promise<Health> {
