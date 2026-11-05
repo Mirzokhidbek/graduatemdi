@@ -109,3 +109,12 @@ td.example { max-width: 520px; color: var(--muted); }
 td.example mark { background: var(--mark); color: var(--text); }
 tbody tr:has(input) { cursor: default; }
 .check-inline { margin: 0; }
+
+.tree, .tree ul { list-style: none; margin: 0; padding-left: 18px; }
+.tree { padding-left: 0; }
+.tree summary { cursor: pointer; }
+.tree .leaf { padding-left: 14px; }
+.tree .count { color: var(--muted); font-size: 0.8rem; margin-left: 4px; }
+.tree .hit { background: var(--mark); border-radius: 3px; }
+.tree-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0 12px; }
+.tree-toolbar input { font: inherit; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; min-width: 240px; }

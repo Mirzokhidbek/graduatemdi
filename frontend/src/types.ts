@@ -126,3 +126,26 @@ export interface CheckTermsResponse {
   results: CheckResult[];
   note: string;
 }
+
+// --- tezaurus (GET /api/thesaurus) ------------------------------------------------
+
+export interface ThesaurusConcept {
+  label: string;
+  broader: string[];
+  narrower: string[];
+  alt_labels: string[];
+}
+
+export interface ThesaurusRelation {
+  narrower: string;
+  broader: string;
+  sources: Record<string, number>;
+  evidence: string[];
+}
+
+export interface Thesaurus {
+  concepts: ThesaurusConcept[];
+  relations: ThesaurusRelation[];
+  related: { a: string; b: string; pmi: number; count: number }[];
+  summary: { concepts: number; broader_relations: number; roots: number; related_pairs: number };
+}

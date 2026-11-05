@@ -1,0 +1,8920 @@
+{
+  "concepts": [
+    {
+      "label": "abbreviatsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "abzats",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "adabiy til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "affiks",
+      "broader": [],
+      "narrower": [
+        "sifat yasovchi affiks",
+        "soʻz yasovchi affiks",
+        "yarim affiks"
+      ],
+      "alt_labels": [
+        "qoʻshimcha"
+      ]
+    },
+    {
+      "label": "affiks-antonim",
+      "broader": [
+        "antonim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "affiksal morfema",
+      "broader": [
+        "morfema"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "affiksatsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "affrikata",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "afrikashunoslik",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "agglyutinativ til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "aktual boʻlinish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "allofon",
+      "broader": [],
+      "narrower": [
+        "tonik allofon"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "allofoniya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "alloton",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "almashinuv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "amaliy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "amaliy lugʻatchilik",
+      "broader": [
+        "lugʻatchilik"
+      ],
+      "narrower": [
+        "leksikografiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "amaliy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "amorf til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "analitik shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "analitik til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "analitik usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "aniqlov bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "aniqlov yuklamasi",
+      "broader": [
+        "yuklama"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "aniqlovchi",
+      "broader": [],
+      "narrower": [
+        "qaratqichli aniqlovchi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "aniqlovchili soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "antonim",
+      "broader": [],
+      "narrower": [
+        "affiks-antonim",
+        "leksik antonim",
+        "lugʻaviy antonim",
+        "sintaktik antonim"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "antonimik juft",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "antonimiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "antonimlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "antroponimika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "arabistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "arabshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "argo",
+      "broader": [
+        "soʻzlashuv uslubi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "artikl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "artikulyatsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "arxaizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "arxifonema",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "asos",
+      "broader": [],
+      "narrower": [
+        "predikativ asos",
+        "soʻz yasalishi asosi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "atama",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "atoqli ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ayiruvchi bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "barqaror jumla",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "baynalmilal soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "belgi nazariyasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "belgilash-jamlash olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bir tilli leksikografiya",
+      "broader": [
+        "leksikografiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "birgalik nisbati",
+      "broader": [
+        "nisbat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "biriktiruv bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "biriktiruvchi bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "birinchi shaxs",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "birlik",
+      "broader": [],
+      "narrower": [
+        "abzats",
+        "frazeologik birlik",
+        "grammatik birlik",
+        "lingvistik birlik",
+        "lisoniy birlik",
+        "lugʻaviy birlik",
+        "matn",
+        "period",
+        "predikativ birlik",
+        "qoʻshma gap",
+        "segment birlik",
+        "sintaktik birlik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "bitishuv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bitishuvli soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bogʻlama",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bogʻlangan qoʻshma gap",
+      "broader": [
+        "qoʻshma gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bogʻliq urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bogʻlovchi",
+      "broader": [],
+      "narrower": [
+        "aniqlov bogʻlovchi",
+        "ayiruvchi bogʻlovchi",
+        "biriktiruv bogʻlovchi",
+        "biriktiruvchi bogʻlovchi",
+        "chogʻishtiruv bogʻlovchi",
+        "ergashtiruvchi bogʻlovchi",
+        "inkor bogʻlovchi",
+        "maqsad bogʻlovchi",
+        "teng bogʻlovchi",
+        "toʻsiqsizlik bogʻlovchi",
+        "yakka bogʻlovchi",
+        "zidlovchi bogʻlovchi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "bogʻlovchisiz qoʻshma gap",
+      "broader": [
+        "qoʻshma gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh boʻlak",
+      "broader": [],
+      "narrower": [
+        "ega",
+        "kesim"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh harf",
+      "broader": [
+        "harf"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh kelishik",
+      "broader": [
+        "kelishik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh nisbat",
+      "broader": [
+        "nisbat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "bosh urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boshqaruv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boshqaruvli soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻgʻin",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻgʻin koʻchirish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻgʻiz undoshi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishli feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishli shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishli-boʻlishsizlik kategoriyasi",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishlilik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishsiz feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishsiz shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishsizlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishsizlik olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "boʻlishsizlik shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "burun undoshi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "burun unlisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "buyruq feʼli",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "buyruq mayli",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "buyruq-istak mayli",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chegara shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chegaralov yuklamasi",
+      "broader": [
+        "yuklama"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chiqish kelishigi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chiziqcha",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chogʻishtiruv bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "choʻziq unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "chuqur til orqa",
+      "broader": [
+        "til orqa"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "daraja",
+      "broader": [],
+      "narrower": [
+        "oddiy daraja",
+        "orttirma daraja",
+        "ozaytirma daraja",
+        "qiyosiy daraja"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "daraja kategoriyasi",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "daraja shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "daraja-miqdor ravishi",
+      "broader": [
+        "ravish"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "darak gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "denotativ maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "diakritika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "dialektizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "dialektologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "diaxroniya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ega",
+      "broader": [
+        "bosh boʻlak"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "egalik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "egalik kategoriyasi",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "egalik koʻrsatkichi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "egalik qoʻshimchasi",
+      "broader": [
+        "qoʻshimcha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "eksperimental fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "emotsional boʻyoq",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ergash gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ergash gapli qoʻshma gap",
+      "broader": [
+        "qoʻshma gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ergashgan qoʻshma gap",
+      "broader": [
+        "qoʻshma gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ergashtiruvchi bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "erkalash shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "erkin oʻzgaruvchanlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "eski qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "etimologik lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "etimologik maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "etimologik tahlil",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "etimologiya",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [
+        "ilmiy etimologiya",
+        "soxta etimologiya",
+        "xalq etimologiyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "etnolingvistika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "faol grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "farqlanish elementi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "farqlanmovchi element",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "farqlovchi belgi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "feʼl",
+      "broader": [],
+      "narrower": [
+        "boʻlishli feʼl",
+        "boʻlishsiz feʼl",
+        "buyruq feʼli",
+        "koʻmakchi feʼl",
+        "mustaqil feʼl",
+        "qoʻshma feʼl",
+        "toʻliqsiz feʼl",
+        "yasama feʼl",
+        "yordamchi feʼl"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "feʼl kesim",
+      "broader": [
+        "kesim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "feʼl koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "feʼl shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "feʼl soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "finugorshunoslik",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonema",
+      "broader": [],
+      "narrower": [
+        "unli fonema"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik hodisa",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik qonuniyat",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik tizim",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik transkripsiya",
+      "broader": [
+        "transkripsiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik tuzilish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetik yozuv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonetika",
+      "broader": [
+        "umumiy fonologiya"
+      ],
+      "narrower": [
+        "eksperimental fonetika",
+        "funksional fonetika",
+        "qiyosiy fonetika",
+        "tarixiy fonetika",
+        "tasviriy fonetika",
+        "umumiy fonetika",
+        "xususiy fonetika"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "fonologik qoida",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonologik tizim",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "fonologiya",
+      "broader": [],
+      "narrower": [
+        "tarixiy fonologiya",
+        "tasviriy fonologiya",
+        "umumiy fonologiya",
+        "xususiy fonologiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "fraza urgʻusi",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologik birikma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologik birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologik sinonimiya",
+      "broader": [
+        "sinonimiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologik tarkib",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologiya",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "frazeologizm",
+      "broader": [],
+      "narrower": [
+        "idioma-frazeologizm"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "funksional uslub",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "gap",
+      "broader": [
+        "nutq birligi"
+      ],
+      "narrower": [
+        "bosh gap",
+        "darak gap",
+        "ergash gap",
+        "ikki tarkibli gap",
+        "koʻchirma gap",
+        "muallif gapi",
+        "qoʻshma gap",
+        "sodda gap",
+        "soʻroq gap",
+        "undov gap"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "gap boʻlagi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "germanistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "germanshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "glossematika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grafika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik kategoriya",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [
+        "leksik-grammatik kategoriya",
+        "mayl kategoriyasi",
+        "nisbat kategoriyasi",
+        "zamon kategoriyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik morfema",
+      "broader": [
+        "morfema"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik qoida",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik qurilish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik turkum",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik tuzilish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatik unsur",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "grammatika",
+      "broader": [],
+      "narrower": [
+        "amaliy grammatika",
+        "faol grammatika",
+        "funksional grammatika",
+        "mazmuniy grammatika",
+        "meʼyoriy grammatika",
+        "nazariy grammatika",
+        "nofaol grammatika",
+        "shakliy grammatika",
+        "tavsifiy grammatika"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "grammema",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "harakat nomi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "harf",
+      "broader": [],
+      "narrower": [
+        "bosh harf",
+        "kichik harf"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "hindevropashunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "hokim komponent",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "hokim qism",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "hol",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "holli soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "hozirgi zamon",
+      "broader": [
+        "zamon"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "hurmat shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ibora",
+      "broader": [
+        "soʻz"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ichki lingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "idioma-frazeologizm",
+      "broader": [
+        "frazeologizm"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ifoda uslubi",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ijro mayli",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikki tarkibli gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikki tilli leksikografiya",
+      "broader": [
+        "leksikografiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikki tilli lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikkinchi darajali boʻlak",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikkinchi darajali urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ikkinchi shaxs",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ilmiy etimologiya",
+      "broader": [
+        "etimologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ilmiy uslub",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ilmiy-texnik leksikografiya",
+      "broader": [
+        "leksikografiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "imlo",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "imlo qoidasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "infiks",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "inkor bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "inkor shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "interlingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "intonatsiya",
+      "broader": [],
+      "narrower": [
+        "xabar intonatsiyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "inversiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ism",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "istorizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "izofa",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "izofali birikma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "izohli lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "izohlovchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "jarangli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "jarangli undosh",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "jarangsiz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "jarangsiz undosh",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "jargon",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "joʻnalish kelishigi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "juft shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "juft soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kasb-hunar leksikasi",
+      "broader": [
+        "leksika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kategorial belgi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kategorial maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kategorial shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kategoriya",
+      "broader": [],
+      "narrower": [
+        "boʻlishli-boʻlishsizlik kategoriyasi",
+        "daraja kategoriyasi",
+        "egalik kategoriyasi",
+        "grammatik kategoriya",
+        "kelishik kategoriyasi",
+        "morfologik kategoriya",
+        "sintaktik kategoriya",
+        "son kategoriyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "kelasi zamon",
+      "broader": [
+        "zamon"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kelishik",
+      "broader": [],
+      "narrower": [
+        "bosh kelishik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "kelishik kategoriyasi",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kelishik shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "keltshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "keng transkripsiya",
+      "broader": [
+        "transkripsiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kesim",
+      "broader": [
+        "bosh boʻlak"
+      ],
+      "narrower": [
+        "feʼl kesim",
+        "ot kesim"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "kesimlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kichik harf",
+      "broader": [
+        "harf"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kichraytish shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kirill yozuvi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kirish soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kiritma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kishilik olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kitobiy uslub",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kollokvializm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kommunikativlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kompozitsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "konsonantizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "konversiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻchirma gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻchma maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻchma urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻmakchi",
+      "broader": [
+        "yordamchi soʻz"
+      ],
+      "narrower": [
+        "feʼl koʻmakchi",
+        "funksional koʻmakchi",
+        "ot koʻmakchi",
+        "ravish koʻmakchi",
+        "sifat koʻmakchi",
+        "sof koʻmakchi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻmakchi feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻp maʼnoli soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻp tilli lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻplik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻplik maʼnosi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻplik qoʻshimchasi",
+      "broader": [
+        "qoʻshimcha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻplik shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "koʻrsatish olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kuchli pozitsiya",
+      "broader": [
+        "pozitsiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kuchsiz pozitsiya",
+      "broader": [
+        "pozitsiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "kvaziomonim",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lab undoshi",
+      "broader": [],
+      "narrower": [
+        "lab-lab undoshi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "lab-lab undoshi",
+      "broader": [
+        "lab undoshi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lab-tish undoshi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lablangan unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lablanmagan unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lahja",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksema",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik antonim",
+      "broader": [
+        "antonim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik morfologiya",
+      "broader": [
+        "morfologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik tarkib",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik unsur",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksik-grammatik kategoriya",
+      "broader": [
+        "grammatik kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksika",
+      "broader": [],
+      "narrower": [
+        "kasb-hunar leksikasi",
+        "nostandart leksika",
+        "standart leksika",
+        "yangi leksika"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "leksikalashgan soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "leksikografiya",
+      "broader": [
+        "amaliy lugʻatchilik",
+        "soha"
+      ],
+      "narrower": [
+        "bir tilli leksikografiya",
+        "ikki tilli leksikografiya",
+        "ilmiy-texnik leksikografiya",
+        "nazariy leksikografiya",
+        "oʻquv leksikografiyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "leksikologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvistik birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvistik geografiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvistik lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvistik modellashtirish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvistik strukturalizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lingvostatistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lisoniy birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [
+        "morfema"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "lisoniy eksperiment",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lotin yozuvi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻat",
+      "broader": [],
+      "narrower": [
+        "etimologik lugʻat",
+        "ikki tilli lugʻat",
+        "izohli lugʻat",
+        "koʻp tilli lugʻat",
+        "lingvistik lugʻat",
+        "tarixiy lugʻat",
+        "tarjima lugʻati",
+        "terminologik lugʻat"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻat maqolasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻat tarkibi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻatchilik",
+      "broader": [],
+      "narrower": [
+        "amaliy lugʻatchilik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻatshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻaviy antonim",
+      "broader": [
+        "antonim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻaviy birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻaviy maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "lugʻaviy urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mahsullilik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mahsulsizlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "majhul nisbat",
+      "broader": [
+        "nisbat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "makrostruktura",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mantiqiy urgʻu",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maqol",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maqsad bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maqsad mayli",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maqsad ravishi",
+      "broader": [
+        "ravish"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mashina tarjimasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "matal",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "matematik lingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "matn",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "matn lingvistikasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mavhum maʼnoli ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maxsus sleng",
+      "broader": [
+        "sleng"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mayl",
+      "broader": [],
+      "narrower": [
+        "buyruq mayli",
+        "buyruq-istak mayli",
+        "ijro mayli",
+        "maqsad mayli",
+        "shart mayli",
+        "shartli mayl"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "mayl kategoriyasi",
+      "broader": [
+        "grammatik kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mazmuniy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maʼno oʻzgarishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "maʼno taraqqiyoti",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "metafora",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "metonimiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "meʼyoriy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mikrostruktura",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "milliy til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "modal maʼno",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "modal shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "modal soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "modallik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "monosemiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfema",
+      "broader": [
+        "lisoniy birlik"
+      ],
+      "narrower": [
+        "affiksal morfema",
+        "grammatik morfema",
+        "soʻz yasovchi morfema"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "morfofonologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik kategoriya",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik koʻrsatkich",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik qoida",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik tahlil",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik tarkib",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik tizim",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologik usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfologiya",
+      "broader": [],
+      "narrower": [
+        "leksik morfologiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "morfonema",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "morfonologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "moslashuv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "moslashuvli soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "muallif gapi",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "murakkab son",
+      "broader": [
+        "son"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "murakkab soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mustaqil boʻlak",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mustaqil feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mustaqil soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "mustaqil soʻz turkumi",
+      "broader": [
+        "soʻz turkumi"
+      ],
+      "narrower": [
+        "ot",
+        "ravish"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "narsa-qurol otlari",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nazariy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nazariy leksikografiya",
+      "broader": [
+        "leksikografiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nazariy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "neologizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "neyrolingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "neytral soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nisbat",
+      "broader": [],
+      "narrower": [
+        "birgalik nisbati",
+        "bosh nisbat",
+        "majhul nisbat",
+        "orttirma nisbat",
+        "oʻzlik nisbati"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "nisbat kategoriyasi",
+      "broader": [
+        "grammatik kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nisbat shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nisbiy soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nofaol grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nostandart leksika",
+      "broader": [
+        "leksika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq aʼzolari",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq birligi",
+      "broader": [],
+      "narrower": [
+        "gap"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq momenti",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq payti",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq takti",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq tovushi",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq uslubi",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "nutq vaqti",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "obyekt",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oddiy daraja",
+      "broader": [
+        "daraja"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ogʻzaki uslub",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ohang",
+      "broader": [],
+      "narrower": [
+        "tobelanish ohangi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "old qoʻshimcha",
+      "broader": [
+        "qoʻshimcha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "olmosh",
+      "broader": [],
+      "narrower": [
+        "belgilash-jamlash olmoshi",
+        "boʻlishsizlik olmoshi",
+        "kishilik olmoshi",
+        "koʻrsatish olmoshi",
+        "oʻzlik olmoshi",
+        "soʻroq olmoshi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "olmosh-ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "olmosh-sifat",
+      "broader": [
+        "sifat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "olmosh-son",
+      "broader": [
+        "son"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "omofon",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "omograf",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "omonim",
+      "broader": [],
+      "narrower": [
+        "soxta omonim"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "omonimiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ona tili",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "onomastika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oppozitsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oraliqdagi soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "orfografiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "orttirma daraja",
+      "broader": [
+        "daraja"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "orttirma nisbat",
+      "broader": [
+        "nisbat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ot",
+      "broader": [
+        "mustaqil soʻz turkumi"
+      ],
+      "narrower": [
+        "atoqli ot",
+        "mavhum maʼnoli ot",
+        "olmosh-ot",
+        "qisqartma ot",
+        "qoʻshma ot",
+        "turdosh ot",
+        "yasama ot"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "ot kesim",
+      "broader": [
+        "kesim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ot koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ot soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ot yasalishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "otlashgan soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "otlashish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "otlashuv",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ovoz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ozaytirma daraja",
+      "broader": [
+        "daraja"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ozaytirma shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻquv leksikografiyasi",
+      "broader": [
+        "leksikografiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻrin belgisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻrin kelishigi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻrin ravishi",
+      "broader": [
+        "ravish"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻrin-joy otlari",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻrta koʻtarilish unlisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻtgan zamon",
+      "broader": [
+        "zamon"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻtgan zamon sifatdoshi",
+      "broader": [
+        "sifatdosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻxshatish shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻz qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzak",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlashgan qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlashgan soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlashma qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlashma soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlik nisbati",
+      "broader": [
+        "nisbat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "oʻzlik olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "palatalizatsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "paradigma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "paralingvistika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "paronim",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "payt ravishi",
+      "broader": [
+        "ravish"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "period",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "polisemiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "portlovchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "portlovchi tovush",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "pozitsion variant",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "pozitsiya",
+      "broader": [],
+      "narrower": [
+        "kuchli pozitsiya",
+        "kuchsiz pozitsiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "predikat",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "predikativ asos",
+      "broader": [
+        "asos"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "predikativ birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "predikativlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "prefiks",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "professionalizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "psixolingvistika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qarashlilik shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qaratqich kelishigi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qaratqichli aniqlovchi",
+      "broader": [
+        "aniqlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qaratuvchili birikma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qardosh til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qarindosh til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qattiq tanglay",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qisqa unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qisqartma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qisqartma ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy daraja",
+      "broader": [
+        "daraja"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy-tarixiy metod",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy-tarixiy tilshunoslik",
+      "broader": [
+        "tarixiy tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qiyosiy-tarixiy usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshimcha",
+      "broader": [],
+      "narrower": [
+        "egalik qoʻshimchasi",
+        "koʻplik qoʻshimchasi",
+        "old qoʻshimcha",
+        "soʻz yasovchi qoʻshimcha",
+        "yuklama-qoʻshimcha"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshma feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshma gap",
+      "broader": [
+        "birlik",
+        "gap"
+      ],
+      "narrower": [
+        "bogʻlangan qoʻshma gap",
+        "bogʻlovchisiz qoʻshma gap",
+        "ergash gapli qoʻshma gap",
+        "ergashgan qoʻshma gap"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshma ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshma sifat",
+      "broader": [
+        "sifat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "qoʻshma soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "quyi koʻtarilish unlisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "rasmiy-idoraviy uslub",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ravish",
+      "broader": [
+        "mustaqil soʻz turkumi"
+      ],
+      "narrower": [
+        "daraja-miqdor ravishi",
+        "maqsad ravishi",
+        "oʻrin ravishi",
+        "payt ravishi",
+        "sabab ravishi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "ravish koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ravishdosh",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "ravishdosh shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "romanistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sabab ravishi",
+      "broader": [
+        "ravish"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "segment",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "segment birlik",
+      "broader": [
+        "birlik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semantik aloqa",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semantik munosabat",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semantika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semasiologiya",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semiotik lingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "semitologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shakl oʻzgarishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shakl yasalishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shakl yasovchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shakliy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shart mayli",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shartli mayl",
+      "broader": [
+        "mayl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shaxs otlari",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shaxs-son",
+      "broader": [
+        "son"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shaxs-son kategoriyasi",
+      "broader": [
+        "son kategoriyasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sheva",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shovqin",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shovqinli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "shovqinli undosh",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sifat",
+      "broader": [
+        "soʻz"
+      ],
+      "narrower": [
+        "olmosh-sifat",
+        "qoʻshma sifat",
+        "yasama sifat"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sifat koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sifat yasovchi affiks",
+      "broader": [
+        "affiks"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sifatdosh",
+      "broader": [],
+      "narrower": [
+        "oʻtgan zamon sifatdoshi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sifatdosh shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sifatlovchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sinonim",
+      "broader": [
+        "sinonim soʻz"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sinonim soʻz",
+      "broader": [],
+      "narrower": [
+        "sinonim"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sinonimik qator",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sinonimiya",
+      "broader": [],
+      "narrower": [
+        "frazeologik sinonimiya",
+        "sintaktik sinonimiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sintagma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaksis",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik antonim",
+      "broader": [
+        "antonim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik birlik",
+      "broader": [
+        "birlik",
+        "soʻz"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik butunlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik kategoriya",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik munosabat",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik qurilish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik sinonimiya",
+      "broader": [
+        "sinonimiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik tuzilma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintaktik usul",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintetik shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sintetik til",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sinxroniya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sirgʻaluvchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sirgʻaluvchi tovush",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "slavyanshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sleng",
+      "broader": [],
+      "narrower": [
+        "maxsus sleng",
+        "umumiy sleng"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sodda gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sodda soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sof koʻmakchi",
+      "broader": [
+        "koʻmakchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soha",
+      "broader": [],
+      "narrower": [
+        "afrikashunoslik",
+        "etimologiya",
+        "etnolingvistika",
+        "finugorshunoslik",
+        "frazeologiya",
+        "leksikografiya",
+        "paralingvistika",
+        "psixolingvistika",
+        "semantika",
+        "semasiologiya",
+        "sotsiolingvistika",
+        "stilistika",
+        "tariqa semitologiya",
+        "tilshunoslik",
+        "turkiyshunoslik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "son",
+      "broader": [],
+      "narrower": [
+        "murakkab son",
+        "olmosh-son",
+        "shaxs-son",
+        "tartib son"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "son kategoriyasi",
+      "broader": [
+        "kategoriya"
+      ],
+      "narrower": [
+        "shaxs-son kategoriyasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "sonor",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "sotsiolingvistika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soxta etimologiya",
+      "broader": [
+        "etimologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soxta omonim",
+      "broader": [
+        "omonim"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻroq gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻroq olmoshi",
+      "broader": [
+        "olmosh"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz",
+      "broader": [],
+      "narrower": [
+        "ibora",
+        "sifat",
+        "sintaktik birlik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz birikmasi",
+      "broader": [],
+      "narrower": [
+        "aniqlovchili soʻz birikmasi",
+        "bitishuvli soʻz birikmasi",
+        "boshqaruvli soʻz birikmasi",
+        "feʼl soʻz birikmasi",
+        "holli soʻz birikmasi",
+        "leksikalashgan soʻz birikmasi",
+        "moslashuvli soʻz birikmasi",
+        "murakkab soʻz birikmasi",
+        "ot soʻz birikmasi",
+        "sodda soʻz birikmasi",
+        "toʻldiruvchili soʻz birikmasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz maʼnosi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz oʻzagi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz oʻzgarishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz qoʻshilmasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz tartibi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz turkumi",
+      "broader": [],
+      "narrower": [
+        "mustaqil soʻz turkumi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz urgʻusi",
+      "broader": [
+        "urgʻu"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasalishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasalishi asosi",
+      "broader": [
+        "asos"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasovchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasovchi affiks",
+      "broader": [
+        "affiks"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasovchi morfema",
+      "broader": [
+        "morfema"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻz yasovchi qoʻshimcha",
+      "broader": [
+        "qoʻshimcha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻzlashgich",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻzlashuv nutqi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "soʻzlashuv uslubi",
+      "broader": [
+        "uslub"
+      ],
+      "narrower": [
+        "argo"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "standart leksika",
+      "broader": [
+        "leksika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "stilistik boʻyoq",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "stilistika",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "strukturaviy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "subyekt",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "suffiks",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "supersegment",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "taajjub yuklamasi",
+      "broader": [
+        "yuklama"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "takror shakl",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "takror soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "taqlid soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tariqa semitologiya",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tarixiy fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tarixiy fonologiya",
+      "broader": [
+        "fonologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tarixiy lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tarixiy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [
+        "qiyosiy-tarixiy tilshunoslik"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "tarjima lugʻati",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tarjima nazariyasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tartib son",
+      "broader": [
+        "son"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tashqi lingvistika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tasviriy fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tasviriy fonologiya",
+      "broader": [
+        "fonologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tavsifiy grammatika",
+      "broader": [
+        "grammatika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "taʼkid yuklamasi",
+      "broader": [
+        "yuklama"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "teng bogʻlanish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "teng bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "termin",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "terminologik lugʻat",
+      "broader": [
+        "lugʻat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "terminologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "til birligi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "til meʼyori",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "til oldi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "til orqa",
+      "broader": [],
+      "narrower": [
+        "chuqur til orqa"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "til oʻrta",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "til undoshi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tillar oilasi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tiloldi unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tilorqa unli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tilshunoslik",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [
+        "amaliy tilshunoslik",
+        "funksional tilshunoslik",
+        "nazariy tilshunoslik",
+        "qiyosiy tilshunoslik",
+        "strukturaviy tilshunoslik",
+        "tarixiy tilshunoslik",
+        "umumiy tilshunoslik",
+        "xususiy tilshunoslik"
+      ],
+      "alt_labels": [
+        "lingvistika"
+      ]
+    },
+    {
+      "label": "tipologiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "titroq tovush",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tobe aloqa",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tobe bogʻlanish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tobe grammatik aloqa",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tobe qism",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tobelanish ohangi",
+      "broader": [
+        "ohang"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tonik allofon",
+      "broader": [
+        "allofon"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "toponimika",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush",
+      "broader": [],
+      "narrower": [
+        "nutq tovushi",
+        "portlovchi tovush",
+        "sirgʻaluvchi tovush",
+        "titroq tovush",
+        "undosh tovush",
+        "unli tovush"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush birligi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush oʻzgarishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush qurilishi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush tarkibi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tovush tizimi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "toʻldiruvchi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "toʻldiruvchili soʻz birikmasi",
+      "broader": [
+        "soʻz birikmasi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "toʻliqsiz feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "toʻsiqsizlik bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "transkripsiya",
+      "broader": [],
+      "narrower": [
+        "fonetik transkripsiya",
+        "keng transkripsiya"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "transliteratsiya",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "turdosh ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "turkiyshunoslik",
+      "broader": [
+        "soha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tuslanish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "tutuq belgisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "uchinchi darajali boʻlak",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "uchinchi shaxs",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "umumiy fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "umumiy fonologiya",
+      "broader": [
+        "fonologiya"
+      ],
+      "narrower": [
+        "fonetika"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "umumiy sleng",
+      "broader": [
+        "sleng"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "umumiy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "umumturkiy soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "un paychalari",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "undalma",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "undosh tovush",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": [
+        "undosh"
+      ]
+    },
+    {
+      "label": "undov",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "undov gap",
+      "broader": [
+        "gap"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "unli fonema",
+      "broader": [
+        "fonema"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "unli tovush",
+      "broader": [
+        "tovush"
+      ],
+      "narrower": [],
+      "alt_labels": [
+        "unli"
+      ]
+    },
+    {
+      "label": "urgʻu",
+      "broader": [],
+      "narrower": [
+        "bogʻliq urgʻu",
+        "bosh urgʻu",
+        "fraza urgʻusi",
+        "ikkinchi darajali urgʻu",
+        "koʻchma urgʻu",
+        "lugʻaviy urgʻu",
+        "mantiqiy urgʻu",
+        "soʻz urgʻusi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "uslub",
+      "broader": [],
+      "narrower": [
+        "funksional uslub",
+        "ifoda uslubi",
+        "ilmiy uslub",
+        "kitobiy uslub",
+        "nutq uslubi",
+        "ogʻzaki uslub",
+        "rasmiy-idoraviy uslub",
+        "soʻzlashuv uslubi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "uslubshunoslik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "uyushiq boʻlak",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "variantdorlik",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "varvarizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "vokabulyar",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "vokalizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "vokativ",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "vulgarizm",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xabar intonatsiyasi",
+      "broader": [
+        "intonatsiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xalq etimologiyasi",
+      "broader": [
+        "etimologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xatboshi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xususiy fonetika",
+      "broader": [
+        "fonetika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xususiy fonologiya",
+      "broader": [
+        "fonologiya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "xususiy tilshunoslik",
+      "broader": [
+        "tilshunoslik"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yakka bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yangi leksika",
+      "broader": [
+        "leksika"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yangi qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yarim affiks",
+      "broader": [
+        "affiks"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yasalish qolipi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yasama feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yasama ot",
+      "broader": [
+        "ot"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yasama sifat",
+      "broader": [
+        "sifat"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yasama soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yordamchi feʼl",
+      "broader": [
+        "feʼl"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yordamchi soʻz",
+      "broader": [],
+      "narrower": [
+        "koʻmakchi",
+        "yuklama"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "yuklama",
+      "broader": [
+        "yordamchi soʻz"
+      ],
+      "narrower": [
+        "aniqlov yuklamasi",
+        "chegaralov yuklamasi",
+        "taajjub yuklamasi",
+        "taʼkid yuklamasi"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "yuklama-qoʻshimcha",
+      "broader": [
+        "qoʻshimcha"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yuklama-soʻz",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "yuqori koʻtarilish unlisi",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "zamon",
+      "broader": [],
+      "narrower": [
+        "hozirgi zamon",
+        "kelasi zamon",
+        "oʻtgan zamon"
+      ],
+      "alt_labels": []
+    },
+    {
+      "label": "zamon kategoriyasi",
+      "broader": [
+        "grammatik kategoriya"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "zamon shakli",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "zamonaviy qatlam",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "zidlanish",
+      "broader": [],
+      "narrower": [],
+      "alt_labels": []
+    },
+    {
+      "label": "zidlovchi bogʻlovchi",
+      "broader": [
+        "bogʻlovchi"
+      ],
+      "narrower": [],
+      "alt_labels": []
+    }
+  ],
+  "relations": [
+    {
+      "narrower": "sifat yasovchi affiks",
+      "broader": "affiks",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sifat yasovchi affiks"
+      ]
+    },
+    {
+      "narrower": "soʻz yasovchi affiks",
+      "broader": "affiks",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'z yasovchi affiks"
+      ]
+    },
+    {
+      "narrower": "yarim affiks",
+      "broader": "affiks",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yarim affiks"
+      ]
+    },
+    {
+      "narrower": "tonik allofon",
+      "broader": "allofon",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tonik allofon"
+      ]
+    },
+    {
+      "narrower": "leksikografiya",
+      "broader": "amaliy lugʻatchilik",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Leksikografiya (qadimgi yunoncha: λεξικόν [leksika] va γράφω [grafiya] - yozuv) — lugʻatlar tuzish, amaliy lugʻatchilik"
+      ]
+    },
+    {
+      "narrower": "qaratqichli aniqlovchi",
+      "broader": "aniqlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qaratqichli aniqlovchi"
+      ]
+    },
+    {
+      "narrower": "affiks-antonim",
+      "broader": "antonim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "affiks antonim"
+      ]
+    },
+    {
+      "narrower": "leksik antonim",
+      "broader": "antonim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "leksik antonim"
+      ]
+    },
+    {
+      "narrower": "lugʻaviy antonim",
+      "broader": "antonim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lug'aviy antonim"
+      ]
+    },
+    {
+      "narrower": "sintaktik antonim",
+      "broader": "antonim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sintaktik antonim"
+      ]
+    },
+    {
+      "narrower": "predikativ asos",
+      "broader": "asos",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "predikativ asos"
+      ]
+    },
+    {
+      "narrower": "soʻz yasalishi asosi",
+      "broader": "asos",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'z yasalishi asos"
+      ]
+    },
+    {
+      "narrower": "abzats",
+      "broader": "birlik",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+      ]
+    },
+    {
+      "narrower": "frazeologik birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "frazeologik birlik"
+      ]
+    },
+    {
+      "narrower": "grammatik birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "grammatik birlik"
+      ]
+    },
+    {
+      "narrower": "lingvistik birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lingvistik birlik"
+      ]
+    },
+    {
+      "narrower": "lisoniy birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lisoniy birlik"
+      ]
+    },
+    {
+      "narrower": "lugʻaviy birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lug'aviy birlik"
+      ]
+    },
+    {
+      "narrower": "matn",
+      "broader": "birlik",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+      ]
+    },
+    {
+      "narrower": "period",
+      "broader": "birlik",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+      ]
+    },
+    {
+      "narrower": "predikativ birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "predikativ birlik"
+      ]
+    },
+    {
+      "narrower": "qoʻshma gap",
+      "broader": "birlik",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "yordam beruvchi sodda gap va qoʻshma gap kabi til birliklari kiradi"
+      ]
+    },
+    {
+      "narrower": "segment birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "segment birlik"
+      ]
+    },
+    {
+      "narrower": "sintaktik birlik",
+      "broader": "birlik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sintaktik birlik"
+      ]
+    },
+    {
+      "narrower": "aniqlov bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "aniqlov bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "ayiruvchi bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ayiruvchi bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "biriktiruv bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "biriktiruv bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "biriktiruvchi bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "biriktiruvchi bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "chogʻishtiruv bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "chog'ishtiruv bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "ergashtiruvchi bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ergashtiruvchi bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "inkor bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "inkor bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "maqsad bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "maqsad bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "teng bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "teng bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "toʻsiqsizlik bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "to'siqsizlik bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "yakka bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yakka bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "zidlovchi bogʻlovchi",
+      "broader": "bogʻlovchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "zidlovchi bog'lovchi"
+      ]
+    },
+    {
+      "narrower": "ega",
+      "broader": "bosh boʻlak",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Ega — gapning bosh boʻlaklaridan biri"
+      ]
+    },
+    {
+      "narrower": "kesim",
+      "broader": "bosh boʻlak",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Kesim — gapning bosh boʻlaklaridan biri "
+      ]
+    },
+    {
+      "narrower": "oddiy daraja",
+      "broader": "daraja",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "oddiy daraja"
+      ]
+    },
+    {
+      "narrower": "orttirma daraja",
+      "broader": "daraja",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "orttirma daraja"
+      ]
+    },
+    {
+      "narrower": "ozaytirma daraja",
+      "broader": "daraja",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ozaytirma daraja"
+      ]
+    },
+    {
+      "narrower": "qiyosiy daraja",
+      "broader": "daraja",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qiyosiy daraja"
+      ]
+    },
+    {
+      "narrower": "ilmiy etimologiya",
+      "broader": "etimologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ilmiy etimologiya"
+      ]
+    },
+    {
+      "narrower": "soxta etimologiya",
+      "broader": "etimologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "soxta etimologiya"
+      ]
+    },
+    {
+      "narrower": "xalq etimologiyasi",
+      "broader": "etimologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "xalq etimologiya"
+      ]
+    },
+    {
+      "narrower": "boʻlishli feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bo'lishli fe'l"
+      ]
+    },
+    {
+      "narrower": "boʻlishsiz feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bo'lishsiz fe'l"
+      ]
+    },
+    {
+      "narrower": "buyruq feʼli",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "buyruq fe'l"
+      ]
+    },
+    {
+      "narrower": "koʻmakchi feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'makchi fe'l"
+      ]
+    },
+    {
+      "narrower": "mustaqil feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "mustaqil fe'l"
+      ]
+    },
+    {
+      "narrower": "qoʻshma feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qo'shma fe'l"
+      ]
+    },
+    {
+      "narrower": "toʻliqsiz feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "to'liqsiz fe'l"
+      ]
+    },
+    {
+      "narrower": "yasama feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yasama fe'l"
+      ]
+    },
+    {
+      "narrower": "yordamchi feʼl",
+      "broader": "feʼl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yordamchi fe'l"
+      ]
+    },
+    {
+      "narrower": "unli fonema",
+      "broader": "fonema",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "unli fonema"
+      ]
+    },
+    {
+      "narrower": "eksperimental fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "eksperimental fonetika"
+      ]
+    },
+    {
+      "narrower": "funksional fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "funksional fonetika"
+      ]
+    },
+    {
+      "narrower": "qiyosiy fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qiyosiy fonetika"
+      ]
+    },
+    {
+      "narrower": "tarixiy fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tarixiy fonetika"
+      ]
+    },
+    {
+      "narrower": "tasviriy fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tasviriy fonetika"
+      ]
+    },
+    {
+      "narrower": "umumiy fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "umumiy fonetika"
+      ]
+    },
+    {
+      "narrower": "xususiy fonetika",
+      "broader": "fonetika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "xususiy fonetika"
+      ]
+    },
+    {
+      "narrower": "tarixiy fonologiya",
+      "broader": "fonologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tarixiy fonologiya"
+      ]
+    },
+    {
+      "narrower": "tasviriy fonologiya",
+      "broader": "fonologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tasviriy fonologiya"
+      ]
+    },
+    {
+      "narrower": "umumiy fonologiya",
+      "broader": "fonologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "umumiy fonologiya"
+      ]
+    },
+    {
+      "narrower": "xususiy fonologiya",
+      "broader": "fonologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "xususiy fonologiya"
+      ]
+    },
+    {
+      "narrower": "idioma-frazeologizm",
+      "broader": "frazeologizm",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "idioma frazeologizm"
+      ]
+    },
+    {
+      "narrower": "bosh gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bosh gap"
+      ]
+    },
+    {
+      "narrower": "darak gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "darak gap"
+      ]
+    },
+    {
+      "narrower": "ergash gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ergash gap"
+      ]
+    },
+    {
+      "narrower": "ikki tarkibli gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ikki tarkibli gap"
+      ]
+    },
+    {
+      "narrower": "koʻchirma gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'chirma gap"
+      ]
+    },
+    {
+      "narrower": "muallif gapi",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "muallif gap"
+      ]
+    },
+    {
+      "narrower": "qoʻshma gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1,
+        "definition": 1
+      },
+      "evidence": [
+        "qo'shma gap",
+        "Qoʻshma gap — tuzilishiga koʻra sodda gapga oʻxshash ikki va undan ortiq predikativ birlikning intonatsiya va mazmun jihatidan bir butunlik hosil etishi bilan y"
+      ]
+    },
+    {
+      "narrower": "sodda gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sodda gap"
+      ]
+    },
+    {
+      "narrower": "soʻroq gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'roq gap"
+      ]
+    },
+    {
+      "narrower": "undov gap",
+      "broader": "gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "undov gap"
+      ]
+    },
+    {
+      "narrower": "leksik-grammatik kategoriya",
+      "broader": "grammatik kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "leksik grammatik kategoriya"
+      ]
+    },
+    {
+      "narrower": "mayl kategoriyasi",
+      "broader": "grammatik kategoriya",
+      "sources": {
+        "definition": 1,
+        "head": 1
+      },
+      "evidence": [
+        "Mayl kategoriyasi — harakatning voqelikka munosabatini soʻzlovchi nuqtai nazaridan belgilovchi grammatik kategoriya",
+        "mayl kategoriya"
+      ]
+    },
+    {
+      "narrower": "nisbat kategoriyasi",
+      "broader": "grammatik kategoriya",
+      "sources": {
+        "definition": 1,
+        "head": 1
+      },
+      "evidence": [
+        "Nisbat kategoriyasi — harakatning subyekt va obyektga munosabatini koʻrsatuvchi grammatik kategoriya",
+        "nisbat kategoriya"
+      ]
+    },
+    {
+      "narrower": "zamon kategoriyasi",
+      "broader": "grammatik kategoriya",
+      "sources": {
+        "definition": 1,
+        "head": 1
+      },
+      "evidence": [
+        "Zamon kategoriyasi — harakatning nutq paytiga munosabatini bildiruvchi grammatik kategoriya",
+        "zamon kategoriya"
+      ]
+    },
+    {
+      "narrower": "amaliy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "amaliy grammatika"
+      ]
+    },
+    {
+      "narrower": "faol grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "faol grammatika"
+      ]
+    },
+    {
+      "narrower": "funksional grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "funksional grammatika"
+      ]
+    },
+    {
+      "narrower": "mazmuniy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "mazmuniy grammatika"
+      ]
+    },
+    {
+      "narrower": "meʼyoriy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "me'yoriy grammatika"
+      ]
+    },
+    {
+      "narrower": "nazariy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nazariy grammatika"
+      ]
+    },
+    {
+      "narrower": "nofaol grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nofaol grammatika"
+      ]
+    },
+    {
+      "narrower": "shakliy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "shakliy grammatika"
+      ]
+    },
+    {
+      "narrower": "tavsifiy grammatika",
+      "broader": "grammatika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tavsifiy grammatika"
+      ]
+    },
+    {
+      "narrower": "bosh harf",
+      "broader": "harf",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bosh harf"
+      ]
+    },
+    {
+      "narrower": "kichik harf",
+      "broader": "harf",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kichik harf"
+      ]
+    },
+    {
+      "narrower": "xabar intonatsiyasi",
+      "broader": "intonatsiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "xabar intonatsiya"
+      ]
+    },
+    {
+      "narrower": "boʻlishli-boʻlishsizlik kategoriyasi",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bo'lishli bo'lishsizlik kategoriya"
+      ]
+    },
+    {
+      "narrower": "daraja kategoriyasi",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "daraja kategoriya"
+      ]
+    },
+    {
+      "narrower": "egalik kategoriyasi",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "egalik kategoriya"
+      ]
+    },
+    {
+      "narrower": "grammatik kategoriya",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "grammatik kategoriya"
+      ]
+    },
+    {
+      "narrower": "kelishik kategoriyasi",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kelishik kategoriya"
+      ]
+    },
+    {
+      "narrower": "morfologik kategoriya",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "morfologik kategoriya"
+      ]
+    },
+    {
+      "narrower": "sintaktik kategoriya",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sintaktik kategoriya"
+      ]
+    },
+    {
+      "narrower": "son kategoriyasi",
+      "broader": "kategoriya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "son kategoriya"
+      ]
+    },
+    {
+      "narrower": "bosh kelishik",
+      "broader": "kelishik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bosh kelishik"
+      ]
+    },
+    {
+      "narrower": "feʼl kesim",
+      "broader": "kesim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "fe'l kesim"
+      ]
+    },
+    {
+      "narrower": "ot kesim",
+      "broader": "kesim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ot kesim"
+      ]
+    },
+    {
+      "narrower": "feʼl koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "fe'l ko'makchi"
+      ]
+    },
+    {
+      "narrower": "funksional koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "funksional ko'makchi"
+      ]
+    },
+    {
+      "narrower": "ot koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ot ko'makchi"
+      ]
+    },
+    {
+      "narrower": "ravish koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ravish ko'makchi"
+      ]
+    },
+    {
+      "narrower": "sifat koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sifat ko'makchi"
+      ]
+    },
+    {
+      "narrower": "sof koʻmakchi",
+      "broader": "koʻmakchi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sof ko'makchi"
+      ]
+    },
+    {
+      "narrower": "lab-lab undoshi",
+      "broader": "lab undoshi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lab lab undosh"
+      ]
+    },
+    {
+      "narrower": "kasb-hunar leksikasi",
+      "broader": "leksika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kasb hunar leksika"
+      ]
+    },
+    {
+      "narrower": "nostandart leksika",
+      "broader": "leksika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nostandart leksika"
+      ]
+    },
+    {
+      "narrower": "standart leksika",
+      "broader": "leksika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "standart leksika"
+      ]
+    },
+    {
+      "narrower": "yangi leksika",
+      "broader": "leksika",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yangi leksika"
+      ]
+    },
+    {
+      "narrower": "bir tilli leksikografiya",
+      "broader": "leksikografiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bir tilli leksikografiya"
+      ]
+    },
+    {
+      "narrower": "ikki tilli leksikografiya",
+      "broader": "leksikografiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ikki tilli leksikografiya"
+      ]
+    },
+    {
+      "narrower": "ilmiy-texnik leksikografiya",
+      "broader": "leksikografiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ilmiy texnik leksikografiya"
+      ]
+    },
+    {
+      "narrower": "nazariy leksikografiya",
+      "broader": "leksikografiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nazariy leksikografiya"
+      ]
+    },
+    {
+      "narrower": "oʻquv leksikografiyasi",
+      "broader": "leksikografiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'quv leksikografiya"
+      ]
+    },
+    {
+      "narrower": "morfema",
+      "broader": "lisoniy birlik",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Morfema (yunoncha: morphe — shakl) — oʻziga xos shakl va maʼnoga ega boʻlgan, boshqa maʼnoli qismlarga boʻlinmaydigan, soʻz (leksema) yasash yoki soʻzning shakl"
+      ]
+    },
+    {
+      "narrower": "etimologik lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "etimologik lug'at"
+      ]
+    },
+    {
+      "narrower": "ikki tilli lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ikki tilli lug'at"
+      ]
+    },
+    {
+      "narrower": "izohli lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "izohli lug'at"
+      ]
+    },
+    {
+      "narrower": "koʻp tilli lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'p tilli lug'at"
+      ]
+    },
+    {
+      "narrower": "lingvistik lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lingvistik lug'at"
+      ]
+    },
+    {
+      "narrower": "tarixiy lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tarixiy lug'at"
+      ]
+    },
+    {
+      "narrower": "tarjima lugʻati",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tarjima lug'at"
+      ]
+    },
+    {
+      "narrower": "terminologik lugʻat",
+      "broader": "lugʻat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "terminologik lug'at"
+      ]
+    },
+    {
+      "narrower": "amaliy lugʻatchilik",
+      "broader": "lugʻatchilik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "amaliy lug'atchilik"
+      ]
+    },
+    {
+      "narrower": "buyruq mayli",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "buyruq mayl"
+      ]
+    },
+    {
+      "narrower": "buyruq-istak mayli",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "buyruq istak mayl"
+      ]
+    },
+    {
+      "narrower": "ijro mayli",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ijro mayl"
+      ]
+    },
+    {
+      "narrower": "maqsad mayli",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "maqsad mayl"
+      ]
+    },
+    {
+      "narrower": "shart mayli",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "shart mayl"
+      ]
+    },
+    {
+      "narrower": "shartli mayl",
+      "broader": "mayl",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "shartli mayl"
+      ]
+    },
+    {
+      "narrower": "affiksal morfema",
+      "broader": "morfema",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "affiksal morfema"
+      ]
+    },
+    {
+      "narrower": "grammatik morfema",
+      "broader": "morfema",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "grammatik morfema"
+      ]
+    },
+    {
+      "narrower": "soʻz yasovchi morfema",
+      "broader": "morfema",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'z yasovchi morfema"
+      ]
+    },
+    {
+      "narrower": "leksik morfologiya",
+      "broader": "morfologiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "leksik morfologiya"
+      ]
+    },
+    {
+      "narrower": "ot",
+      "broader": "mustaqil soʻz turkumi",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Ot — mustaqil soʻz turkumlaridan biri"
+      ]
+    },
+    {
+      "narrower": "ravish",
+      "broader": "mustaqil soʻz turkumi",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Ravish – mustaqil soʻz turkumlaridan biri"
+      ]
+    },
+    {
+      "narrower": "birgalik nisbati",
+      "broader": "nisbat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "birgalik nisbat"
+      ]
+    },
+    {
+      "narrower": "bosh nisbat",
+      "broader": "nisbat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bosh nisbat"
+      ]
+    },
+    {
+      "narrower": "majhul nisbat",
+      "broader": "nisbat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "majhul nisbat"
+      ]
+    },
+    {
+      "narrower": "orttirma nisbat",
+      "broader": "nisbat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "orttirma nisbat"
+      ]
+    },
+    {
+      "narrower": "oʻzlik nisbati",
+      "broader": "nisbat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'zlik nisbat"
+      ]
+    },
+    {
+      "narrower": "gap",
+      "broader": "nutq birligi",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Gap — muayyan til qonuniyatiga koʻra grammatik va intonatsiyaviy shakllangan nutq birligi"
+      ]
+    },
+    {
+      "narrower": "tobelanish ohangi",
+      "broader": "ohang",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tobelanish ohang"
+      ]
+    },
+    {
+      "narrower": "belgilash-jamlash olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "belgilash jamlash olmosh"
+      ]
+    },
+    {
+      "narrower": "boʻlishsizlik olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bo'lishsizlik olmosh"
+      ]
+    },
+    {
+      "narrower": "kishilik olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kishilik olmosh"
+      ]
+    },
+    {
+      "narrower": "koʻrsatish olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'rsatish olmosh"
+      ]
+    },
+    {
+      "narrower": "oʻzlik olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'zlik olmosh"
+      ]
+    },
+    {
+      "narrower": "soʻroq olmoshi",
+      "broader": "olmosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'roq olmosh"
+      ]
+    },
+    {
+      "narrower": "soxta omonim",
+      "broader": "omonim",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "soxta omon"
+      ]
+    },
+    {
+      "narrower": "atoqli ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "atoqli ot"
+      ]
+    },
+    {
+      "narrower": "mavhum maʼnoli ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "mavhum ma'noli ot"
+      ]
+    },
+    {
+      "narrower": "olmosh-ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "olmosh ot"
+      ]
+    },
+    {
+      "narrower": "qisqartma ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qisqartma ot"
+      ]
+    },
+    {
+      "narrower": "qoʻshma ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qo'shma ot"
+      ]
+    },
+    {
+      "narrower": "turdosh ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "turdosh ot"
+      ]
+    },
+    {
+      "narrower": "yasama ot",
+      "broader": "ot",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yasama ot"
+      ]
+    },
+    {
+      "narrower": "kuchli pozitsiya",
+      "broader": "pozitsiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kuchli pozitsiya"
+      ]
+    },
+    {
+      "narrower": "kuchsiz pozitsiya",
+      "broader": "pozitsiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kuchsiz pozitsiya"
+      ]
+    },
+    {
+      "narrower": "egalik qoʻshimchasi",
+      "broader": "qoʻshimcha",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "egalik qo'shimcha"
+      ]
+    },
+    {
+      "narrower": "koʻplik qoʻshimchasi",
+      "broader": "qoʻshimcha",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'plik qo'shimcha"
+      ]
+    },
+    {
+      "narrower": "old qoʻshimcha",
+      "broader": "qoʻshimcha",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "old qo'shimcha"
+      ]
+    },
+    {
+      "narrower": "soʻz yasovchi qoʻshimcha",
+      "broader": "qoʻshimcha",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'z yasovchi qo'shimcha"
+      ]
+    },
+    {
+      "narrower": "yuklama-qoʻshimcha",
+      "broader": "qoʻshimcha",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yuklama qo'shimcha"
+      ]
+    },
+    {
+      "narrower": "bogʻlangan qoʻshma gap",
+      "broader": "qoʻshma gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bog'langan qo'shma gap"
+      ]
+    },
+    {
+      "narrower": "bogʻlovchisiz qoʻshma gap",
+      "broader": "qoʻshma gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bog'lovchisiz qo'shma gap"
+      ]
+    },
+    {
+      "narrower": "ergash gapli qoʻshma gap",
+      "broader": "qoʻshma gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ergash gapli qo'shma gap"
+      ]
+    },
+    {
+      "narrower": "ergashgan qoʻshma gap",
+      "broader": "qoʻshma gap",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ergashgan qo'shma gap"
+      ]
+    },
+    {
+      "narrower": "daraja-miqdor ravishi",
+      "broader": "ravish",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "daraja miqdor ravish"
+      ]
+    },
+    {
+      "narrower": "maqsad ravishi",
+      "broader": "ravish",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "maqsad ravish"
+      ]
+    },
+    {
+      "narrower": "oʻrin ravishi",
+      "broader": "ravish",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'rin ravish"
+      ]
+    },
+    {
+      "narrower": "payt ravishi",
+      "broader": "ravish",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "payt ravish"
+      ]
+    },
+    {
+      "narrower": "sabab ravishi",
+      "broader": "ravish",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sabab ravish"
+      ]
+    },
+    {
+      "narrower": "olmosh-sifat",
+      "broader": "sifat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "olmosh sifat"
+      ]
+    },
+    {
+      "narrower": "qoʻshma sifat",
+      "broader": "sifat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qo'shma sifat"
+      ]
+    },
+    {
+      "narrower": "yasama sifat",
+      "broader": "sifat",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "yasama sifat"
+      ]
+    },
+    {
+      "narrower": "oʻtgan zamon sifatdoshi",
+      "broader": "sifatdosh",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'tgan zamon sifatdosh"
+      ]
+    },
+    {
+      "narrower": "sinonim",
+      "broader": "sinonim soʻz",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Sinonimlar (qadimgi yunoncha: σύν va ὄνυμα — bir nomli) — bir umumiy maʼnoga ega boʻlgan (denotativ maʼnosi bir xil), qoʻshimcha (konnotativ) maʼnosi (ekspressi"
+      ]
+    },
+    {
+      "narrower": "frazeologik sinonimiya",
+      "broader": "sinonimiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "frazeologik sinonimiya"
+      ]
+    },
+    {
+      "narrower": "sintaktik sinonimiya",
+      "broader": "sinonimiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sintaktik sinonimiya"
+      ]
+    },
+    {
+      "narrower": "maxsus sleng",
+      "broader": "sleng",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "maxsus sleng"
+      ]
+    },
+    {
+      "narrower": "umumiy sleng",
+      "broader": "sleng",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "umumiy sleng"
+      ]
+    },
+    {
+      "narrower": "afrikashunoslik",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+      ]
+    },
+    {
+      "narrower": "etimologiya",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "etnolingvistika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+      ]
+    },
+    {
+      "narrower": "finugorshunoslik",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+      ]
+    },
+    {
+      "narrower": "frazeologiya",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "leksikografiya",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "paralingvistika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+      ]
+    },
+    {
+      "narrower": "psixolingvistika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+      ]
+    },
+    {
+      "narrower": "semantika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "semasiologiya",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "sotsiolingvistika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+      ]
+    },
+    {
+      "narrower": "stilistika",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+      ]
+    },
+    {
+      "narrower": "tariqa semitologiya",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+      ]
+    },
+    {
+      "narrower": "tilshunoslik",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+      ]
+    },
+    {
+      "narrower": "turkiyshunoslik",
+      "broader": "soha",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+      ]
+    },
+    {
+      "narrower": "murakkab son",
+      "broader": "son",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "murakkab son"
+      ]
+    },
+    {
+      "narrower": "olmosh-son",
+      "broader": "son",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "olmosh son"
+      ]
+    },
+    {
+      "narrower": "shaxs-son",
+      "broader": "son",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "shaxs son"
+      ]
+    },
+    {
+      "narrower": "tartib son",
+      "broader": "son",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tartib son"
+      ]
+    },
+    {
+      "narrower": "shaxs-son kategoriyasi",
+      "broader": "son kategoriyasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "shaxs son kategoriya"
+      ]
+    },
+    {
+      "narrower": "ibora",
+      "broader": "soʻz",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "soʻz, ibora, sintaktik birlik va boshqa, boshqatdan, qayta, qaytadan, yangidan, yana, takror kabi soʻzlari sinonim soʻzlar hisoblanadi"
+      ]
+    },
+    {
+      "narrower": "sifat",
+      "broader": "soʻz",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "xona, noma, poya, bop, xush, ham, baxsh, kam, umum, rang, mijoz, sifat, talab kabi soʻzlar yordamida yasalgan qoʻshma"
+      ]
+    },
+    {
+      "narrower": "sintaktik birlik",
+      "broader": "soʻz",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "soʻz, ibora, sintaktik birlik va boshqa, boshqatdan, qayta, qaytadan, yangidan, yana, takror kabi soʻzlari sinonim soʻzlar hisoblanadi"
+      ]
+    },
+    {
+      "narrower": "aniqlovchili soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "aniqlovchili so'z birikma"
+      ]
+    },
+    {
+      "narrower": "bitishuvli soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bitishuvli so'z birikma"
+      ]
+    },
+    {
+      "narrower": "boshqaruvli soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "boshqaruvli so'z birikma"
+      ]
+    },
+    {
+      "narrower": "feʼl soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "fe'l so'z birikma"
+      ]
+    },
+    {
+      "narrower": "holli soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "holli so'z birikma"
+      ]
+    },
+    {
+      "narrower": "leksikalashgan soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "leksikalashgan so'z birikma"
+      ]
+    },
+    {
+      "narrower": "moslashuvli soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "moslashuvli so'z birikma"
+      ]
+    },
+    {
+      "narrower": "murakkab soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "murakkab so'z birikma"
+      ]
+    },
+    {
+      "narrower": "ot soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ot so'z birikma"
+      ]
+    },
+    {
+      "narrower": "sodda soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sodda so'z birikma"
+      ]
+    },
+    {
+      "narrower": "toʻldiruvchili soʻz birikmasi",
+      "broader": "soʻz birikmasi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "to'ldiruvchili so'z birikma"
+      ]
+    },
+    {
+      "narrower": "mustaqil soʻz turkumi",
+      "broader": "soʻz turkumi",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "mustaqil so'z turkum"
+      ]
+    },
+    {
+      "narrower": "argo",
+      "broader": "soʻzlashuv uslubi",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Argo — maʼlum ijtimoiy doiradagi yoshi va ishi bir xil boʻlgan odamlar guruhiga xos (asosan jinoyatchilar toʻdasi tili) soʻz va iboralardan iborat alohida soʻzl"
+      ]
+    },
+    {
+      "narrower": "qiyosiy-tarixiy tilshunoslik",
+      "broader": "tarixiy tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qiyosiy tarixiy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "chuqur til orqa",
+      "broader": "til orqa",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "chuqur til orqa"
+      ]
+    },
+    {
+      "narrower": "amaliy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "amaliy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "funksional tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "funksional tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "nazariy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nazariy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "qiyosiy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "qiyosiy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "strukturaviy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "strukturaviy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "tarixiy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "tarixiy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "umumiy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "umumiy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "xususiy tilshunoslik",
+      "broader": "tilshunoslik",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "xususiy tilshunoslik"
+      ]
+    },
+    {
+      "narrower": "nutq tovushi",
+      "broader": "tovush",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nutq tovush"
+      ]
+    },
+    {
+      "narrower": "portlovchi tovush",
+      "broader": "tovush",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "portlovchi tovush"
+      ]
+    },
+    {
+      "narrower": "sirgʻaluvchi tovush",
+      "broader": "tovush",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "sirg'aluvchi tovush"
+      ]
+    },
+    {
+      "narrower": "titroq tovush",
+      "broader": "tovush",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "titroq tovush"
+      ]
+    },
+    {
+      "narrower": "undosh tovush",
+      "broader": "tovush",
+      "sources": {
+        "head": 1,
+        "definition": 1
+      },
+      "evidence": [
+        "undosh tovush",
+        "Undosh tovushlar — ogʻiz va boʻgʻiz boʻshligʻida turli toʻsiqlarga uchrab paydo boʻladigan, tarkibi faqat shovqindan yoki ovoz va shovqindan iborat tovushlar"
+      ]
+    },
+    {
+      "narrower": "unli tovush",
+      "broader": "tovush",
+      "sources": {
+        "head": 1,
+        "definition": 1
+      },
+      "evidence": [
+        "unli tovush",
+        "Unli tovushlar – ogʻiz va boʻgʻiz boʻshligʻida hech qanday toʻsiqqa uchramay hosil boʻladigan, tarkibi ovozdan iborat (shovqin deyarli ishtirok etmaydigan) tovu"
+      ]
+    },
+    {
+      "narrower": "fonetik transkripsiya",
+      "broader": "transkripsiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "fonetik transkripsiya"
+      ]
+    },
+    {
+      "narrower": "keng transkripsiya",
+      "broader": "transkripsiya",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "keng transkripsiya"
+      ]
+    },
+    {
+      "narrower": "fonetika",
+      "broader": "umumiy fonologiya",
+      "sources": {
+        "pattern": 1
+      },
+      "evidence": [
+        "Fonologiya ham fonetika kabi umumiy fonologiya"
+      ]
+    },
+    {
+      "narrower": "bogʻliq urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bog'liq urg'u"
+      ]
+    },
+    {
+      "narrower": "bosh urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "bosh urg'u"
+      ]
+    },
+    {
+      "narrower": "fraza urgʻusi",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "fraza urg'u"
+      ]
+    },
+    {
+      "narrower": "ikkinchi darajali urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ikkinchi darajali urg'u"
+      ]
+    },
+    {
+      "narrower": "koʻchma urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ko'chma urg'u"
+      ]
+    },
+    {
+      "narrower": "lugʻaviy urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "lug'aviy urg'u"
+      ]
+    },
+    {
+      "narrower": "mantiqiy urgʻu",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "mantiqiy urg'u"
+      ]
+    },
+    {
+      "narrower": "soʻz urgʻusi",
+      "broader": "urgʻu",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'z urg'u"
+      ]
+    },
+    {
+      "narrower": "funksional uslub",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "funksional uslub"
+      ]
+    },
+    {
+      "narrower": "ifoda uslubi",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ifoda uslub"
+      ]
+    },
+    {
+      "narrower": "ilmiy uslub",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ilmiy uslub"
+      ]
+    },
+    {
+      "narrower": "kitobiy uslub",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kitobiy uslub"
+      ]
+    },
+    {
+      "narrower": "nutq uslubi",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "nutq uslub"
+      ]
+    },
+    {
+      "narrower": "ogʻzaki uslub",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "og'zaki uslub"
+      ]
+    },
+    {
+      "narrower": "rasmiy-idoraviy uslub",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "rasmiy idoraviy uslub"
+      ]
+    },
+    {
+      "narrower": "soʻzlashuv uslubi",
+      "broader": "uslub",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "so'zlashuv uslub"
+      ]
+    },
+    {
+      "narrower": "koʻmakchi",
+      "broader": "yordamchi soʻz",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Koʻmakchi — yordamchi soʻzlarning bir turi"
+      ]
+    },
+    {
+      "narrower": "yuklama",
+      "broader": "yordamchi soʻz",
+      "sources": {
+        "definition": 1
+      },
+      "evidence": [
+        "Yuklama — yordamchi soʻzlarning bir turi"
+      ]
+    },
+    {
+      "narrower": "aniqlov yuklamasi",
+      "broader": "yuklama",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "aniqlov yuklama"
+      ]
+    },
+    {
+      "narrower": "chegaralov yuklamasi",
+      "broader": "yuklama",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "chegaralov yuklama"
+      ]
+    },
+    {
+      "narrower": "taajjub yuklamasi",
+      "broader": "yuklama",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "taajjub yuklama"
+      ]
+    },
+    {
+      "narrower": "taʼkid yuklamasi",
+      "broader": "yuklama",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "ta'kid yuklama"
+      ]
+    },
+    {
+      "narrower": "hozirgi zamon",
+      "broader": "zamon",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "hozirgi zamon"
+      ]
+    },
+    {
+      "narrower": "kelasi zamon",
+      "broader": "zamon",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "kelasi zamon"
+      ]
+    },
+    {
+      "narrower": "oʻtgan zamon",
+      "broader": "zamon",
+      "sources": {
+        "head": 1
+      },
+      "evidence": [
+        "o'tgan zamon"
+      ]
+    }
+  ],
+  "related": [
+    {
+      "a": "bosh gap",
+      "b": "ergash gap",
+      "pmi": 6.691,
+      "count": 3
+    },
+    {
+      "a": "harakat nomi",
+      "b": "ravishdosh",
+      "pmi": 6.691,
+      "count": 3
+    },
+    {
+      "a": "mayl",
+      "b": "shaxs-son",
+      "pmi": 6.691,
+      "count": 3
+    },
+    {
+      "a": "portlovchi",
+      "b": "sirgʻaluvchi",
+      "pmi": 6.691,
+      "count": 3
+    },
+    {
+      "a": "ovoz",
+      "b": "shovqin",
+      "pmi": 6.276,
+      "count": 4
+    },
+    {
+      "a": "aniqlovchi",
+      "b": "hol",
+      "pmi": 6.276,
+      "count": 3
+    },
+    {
+      "a": "frazeologik tarkib",
+      "b": "frazeologizm",
+      "pmi": 6.276,
+      "count": 3
+    },
+    {
+      "a": "ergashgan qoʻshma gap",
+      "b": "predikativ birlik",
+      "pmi": 5.954,
+      "count": 3
+    },
+    {
+      "a": "nutq tovushi",
+      "b": "umumiy fonetika",
+      "pmi": 5.954,
+      "count": 3
+    },
+    {
+      "a": "argo",
+      "b": "jargon",
+      "pmi": 5.861,
+      "count": 3
+    },
+    {
+      "a": "mustaqil feʼl",
+      "b": "yordamchi feʼl",
+      "pmi": 5.691,
+      "count": 3
+    },
+    {
+      "a": "sinonim",
+      "b": "sinonimik qator",
+      "pmi": 5.691,
+      "count": 3
+    },
+    {
+      "a": "frazeologiya",
+      "b": "frazeologizm",
+      "pmi": 5.469,
+      "count": 4
+    },
+    {
+      "a": "leksika",
+      "b": "lugʻat tarkibi",
+      "pmi": 5.469,
+      "count": 4
+    },
+    {
+      "a": "qoʻshma gap",
+      "b": "sodda gap",
+      "pmi": 5.469,
+      "count": 4
+    },
+    {
+      "a": "frazeologik tarkib",
+      "b": "frazeologiya",
+      "pmi": 5.469,
+      "count": 3
+    },
+    {
+      "a": "hol",
+      "b": "kesim",
+      "pmi": 5.276,
+      "count": 4
+    },
+    {
+      "a": "aniqlovchi",
+      "b": "kesim",
+      "pmi": 5.276,
+      "count": 3
+    },
+    {
+      "a": "qoʻshma ot",
+      "b": "qoʻshma sifat",
+      "pmi": 5.276,
+      "count": 3
+    },
+    {
+      "a": "predikativ birlik",
+      "b": "qoʻshma gap",
+      "pmi": 5.147,
+      "count": 4
+    },
+    {
+      "a": "mustaqil soʻz turkumi",
+      "b": "sifat",
+      "pmi": 5.106,
+      "count": 3
+    },
+    {
+      "a": "antonim",
+      "b": "sinonim",
+      "pmi": 4.954,
+      "count": 3
+    },
+    {
+      "a": "chiziqcha",
+      "b": "juft soʻz",
+      "pmi": 4.954,
+      "count": 3
+    },
+    {
+      "a": "etimologiya",
+      "b": "lugʻat tarkibi",
+      "pmi": 4.861,
+      "count": 3
+    },
+    {
+      "a": "semasiologiya",
+      "b": "til birligi",
+      "pmi": 4.861,
+      "count": 3
+    },
+    {
+      "a": "leksikografiya",
+      "b": "leksikologiya",
+      "pmi": 4.784,
+      "count": 4
+    },
+    {
+      "a": "leksikologiya",
+      "b": "semasiologiya",
+      "pmi": 4.691,
+      "count": 3
+    },
+    {
+      "a": "ega",
+      "b": "kesim",
+      "pmi": 4.598,
+      "count": 5
+    },
+    {
+      "a": "sleng",
+      "b": "soʻz yasovchi qoʻshimcha",
+      "pmi": 4.576,
+      "count": 3
+    },
+    {
+      "a": "affiks",
+      "b": "soʻz yasovchi",
+      "pmi": 4.539,
+      "count": 3
+    },
+    {
+      "a": "bogʻlovchi",
+      "b": "koʻmakchi",
+      "pmi": 4.521,
+      "count": 4
+    },
+    {
+      "a": "sifat",
+      "b": "son",
+      "pmi": 4.521,
+      "count": 4
+    },
+    {
+      "a": "bogʻlovchi",
+      "b": "yordamchi soʻz",
+      "pmi": 4.469,
+      "count": 3
+    },
+    {
+      "a": "olmosh",
+      "b": "son",
+      "pmi": 4.469,
+      "count": 3
+    },
+    {
+      "a": "argo",
+      "b": "ibora",
+      "pmi": 4.402,
+      "count": 3
+    },
+    {
+      "a": "ibora",
+      "b": "jargon",
+      "pmi": 4.402,
+      "count": 3
+    },
+    {
+      "a": "kollokvializm",
+      "b": "nostandart leksika",
+      "pmi": 4.369,
+      "count": 3
+    },
+    {
+      "a": "sinonim",
+      "b": "til birligi",
+      "pmi": 4.276,
+      "count": 3
+    },
+    {
+      "a": "gap boʻlagi",
+      "b": "yordamchi soʻz",
+      "pmi": 4.246,
+      "count": 3
+    },
+    {
+      "a": "morfema",
+      "b": "soʻz yasovchi",
+      "pmi": 4.161,
+      "count": 3
+    },
+    {
+      "a": "semasiologiya",
+      "b": "soʻz yasalishi",
+      "pmi": 4.161,
+      "count": 3
+    },
+    {
+      "a": "sleng",
+      "b": "suffiks",
+      "pmi": 4.161,
+      "count": 3
+    },
+    {
+      "a": "soʻz yasalishi",
+      "b": "soʻz yasovchi",
+      "pmi": 4.161,
+      "count": 3
+    },
+    {
+      "a": "etimologiya",
+      "b": "leksikologiya",
+      "pmi": 4.106,
+      "count": 4
+    },
+    {
+      "a": "hokim qism",
+      "b": "soʻz birikmasi",
+      "pmi": 4.106,
+      "count": 3
+    },
+    {
+      "a": "koʻmakchi",
+      "b": "yuklama",
+      "pmi": 4.106,
+      "count": 3
+    },
+    {
+      "a": "fonetika",
+      "b": "nutq tovushi",
+      "pmi": 4.08,
+      "count": 3
+    },
+    {
+      "a": "grammatik kategoriya",
+      "b": "grammatik shakl",
+      "pmi": 4.08,
+      "count": 3
+    },
+    {
+      "a": "adabiy til",
+      "b": "ovoz",
+      "pmi": 4.054,
+      "count": 3
+    },
+    {
+      "a": "adabiy til",
+      "b": "shovqin",
+      "pmi": 4.054,
+      "count": 3
+    },
+    {
+      "a": "etimologiya",
+      "b": "leksika",
+      "pmi": 4.054,
+      "count": 3
+    },
+    {
+      "a": "allofon",
+      "b": "fonema",
+      "pmi": 4.028,
+      "count": 9
+    },
+    {
+      "a": "fonema",
+      "b": "jarangsiz",
+      "pmi": 4.028,
+      "count": 3
+    },
+    {
+      "a": "olmosh",
+      "b": "sifat",
+      "pmi": 3.884,
+      "count": 3
+    },
+    {
+      "a": "ravish",
+      "b": "sifat",
+      "pmi": 3.884,
+      "count": 3
+    },
+    {
+      "a": "etimologiya",
+      "b": "lugʻat",
+      "pmi": 3.817,
+      "count": 4
+    },
+    {
+      "a": "atoqli ot",
+      "b": "bosh harf",
+      "pmi": 3.691,
+      "count": 4
+    },
+    {
+      "a": "jarangsiz",
+      "b": "undosh tovush",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "leksikologiya",
+      "b": "til birligi",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "nutq birligi",
+      "b": "soʻz birikmasi",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "portlovchi",
+      "b": "undosh tovush",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "sintaktik birlik",
+      "b": "soʻz birikmasi",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "sirgʻaluvchi",
+      "b": "undosh tovush",
+      "pmi": 3.691,
+      "count": 3
+    },
+    {
+      "a": "boʻgʻin",
+      "b": "qisqartma",
+      "pmi": 3.632,
+      "count": 3
+    },
+    {
+      "a": "ergashgan qoʻshma gap",
+      "b": "gap",
+      "pmi": 3.632,
+      "count": 3
+    },
+    {
+      "a": "soʻz turkumi",
+      "b": "son",
+      "pmi": 3.621,
+      "count": 5
+    },
+    {
+      "a": "affiks",
+      "b": "soʻz yasalishi",
+      "pmi": 3.576,
+      "count": 5
+    },
+    {
+      "a": "mustaqil soʻz turkumi",
+      "b": "ot",
+      "pmi": 3.521,
+      "count": 3
+    },
+    {
+      "a": "gap boʻlagi",
+      "b": "sintaksis",
+      "pmi": 3.469,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "gap boʻlagi",
+      "pmi": 3.41,
+      "count": 6
+    },
+    {
+      "a": "leksikologiya",
+      "b": "soʻz yasalishi",
+      "pmi": 3.406,
+      "count": 4
+    },
+    {
+      "a": "morfologiya",
+      "b": "soʻz shakli",
+      "pmi": 3.402,
+      "count": 6
+    },
+    {
+      "a": "boʻgʻin",
+      "b": "urgʻu",
+      "pmi": 3.369,
+      "count": 4
+    },
+    {
+      "a": "fonema",
+      "b": "fonologiya",
+      "pmi": 3.328,
+      "count": 8
+    },
+    {
+      "a": "gap",
+      "b": "predikativ birlik",
+      "pmi": 3.31,
+      "count": 4
+    },
+    {
+      "a": "grammatik qurilish",
+      "b": "grammatika",
+      "pmi": 3.291,
+      "count": 3
+    },
+    {
+      "a": "grammatik shakl",
+      "b": "grammatika",
+      "pmi": 3.291,
+      "count": 3
+    },
+    {
+      "a": "morfologiya",
+      "b": "sintaksis",
+      "pmi": 3.276,
+      "count": 6
+    },
+    {
+      "a": "atama",
+      "b": "morfologiya",
+      "pmi": 3.276,
+      "count": 3
+    },
+    {
+      "a": "ovoz",
+      "b": "undosh tovush",
+      "pmi": 3.276,
+      "count": 3
+    },
+    {
+      "a": "shovqin",
+      "b": "undosh tovush",
+      "pmi": 3.276,
+      "count": 3
+    },
+    {
+      "a": "ot",
+      "b": "son",
+      "pmi": 3.258,
+      "count": 5
+    },
+    {
+      "a": "nostandart leksika",
+      "b": "sleng",
+      "pmi": 3.254,
+      "count": 6
+    },
+    {
+      "a": "nostandart leksika",
+      "b": "uslub",
+      "pmi": 3.232,
+      "count": 5
+    },
+    {
+      "a": "fonetika",
+      "b": "leksikologiya",
+      "pmi": 3.232,
+      "count": 3
+    },
+    {
+      "a": "nisbat shakli",
+      "b": "qoʻshimcha",
+      "pmi": 3.232,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "sintaktik birlik",
+      "pmi": 3.217,
+      "count": 3
+    },
+    {
+      "a": "ot",
+      "b": "taqlid soʻz",
+      "pmi": 3.199,
+      "count": 4
+    },
+    {
+      "a": "soʻz yasalishi",
+      "b": "til birligi",
+      "pmi": 3.161,
+      "count": 3
+    },
+    {
+      "a": "ot",
+      "b": "sifat",
+      "pmi": 3.159,
+      "count": 7
+    },
+    {
+      "a": "soʻz turkumi",
+      "b": "taqlid soʻz",
+      "pmi": 3.147,
+      "count": 3
+    },
+    {
+      "a": "fonetika",
+      "b": "fonologiya",
+      "pmi": 3.116,
+      "count": 4
+    },
+    {
+      "a": "sintaksis",
+      "b": "soʻz birikmasi",
+      "pmi": 3.106,
+      "count": 6
+    },
+    {
+      "a": "leksikologiya",
+      "b": "morfologiya",
+      "pmi": 3.106,
+      "count": 4
+    },
+    {
+      "a": "ohang",
+      "b": "soʻz birikmasi",
+      "pmi": 3.106,
+      "count": 4
+    },
+    {
+      "a": "olmosh",
+      "b": "soʻz turkumi",
+      "pmi": 3.076,
+      "count": 4
+    },
+    {
+      "a": "ravish",
+      "b": "soʻz turkumi",
+      "pmi": 3.076,
+      "count": 4
+    },
+    {
+      "a": "leksikografiya",
+      "b": "tilshunoslik",
+      "pmi": 3.067,
+      "count": 5
+    },
+    {
+      "a": "qiyosiy-tarixiy tilshunoslik",
+      "b": "tilshunoslik",
+      "pmi": 3.067,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "sintaksis",
+      "pmi": 3.047,
+      "count": 8
+    },
+    {
+      "a": "ot",
+      "b": "ravish",
+      "pmi": 3.036,
+      "count": 5
+    },
+    {
+      "a": "sifat",
+      "b": "soʻz turkumi",
+      "pmi": 3.036,
+      "count": 5
+    },
+    {
+      "a": "feʼl",
+      "b": "taqlid soʻz",
+      "pmi": 2.991,
+      "count": 5
+    },
+    {
+      "a": "feʼl",
+      "b": "zamon",
+      "pmi": 2.991,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "harakat nomi",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "ravishdosh",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "zamon kategoriyasi",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "mayl",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "shaxs-son",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "sifatdosh",
+      "pmi": 2.991,
+      "count": 3
+    },
+    {
+      "a": "ega",
+      "b": "gap",
+      "pmi": 2.954,
+      "count": 5
+    },
+    {
+      "a": "sintaksis",
+      "b": "termin",
+      "pmi": 2.954,
+      "count": 3
+    },
+    {
+      "a": "ibora",
+      "b": "uslub",
+      "pmi": 2.942,
+      "count": 3
+    },
+    {
+      "a": "ibora",
+      "b": "nostandart leksika",
+      "pmi": 2.91,
+      "count": 4
+    },
+    {
+      "a": "morfologiya",
+      "b": "soʻz yasalishi",
+      "pmi": 2.898,
+      "count": 5
+    },
+    {
+      "a": "leksikologiya",
+      "b": "tilshunoslik",
+      "pmi": 2.897,
+      "count": 8
+    },
+    {
+      "a": "gap",
+      "b": "grammatik shakl",
+      "pmi": 2.895,
+      "count": 3
+    },
+    {
+      "a": "oʻzlashma soʻz",
+      "b": "undosh tovush",
+      "pmi": 2.884,
+      "count": 4
+    },
+    {
+      "a": "frazeologiya",
+      "b": "soʻz birikmasi",
+      "pmi": 2.884,
+      "count": 3
+    },
+    {
+      "a": "morfema",
+      "b": "soʻz yasalishi",
+      "pmi": 2.875,
+      "count": 4
+    },
+    {
+      "a": "morfologiya",
+      "b": "urgʻu",
+      "pmi": 2.861,
+      "count": 3
+    },
+    {
+      "a": "frazeologiya",
+      "b": "tilshunoslik",
+      "pmi": 2.844,
+      "count": 6
+    },
+    {
+      "a": "kesim",
+      "b": "ot",
+      "pmi": 2.843,
+      "count": 5
+    },
+    {
+      "a": "affiks",
+      "b": "morfema",
+      "pmi": 2.839,
+      "count": 3
+    },
+    {
+      "a": "morfema",
+      "b": "termin",
+      "pmi": 2.839,
+      "count": 3
+    },
+    {
+      "a": "fonetika",
+      "b": "sintaksis",
+      "pmi": 2.817,
+      "count": 3
+    },
+    {
+      "a": "mustaqil soʻz",
+      "b": "ot",
+      "pmi": 2.784,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "son",
+      "pmi": 2.728,
+      "count": 5
+    },
+    {
+      "a": "feʼl",
+      "b": "lugʻaviy maʼno",
+      "pmi": 2.728,
+      "count": 5
+    },
+    {
+      "a": "olmosh",
+      "b": "ot",
+      "pmi": 2.714,
+      "count": 4
+    },
+    {
+      "a": "fonetika",
+      "b": "morfema",
+      "pmi": 2.701,
+      "count": 3
+    },
+    {
+      "a": "morfema",
+      "b": "soʻz shakli",
+      "pmi": 2.701,
+      "count": 3
+    },
+    {
+      "a": "etimologiya",
+      "b": "tilshunoslik",
+      "pmi": 2.652,
+      "count": 6
+    },
+    {
+      "a": "frazeologizm",
+      "b": "tilshunoslik",
+      "pmi": 2.652,
+      "count": 3
+    },
+    {
+      "a": "lugʻat tarkibi",
+      "b": "tilshunoslik",
+      "pmi": 2.652,
+      "count": 3
+    },
+    {
+      "a": "semasiologiya",
+      "b": "tilshunoslik",
+      "pmi": 2.652,
+      "count": 3
+    },
+    {
+      "a": "soʻz yasovchi",
+      "b": "tilshunoslik",
+      "pmi": 2.652,
+      "count": 3
+    },
+    {
+      "a": "fonema",
+      "b": "morfema",
+      "pmi": 2.65,
+      "count": 5
+    },
+    {
+      "a": "gap",
+      "b": "soʻz birikmasi",
+      "pmi": 2.632,
+      "count": 9
+    },
+    {
+      "a": "gap",
+      "b": "ohang",
+      "pmi": 2.632,
+      "count": 4
+    },
+    {
+      "a": "bogʻlovchi",
+      "b": "gap",
+      "pmi": 2.632,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "yuklama",
+      "pmi": 2.632,
+      "count": 3
+    },
+    {
+      "a": "ot",
+      "b": "soʻz turkumi",
+      "pmi": 2.588,
+      "count": 11
+    },
+    {
+      "a": "feʼl",
+      "b": "soʻz yasovchi",
+      "pmi": 2.576,
+      "count": 3
+    },
+    {
+      "a": "ega",
+      "b": "ot",
+      "pmi": 2.521,
+      "count": 4
+    },
+    {
+      "a": "boʻgʻin",
+      "b": "fonetika",
+      "pmi": 2.495,
+      "count": 3
+    },
+    {
+      "a": "lugʻat",
+      "b": "nostandart leksika",
+      "pmi": 2.495,
+      "count": 3
+    },
+    {
+      "a": "fonologiya",
+      "b": "morfema",
+      "pmi": 2.46,
+      "count": 3
+    },
+    {
+      "a": "grammatika",
+      "b": "sintaksis",
+      "pmi": 2.443,
+      "count": 4
+    },
+    {
+      "a": "grammatika",
+      "b": "leksikologiya",
+      "pmi": 2.443,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "yordamchi soʻz",
+      "pmi": 2.41,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "sifat",
+      "pmi": 2.406,
+      "count": 6
+    },
+    {
+      "a": "fonetika",
+      "b": "morfologiya",
+      "pmi": 2.402,
+      "count": 3
+    },
+    {
+      "a": "termin",
+      "b": "tilshunoslik",
+      "pmi": 2.33,
+      "count": 6
+    },
+    {
+      "a": "grammatik qurilish",
+      "b": "tilshunoslik",
+      "pmi": 2.33,
+      "count": 3
+    },
+    {
+      "a": "grammatika",
+      "b": "termin",
+      "pmi": 2.291,
+      "count": 3
+    },
+    {
+      "a": "nutq tovushi",
+      "b": "tovush",
+      "pmi": 2.291,
+      "count": 3
+    },
+    {
+      "a": "boʻgʻin",
+      "b": "unli tovush",
+      "pmi": 2.282,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "mustaqil soʻz",
+      "pmi": 2.254,
+      "count": 3
+    },
+    {
+      "a": "morfologiya",
+      "b": "tilshunoslik",
+      "pmi": 2.237,
+      "count": 9
+    },
+    {
+      "a": "soʻz birikmasi",
+      "b": "soʻz shakli",
+      "pmi": 2.232,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "til birligi",
+      "pmi": 2.217,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "kesim",
+      "pmi": 2.217,
+      "count": 3
+    },
+    {
+      "a": "fonetika",
+      "b": "tilshunoslik",
+      "pmi": 2.192,
+      "count": 6
+    },
+    {
+      "a": "gap",
+      "b": "grammatika",
+      "pmi": 2.192,
+      "count": 7
+    },
+    {
+      "a": "feʼl",
+      "b": "ravish",
+      "pmi": 2.183,
+      "count": 4
+    },
+    {
+      "a": "fonologiya",
+      "b": "morfologiya",
+      "pmi": 2.161,
+      "count": 3
+    },
+    {
+      "a": "fonetika",
+      "b": "tovush",
+      "pmi": 2.154,
+      "count": 6
+    },
+    {
+      "a": "adabiy til",
+      "b": "nostandart leksika",
+      "pmi": 2.147,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "grammatik kategoriya",
+      "pmi": 2.116,
+      "count": 6
+    },
+    {
+      "a": "morfologiya",
+      "b": "soʻz birikmasi",
+      "pmi": 2.106,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "soʻz turkumi",
+      "pmi": 2.058,
+      "count": 11
+    },
+    {
+      "a": "gap",
+      "b": "koʻmakchi",
+      "pmi": 2.047,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "ot",
+      "pmi": 2.043,
+      "count": 14
+    },
+    {
+      "a": "egalik qoʻshimchasi",
+      "b": "tovush",
+      "pmi": 2.028,
+      "count": 4
+    },
+    {
+      "a": "grammatika",
+      "b": "morfologiya",
+      "pmi": 2.028,
+      "count": 4
+    },
+    {
+      "a": "grammatik kategoriya",
+      "b": "soʻz turkumi",
+      "pmi": 2.009,
+      "count": 3
+    },
+    {
+      "a": "affiks",
+      "b": "feʼl",
+      "pmi": 1.991,
+      "count": 5
+    },
+    {
+      "a": "feʼl",
+      "b": "kesim",
+      "pmi": 1.991,
+      "count": 4
+    },
+    {
+      "a": "grammatika",
+      "b": "tilshunoslik",
+      "pmi": 1.989,
+      "count": 9
+    },
+    {
+      "a": "morfema",
+      "b": "tilshunoslik",
+      "pmi": 1.951,
+      "count": 6
+    },
+    {
+      "a": "soʻz yasalishi",
+      "b": "tilshunoslik",
+      "pmi": 1.951,
+      "count": 6
+    },
+    {
+      "a": "koʻmakchi",
+      "b": "ot",
+      "pmi": 1.936,
+      "count": 3
+    },
+    {
+      "a": "lugʻat",
+      "b": "tilshunoslik",
+      "pmi": 1.929,
+      "count": 5
+    },
+    {
+      "a": "soʻz shakli",
+      "b": "tilshunoslik",
+      "pmi": 1.929,
+      "count": 5
+    },
+    {
+      "a": "morfologiya",
+      "b": "soʻz turkumi",
+      "pmi": 1.884,
+      "count": 4
+    },
+    {
+      "a": "leksika",
+      "b": "tilshunoslik",
+      "pmi": 1.844,
+      "count": 3
+    },
+    {
+      "a": "qoʻshimcha",
+      "b": "urgʻu",
+      "pmi": 1.817,
+      "count": 3
+    },
+    {
+      "a": "oʻzlashma soʻz",
+      "b": "tovush",
+      "pmi": 1.806,
+      "count": 3
+    },
+    {
+      "a": "sintaksis",
+      "b": "tilshunoslik",
+      "pmi": 1.804,
+      "count": 5
+    },
+    {
+      "a": "fonema",
+      "b": "tovush",
+      "pmi": 1.78,
+      "count": 8
+    },
+    {
+      "a": "fonologiya",
+      "b": "tilshunoslik",
+      "pmi": 1.688,
+      "count": 5
+    },
+    {
+      "a": "feʼl",
+      "b": "termin",
+      "pmi": 1.669,
+      "count": 4
+    },
+    {
+      "a": "til birligi",
+      "b": "tilshunoslik",
+      "pmi": 1.652,
+      "count": 3
+    },
+    {
+      "a": "tilshunoslik",
+      "b": "urgʻu",
+      "pmi": 1.652,
+      "count": 3
+    },
+    {
+      "a": "fonologiya",
+      "b": "tovush",
+      "pmi": 1.65,
+      "count": 5
+    },
+    {
+      "a": "morfema",
+      "b": "tovush",
+      "pmi": 1.65,
+      "count": 5
+    },
+    {
+      "a": "grammatik kategoriya",
+      "b": "ot",
+      "pmi": 1.647,
+      "count": 3
+    },
+    {
+      "a": "oʻzak",
+      "b": "qoʻshimcha",
+      "pmi": 1.647,
+      "count": 3
+    },
+    {
+      "a": "gap",
+      "b": "morfologiya",
+      "pmi": 1.632,
+      "count": 4
+    },
+    {
+      "a": "undosh tovush",
+      "b": "unli tovush",
+      "pmi": 1.604,
+      "count": 4
+    },
+    {
+      "a": "ega",
+      "b": "feʼl",
+      "pmi": 1.576,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "urgʻu",
+      "pmi": 1.576,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "soʻz shakli",
+      "pmi": 1.531,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "unli tovush",
+      "pmi": 1.488,
+      "count": 6
+    },
+    {
+      "a": "oʻzak",
+      "b": "tilshunoslik",
+      "pmi": 1.482,
+      "count": 3
+    },
+    {
+      "a": "fonema",
+      "b": "undosh tovush",
+      "pmi": 1.443,
+      "count": 4
+    },
+    {
+      "a": "allofon",
+      "b": "tovush",
+      "pmi": 1.443,
+      "count": 3
+    },
+    {
+      "a": "grammatika",
+      "b": "soʻz birikmasi",
+      "pmi": 1.443,
+      "count": 3
+    },
+    {
+      "a": "adabiy til",
+      "b": "gap",
+      "pmi": 1.41,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "oʻzak",
+      "pmi": 1.406,
+      "count": 3
+    },
+    {
+      "a": "harf",
+      "b": "tovush",
+      "pmi": 1.291,
+      "count": 3
+    },
+    {
+      "a": "feʼl",
+      "b": "soʻz yasalishi",
+      "pmi": 1.29,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "qoʻshimcha",
+      "pmi": 1.268,
+      "count": 10
+    },
+    {
+      "a": "qoʻshimcha",
+      "b": "unli tovush",
+      "pmi": 1.144,
+      "count": 4
+    },
+    {
+      "a": "qoʻshimcha",
+      "b": "tovush",
+      "pmi": 0.984,
+      "count": 8
+    },
+    {
+      "a": "ot",
+      "b": "soʻz birikmasi",
+      "pmi": 0.936,
+      "count": 3
+    },
+    {
+      "a": "soʻz birikmasi",
+      "b": "tilshunoslik",
+      "pmi": 0.897,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "morfema",
+      "pmi": 0.875,
+      "count": 3
+    },
+    {
+      "a": "fonema",
+      "b": "tilshunoslik",
+      "pmi": 0.819,
+      "count": 4
+    },
+    {
+      "a": "soʻz turkumi",
+      "b": "tilshunoslik",
+      "pmi": 0.674,
+      "count": 4
+    },
+    {
+      "a": "boʻgʻin",
+      "b": "feʼl",
+      "pmi": 0.669,
+      "count": 3
+    },
+    {
+      "a": "qoʻshimcha",
+      "b": "undosh tovush",
+      "pmi": 0.647,
+      "count": 4
+    },
+    {
+      "a": "feʼl",
+      "b": "morfologiya",
+      "pmi": 0.576,
+      "count": 3
+    },
+    {
+      "a": "tilshunoslik",
+      "b": "tovush",
+      "pmi": 0.141,
+      "count": 5
+    },
+    {
+      "a": "gap",
+      "b": "tilshunoslik",
+      "pmi": 0.008,
+      "count": 3
+    }
+  ],
+  "summary": {
+    "concepts": 662,
+    "dictionary_terms": 659,
+    "broader_relations": 268,
+    "by_source": {
+      "head": 234,
+      "definition": 17,
+      "pattern": 23
+    },
+    "confirmed_by_several_sources": 6,
+    "terms_with_broader": 264,
+    "roots": 47,
+    "cycles": [],
+    "related_pairs": 226
+  }
+}

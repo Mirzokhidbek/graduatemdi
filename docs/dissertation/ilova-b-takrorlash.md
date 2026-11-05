@@ -36,6 +36,9 @@ python -m app.norms.experiment                        # -> reports/term-check-sy
 python -m app.norms.checker --output reports/term-check.json --review-sample data/judgments/term-check-review.csv
 python -m app.norms.checker "Fonemalar" "o'zak" "фонема"   # alohida terminlar
 
+# 4c. Tezaurus (2.5-jadval)
+python -m app.ontology.thesaurus                      # -> reports/thesaurus.json, reports/thesaurus.ttl
+
 # 5. Statistik nomzodlar (2.1-jadval)
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \

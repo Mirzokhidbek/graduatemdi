@@ -1,0 +1,81 @@
+narrower,broader,sources,judgment,notes,evidence
+ijro mayli,mayl,head,,,ijro mayl
+inkor bogʻlovchi,bogʻlovchi,head,,,inkor bog'lovchi
+sodda gap,gap,head,,,sodda gap
+yuklama-qoʻshimcha,qoʻshimcha,head,,,yuklama qo'shimcha
+tobelanish ohangi,ohang,head,,,tobelanish ohang
+unli fonema,fonema,head,,,unli fonema
+yasama feʼl,feʼl,head,,,yasama fe'l
+feʼl kesim,kesim,head,,,fe'l kesim
+shaxs-son,son,head,,,shaxs son
+grammatik birlik,birlik,head,,,grammatik birlik
+sintaktik antonim,antonim,head,,,sintaktik antonim
+darak gap,gap,head,,,darak gap
+funksional tilshunoslik,tilshunoslik,head,,,funksional tilshunoslik
+shart mayli,mayl,head,,,shart mayl
+soʻz yasovchi qoʻshimcha,qoʻshimcha,head,,,so'z yasovchi qo'shimcha
+yarim affiks,affiks,head,,,yarim affiks
+chogʻishtiruv bogʻlovchi,bogʻlovchi,head,,,chog'ishtiruv bog'lovchi
+bogʻlovchisiz qoʻshma gap,qoʻshma gap,head,,,bog'lovchisiz qo'shma gap
+ot koʻmakchi,koʻmakchi,head,,,ot ko'makchi
+funksional fonetika,fonetika,head,,,funksional fonetika
+strukturaviy tilshunoslik,tilshunoslik,head,,,strukturaviy tilshunoslik
+izohli lugʻat,lugʻat,head,,,izohli lug'at
+aniqlovchili soʻz birikmasi,soʻz birikmasi,head,,,aniqlovchili so'z birikma
+mazmuniy grammatika,grammatika,head,,,mazmuniy grammatika
+chegaralov yuklamasi,yuklama,head,,,chegaralov yuklama
+yordamchi feʼl,feʼl,head,,,yordamchi fe'l
+qoʻshma feʼl,feʼl,head,,,qo'shma fe'l
+amaliy lugʻatchilik,lugʻatchilik,head,,,amaliy lug'atchilik
+ikkinchi darajali urgʻu,urgʻu,head,,,ikkinchi darajali urg'u
+xususiy fonologiya,fonologiya,head,,,xususiy fonologiya
+bosh kelishik,kelishik,head,,,bosh kelishik
+ikki tarkibli gap,gap,head,,,ikki tarkibli gap
+murakkab son,son,head,,,murakkab son
+umumiy sleng,sleng,head,,,umumiy sleng
+meʼyoriy grammatika,grammatika,head,,,me'yoriy grammatika
+daraja kategoriyasi,kategoriya,head,,,daraja kategoriya
+ifoda uslubi,uslub,head,,,ifoda uslub
+lab-lab undoshi,lab undoshi,head,,,lab lab undosh
+yakka bogʻlovchi,bogʻlovchi,head,,,yakka bog'lovchi
+nostandart leksika,leksika,head,,,nostandart leksika
+undosh tovush,tovush,definition+head,,,undosh tovush
+ravish,mustaqil soʻz turkumi,definition,,,Ravish – mustaqil soʻz turkumlaridan biri
+unli tovush,tovush,definition+head,,,unli tovush
+mayl kategoriyasi,grammatik kategoriya,definition+head,,,Mayl kategoriyasi — harakatning voqelikka munosabatini soʻzlovchi nuqtai nazaridan belgilovchi grammatik kategoriya
+qoʻshma gap,gap,definition+head,,,qo'shma gap
+leksikografiya,amaliy lugʻatchilik,definition,,,"Leksikografiya (qadimgi yunoncha: λεξικόν [leksika] va γράφω [grafiya] - yozuv) — lugʻatlar tuzish, amaliy lugʻatchilik"
+sinonim,sinonim soʻz,definition,,,"Sinonimlar (qadimgi yunoncha: σύν va ὄνυμα — bir nomli) — bir umumiy maʼnoga ega boʻlgan (denotativ maʼnosi bir xil), qoʻshimcha (konnotativ) maʼnosi (ekspressi"
+ega,bosh boʻlak,definition,,,Ega — gapning bosh boʻlaklaridan biri
+yuklama,yordamchi soʻz,definition,,,Yuklama — yordamchi soʻzlarning bir turi
+koʻmakchi,yordamchi soʻz,definition,,,Koʻmakchi — yordamchi soʻzlarning bir turi
+nisbat kategoriyasi,grammatik kategoriya,definition+head,,,Nisbat kategoriyasi — harakatning subyekt va obyektga munosabatini koʻrsatuvchi grammatik kategoriya
+kesim,bosh boʻlak,definition,,,Kesim — gapning bosh boʻlaklaridan biri 
+morfema,lisoniy birlik,definition,,,"Morfema (yunoncha: morphe — shakl) — oʻziga xos shakl va maʼnoga ega boʻlgan, boshqa maʼnoli qismlarga boʻlinmaydigan, soʻz (leksema) yasash yoki soʻzning shakl"
+ot,mustaqil soʻz turkumi,definition,,,Ot — mustaqil soʻz turkumlaridan biri
+zamon kategoriyasi,grammatik kategoriya,definition+head,,,Zamon kategoriyasi — harakatning nutq paytiga munosabatini bildiruvchi grammatik kategoriya
+gap,nutq birligi,definition,,,Gap — muayyan til qonuniyatiga koʻra grammatik va intonatsiyaviy shakllangan nutq birligi
+argo,soʻzlashuv uslubi,definition,,,Argo — maʼlum ijtimoiy doiradagi yoshi va ishi bir xil boʻlgan odamlar guruhiga xos (asosan jinoyatchilar toʻdasi tili) soʻz va iboralardan iborat alohida soʻzl
+matn,birlik,pattern,,,"Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+frazeologiya,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+fonetika,umumiy fonologiya,pattern,,,Fonologiya ham fonetika kabi umumiy fonologiya
+sifat,soʻz,pattern,,,"xona, noma, poya, bop, xush, ham, baxsh, kam, umum, rang, mijoz, sifat, talab kabi soʻzlar yordamida yasalgan qoʻshma"
+period,birlik,pattern,,,"Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+leksikografiya,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+sotsiolingvistika,soha,pattern,,,"tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+semantika,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+finugorshunoslik,soha,pattern,,,"Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+turkiyshunoslik,soha,pattern,,,"Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+semasiologiya,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+tilshunoslik,soha,pattern,,,"tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+etimologiya,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"
+qoʻshma gap,birlik,pattern,,,yordam beruvchi sodda gap va qoʻshma gap kabi til birliklari kiradi
+ibora,soʻz,pattern,,,"soʻz, ibora, sintaktik birlik va boshqa, boshqatdan, qayta, qaytadan, yangidan, yana, takror kabi soʻzlari sinonim soʻzlar hisoblanadi"
+etnolingvistika,soha,pattern,,,"tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+psixolingvistika,soha,pattern,,,"tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+afrikashunoslik,soha,pattern,,,"Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+tariqa semitologiya,soha,pattern,,,"Shu tariqa semitologiya, turkiyshunoslik, finugorshunoslik, afrikashunoslik kabi sohalar shakllanadi"
+paralingvistika,soha,pattern,,,"tilshunoslik va boshqa paralingvistika, etnolingvistika, psixolingvistika, sotsiolingvistika kabi sohalar soʻzlovchi"
+abzats,birlik,pattern,,,"Bularga keyingi paytlarda abzats, period, matn kabi birliklar ham kiritilmoqda"
+sintaktik birlik,soʻz,pattern,,,"soʻz, ibora, sintaktik birlik va boshqa, boshqatdan, qayta, qaytadan, yangidan, yana, takror kabi soʻzlari sinonim soʻzlar hisoblanadi"
+stilistika,soha,pattern,,,"Leksikologiya tilshunoslikning leksikografiya, frazeologiya, semasiologiya yoki semantika, etimologiya, stilistika hamda soʻz yasalishi haqidagi taʼlimot kabi s"

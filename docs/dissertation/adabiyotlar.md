@@ -31,4 +31,9 @@
 15. Damerau F. J. A technique for computer detection and correction of spelling errors //
    Communications of the ACM, 1964, 7(3), 171–176.
 16. ISO 1087:2019. Terminology work and terminology science — Vocabulary. ISO, 2019.
+17. Hearst M. A. Automatic acquisition of hyponyms from large text corpora // COLING, 1992, 539–545.
+18. Church K. W., Hanks P. Word association norms, mutual information, and lexicography //
+   Computational Linguistics, 1990, 16(1), 22–29.
+19. Miles A., Bechhofer S. SKOS Simple Knowledge Organization System Reference. W3C
+   Recommendation, 2009. https://www.w3.org/TR/skos-reference/
 
