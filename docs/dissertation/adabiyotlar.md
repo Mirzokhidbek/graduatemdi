@@ -23,3 +23,11 @@
    language-independent named entity recognition // CoNLL, 2003.
 11. Oʻzbek tilining asosiy imlo qoidalari. Vazirlar Mahkamasining 1995-yil
    24-avgustdagi 339-son qarori bilan tasdiqlangan.
+12. Justeson J. S., Katz S. M. Technical terminology: some linguistic properties and an
+   algorithm for identification in text // Natural Language Engineering, 1995, 1(1), 9–27.
+13. Bagga A., Baldwin B. Algorithms for scoring coreference chains // LREC Workshop on
+   Linguistic Coreference, 1998.
+14. ISO 704:2022. Terminology work — Principles and methods. ISO, 2022.
+15. Damerau F. J. A technique for computer detection and correction of spelling errors //
+   Communications of the ACM, 1964, 7(3), 171–176.
+

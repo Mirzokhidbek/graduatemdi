@@ -1,0 +1,289 @@
+{
+  "grouping": {
+    "validation": {
+      "exact": {
+        "precision": 1.0,
+        "recall": 0.5011863357168059,
+        "f1": 0.6677203539525863,
+        "items": 269
+      },
+      "lowercase": {
+        "precision": 1.0,
+        "recall": 0.5521656477501027,
+        "f1": 0.7114777324836156,
+        "items": 269
+      },
+      "skeleton": {
+        "precision": 1.0,
+        "recall": 0.5521656477501027,
+        "f1": 0.7114777324836156,
+        "items": 269
+      },
+      "skeleton+corpus_lemmatizer": {
+        "precision": 1.0,
+        "recall": 0.9110371826536953,
+        "f1": 0.9534478877994569,
+        "items": 269
+      },
+      "skeleton+term_normalizer": {
+        "precision": 1.0,
+        "recall": 0.9608851252583296,
+        "f1": 0.9800524394632666,
+        "items": 269
+      }
+    },
+    "test": {
+      "exact": {
+        "precision": 1.0,
+        "recall": 0.6010630508571015,
+        "f1": 0.7508299570530127,
+        "items": 256
+      },
+      "lowercase": {
+        "precision": 1.0,
+        "recall": 0.6360466396049921,
+        "f1": 0.7775409627179816,
+        "items": 256
+      },
+      "skeleton": {
+        "precision": 1.0,
+        "recall": 0.6402571659207816,
+        "f1": 0.7806790047600423,
+        "items": 256
+      },
+      "skeleton+corpus_lemmatizer": {
+        "precision": 1.0,
+        "recall": 0.8693808797355707,
+        "f1": 0.9301270695124978,
+        "items": 256
+      },
+      "skeleton+term_normalizer": {
+        "precision": 1.0,
+        "recall": 0.9337020086448002,
+        "f1": 0.9657144735544524,
+        "items": 256
+      }
+    }
+  },
+  "noise_robustness_test": {
+    "exact": {
+      "bosh harf": 0.0,
+      "kirill": 0.0,
+      "apostrof (')": 0.0,
+      "apostrof (`)": 0.0,
+      "apostrof (‘’)": 0.0,
+      "apostrofsiz": 0.0
+    },
+    "lowercase": {
+      "bosh harf": 1.0,
+      "kirill": 0.0,
+      "apostrof (')": 0.0,
+      "apostrof (`)": 0.0,
+      "apostrof (‘’)": 0.0,
+      "apostrofsiz": 0.0
+    },
+    "skeleton": {
+      "bosh harf": 1.0,
+      "kirill": 0.9590643274853801,
+      "apostrof (')": 1.0,
+      "apostrof (`)": 1.0,
+      "apostrof (‘’)": 1.0,
+      "apostrofsiz": 1.0
+    },
+    "skeleton+corpus_lemmatizer": {
+      "bosh harf": 1.0,
+      "kirill": 0.9590643274853801,
+      "apostrof (')": 1.0,
+      "apostrof (`)": 1.0,
+      "apostrof (‘’)": 1.0,
+      "apostrofsiz": 1.0
+    },
+    "skeleton+term_normalizer": {
+      "bosh harf": 1.0,
+      "kirill": 0.9590643274853801,
+      "apostrof (')": 1.0,
+      "apostrof (`)": 1.0,
+      "apostrof (‘’)": 1.0,
+      "apostrofsiz": 1.0
+    }
+  },
+  "synonym_pairs": {
+    "total": 46,
+    "by_kind": {
+      "synonym": 31,
+      "doublet": 15
+    },
+    "by_cue": {
+      "or": 13,
+      "paren": 31,
+      "that_is": 5
+    },
+    "review_file": "data/judgments/synonyms-review.csv",
+    "review_rows": 46
+  },
+  "homonymy": {
+    "ambiguous_lemmas": {
+      "hol": 0.10344827586206896,
+      "ravish": 0.5714285714285714,
+      "birlik": 0.1,
+      "sifat": 0.41025641025641024,
+      "ega": 0.3392857142857143,
+      "harf": 0.8461538461538461,
+      "sintaksis": 0.9,
+      "lug'at": 0.625,
+      "qo'shimcha": 0.8571428571428571,
+      "tovush": 0.8478260869565217,
+      "son": 0.25,
+      "leksika": 0.8333333333333334,
+      "fonetika": 0.8571428571428571,
+      "obyekt": 0.5454545454545454
+    },
+    "validation": {
+      "occurrences": 78,
+      "term_share": 0.47435897435897434,
+      "accuracy": {
+        "always_term": 0.47435897435897434,
+        "lemma_majority": 0.8717948717948718,
+        "naive_bayes": 0.8333333333333334
+      },
+      "term_f1": {
+        "always_term": 0.6434782608695652,
+        "lemma_majority": 0.8780487804878049,
+        "naive_bayes": 0.8433734939759037
+      },
+      "by_lemma": {
+        "leksika": {
+          "n": 18,
+          "term": 17,
+          "nb_ok": 17
+        },
+        "ega": {
+          "n": 13,
+          "term": 0,
+          "nb_ok": 12
+        },
+        "lug'at": {
+          "n": 12,
+          "term": 9,
+          "nb_ok": 9
+        },
+        "qo'shimcha": {
+          "n": 10,
+          "term": 6,
+          "nb_ok": 6
+        },
+        "sifat": {
+          "n": 9,
+          "term": 0,
+          "nb_ok": 7
+        },
+        "hol": {
+          "n": 5,
+          "term": 0,
+          "nb_ok": 5
+        },
+        "tovush": {
+          "n": 5,
+          "term": 4,
+          "nb_ok": 4
+        },
+        "birlik": {
+          "n": 3,
+          "term": 0,
+          "nb_ok": 3
+        },
+        "son": {
+          "n": 3,
+          "term": 1,
+          "nb_ok": 2
+        }
+      }
+    },
+    "test": {
+      "occurrences": 64,
+      "term_share": 0.578125,
+      "accuracy": {
+        "always_term": 0.578125,
+        "lemma_majority": 0.765625,
+        "naive_bayes": 0.84375
+      },
+      "term_f1": {
+        "always_term": 0.7326732673267327,
+        "lemma_majority": 0.7692307692307693,
+        "naive_bayes": 0.868421052631579
+      },
+      "by_lemma": {
+        "sifat": {
+          "n": 16,
+          "term": 6,
+          "nb_ok": 9
+        },
+        "ravish": {
+          "n": 15,
+          "term": 13,
+          "nb_ok": 13
+        },
+        "son": {
+          "n": 7,
+          "term": 4,
+          "nb_ok": 7
+        },
+        "ega": {
+          "n": 6,
+          "term": 1,
+          "nb_ok": 6
+        },
+        "hol": {
+          "n": 5,
+          "term": 1,
+          "nb_ok": 4
+        },
+        "lug'at": {
+          "n": 4,
+          "term": 4,
+          "nb_ok": 4
+        },
+        "tovush": {
+          "n": 3,
+          "term": 3,
+          "nb_ok": 3
+        },
+        "sintaksis": {
+          "n": 2,
+          "term": 2,
+          "nb_ok": 2
+        },
+        "birlik": {
+          "n": 2,
+          "term": 0,
+          "nb_ok": 2
+        },
+        "fonetika": {
+          "n": 2,
+          "term": 2,
+          "nb_ok": 2
+        },
+        "obyekt": {
+          "n": 1,
+          "term": 0,
+          "nb_ok": 1
+        },
+        "qo'shimcha": {
+          "n": 1,
+          "term": 1,
+          "nb_ok": 1
+        }
+      }
+    }
+  },
+  "groups_summary": {
+    "groups": 703,
+    "forms": 1418,
+    "groups_with_several_forms": 250,
+    "review_links": {
+      "synonym": 10,
+      "doublet": 7,
+      "misspelling": 6
+    }
+  }
+}

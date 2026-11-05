@@ -49,6 +49,8 @@ VERB_ENDINGS = (
     "adi", "aydi", "ydi", "moqda", "moq", "yapti", "gan", "kan", "qan", "ilgan", "ingan", "ladi",
     "ib", "ganda", "gach", "guncha", "maydi", "mas", "sin", "lmaydi", "ilmaydi", "ishadi",
     "yotgan", "ayotgan", "gani", "ganligi",
+    # o'tgan zamon: keldi, ketdi, yetdi, oʻynatdim
+    "ldi", "tdi", "rdi", "ndi", "kdi", "qdi", "sdi", "shdi", "dim", "dik",
 )
 # Nisbiy sifat, -li/-siz, sifatdosh -vchi; -lik otlari bundan mustasno.
 ADJ_ENDINGS = ("tik", "gik", "sik", "nik", "kik", "rik", "iy", "viy", "li", "siz", "vchi", "uvchi")
@@ -72,7 +74,7 @@ NON_TERM = frozenset(
         "koʻra", "xos", "oid", "doir", "boshqa", "oʻzaro", "ayniqsa", "odatda", "hatto", "ham", "deyarli",
         "bir", "ikki", "uch", "toʻrt", "besh", "olti", "yetti", "sakkiz", "toʻqqiz", "oʻn", "yuz", "ming",
         "biror", "hech", "har", "qachon", "qayer", "shuning", "keyingi", "oldingi", "avval", "ilgari",
-        "tomon", "qadar", "sari", "uchun", "kabi", "singari", "bilan", "orasida", "sababli",
+        "tomon", "qadar", "sari", "uchun", "kabi", "singari", "bilan", "orasida", "sababli", "qarang",
     )
 )
 

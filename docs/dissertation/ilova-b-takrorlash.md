@@ -28,6 +28,9 @@ python -m app.models.crf predict "Morfonologiya tilshunoslik boʻlimi." --model 
 # 4. Meʼyorlashtirish (3.1-jadval)
 python -m app.evaluation.normalization data/processed/silver/test.jsonl --output reports/normalization-test.json
 
+# 4a. Variantdorlik: guruhlash, sinonim/dublet, omonimiya (3.2–3.4-jadvallar)
+python -m app.variation.experiment                    # -> reports/variation.json, reports/variation-groups.json
+
 # 5. Statistik nomzodlar (2.1-jadval)
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \
