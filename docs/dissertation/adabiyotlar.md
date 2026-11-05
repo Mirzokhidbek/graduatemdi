@@ -36,4 +36,8 @@
    Computational Linguistics, 1990, 16(1), 22–29.
 19. Miles A., Bechhofer S. SKOS Simple Knowledge Organization System Reference. W3C
    Recommendation, 2009. https://www.w3.org/TR/skos-reference/
+20. Feng F., Yang Y., Cer D., Arivazhagan N., Wang W. Language-agnostic BERT sentence
+   embedding // ACL, 2022, 878–891.
+21. Levenshtein V. I. Binary codes capable of correcting deletions, insertions, and
+   reversals // Soviet Physics Doklady, 1966, 10(8), 707–710.
 

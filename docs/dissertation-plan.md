@@ -21,7 +21,7 @@ Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 | 2.3 Ontologiya va tezaurus | ✅ | `app/ontology/thesaurus.py`, SKOS (`reports/thesaurus.ttl`), `#thesaurus` sahifasi; ekspert bahosi kutilmoqda |
 | 3.1 Variantdorlik | ✅ | `app/variation/`: imlo, kirill, morfologiya, imlo xatosi, sinonim/dublet, omonimiya, meʼyoriy shakl tanlash |
 | 3.2 Meʼyorga muvofiqlikni tekshirish | ✅ | `app/norms/`, `POST /api/check-terms`, `#check` sahifasi; ekspert bahosi kutilmoqda |
-| 3.3 Ko'p tilli moslashtirish | ❌ | — |
+| 3.3 Ko'p tilli moslashtirish | ✅ | `app/multilingual/`: kognat modeli, etimonlar, meʼyoriy muqobil; LaBSE va Vikipediya — Colab |
 
 ---
 

@@ -39,6 +39,10 @@ python -m app.norms.checker "Fonemalar" "o'zak" "фонема"   # alohida termi
 # 4c. Tezaurus (2.5-jadval)
 python -m app.ontology.thesaurus                      # -> reports/thesaurus.json, reports/thesaurus.ttl
 
+# 4d. Ko'p tilli moslashtirish (3.7–3.8-jadvallar)
+python -m app.multilingual.experiment                 # kognat modeli -> reports/multilingual.json
+# LaBSE va Vikipediya: notebooks/multilingual_colab.ipynb (internet, GPU)
+
 # 5. Statistik nomzodlar (2.1-jadval)
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \

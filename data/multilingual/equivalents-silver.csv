@@ -1,0 +1,122 @@
+uz,ru,en,kind
+tilshunoslik,языкознание,linguistics,native
+lingvistika,лингвистика,linguistics,international
+fonetika,фонетика,phonetics,international
+fonema,фонема,phoneme,international
+tovush,звук,sound,native
+unli tovush,гласный звук,vowel,native
+undosh tovush,согласный звук,consonant,native
+morfologiya,морфология,morphology,international
+morfema,морфема,morpheme,international
+oʻzak,корень,root,native
+affiks,аффикс,affix,international
+soʻz turkumi,часть речи,part of speech,native
+leksikologiya,лексикология,lexicology,international
+sintaksis,синтаксис,syntax,international
+sodda gap,простое предложение,simple sentence,native
+qoʻshma gap,сложное предложение,compound sentence,native
+feʼl,глагол,verb,native
+soʻz birikmasi,словосочетание,phrase,native
+boʻgʻin,слог,syllable,native
+allofon,аллофон,allophone,international
+fonologiya,фонология,phonology,international
+grammatika,грамматика,grammar,international
+grammatik kategoriya,грамматическая категория,grammatical category,international
+urgʻu,ударение,stress,native
+koʻmakchi,послелог,postposition,native
+leksema,лексема,lexeme,international
+antonim,антоним,antonym,international
+ergash gap,придаточное предложение,subordinate clause,native
+leksikografiya,лексикография,lexicography,international
+yordamchi feʼl,вспомогательный глагол,auxiliary verb,native
+yuklama,частица,particle,native
+atoqli ot,имя собственное,proper noun,native
+adabiy til,литературный язык,literary language,native
+bosh gap,главное предложение,main clause,native
+ohang,интонация,intonation,native
+qisqartma,аббревиатура,abbreviation,native
+semasiologiya,семасиология,semasiology,international
+sheva,говор,dialect,native
+imlo,орфография,orthography,native
+obyekt,объект,object,international
+sinonim,синоним,synonym,international
+bogʻlovchi,союз,conjunction,native
+dialektologiya,диалектология,dialectology,international
+leksika,лексика,vocabulary,international
+olmosh,местоимение,pronoun,native
+subyekt,субъект,subject,international
+etimologiya,этимология,etymology,international
+grammema,граммема,grammeme,international
+intonatsiya,интонация,intonation,international
+affiksatsiya,аффиксация,affixation,international
+lahja,диалект,dialect,native
+oppozitsiya,оппозиция,opposition,international
+orfografiya,орфография,orthography,international
+ravishdosh,деепричастие,converb,native
+sinonimiya,синонимия,synonymy,international
+abbreviatsiya,аббревиатура,abbreviation,international
+aniqlovchi,определение,attribute,native
+grafika,графика,graphics,international
+izofa,изафет,izafet,international
+kompozitsiya,словосложение,compounding,international
+omonim,омоним,homonym,international
+paradigma,парадигма,paradigm,international
+paronim,пароним,paronym,international
+polisemiya,полисемия,polysemy,international
+predikat,предикат,predicate,international
+professionalizm,профессионализм,professionalism,international
+sifatdosh,причастие,participle,native
+sintagma,синтагма,syntagma,international
+stilistika,стилистика,stylistics,international
+infiks,инфикс,infix,international
+inversiya,инверсия,inversion,international
+konversiya,конверсия,conversion,international
+modallik,модальность,modality,international
+monosemiya,моносемия,monosemy,international
+neologizm,неологизм,neologism,international
+arxaizm,архаизм,archaism,international
+dialektizm,диалектизм,dialectism,international
+diakritika,диакритика,diacritics,international
+artikulyatsiya,артикуляция,articulation,international
+arxifonema,архифонема,archiphoneme,international
+antonimiya,антонимия,antonymy,international
+allofoniya,аллофония,allophony,international
+frazeologiya,фразеология,phraseology,international
+morfonologiya,морфонология,morphonology,international
+segment,сегмент,segment,international
+suffiks,суффикс,suffix,international
+prefiks,префикс,prefix,international
+transkripsiya,транскрипция,transcription,international
+transliteratsiya,транслитерация,transliteration,international
+terminologiya,терминология,terminology,international
+semantika,семантика,semantics,international
+pragmatika,прагматика,pragmatics,international
+sotsiolingvistika,социолингвистика,sociolinguistics,international
+psixolingvistika,психолингвистика,psycholinguistics,international
+etnolingvistika,этнолингвистика,ethnolinguistics,international
+paralingvistika,паралингвистика,paralinguistics,international
+toponimika,топонимика,toponymy,international
+antroponimika,антропонимика,anthroponymy,international
+onomastika,ономастика,onomastics,international
+leksikografik,лексикографический,lexicographic,international
+kelishik,падеж,case,native
+egalik qoʻshimchasi,притяжательный аффикс,possessive suffix,native
+koʻplik,множественное число,plural,native
+ega,подлежащее,subject,native
+kesim,сказуемое,predicate,native
+toʻldiruvchi,дополнение,object,native
+hol,обстоятельство,adverbial,native
+ot,имя существительное,noun,native
+sifat,имя прилагательное,adjective,native
+son,имя числительное,numeral,native
+ravish,наречие,adverb,native
+undov,междометие,interjection,native
+soʻz yasalishi,словообразование,word formation,native
+lugʻat,словарь,dictionary,native
+izohli lugʻat,толковый словарь,explanatory dictionary,native
+ona tili,родной язык,native language,native
+nutq,речь,speech,native
+boʻgʻin koʻchirish,перенос,hyphenation,native
+tutuq belgisi,апостроф,apostrophe,native
+kirill yozuvi,кириллица,cyrillic script,native
+lotin yozuvi,латиница,latin script,native
