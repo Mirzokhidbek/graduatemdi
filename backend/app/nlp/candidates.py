@@ -18,6 +18,18 @@ Reyting usullari:
       C(a) = log2(|a|+1) · (f(a) − Σ_{b∈T_a} f(b) / |T_a|), aks holda,
   bu yerda T_a — a ni uzluksiz qism sifatida o'z ichiga olgan uzunroq nomzodlar.
 
+- ``ncvalue``: NC-value (Frantzi, Ananiadou, Mima, 2000) — C-value'ga termin
+  kontekstidagi so'zlar og'irligini qo'shadi:
+      weight(w) = t(w) / n,
+      NC(a)     = 0.8 · C(a) + 0.2 · Σ_{w∈C_a} f_a(w) · weight(w),
+  bu yerda n — C-value bo'yicha eng yuqori ``context_terms`` ta nomzod ("termin
+  namunasi"), t(w) — w ular orasidan nechtasining kontekstida uchragani, C_a —
+  a ning kontekst so'zlari, f_a(w) — w ning a kontekstida uchrashlar soni.
+  Kontekst — nomzoddan bevosita oldin va keyin kelgan bittadan so'z (lemma),
+  yordamchi so'zlar va raqamlar hisobga olinmaydi; tinish belgisi ham chegara.
+  Asl usulda kontekst so'zlari ot, sifat va fe'l bilan cheklanadi; bu yerda
+  POS-tegger yo'qligi sababli faqat yordamchi so'zlar chiqariladi.
+
 - ``weirdness``: soha korpusidagi nisbiy chastotaning kontrast (sohaga oid
   bo'lmagan) korpusdagi nisbiy chastotaga nisbati (Ahmad va boshq., 1999),
   Laplace silliqlash bilan: W(a) = (f(a)/N_d) / ((f_c(a)+1)/(N_c+V)).
@@ -36,13 +48,14 @@ from __future__ import annotations
 import math
 from collections import Counter
 from dataclasses import dataclass, field
-from typing import Mapping
+from typing import Callable, Mapping
 
 from app.nlp.lemmatize import CorpusLemmatizer
 from app.nlp.stopwords import STOPWORDS
 from app.nlp.tokenize import phrases, tokenize
 
-METHODS = ("frequency", "tfidf", "cvalue", "weirdness")
+METHODS = ("frequency", "tfidf", "cvalue", "ncvalue", "weirdness")
+NC_CONTEXT_TERMS = 100  # NC-value: kontekst og'irligi uchun "termin namunasi" hajmi
 
 # Fe'l, sifatdosh, ravishdosh va harakat nomi qo'shimchalari (oxirgi so'zda bo'lsa, nomzod ot birikmasi emas).
 VERB_ENDINGS = (
@@ -64,6 +77,7 @@ class Candidate:
     frequency: int = 0
     documents: set[str] = field(default_factory=set)
     surfaces: Counter = field(default_factory=Counter)  # matndagi ko'rinishlar
+    contexts: Counter = field(default_factory=Counter)  # NC-value: kontekst so'zi (lemma) -> soni
 
     @property
     def text(self) -> str:
@@ -139,6 +153,7 @@ def extract_candidates(
 
     for doc_id, text in documents.items():
         for phrase in phrases(text):
+            context_words = [_context_word(token.norm, stopwords, lemmatizer) for token in phrase]
             for start in range(len(phrase)):
                 if phrase[start].norm in stopwords:
                     continue
@@ -156,7 +171,19 @@ def extract_candidates(
                     candidate.frequency += 1
                     candidate.documents.add(doc_id)
                     candidate.surfaces[text[phrase[start].start : last.end]] += 1
+                    if start > 0 and context_words[start - 1]:
+                        candidate.contexts[context_words[start - 1]] += 1
+                    if end < len(phrase) and context_words[end]:
+                        candidate.contexts[context_words[end]] += 1
     return candidates
+
+
+def _context_word(word: str, stopwords: frozenset[str], lemmatizer: CorpusLemmatizer) -> str | None:
+    """NC-value uchun kontekst so'zi: yordamchi so'z bo'lmasa, lemmasi."""
+    if word in stopwords:
+        return None
+    lemma = lemmatizer.lemma(word)
+    return None if lemma in stopwords else lemma
 
 
 def c_values(candidates: Mapping[Key, Candidate]) -> dict[Key, float]:
@@ -180,6 +207,36 @@ def c_values(candidates: Mapping[Key, Candidate]) -> dict[Key, float]:
     return scores
 
 
+def nc_values(
+    candidates: Mapping[Key, Candidate],
+    c_scores: Mapping[Key, float] | None = None,
+    context_terms: int = NC_CONTEXT_TERMS,
+) -> dict[Key, float]:
+    """NC-value; ``c_scores`` berilmasa, C-value shu nomzodlar bo'yicha hisoblanadi."""
+    c_scores = c_values(candidates) if c_scores is None else c_scores
+    top = sorted(candidates, key=lambda k: (-c_scores[k], -candidates[k].frequency, " ".join(k)))[:context_terms]
+    n = len(top)
+    seen_with: Counter = Counter()
+    for key in top:
+        seen_with.update(set(candidates[key].contexts))
+    weight = {w: t / n for w, t in seen_with.items()} if n else {}
+    return {
+        key: 0.8 * c_scores[key]
+        + 0.2 * sum(count * weight.get(w, 0.0) for w, count in candidate.contexts.items())
+        for key, candidate in candidates.items()
+    }
+
+
+def context_weights(candidates: Mapping[Key, Candidate], context_terms: int = NC_CONTEXT_TERMS) -> list[tuple[str, float]]:
+    """Eng og'ir kontekst so'zlari (tahlil uchun): [(so'z, weight)] kamayish tartibida."""
+    c_scores = c_values(candidates)
+    top = sorted(candidates, key=lambda k: (-c_scores[k], -candidates[k].frequency, " ".join(k)))[:context_terms]
+    seen_with: Counter = Counter()
+    for key in top:
+        seen_with.update(set(candidates[key].contexts))
+    return [(w, t / len(top)) for w, t in seen_with.most_common()] if top else []
+
+
 def tfidf_scores(candidates: Mapping[Key, Candidate], n_documents: int) -> dict[Key, float]:
     return {
         key: c.frequency * (math.log((1 + n_documents) / (1 + c.doc_frequency)) + 1)
@@ -194,16 +251,18 @@ def rank(
     min_frequency: int = 2,
     pos_filter: bool = False,
     weirdness: Mapping[Key, float] | None = None,
+    keep: Callable[[Key], bool] | None = None,
 ) -> list[tuple[Candidate, float]]:
     """Nomzodlarni kamayish tartibida reytinglaydi.
 
     ``min_frequency`` dan kam uchragan nomzodlar ballar hisoblanishidan oldin
     chiqarib tashlanadi (C-value'dagi T_a ham faqat qolganlar bo'yicha).
+    ``keep`` — qo'shimcha filtr (masalan, leksik-grammatik qolip, ``app.nlp.patterns``).
     """
     if method not in METHODS:
         raise ValueError(f"method quyidagilardan biri bo'lishi kerak: {', '.join(METHODS)}")
     kept = {
-        k: c for k, c in candidates.items() if c.frequency >= min_frequency and (not pos_filter or looks_like_noun_head(k))
+        k: c for k, c in candidates.items() if c.frequency >= min_frequency and (not pos_filter or looks_like_noun_head(k)) and (keep is None or keep(k))
     }
     if method == "weirdness":
         if weirdness is None:
@@ -213,6 +272,8 @@ def rank(
         scores = {k: float(c.frequency) for k, c in kept.items()}
     elif method == "tfidf":
         scores = tfidf_scores(kept, n_documents)
+    elif method == "ncvalue":
+        scores = nc_values(kept)
     else:
         scores = c_values(kept)
     ordered = sorted(kept.values(), key=lambda c: (-scores[c.key], -c.frequency, c.text))
@@ -246,6 +307,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--output", type=Path, help="barcha reytingni yozish (.json yoki .csv)")
     parser.add_argument("--pos-filter", action="store_true",
                         help="oxirgi so'zi fe'l yoki nisbiy sifat shaklidagi nomzodlarni chiqarish")
+    parser.add_argument("--pattern-filter", action="store_true",
+                        help="faqat leksik-grammatik qolipga ((Sifat|Ot)* Ot) mos nomzodlar (app.nlp.patterns)")
     parser.add_argument("--contrast", type=Path, nargs="+",
                         help="kontrast (sohaga oid bo'lmagan) korpus matnlari, weirdness usuli uchun")
     args = parser.parse_args(argv)
@@ -274,16 +337,22 @@ def main(argv: list[str] | None = None) -> int:
         contrast_docs = {path.stem: path.read_text(encoding="utf-8") for path in args.contrast}
         counts, contrast_tokens = contrast_frequencies(contrast_docs, set(candidates), lemmatizer, args.max_words)
         weirdness = weirdness_scores(candidates, total_tokens, counts, contrast_tokens)
+    keep = None
+    if args.pattern_filter:
+        from app.nlp.patterns import MorphTagger, matches_pattern
+
+        tagger = MorphTagger(lemmatizer)
+        keep = lambda key: matches_pattern(key, tagger)  # noqa: E731
     try:
         ranked = rank(candidates, args.method, len(documents), min_frequency=args.min_freq,
-                      pos_filter=args.pos_filter, weirdness=weirdness)
+                      pos_filter=args.pos_filter, weirdness=weirdness, keep=keep)
     except ValueError as exc:
         print(exc, file=sys.stderr)
         return 1
 
     print(f"Hujjatlar: {len(documents)}, tokenlar: {total_tokens}, nomzodlar: {len(candidates)} "
           f"(f >= {args.min_freq}: {len(ranked)}), usul: {args.method}"
-          f"{', POS filtri' if args.pos_filter else ''}")
+          f"{', POS filtri' if args.pos_filter else ''}{', qolip filtri' if args.pattern_filter else ''}")
     print(f"\n{'#':>3}  {'ball':>8}  {'f':>4}  {'df':>3}  lug'at  nomzod (eng ko'p uchragan ko'rinish)")
     for position, (candidate, score) in enumerate(ranked[: args.top], start=1):
         surface = candidate.surfaces.most_common(1)[0][0]

@@ -294,3 +294,42 @@ def test_weirdness_needs_contrast():
 
     with pytest.raises(ValueError):
         rank(extract_candidates({"d": "fonema fonema"}), "weirdness", 1)
+
+
+# --- NC-value -----------------------------------------------------------------------
+
+
+def test_candidates_collect_context_words_without_stopwords():
+    docs = {"d": "jarangli undosh tovush keladi va undosh tovush"}
+    found = extract_candidates(docs, lemmatizer=CorpusLemmatizer(set()))
+    ctx = found[("undosh", "tovush")].contexts
+    assert ctx == {"jarangli": 1, "keladi": 1}  # "va" — yordamchi so'z, hisobga olinmaydi
+
+
+def test_nc_value_rewards_candidates_in_term_contexts():
+    from collections import Counter
+
+    from app.nlp.candidates import nc_values
+
+    def cand(words, freq, contexts):
+        c = Candidate(tuple(words), frequency=freq)
+        c.contexts = Counter(contexts)
+        return c
+
+    pool = {
+        ("fonema",): cand(["fonema"], 10, {"tovush": 4}),
+        ("morfema",): cand(["morfema"], 10, {"tovush": 1}),
+        ("kitob",): cand(["kitob"], 3, {"tovush": 2}),
+        ("stol",): cand(["stol"], 3, {"yangi": 2}),
+    }
+    c_scores = c_values(pool)
+    scores = nc_values(pool, context_terms=2)  # namuna: fonema, morfema -> weight(tovush) = 1
+    assert scores[("fonema",)] == pytest.approx(0.8 * c_scores[("fonema",)] + 0.2 * 4)
+    assert scores[("kitob",)] > scores[("stol",)]  # bir xil C-value, lekin termin konteksti
+    assert scores[("stol",)] == pytest.approx(0.8 * c_scores[("stol",)])
+
+
+def test_rank_supports_ncvalue():
+    docs = {"a": "unli tovush va undosh tovush. unli tovush", "b": "unli tovush keladi"}
+    ranked = rank(extract_candidates(docs), "ncvalue", n_documents=2, min_frequency=1)
+    assert ranked and ranked[0][0].text in {"tovush", "unli tovush"}
