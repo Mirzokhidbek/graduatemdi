@@ -22,7 +22,7 @@ Tuzilma tasdiqlangan rejaga mos (I–III bob). Ish rejasi va har bir bo'limning 
 | 2.2 | [2-2-ml-dl.md](2-2-ml-dl.md) | qoralama (XLM-R natijasi yo'q) |
 | 2.3 | [2-3-ontologiya.md](2-3-ontologiya.md) | TODO |
 | Xulosa | [2-xulosa.md](2-xulosa.md) | TODO |
-| **III bob** 3.1 | [3-1-variantdorlik.md](3-1-variantdorlik.md) | qisman |
+| **III bob** 3.1 | [3-1-variantdorlik.md](3-1-variantdorlik.md) | qoralama |
 | 3.2 | [3-2-meyor-tekshiruvi.md](3-2-meyor-tekshiruvi.md) | TODO |
 | 3.3 | [3-3-kop-tilli.md](3-3-kop-tilli.md) | TODO |
 | Xulosa | [3-xulosa.md](3-xulosa.md) | TODO |

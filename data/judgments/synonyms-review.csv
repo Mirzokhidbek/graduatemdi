@@ -1,0 +1,47 @@
+left,right,kind,count,judgment,notes,example
+bitishuv,boshqaruv,synonym,2,,,boshqaruv yoki bitishuv yordamida ikki
+fe'l,olma,synonym,2,,,olma (feʼlning inkor shakli)
+leksema,so'z,doublet,2,,,soʻz (leksema)
+affiks,qo'shimcha,doublet,1,,,affiks (qoʻshimcha)
+aniqlovchili so'z birikma,yangi kitob,synonym,1,,,aniqlovchili soʻz birikmasi (yangi kitob)
+antonim,zid ma'noli so'z,synonym,1,,,Antonimlar (zid maʼnoli soʻzlar)
+asosiy so'z,bosh so'z,synonym,1,,,soʻz bosh soʻz (asosiy soʻz)
+atov,kesim,synonym,1,,,kesim yoki atov
+birlik,kattalik,synonym,1,,,va mantiqiy birlik (kattalik)
+bo'g'in,bosh harf,doublet,1,,,Bosh harfdan yoki boʻgʻinga teng qism
+bo'g'in,so'z,synonym,1,,,orqali boʻgʻin yoki soʻzni ajratish
+bo'lishsizlik,inkor,doublet,1,,,Boʻlishsizlik (inkor)
+bog'lanish,tobe aloqa,synonym,1,,,birikmasi tobe aloqa (bogʻlanish)
+ergash gap,hokim komponent,doublet,1,,,"tarkibidagi hokim komponent, yaʼni ergash gap tomonidan"
+frazeologiya,masala,doublet,1,,,"Lekin bu masala, yaʼni Frazeologiyani keng maʼnoda"
+grafika,ifoda,doublet,1,,,birliklarining yozuvdagi ifodalari (grafika)
+grammatik ifoda,so'z yasalish,synonym,1,,,soʻz yasalishi yoki grammatik ifoda shakllanishiga
+grammatik tuzilish,so'z,synonym,1,,,"tilning grammatik tuzilishini, yaʼni soʻzlarning shaklga ega"
+grammatika,struktura,synonym,1,,,tilshunoslik tilning strukturasi (grammatikasi)
+grammatika,morfologiya,synonym,1,,,grammatika (morfologiya va sintaksis)
+ibora,so'z,synonym,1,,,tilidan ham ibora yoki soʻzlar qoshilishi mumkin
+ibora,slang,synonym,1,,,"soʻz va iboralari, yaʼni slanglardan iborat"
+imlo,qoida,synonym,1,,,birliklarning yozilish qoidalari (imlo)
+infiks,o'rta,doublet,1,,,soʻz oʻrtasida (infiks)
+intonatsiya,ohang,doublet,1,,,urgʻu va ohang (intonatsiya)
+karatilganligini,subyekt,synonym,1,,,obyekt sifatida karatilganligini yoki subyektning oʻzi doirasida
+konnotativ,qo'shimcha,doublet,1,,,qoʻshimcha (konnotativ)
+leksik usul,maxsus so'z,synonym,1,,,leksik usul (maxsus soʻzlar yordamida)
+leksikografiya,tarjima lug'at,doublet,1,,,ikki tilli leksikografiya (tarjima lugʻatlar)
+leksikografiya,terminologik lug'at,doublet,1,,,texnik leksikografiya (terminologik lugʻatlar)
+lingvistika,tilshunoslik,doublet,1,,,Tilshunoslik yoki Lingvistika tillarni oʻrganuvchi
+lisoniy birlik,qurilmaning,synonym,1,,,bir lisoniy birlik yoki qurilmaning toʻgʻri yoki
+ma'no,semantika,doublet,1,,,va uning maʼnosi (semantikasini)
+ma'no taraqqiyot,ma'noviy o'zgarish,synonym,1,,,unsurlarning maʼnoviy oʻzgarishlari (maʼno taraqqiyoti)
+morfologiya,morfonologiya,synonym,1,,,Morfonologiya (morfologiya va fonologiya)
+nutq momentiga,nutq vaqt,synonym,1,,,harakatning nutq vaqtiga (nutq momentiga)
+obyekt,subyekt,synonym,1,,,bilan harakatning subyekt yoki obyektga munosabatida oʻzgarish
+ovoz,shovqin,synonym,1,,,tarkibi faqat shovqindan yoki ovoz va shovqindan
+oxiri,suffiks,doublet,1,,,soʻz oxirida (suffiks)
+predikativ birlik,sodda gap,synonym,1,,,Tarkibidagi predikativ birliklar (sodda gaplar)
+semantika,semasiologiya,synonym,1,,,semasiologiya yoki semantika
+sifat,tilshunoslik,synonym,1,,,Sifat (tilshunoslikda)
+sintagma,taktini,synonym,1,,,boʻlgai nutq taktini (sintagma)
+sintaktik birlik,so'z,synonym,1,,,"bir necha soʻzdan, yaʼni sintaktik birlikdan iborat"
+supersegment,ustsegment,synonym,1,,,va ustsegment (supersegment)
+to'ldiruvchili so'z birikma,ukamni,synonym,1,,,toʻldiruvchili soʻz birikmasi (ukamni oʻynatdim)
