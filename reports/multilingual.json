@@ -1,0 +1,485 @@
+{
+  "gold": {
+    "file": "equivalents-silver.csv",
+    "rows": 121,
+    "kinds": {
+      "native": 50,
+      "international": 71
+    },
+    "note": "Claude tuzgan, ekspert tekshiruvi kerak (kumush maʼlumot)"
+  },
+  "candidates": 475,
+  "results": {
+    "cognate": {
+      "ru": {
+        "international": {
+          "n": 71,
+          "acc@1": 0.9859154929577465,
+          "acc@5": 0.9859154929577465,
+          "mrr": 0.9859154929577465
+        },
+        "native": {
+          "n": 50,
+          "acc@1": 0.02,
+          "acc@5": 0.04,
+          "mrr": 0.024
+        },
+        "all": {
+          "n": 118,
+          "acc@1": 0.6016949152542372,
+          "acc@5": 0.6101694915254238,
+          "mrr": 0.6033898305084746
+        }
+      },
+      "en": {
+        "international": {
+          "n": 71,
+          "acc@1": 0.971830985915493,
+          "acc@5": 0.9859154929577465,
+          "mrr": 0.9788732394366197
+        },
+        "native": {
+          "n": 49,
+          "acc@1": 0.02040816326530612,
+          "acc@5": 0.04081632653061224,
+          "mrr": 0.025510204081632654
+        },
+        "all": {
+          "n": 113,
+          "acc@1": 0.6194690265486725,
+          "acc@5": 0.6371681415929203,
+          "mrr": 0.6261061946902655
+        }
+      }
+    }
+  },
+  "errors_cognate": {
+    "ru": [
+      {
+        "source": "языкознание",
+        "gold": [
+          "tilshunoslik"
+        ],
+        "top3": [
+          "kvaziomonim",
+          "soʻz oʻzagi",
+          "affiks-antonim"
+        ]
+      },
+      {
+        "source": "гласный звук",
+        "gold": [
+          "unli tovush"
+        ],
+        "top3": [
+          "kelasi zamon",
+          "boʻlishli shakl",
+          "grammatik shakl"
+        ]
+      },
+      {
+        "source": "согласный звук",
+        "gold": [
+          "undosh tovush"
+        ],
+        "top3": [
+          "boʻlishsizlik",
+          "kelasi zamon",
+          "moslashuv"
+        ]
+      },
+      {
+        "source": "корень",
+        "gold": [
+          "oʻzak"
+        ],
+        "top3": [
+          "morfema",
+          "boʻgʻin",
+          "son"
+        ]
+      },
+      {
+        "source": "часть речи",
+        "gold": [
+          "soʻz turkumi"
+        ],
+        "top3": [
+          "shart mayli",
+          "xatboshi",
+          "shakl yasovchi"
+        ]
+      },
+      {
+        "source": "простое предложение",
+        "gold": [
+          "sodda gap"
+        ],
+        "top3": [
+          "bosh kelishik",
+          "portlovchi",
+          "soxta omonim"
+        ]
+      },
+      {
+        "source": "сложное предложение",
+        "gold": [
+          "qoʻshma gap"
+        ],
+        "top3": [
+          "soxta omonim",
+          "tonik allofon",
+          "bosh kelishik"
+        ]
+      },
+      {
+        "source": "глагол",
+        "gold": [
+          "feʼl"
+        ],
+        "top3": [
+          "allofon",
+          "alloton",
+          "hol"
+        ]
+      },
+      {
+        "source": "словосочетание",
+        "gold": [
+          "soʻz birikmasi"
+        ],
+        "top3": [
+          "sifat yasovchi affiks",
+          "qardosh til",
+          "soʻz oʻzagi"
+        ]
+      },
+      {
+        "source": "слог",
+        "gold": [
+          "boʻgʻin"
+        ],
+        "top3": [
+          "son",
+          "allofon",
+          "alloton"
+        ]
+      },
+      {
+        "source": "ударение",
+        "gold": [
+          "urgʻu"
+        ],
+        "top3": [
+          "paronim",
+          "jarangsiz",
+          "supersegment"
+        ]
+      },
+      {
+        "source": "послелог",
+        "gold": [
+          "koʻmakchi"
+        ],
+        "top3": [
+          "bosh soʻz",
+          "boʻlishlilik",
+          "morfologiya"
+        ]
+      },
+      {
+        "source": "придаточное предложение",
+        "gold": [
+          "ergash gap"
+        ],
+        "top3": [
+          "farqlanish elementi",
+          "farqlanmovchi element",
+          "oʻrin belgisi"
+        ]
+      },
+      {
+        "source": "вспомогательный глагол",
+        "gold": [
+          "yordamchi feʼl"
+        ],
+        "top3": [
+          "koʻp maʼnoli soʻz",
+          "koʻp tilli lugʻat",
+          "modal maʼno"
+        ]
+      },
+      {
+        "source": "частица",
+        "gold": [
+          "yuklama"
+        ],
+        "top3": [
+          "onomastika",
+          "chiziqcha",
+          "grammatika"
+        ]
+      }
+    ],
+    "en": [
+      {
+        "source": "sound",
+        "gold": [
+          "tovush"
+        ],
+        "top3": [
+          "son",
+          "undov",
+          "suffiks"
+        ]
+      },
+      {
+        "source": "vowel",
+        "gold": [
+          "unli tovush"
+        ],
+        "top3": [
+          "feʼl",
+          "hol",
+          "vokalizm"
+        ]
+      },
+      {
+        "source": "consonant",
+        "gold": [
+          "undosh tovush"
+        ],
+        "top3": [
+          "qoʻshma ot",
+          "hokim komponent",
+          "pozitsion variant"
+        ]
+      },
+      {
+        "source": "root",
+        "gold": [
+          "oʻzak"
+        ],
+        "top3": [
+          "ot",
+          "alloton",
+          "hol"
+        ]
+      },
+      {
+        "source": "part of speech",
+        "gold": [
+          "soʻz turkumi"
+        ],
+        "top3": [
+          "tartib son",
+          "paronim",
+          "portlovchi"
+        ]
+      },
+      {
+        "source": "simple sentence",
+        "gold": [
+          "sodda gap"
+        ],
+        "top3": [
+          "supersegment",
+          "imlo qoidasi",
+          "segment"
+        ]
+      },
+      {
+        "source": "compound sentence",
+        "gold": [
+          "qoʻshma gap"
+        ],
+        "top3": [
+          "koʻplik maʼnosi",
+          "burun unlisi",
+          "kommunikativlik"
+        ]
+      },
+      {
+        "source": "verb",
+        "gold": [
+          "feʼl"
+        ],
+        "top3": [
+          "inversiya",
+          "konversiya",
+          "ega"
+        ]
+      },
+      {
+        "source": "phrase",
+        "gold": [
+          "soʻz birikmasi"
+        ],
+        "top3": [
+          "grammema",
+          "fraza urgʻusi",
+          "frazeologiya"
+        ]
+      },
+      {
+        "source": "syllable",
+        "gold": [
+          "boʻgʻin"
+        ],
+        "top3": [
+          "sifat",
+          "sintagma",
+          "til oldi"
+        ]
+      },
+      {
+        "source": "grammar",
+        "gold": [
+          "grammatika"
+        ],
+        "top3": [
+          "grammema",
+          "grammatika",
+          "bogʻlama"
+        ]
+      },
+      {
+        "source": "stress",
+        "gold": [
+          "urgʻu"
+        ],
+        "top3": [
+          "ot kesim",
+          "sifatdosh",
+          "sintaksis"
+        ]
+      },
+      {
+        "source": "postposition",
+        "gold": [
+          "koʻmakchi"
+        ],
+        "top3": [
+          "kompozitsiya",
+          "oppozitsiya",
+          "pozitsiya"
+        ]
+      },
+      {
+        "source": "subordinate clause",
+        "gold": [
+          "ergash gap"
+        ],
+        "top3": [
+          "birinchi shaxs",
+          "oʻrin belgisi",
+          "hurmat shakli"
+        ]
+      },
+      {
+        "source": "auxiliary verb",
+        "gold": [
+          "yordamchi feʼl"
+        ],
+        "top3": [
+          "abbreviatsiya",
+          "affiksatsiya",
+          "mustaqil feʼl"
+        ]
+      }
+    ]
+  },
+  "abstention_cognate": {
+    "ru": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.652542372881356,
+        "precision": 0.9090909090909091,
+        "answered": 77
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.5932203389830508,
+        "precision": 0.9714285714285714,
+        "answered": 70
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.576271186440678,
+        "precision": 0.9852941176470589,
+        "answered": 68
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.5508474576271186,
+        "precision": 1.0,
+        "answered": 65
+      }
+    ],
+    "en": [
+      {
+        "threshold": 0.5,
+        "coverage": 0.7345132743362832,
+        "precision": 0.8192771084337349,
+        "answered": 83
+      },
+      {
+        "threshold": 0.6,
+        "coverage": 0.6460176991150443,
+        "precision": 0.9178082191780822,
+        "answered": 73
+      },
+      {
+        "threshold": 0.7,
+        "coverage": 0.5929203539823009,
+        "precision": 0.9850746268656716,
+        "answered": 67
+      },
+      {
+        "threshold": 0.8,
+        "coverage": 0.5752212389380531,
+        "precision": 1.0,
+        "answered": 65
+      }
+    ]
+  },
+  "preferred": [
+    {
+      "ru": "интонация",
+      "uz": {
+        "ohang": 9,
+        "intonatsiya": 5
+      },
+      "preferred": "ohang",
+      "status": "needs_review",
+      "reasons": [
+        "korpusda eng ko'p qo'llangan (9 marta)"
+      ]
+    },
+    {
+      "ru": "аббревиатура",
+      "uz": {
+        "abbreviatsiya": 2,
+        "qisqartma": 11
+      },
+      "preferred": "qisqartma",
+      "status": "needs_review",
+      "reasons": [
+        "korpusda eng ko'p qo'llangan (11 marta)"
+      ]
+    },
+    {
+      "ru": "орфография",
+      "uz": {
+        "orfografiya": 3,
+        "imlo": 10
+      },
+      "preferred": "imlo",
+      "status": "needs_review",
+      "reasons": [
+        "korpusda eng ko'p qo'llangan (10 marta)"
+      ]
+    }
+  ],
+  "etymons": 19
+}

@@ -131,8 +131,8 @@ manbadan tasodifiy 40 tadan, jami 79 ta munosabat tanlandi
 (`data/judgments/thesaurus-review.csv`). Har bir munosabat uchun precision manba
 bo'yicha alohida hisoblanadi. **Holat: ekspert bahosi kutilmoqda.**
 
-Dastlabki ko'rib chiqishda (muallif, AI yordamida) xatolar asosan qolip manbasida
-uchradi:
+Claude (AI) qilgan dastlabki ko'rib chiqishda xatolar asosan qolip manbasida
+uchradi. Bu ekspert bahosi emas:
 
 - ro'yxat chegarasi noto'g'ri aniqlanadi: *Shu tariqa semitologiya* → *tariqa semitologiya*;
 - yuqori darajadagi umumiy jinslar ishlatiladi: *masala*, *xususiyat*.
@@ -142,8 +142,8 @@ Bosh so'z va taʼrif manbalari esa deyarli xatosiz ishladi.
 ### 2.3.5. Cheklovlar
 
 1. **Bosh so'z qoidasi** faqat shaffof terminlarda ishlaydi. *ega ⊂ bosh boʻlak* kabi
-   munosabatni faqat taʼrif beradi. Ba'zan esa u xato beradi: *soʻz birikmasi* —
-   *birikma* ning turi, lekin *bosh soʻz* (lug'atchilikda) *soʻz* ning turi emas.
+   munosabatni faqat taʼrif beradi. Izofali birikmalarda (*soʻz turkumi*, *gap boʻlagi*)
+   bosh so'z alohida termin bo'lmasa, munosabat topilmaydi.
 2. **Taʼriflar kam.** Korpusda faqat 41 ta maqola bor, ularning har birida bitta
    asosiy taʼrif. Darslik va lug'at taʼriflari qo'shilsa, bu manba kengayadi.
 3. **Faqat tur–jins munosabati.** Butun–qism munosabati (*boʻgʻin — soʻz*) ajratilmaydi.
