@@ -18,7 +18,7 @@ Tuzilma tasdiqlangan rejaga mos (I–III bob). Ish rejasi va har bir bo'limning 
 | 1.2 | [1-2-nlp-evolyutsiya.md](1-2-nlp-evolyutsiya.md) | TODO |
 | 1.3 | [1-3-ozbek-terminologiyasi.md](1-3-ozbek-terminologiyasi.md) | TODO |
 | Xulosa | [1-xulosa.md](1-xulosa.md) | TODO |
-| **II bob** 2.1 | [2-1-ate-usullari.md](2-1-ate-usullari.md) | qisman |
+| **II bob** 2.1 | [2-1-ate-usullari.md](2-1-ate-usullari.md) | qoralama |
 | 2.2 | [2-2-ml-dl.md](2-2-ml-dl.md) | qoralama (XLM-R natijasi yo'q) |
 | 2.3 | [2-3-ontologiya.md](2-3-ontologiya.md) | TODO |
 | Xulosa | [2-xulosa.md](2-xulosa.md) | TODO |

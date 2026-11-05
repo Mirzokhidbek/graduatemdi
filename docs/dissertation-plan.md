@@ -15,8 +15,8 @@ Belgilar: ✅ bor · 🟡 qisman · ❌ yo'q.
 | 1.1 Lingvistik asoslar | ❌ | — |
 | 1.2 NLP evolyutsiyasi | ❌ | — |
 | 1.3 O'zbek terminologiyasi, ehtiyoj | 🟡 | `01-kirish.md` (dolzarblik) |
-| 2.1 Lingvistik qolip modellari | 🟡 | POS filtri (morfologik qoida) |
-| 2.1 Statistik modellar | 🟡 | frequency, TF-IDF, C-value, Weirdness; **NC-value yo'q** |
+| 2.1 Lingvistik qolip modellari | ✅ | `app/nlp/patterns.py`, gibrid tajriba (`reports/experiment-patterns.json`) |
+| 2.1 Statistik modellar | ✅ | frequency, TF-IDF, C-value, NC-value, Weirdness |
 | 2.2 ML / DL | 🟡 | CRF, CRF + gazetteer; XLM-R kodi bor, o'qitilmagan |
 | 2.3 Ontologiya va tezaurus | ❌ | — |
 | 3.1 Variantdorlik | 🟡 | `variants` / `synonyms`, `ambiguous`, meʼyoriy shakl tavsiyasi |

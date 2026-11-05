@@ -32,6 +32,15 @@ python -m app.evaluation.normalization data/processed/silver/test.jsonl --output
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \
        --judgments data/judgments/candidates-claude.csv
+python -m app.nlp.candidates --method ncvalue --top 0 --output reports/candidates-ncvalue.csv
+python -m app.nlp.candidates --method cvalue --pattern-filter --top 0 --output reports/candidates-cvalue-pattern.csv
+python -m app.nlp.candidates --method weirdness --pattern-filter --contrast data/contrast/raw/*.txt \
+       --top 0 --output reports/candidates-weirdness-pattern.csv
+python -m app.evaluation.judgments score --rankings reports/candidates-*.csv \
+       --judgments data/judgments/candidates-adjudicated.csv
+
+# 5a. Lingvistik / statistik / gibrid modellar, span darajasida (2.1a-jadval)
+python -m app.models.pattern_experiment               # -> reports/experiment-patterns.json
 
 # 5b. Transformer (GPU, Google Colab: notebooks/xlmr_colab.ipynb)
 pip install torch transformers sentencepiece
