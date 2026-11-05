@@ -52,18 +52,28 @@ Maʼlumot: train 221 / validation 54 / test 35 paragraf; termin spanlari: train 
 
 Morfologik qoidalardagi `-ka` fonotaktika qoidasi va `-im`/`-ing` (I/II shaxs birlik egaligi) qoidasi test xatolari tahlilidan keyin qo'shilgan (test bo'yicha sozlangan). Undan oldin: test 0.861, test (claude2) 0.849; validation ikkala qoidada ham o'zgarmagan (0.936).
 
-## 6. Statistik termin nomzodlari — hakamlik (Adjudicated) konsensus bahosi
+## 6. Transformer — test (`xlm-roberta-base`, eng yaxshi epoxa: 8)
 
-119 ta nomzod bo'yicha inson annotatorlar (A1, A2) va hakamlik tahlili asosida baholangan (`data/judgments/candidates-adjudicated.csv`):
+| Usul | P | R | F1 | F1, 95 % oraliq | Partial F1 | Lug'at shakli aniqligi |
+|---|---|---|---|---|---|---|
+| Lug'at (train, 450 termin) | 0.770 | 0.432 | 0.553 | [0.471, 0.628] | 0.696 | 0.994 |
+| CRF | 0.715 | 0.534 | 0.611 | [0.527, 0.690] | 0.773 | 0.798 |
+| CRF + gazetteer | 0.792 | 0.550 | 0.649 | [0.566, 0.719] | 0.780 | 0.923 |
+| Transformer | 0.698 | 0.784 | **0.739** | [0.654, 0.810] | 0.865 | 0.772 |
 
-| Usul | P@10 (qatʼiy / yumshoq) | P@20 (qatʼiy / yumshoq) | P@50 (qatʼiy / yumshoq) | P@100 (qatʼiy / yumshoq) |
-|---|---|---|---|---|
-| Frequency | 0.400 / 0.800 | 0.350 / 0.650 | 0.340 / 0.500 | 0.340 / 0.430 |
-| TF-IDF | 0.400 / 0.900 | 0.550 / 0.800 | 0.420 / 0.580 | 0.400 / 0.500 |
-| C-value | 0.400 / 0.800 | 0.350 / 0.650 | 0.400 / 0.560 | 0.370 / 0.460 |
-| Frequency + POS filtri | 0.500 / 0.900 | 0.400 / 0.750 | 0.400 / 0.580 | ≥0.380 / ≥0.470 |
-| TF-IDF + POS filtri | 0.500 / 1.000 | 0.650 / 0.900 | 0.460 / 0.620 | ≥0.430 / ≥0.530 |
-| C-value + POS filtri | 0.400 / 0.800 | 0.400 / 0.700 | 0.420 / 0.580 | ≥0.390 / ≥0.480 |
-| **Weirdness (kontrast korpus)** | 0.800 / 0.900 | 0.800 / 0.850 | ≥0.580 / ≥0.600 | ≥0.320 / ≥0.340 |
-| **Weirdness + POS filtri** | **0.900 / 1.000** | **0.900 / 0.950** | **≥0.600 / ≥0.620** | ≥0.320 / ≥0.340 |
+`crf_gazetteer` dan farqning 95 % oralig'i: Lug'at (train, 450 termin) [-0.138, -0.059]; CRF [-0.104, +0.035]; Transformer [-0.024, +0.198].
 
+Train'da uchramagan terminlar: Lug'at (train, 450 termin) 0/146; CRF 31/146; CRF + gazetteer 2/146; Transformer 102/146.
+
+## 6. Transformer — test, claude2 (`xlm-roberta-base`, eng yaxshi epoxa: 8)
+
+| Usul | P | R | F1 | F1, 95 % oraliq | Partial F1 | Lug'at shakli aniqligi |
+|---|---|---|---|---|---|---|
+| Lug'at (train, 450 termin) | 0.761 | 0.414 | 0.536 | [0.456, 0.611] | 0.680 | 0.975 |
+| CRF | 0.715 | 0.519 | 0.601 | [0.516, 0.679] | 0.767 | 0.808 |
+| CRF + gazetteer | 0.792 | 0.535 | 0.638 | [0.550, 0.713] | 0.776 | 0.914 |
+| Transformer | 0.700 | 0.765 | **0.731** | [0.651, 0.799] | 0.869 | 0.783 |
+
+`crf_gazetteer` dan farqning 95 % oralig'i: Lug'at (train, 450 termin) [-0.145, -0.063]; CRF [-0.101, +0.039]; Transformer [-0.020, +0.199].
+
+Train'da uchramagan terminlar: Lug'at (train, 450 termin) 3/156; CRF 30/156; CRF + gazetteer 5/156; Transformer 104/156.
