@@ -37,7 +37,12 @@ def client(terms_file):
 def test_health(client):
     response = client.get("/api/health")
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "terms_in_dictionary": 4, "max_text_chars": 50}
+    body = response.json()
+    assert {k: body[k] for k in ("status", "terms_in_dictionary", "max_text_chars")} == {
+        "status": "ok", "terms_in_dictionary": 4, "max_text_chars": 50}
+    methods = {m["id"]: m for m in body["methods"]}
+    assert set(methods) == {"dictionary", "crf", "crf_gazetteer", "transformer"}
+    assert methods["dictionary"]["available"] and methods["dictionary"]["reason"] is None
 
 
 def test_terms_list(client):
@@ -163,3 +168,33 @@ def test_thesaurus_endpoint(terms_file, tmp_path):
         json.dumps({"concepts": [], "relations": [], "related": [], "summary": {}}), encoding="utf-8"
     )
     assert client.get("/api/thesaurus").json()["concepts"] == []
+
+
+
+def test_analyze_with_model_marks_new_terms(client):
+    from app.evaluation.metrics import Span
+
+    detectors = client.app.state.detectors
+    text = "Fonemalar va fonostilistika."
+    detectors._reason = lambda method: None
+    detectors._loaded["crf"] = lambda t: [Span(0, 9, "fonema"), Span(13, 27, "fonostilistika")]
+    body = client.post("/api/analyze", json={"text": text, "method": "crf"}).json()
+    assert body["method"] == "crf"
+    known, new = body["matches"]
+    assert known["in_dictionary"] and known["term"] == "fonema" and known["candidates"]
+    assert known["method"] == "crf"
+    assert not new["in_dictionary"] and new["term"] is None and new["candidates"] == []
+    assert new["surface"] == "fonostilistika" and new["lemma"] == "fonostilistika" and new["review_required"]
+    assert any("Yangi" in n for n in body["notes"])
+
+
+def test_analyze_unavailable_model(client, tmp_path):
+    client.app.state.detectors.models_dir = tmp_path / "yoq"
+    response = client.post("/api/analyze", json={"text": "fonema", "method": "transformer"})
+    assert response.status_code == 503 and "mavjud emas" in response.json()["detail"]
+    assert client.post("/api/analyze", json={"text": "fonema", "method": "nomalum"}).status_code == 422
+
+
+def test_dictionary_matches_have_lemma_fields(client):
+    [match] = client.post("/api/analyze", json={"text": "Fonemalar"}).json()["matches"]
+    assert match["in_dictionary"] and match["lemma"] == "fonema" and match["related_terms"] == []

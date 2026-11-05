@@ -50,6 +50,7 @@ button:disabled { opacity: 0.5; cursor: not-allowed; }
 .mark { all: unset; background: var(--mark); border-bottom: 2px solid var(--mark-strong); border-radius: 3px; padding: 0 1px; cursor: pointer; }
 .mark:focus-visible { outline: 2px solid var(--accent); }
 .mark-ambiguous { background: var(--warn-bg); border-bottom-style: dashed; }
+.mark-new { background: #ddf4ff; border-bottom: 2px dashed var(--accent); }
 .mark-selected { background: var(--mark-strong); }
 
 .split { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 16px; margin-top: 16px; align-items: start; }
@@ -67,6 +68,7 @@ tbody tr:hover { background: #f3f4f6; }
 .badge-warn { background: var(--warn-bg); color: var(--warn-text); }
 .badge-ok { background: var(--ok-bg); color: var(--ok-text); }
 .badge-muted { background: #eaeef2; color: var(--muted); }
+.badge-new { background: #ddf4ff; color: #0550ae; }
 .badge-error { background: #ffebe9; color: var(--error); }
 .findings { margin: 0; padding-left: 18px; }
 .findings li { margin-bottom: 2px; }
@@ -118,3 +120,12 @@ tbody tr:has(input) { cursor: default; }
 .tree .hit { background: var(--mark); border-radius: 3px; }
 .tree-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 8px 0 12px; }
 .tree-toolbar input { font: inherit; padding: 6px 10px; border: 1px solid var(--border); border-radius: 6px; min-width: 240px; }
+
+.methods { display: flex; gap: 8px; flex-wrap: wrap; margin: 4px 0 10px; border: 0; padding: 0; }
+.methods legend { font-weight: 600; margin-bottom: 6px; padding: 0; }
+.method { display: flex; gap: 6px; align-items: flex-start; border: 1px solid var(--border); border-radius: 6px;
+  padding: 6px 10px; cursor: pointer; font-weight: normal; margin: 0; max-width: 270px; }
+.method input { margin-top: 4px; }
+.method-active { border-color: var(--accent); background: #f0f6ff; }
+.method-disabled { opacity: 0.55; cursor: not-allowed; }
+.method small { display: block; color: var(--muted); font-size: 0.78rem; }

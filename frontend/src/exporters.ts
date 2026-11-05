@@ -3,6 +3,8 @@ import type { AnalyzeResponse, Match } from "./types";
 export const CSV_COLUMNS = [
   "surface",
   "term",
+  "lemma",
+  "in_dictionary",
   "start",
   "end",
   "domain",
@@ -29,6 +31,8 @@ function rowFor(match: Match): Record<(typeof CSV_COLUMNS)[number], unknown> {
   return {
     surface: match.surface,
     term: match.ambiguous ? pick((c) => c.term) : match.term,
+    lemma: match.lemma,
+    in_dictionary: match.in_dictionary,
     start: match.start,
     end: match.end,
     domain: pick((c) => c.domain ?? ""),

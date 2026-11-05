@@ -1,0 +1,5 @@
+# XLM-R modelini "Tahlil" sahifasida ishlatish uchun (ixtiyoriy, ~1 GB model + torch)
+# pip install -r requirements.txt -r requirements-transformer.txt
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.2

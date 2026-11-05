@@ -15,7 +15,7 @@ function match(overrides: Partial<Match> = {}): Match {
   return {
     surface: "Fonemalar", base_surface: "Fonema", suffix: "lar", start: 0, end: 9, term: "fonema",
     method: "dictionary_inflected", confidence: null, ambiguous: false, review_required: true,
-    candidates: [candidate()], ...overrides,
+    candidates: [candidate()], lemma: null, in_dictionary: true, related_terms: [], ...overrides,
   };
 }
 
@@ -26,8 +26,14 @@ describe("toCsv", () => {
     const [header, row] = csv.slice(1).split("\r\n");
     expect(header).toBe(CSV_COLUMNS.join(","));
     expect(row).toBe(
-      'Fonemalar,fonema,0,9,fonetika,dictionary_inflected,term,fonema,needs_review,true,false,"Ta\'rif, vergul bilan",',
+      'Fonemalar,fonema,,true,0,9,fonetika,dictionary_inflected,term,fonema,needs_review,true,false,"Ta\'rif, vergul bilan",',
     );
+  });
+
+  it("yangi (lug'atda yo'q) terminni lug'at shakli bilan yozadi", () => {
+    const csv = toCsv([match({ surface: "paralingvistikada", term: null, candidates: [], lemma: "paralingvistika", in_dictionary: false })]);
+    const row = csv.slice(1).split("\r\n")[1];
+    expect(row.startsWith("paralingvistikada,,paralingvistika,false,")).toBe(true);
   });
 
   it("qo'shtirnoq va qator tashlashni ekranlaydi", () => {

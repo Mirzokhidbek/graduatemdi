@@ -5,7 +5,7 @@ import { ResultsTable } from "./components/ResultsTable";
 import { TermDetails } from "./components/TermDetails";
 import { download, toCsv, toJson } from "./exporters";
 import { codepointLength } from "./segments";
-import type { AnalyzeResponse, Health } from "./types";
+import type { AnalyzeResponse, DetectionMethod, Health } from "./types";
 
 const SAMPLE_TEXT =
   "Fonetika boʻlimida unli va undosh tovushlar oʻrganiladi. Qoʻshma gaplarning tuzilishi " +
@@ -21,6 +21,7 @@ export default function App() {
   const [analyzedText, setAnalyzedText] = useState("");
   const [selected, setSelected] = useState<number | null>(null);
   const [server, setServer] = useState<Health | null>(null);
+  const [method, setMethod] = useState<DetectionMethod>("dictionary");
   const controller = useRef<AbortController | null>(null);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function App() {
     setStatus("loading");
     setError(null);
     try {
-      const response = await analyze(text, current.signal);
+      const response = await analyze(text, current.signal, method);
       setResult(response);
       setAnalyzedText(text);
       setSelected(response.matches.length ? 0 : null);
@@ -54,6 +55,7 @@ export default function App() {
   }
 
   const matches = result?.matches ?? [];
+  const newTerms = matches.filter((m) => !m.in_dictionary).length;
 
   return (
     <div className="page">
@@ -74,6 +76,32 @@ export default function App() {
           placeholder="Oʻzbek tilidagi matnni shu yerga kiriting…"
           onChange={(event) => setText(event.target.value)}
         />
+        {server && server.methods.length > 1 && (
+          <fieldset className="methods">
+            <legend>Aniqlash usuli</legend>
+            {server.methods.map((m) => (
+              <label
+                key={m.id}
+                className={["method", m.id === method ? "method-active" : "", m.available ? "" : "method-disabled"].join(" ")}
+                title={m.reason ?? m.description}
+              >
+                <input
+                  type="radio"
+                  name="method"
+                  value={m.id}
+                  checked={m.id === method}
+                  disabled={!m.available}
+                  onChange={() => setMethod(m.id)}
+                />
+                <span>
+                  {m.label}
+                  {m.test_f1 !== null && <span className="hint"> · F1 {m.test_f1.toFixed(2)}</span>}
+                  <small>{m.available ? m.description : m.reason}</small>
+                </span>
+              </label>
+            ))}
+          </fieldset>
+        )}
         <div className="toolbar">
           <span className={tooLong ? "counter counter-over" : "counter"}>
             {length}
@@ -104,6 +132,7 @@ export default function App() {
           <div className="results-header">
             <h2>
               Natija: {matches.length} ta termin
+              {newTerms > 0 && <span className="badge badge-new"> {newTerms} ta yangi</span>}
             </h2>
             <div className="toolbar">
               <button
@@ -135,8 +164,9 @@ export default function App() {
 
           {matches.length === 0 ? (
             <p className="empty">
-              Matnda lug'atdagi terminlar topilmadi. Lug'at usuli bazada yo'q terminlarni aniqlay olmaydi (bazada{" "}
-              {result.terms_in_dictionary} ta termin).
+              {result.method === "dictionary_baseline"
+                ? `Matnda lug'atdagi terminlar topilmadi. Lug'at usuli bazada yo'q terminlarni aniqlay olmaydi (bazada ${result.terms_in_dictionary} ta termin). CRF yoki XLM-R modelini sinab ko'ring.`
+                : "Model matnda termin topmadi."}
             </p>
           ) : (
             <>

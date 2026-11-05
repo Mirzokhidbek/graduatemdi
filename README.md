@@ -46,9 +46,12 @@ PYTHONPATH=backend uvicorn app.main:app --reload --port 8000
 
 API hujjati: http://127.0.0.1:8000/docs. Endpointlar:
 
-- `POST /api/analyze` — `{"text": "..."}` → topilgan terminlar;
+- `POST /api/analyze` — `{"text": "...", "method": "dictionary|crf|crf_gazetteer|transformer"}` → topilgan
+  terminlar; modellar lug'atda yo'q terminlarni ham topadi (`in_dictionary: false`, `lemma` — taklif);
+- `POST /api/check-terms` — terminlarni ISO 704 va imlo qoidalariga muvofiqlikka tekshirish;
+- `GET /api/thesaurus` — avtomatik tezaurus (`python -m app.ontology.thesaurus`);
 - `GET /api/terms` — terminlar bazasi;
-- `GET /api/health` — holat va matn uzunligi cheklovi;
+- `GET /api/health` — holat, matn uzunligi cheklovi va mavjud aniqlash usullari (test F1 bilan);
 - `GET /api/annotate/documents`, `GET|PUT /api/annotate/documents/{doc_id}...` — annotatsiya;
 - `GET|PUT /api/judgments/{annotator}` — nomzodlarni baholash.
 
@@ -58,10 +61,29 @@ Frontend (Node 20+; batafsil — [frontend/README.md](frontend/README.md)):
 cd frontend && npm install && npm run dev
 ```
 
-Brauzerda http://localhost:5173 ni oching. Bo'limlar: **Tahlil**, **Belgilash**
+Brauzerda http://localhost:5173 ni oching. Bo'limlar: **Tahlil**, **Meʼyor tekshiruvi** (`#check`),
+**Tezaurus** (`#thesaurus`), **Belgilash**
 (`#annotate`, yo'riqnoma 7.1) va **Nomzodlarni baholash** (`#judge`). Agar 8000-port band bo'lsa,
 backendni boshqa portda ishga tushiring va frontendni
 `UZTERM_API_URL=http://127.0.0.1:<port> npm run dev` bilan oching.
+
+### Aniqlash usullari ("Tahlil" sahifasi)
+
+| Usul | Nima kerak | Test F1 (kumush) |
+|---|---|---|
+| Lug'at | — | 0.55 |
+| CRF, CRF + lug'at belgisi | `models/crf*.crfsuite` (repoda bor) | 0.61, 0.65 |
+| XLM-R (transformer) | `pip install -r requirements-transformer.txt` va `models/transformer/` | 0.74 |
+
+XLM-R modeli (~1 GB) gitda saqlanmaydi. Uni `notebooks/xlmr_colab.ipynb` da o'qiting; 9-katak modelni
+Google Drive'ga `uzterm-transformer.zip` qilib saqlaydi. Uni repo ildizida oching:
+
+```bash
+unzip uzterm-transformer.zip      # -> models/transformer/
+```
+
+Server qayta ishga tushirilgach, XLM-R usuli faollashadi. Model birinchi so'rovda yuklanadi (bir necha
+soniya); GPU (CUDA) yoki Apple Silicon (MPS) bo'lsa, avtomatik ishlatiladi.
 
 ## Matnni tahlil qilish (CLI)
 

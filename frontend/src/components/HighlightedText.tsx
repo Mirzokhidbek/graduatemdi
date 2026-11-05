@@ -14,13 +14,18 @@ export function HighlightedText({ text, matches, selected, onSelect }: Props) {
       {toSegments(text, matches).map((segment, i) => {
         if (segment.match === null) return <span key={i}>{segment.text}</span>;
         const match = matches[segment.match];
-        const classes = ["mark", match.ambiguous ? "mark-ambiguous" : "", segment.match === selected ? "mark-selected" : ""];
+        const classes = [
+          "mark",
+          match.ambiguous ? "mark-ambiguous" : "",
+          match.in_dictionary ? "" : "mark-new",
+          segment.match === selected ? "mark-selected" : "",
+        ];
         return (
           <button
             key={i}
             type="button"
             className={classes.join(" ")}
-            title={match.term ?? "bir nechta termin"}
+            title={match.in_dictionary ? match.term ?? "bir nechta termin" : `yangi termin: ${match.lemma ?? match.surface}`}
             onClick={() => onSelect(segment.match as number)}
           >
             {segment.text}
