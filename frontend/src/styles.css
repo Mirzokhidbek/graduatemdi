@@ -67,6 +67,9 @@ tbody tr:hover { background: #f3f4f6; }
 .badge-warn { background: var(--warn-bg); color: var(--warn-text); }
 .badge-ok { background: var(--ok-bg); color: var(--ok-text); }
 .badge-muted { background: #eaeef2; color: var(--muted); }
+.badge-error { background: #ffebe9; color: var(--error); }
+.findings { margin: 0; padding-left: 18px; }
+.findings li { margin-bottom: 2px; }
 
 .details { border: 1px solid var(--border); border-radius: 6px; padding: 12px; font-size: 0.9rem; }
 .candidate { border-top: 1px solid var(--border); padding-top: 8px; margin-top: 8px; }

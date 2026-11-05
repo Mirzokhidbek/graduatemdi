@@ -6,7 +6,14 @@ from dataclasses import asdict
 
 from fastapi import APIRouter, HTTPException, Request
 
-from app.schemas import AnalyzeRequest, AnalyzeResponse, HealthOut, TermOut
+from app.schemas import (
+    AnalyzeRequest,
+    AnalyzeResponse,
+    CheckTermsRequest,
+    CheckTermsResponse,
+    HealthOut,
+    TermOut,
+)
 from app.services.analyzer import analyze_text
 
 router = APIRouter(prefix="/api")
@@ -54,3 +61,35 @@ def analyze(payload: AnalyzeRequest, request: Request) -> AnalyzeResponse:
         matches=matches,
         notes=notes,
     )
+
+
+NOTE_CHECK = (
+    "Tekshiruv qoidaviy va tavsiya xarakterida: ISO 704 tamoyillari va oʻzbek imlo qoidalari (1995) "
+    "bo'yicha ekspert eʼtiborini talab qiladigan joylar ko'rsatiladi."
+)
+MAX_TERM_CHARS = 200
+
+
+def _checker(state):
+    """Tekshiruvchi birinchi so'rovda quriladi (korpus lug'ati bilan, bo'lsa)."""
+    checker = getattr(state, "checker", None)
+    if checker is None:
+        from app.nlp.tokenize import tokenize
+        from app.norms.checker import TermChecker
+
+        raw = state.settings.data_dir / "raw"
+        vocabulary = [
+            t.norm for p in sorted(raw.glob("*.txt")) for t in tokenize(p.read_text(encoding="utf-8"))
+        ] if raw.is_dir() else []
+        checker = state.checker = TermChecker(state.entries, vocabulary)
+    return checker
+
+
+@router.post("/check-terms", response_model=CheckTermsResponse)
+def check_terms(payload: CheckTermsRequest, request: Request) -> CheckTermsResponse:
+    too_long = [t for t in payload.terms if len(t) > MAX_TERM_CHARS]
+    if too_long:
+        raise HTTPException(status_code=413, detail=f"Termin juda uzun (eng ko'pi {MAX_TERM_CHARS} belgi).")
+    checker = _checker(request.app.state)
+    return CheckTermsResponse(results=[checker.check(t).to_dict() for t in payload.terms], note=NOTE_CHECK)
+

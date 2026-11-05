@@ -135,3 +135,19 @@ def test_settings_invalid_limit(monkeypatch, value):
     monkeypatch.setenv("UZTERM_MAX_TEXT_CHARS", value)
     with pytest.raises(ValueError):
         Settings.from_env()
+
+
+def test_check_terms(client):
+    body = client.post("/api/check-terms", json={"terms": ["Fonemalar", "фонема", "fonema"]}).json()
+    first, cyrillic, clean = body["results"]
+    assert first["suggestion"] == "fonema" and first["severity"] == "warning"
+    assert {f["rule"] for f in first["findings"]} >= {"lowercase", "dictionary_form"}
+    assert cyrillic["severity"] == "error" and cyrillic["suggestion"] == "fonema"
+    assert clean["severity"] in ("ok", "info") and clean["suggestion"] is None
+    assert "ISO 704" in body["note"]
+
+
+def test_check_terms_validation(client):
+    assert client.post("/api/check-terms", json={"terms": []}).status_code == 422
+    assert client.post("/api/check-terms", json={"terms": ["a" * 201]}).status_code == 413
+

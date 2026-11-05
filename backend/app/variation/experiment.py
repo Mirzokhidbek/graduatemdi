@@ -45,9 +45,14 @@ _TO_CYRILLIC = [
 
 
 def to_cyrillic(text: str) -> str:
-    """Sintetik test uchun sodda lotin -> kirill (``ts``/``e`` nozik qoidalarisiz)."""
+    """Sintetik test uchun sodda lotin -> kirill: so'z boshidagi *e* — *э*, *ye* — *е*
+    (``ts`` va ``obyekt -> объект`` kabi nozik qoidalarsiz)."""
     out, i, low = [], 0, text.lower()
     while i < len(low):
+        if low[i] == "e" and (i == 0 or not low[i - 1].isalpha()):
+            out.append("э")
+            i += 1
+            continue
         for latin, cyr in _TO_CYRILLIC:
             if low.startswith(latin, i):
                 out.append(cyr)

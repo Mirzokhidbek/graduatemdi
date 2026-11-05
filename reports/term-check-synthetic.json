@@ -1,0 +1,67 @@
+{
+  "terms": 450,
+  "clean_false_alarm_rate": 0.0,
+  "clean_false_alarms_by_rule": {},
+  "corruption": {
+    "kirill yozuvi": {
+      "rule": "script",
+      "items": 450,
+      "detected": 1.0,
+      "corrected": 0.9955555555555555,
+      "examples_not_corrected": [
+        {
+          "term": "obyekt",
+          "corrupted": "обект",
+          "suggestion": "obekt"
+        },
+        {
+          "term": "subyekt",
+          "corrupted": "субект",
+          "suggestion": "subekt"
+        }
+      ]
+    },
+    "aralash yozuv": {
+      "rule": "script",
+      "items": 441,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    },
+    "norasmiy apostrof": {
+      "rule": "apostrophe",
+      "items": 148,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    },
+    "ko'plik + qaratqich (-larning)": {
+      "rule": "dictionary_form",
+      "items": 119,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    },
+    "o'rin-payt (-da)": {
+      "rule": "dictionary_form",
+      "items": 119,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    },
+    "bosh harf": {
+      "rule": "lowercase",
+      "items": 450,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    },
+    "ortiqcha bo'shliq": {
+      "rule": "spacing",
+      "items": 335,
+      "detected": 1.0,
+      "corrected": 1.0,
+      "examples_not_corrected": []
+    }
+  }
+}

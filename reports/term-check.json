@@ -1,0 +1,4893 @@
+{
+  "summary": {
+    "terms": 450,
+    "by_severity": {
+      "warning": 5,
+      "ok": 193,
+      "info": 252
+    },
+    "by_rule": {
+      "conciseness": {
+        "warning": 1
+      },
+      "derivability": {
+        "info": 39
+      },
+      "monosemy": {
+        "info": 3
+      },
+      "native_form": {
+        "info": 1
+      },
+      "synonymy": {
+        "warning": 4
+      },
+      "systematicity": {
+        "info": 224
+      }
+    }
+  },
+  "results": [
+    {
+      "term": "tilshunoslik",
+      "severity": "warning",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "synonymy",
+          "basis": "ISO 704:2022",
+          "severity": "warning",
+          "message": "bitta tushuncha uchun bir nechta termin: lingvistika (dublet) — bittasi meʼyoriy deb belgilanishi kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "fonema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tovush",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "monosemy",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "so'z umumiy maʼnoda ham ishlatiladi — matnda kontekst bo'yicha tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "unli tovush",
+      "severity": "warning",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "synonymy",
+          "basis": "ISO 704:2022",
+          "severity": "warning",
+          "message": "bitta tushuncha uchun bir nechta termin: unli (sinonim) — bittasi meʼyoriy deb belgilanishi kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "undosh tovush",
+      "severity": "warning",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "synonymy",
+          "basis": "ISO 704:2022",
+          "severity": "warning",
+          "message": "bitta tushuncha uchun bir nechta termin: undosh (sinonim) — bittasi meʼyoriy deb belgilanishi kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "morfema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "oʻzak",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "affiks",
+      "severity": "warning",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "synonymy",
+          "basis": "ISO 704:2022",
+          "severity": "warning",
+          "message": "bitta tushuncha uchun bir nechta termin: qoʻshimcha (dublet) — bittasi meʼyoriy deb belgilanishi kerak",
+          "suggestion": null
+        },
+        {
+          "rule": "native_form",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "xalqaro termin; bazada oʻzbekcha muqobil bor: qoʻshimcha",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz turkumi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («turkum») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksikologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sintaksis",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sodda gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qoʻshma gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻz yasalishi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yasalish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birikma») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻgʻin",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "allofon",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "bosh harf",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («harf») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatik kategoriya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "chiziqcha",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatik shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "leksema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "antonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "egalik qoʻshimchasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "ergash gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksikografiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yordamchi feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yuklama",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "atoqli ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "adabiy til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bosh gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammatik maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ohang",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qisqartma",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qoʻshma ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "semasiologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sinonimik qator",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qator») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "til birligi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "gap boʻlagi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'lak») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nutq tovushi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sheva",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatik qurilish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qurilish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "imlo",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "obyekt",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "monosemy",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "so'z umumiy maʼnoda ham ishlatiladi — matnda kontekst bo'yicha tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻzlashma soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sinonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻz yasalishi asosi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («asos») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz yasovchi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yasovchi») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "yordamchi soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "zamon shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bogʻlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "dialektologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "farqlovchi belgi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («belgi») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksika",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "monosemy",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "so'z umumiy maʼnoda ham ishlatiladi — matnda kontekst bo'yicha tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lugʻaviy maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik kategoriya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mustaqil soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nisbat shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "olmosh",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "predikativ birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz urgʻusi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "subyekt",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yasama soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "zamon kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ergash gapli qoʻshma gap",
+      "severity": "warning",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "conciseness",
+          "basis": "ISO 704:2022",
+          "severity": "warning",
+          "message": "termin uzun (4 so'z), qisqaroq shakl izlash kerak",
+          "suggestion": null
+        },
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ergashgan qoʻshma gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "etimologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "fonologik tizim",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tizim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "hokim qism",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qism») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikkinchi shaxs",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shaxs») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "imlo qoidasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qoida») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "intonatsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "juft soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻmakchi feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kuchli pozitsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kuchsiz pozitsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "mustaqil feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nazariy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nutq birligi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nutq vaqti",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («vaqt») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "umumiy fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "umumiy fonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "zidlanish",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "affiksatsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "amaliy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "analitik shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bogʻlovchisiz qoʻshma gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bosh nisbat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nisbat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bosh soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "chiqish kelishigi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kelishik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "choʻziq unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "fraza urgʻusi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "funksional koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "funksional shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammatik birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "harakat nomi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nom») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "jarangli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "jarangsiz",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kichik harf",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («harf») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻplik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lahja",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "leksik unsur",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («unsur») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lugʻat tarkibi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tarkib») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "majhul nisbat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nisbat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik tizim",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tizim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nisbat kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oppozitsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "orfografiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "orttirma nisbat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nisbat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻtgan zamon",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («zamon») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "portlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qoʻshma sifat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («sifat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ravishdosh",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "shakl yasalishi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yasalish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sinonimiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻz maʼnosi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻz tartibi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tartib») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "taqlid soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tobe qism",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qism») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "toʻldiruvchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "toʻliqsiz feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "turdosh ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tuslanish",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "uchinchi shaxs",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shaxs») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "abbreviatsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "amaliy lugʻatchilik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "analitik til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "aniqlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "antonimik juft",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («juft») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "birgalik nisbati",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nisbat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "birinchi shaxs",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shaxs») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bitishuv",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "bogʻlangan qoʻshma gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bogʻliq urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "bosh boʻlak",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'lak») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boshqaruv",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "boʻlishli-boʻlishsizlik kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻlishsiz shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻlishsizlik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "burun unlisi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "daraja kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "eksperimental fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "faol grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "farqlanish elementi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («element») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "farqlanmovchi element",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («element») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "feʼl shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "feʼl soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonetik tizim",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tizim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grafika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "hokim komponent",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («komponent») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "izofa",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "joʻnalish kelishigi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kelishik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "juft shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kompozitsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "koʻchma maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻp maʼnoli soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kvaziomonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lablangan unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lablanmagan unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lisoniy birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lugʻat maqolasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («maqola») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lugʻatchilik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lugʻatshunoslik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "mantiqiy urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "mayl kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mazmuniy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "meʼyoriy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "milliy til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik qoida",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qoida») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik tahlil",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tahlil») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "moslashuv",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nazariy leksikografiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nutq payti",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («payt») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "omonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "ona tili",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ot kesim",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kesim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ot soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "otlashuv",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "oʻzlik nisbati",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («nisbat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "pozitsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "predikativ asos",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («asos») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "predikativlik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qisqa unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qiyosiy fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "segment birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shaxs-son",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («son») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shaxs-son kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sifatdosh",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sifatlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sintagma",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sirgʻaluvchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻroq gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soʻzlashgich",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "stilistika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "takror shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tarixiy fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tarjima lugʻati",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tartib son",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («son») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tasviriy fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "terminologik lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "til orqa",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («orqa») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tovush tizimi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tizim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tutuq belgisi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («belgi») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "xususiy fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "xususiy fonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yasama ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "abzats",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "affiks-antonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "agglyutinativ til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "aktual boʻlinish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'linish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "allofoniya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "alloton",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "amorf til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "analitik usul",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («usul») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "aniqlov yuklamasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "aniqlovchili soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "antonimiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "antonimlik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "artikulyatsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "arxaizm",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "arxifonema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "bir tilli leksikografiya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bitishuvli soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bogʻlama",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "bosh kelishik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kelishik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "bosh urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "boshqaruvli soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻgʻin koʻchirish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ko'chirish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻlishli feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "boʻlishli shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "boʻlishlilik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "boʻlishsiz feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "boʻlishsizlik shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "burun undoshi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "buyruq mayli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "buyruq-istak mayli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "chegara shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "chegaralov yuklamasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "darak gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "denotativ maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "diakritika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "dialektizm",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "egalik kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "egalik koʻrsatkichi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ko'rsatkich») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "emotsional boʻyoq",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'yoq») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ergashtiruvchi bogʻlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "erkalash shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "erkin oʻzgaruvchanlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («o'zgaruvchanlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "feʼl kesim",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kesim») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "feʼl koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "fonetik hodisa",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («hodisa») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonetik transkripsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "fonetik tuzilish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tuzilish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonetik usul",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («usul») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonetik yozuv",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yozuv») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "fonologik qoida",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qoida») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "frazeologik sinonimiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "frazeologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "funksional fonetika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "funksional grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatik morfema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "grammatik qoida",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qoida») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammatik turkum",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («turkum») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammatik tuzilish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tuzilish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "grammatik unsur",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («unsur») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "holli soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "hozirgi zamon",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («zamon») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "hurmat shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ijro mayli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikki tarkibli gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikki tilli leksikografiya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikki tilli lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikkinchi darajali boʻlak",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'lak») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ikkinchi darajali urgʻu",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ilmiy-texnik leksikografiya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "infiks",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "inversiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "izofali birikma",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birikma») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "izohli lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "izohlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "jarangli undosh",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kategorial shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kelasi zamon",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («zamon») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kelishik kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kelishik shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "keng transkripsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kichraytish shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kirill yozuvi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yozuv») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kirish soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kiritma",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "kitobiy uslub",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («uslub») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "kommunikativlik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "konversiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "koʻchirma gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻchma urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "koʻp tilli lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻplik maʼnosi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "koʻplik qoʻshimchasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "leksik antonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "leksik maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksik morfologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "leksik tarkib",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tarkib») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksik usul",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («usul») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "leksikalashgan soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lingvistik birlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lingvistik geografiya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («geografiya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lingvistik lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lotin yozuvi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yozuv») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "lugʻaviy antonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "lugʻaviy urgʻu",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "mahsullilik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "mahsulsizlik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "makrostruktura",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "maqsad mayli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mavhum maʼnoli ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "maʼno taraqqiyoti",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («taraqqiyot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mikrostruktura",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "modal maʼno",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ma'no») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "modallik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "monosemiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "morfofonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "morfologik koʻrsatkich",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ko'rsatkich») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfologik tarkib",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tarkib») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "morfonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "moslashuvli soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "muallif gapi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "murakkab son",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («son») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "murakkab soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mustaqil boʻlak",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'lak») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "mustaqil soʻz turkumi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "narsa-qurol otlari",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («otlar») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "neologizm",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nisbiy soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nofaol grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "nutq aʼzolari",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («a'zolari») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nutq momenti",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («momenti») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nutq takti",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («takti») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "nutq uslubi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («uslub») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oddiy daraja",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («daraja») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "old qoʻshimcha",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "oraliqdagi soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "orttirma daraja",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («daraja») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ot koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "ot yasalishi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yasalish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "otlashgan soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ozaytirma daraja",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («daraja») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻquv leksikografiyasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "oʻrin belgisi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («belgi») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻrin kelishigi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kelishik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻrin-joy otlari",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («otlar») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻrta koʻtarilish unlisi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻtgan zamon sifatdoshi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻxshatish shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "oʻzlashgan soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "paradigma",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "paronim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "polisemiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "pozitsion variant",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («variant») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "predikat",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "professionalizm",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qarashlilik shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qaratqich kelishigi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kelishik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qaratqichli aniqlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qaratuvchili birikma",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birikma») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qardosh til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qarindosh til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qisqartma ot",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («ot») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qiyosiy usul",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («usul») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "qoʻshma feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "qoʻshma soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "quyi koʻtarilish unlisi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "ravish koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "ravishdosh shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "semantik munosabat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («munosabat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "semantika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "shakl yasovchi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («yasovchi») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shakliy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "shart mayli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shartli mayl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («mayl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shaxs otlari",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («otlar») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "shovqinli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sifat koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sifat yasovchi affiks",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sifatdosh shakli",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sinonim soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik antonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sintaktik butunlik",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («butunlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik kategoriya",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik munosabat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («munosabat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik qurilish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qurilish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintaktik sinonimiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "sintaktik tuzilma",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tuzilma») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintetik shakl",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («shakl») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sintetik til",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («til») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sodda soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "sof koʻmakchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "son kategoriyasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («kategoriya») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "soxta omonim",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻz oʻzagi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "soʻz qoʻshilmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («qo'shilma») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "suffiks",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "supersegment",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "taajjub yuklamasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "takror soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tarixiy fonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tarixiy lugʻat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («lug'at») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tasviriy fonologiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tavsifiy grammatika",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "taʼkid yuklamasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "teng bogʻlanish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bog'lanish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "teng bogʻlovchi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "til meʼyori",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («me'yori») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "til oldi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («old») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tiloldi unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tilorqa unli",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tobe aloqa",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («aloqa») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tobe bogʻlanish",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bog'lanish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tobe grammatik aloqa",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («aloqa») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tobelanish ohangi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tonik allofon",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "tovush birligi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («birlik») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tovush oʻzgarishi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («o'zgarish») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "tovush tarkibi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («tarkib») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "toʻldiruvchili soʻz birikmasi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "transkripsiya",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "uchinchi darajali boʻlak",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        },
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («bo'lak») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "undalma",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "undov gap",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («gap») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "unli fonema",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "uslubshunoslik",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "vokalizm",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "vokativ",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "xabar intonatsiyasi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "xatboshi",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yasama feʼl",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yasama sifat",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («sifat») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "yuklama-qoʻshimcha",
+      "severity": "ok",
+      "suggestion": null,
+      "findings": []
+    },
+    {
+      "term": "yuklama-soʻz",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "systematicity",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "bosh so'z («so'z») bazada alohida termin sifatida yo'q — termin tizimdagi o'rnini tekshirish kerak",
+          "suggestion": null
+        }
+      ]
+    },
+    {
+      "term": "yuqori koʻtarilish unlisi",
+      "severity": "info",
+      "suggestion": null,
+      "findings": [
+        {
+          "rule": "derivability",
+          "basis": "ISO 704:2022",
+          "severity": "info",
+          "message": "ko'p so'zli termindan yangi so'z yasash qiyin",
+          "suggestion": null
+        }
+      ]
+    }
+  ]
+}

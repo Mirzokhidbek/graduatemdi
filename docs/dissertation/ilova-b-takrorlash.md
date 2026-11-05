@@ -31,6 +31,11 @@ python -m app.evaluation.normalization data/processed/silver/test.jsonl --output
 # 4a. Variantdorlik: guruhlash, sinonim/dublet, omonimiya (3.2–3.4-jadvallar)
 python -m app.variation.experiment                    # -> reports/variation.json, reports/variation-groups.json
 
+# 4b. Meʼyor tekshiruvi (3.6-jadval)
+python -m app.norms.experiment                        # -> reports/term-check-synthetic.json
+python -m app.norms.checker --output reports/term-check.json --review-sample data/judgments/term-check-review.csv
+python -m app.norms.checker "Fonemalar" "o'zak" "фонема"   # alohida terminlar
+
 # 5. Statistik nomzodlar (2.1-jadval)
 python -m app.nlp.candidates --method tfidf --pos-filter --top 0 --output reports/candidates-tfidf-pos.csv
 python -m app.evaluation.judgments score --rankings reports/candidates-tfidf.csv reports/candidates-tfidf-pos.csv \

@@ -21,3 +21,11 @@ describe("readError", () => {
     expect(await readError(new Response("nope", { status: 404 }))).toBe("Server xatosi (404).");
   });
 });
+
+describe("parseTermLines", () => {
+  it("bo'sh qatorlar va takrorlarni tashlaydi, tartibni saqlaydi", async () => {
+    const { parseTermLines } = await import("./api");
+    expect(parseTermLines(" fonema \n\nmorfema\r\nfonema\n")).toEqual(["fonema", "morfema"]);
+    expect(parseTermLines("a\nb\nc", 2)).toEqual(["a", "b"]);
+  });
+});

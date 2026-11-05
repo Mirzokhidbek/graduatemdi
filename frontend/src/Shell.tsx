@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import App from "./App";
 import { AnnotateView } from "./components/AnnotateView";
+import { CheckView } from "./components/CheckView";
 import { JudgeView } from "./components/JudgeView";
 
-type View = "analyze" | "annotate" | "judge";
+type View = "analyze" | "check" | "annotate" | "judge";
 
 const VIEWS: { id: View; label: string }[] = [
   { id: "analyze", label: "Tahlil" },
+  { id: "check", label: "Meʼyor tekshiruvi" },
   { id: "annotate", label: "Belgilash (annotatsiya)" },
   { id: "judge", label: "Nomzodlarni baholash" },
 ];
@@ -61,6 +63,8 @@ export default function Shell() {
       </nav>
       {view === "analyze" ? (
         <App />
+      ) : view === "check" ? (
+        <CheckView />
       ) : (
         <div className="page">
           <div className="annotator">

@@ -4,7 +4,8 @@
   Qoidalar "Oʻzbek tilining asosiy imlo qoidalari" (1995) va kirill–lotin
   moslik jadvaliga asoslanadi: ``ш -> sh``, ``ч -> ch``, ``ў -> oʻ``, ``ғ -> gʻ``,
   ``ё -> yo``, ``ю -> yu``, ``я -> ya``, ``ъ -> ʼ``, ``ь`` tushiriladi;
-  ``е`` so'z boshida va unlidan keyin ``ye``, aks holda ``e``;
+  ``е`` so'z boshida, unlidan va ``ъ`` dan keyin ``ye``, aks holda ``e``
+  (``ъ`` undosh va iotali unli orasida yozilmaydi: *объект -> obyekt*, lekin *меъёр -> meʼyor*);
   ``ц`` so'z boshida va undoshdan keyin ``s``, unlidan keyin ``ts``.
 - ``skeleton`` — imlo farqlari olib tashlangan kalit: kichik harf, transliteratsiya,
   barcha apostrof turlari va defislar o'chiriladi. Bir xil skeletli shakllar —
@@ -42,14 +43,37 @@ def has_mixed_script(word: str) -> bool:
     return latin and has_cyrillic(word)
 
 
+# Ko'rinishi lotin harfiga o'xshash kirill harflari (aralash yozuvdagi "yashirin" xato).
+HOMOGLYPHS = {
+    "а": "a", "е": "e", "о": "o", "р": "p", "с": "c", "у": "y", "х": "x", "к": "k", "м": "m", "т": "t",
+    "в": "b", "н": "h", "і": "i", "ј": "j",
+    "А": "A", "Е": "E", "О": "O", "Р": "P", "С": "C", "У": "Y", "Х": "X", "К": "K", "М": "M", "Т": "T",
+    "В": "B", "Н": "H",
+}
+
+
+def fix_mixed_script(text: str) -> str:
+    """Aralash yozuvli so'zlarda kirill "o'xshash" harflarini lotin harfi bilan almashtiradi
+    (transliteratsiya emas: lotin so'z ichidagi kirill "у" — bu "y", "u" emas)."""
+    words = []
+    for word in text.split(" "):
+        if has_mixed_script(word):
+            word = "".join(HOMOGLYPHS.get(ch, ch) for ch in word)
+        words.append(word)
+    return " ".join(words)
+
+
 def to_latin(text: str) -> str:
     out: list[str] = []
     for i, ch in enumerate(text):
         low = ch.lower()
         prev = text[i - 1].lower() if i > 0 else ""
         word_start = not prev.isalpha()
+        nxt = text[i + 1].lower() if i + 1 < len(text) else ""
         if low == "е":
-            latin = "ye" if word_start or prev in _VOWELS else "e"
+            latin = "ye" if word_start or prev in _VOWELS or prev == "ъ" else "e"
+        elif low == "ъ" and nxt in "еёюя" and prev.isalpha() and prev not in _VOWELS:
+            latin = ""  # undoshdan keyin: объект -> obyekt, съезд -> syezd (unlidan keyin: меъёр -> meʼyor)
         elif low == "ц":
             latin = "ts" if prev in _VOWELS and not word_start else "s"
         elif low in _SIMPLE:

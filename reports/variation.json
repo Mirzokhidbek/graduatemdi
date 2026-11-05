@@ -84,7 +84,7 @@
     },
     "skeleton": {
       "bosh harf": 1.0,
-      "kirill": 0.9590643274853801,
+      "kirill": 1.0,
       "apostrof (')": 1.0,
       "apostrof (`)": 1.0,
       "apostrof (‘’)": 1.0,
@@ -92,7 +92,7 @@
     },
     "skeleton+corpus_lemmatizer": {
       "bosh harf": 1.0,
-      "kirill": 0.9590643274853801,
+      "kirill": 1.0,
       "apostrof (')": 1.0,
       "apostrof (`)": 1.0,
       "apostrof (‘’)": 1.0,
@@ -100,7 +100,7 @@
     },
     "skeleton+term_normalizer": {
       "bosh harf": 1.0,
-      "kirill": 0.9590643274853801,
+      "kirill": 1.0,
       "apostrof (')": 1.0,
       "apostrof (`)": 1.0,
       "apostrof (‘’)": 1.0,
