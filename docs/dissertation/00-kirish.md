@@ -21,6 +21,40 @@ uchun ishlab chiqilgan, so'zni o'zgarmas birlik deb oluvchi usullar oʻzbek tili
 bevosita mos kelmaydi. Oʻzbek tili uchun ochiq, belgilangan termin korpusi va
 tekshirilgan POS-tegger ham mavjud emas.
 
+## Tadqiqotning maqsadi va vazifalari
+
+**Maqsad:** oʻzbek tilidagi ilmiy va taʼlimiy matnlar uchun terminlarni avtomatik
+aniqlash, tushunchalar tizimini shakllantirish va terminlarni meʼyorlashtirishning
+matematik va kompyuter modellarini ishlab chiqish va baholash. Ish ona tili va
+tilshunoslik terminologiyasi misolida olib boriladi.
+
+**Vazifalar:**
+
+1. Termin va terminologik meʼyorning lingvistik asoslarini, terminologik ishlarni
+   kompyuterlashtirish tajribasini va oʻzbek terminologiyasining holatini tahlil
+   qilish (I bob).
+2. Terminlarni avtomatik aniqlash (ATE) modellarini oʻzbek tiliga moslashtirish va
+   bir xil sharoitda solishtirish (2.1–2.2-bo'limlar):
+   - leksik-grammatik qoliplar;
+   - statistik o'lchovlar (TF-IDF, C-value, NC-value, Weirdness);
+   - mashinali o'qitish (CRF);
+   - transformer.
+3. Sohaviy tezaurusni (tur–jins va assotsiativ munosabatlar) avtomatik shakllantirish
+   (2.3-bo'lim).
+4. Terminologik variantdorlikni aniqlash, guruhlash va meʼyoriy shaklni tanlash
+   algoritmlarini ishlab chiqish (3.1-bo'lim). Variantdorlik turlari: imlo, yozuv,
+   morfologik variantlar, sinonim, dublet, omonim.
+5. Terminning xalqaro mezonlar (ISO 704) va oʻzbek imlo qoidalariga muvofiqligini
+   avtomatik tekshirish modelini yaratish (3.2-bo'lim).
+6. Ruscha va inglizcha terminlarning oʻzbekcha ekvivalentlarini avtomatik
+   moslashtirish va meʼyoriy muqobilni tanlash (3.3-bo'lim).
+
+**Tadqiqot obyekti:** oʻzbek tilshunoslik terminologiyasi va uni aks ettiruvchi
+matnlar korpusi.
+
+**Tadqiqot predmeti:** terminlarni aniqlash va meʼyorlashtirishning lingvistik,
+statistik va mashinali o'qitish modellari.
+
 ## Vazifaning qo'yilishi
 
 **Kiruvchi maʼlumot:** oʻzbek (lotin yozuvi) tilidagi ilmiy yoki taʼlimiy matn.
@@ -69,6 +103,19 @@ qo'llangan bo'lishi kerak (annotatsiya yo'riqnomasi, 1-bo'lim). Masalan,
    - test to'plamini bir marta ishlatish qoidasi;
    - bootstrap ishonch oraliqlari.
 
+7. **Lingvistik va gibrid ATE.** Oʻzbek tili uchun leksik-grammatik termin qolipi
+   (aniqlovchi otning qo'shimchasizligi sharti bilan) va uning kontrast korpusga
+   asoslangan Weirdness o'lchovi bilan gibridi.
+8. **Tezaurus.** Bosh so'z ierarxiyasi, taʼrif tahlili va oʻzbekcha Hearst qoliplari
+   asosida SKOS formatidagi tezaurus.
+9. **Variantdorlik va meʼyor.** Imlo skeleti, kirill → lotin transliteratsiyasi, imlo
+   xatolari detektori, sinonim/dublet ajratgich, omonimiya klassifikatori va
+   meʼyoriy shaklni tanlash qoidalari. ISO 704 va imlo qoidalariga muvofiqlikni
+   tekshiruvchi (API va web interfeys bilan).
+10. **Ko'p tilli moslashtirish.** Ruscha va inglizcha terminlar uchun kognat
+    (fonetik kalit) modeli, ishonch chegarasi bilan ikki bosqichli sxema va LaBSE
+    semantik modeli uchun tayyor tajriba.
+
 **Ilmiy yangilik** (kumush maʼlumot doirasida tasdiqlangan):
 
 - Oʻzbek tilshunoslik terminlarini aniqlashda ikki usul birlashtirildi: CRF ketma-ketlik
@@ -77,3 +124,9 @@ qo'llangan bo'lishi kerak (annotatsiya yo'riqnomasi, 1-bo'lim). Masalan,
 - Meʼyorlashtirishda ko'p so'zli terminlardagi izofa qo'shimchasini saqlash qoidasi
   (*soʻz birikmalari → soʻz birikmasi*) va jo'nalish kelishigi uchun fonotaktik cheklov
   taklif qilindi. Ular aniqlikni 0.71 dan (faqat lug'at) 0.92 gacha oshiradi.
+- Oʻzbek tili uchun leksik-grammatik qolip va Weirdness o'lchovining gibridi sof
+  lingvistik modeldan statistik ishonchli yaxshiroq (F1 0.288 → 0.459). Sof qolip
+  modeli esa yangi terminlarning 68.5 % ini topadi, CRF — 21 %.
+- Terminlarning ruscha va inglizcha ekvivalentlarini moslashtirish uchun uch tilga
+  umumiy fonetik kalit taklif qilindi. U xalqaro terminlarda Acc@1 0.97–0.99 beradi.
+

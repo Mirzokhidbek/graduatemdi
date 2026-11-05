@@ -13,21 +13,21 @@ Tuzilma tasdiqlangan rejaga mos (I–III bob). Ish rejasi va har bir bo'limning 
 
 | Qism | Fayl | Holat |
 |---|---|---|
-| Kirish | [00-kirish.md](00-kirish.md) | qoralama |
-| **I bob** 1.1 | [1-1-termin-asoslari.md](1-1-termin-asoslari.md) | TODO |
-| 1.2 | [1-2-nlp-evolyutsiya.md](1-2-nlp-evolyutsiya.md) | TODO |
-| 1.3 | [1-3-ozbek-terminologiyasi.md](1-3-ozbek-terminologiyasi.md) | TODO |
-| Xulosa | [1-xulosa.md](1-xulosa.md) | TODO |
+| Kirish | [00-kirish.md](00-kirish.md) | qoralama (maqsad va vazifalar rejaga moslangan) |
+| **I bob** 1.1 | [1-1-termin-asoslari.md](1-1-termin-asoslari.md) | qoralama (AI, iqtiboslar tekshirilsin) |
+| 1.2 | [1-2-nlp-evolyutsiya.md](1-2-nlp-evolyutsiya.md) | qoralama (AI, iqtiboslar tekshirilsin) |
+| 1.3 | [1-3-ozbek-terminologiyasi.md](1-3-ozbek-terminologiyasi.md) | qoralama (AI, meʼyoriy hujjatlar tekshirilsin) |
+| Xulosa | [1-xulosa.md](1-xulosa.md) | qoralama |
 | **II bob** 2.1 | [2-1-ate-usullari.md](2-1-ate-usullari.md) | qoralama |
 | 2.2 | [2-2-ml-dl.md](2-2-ml-dl.md) | qoralama (XLM-R natijasi yo'q) |
 | 2.3 | [2-3-ontologiya.md](2-3-ontologiya.md) | qoralama (ekspert bahosi kutilmoqda) |
-| Xulosa | [2-xulosa.md](2-xulosa.md) | TODO |
+| Xulosa | [2-xulosa.md](2-xulosa.md) | qoralama |
 | **III bob** 3.1 | [3-1-variantdorlik.md](3-1-variantdorlik.md) | qoralama |
 | 3.2 | [3-2-meyor-tekshiruvi.md](3-2-meyor-tekshiruvi.md) | qoralama (ekspert bahosi kutilmoqda) |
 | 3.3 | [3-3-kop-tilli.md](3-3-kop-tilli.md) | qoralama (LaBSE natijasi kutilmoqda) |
-| Xulosa | [3-xulosa.md](3-xulosa.md) | TODO |
+| Xulosa | [3-xulosa.md](3-xulosa.md) | qoralama |
 | Umumiy xulosa | [umumiy-xulosa.md](umumiy-xulosa.md) | qoralama |
-| Adabiyotlar | [adabiyotlar.md](adabiyotlar.md) | to'ldiriladi |
+| Adabiyotlar | [adabiyotlar.md](adabiyotlar.md) | 47 ta manba († — tekshirilsin) |
 | A ilova | [ilova-a-malumotlar.md](ilova-a-malumotlar.md) | korpus, annotatsiya, split |
 | B ilova | [ilova-b-takrorlash.md](ilova-b-takrorlash.md) | takrorlash buyruqlari |
 
