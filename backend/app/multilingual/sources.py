@@ -53,34 +53,58 @@ def extract_etymons(documents: Mapping[str, str]) -> list[dict]:
 Fetcher = Callable[[str], dict]
 
 
-def _http_json(url: str) -> dict:
-    request = urllib.request.Request(url, headers={"User-Agent": "UzTerm-research/0.1"})
-    with urllib.request.urlopen(request, timeout=20) as response:  # noqa: S310 — faqat Vikipediya API
-        return json.loads(response.read().decode("utf-8"))
+USER_AGENT = "UzTerm-research/0.1 (https://github.com/Mirzokhidbek/graduatemdi)"
+
+
+def _http_json(url: str, retries: int = 5) -> dict:
+    """Vikipediya API: 429/503 da kutib qayta urinadi (Retry-After yoki eksponensial)."""
+    import time
+    import urllib.error
+
+    for attempt in range(retries):
+        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:  # noqa: S310 — faqat Vikipediya API
+                return json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            if exc.code not in (429, 503) or attempt == retries - 1:
+                raise
+            wait = float(exc.headers.get("Retry-After") or 2 ** (attempt + 1))
+            time.sleep(min(wait, 60))
+    raise RuntimeError("unreachable")
 
 
 def fetch_langlinks(
-    titles: Iterable[str], langs: Sequence[str] = ("ru", "en"), fetch: Fetcher = _http_json, batch: int = 40
+    titles: Iterable[str],
+    langs: Sequence[str] = ("ru", "en"),
+    fetch: Fetcher = _http_json,
+    batch: int = 40,
+    pause: float = 1.0,
 ) -> dict[str, dict[str, str]]:
     """Oʻzbekcha Vikipediya sarlavhasi -> {til: shu tildagi maqola nomi}."""
     titles = list(dict.fromkeys(titles))
     result: dict[str, dict[str, str]] = {}
+    import time
+
     for i in range(0, len(titles), batch):
         chunk = titles[i : i + batch]
-        params = {
-            "action": "query", "format": "json", "prop": "langlinks", "redirects": "1",
-            "lllimit": "max", "titles": "|".join(chunk),
-        }
-        data = fetch("https://uz.wikipedia.org/w/api.php?" + urllib.parse.urlencode(params))
-        query = data.get("query", {})
-        back = {r["to"]: r["from"] for r in query.get("redirects", [])}
-        back.update({n["to"]: n["from"] for n in query.get("normalized", [])})
-        for page in query.get("pages", {}).values():
-            title = back.get(page.get("title"), page.get("title"))
-            links = {ll["lang"]: ll.get("*") or ll.get("title") for ll in page.get("langlinks", [])}
-            picked = {lang: links[lang] for lang in langs if lang in links}
-            if picked:
-                result[title] = picked
+        # Har bir til alohida so'raladi (lllang): bitta maqolaga bitta havola, natija kesilmaydi.
+        for lang in langs:
+            if pause:
+                time.sleep(pause)
+            params = {
+                "action": "query", "format": "json", "prop": "langlinks", "redirects": "1",
+                "lllang": lang, "lllimit": "max", "titles": "|".join(chunk), "maxlag": "5",
+            }
+            data = fetch("https://uz.wikipedia.org/w/api.php?" + urllib.parse.urlencode(params))
+            query = data.get("query", {})
+            back = {r["to"]: r["from"] for r in query.get("redirects", [])}
+            back.update({n["to"]: n["from"] for n in query.get("normalized", [])})
+            for page in query.get("pages", {}).values():
+                title = back.get(page.get("title"), page.get("title"))
+                for ll in page.get("langlinks", []):
+                    if ll["lang"] == lang:
+                        result.setdefault(title, {})[lang] = ll.get("*") or ll.get("title")
     return result
 
 

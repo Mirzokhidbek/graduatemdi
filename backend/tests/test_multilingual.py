@@ -83,6 +83,6 @@ def test_fetch_langlinks_with_fake_api():
                 "2": {"title": "Yoʻq", "missing": ""},
             }}}
 
-    links = fetch_langlinks(["fonema", "Yoʻq"], fetch=fake)
+    links = fetch_langlinks(["fonema", "Yoʻq"], fetch=fake, pause=0)
     assert links == {"fonema": {"ru": "Фонема", "en": "Phoneme"}}
-    assert len(calls) == 1 and "langlinks" in calls[0]
+    assert len(calls) == 2 and "lllang=ru" in calls[0] and "lllang=en" in calls[1]
