@@ -3,7 +3,7 @@
 #
 #   ./run.sh                 dev: backend (8000) + frontend (5173), o'zgarishlar avtomatik yangilanadi
 #   ./run.sh prod            frontend build qilinadi va hammasi bitta portda: http://localhost:8000
-#   ./run.sh --transformer   qo'shimcha: torch/transformers o'rnatiladi va XLM-R modeli yuklab olinadi
+#   ./run.sh --transformer   qo'shimcha: torch/transformers o'rnatiladi (model: models/transformer/)
 #
 # Birinchi ishga tushirishda .venv yaratiladi va kutubxonalar o'rnatiladi.
 set -euo pipefail
@@ -36,7 +36,7 @@ fi
 if [ "$TRANSFORMER" = 1 ]; then
   echo "==> torch va transformers (bir necha daqiqa)"
   pip install -q -r requirements-transformer.txt
-  python scripts/download_model.py
+  [ -f models/transformer/uzterm.json ] || echo "Diqqat: models/transformer/ yo'q — README, 'Aniqlash usullari' bo'limiga qarang"
 fi
 
 if [ ! -d frontend/node_modules ]; then
