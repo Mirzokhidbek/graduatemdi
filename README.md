@@ -17,6 +17,16 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
   ishga tushiriladi: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb);
 - yo'q: inson oltin standarti.
 
+## Tez ishga tushirish
+
+```bash
+./run.sh            # dev: backend :8000 + frontend :5173
+./run.sh prod       # bitta port: http://localhost:8000
+./run.sh --transformer   # + XLM-R modeli (torch, ~1 GB model yuklab olinadi)
+```
+
+Birinchi ishga tushirishda `.venv` yaratiladi va Python/Node kutubxonalari o'rnatiladi.
+
 ## Talablar
 
 - macOS yoki Linux

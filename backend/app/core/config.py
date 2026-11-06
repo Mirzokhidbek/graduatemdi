@@ -27,6 +27,8 @@ class Settings:
     model_path: Path | None = None
     # "Tahlil" sahifasidagi modellar: crf.crfsuite, crf-gazetteer.crfsuite, transformer/
     models_dir: Path = REPO_ROOT / "models"
+    # frontend/dist bo'lsa, web interfeys API bilan bitta portda beriladi (./run.sh prod)
+    frontend_dist: Path | None = None
 
     @classmethod
     def from_env(cls) -> "Settings":
@@ -44,4 +46,5 @@ class Settings:
             annotation_enabled=os.environ.get("UZTERM_ANNOTATION", "on").lower() not in ("off", "0", "false"),
             model_path=_resolve(os.environ.get("UZTERM_MODEL_PATH", "models/crf.crfsuite")),
             models_dir=_resolve(os.environ.get("UZTERM_MODELS_DIR", "models")),
+            frontend_dist=_resolve(os.environ["UZTERM_FRONTEND_DIST"]) if os.environ.get("UZTERM_FRONTEND_DIST") else None,
         )
