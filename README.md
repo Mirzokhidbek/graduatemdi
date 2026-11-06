@@ -22,7 +22,7 @@ aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
 ```bash
 ./run.sh            # dev: backend :8000 + frontend :5173
 ./run.sh prod       # bitta port: http://localhost:8000
-./run.sh --transformer   # + XLM-R modeli (torch, ~1 GB model yuklab olinadi)
+./run.sh --transformer   # + XLM-R uchun torch/transformers (model models/transformer/ da bo'lishi kerak)
 ```
 
 Birinchi ishga tushirishda `.venv` yaratiladi va Python/Node kutubxonalari o'rnatiladi.
@@ -84,10 +84,11 @@ backendni boshqa portda ishga tushiring va frontendni
 |---|---|---|
 | Lug'at | — | 0.55 |
 | CRF, CRF + lug'at belgisi | `models/crf*.crfsuite` (repoda bor) | 0.61, 0.65 |
-| XLM-R (transformer) | `pip install -r requirements-transformer.txt` va `models/transformer/` | 0.74 |
+| XLM-R (transformer) | `pip install -r requirements-transformer.txt` va `models/transformer/` | 0.74 (GPU va CPU'da takrorlandi) |
 
-XLM-R modeli (~1 GB) gitda saqlanmaydi. Uni `notebooks/xlmr_colab.ipynb` da o'qiting; 9-katak modelni
-Google Drive'ga `uzterm-transformer.zip` qilib saqlaydi. Uni repo ildizida oching:
+XLM-R modeli (~1 GB) gitda saqlanmaydi. Uni `notebooks/xlmr_colab.ipynb` da (GPU, ~10 daqiqa) yoki
+lokal (`PYTHONPATH=backend python -m app.models.transformer`, CPU'da ~30 daqiqa) o'qiting. Colab'ning 9-katagi
+modelni Google Drive'ga `uzterm-transformer.zip` qilib saqlaydi; uni repo ildizida oching:
 
 ```bash
 unzip uzterm-transformer.zip      # -> models/transformer/
