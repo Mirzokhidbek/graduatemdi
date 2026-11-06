@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
-import { analyze, ApiError, health } from "./api";
+import { analyze, ApiError, health, profileKey, termProfiles } from "./api";
 import { HighlightedText } from "./components/HighlightedText";
 import { ResultsTable } from "./components/ResultsTable";
 import { TermDetails } from "./components/TermDetails";
 import { download, toCsv, toJson } from "./exporters";
 import { codepointLength } from "./segments";
-import type { AnalyzeResponse, DetectionMethod, Health } from "./types";
+import type { AnalyzeResponse, DetectionMethod, Health, TermProfile } from "./types";
 
 const SAMPLE_TEXT =
   "Fonetika boʻlimida unli va undosh tovushlar oʻrganiladi. Qoʻshma gaplarning tuzilishi " +
@@ -22,6 +22,7 @@ export default function App() {
   const [selected, setSelected] = useState<number | null>(null);
   const [server, setServer] = useState<Health | null>(null);
   const [method, setMethod] = useState<DetectionMethod>("dictionary");
+  const [profiles, setProfiles] = useState<Map<string, TermProfile>>(new Map());
   const controller = useRef<AbortController | null>(null);
 
   useEffect(() => {
@@ -45,6 +46,11 @@ export default function App() {
       const response = await analyze(text, current.signal, method);
       setResult(response);
       setAnalyzedText(text);
+      setProfiles(new Map());
+      // Profil qo'shimcha maʼlumot: yuklanmasa, asosiy natija baribir ko'rsatiladi.
+      termProfiles(response.matches.map(profileKey), current.signal)
+        .then(setProfiles)
+        .catch(() => undefined);
       setSelected(response.matches.length ? 0 : null);
       setStatus("done");
     } catch (exc) {
@@ -173,7 +179,9 @@ export default function App() {
               <HighlightedText text={analyzedText} matches={matches} selected={selected} onSelect={setSelected} />
               <div className="split">
                 <ResultsTable matches={matches} selected={selected} onSelect={setSelected} />
-                {selected !== null && matches[selected] && <TermDetails match={matches[selected]} />}
+                {selected !== null && matches[selected] && (
+                  <TermDetails match={matches[selected]} profile={profiles.get(profileKey(matches[selected]))} />
+                )}
               </div>
             </>
           )}

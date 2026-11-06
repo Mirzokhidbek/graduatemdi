@@ -133,3 +133,22 @@ def thesaurus(request: Request) -> dict:
         raise HTTPException(status_code=404, detail="Tezaurus hali qurilmagan: python -m app.ontology.thesaurus")
     return json.loads(path.read_text(encoding="utf-8"))
 
+
+
+def _profiles(state):
+    builder = getattr(state, "profiles", None)
+    if builder is None:
+        from app.services.profile import ProfileBuilder
+
+        data_dir = state.settings.data_dir
+        builder = state.profiles = ProfileBuilder(state.entries, _checker(state), data_dir, data_dir.parent / "reports")
+    return builder
+
+
+@router.post("/term-profiles")
+def term_profiles(payload: CheckTermsRequest, request: Request) -> dict:
+    """Har bir termin uchun: lug'at yozuvi, meʼyor tekshiruvi, tezaurusdagi o'rni va ekvivalentlar."""
+    if any(len(t) > MAX_TERM_CHARS for t in payload.terms):
+        raise HTTPException(status_code=413, detail=f"Termin juda uzun (eng ko'pi {MAX_TERM_CHARS} belgi).")
+    builder = _profiles(request.app.state)
+    return {"profiles": [builder.profile(t) for t in payload.terms]}

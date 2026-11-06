@@ -198,3 +198,27 @@ def test_analyze_unavailable_model(client, tmp_path):
 def test_dictionary_matches_have_lemma_fields(client):
     [match] = client.post("/api/analyze", json={"text": "Fonemalar"}).json()["matches"]
     assert match["in_dictionary"] and match["lemma"] == "fonema" and match["related_terms"] == []
+
+
+def test_term_profiles(terms_file, tmp_path):
+    data_dir = tmp_path / "data"
+    (data_dir / "multilingual").mkdir(parents=True)
+    (data_dir / "multilingual" / "equivalents-silver.csv").write_text(
+        "uz,ru,en,kind\nfonema,фонема,phoneme,international\n", encoding="utf-8")
+    (data_dir / "multilingual" / "etymons.csv").write_text(
+        "uz,lang,foreign,gloss,doc_id\nfonema,grc,phonema,tovush,d1\n", encoding="utf-8")
+    (tmp_path / "reports").mkdir()
+    (tmp_path / "reports" / "thesaurus.json").write_text(json.dumps({
+        "concepts": [{"label": "fonema", "broader": ["til birligi"], "narrower": ["arxifonema"], "alt_labels": []}],
+        "relations": [], "related": [{"a": "fonema", "b": "allofon", "pmi": 5.0, "count": 3}], "summary": {}}),
+        encoding="utf-8")
+    client = TestClient(create_app(Settings(terms_path=terms_file, max_text_chars=50, data_dir=data_dir)))
+    known, unknown = client.post("/api/term-profiles", json={"terms": ["fonema", "qoʻshimcha"]}).json()["profiles"]
+    assert known["dictionary"]["term"] == "fonema" and known["dictionary"]["definition"] == "Tovush birligi."
+    assert known["thesaurus"] == {"broader": ["til birligi"], "narrower": ["arxifonema"], "related": ["allofon"]}
+    langs = {(e["lang"], e["value"]) for e in known["equivalents"]}
+    assert langs == {("ru", "фонема"), ("en", "phoneme"), ("grc", "phonema")}
+    assert known["check"]["severity"] in ("ok", "info")
+    # sinonim orqali lug'at yozuvi topiladi
+    assert unknown["dictionary"]["term"] == "affiks" and unknown["thesaurus"]["broader"] == []
+    assert client.post("/api/term-profiles", json={"terms": []}).status_code == 422
