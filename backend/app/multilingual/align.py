@@ -130,6 +130,21 @@ class Aligner:
         return result
 
 
+class CascadeAligner:
+    """Ikki bosqichli sxema: kognat bali θ dan yuqori bo'lsa — kognat reytingi (xalqaro terminlar),
+    aks holda — semantik (embedding) reyting (oʻzbekcha terminlar)."""
+
+    def __init__(self, cognate: Aligner, semantic: Aligner, threshold: float = 0.7) -> None:
+        self.cognate = cognate
+        self.semantic = semantic
+        self.threshold = threshold
+
+    def rank(self, sources: Sequence[str], lang: str, top: int = 5) -> list[list[Candidate]]:
+        by_cognate = self.cognate.rank(sources, lang, top)
+        by_semantic = self.semantic.rank(sources, lang, top)
+        return [c if c and c[0].score >= self.threshold else s for c, s in zip(by_cognate, by_semantic)]
+
+
 def _cosine(a: Sequence[float], b: Sequence[float]) -> float:
     dot = sum(x * y for x, y in zip(a, b))
     na = sum(x * x for x in a) ** 0.5

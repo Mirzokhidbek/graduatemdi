@@ -20,7 +20,7 @@ from collections import Counter
 from pathlib import Path
 
 from app.database.term_store import load_terms
-from app.multilingual.align import Aligner, gold_by_source, load_gold, ranking_metrics
+from app.multilingual.align import Aligner, CascadeAligner, gold_by_source, load_gold, ranking_metrics
 from app.multilingual.sources import extract_etymons, sentence_encoder
 from app.nlp.candidates import build_lemmatizer, extract_candidates, lemmatize_form
 from app.variation.groups import choose_preferred
@@ -109,6 +109,7 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         models["semantic"] = Aligner(targets, encoder, weight=1.0)
         models["hybrid"] = Aligner(targets, encoder, weight=args.weight)
+        models["cascade"] = CascadeAligner(models["cognate"], models["semantic"], threshold=0.7)
 
     report = {
         "gold": {"file": args.gold.name, "rows": len(rows), "kinds": dict(Counter(r["kind"] for r in rows)),

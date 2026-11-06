@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from app.multilingual.align import (
     Aligner,
+    CascadeAligner,
     cognate_similarity,
     gold_by_source,
     key_en,
@@ -86,3 +87,14 @@ def test_fetch_langlinks_with_fake_api():
     links = fetch_langlinks(["fonema", "Yoʻq"], fetch=fake, pause=0)
     assert links == {"fonema": {"ru": "Фонема", "en": "Phoneme"}}
     assert len(calls) == 2 and "lllang=ru" in calls[0] and "lllang=en" in calls[1]
+
+
+def test_cascade_uses_cognate_when_confident_else_semantic():
+    targets = ["fonema", "tilshunoslik", "lingvistika"]
+    vectors = {"phoneme": [0.0, 1.0], "linguistics science": [1.0, 0.0], "fonema": [0.0, 1.0],
+               "tilshunoslik": [1.0, 0.0], "lingvistika": [0.6, 0.4]}
+    encoder = lambda texts: [vectors[t] for t in texts]  # noqa: E731
+    cascade = CascadeAligner(Aligner(targets), Aligner(targets, encoder, weight=1.0), threshold=0.7)
+    first, second = cascade.rank(["phoneme", "linguistics science"], "en", top=1)
+    assert first[0].uz == "fonema" and first[0].semantic is None  # kognat ishonchli
+    assert second[0].uz == "tilshunoslik" and second[0].semantic is not None  # semantik model
