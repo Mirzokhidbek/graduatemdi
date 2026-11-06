@@ -42,6 +42,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app.include_router(router)
     app.include_router(annotation_router)
 
+    # Production: `npm run build` natijasi (frontend/dist) shu serverning o'zidan beriladi — bitta port.
+    dist = settings.frontend_dist
+    if dist is not None and (dist / "index.html").is_file():
+        from fastapi.staticfiles import StaticFiles
+
+        app.mount("/", StaticFiles(directory=dist, html=True), name="frontend")
+
     @app.exception_handler(Exception)
     async def unexpected_error(request: Request, exc: Exception) -> JSONResponse:
         # Ichki tafsilotlar (stack trace) foydalanuvchiga qaytarilmaydi.
