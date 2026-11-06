@@ -1,7 +1,8 @@
 import { MATCH_TYPE_LABELS, METHOD_LABELS, NORMALIZATION_BADGES } from "../labels";
-import type { Match } from "../types";
+import type { Match, TermProfile } from "../types";
+import { TermProfilePanel } from "./TermProfilePanel";
 
-export function TermDetails({ match }: { match: Match }) {
+export function TermDetails({ match, profile }: { match: Match; profile?: TermProfile }) {
   return (
     <aside className="details" aria-label="Termin tafsilotlari">
       <h3>
@@ -69,6 +70,7 @@ export function TermDetails({ match }: { match: Match }) {
           </section>
         );
       })}
+      {profile && <TermProfilePanel profile={profile} />}
     </aside>
   );
 }

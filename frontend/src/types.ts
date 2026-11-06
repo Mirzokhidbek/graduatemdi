@@ -166,3 +166,30 @@ export interface Thesaurus {
   related: { a: string; b: string; pmi: number; count: number }[];
   summary: { concepts: number; broader_relations: number; roots: number; related_pairs: number };
 }
+
+// --- termin profili (POST /api/term-profiles) ----------------------------------
+
+export interface Equivalent {
+  lang: string;
+  value: string;
+  source: string;
+  verified: boolean;
+  gloss: string | null;
+}
+
+export interface TermProfile {
+  term: string;
+  dictionary: {
+    id: string;
+    term: string;
+    definition: string | null;
+    status: "approved" | "needs_review";
+    source: string | null;
+    preferred_form: string | null;
+    variants: string[];
+    synonyms: string[];
+  } | null;
+  check: CheckResult;
+  thesaurus: { broader: string[]; narrower: string[]; related: string[] };
+  equivalents: Equivalent[];
+}

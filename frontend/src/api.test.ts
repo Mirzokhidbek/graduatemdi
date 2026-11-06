@@ -42,3 +42,12 @@ describe("thesaurusRoots", () => {
     expect(thesaurusRoots(concepts)).toEqual(["gap", "tovush"]);
   });
 });
+
+describe("profileKey", () => {
+  it("lug'atdagi terminni, bo'lmasa lug'at shaklini, bo'lmasa matndagi shaklni oladi", async () => {
+    const { profileKey } = await import("./api");
+    expect(profileKey({ term: "fonema", lemma: "fonema", surface: "Fonemalar" })).toBe("fonema");
+    expect(profileKey({ term: null, lemma: "paralingvistika", surface: "Paralingvistikada" })).toBe("paralingvistika");
+    expect(profileKey({ term: null, lemma: null, surface: "ot" })).toBe("ot");
+  });
+});

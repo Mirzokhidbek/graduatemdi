@@ -49,6 +49,7 @@ API hujjati: http://127.0.0.1:8000/docs. Endpointlar:
 - `POST /api/analyze` — `{"text": "...", "method": "dictionary|crf|crf_gazetteer|transformer"}` → topilgan
   terminlar; modellar lug'atda yo'q terminlarni ham topadi (`in_dictionary: false`, `lemma` — taklif);
 - `POST /api/check-terms` — terminlarni ISO 704 va imlo qoidalariga muvofiqlikka tekshirish;
+- `POST /api/term-profiles` — termin profili: lug'at, meʼyor tekshiruvi, tezaurus, ekvivalentlar;
 - `GET /api/thesaurus` — avtomatik tezaurus (`python -m app.ontology.thesaurus`);
 - `GET /api/terms` — terminlar bazasi;
 - `GET /api/health` — holat, matn uzunligi cheklovi va mavjud aniqlash usullari (test F1 bilan);

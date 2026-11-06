@@ -6,6 +6,7 @@ import type {
   DetectionMethod,
   DocumentSummary,
   Health,
+  TermProfile,
   Thesaurus,
   JudgmentRow,
   SavedRecord,
@@ -82,6 +83,24 @@ export function parseTermLines(text: string, limit = 200): string[] {
     if (terms.length >= limit) break;
   }
   return terms;
+}
+
+/** Terminlar profili: lug'at, meʼyor tekshiruvi, tezaurus, ekvivalentlar. */
+export async function termProfiles(terms: string[], signal?: AbortSignal): Promise<Map<string, TermProfile>> {
+  const unique = [...new Set(terms.filter(Boolean))].slice(0, 200);
+  if (!unique.length) return new Map();
+  const body = await request<{ profiles: TermProfile[] }>("/api/term-profiles", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ terms: unique }),
+    signal,
+  });
+  return new Map(body.profiles.map((p) => [p.term, p]));
+}
+
+/** Moslik uchun profil kaliti: lug'atdagi termin, bo'lmasa taklif qilingan lug'at shakli. */
+export function profileKey(match: { term: string | null; lemma: string | null; surface: string }): string {
+  return match.term ?? match.lemma ?? match.surface;
 }
 
 export function thesaurus(): Promise<Thesaurus> {
