@@ -178,6 +178,16 @@ class TermTransformer:
         return spans
 
 
+def best_device() -> str:
+    """CUDA (NVIDIA), MPS (Apple Silicon) yoki CPU."""
+    import torch
+
+    if torch.cuda.is_available():
+        return "cuda"
+    mps = getattr(torch.backends, "mps", None)
+    return "mps" if mps is not None and mps.is_available() else "cpu"
+
+
 def _set_seed(seed: int) -> None:
     import numpy as np
     import torch
@@ -223,7 +233,7 @@ def train(
             id2label=dict(enumerate(LABELS)),
             label2id=LABEL_ID,
         )
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device(best_device())
     model.to(device)
 
     examples = encode_records(train_records, tokenizer, config)
@@ -300,7 +310,7 @@ def run(
         import torch
 
         model = TermTransformer.load(output_dir, lemmatizer)
-        model.model.to("cuda" if torch.cuda.is_available() else "cpu")
+        model.model.to(best_device())
         config = model.config
         history = json.loads((output_dir / "uzterm.json").read_text(encoding="utf-8"))["history"]
     else:

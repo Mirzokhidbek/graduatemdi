@@ -166,16 +166,11 @@ class DetectorRegistry:
             gazetteer = self.matcher if method == CRF_GAZETTEER else None
             return TermCrf(self.lemmatizer(), gazetteer).load(path).predict
 
-        from app.models.transformer import TermTransformer
+        from app.models.transformer import TermTransformer, best_device
 
         model = TermTransformer.load(path, self.lemmatizer())
         try:
-            import torch
-
-            if torch.cuda.is_available():
-                model.model.to("cuda")
-            elif getattr(torch.backends, "mps", None) and torch.backends.mps.is_available():
-                model.model.to("mps")
+            model.model.to(best_device())
         except Exception:  # noqa: BLE001 — qurilmaga o'tkazib bo'lmasa, CPU'da qoladi
             logger.warning("Transformer CPU'da ishlaydi")
         return model.predict
