@@ -1,38 +1,38 @@
 # UzTerm AI
 
-Oʻzbek tilidagi ona tili va tilshunoslikka oid matnlardan terminlarni avtomatik
-aniqlash, tasniflash va meʼyorlashtirish prototipi (MDI loyihasi).
+A prototype for automatically extracting, classifying and normalizing terms from
+Uzbek texts on the Uzbek language and linguistics (master's thesis project).
 
-**Joriy holat** (batafsil — [docs/project-plan.md](docs/project-plan.md)):
+**Current status** (details in [docs/project-plan.md](docs/project-plan.md)):
 
-- ishlaydi: lug'atga asoslangan termin aniqlagich (450 termin, tekshirilmagan),
-  web interfeys: tahlil, **annotatsiya** va nomzodlarni baholash, REST API;
-- tayyor: dataset vositalari (tekshiruv, train/val/test, annotatorlar kelishuvi),
-  statistik nomzodlar (frequency, TF-IDF, C-value, POS filtri), **CRF modeli**;
-- korpus: Vikipediyadan 41 ta tilshunoslik maqolasi. Hammasi **AI tomonidan**
-  belgilangan (kumush maʼlumot, 2555 termin), inson annotatsiyasi kutilmoqda.
-  Dastlabki natijalar (faqat kumush maʼlumotda): CRF + lug'at F1 = 0.65,
-  lug'at 0.55 — [docs/results.md](docs/results.md);
-- tayyor, lekin hali ishga tushirilmagan: transformer (XLM-R) — Colab'da
-  ishga tushiriladi: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb);
-- yo'q: inson oltin standarti.
+- working: dictionary-based term extractor (450 terms, not yet verified),
+  web interface for analysis, **annotation** and candidate judging, REST API;
+- ready: dataset tooling (validation, train/val/test splits, inter-annotator agreement),
+  statistical candidates (frequency, TF-IDF, C-value, POS filter), **CRF model**;
+- corpus: 41 linguistics articles from Uzbek Wikipedia. All of them were annotated
+  **by AI** (silver data, 2,555 terms); human annotation is pending.
+  Preliminary results (silver data only): CRF + dictionary F1 = 0.65,
+  dictionary 0.55 — see [docs/results.md](docs/results.md);
+- ready but not yet run: transformer (XLM-R), trained in Colab:
+  [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb);
+- missing: a human gold standard.
 
-## Tez ishga tushirish
+## Quick start
 
 ```bash
-./run.sh            # dev: backend :8000 + frontend :5173
-./run.sh prod       # bitta port: http://localhost:8000
-./run.sh --transformer   # + XLM-R uchun torch/transformers (model models/transformer/ da bo'lishi kerak)
+./run.sh                 # dev: backend :8000 + frontend :5173
+./run.sh prod            # single port: http://localhost:8000
+./run.sh --transformer   # + torch/transformers for XLM-R (the model must be in models/transformer/)
 ```
 
-Birinchi ishga tushirishda `.venv` yaratiladi va Python/Node kutubxonalari o'rnatiladi.
+The first run creates `.venv` and installs the Python and Node dependencies.
 
-## Talablar
+## Requirements
 
-- macOS yoki Linux
-- Python 3.11+ (3.13.9 da tekshirilgan)
+- macOS or Linux
+- Python 3.11+ (tested on 3.13.9)
 
-## O'rnatish
+## Installation
 
 ```bash
 python3 -m venv .venv
@@ -40,13 +40,13 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Testlarni ishga tushirish
+## Running tests
 
 ```bash
 python -m pytest
 ```
 
-## Web interfeys va API
+## Web interface and API
 
 Backend (FastAPI):
 
@@ -54,263 +54,261 @@ Backend (FastAPI):
 PYTHONPATH=backend uvicorn app.main:app --reload --port 8000
 ```
 
-API hujjati: http://127.0.0.1:8000/docs. Endpointlar:
+API docs: http://127.0.0.1:8000/docs. Endpoints:
 
-- `POST /api/analyze` — `{"text": "...", "method": "dictionary|crf|crf_gazetteer|transformer"}` → topilgan
-  terminlar; modellar lug'atda yo'q terminlarni ham topadi (`in_dictionary: false`, `lemma` — taklif);
-- `POST /api/check-terms` — terminlarni ISO 704 va imlo qoidalariga muvofiqlikka tekshirish;
-- `POST /api/term-profiles` — termin profili: lug'at, meʼyor tekshiruvi, tezaurus, ekvivalentlar;
-- `GET /api/thesaurus` — avtomatik tezaurus (`python -m app.ontology.thesaurus`);
-- `GET /api/terms` — terminlar bazasi;
-- `GET /api/health` — holat, matn uzunligi cheklovi va mavjud aniqlash usullari (test F1 bilan);
-- `GET /api/annotate/documents`, `GET|PUT /api/annotate/documents/{doc_id}...` — annotatsiya;
-- `GET|PUT /api/judgments/{annotator}` — nomzodlarni baholash.
+- `POST /api/analyze` — `{"text": "...", "method": "dictionary|crf|crf_gazetteer|transformer"}` → extracted
+  terms; the models also find terms that are not in the dictionary (`in_dictionary: false`, `lemma` is a suggestion);
+- `POST /api/check-terms` — check terms against ISO 704 and Uzbek spelling rules;
+- `POST /api/term-profiles` — term profile: dictionary entry, norm check, thesaurus, equivalents;
+- `GET /api/thesaurus` — automatically built thesaurus (`python -m app.ontology.thesaurus`);
+- `GET /api/terms` — the term base;
+- `GET /api/health` — status, text length limit and available extraction methods (with test F1);
+- `GET /api/annotate/documents`, `GET|PUT /api/annotate/documents/{doc_id}...` — annotation;
+- `GET|PUT /api/judgments/{annotator}` — candidate judging.
 
-Frontend (Node 20+; batafsil — [frontend/README.md](frontend/README.md)):
+Frontend (Node 20+; details in [frontend/README.md](frontend/README.md)):
 
 ```bash
 cd frontend && npm install && npm run dev
 ```
 
-Brauzerda http://localhost:5173 ni oching. Bo'limlar: **Tahlil**, **Meʼyor tekshiruvi** (`#check`),
-**Tezaurus** (`#thesaurus`), **Belgilash**
-(`#annotate`, yo'riqnoma 7.1) va **Nomzodlarni baholash** (`#judge`). Agar 8000-port band bo'lsa,
-backendni boshqa portda ishga tushiring va frontendni
-`UZTERM_API_URL=http://127.0.0.1:<port> npm run dev` bilan oching.
+Open http://localhost:5173 in your browser. Sections: **Analysis**, **Norm check** (`#check`),
+**Thesaurus** (`#thesaurus`), **Annotation** (`#annotate`, guide section 7.1) and
+**Candidate judging** (`#judge`). If port 8000 is busy, start the backend on another port and run
+the frontend with `UZTERM_API_URL=http://127.0.0.1:<port> npm run dev`.
 
-### Aniqlash usullari ("Tahlil" sahifasi)
+### Extraction methods ("Analysis" page)
 
-| Usul | Nima kerak | Test F1 (kumush) |
+| Method | Requirements | Test F1 (silver) |
 |---|---|---|
-| Lug'at | — | 0.55 |
-| CRF, CRF + lug'at belgisi | `models/crf*.crfsuite` (repoda bor) | 0.61, 0.65 |
-| XLM-R (transformer) | `pip install -r requirements-transformer.txt` va `models/transformer/` | 0.74 (GPU va CPU'da takrorlandi) |
+| Dictionary | — | 0.55 |
+| CRF, CRF + dictionary feature | `models/crf*.crfsuite` (included in the repo) | 0.61, 0.65 |
+| XLM-R (transformer) | `pip install -r requirements-transformer.txt` and `models/transformer/` | 0.74 (reproduced on GPU and CPU) |
 
-XLM-R modeli (~1 GB) gitda saqlanmaydi. Uni `notebooks/xlmr_colab.ipynb` da (GPU, ~10 daqiqa) yoki
-lokal (`PYTHONPATH=backend python -m app.models.transformer`, CPU'da ~30 daqiqa) o'qiting. Colab'ning 9-katagi
-modelni Google Drive'ga `uzterm-transformer.zip` qilib saqlaydi; uni repo ildizida oching:
+The XLM-R model (~1 GB) is not stored in git. Train it in `notebooks/xlmr_colab.ipynb` (GPU, ~10 minutes) or
+locally (`PYTHONPATH=backend python -m app.models.transformer`, ~30 minutes on CPU). Cell 9 of the Colab notebook
+saves the model to Google Drive as `uzterm-transformer.zip`; unzip it in the repository root:
 
 ```bash
 unzip uzterm-transformer.zip      # -> models/transformer/
 ```
 
-Server qayta ishga tushirilgach, XLM-R usuli faollashadi. Model birinchi so'rovda yuklanadi (bir necha
-soniya); GPU (CUDA) yoki Apple Silicon (MPS) bo'lsa, avtomatik ishlatiladi.
+After restarting the server, the XLM-R method becomes available. The model is loaded on the first request
+(a few seconds); a GPU (CUDA) or Apple Silicon (MPS) is used automatically when present.
 
-## Matnni tahlil qilish (CLI)
+## Analyzing text (CLI)
 
 ```bash
 PYTHONPATH=backend python -m app.cli "Fonetika boʻlimida unli va undosh tovushlar oʻrganiladi."
 ```
 
-Fayldan yoki stdin'dan o'qish ham mumkin:
+You can also read from a file or stdin:
 
 ```bash
-PYTHONPATH=backend python -m app.cli --file matn.txt
+PYTHONPATH=backend python -m app.cli --file text.txt
 ```
 
-Boshqa terminlar bazasini ishlatish: `--terms yo'l/terms.json` yoki `.env.example`
-dagi `UZTERM_TERMS_PATH` o'zgaruvchisi.
+To use a different term base: `--terms path/to/terms.json` or the `UZTERM_TERMS_PATH`
+variable from `.env.example`.
 
-Natija JSON ro'yxat ko'rinishida chiqadi. Har bir topilma uchun:
+The output is a JSON list. Each match contains:
 
-| Maydon | Maʼnosi |
+| Field | Meaning |
 |---|---|
-| `surface` | matnda uchragan shakl (qo'shimchasi bilan) |
-| `base_surface`, `suffix` | qo'shimchasiz shakl va ajratilgan qo'shimcha |
-| `start`, `end` | pozitsiya, Python uslubidagi `[start, end)` |
-| `term` | asosiy termin (omonim bo'lsa `null`) |
-| `method` | `dictionary_exact` yoki `dictionary_inflected` |
-| `confidence` | `null` — lug'at usuli ehtimollik hisoblamaydi |
-| `ambiguous` | bitta shakl bir nechta yozuvga mos keldi |
-| `review_required` | inson tekshiruvi kerakmi |
-| `candidates[]` | termin yozuvi: soha, taʼrif, manba, `match_type` (`term`/`variant`/`synonym`) va `normalization` (meʼyoriy shakl tavsiyasi) |
+| `surface` | the form found in the text (with its suffix) |
+| `base_surface`, `suffix` | the form without the suffix, and the separated suffix |
+| `start`, `end` | position, Python-style `[start, end)` |
+| `term` | the main term (`null` for homonyms) |
+| `method` | `dictionary_exact` or `dictionary_inflected` |
+| `confidence` | `null` — the dictionary method does not compute probabilities |
+| `ambiguous` | one form matched several entries |
+| `review_required` | whether human review is needed |
+| `candidates[]` | term entry: domain, definition, source, `match_type` (`term`/`variant`/`synonym`) and `normalization` (suggested normative form) |
 
-## Maʼlumotlar
+## Data
 
-`data/raw/` da Oʻzbekcha Vikipediyadan olingan **41 ta tilshunoslik maqolasi**
-bor: 310 paragraf, ~18 ming so'z. Har birining aniq versiyasi (revid) va
-litsenziyasi `data/sources.json` da qayd qilingan. Matnlar **hali
-belgilanmagan**: belgilash uchun nusxalar `data/inline/` da turibdi.
+`data/raw/` contains **41 linguistics articles** from Uzbek Wikipedia:
+310 paragraphs, ~18 thousand words. The exact revision (revid) and license of each
+are recorded in `data/sources.json`. The texts are **not yet annotated by humans**:
+copies for annotation are in `data/inline/`.
 
-Yangi maqola qo'shish:
+Adding a new article:
 
 ```bash
-PYTHONPATH=backend python -m app.dataset.fetch_wikipedia "Maqola nomi"
+PYTHONPATH=backend python -m app.dataset.fetch_wikipedia "Article title"
 ```
 
-**Litsenziya:** Vikipediya matnlari
-[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) ostida. Ularni va
-ular asosidagi annotatsiyani tarqatishda mualliflar ko'rsatilishi (manba havolasi
-orqali) va natija ham CC BY-SA 4.0 bilan tarqatilishi kerak. Oʻzbekcha
-Vikipediyadagi tilshunoslik maqolalarining bir qismi Oʻzbekiston milliy
-ensiklopediyasidan ko'chirilgan; MDI matnida buni ham ko'rsatish tavsiya etiladi.
+**License:** Wikipedia texts are licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). When distributing them
+or annotations based on them, authors must be credited (via a link to the source) and
+the result must also be released under CC BY-SA 4.0. Some linguistics articles in Uzbek
+Wikipedia were copied from the National Encyclopedia of Uzbekistan; it is recommended
+to mention this in the thesis as well.
 
-## Statistik termin nomzodlari (3-bosqich)
+## Statistical term candidates (stage 3)
 
-Korpusdan lug'atga bog'liq bo'lmagan termin nomzodlari. Reyting usullari:
-chastota, TF-IDF va C-value. Precision@K maʼlum terminlar ro'yxatiga nisbatan
-hisoblanadi.
+Dictionary-independent term candidates from the corpus. Ranking methods:
+frequency, TF-IDF and C-value. Precision@K is computed against a list of known terms.
 
 ```bash
 PYTHONPATH=backend python -m app.nlp.candidates --method cvalue --top 30 --reference-terms data/terms.json --output reports/candidates-cvalue.csv
 ```
 
-Nomzodlarni inson baholashi (ko'r shablon, so'ng qatʼiy/yumshoq Precision@K va
-Cohen's kappa; qoidalar — yo'riqnomaning 9-bo'limi):
+Human judging of candidates (blind template, then strict/lenient Precision@K and
+Cohen's kappa; rules are in section 9 of the annotation guide):
 
 ```bash
 PYTHONPATH=backend python -m app.evaluation.judgments template --rankings reports/candidates-*.csv --k 100 --output data/judgments/candidates-A1.csv
 PYTHONPATH=backend python -m app.evaluation.judgments score --rankings reports/candidates-*.csv --judgments data/judgments/candidates-A1.csv
 ```
 
-Birinchi natijalar va ularning cheklovlari: [docs/project-plan.md](docs/project-plan.md).
+First results and their limitations: [docs/project-plan.md](docs/project-plan.md).
 
-## Annotatsiya (dataset)
+## Annotation (dataset)
 
-Qoidalar va format: [docs/data-annotation-guide.md](docs/data-annotation-guide.md).
-Manbalar reyestri: [data/sources.json](data/sources.json), belgilangan matnlar:
-`data/annotated/*.jsonl`. Tekshirish:
+Rules and format: [docs/data-annotation-guide.md](docs/data-annotation-guide.md).
+Source registry: [data/sources.json](data/sources.json); annotated texts:
+`data/annotated/*.jsonl`. Validation:
 
 ```bash
 PYTHONPATH=backend python -m app.dataset.validate
 ```
 
-Inline belgilangan matndan (`[[Fonemalar|fonema]]`) JSONL yaratish:
+Building JSONL from inline-annotated text (`[[Fonemalar|fonema]]`):
 
 ```bash
 PYTHONPATH=backend python -m app.dataset.inline data/raw/doc-0001.txt --doc-id doc-0001 --annotator A1 -o data/annotated/doc-0001.jsonl
 ```
 
-Manba darajasida train/validation/test ga ajratish (taqsimot
-`data/splits/manifest.json` da muzlatiladi):
+Splitting into train/validation/test at the source level (the split is frozen in
+`data/splits/manifest.json`):
 
 ```bash
 PYTHONPATH=backend python -m app.dataset.split
 ```
 
-Baseline'ni baholash (exact/partial Precision, Recall, F1 va xato tahlili;
-metodika: [docs/experiment-methodology.md](docs/experiment-methodology.md)):
+Evaluating the baseline (exact/partial Precision, Recall, F1 and error analysis;
+methodology: [docs/experiment-methodology.md](docs/experiment-methodology.md)):
 
 ```bash
 PYTHONPATH=backend python -m app.evaluation.evaluate data/processed/validation.jsonl --output reports/dictionary-validation.json
 ```
 
-Format namunasi (dataset emas):
+Format example (not part of the dataset):
 
 ```bash
 PYTHONPATH=backend python -m app.dataset.validate docs/examples/annotation.example.jsonl --sources docs/examples/sources.example.json
 ```
 
-## Bosqichlar bo'yicha (dissertatsiya rejasi)
+## By stage (thesis plan)
 
-| Bosqich | Qayerda |
+| Stage | Where |
 |---|---|
-| 1. Dataset (BIO, JSONL) | `data/bio/sentences-100.jsonl` — 100 ta gap, qo'lda tekshirilgan (`data/bio/review.txt`); `python -m app.dataset.bio sample / validate / export` |
-| 2. Preprocessing | `app/nlp/clean.py` (tozalash, rasmiy apostroflar, gaplarga ajratish), `normalize.py`, `tokenize.py` |
-| 3. Xususiyatlar | `app/models/crf.py` → `token_features` |
-| 4. O'qitish, saqlash, yuklash | `python -m app.models.crf train / evaluate / predict` |
-| 5. Meʼyorlashtirish | `app/services/term_normalizer.py`; aniqlik: `python -m app.evaluation.normalization` |
-| 6. Baholash | `python -m app.models.experiment`, `python -m app.evaluation.report` → [docs/experiments-table.md](docs/experiments-table.md) |
-| 7. Web interfeys | `streamlit run streamlit_app.py` (shuningdek React: tahlil, annotatsiya, baholash) |
-| 8. Ilmiy hujjat | [docs/dissertation/](docs/dissertation/README.md) |
+| 1. Dataset (BIO, JSONL) | `data/bio/sentences-100.jsonl` — 100 sentences, manually reviewed (`data/bio/review.txt`); `python -m app.dataset.bio sample / validate / export` |
+| 2. Preprocessing | `app/nlp/clean.py` (cleaning, official apostrophes, sentence splitting), `normalize.py`, `tokenize.py` |
+| 3. Features | `app/models/crf.py` → `token_features` |
+| 4. Training, saving, loading | `python -m app.models.crf train / evaluate / predict` |
+| 5. Normalization | `app/services/term_normalizer.py`; accuracy: `python -m app.evaluation.normalization` |
+| 6. Evaluation | `python -m app.models.experiment`, `python -m app.evaluation.report` → [docs/experiments-table.md](docs/experiments-table.md) |
+| 7. Web interface | `streamlit run streamlit_app.py` (plus React: analysis, annotation, judging) |
+| 8. Thesis document | [docs/dissertation/](docs/dissertation/README.md) |
 | Transformer (XLM-R) | `app/models/transformer.py`; Colab: [notebooks/xlmr_colab.ipynb](notebooks/xlmr_colab.ipynb) |
 
-## AI annotatsiyasi, lug'at va CRF
+## AI annotation, dictionary and CRF
 
 ```bash
-PYTHONPATH=backend python -m app.annotation.silver          # data/silver/ ro'yxatlaridan -> data/annotations/claude/
+PYTHONPATH=backend python -m app.annotation.silver          # from data/silver/ lists -> data/annotations/claude/
 PYTHONPATH=backend python -m app.dataset.split data/annotations/claude/*.jsonl --include-drafts --output-dir data/processed/silver
-PYTHONPATH=backend python -m app.annotation.dictionary      # lug'atga faqat train terminlari
-PYTHONPATH=backend python -m app.models.experiment          # lug'at vs CRF, bootstrap; reports/, models/
+PYTHONPATH=backend python -m app.annotation.dictionary      # adds only train-set terms to the dictionary
+PYTHONPATH=backend python -m app.models.experiment          # dictionary vs CRF, bootstrap; reports/, models/
 PYTHONPATH=backend python -m app.annotation.agreement compare A1 A2
 ```
 
-Kumush maʼlumot qanday tuzilgani: [data/silver/README.md](data/silver/README.md).
-Natijalar va cheklovlar: [docs/results.md](docs/results.md).
+How the silver data was built: [data/silver/README.md](data/silver/README.md).
+Results and limitations: [docs/results.md](docs/results.md).
 
-## Terminlar bazasi
+## Term base
 
-[data/terms.json](data/terms.json) — JSON massiv. Maydonlar:
+[data/terms.json](data/terms.json) is a JSON array. Fields:
 
-| Maydon | Majburiy | Izoh |
+| Field | Required | Notes |
 |---|---|---|
-| `id` | ha | noyob identifikator |
-| `term` | ha | asosiy termin |
-| `definition`, `domain` | yo'q | taʼrif va soha |
-| `variants` | yo'q | yozuv variantlari |
-| `synonyms` | yo'q | maʼnodosh terminlar (variantlardan alohida saqlanadi) |
-| `preferred_form` | yo'q | meʼyoriy shakl |
-| `status` | yo'q | `needs_review` (standart) yoki `approved` |
-| `source` | `approved` uchun ha | manba |
+| `id` | yes | unique identifier |
+| `term` | yes | the main term |
+| `definition`, `domain` | no | definition and domain |
+| `variants` | no | spelling variants |
+| `synonyms` | no | synonymous terms (stored separately from variants) |
+| `preferred_form` | no | normative form |
+| `status` | no | `needs_review` (default) or `approved` |
+| `source` | yes for `approved` | source |
 
-Baza yuklanganda qatʼiy tekshiriladi: nomaʼlum maydon, takroriy `id`, noto'g'ri
-tur yoki manbasiz `approved` bo'lsa, barcha xatolar ro'yxati bilan rad etiladi.
+The base is strictly validated on load: an unknown field, a duplicate `id`, a wrong
+type or an `approved` entry without a source causes it to be rejected with a full list of errors.
 
-> **Diqqat:** dastlabki 15 ta yozuv (`data/terms-seed.json`) namuna, taʼriflarini
-> Claude qoralama sifatida yozgan. Qolgan 435 tasi AI annotatsiyasining **train**
-> to'plamidan olingan (taʼrifsiz). Ko'p maʼnoli so'zlar (`ot`, `sifat`, `gap`, ...)
-> ataylab qo'shilmagan. Hech biri ilmiy manba bilan tekshirilmagan. Barchasi
-> `needs_review` holatida, tizim ularni "Tavsiya — tekshirish kerak" deb ko'rsatadi.
+> **Note:** the first 15 entries (`data/terms-seed.json`) are samples whose definitions
+> were drafted by AI. The remaining 435 come from the **train** split of the AI
+> annotation (without definitions). Polysemous words (`ot`, `sifat`, `gap`, ...)
+> were deliberately left out. None of them have been verified against a scholarly source.
+> All are in `needs_review` status, and the system shows them as "Suggestion — needs review".
 
-## Tuzilma
+## Project structure
 
 ```text
-backend/app/main.py                   FastAPI ilovasi
-backend/app/api/routes.py             /api/analyze, /api/terms, /api/health
-backend/app/schemas.py                Pydantic so'rov/javob modellari
-backend/app/core/config.py            sozlamalar (UZTERM_TERMS_PATH, UZTERM_MAX_TEXT_CHARS)
-backend/app/database/term_store.py    bazani yuklash va tekshirish
-backend/app/nlp/normalize.py          registr va apostrof normalizatsiyasi (uzunlik saqlanadi)
-backend/app/nlp/dictionary_matcher.py lug'atga asoslangan aniqlagich
-backend/app/services/normalization.py meʼyoriy shakl tavsiyasi
-backend/app/services/analyzer.py      natijani JSON ko'rinishiga keltirish
-backend/app/cli.py                    buyruq satri
-backend/app/dataset/sources.py        manbalar reyestrini tekshirish
-backend/app/dataset/annotation.py     JSONL annotatsiyani tekshirish
-backend/app/dataset/validate.py       tekshiruvchi CLI
-backend/app/dataset/inline.py         [[...]] belgili matndan JSONL yaratish
-backend/app/dataset/split.py          doc_id bo'yicha train/validation/test ajratish
-backend/app/dataset/fetch_wikipedia.py Vikipediya maqolalarini manbasi bilan yuklash
-backend/app/evaluation/metrics.py     exact va partial Precision/Recall/F1
-backend/app/evaluation/errors.py      xato toifalari (missed, false_positive, boundary, ...)
-backend/app/evaluation/evaluate.py    baholash CLI va JSON hisobot
-backend/app/evaluation/ranking.py     Precision@K va qamrov
-backend/app/evaluation/judgments.py   nomzodlarni inson baholashi: shablon, P@K, kappa
-backend/app/nlp/tokenize.py           tokenizator va iboralarga ajratish
-backend/app/nlp/lemmatize.py          korpusga tayangan qo'shimcha ajratgich
-backend/app/nlp/stopwords.py          yordamchi so'zlar ro'yxati (tekshirilmagan)
-backend/app/nlp/candidates.py         n-gram nomzodlar, frequency/TF-IDF/C-value
-backend/app/annotation/workspace.py   web annotatsiya va baholash ish joyi (fayllarga yozish)
-backend/app/annotation/agreement.py   annotatorlar kelishuvi (span F1), oltin standartga o'tkazish
-backend/app/annotation/silver.py      AI annotatsiyasini ro'yxatlardan yaratish
-backend/app/annotation/dictionary.py  lug'atni train terminlari bilan to'ldirish
-backend/app/models/crf.py             CRF termin aniqlagich (BIO): xususiyatlar, o'qitish, saqlash, CLI
-backend/app/nlp/clean.py              matnni tozalash, rasmiy apostroflar, gaplarga ajratish
-backend/app/dataset/bio.py            BIO dataset: eksport, tekshiruv, 100 gaplik to'plam
-backend/app/services/term_normalizer.py meʼyorlashtirish: lug'at + morfologiya + izofa
-backend/app/evaluation/normalization.py meʼyorlashtirish aniqligi
-backend/app/evaluation/report.py      tajribalar jadvali (docs/experiments-table.md)
-streamlit_app.py                      Streamlit interfeysi
-backend/app/models/experiment.py      usullarni solishtirish, bootstrap ishonch oraliqlari
-backend/tests/                        pytest testlari
-frontend/                             React + TypeScript + Vite web interfeys
-data/terms.json                       terminlar bazasi (450, needs_review); data/terms-seed.json — dastlabki 15 ta
-data/silver/                          AI annotatsiyasi ro'yxatlari va README
-data/annotations/<annotator>/         web interfeysda belgilangan ishlar (claude — AI)
-models/                               o'qitilgan CRF modellari (models/*.json — sozlamalar)
-data/sources.json                     matn manbalari va foydalanish huquqlari
-data/raw/                             asl matnlar (o'zgartirilmaydi)
-data/inline/                          belgilash uchun nusxalar ([[...]] shu yerda qo'shiladi)
-data/judgments/                       nomzodlarga inson baholari (har bir baholovchi alohida CSV)
-data/annotated/, data/processed/      JSONL annotatsiya va ajratilgan to'plamlar
-data/splits/manifest.json             muzlatilgan taqsimot (split ishga tushgach paydo bo'ladi)
-docs/project-plan.md                  bosqichlar rejasi va cheklovlar
-docs/data-annotation-guide.md         annotatsiya yo'riqnomasi
-docs/experiment-methodology.md        baholash metodikasi
-docs/results.md                       dastlabki natijalar (kumush maʼlumot)
-docs/dissertation/                    dissertatsiya uchun ilmiy hujjat (6 bob)
-data/bio/                             100 gaplik BIO dataset va tekshiruv qaydlari
-docs/examples/                        format namunalari (dataset emas)
-reports/                              ishga tushirish natijalari (nomzodlar reytingi)
+backend/app/main.py                     FastAPI app
+backend/app/api/routes.py               /api/analyze, /api/terms, /api/health
+backend/app/schemas.py                  Pydantic request/response models
+backend/app/core/config.py              settings (UZTERM_TERMS_PATH, UZTERM_MAX_TEXT_CHARS)
+backend/app/database/term_store.py      loading and validating the term base
+backend/app/nlp/normalize.py            case and apostrophe normalization (length-preserving)
+backend/app/nlp/dictionary_matcher.py   dictionary-based extractor
+backend/app/services/normalization.py   normative form suggestions
+backend/app/services/analyzer.py        shaping results as JSON
+backend/app/cli.py                      command line interface
+backend/app/dataset/sources.py          source registry validation
+backend/app/dataset/annotation.py       JSONL annotation validation
+backend/app/dataset/validate.py         validation CLI
+backend/app/dataset/inline.py           JSONL from [[...]]-annotated text
+backend/app/dataset/split.py            train/validation/test split by doc_id
+backend/app/dataset/fetch_wikipedia.py  downloading Wikipedia articles with their sources
+backend/app/evaluation/metrics.py       exact and partial Precision/Recall/F1
+backend/app/evaluation/errors.py        error categories (missed, false_positive, boundary, ...)
+backend/app/evaluation/evaluate.py      evaluation CLI and JSON report
+backend/app/evaluation/ranking.py       Precision@K and coverage
+backend/app/evaluation/judgments.py     human candidate judging: template, P@K, kappa
+backend/app/nlp/tokenize.py             tokenizer and phrase chunking
+backend/app/nlp/lemmatize.py            corpus-based suffix splitter
+backend/app/nlp/stopwords.py            function word list (not verified)
+backend/app/nlp/candidates.py           n-gram candidates, frequency/TF-IDF/C-value
+backend/app/annotation/workspace.py     web annotation and judging workspace (file-based)
+backend/app/annotation/agreement.py     inter-annotator agreement (span F1), promotion to gold standard
+backend/app/annotation/silver.py        building AI annotation from lists
+backend/app/annotation/dictionary.py    filling the dictionary with train-set terms
+backend/app/models/crf.py               CRF term extractor (BIO): features, training, saving, CLI
+backend/app/nlp/clean.py                text cleaning, official apostrophes, sentence splitting
+backend/app/dataset/bio.py              BIO dataset: export, validation, 100-sentence set
+backend/app/services/term_normalizer.py normalization: dictionary + morphology + izofa
+backend/app/evaluation/normalization.py normalization accuracy
+backend/app/evaluation/report.py        experiments table (docs/experiments-table.md)
+backend/app/models/experiment.py        method comparison, bootstrap confidence intervals
+streamlit_app.py                        Streamlit interface
+backend/tests/                          pytest tests
+frontend/                               React + TypeScript + Vite web interface
+data/terms.json                         term base (450, needs_review); data/terms-seed.json — the first 15
+data/silver/                            AI annotation lists and README
+data/annotations/<annotator>/           work annotated in the web interface (claude — AI)
+models/                                 trained CRF models (models/*.json — settings)
+data/sources.json                       text sources and usage rights
+data/raw/                               original texts (never modified)
+data/inline/                            copies for annotation ([[...]] markup goes here)
+data/judgments/                         human candidate judgments (one CSV per judge)
+data/annotated/, data/processed/        JSONL annotations and split sets
+data/splits/manifest.json               frozen split (created after running split)
+docs/project-plan.md                    stage plan and limitations
+docs/data-annotation-guide.md           annotation guide
+docs/experiment-methodology.md          evaluation methodology
+docs/results.md                         preliminary results (silver data)
+docs/dissertation/                      thesis document (6 chapters)
+data/bio/                               100-sentence BIO dataset and review notes
+docs/examples/                          format examples (not part of the dataset)
+reports/                                run outputs (candidate rankings)
 ```
